@@ -26,7 +26,7 @@ const notes = chart.notes[lang] ?? [];
   <footer class="fig-foot">
     <p class="source">
       {t.source}: <a href={chart.source.url} rel="noopener">{chart.source.name}</a>
-      {chart.source.also?.map((a) => <>, <a href={a.url} rel="noopener">{a.name}</a></>)}.
+      {chart.source.also?.map((a) => <>, <a href={a.url} rel="noopener">{a.name}</a></>)}.{" "}
       {t.license} {chart.source.license}. {t.retrieved} {formatDate(chart.retrieved, lang)}.
     </p>
     {notes.length > 0 && (

@@ -2,22 +2,24 @@
 import "../styles/global.css";
 import Mark from "../components/Mark.astro";
 import Analytics from "@vercel/analytics/astro";
-import { ui, paths, type Lang, type PageKey } from "../lib/i18n";
+import { ui, paths, type Lang, type Bi, type Section } from "../lib/i18n";
 
 interface Props {
   lang: Lang;
-  page: PageKey;
+  /** Ruta de esta página en los dos idiomas (para el cambio de idioma y hreflang) */
+  path: Bi;
+  section?: Section;
   title?: string;
   description?: string;
 }
 
-const { lang, page, title, description } = Astro.props;
+const { lang, path, section, title, description } = Astro.props;
 const t = ui[lang];
 const other: Lang = lang === "es" ? "en" : "es";
 const fullTitle = title ? `${title} | ${t.siteName}` : t.siteName;
 const desc = description ?? t.siteDescription;
 const site = Astro.site ?? new URL("https://europa.bocal.online");
-const canonical = new URL(paths[page][lang], site);
+const canonical = new URL(path[lang], site);
 ---
 <!doctype html>
 <html lang={lang}>
@@ -28,7 +30,7 @@ const canonical = new URL(paths[page][lang], site);
     <meta name="description" content={desc} />
     <link rel="canonical" href={canonical} />
     <link rel="alternate" hreflang={lang} href={canonical} />
-    <link rel="alternate" hreflang={other} href={new URL(paths[page][other], site)} />
+    <link rel="alternate" hreflang={other} href={new URL(path[other], site)} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="theme-color" content="#f5f7fa" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#0e1628" media="(prefers-color-scheme: dark)" />
@@ -55,9 +57,10 @@ const canonical = new URL(paths[page][lang], site);
           <span>{t.siteName}</span>
         </a>
         <nav aria-label={lang === "es" ? "Principal" : "Main"}>
-          <a href={paths.theme[lang]} aria-current={page === "theme" ? "page" : undefined}>{t.navTheme}</a>
-          <a class="secondary" href={paths.method[lang]} aria-current={page === "method" ? "page" : undefined}>{t.navMethod}</a>
-          <a class="lang" href={paths[page][other]} hreflang={other} lang={other}>{t.otherLang}</a>
+          <a href={paths.themes[lang]} aria-current={section === "themes" ? "page" : undefined}>{t.navThemes}</a>
+          <a href={paths.lenses[lang]} aria-current={section === "lenses" ? "page" : undefined}>{t.navLenses}</a>
+          <a class="secondary" href={paths.method[lang]} aria-current={section === "method" ? "page" : undefined}>{t.navMethod}</a>
+          <a class="lang" href={path[other]} hreflang={other} lang={other}>{t.otherLang}</a>
         </nav>
       </div>
     </header>

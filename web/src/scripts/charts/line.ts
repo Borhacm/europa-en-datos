@@ -11,7 +11,7 @@ const MIN_LABEL_GAP = 15;
 
 export function renderLine(ctx: RenderContext) {
   const { chart, cfg, lang, plot, focus } = ctx;
-  const digits = chart.id === "g1-inversion-id" ? 2 : chart.id === "g3-modelos-ia" || ctx.state.scale === "total" ? 0 : 1;
+  const digits = cfg.digits ?? (ctx.state.scale === "total" ? 0 : 1);
   const fmt = nf(lang, digits);
   // El año en curso (incompleto) no se dibuja: parecería una caída. Sigue en la tabla y en la descarga.
   const partial = chart.partial_year ? String(chart.partial_year) : null;

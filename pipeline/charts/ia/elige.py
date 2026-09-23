@@ -3,7 +3,7 @@
 from lib import geo, sources
 from lib.output import chart
 
-from .common import eurostat_source, from_eurostat
+from ..common import eurostat_source, from_eurostat
 from .gigantes import EPOCH_BLOCS, epoch_blocs
 
 REASONS = {

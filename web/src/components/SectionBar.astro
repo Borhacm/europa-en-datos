@@ -1,0 +1,76 @@
+---
+// Barra fija bajo la cabecera: navegación por secciones de la página + "Destacar un país".
+import { loadChart } from "../lib/data";
+import { ui, type Lang } from "../lib/i18n";
+
+interface Props {
+  lang: Lang;
+  label: string;
+  items: { href: string; name: string; short?: string }[];
+}
+const { lang, label, items } = Astro.props;
+const t = ui[lang];
+
+// Países de la UE, ordenados por nombre en el idioma de la página
+const geos = loadChart("d1-empresas-ia").geos;
+const countries = Object.entries(geos)
+  .filter(([, g]) => g.eu && !g.aggregate)
+  .map(([code, g]) => ({ code, name: g[lang] }))
+  .sort((a, b) => a.name.localeCompare(b.name, lang));
+---
+<div class="sectionbar">
+  <div class="wrap inner">
+    <nav aria-label={label}>
+      <ul>
+        {items.map((i) => (
+          <li><a href={i.href}><span class="sb-name">{i.name}</span>{i.short && <span class="sb-short">{i.short}</span>}</a></li>
+        ))}
+      </ul>
+    </nav>
+    <label class="focus">
+      <span>{t.yourCountry}</span>
+      <select data-focus-select>
+        <option value="">{t.none}</option>
+        {countries.map((o) => <option value={o.code}>{o.name}</option>)}
+      </select>
+    </label>
+  </div>
+</div>
+
+<style>
+  .sectionbar {
+    position: sticky;
+    top: 3.75rem;
+    z-index: 9;
+    background: color-mix(in srgb, var(--paper) 94%, transparent);
+    backdrop-filter: blur(8px);
+    border-block: 1px solid var(--rule);
+  }
+  .inner { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
+  ul { list-style: none; margin: 0; padding: 0; display: flex; gap: clamp(1rem, 3vw, 2.5rem); }
+  a { display: grid; padding-block: 0.7rem; text-decoration: none; color: var(--ink); border-bottom: 3px solid transparent; }
+  a:hover { border-bottom-color: var(--rule-strong); }
+  a:global(.active) { border-bottom-color: var(--eu); }
+  .sb-name { font-family: var(--font-display); font-weight: 800; font-size: 1.3rem; line-height: 1.05; white-space: nowrap; }
+  .sb-short { font-family: var(--font-semi); font-size: 0.85rem; color: var(--ink-3); }
+
+  .focus { display: grid; gap: 0.2rem; font-family: var(--font-semi); font-size: 0.85rem; color: var(--ink-3); flex: none; }
+  .focus select {
+    font: 600 1rem var(--font-semi);
+    color: var(--ink);
+    background: var(--paper-raised);
+    border: 1px solid var(--rule-strong);
+    border-radius: 4px;
+    padding: 0.35rem 2rem 0.35rem 0.6rem;
+    min-height: 36px;
+  }
+
+  @media (max-width: 760px) {
+    .inner { flex-direction: column; align-items: stretch; gap: 0; }
+    nav { overflow-x: auto; scrollbar-width: none; }
+    .sb-short { display: none; }
+    .sb-name { font-size: 1.1rem; }
+    a { padding-block: 0.55rem; }
+    .focus { grid-template-columns: auto 1fr; align-items: center; gap: 0.6rem; padding-bottom: 0.5rem; }
+  }
+</style>

@@ -55,11 +55,13 @@ EU_NAMES = {"es": "Unión Europea", "en": "European Union"}
 
 _FROM_EUROSTAT = {c[0]: iso3 for iso3, c in COUNTRIES.items() if c[0]}
 _AGGREGATES = {"EU27_2020": "EU27", "EU27": "EU27", "EUU": "EU27"}
+# Códigos de socios comerciales de Eurostat fuera de Europa (China sin Hong Kong)
+_PARTNERS = {"US": "USA", "CN_X_HK": "CHN", "JP": "JPN", "KR": "KOR"}
 
 
 def from_eurostat(code: str) -> str | None:
     """Código Eurostat a canónico. Devuelve None para agregados que no usamos (zona euro, etc.)."""
-    return _AGGREGATES.get(code) or _FROM_EUROSTAT.get(code)
+    return _AGGREGATES.get(code) or _PARTNERS.get(code) or _FROM_EUROSTAT.get(code)
 
 
 def from_iso3(code: str) -> str | None:

@@ -6,7 +6,7 @@ from lib import geo, sources
 from lib.http import fetch
 from lib.output import DATA_DIR, chart
 
-from .common import eurostat_source, from_eurostat
+from ..common import eurostat_source, from_eurostat
 
 SIZES = {
     "GE10": {"es": "Todas (10 o más empleados)", "en": "All (10+ employees)"},

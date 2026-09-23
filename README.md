@@ -6,7 +6,21 @@ Visualización de datos abiertos europeos: la UE frente a EE. UU. y China, y las
 - **¿Pierde Europa o elige?**: lo que el modelo europeo gana y lo que cede.
 - **Europa por dentro**: diferencias entre los 27 países y sus regiones.
 
-Piloto actual: **IA y digital** (ver [docs/piloto-ia-digital.md](docs/piloto-ia-digital.md)).
+Temas publicados: **IA y digital** y **Comercio y dependencias**. Publicado en https://europa.bocal.online.
+
+## Cómo se organiza
+
+- **Tema**: una historia completa con las tres miradas (`/es/<tema>/`).
+- **Mirada**: una de las tres miradas a través de todos los temas (`/es/miradas/<mirada>/`). Aquí es donde las historias se combinan.
+- Cada gráfico tiene un código único con el prefijo del tema: `IA-G1`, `CO-D2`...
+
+## Cómo añadir un tema
+
+1. **Datos**: crea `pipeline/charts/<tema>/` con `gigantes.py`, `elige.py` y `dentro.py` (copia la estructura de `comercio/`), regístralo en `pipeline/charts/__init__.py` y en `THEMES` de `pipeline/lib/output.py`. Ejecuta `uv run run.py`.
+2. **Gráficos**: añade la configuración de cada gráfico en `web/src/lib/charts-config.ts` (reutiliza los renderizadores: `line`, `rank`, `paired`, `dumbbell`, `stack`, `map`).
+3. **Textos**: añade el tema en `web/src/lib/themes.ts` con su código, slugs, entradilla y los textos de cada mirada en ES y EN. Si estaba como `upcoming`, pásalo a `published`.
+
+Las páginas del tema, de las miradas, la portada, el índice de temas y la metodología se actualizan solas.
 
 ## Datos
 
@@ -31,7 +45,9 @@ pipeline/
   lib/sources.py   lectores de Eurostat, OCDE, Banco Mundial, Epoch y V-Dem
   lib/geo.py       códigos de país (ISO3 + EU27) y nombres en ES y EN
   lib/output.py    formato común y validación
-  charts/          un módulo por mirada: gigantes.py, elige.py, dentro.py
+  charts/<tema>/   un módulo por mirada: gigantes.py, elige.py, dentro.py
+web/src/lib/themes.ts         registro de temas y miradas (textos en ES y EN)
+web/src/lib/charts-config.ts  cómo se dibuja cada gráfico
 docs/              inventario de datos y decisiones del piloto
 data/              salida del pipeline (data/raw es caché, no se versiona)
 ```

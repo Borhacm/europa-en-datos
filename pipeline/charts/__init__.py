@@ -1,3 +1,4 @@
-from . import dentro, elige, gigantes
+from . import comercio, ia
 
-BUILDERS = [*gigantes.BUILDERS, *elige.BUILDERS, *dentro.BUILDERS]
+# Orden: por tema y, dentro de cada tema, por mirada
+BUILDERS = [*ia.BUILDERS, *comercio.BUILDERS]

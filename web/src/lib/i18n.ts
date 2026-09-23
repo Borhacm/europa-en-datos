@@ -6,7 +6,8 @@ export const ui = {
     siteName: "Europa en datos",
     siteDescription:
       "La Unión Europea frente a Estados Unidos y China, y las diferencias entre sus 27 países, contadas con datos abiertos oficiales.",
-    navTheme: "IA y digital",
+    navThemes: "Temas",
+    navLenses: "Miradas",
     navMethod: "Metodología",
     otherLang: "English",
     skip: "Saltar al contenido",
@@ -31,7 +32,8 @@ export const ui = {
     siteName: "Europe in data",
     siteDescription:
       "The European Union against the United States and China, and the differences between its 27 countries, told with official open data.",
-    navTheme: "AI and digital",
+    navThemes: "Themes",
+    navLenses: "Lenses",
     navMethod: "Methodology",
     otherLang: "Español",
     skip: "Skip to content",
@@ -54,13 +56,20 @@ export const ui = {
   },
 } as const;
 
+export type Bi = { es: string; en: string };
+
 export const paths = {
   home: { es: "/es/", en: "/en/" },
-  theme: { es: "/es/ia-digital/", en: "/en/ai-digital/" },
+  themes: { es: "/es/temas/", en: "/en/themes/" },
+  lenses: { es: "/es/miradas/", en: "/en/lenses/" },
   method: { es: "/es/metodologia/", en: "/en/methodology/" },
 } as const;
 
-export type PageKey = keyof typeof paths;
+export type Section = "home" | "themes" | "lenses" | "method";
+
+/** Rutas de un tema o de una mirada en los dos idiomas, a partir de su slug. */
+export const themePath = (slug: Bi): Bi => ({ es: `/es/${slug.es}/`, en: `/en/${slug.en}/` });
+export const lensPath = (slug: Bi): Bi => ({ es: `/es/miradas/${slug.es}/`, en: `/en/lenses/${slug.en}/` });
 
 export function formatNumber(value: number, lang: Lang, digits = 1): string {
   return new Intl.NumberFormat(lang === "es" ? "es-ES" : "en-GB", {

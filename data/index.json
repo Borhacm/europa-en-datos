@@ -17,6 +17,10 @@
   "ia-digital": {
    "es": "IA y digital",
    "en": "AI and digital"
+  },
+  "comercio": {
+   "es": "Comercio y dependencias",
+   "en": "Trade and dependencies"
   }
  },
  "charts": [
@@ -129,6 +133,72 @@
    },
    "retrieved": "2026-09-24",
    "n_rows": 109
+  },
+  {
+   "id": "cg1-cuota-mundial",
+   "lens": "gigantes",
+   "theme": "comercio",
+   "title": {
+    "es": "China ya exporta más que la UE: desde 2002 casi ha triplicado su cuota del comercio mundial",
+    "en": "China now exports more than the EU: its share of world trade has almost tripled since 2002"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 190
+  },
+  {
+   "id": "cg2-saldo-comercial",
+   "lens": "gigantes",
+   "theme": "comercio",
+   "title": {
+    "es": "China vende al mundo, EE. UU. le compra y la UE está en medio",
+    "en": "China sells to the world, the US buys, and the EU sits in between"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 95
+  },
+  {
+   "id": "ce1-importaciones-origen",
+   "lens": "elige",
+   "theme": "comercio",
+   "title": {
+    "es": "Más de una de cada cinco importaciones de la UE ya llega de China; en maquinaria, más de una de cada tres",
+    "en": "More than one in five EU imports now comes from China; in machinery, more than one in three"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 192
+  },
+  {
+   "id": "ce2-exportaciones-destino",
+   "lens": "elige",
+   "theme": "comercio",
+   "title": {
+    "es": "Para vender, la UE depende de EE. UU.: su primer cliente, muy por delante de China",
+    "en": "To sell, the EU depends on the US: its first customer, far ahead of China"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 192
+  },
+  {
+   "id": "cd1-comercio-intra",
+   "lens": "dentro",
+   "theme": "comercio",
+   "title": {
+    "es": "El primer cliente de Europa es Europa: seis de cada diez euros exportados se quedan en la UE",
+    "en": "Europe's first customer is Europe: six in every ten euros exported stay in the EU"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 56
+  },
+  {
+   "id": "cd2-dependencia-energetica",
+   "lens": "dentro",
+   "theme": "comercio",
+   "title": {
+    "es": "La UE importa más de la mitad de su energía. Solo Estonia es casi autosuficiente",
+    "en": "The EU imports more than half its energy. Only Estonia is almost self-sufficient"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 1320
   }
  ]
 }

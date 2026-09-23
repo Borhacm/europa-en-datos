@@ -159,7 +159,8 @@ export function renderDumbbell(ctx: RenderContext) {
     svg("line", { x1: x(d.a), x2: x(d.b), y1: cy, y2: cy, stroke: hl ? color : cssVar("--context"), "stroke-width": 2 }, g);
     svg("circle", { cx: x(d.a), cy, r: 4, fill: paper, stroke: hl ? color : cssVar("--context-strong"), "stroke-width": 2 }, g);
     svg("circle", { cx: x(d.b), cy, r: 5, fill: hl ? color : cssVar("--context-strong"), stroke: paper, "stroke-width": 2 }, g);
-    const val = svg("text", { x: x(d.b) + 10, y: cy + 5, class: `row-value${hl ? " strong" : ""}` }, g);
+    // La etiqueta va tras el punto más a la derecha, para no pisar el de 2004 si el país ha bajado
+    const val = svg("text", { x: Math.max(x(d.a), x(d.b)) + 10, y: cy + 5, class: `row-value${hl ? " strong" : ""}` }, g);
     val.textContent = fmt(d.b);
     const show = () => tip.show(x(d.b), cy - 12,
       `<div class="tip-title">${geoName(chart, d.g, lang)}</div>${tipRow(cssVar("--context"), first, `${fmt(d.a)} %`)}${tipRow(color, last, `${fmt(d.b)} %`, true)}`);

@@ -137,7 +137,7 @@ const io = new IntersectionObserver((entries) => {
 figures.forEach((f) => io.observe(f));
 
 // Mirada activa en la barra de miradas
-const lensLinks = [...document.querySelectorAll<HTMLAnchorElement>(".lensbar a[href^='#']")];
+const lensLinks = [...document.querySelectorAll<HTMLAnchorElement>(".sectionbar a[href^='#']")];
 if (lensLinks.length) {
   const sections = lensLinks.map((a) => document.getElementById(a.hash.slice(1))).filter((s): s is HTMLElement => !!s);
   const spy = new IntersectionObserver((entries) => {

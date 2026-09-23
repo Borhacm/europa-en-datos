@@ -1,17 +1,17 @@
 ---
 import Base from "../layouts/Base.astro";
 import { loadChart } from "../lib/data";
-import { themeContent } from "../lib/content";
-import { ui, paths, formatDate, type Lang } from "../lib/i18n";
+import { figuresOf, published } from "../lib/themes";
+import { paths, themePath, formatDate, type Lang } from "../lib/i18n";
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
-const t = ui[lang];
 
-const figs = themeContent[lang].lenses.flatMap((l) =>
-  l.body.filter((b): b is { fig: string; code: string } => "fig" in b).map((b) => ({ ...b, lens: l.name, anchor: l.anchor })),
-);
-const charts = figs.map((f) => ({ ...f, chart: loadChart(f.fig) }));
+// Gráficos agrupados por tema
+const groups = published().map((th) => ({
+  theme: th,
+  charts: figuresOf(th).map((f) => ({ ...f, chart: loadChart(f.fig) })),
+}));
 
 const copy = {
   es: {
@@ -60,7 +60,7 @@ const copy = {
   },
 }[lang];
 ---
-<Base lang={lang} page="method" title={copy.title} description={copy.intro}>
+<Base lang={lang} path={paths.method} section="method" title={copy.title} description={copy.intro}>
   <article class="wrap method">
     <h1>{copy.title}</h1>
     <p class="dek">{copy.intro}</p>
@@ -82,16 +82,19 @@ const copy = {
     <div class="table-scroll">
       <table>
         <thead><tr><th scope="col">{copy.code}</th><th scope="col">{copy.source}</th><th scope="col">{copy.license}</th><th scope="col">{copy.retrieved}</th></tr></thead>
-        <tbody>
-          {charts.map((c) => (
-            <tr>
-              <th scope="row"><a href={`${paths.theme[lang]}#${c.fig}`}>{c.code}</a> {c.chart.title[lang]}</th>
-              <td><a href={c.chart.source.url} rel="noopener">{c.chart.source.name}</a> <span class="ds">{c.chart.source.dataset}</span></td>
-              <td>{c.chart.source.license}</td>
-              <td class="num">{formatDate(c.chart.retrieved, lang)}</td>
-            </tr>
-          ))}
-        </tbody>
+        {groups.map((g) => (
+          <tbody>
+            <tr class="group"><th scope="rowgroup" colspan="4"><a href={themePath(g.theme.slug)[lang]}>{g.theme.title[lang]}</a></th></tr>
+            {g.charts.map((c) => (
+              <tr>
+                <th scope="row"><a href={`${themePath(g.theme.slug)[lang]}#${c.fig}`}>{c.code}</a> {c.chart.title[lang]}</th>
+                <td><a href={c.chart.source.url} rel="noopener">{c.chart.source.name}</a> <span class="ds">{c.chart.source.dataset}</span></td>
+                <td>{c.chart.source.license}</td>
+                <td class="num">{formatDate(c.chart.retrieved, lang)}</td>
+              </tr>
+            ))}
+          </tbody>
+        ))}
       </table>
     </div>
 
@@ -122,4 +125,6 @@ const copy = {
   tbody th a { font-weight: 700; margin-right: 0.3rem; }
   .ds { display: block; color: var(--ink-3); font-size: 0.85rem; }
   td.num { white-space: nowrap; }
+  .group th { padding-top: 1.75rem; font-family: var(--font-display); font-weight: 800; font-size: 1.5rem; }
+  .group a { color: var(--ink); text-decoration: none; }
 </style>

@@ -1,0 +1,539 @@
+{
+ "id": "cg2-saldo-comercial",
+ "lens": "gigantes",
+ "theme": "comercio",
+ "title": {
+  "es": "China vende al mundo, EE. UU. le compra y la UE está en medio",
+  "en": "China sells to the world, the US buys, and the EU sits in between"
+ },
+ "subtitle": {
+  "es": "Saldo comercial de bienes (exportaciones menos importaciones), en miles de millones de euros",
+  "en": "Trade balance in goods (exports minus imports), in billions of euros"
+ },
+ "unit": {
+  "es": "miles de millones de euros",
+  "en": "billions of euros"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "ext_lt_introeu27_2020",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/ext_lt_introeu27_2020/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Para la UE solo cuenta el comercio con países de fuera de la Unión: las ventas entre Estados miembros no son exportaciones mundiales.",
+   "China no incluye Hong Kong.",
+   "Comercio de bienes. No incluye servicios."
+  ],
+  "en": [
+   "For the EU only trade with non-EU countries counts: sales between member states are not world exports.",
+   "China excludes Hong Kong.",
+   "Trade in goods. Services are not included."
+  ]
+ },
+ "retrieved": "2026-09-24",
+ "geos": {
+  "CHN": {
+   "es": "China",
+   "en": "China",
+   "eu": false,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "JPN": {
+   "es": "Japón",
+   "en": "Japan",
+   "eu": false,
+   "aggregate": false
+  },
+  "USA": {
+   "es": "Estados Unidos",
+   "en": "United States",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "CHN",
+   "time": "2002",
+   "value": 32.18
+  },
+  {
+   "geo": "CHN",
+   "time": "2003",
+   "value": 22.51
+  },
+  {
+   "geo": "CHN",
+   "time": "2004",
+   "value": 25.8
+  },
+  {
+   "geo": "CHN",
+   "time": "2005",
+   "value": 81.99
+  },
+  {
+   "geo": "CHN",
+   "time": "2006",
+   "value": 141.35
+  },
+  {
+   "geo": "CHN",
+   "time": "2007",
+   "value": 192.59
+  },
+  {
+   "geo": "CHN",
+   "time": "2008",
+   "value": 202.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2009",
+   "value": 140.59
+  },
+  {
+   "geo": "CHN",
+   "time": "2010",
+   "value": 138.79
+  },
+  {
+   "geo": "CHN",
+   "time": "2011",
+   "value": 111.35
+  },
+  {
+   "geo": "CHN",
+   "time": "2012",
+   "value": 179.47
+  },
+  {
+   "geo": "CHN",
+   "time": "2013",
+   "value": 195.03
+  },
+  {
+   "geo": "CHN",
+   "time": "2014",
+   "value": 288.34
+  },
+  {
+   "geo": "CHN",
+   "time": "2015",
+   "value": 535.29
+  },
+  {
+   "geo": "CHN",
+   "time": "2016",
+   "value": 460.49
+  },
+  {
+   "geo": "CHN",
+   "time": "2017",
+   "value": 371.41
+  },
+  {
+   "geo": "CHN",
+   "time": "2018",
+   "value": 298.76
+  },
+  {
+   "geo": "CHN",
+   "time": "2019",
+   "value": 375.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2020",
+   "value": 454.85
+  },
+  {
+   "geo": "CHN",
+   "time": "2021",
+   "value": 538.27
+  },
+  {
+   "geo": "CHN",
+   "time": "2022",
+   "value": 833.43
+  },
+  {
+   "geo": "CHN",
+   "time": "2023",
+   "value": 761.11
+  },
+  {
+   "geo": "CHN",
+   "time": "2024",
+   "value": 915.94
+  },
+  {
+   "geo": "EU27",
+   "time": "2002",
+   "value": 58.59
+  },
+  {
+   "geo": "EU27",
+   "time": "2003",
+   "value": 29.77
+  },
+  {
+   "geo": "EU27",
+   "time": "2004",
+   "value": 37.46
+  },
+  {
+   "geo": "EU27",
+   "time": "2005",
+   "value": -27.42
+  },
+  {
+   "geo": "EU27",
+   "time": "2006",
+   "value": -76.19
+  },
+  {
+   "geo": "EU27",
+   "time": "2007",
+   "value": -66.37
+  },
+  {
+   "geo": "EU27",
+   "time": "2008",
+   "value": -133.79
+  },
+  {
+   "geo": "EU27",
+   "time": "2009",
+   "value": -9.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2010",
+   "value": -35.45
+  },
+  {
+   "geo": "EU27",
+   "time": "2011",
+   "value": -41.67
+  },
+  {
+   "geo": "EU27",
+   "time": "2012",
+   "value": 68.38
+  },
+  {
+   "geo": "EU27",
+   "time": "2013",
+   "value": 149.37
+  },
+  {
+   "geo": "EU27",
+   "time": "2014",
+   "value": 171.4
+  },
+  {
+   "geo": "EU27",
+   "time": "2015",
+   "value": 228.22
+  },
+  {
+   "geo": "EU27",
+   "time": "2016",
+   "value": 264.4
+  },
+  {
+   "geo": "EU27",
+   "time": "2017",
+   "value": 222.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2018",
+   "value": 148.06
+  },
+  {
+   "geo": "EU27",
+   "time": "2019",
+   "value": 191.68
+  },
+  {
+   "geo": "EU27",
+   "time": "2020",
+   "value": 216.96
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "value": 57.62
+  },
+  {
+   "geo": "EU27",
+   "time": "2022",
+   "value": -431.96
+  },
+  {
+   "geo": "EU27",
+   "time": "2023",
+   "value": 35.33
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "value": 133.11
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 114.14
+  },
+  {
+   "geo": "JPN",
+   "time": "2002",
+   "value": 83.67
+  },
+  {
+   "geo": "JPN",
+   "time": "2003",
+   "value": 78.27
+  },
+  {
+   "geo": "JPN",
+   "time": "2004",
+   "value": 88.84
+  },
+  {
+   "geo": "JPN",
+   "time": "2005",
+   "value": 63.56
+  },
+  {
+   "geo": "JPN",
+   "time": "2006",
+   "value": 53.89
+  },
+  {
+   "geo": "JPN",
+   "time": "2007",
+   "value": 67.19
+  },
+  {
+   "geo": "JPN",
+   "time": "2008",
+   "value": 12.84
+  },
+  {
+   "geo": "JPN",
+   "time": "2009",
+   "value": 20.6
+  },
+  {
+   "geo": "JPN",
+   "time": "2010",
+   "value": 57.11
+  },
+  {
+   "geo": "JPN",
+   "time": "2011",
+   "value": -23.13
+  },
+  {
+   "geo": "JPN",
+   "time": "2012",
+   "value": -68.03
+  },
+  {
+   "geo": "JPN",
+   "time": "2013",
+   "value": -88.9
+  },
+  {
+   "geo": "JPN",
+   "time": "2014",
+   "value": -91.81
+  },
+  {
+   "geo": "JPN",
+   "time": "2015",
+   "value": -0.63
+  },
+  {
+   "geo": "JPN",
+   "time": "2016",
+   "value": 34.34
+  },
+  {
+   "geo": "JPN",
+   "time": "2017",
+   "value": 23.2
+  },
+  {
+   "geo": "JPN",
+   "time": "2018",
+   "value": -8.75
+  },
+  {
+   "geo": "JPN",
+   "time": "2019",
+   "value": -13.76
+  },
+  {
+   "geo": "JPN",
+   "time": "2020",
+   "value": 5.15
+  },
+  {
+   "geo": "JPN",
+   "time": "2021",
+   "value": -12.86
+  },
+  {
+   "geo": "JPN",
+   "time": "2022",
+   "value": -144.28
+  },
+  {
+   "geo": "JPN",
+   "time": "2023",
+   "value": -64.71
+  },
+  {
+   "geo": "JPN",
+   "time": "2024",
+   "value": -32.6
+  },
+  {
+   "geo": "JPN",
+   "time": "2025",
+   "value": -15.25
+  },
+  {
+   "geo": "USA",
+   "time": "2002",
+   "value": -536.2
+  },
+  {
+   "geo": "USA",
+   "time": "2003",
+   "value": -511.05
+  },
+  {
+   "geo": "USA",
+   "time": "2004",
+   "value": -571.16
+  },
+  {
+   "geo": "USA",
+   "time": "2005",
+   "value": -670.21
+  },
+  {
+   "geo": "USA",
+   "time": "2006",
+   "value": -702.43
+  },
+  {
+   "geo": "USA",
+   "time": "2007",
+   "value": -623.56
+  },
+  {
+   "geo": "USA",
+   "time": "2008",
+   "value": -588.07
+  },
+  {
+   "geo": "USA",
+   "time": "2009",
+   "value": -390.87
+  },
+  {
+   "geo": "USA",
+   "time": "2010",
+   "value": -520.6
+  },
+  {
+   "geo": "USA",
+   "time": "2011",
+   "value": -561.74
+  },
+  {
+   "geo": "USA",
+   "time": "2012",
+   "value": -614.68
+  },
+  {
+   "geo": "USA",
+   "time": "2013",
+   "value": -563.97
+  },
+  {
+   "geo": "USA",
+   "time": "2014",
+   "value": -595.49
+  },
+  {
+   "geo": "USA",
+   "time": "2015",
+   "value": -731.48
+  },
+  {
+   "geo": "USA",
+   "time": "2016",
+   "value": -719.36
+  },
+  {
+   "geo": "USA",
+   "time": "2017",
+   "value": -760.79
+  },
+  {
+   "geo": "USA",
+   "time": "2018",
+   "value": -801.13
+  },
+  {
+   "geo": "USA",
+   "time": "2019",
+   "value": -824.67
+  },
+  {
+   "geo": "USA",
+   "time": "2020",
+   "value": -853.73
+  },
+  {
+   "geo": "USA",
+   "time": "2021",
+   "value": -997.58
+  },
+  {
+   "geo": "USA",
+   "time": "2022",
+   "value": -1244.84
+  },
+  {
+   "geo": "USA",
+   "time": "2023",
+   "value": -1063.47
+  },
+  {
+   "geo": "USA",
+   "time": "2024",
+   "value": -1194.58
+  },
+  {
+   "geo": "USA",
+   "time": "2025",
+   "value": -1174.46
+  }
+ ]
+}

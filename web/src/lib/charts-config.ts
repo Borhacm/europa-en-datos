@@ -24,6 +24,8 @@ export interface ChartConfig {
   /** Dimensión alternativa del valor (p. ej. per_million) según un control */
   valueFrom?: { control: string; map: Record<string, string> };
   yLabel?: { es: string; en: string };
+  /** Decimales en etiquetas y tooltips (por defecto: 1) */
+  digits?: number;
   domainMin?: number;
 }
 
@@ -34,6 +36,7 @@ export const CHARTS: Record<string, ChartConfig> = {
     series: ["USA", "CHN", "EU27"],
     table: { rows: "geo", cols: "time", lastCols: 6 },
     domainMin: 0,
+    digits: 2,
   },
   "g2-patentes-ia": {
     renderer: "line",
@@ -50,6 +53,7 @@ export const CHARTS: Record<string, ChartConfig> = {
     showContext: true,
     table: { rows: "geo", cols: "time", lastCols: 8 },
     domainMin: 0,
+    digits: 0,
   },
   "e1-motivos-no-ia-generativa": {
     renderer: "paired",
@@ -93,6 +97,48 @@ export const CHARTS: Record<string, ChartConfig> = {
     controls: [{ dim: "time", default: "2025", options: ["2021", "2023", "2025"] }],
     usesFocus: true,
     table: { rows: "geo", cols: "time" },
+  },
+
+  // ---------- Comercio y dependencias ----------
+  "cg1-cuota-mundial": {
+    renderer: "line",
+    controls: [{ dim: "flow", default: "exportaciones" }],
+    series: ["USA", "CHN", "EU27"],
+    showContext: true,
+    table: { rows: "geo", cols: "time", lastCols: 6 },
+    domainMin: 0,
+  },
+  "cg2-saldo-comercial": {
+    renderer: "line",
+    series: ["USA", "CHN", "EU27"],
+    showContext: true,
+    table: { rows: "geo", cols: "time", lastCols: 6 },
+    digits: 0,
+  },
+  "ce1-importaciones-origen": {
+    renderer: "line",
+    controls: [{ dim: "product", default: "TOTAL" }],
+    series: ["USA", "CHN"],
+    table: { rows: "geo", cols: "time", lastCols: 6 },
+    domainMin: 0,
+  },
+  "ce2-exportaciones-destino": {
+    renderer: "line",
+    controls: [{ dim: "product", default: "TOTAL" }],
+    series: ["USA", "CHN"],
+    table: { rows: "geo", cols: "time", lastCols: 6 },
+    domainMin: 0,
+  },
+  "cd1-comercio-intra": {
+    renderer: "dumbbell",
+    usesFocus: true,
+    table: { rows: "geo", cols: "time" },
+  },
+  "cd2-dependencia-energetica": {
+    renderer: "rank",
+    controls: [{ dim: "time", default: "2024", options: ["2004", "2014", "2024"] }],
+    usesFocus: true,
+    table: { rows: "geo", cols: "time", lastCols: 6 },
   },
 };
 

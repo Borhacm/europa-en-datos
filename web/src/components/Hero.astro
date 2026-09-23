@@ -1,9 +1,10 @@
 ---
 import { loadChart } from "../lib/data";
-import { paths, type Lang } from "../lib/i18n";
+import type { Lang } from "../lib/i18n";
 
-interface Props { lang: Lang }
-const { lang } = Astro.props;
+// Historia destacada en la portada
+interface Props { lang: Lang; href: string }
+const { lang, href } = Astro.props;
 
 // Último año completo de Epoch AI, regla "participa"
 const chart = loadChart("g3-modelos-ia");
@@ -45,7 +46,7 @@ let order = 0;
   <div class="hero-text">
     <h1>{copy.h1.map((l) => <span>{l}</span>)}</h1>
     <p class="dek">{copy.dek}</p>
-    <a class="cta" href={paths.theme[lang]}>{copy.cta}</a>
+    <a class="cta" href={href}>{copy.cta}</a>
   </div>
 
   <figure class="units" aria-label={copy.chartLabel} role="img">

@@ -13,7 +13,10 @@ LENSES = {
     "elige": {"es": "¿Pierde Europa o elige?", "en": "Is Europe losing, or choosing?"},
     "dentro": {"es": "Europa por dentro", "en": "Europe from within"},
 }
-THEMES = {"ia-digital": {"es": "IA y digital", "en": "AI and digital"}}
+THEMES = {
+    "ia-digital": {"es": "IA y digital", "en": "AI and digital"},
+    "comercio": {"es": "Comercio y dependencias", "en": "Trade and dependencies"},
+}
 
 
 def chart(*, id, lens, theme, title, subtitle, unit, source, rows, geos=None, notes=None, extra=None) -> dict:

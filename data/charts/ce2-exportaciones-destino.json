@@ -1,0 +1,1236 @@
+{
+ "id": "ce2-exportaciones-destino",
+ "lens": "elige",
+ "theme": "comercio",
+ "title": {
+  "es": "Para vender, la UE depende de EE. UU.: su primer cliente, muy por delante de China",
+  "en": "To sell, the EU depends on the US: its first customer, far ahead of China"
+ },
+ "subtitle": {
+  "es": "Parte de las exportaciones de la UE fuera de la Unión que va a EE. UU. y a China, en %",
+  "en": "Share of the EU's exports outside the Union that goes to the US and China, in %"
+ },
+ "unit": {
+  "es": "% de las exportaciones extra-UE",
+  "en": "% of extra-EU exports"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "ext_lt_maineu",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/ext_lt_maineu/default/table",
+  "license": "CC BY 4.0",
+  "also": [
+   {
+    "name": "Eurostat, ext_lt_mainmach",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/ext_lt_mainmach/default/table"
+   },
+   {
+    "name": "Eurostat, ext_lt_mainmanu",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/ext_lt_mainmanu/default/table"
+   },
+   {
+    "name": "Eurostat, ext_lt_mainchem",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/ext_lt_mainchem/default/table"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Porcentaje sobre el comercio de la UE con países de fuera de la Unión.",
+   "China no incluye Hong Kong."
+  ],
+  "en": [
+   "Share of the EU's trade with non-EU countries.",
+   "China excludes Hong Kong."
+  ]
+ },
+ "retrieved": "2026-09-24",
+ "geos": {
+  "CHN": {
+   "es": "China",
+   "en": "China",
+   "eu": false,
+   "aggregate": false
+  },
+  "USA": {
+   "es": "Estados Unidos",
+   "en": "United States",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "dimensions": {
+  "product": {
+   "TOTAL": {
+    "es": "Todos los bienes",
+    "en": "All goods"
+   },
+   "SITC7": {
+    "es": "Maquinaria y transporte",
+    "en": "Machinery and transport"
+   },
+   "SITC6_8": {
+    "es": "Otras manufacturas",
+    "en": "Other manufactured goods"
+   },
+   "SITC5": {
+    "es": "Químicos",
+    "en": "Chemicals"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "CHN",
+   "time": "2002",
+   "product": "SITC5",
+   "value": 2.0
+  },
+  {
+   "geo": "CHN",
+   "time": "2003",
+   "product": "SITC5",
+   "value": 2.3
+  },
+  {
+   "geo": "CHN",
+   "time": "2004",
+   "product": "SITC5",
+   "value": 2.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2005",
+   "product": "SITC5",
+   "value": 2.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2006",
+   "product": "SITC5",
+   "value": 2.9
+  },
+  {
+   "geo": "CHN",
+   "time": "2007",
+   "product": "SITC5",
+   "value": 3.2
+  },
+  {
+   "geo": "CHN",
+   "time": "2008",
+   "product": "SITC5",
+   "value": 3.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2009",
+   "product": "SITC5",
+   "value": 4.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2010",
+   "product": "SITC5",
+   "value": 4.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2011",
+   "product": "SITC5",
+   "value": 5.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2012",
+   "product": "SITC5",
+   "value": 5.3
+  },
+  {
+   "geo": "CHN",
+   "time": "2013",
+   "product": "SITC5",
+   "value": 5.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2014",
+   "product": "SITC5",
+   "value": 5.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2015",
+   "product": "SITC5",
+   "value": 5.8
+  },
+  {
+   "geo": "CHN",
+   "time": "2016",
+   "product": "SITC5",
+   "value": 6.0
+  },
+  {
+   "geo": "CHN",
+   "time": "2017",
+   "product": "SITC5",
+   "value": 6.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2018",
+   "product": "SITC5",
+   "value": 6.5
+  },
+  {
+   "geo": "CHN",
+   "time": "2019",
+   "product": "SITC5",
+   "value": 6.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2020",
+   "product": "SITC5",
+   "value": 7.3
+  },
+  {
+   "geo": "CHN",
+   "time": "2021",
+   "product": "SITC5",
+   "value": 7.2
+  },
+  {
+   "geo": "CHN",
+   "time": "2022",
+   "product": "SITC5",
+   "value": 6.8
+  },
+  {
+   "geo": "CHN",
+   "time": "2023",
+   "product": "SITC5",
+   "value": 7.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2024",
+   "product": "SITC5",
+   "value": 6.3
+  },
+  {
+   "geo": "CHN",
+   "time": "2025",
+   "product": "SITC5",
+   "value": 5.4
+  },
+  {
+   "geo": "USA",
+   "time": "2002",
+   "product": "SITC5",
+   "value": 25.8
+  },
+  {
+   "geo": "USA",
+   "time": "2003",
+   "product": "SITC5",
+   "value": 25.8
+  },
+  {
+   "geo": "USA",
+   "time": "2004",
+   "product": "SITC5",
+   "value": 24.2
+  },
+  {
+   "geo": "USA",
+   "time": "2005",
+   "product": "SITC5",
+   "value": 23.4
+  },
+  {
+   "geo": "USA",
+   "time": "2006",
+   "product": "SITC5",
+   "value": 23.3
+  },
+  {
+   "geo": "USA",
+   "time": "2007",
+   "product": "SITC5",
+   "value": 21.8
+  },
+  {
+   "geo": "USA",
+   "time": "2008",
+   "product": "SITC5",
+   "value": 20.4
+  },
+  {
+   "geo": "USA",
+   "time": "2009",
+   "product": "SITC5",
+   "value": 20.8
+  },
+  {
+   "geo": "USA",
+   "time": "2010",
+   "product": "SITC5",
+   "value": 20.0
+  },
+  {
+   "geo": "USA",
+   "time": "2011",
+   "product": "SITC5",
+   "value": 19.4
+  },
+  {
+   "geo": "USA",
+   "time": "2012",
+   "product": "SITC5",
+   "value": 19.5
+  },
+  {
+   "geo": "USA",
+   "time": "2013",
+   "product": "SITC5",
+   "value": 18.3
+  },
+  {
+   "geo": "USA",
+   "time": "2014",
+   "product": "SITC5",
+   "value": 19.2
+  },
+  {
+   "geo": "USA",
+   "time": "2015",
+   "product": "SITC5",
+   "value": 21.4
+  },
+  {
+   "geo": "USA",
+   "time": "2016",
+   "product": "SITC5",
+   "value": 21.9
+  },
+  {
+   "geo": "USA",
+   "time": "2017",
+   "product": "SITC5",
+   "value": 20.6
+  },
+  {
+   "geo": "USA",
+   "time": "2018",
+   "product": "SITC5",
+   "value": 23.5
+  },
+  {
+   "geo": "USA",
+   "time": "2019",
+   "product": "SITC5",
+   "value": 25.3
+  },
+  {
+   "geo": "USA",
+   "time": "2020",
+   "product": "SITC5",
+   "value": 26.9
+  },
+  {
+   "geo": "USA",
+   "time": "2021",
+   "product": "SITC5",
+   "value": 25.2
+  },
+  {
+   "geo": "USA",
+   "time": "2022",
+   "product": "SITC5",
+   "value": 26.6
+  },
+  {
+   "geo": "USA",
+   "time": "2023",
+   "product": "SITC5",
+   "value": 26.6
+  },
+  {
+   "geo": "USA",
+   "time": "2024",
+   "product": "SITC5",
+   "value": 30.5
+  },
+  {
+   "geo": "USA",
+   "time": "2025",
+   "product": "SITC5",
+   "value": 34.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2002",
+   "product": "SITC6_8",
+   "value": 2.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2003",
+   "product": "SITC6_8",
+   "value": 3.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2004",
+   "product": "SITC6_8",
+   "value": 3.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2005",
+   "product": "SITC6_8",
+   "value": 3.3
+  },
+  {
+   "geo": "CHN",
+   "time": "2006",
+   "product": "SITC6_8",
+   "value": 3.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2007",
+   "product": "SITC6_8",
+   "value": 3.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2008",
+   "product": "SITC6_8",
+   "value": 3.8
+  },
+  {
+   "geo": "CHN",
+   "time": "2009",
+   "product": "SITC6_8",
+   "value": 4.9
+  },
+  {
+   "geo": "CHN",
+   "time": "2010",
+   "product": "SITC6_8",
+   "value": 5.2
+  },
+  {
+   "geo": "CHN",
+   "time": "2011",
+   "product": "SITC6_8",
+   "value": 5.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2012",
+   "product": "SITC6_8",
+   "value": 5.8
+  },
+  {
+   "geo": "CHN",
+   "time": "2013",
+   "product": "SITC6_8",
+   "value": 6.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2014",
+   "product": "SITC6_8",
+   "value": 6.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2015",
+   "product": "SITC6_8",
+   "value": 6.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2016",
+   "product": "SITC6_8",
+   "value": 6.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2017",
+   "product": "SITC6_8",
+   "value": 7.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2018",
+   "product": "SITC6_8",
+   "value": 7.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2019",
+   "product": "SITC6_8",
+   "value": 7.3
+  },
+  {
+   "geo": "CHN",
+   "time": "2020",
+   "product": "SITC6_8",
+   "value": 8.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2021",
+   "product": "SITC6_8",
+   "value": 8.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2022",
+   "product": "SITC6_8",
+   "value": 7.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2023",
+   "product": "SITC6_8",
+   "value": 7.8
+  },
+  {
+   "geo": "CHN",
+   "time": "2024",
+   "product": "SITC6_8",
+   "value": 7.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2025",
+   "product": "SITC6_8",
+   "value": 7.2
+  },
+  {
+   "geo": "USA",
+   "time": "2002",
+   "product": "SITC6_8",
+   "value": 18.7
+  },
+  {
+   "geo": "USA",
+   "time": "2003",
+   "product": "SITC6_8",
+   "value": 17.5
+  },
+  {
+   "geo": "USA",
+   "time": "2004",
+   "product": "SITC6_8",
+   "value": 17.4
+  },
+  {
+   "geo": "USA",
+   "time": "2005",
+   "product": "SITC6_8",
+   "value": 16.9
+  },
+  {
+   "geo": "USA",
+   "time": "2006",
+   "product": "SITC6_8",
+   "value": 16.0
+  },
+  {
+   "geo": "USA",
+   "time": "2007",
+   "product": "SITC6_8",
+   "value": 14.2
+  },
+  {
+   "geo": "USA",
+   "time": "2008",
+   "product": "SITC6_8",
+   "value": 12.9
+  },
+  {
+   "geo": "USA",
+   "time": "2009",
+   "product": "SITC6_8",
+   "value": 12.2
+  },
+  {
+   "geo": "USA",
+   "time": "2010",
+   "product": "SITC6_8",
+   "value": 13.0
+  },
+  {
+   "geo": "USA",
+   "time": "2011",
+   "product": "SITC6_8",
+   "value": 12.6
+  },
+  {
+   "geo": "USA",
+   "time": "2012",
+   "product": "SITC6_8",
+   "value": 13.2
+  },
+  {
+   "geo": "USA",
+   "time": "2013",
+   "product": "SITC6_8",
+   "value": 13.2
+  },
+  {
+   "geo": "USA",
+   "time": "2014",
+   "product": "SITC6_8",
+   "value": 13.9
+  },
+  {
+   "geo": "USA",
+   "time": "2015",
+   "product": "SITC6_8",
+   "value": 15.3
+  },
+  {
+   "geo": "USA",
+   "time": "2016",
+   "product": "SITC6_8",
+   "value": 15.2
+  },
+  {
+   "geo": "USA",
+   "time": "2017",
+   "product": "SITC6_8",
+   "value": 15.2
+  },
+  {
+   "geo": "USA",
+   "time": "2018",
+   "product": "SITC6_8",
+   "value": 15.8
+  },
+  {
+   "geo": "USA",
+   "time": "2019",
+   "product": "SITC6_8",
+   "value": 16.1
+  },
+  {
+   "geo": "USA",
+   "time": "2020",
+   "product": "SITC6_8",
+   "value": 16.0
+  },
+  {
+   "geo": "USA",
+   "time": "2021",
+   "product": "SITC6_8",
+   "value": 17.4
+  },
+  {
+   "geo": "USA",
+   "time": "2022",
+   "product": "SITC6_8",
+   "value": 19.4
+  },
+  {
+   "geo": "USA",
+   "time": "2023",
+   "product": "SITC6_8",
+   "value": 18.7
+  },
+  {
+   "geo": "USA",
+   "time": "2024",
+   "product": "SITC6_8",
+   "value": 18.8
+  },
+  {
+   "geo": "USA",
+   "time": "2025",
+   "product": "SITC6_8",
+   "value": 18.5
+  },
+  {
+   "geo": "CHN",
+   "time": "2002",
+   "product": "SITC7",
+   "value": 4.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2003",
+   "product": "SITC7",
+   "value": 5.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2004",
+   "product": "SITC7",
+   "value": 6.0
+  },
+  {
+   "geo": "CHN",
+   "time": "2005",
+   "product": "SITC7",
+   "value": 5.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2006",
+   "product": "SITC7",
+   "value": 6.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2007",
+   "product": "SITC7",
+   "value": 6.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2008",
+   "product": "SITC7",
+   "value": 7.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2009",
+   "product": "SITC7",
+   "value": 9.3
+  },
+  {
+   "geo": "CHN",
+   "time": "2010",
+   "product": "SITC7",
+   "value": 10.8
+  },
+  {
+   "geo": "CHN",
+   "time": "2011",
+   "product": "SITC7",
+   "value": 11.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2012",
+   "product": "SITC7",
+   "value": 10.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2013",
+   "product": "SITC7",
+   "value": 10.5
+  },
+  {
+   "geo": "CHN",
+   "time": "2014",
+   "product": "SITC7",
+   "value": 11.5
+  },
+  {
+   "geo": "CHN",
+   "time": "2015",
+   "product": "SITC7",
+   "value": 10.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2016",
+   "product": "SITC7",
+   "value": 10.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2017",
+   "product": "SITC7",
+   "value": 11.8
+  },
+  {
+   "geo": "CHN",
+   "time": "2018",
+   "product": "SITC7",
+   "value": 12.3
+  },
+  {
+   "geo": "CHN",
+   "time": "2019",
+   "product": "SITC7",
+   "value": 12.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2020",
+   "product": "SITC7",
+   "value": 13.8
+  },
+  {
+   "geo": "CHN",
+   "time": "2021",
+   "product": "SITC7",
+   "value": 13.9
+  },
+  {
+   "geo": "CHN",
+   "time": "2022",
+   "product": "SITC7",
+   "value": 12.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2023",
+   "product": "SITC7",
+   "value": 11.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2024",
+   "product": "SITC7",
+   "value": 10.8
+  },
+  {
+   "geo": "CHN",
+   "time": "2025",
+   "product": "SITC7",
+   "value": 9.7
+  },
+  {
+   "geo": "USA",
+   "time": "2002",
+   "product": "SITC7",
+   "value": 21.0
+  },
+  {
+   "geo": "USA",
+   "time": "2003",
+   "product": "SITC7",
+   "value": 19.4
+  },
+  {
+   "geo": "USA",
+   "time": "2004",
+   "product": "SITC7",
+   "value": 18.0
+  },
+  {
+   "geo": "USA",
+   "time": "2005",
+   "product": "SITC7",
+   "value": 18.0
+  },
+  {
+   "geo": "USA",
+   "time": "2006",
+   "product": "SITC7",
+   "value": 17.3
+  },
+  {
+   "geo": "USA",
+   "time": "2007",
+   "product": "SITC7",
+   "value": 15.5
+  },
+  {
+   "geo": "USA",
+   "time": "2008",
+   "product": "SITC7",
+   "value": 14.1
+  },
+  {
+   "geo": "USA",
+   "time": "2009",
+   "product": "SITC7",
+   "value": 13.6
+  },
+  {
+   "geo": "USA",
+   "time": "2010",
+   "product": "SITC7",
+   "value": 13.3
+  },
+  {
+   "geo": "USA",
+   "time": "2011",
+   "product": "SITC7",
+   "value": 13.4
+  },
+  {
+   "geo": "USA",
+   "time": "2012",
+   "product": "SITC7",
+   "value": 14.4
+  },
+  {
+   "geo": "USA",
+   "time": "2013",
+   "product": "SITC7",
+   "value": 14.6
+  },
+  {
+   "geo": "USA",
+   "time": "2014",
+   "product": "SITC7",
+   "value": 15.7
+  },
+  {
+   "geo": "USA",
+   "time": "2015",
+   "product": "SITC7",
+   "value": 17.8
+  },
+  {
+   "geo": "USA",
+   "time": "2016",
+   "product": "SITC7",
+   "value": 17.4
+  },
+  {
+   "geo": "USA",
+   "time": "2017",
+   "product": "SITC7",
+   "value": 17.1
+  },
+  {
+   "geo": "USA",
+   "time": "2018",
+   "product": "SITC7",
+   "value": 17.2
+  },
+  {
+   "geo": "USA",
+   "time": "2019",
+   "product": "SITC7",
+   "value": 18.0
+  },
+  {
+   "geo": "USA",
+   "time": "2020",
+   "product": "SITC7",
+   "value": 17.4
+  },
+  {
+   "geo": "USA",
+   "time": "2021",
+   "product": "SITC7",
+   "value": 17.5
+  },
+  {
+   "geo": "USA",
+   "time": "2022",
+   "product": "SITC7",
+   "value": 19.9
+  },
+  {
+   "geo": "USA",
+   "time": "2023",
+   "product": "SITC7",
+   "value": 20.2
+  },
+  {
+   "geo": "USA",
+   "time": "2024",
+   "product": "SITC7",
+   "value": 20.5
+  },
+  {
+   "geo": "USA",
+   "time": "2025",
+   "product": "SITC7",
+   "value": 19.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2002",
+   "product": "TOTAL",
+   "value": 3.3
+  },
+  {
+   "geo": "CHN",
+   "time": "2003",
+   "product": "TOTAL",
+   "value": 4.0
+  },
+  {
+   "geo": "CHN",
+   "time": "2004",
+   "product": "TOTAL",
+   "value": 4.2
+  },
+  {
+   "geo": "CHN",
+   "time": "2005",
+   "product": "TOTAL",
+   "value": 4.2
+  },
+  {
+   "geo": "CHN",
+   "time": "2006",
+   "product": "TOTAL",
+   "value": 4.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2007",
+   "product": "TOTAL",
+   "value": 4.9
+  },
+  {
+   "geo": "CHN",
+   "time": "2008",
+   "product": "TOTAL",
+   "value": 5.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2009",
+   "product": "TOTAL",
+   "value": 6.5
+  },
+  {
+   "geo": "CHN",
+   "time": "2010",
+   "product": "TOTAL",
+   "value": 7.3
+  },
+  {
+   "geo": "CHN",
+   "time": "2011",
+   "product": "TOTAL",
+   "value": 7.8
+  },
+  {
+   "geo": "CHN",
+   "time": "2012",
+   "product": "TOTAL",
+   "value": 7.5
+  },
+  {
+   "geo": "CHN",
+   "time": "2013",
+   "product": "TOTAL",
+   "value": 7.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2014",
+   "product": "TOTAL",
+   "value": 8.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2015",
+   "product": "TOTAL",
+   "value": 7.8
+  },
+  {
+   "geo": "CHN",
+   "time": "2016",
+   "product": "TOTAL",
+   "value": 8.2
+  },
+  {
+   "geo": "CHN",
+   "time": "2017",
+   "product": "TOTAL",
+   "value": 9.0
+  },
+  {
+   "geo": "CHN",
+   "time": "2018",
+   "product": "TOTAL",
+   "value": 9.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2019",
+   "product": "TOTAL",
+   "value": 9.3
+  },
+  {
+   "geo": "CHN",
+   "time": "2020",
+   "product": "TOTAL",
+   "value": 10.5
+  },
+  {
+   "geo": "CHN",
+   "time": "2021",
+   "product": "TOTAL",
+   "value": 10.2
+  },
+  {
+   "geo": "CHN",
+   "time": "2022",
+   "product": "TOTAL",
+   "value": 9.0
+  },
+  {
+   "geo": "CHN",
+   "time": "2023",
+   "product": "TOTAL",
+   "value": 8.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2024",
+   "product": "TOTAL",
+   "value": 8.2
+  },
+  {
+   "geo": "CHN",
+   "time": "2025",
+   "product": "TOTAL",
+   "value": 7.5
+  },
+  {
+   "geo": "USA",
+   "time": "2002",
+   "product": "TOTAL",
+   "value": 20.4
+  },
+  {
+   "geo": "USA",
+   "time": "2003",
+   "product": "TOTAL",
+   "value": 19.3
+  },
+  {
+   "geo": "USA",
+   "time": "2004",
+   "product": "TOTAL",
+   "value": 18.4
+  },
+  {
+   "geo": "USA",
+   "time": "2005",
+   "product": "TOTAL",
+   "value": 18.2
+  },
+  {
+   "geo": "USA",
+   "time": "2006",
+   "product": "TOTAL",
+   "value": 17.6
+  },
+  {
+   "geo": "USA",
+   "time": "2007",
+   "product": "TOTAL",
+   "value": 15.9
+  },
+  {
+   "geo": "USA",
+   "time": "2008",
+   "product": "TOTAL",
+   "value": 14.6
+  },
+  {
+   "geo": "USA",
+   "time": "2009",
+   "product": "TOTAL",
+   "value": 14.3
+  },
+  {
+   "geo": "USA",
+   "time": "2010",
+   "product": "TOTAL",
+   "value": 14.1
+  },
+  {
+   "geo": "USA",
+   "time": "2011",
+   "product": "TOTAL",
+   "value": 13.7
+  },
+  {
+   "geo": "USA",
+   "time": "2012",
+   "product": "TOTAL",
+   "value": 14.0
+  },
+  {
+   "geo": "USA",
+   "time": "2013",
+   "product": "TOTAL",
+   "value": 13.8
+  },
+  {
+   "geo": "USA",
+   "time": "2014",
+   "product": "TOTAL",
+   "value": 14.8
+  },
+  {
+   "geo": "USA",
+   "time": "2015",
+   "product": "TOTAL",
+   "value": 16.6
+  },
+  {
+   "geo": "USA",
+   "time": "2016",
+   "product": "TOTAL",
+   "value": 16.5
+  },
+  {
+   "geo": "USA",
+   "time": "2017",
+   "product": "TOTAL",
+   "value": 16.2
+  },
+  {
+   "geo": "USA",
+   "time": "2018",
+   "product": "TOTAL",
+   "value": 17.0
+  },
+  {
+   "geo": "USA",
+   "time": "2019",
+   "product": "TOTAL",
+   "value": 18.0
+  },
+  {
+   "geo": "USA",
+   "time": "2020",
+   "product": "TOTAL",
+   "value": 18.3
+  },
+  {
+   "geo": "USA",
+   "time": "2021",
+   "product": "TOTAL",
+   "value": 18.3
+  },
+  {
+   "geo": "USA",
+   "time": "2022",
+   "product": "TOTAL",
+   "value": 19.8
+  },
+  {
+   "geo": "USA",
+   "time": "2023",
+   "product": "TOTAL",
+   "value": 19.7
+  },
+  {
+   "geo": "USA",
+   "time": "2024",
+   "product": "TOTAL",
+   "value": 20.6
+  },
+  {
+   "geo": "USA",
+   "time": "2025",
+   "product": "TOTAL",
+   "value": 21.0
+  }
+ ]
+}

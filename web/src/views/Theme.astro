@@ -1,67 +1,54 @@
 ---
 import Base from "../layouts/Base.astro";
-import Figure from "../components/Figure.astro";
-import { themeContent } from "../lib/content";
-import { ui, paths, type Lang } from "../lib/i18n";
-import { loadChart } from "../lib/data";
+import PageHead from "../components/PageHead.astro";
+import SectionBar from "../components/SectionBar.astro";
+import LensSection from "../components/LensSection.astro";
+import LinkList from "../components/LinkList.astro";
+import { LENSES, figuresOf, published, type Theme } from "../lib/themes";
+import { formatDate, lensPath, themePath, type Lang } from "../lib/i18n";
 import "../styles/charts.css";
 
-interface Props { lang: Lang }
-const { lang } = Astro.props;
-const t = ui[lang];
-const c = themeContent[lang];
+interface Props { lang: Lang; theme: Theme }
+const { lang, theme } = Astro.props;
 
-// Países de la UE para "Destacar un país", ordenados por nombre en el idioma de la página
-const geos = loadChart("d1-empresas-ia").geos;
-const countries = Object.entries(geos)
-  .filter(([code, g]) => g.eu && !g.aggregate)
-  .map(([code, g]) => ({ code, name: g[lang] }))
-  .sort((a, b) => a.name.localeCompare(b.name, lang));
+const copy = {
+  es: { lenses: "Miradas", sameLens: "Esta mirada en todos los temas", published: "Publicado el", charts: "gráficos", other: "Otros temas" },
+  en: { lenses: "Lenses", sameLens: "This lens across all themes", published: "Published on", charts: "charts", other: "Other themes" },
+}[lang];
+
+const nFigs = figuresOf(theme).length;
+const others = published().filter((t) => t.id !== theme.id);
 ---
-<Base lang={lang} page="theme" title={c.title} description={c.dek}>
-  <header class="wrap theme-head">
-    <h1>{c.title}</h1>
-    <p class="dek">{c.dek}</p>
-  </header>
+<Base lang={lang} path={themePath(theme.slug)} section="themes" title={theme.title[lang]} description={theme.dek?.[lang]}>
+  <PageHead
+    title={theme.title[lang]}
+    dek={theme.dek?.[lang]}
+    meta={`${copy.published} ${formatDate(theme.published!, lang)}. ${nFigs} ${copy.charts}.`}
+  />
 
-  <div class="lensbar">
-    <div class="wrap lensbar-inner">
-      <nav aria-label={c.lensesLabel}>
-        <ul>
-          {c.lenses.map((l) => (
-            <li><a href={`#${l.anchor}`}><span class="lb-name">{l.name}</span><span class="lb-short">{l.short}</span></a></li>
-          ))}
-        </ul>
-      </nav>
-      <label class="focus">
-        <span>{t.yourCountry}</span>
-        <select data-focus-select>
-          <option value="">{t.none}</option>
-          {countries.map((o) => <option value={o.code}>{o.name}</option>)}
-        </select>
-      </label>
-    </div>
-  </div>
+  <SectionBar
+    lang={lang}
+    label={copy.lenses}
+    items={LENSES.map((l) => ({ href: `#${l.slug[lang]}`, name: l.name[lang], short: l.short[lang] }))}
+  />
 
-  {c.lenses.map((l) => (
-    <section class="lens wrap" id={l.anchor} aria-labelledby={`${l.anchor}-h`}>
-      <header class="lens-head">
-        <h2 id={`${l.anchor}-h`}>{l.name}</h2>
-        <p class="lede">{l.lede}</p>
-      </header>
-      {l.body.map((b) =>
-        "p" in b
-          ? <p class="prose body">{b.p}</p>
-          : <Figure id={b.fig} lang={lang} code={b.code} />
-      )}
-    </section>
+  {LENSES.map((l) => (
+    <LensSection
+      lang={lang}
+      anchor={l.slug[lang]}
+      heading={l.name[lang]}
+      content={theme.lenses![l.id]}
+      codePrefix={theme.code}
+      crossLink={{ text: copy.sameLens, href: lensPath(l.slug)[lang] }}
+    />
   ))}
 
-  <section class="wrap next">
-    <h2>{c.next.title}</h2>
-    <p class="prose">{c.next.body}</p>
-    <p class="prose"><a href={paths.method[lang]}>{t.navMethod}</a></p>
-  </section>
+  {others.length > 0 && (
+    <section class="wrap others">
+      <h2>{copy.other}</h2>
+      <LinkList items={others.map((o) => ({ href: themePath(o.slug)[lang], title: o.title[lang], dek: o.dek?.[lang] }))} />
+    </section>
+  )}
 
   <script>
     import "../scripts/main.ts";
@@ -69,53 +56,6 @@ const countries = Object.entries(geos)
 </Base>
 
 <style>
-  .theme-head { padding-block: clamp(3rem, 7vw, 5.5rem) 2.5rem; }
-  .theme-head h1 { font-size: clamp(3.6rem, 10vw, 8rem); line-height: 0.85; }
-  .dek { margin-top: 1.5rem; max-width: 38rem; font-size: clamp(1.15rem, 1.7vw, 1.4rem); line-height: 1.45; color: var(--ink-2); }
-
-  .lensbar {
-    position: sticky;
-    top: 3.75rem;
-    z-index: 9;
-    background: color-mix(in srgb, var(--paper) 94%, transparent);
-    backdrop-filter: blur(8px);
-    border-block: 1px solid var(--rule);
-  }
-  .lensbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
-  .lensbar ul { list-style: none; margin: 0; padding: 0; display: flex; gap: clamp(1rem, 3vw, 2.5rem); }
-  .lensbar a { display: grid; padding-block: 0.7rem; text-decoration: none; color: var(--ink); border-bottom: 3px solid transparent; }
-  .lensbar a:hover { border-bottom-color: var(--rule-strong); }
-  .lensbar a.active { border-bottom-color: var(--eu); }
-  .lb-name { font-family: var(--font-display); font-weight: 800; font-size: 1.3rem; line-height: 1.05; }
-  .lb-short { font-family: var(--font-semi); font-size: 0.85rem; color: var(--ink-3); }
-
-  .focus { display: grid; gap: 0.2rem; font-family: var(--font-semi); font-size: 0.85rem; color: var(--ink-3); flex: none; }
-  .focus select {
-    font: 600 1rem var(--font-semi);
-    color: var(--ink);
-    background: var(--paper-raised);
-    border: 1px solid var(--rule-strong);
-    border-radius: 4px;
-    padding: 0.35rem 2rem 0.35rem 0.6rem;
-    min-height: 36px;
-  }
-
-  .lens { padding-top: clamp(3.5rem, 7vw, 6rem); }
-  .lens-head { margin-bottom: 2rem; }
-  .lens h2 { font-size: clamp(2.8rem, 6.5vw, 5rem); line-height: 0.9; }
-  .lede { margin-top: 1rem; max-width: 34rem; font-size: clamp(1.25rem, 2vw, 1.55rem); line-height: 1.35; font-weight: 500; }
-  .body { margin-block: 2rem 2.5rem; }
-
-  .next { padding-top: 5rem; }
-  .next h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem; }
-
-  @media (max-width: 760px) {
-    .lensbar { top: 3.75rem; }
-    .lensbar-inner { flex-direction: column; align-items: stretch; gap: 0; }
-    .lensbar nav { overflow-x: auto; scrollbar-width: none; }
-    .lb-short { display: none; }
-    .lb-name { font-size: 1.1rem; white-space: nowrap; }
-    .lensbar a { padding-block: 0.55rem; }
-    .focus { grid-template-columns: auto 1fr; align-items: center; gap: 0.6rem; padding-bottom: 0.5rem; }
-  }
+  .others { padding-top: 5rem; }
+  .others h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem; }
 </style>

@@ -1,0 +1,1216 @@
+{
+ "id": "cg1-cuota-mundial",
+ "lens": "gigantes",
+ "theme": "comercio",
+ "title": {
+  "es": "China ya exporta más que la UE: desde 2002 casi ha triplicado su cuota del comercio mundial",
+  "en": "China now exports more than the EU: its share of world trade has almost tripled since 2002"
+ },
+ "subtitle": {
+  "es": "Cuota de cada economía en las exportaciones o importaciones mundiales de bienes, en %",
+  "en": "Each economy's share of world exports or imports of goods, in %"
+ },
+ "unit": {
+  "es": "% del total mundial",
+  "en": "% of world total"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "ext_lt_introeu27_2020",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/ext_lt_introeu27_2020/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Para la UE solo cuenta el comercio con países de fuera de la Unión: las ventas entre Estados miembros no son exportaciones mundiales.",
+   "China no incluye Hong Kong.",
+   "Comercio de bienes. No incluye servicios."
+  ],
+  "en": [
+   "For the EU only trade with non-EU countries counts: sales between member states are not world exports.",
+   "China excludes Hong Kong.",
+   "Trade in goods. Services are not included."
+  ]
+ },
+ "retrieved": "2026-09-24",
+ "geos": {
+  "CHN": {
+   "es": "China",
+   "en": "China",
+   "eu": false,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "JPN": {
+   "es": "Japón",
+   "en": "Japan",
+   "eu": false,
+   "aggregate": false
+  },
+  "USA": {
+   "es": "Estados Unidos",
+   "en": "United States",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "dimensions": {
+  "flow": {
+   "exportaciones": {
+    "es": "Exportaciones",
+    "en": "Exports"
+   },
+   "importaciones": {
+    "es": "Importaciones",
+    "en": "Imports"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "CHN",
+   "time": "2002",
+   "flow": "exportaciones",
+   "value": 6.5
+  },
+  {
+   "geo": "CHN",
+   "time": "2003",
+   "flow": "exportaciones",
+   "value": 7.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2004",
+   "flow": "exportaciones",
+   "value": 8.5
+  },
+  {
+   "geo": "CHN",
+   "time": "2005",
+   "flow": "exportaciones",
+   "value": 9.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2006",
+   "flow": "exportaciones",
+   "value": 10.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2007",
+   "flow": "exportaciones",
+   "value": 11.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2008",
+   "flow": "exportaciones",
+   "value": 11.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2009",
+   "flow": "exportaciones",
+   "value": 12.5
+  },
+  {
+   "geo": "CHN",
+   "time": "2010",
+   "flow": "exportaciones",
+   "value": 13.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2011",
+   "flow": "exportaciones",
+   "value": 13.0
+  },
+  {
+   "geo": "CHN",
+   "time": "2012",
+   "flow": "exportaciones",
+   "value": 13.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2013",
+   "flow": "exportaciones",
+   "value": 14.5
+  },
+  {
+   "geo": "CHN",
+   "time": "2014",
+   "flow": "exportaciones",
+   "value": 15.3
+  },
+  {
+   "geo": "CHN",
+   "time": "2015",
+   "flow": "exportaciones",
+   "value": 17.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2016",
+   "flow": "exportaciones",
+   "value": 16.5
+  },
+  {
+   "geo": "CHN",
+   "time": "2017",
+   "flow": "exportaciones",
+   "value": 16.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2018",
+   "flow": "exportaciones",
+   "value": 16.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2019",
+   "flow": "exportaciones",
+   "value": 16.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2020",
+   "flow": "exportaciones",
+   "value": 18.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2021",
+   "flow": "exportaciones",
+   "value": 18.9
+  },
+  {
+   "geo": "CHN",
+   "time": "2022",
+   "flow": "exportaciones",
+   "value": 18.2
+  },
+  {
+   "geo": "CHN",
+   "time": "2023",
+   "flow": "exportaciones",
+   "value": 18.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2024",
+   "flow": "exportaciones",
+   "value": 18.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2002",
+   "flow": "exportaciones",
+   "value": 18.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2003",
+   "flow": "exportaciones",
+   "value": 19.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2004",
+   "flow": "exportaciones",
+   "value": 19.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2005",
+   "flow": "exportaciones",
+   "value": 17.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2006",
+   "flow": "exportaciones",
+   "value": 17.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2007",
+   "flow": "exportaciones",
+   "value": 17.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2008",
+   "flow": "exportaciones",
+   "value": 16.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2009",
+   "flow": "exportaciones",
+   "value": 17.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2010",
+   "flow": "exportaciones",
+   "value": 15.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2011",
+   "flow": "exportaciones",
+   "value": 15.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2012",
+   "flow": "exportaciones",
+   "value": 15.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2013",
+   "flow": "exportaciones",
+   "value": 15.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2014",
+   "flow": "exportaciones",
+   "value": 15.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2015",
+   "flow": "exportaciones",
+   "value": 15.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2016",
+   "flow": "exportaciones",
+   "value": 16.3
+  },
+  {
+   "geo": "EU27",
+   "time": "2017",
+   "flow": "exportaciones",
+   "value": 16.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2018",
+   "flow": "exportaciones",
+   "value": 15.8
+  },
+  {
+   "geo": "EU27",
+   "time": "2019",
+   "flow": "exportaciones",
+   "value": 15.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2020",
+   "flow": "exportaciones",
+   "value": 16.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "flow": "exportaciones",
+   "value": 14.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2022",
+   "flow": "exportaciones",
+   "value": 13.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2023",
+   "flow": "exportaciones",
+   "value": 14.8
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "flow": "exportaciones",
+   "value": 14.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "flow": "exportaciones",
+   "value": 14.7
+  },
+  {
+   "geo": "JPN",
+   "time": "2002",
+   "flow": "exportaciones",
+   "value": 8.3
+  },
+  {
+   "geo": "JPN",
+   "time": "2003",
+   "flow": "exportaciones",
+   "value": 8.2
+  },
+  {
+   "geo": "JPN",
+   "time": "2004",
+   "flow": "exportaciones",
+   "value": 8.2
+  },
+  {
+   "geo": "JPN",
+   "time": "2005",
+   "flow": "exportaciones",
+   "value": 7.4
+  },
+  {
+   "geo": "JPN",
+   "time": "2006",
+   "flow": "exportaciones",
+   "value": 6.9
+  },
+  {
+   "geo": "JPN",
+   "time": "2007",
+   "flow": "exportaciones",
+   "value": 6.7
+  },
+  {
+   "geo": "JPN",
+   "time": "2008",
+   "flow": "exportaciones",
+   "value": 6.2
+  },
+  {
+   "geo": "JPN",
+   "time": "2009",
+   "flow": "exportaciones",
+   "value": 6.1
+  },
+  {
+   "geo": "JPN",
+   "time": "2010",
+   "flow": "exportaciones",
+   "value": 6.4
+  },
+  {
+   "geo": "JPN",
+   "time": "2011",
+   "flow": "exportaciones",
+   "value": 5.7
+  },
+  {
+   "geo": "JPN",
+   "time": "2012",
+   "flow": "exportaciones",
+   "value": 5.3
+  },
+  {
+   "geo": "JPN",
+   "time": "2013",
+   "flow": "exportaciones",
+   "value": 4.7
+  },
+  {
+   "geo": "JPN",
+   "time": "2014",
+   "flow": "exportaciones",
+   "value": 4.5
+  },
+  {
+   "geo": "JPN",
+   "time": "2015",
+   "flow": "exportaciones",
+   "value": 4.7
+  },
+  {
+   "geo": "JPN",
+   "time": "2016",
+   "flow": "exportaciones",
+   "value": 5.1
+  },
+  {
+   "geo": "JPN",
+   "time": "2017",
+   "flow": "exportaciones",
+   "value": 5.0
+  },
+  {
+   "geo": "JPN",
+   "time": "2018",
+   "flow": "exportaciones",
+   "value": 4.8
+  },
+  {
+   "geo": "JPN",
+   "time": "2019",
+   "flow": "exportaciones",
+   "value": 4.7
+  },
+  {
+   "geo": "JPN",
+   "time": "2020",
+   "flow": "exportaciones",
+   "value": 4.6
+  },
+  {
+   "geo": "JPN",
+   "time": "2021",
+   "flow": "exportaciones",
+   "value": 4.3
+  },
+  {
+   "geo": "JPN",
+   "time": "2022",
+   "flow": "exportaciones",
+   "value": 3.8
+  },
+  {
+   "geo": "JPN",
+   "time": "2023",
+   "flow": "exportaciones",
+   "value": 3.8
+  },
+  {
+   "geo": "JPN",
+   "time": "2024",
+   "flow": "exportaciones",
+   "value": 3.7
+  },
+  {
+   "geo": "JPN",
+   "time": "2025",
+   "flow": "exportaciones",
+   "value": 3.6
+  },
+  {
+   "geo": "USA",
+   "time": "2002",
+   "flow": "exportaciones",
+   "value": 13.9
+  },
+  {
+   "geo": "USA",
+   "time": "2003",
+   "flow": "exportaciones",
+   "value": 12.6
+  },
+  {
+   "geo": "USA",
+   "time": "2004",
+   "flow": "exportaciones",
+   "value": 11.7
+  },
+  {
+   "geo": "USA",
+   "time": "2005",
+   "flow": "exportaciones",
+   "value": 11.2
+  },
+  {
+   "geo": "USA",
+   "time": "2006",
+   "flow": "exportaciones",
+   "value": 11.1
+  },
+  {
+   "geo": "USA",
+   "time": "2007",
+   "flow": "exportaciones",
+   "value": 10.9
+  },
+  {
+   "geo": "USA",
+   "time": "2008",
+   "flow": "exportaciones",
+   "value": 10.3
+  },
+  {
+   "geo": "USA",
+   "time": "2009",
+   "flow": "exportaciones",
+   "value": 11.0
+  },
+  {
+   "geo": "USA",
+   "time": "2010",
+   "flow": "exportaciones",
+   "value": 10.6
+  },
+  {
+   "geo": "USA",
+   "time": "2011",
+   "flow": "exportaciones",
+   "value": 10.2
+  },
+  {
+   "geo": "USA",
+   "time": "2012",
+   "flow": "exportaciones",
+   "value": 10.3
+  },
+  {
+   "geo": "USA",
+   "time": "2013",
+   "flow": "exportaciones",
+   "value": 10.3
+  },
+  {
+   "geo": "USA",
+   "time": "2014",
+   "flow": "exportaciones",
+   "value": 10.6
+  },
+  {
+   "geo": "USA",
+   "time": "2015",
+   "flow": "exportaciones",
+   "value": 11.3
+  },
+  {
+   "geo": "USA",
+   "time": "2016",
+   "flow": "exportaciones",
+   "value": 11.4
+  },
+  {
+   "geo": "USA",
+   "time": "2017",
+   "flow": "exportaciones",
+   "value": 11.0
+  },
+  {
+   "geo": "USA",
+   "time": "2018",
+   "flow": "exportaciones",
+   "value": 10.8
+  },
+  {
+   "geo": "USA",
+   "time": "2019",
+   "flow": "exportaciones",
+   "value": 11.0
+  },
+  {
+   "geo": "USA",
+   "time": "2020",
+   "flow": "exportaciones",
+   "value": 10.3
+  },
+  {
+   "geo": "USA",
+   "time": "2021",
+   "flow": "exportaciones",
+   "value": 10.0
+  },
+  {
+   "geo": "USA",
+   "time": "2022",
+   "flow": "exportaciones",
+   "value": 10.4
+  },
+  {
+   "geo": "USA",
+   "time": "2023",
+   "flow": "exportaciones",
+   "value": 10.8
+  },
+  {
+   "geo": "USA",
+   "time": "2024",
+   "flow": "exportaciones",
+   "value": 10.8
+  },
+  {
+   "geo": "USA",
+   "time": "2025",
+   "flow": "exportaciones",
+   "value": 10.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2002",
+   "flow": "importaciones",
+   "value": 5.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2003",
+   "flow": "importaciones",
+   "value": 7.0
+  },
+  {
+   "geo": "CHN",
+   "time": "2004",
+   "flow": "importaciones",
+   "value": 7.8
+  },
+  {
+   "geo": "CHN",
+   "time": "2005",
+   "flow": "importaciones",
+   "value": 7.9
+  },
+  {
+   "geo": "CHN",
+   "time": "2006",
+   "flow": "importaciones",
+   "value": 8.2
+  },
+  {
+   "geo": "CHN",
+   "time": "2007",
+   "flow": "importaciones",
+   "value": 8.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2008",
+   "flow": "importaciones",
+   "value": 8.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2009",
+   "flow": "importaciones",
+   "value": 10.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2010",
+   "flow": "importaciones",
+   "value": 11.2
+  },
+  {
+   "geo": "CHN",
+   "time": "2011",
+   "flow": "importaciones",
+   "value": 11.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2012",
+   "flow": "importaciones",
+   "value": 11.8
+  },
+  {
+   "geo": "CHN",
+   "time": "2013",
+   "flow": "importaciones",
+   "value": 12.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2014",
+   "flow": "importaciones",
+   "value": 12.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2015",
+   "flow": "importaciones",
+   "value": 12.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2016",
+   "flow": "importaciones",
+   "value": 12.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2017",
+   "flow": "importaciones",
+   "value": 12.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2018",
+   "flow": "importaciones",
+   "value": 13.3
+  },
+  {
+   "geo": "CHN",
+   "time": "2019",
+   "flow": "importaciones",
+   "value": 13.3
+  },
+  {
+   "geo": "CHN",
+   "time": "2020",
+   "flow": "importaciones",
+   "value": 14.5
+  },
+  {
+   "geo": "CHN",
+   "time": "2021",
+   "flow": "importaciones",
+   "value": 14.8
+  },
+  {
+   "geo": "CHN",
+   "time": "2022",
+   "flow": "importaciones",
+   "value": 13.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2023",
+   "flow": "importaciones",
+   "value": 13.2
+  },
+  {
+   "geo": "CHN",
+   "time": "2024",
+   "flow": "importaciones",
+   "value": 12.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2002",
+   "flow": "importaciones",
+   "value": 17.3
+  },
+  {
+   "geo": "EU27",
+   "time": "2003",
+   "flow": "importaciones",
+   "value": 17.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2004",
+   "flow": "importaciones",
+   "value": 17.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2005",
+   "flow": "importaciones",
+   "value": 17.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2006",
+   "flow": "importaciones",
+   "value": 17.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2007",
+   "flow": "importaciones",
+   "value": 17.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2008",
+   "flow": "importaciones",
+   "value": 17.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2009",
+   "flow": "importaciones",
+   "value": 16.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2010",
+   "flow": "importaciones",
+   "value": 15.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2011",
+   "flow": "importaciones",
+   "value": 15.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2012",
+   "flow": "importaciones",
+   "value": 14.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2013",
+   "flow": "importaciones",
+   "value": 14.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2014",
+   "flow": "importaciones",
+   "value": 13.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2015",
+   "flow": "importaciones",
+   "value": 13.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2016",
+   "flow": "importaciones",
+   "value": 13.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2017",
+   "flow": "importaciones",
+   "value": 13.8
+  },
+  {
+   "geo": "EU27",
+   "time": "2018",
+   "flow": "importaciones",
+   "value": 14.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2019",
+   "flow": "importaciones",
+   "value": 13.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2020",
+   "flow": "importaciones",
+   "value": 13.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "flow": "importaciones",
+   "value": 13.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2022",
+   "flow": "importaciones",
+   "value": 15.3
+  },
+  {
+   "geo": "EU27",
+   "time": "2023",
+   "flow": "importaciones",
+   "value": 14.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "flow": "importaciones",
+   "value": 13.3
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "flow": "importaciones",
+   "value": 13.4
+  },
+  {
+   "geo": "JPN",
+   "time": "2002",
+   "flow": "importaciones",
+   "value": 6.6
+  },
+  {
+   "geo": "JPN",
+   "time": "2003",
+   "flow": "importaciones",
+   "value": 6.5
+  },
+  {
+   "geo": "JPN",
+   "time": "2004",
+   "flow": "importaciones",
+   "value": 6.3
+  },
+  {
+   "geo": "JPN",
+   "time": "2005",
+   "flow": "importaciones",
+   "value": 6.2
+  },
+  {
+   "geo": "JPN",
+   "time": "2006",
+   "flow": "importaciones",
+   "value": 6.0
+  },
+  {
+   "geo": "JPN",
+   "time": "2007",
+   "flow": "importaciones",
+   "value": 5.6
+  },
+  {
+   "geo": "JPN",
+   "time": "2008",
+   "flow": "importaciones",
+   "value": 5.9
+  },
+  {
+   "geo": "JPN",
+   "time": "2009",
+   "flow": "importaciones",
+   "value": 5.5
+  },
+  {
+   "geo": "JPN",
+   "time": "2010",
+   "flow": "importaciones",
+   "value": 5.6
+  },
+  {
+   "geo": "JPN",
+   "time": "2011",
+   "flow": "importaciones",
+   "value": 5.8
+  },
+  {
+   "geo": "JPN",
+   "time": "2012",
+   "flow": "importaciones",
+   "value": 5.8
+  },
+  {
+   "geo": "JPN",
+   "time": "2013",
+   "flow": "importaciones",
+   "value": 5.4
+  },
+  {
+   "geo": "JPN",
+   "time": "2014",
+   "flow": "importaciones",
+   "value": 5.2
+  },
+  {
+   "geo": "JPN",
+   "time": "2015",
+   "flow": "importaciones",
+   "value": 4.6
+  },
+  {
+   "geo": "JPN",
+   "time": "2016",
+   "flow": "importaciones",
+   "value": 4.6
+  },
+  {
+   "geo": "JPN",
+   "time": "2017",
+   "flow": "importaciones",
+   "value": 4.6
+  },
+  {
+   "geo": "JPN",
+   "time": "2018",
+   "flow": "importaciones",
+   "value": 4.7
+  },
+  {
+   "geo": "JPN",
+   "time": "2019",
+   "flow": "importaciones",
+   "value": 4.6
+  },
+  {
+   "geo": "JPN",
+   "time": "2020",
+   "flow": "importaciones",
+   "value": 4.5
+  },
+  {
+   "geo": "JPN",
+   "time": "2021",
+   "flow": "importaciones",
+   "value": 4.3
+  },
+  {
+   "geo": "JPN",
+   "time": "2022",
+   "flow": "importaciones",
+   "value": 4.3
+  },
+  {
+   "geo": "JPN",
+   "time": "2023",
+   "flow": "importaciones",
+   "value": 4.1
+  },
+  {
+   "geo": "JPN",
+   "time": "2024",
+   "flow": "importaciones",
+   "value": 3.7
+  },
+  {
+   "geo": "JPN",
+   "time": "2025",
+   "flow": "importaciones",
+   "value": 3.5
+  },
+  {
+   "geo": "USA",
+   "time": "2002",
+   "flow": "importaciones",
+   "value": 23.3
+  },
+  {
+   "geo": "USA",
+   "time": "2003",
+   "flow": "importaciones",
+   "value": 22.0
+  },
+  {
+   "geo": "USA",
+   "time": "2004",
+   "flow": "importaciones",
+   "value": 21.2
+  },
+  {
+   "geo": "USA",
+   "time": "2005",
+   "flow": "importaciones",
+   "value": 20.8
+  },
+  {
+   "geo": "USA",
+   "time": "2006",
+   "flow": "importaciones",
+   "value": 20.0
+  },
+  {
+   "geo": "USA",
+   "time": "2007",
+   "flow": "importaciones",
+   "value": 18.3
+  },
+  {
+   "geo": "USA",
+   "time": "2008",
+   "flow": "importaciones",
+   "value": 16.7
+  },
+  {
+   "geo": "USA",
+   "time": "2009",
+   "flow": "importaciones",
+   "value": 16.0
+  },
+  {
+   "geo": "USA",
+   "time": "2010",
+   "flow": "importaciones",
+   "value": 15.8
+  },
+  {
+   "geo": "USA",
+   "time": "2011",
+   "flow": "importaciones",
+   "value": 15.2
+  },
+  {
+   "geo": "USA",
+   "time": "2012",
+   "flow": "importaciones",
+   "value": 15.2
+  },
+  {
+   "geo": "USA",
+   "time": "2013",
+   "flow": "importaciones",
+   "value": 15.0
+  },
+  {
+   "geo": "USA",
+   "time": "2014",
+   "flow": "importaciones",
+   "value": 15.6
+  },
+  {
+   "geo": "USA",
+   "time": "2015",
+   "flow": "importaciones",
+   "value": 17.0
+  },
+  {
+   "geo": "USA",
+   "time": "2016",
+   "flow": "importaciones",
+   "value": 17.2
+  },
+  {
+   "geo": "USA",
+   "time": "2017",
+   "flow": "importaciones",
+   "value": 16.5
+  },
+  {
+   "geo": "USA",
+   "time": "2018",
+   "flow": "importaciones",
+   "value": 16.3
+  },
+  {
+   "geo": "USA",
+   "time": "2019",
+   "flow": "importaciones",
+   "value": 16.5
+  },
+  {
+   "geo": "USA",
+   "time": "2020",
+   "flow": "importaciones",
+   "value": 16.9
+  },
+  {
+   "geo": "USA",
+   "time": "2021",
+   "flow": "importaciones",
+   "value": 16.2
+  },
+  {
+   "geo": "USA",
+   "time": "2022",
+   "flow": "importaciones",
+   "value": 16.3
+  },
+  {
+   "geo": "USA",
+   "time": "2023",
+   "flow": "importaciones",
+   "value": 16.3
+  },
+  {
+   "geo": "USA",
+   "time": "2024",
+   "flow": "importaciones",
+   "value": 16.8
+  },
+  {
+   "geo": "USA",
+   "time": "2025",
+   "flow": "importaciones",
+   "value": 16.4
+  }
+ ]
+}

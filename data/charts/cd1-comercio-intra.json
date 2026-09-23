@@ -1,0 +1,486 @@
+{
+ "id": "cd1-comercio-intra",
+ "lens": "dentro",
+ "theme": "comercio",
+ "title": {
+  "es": "El primer cliente de Europa es Europa: seis de cada diez euros exportados se quedan en la UE",
+  "en": "Europe's first customer is Europe: six in every ten euros exported stay in the EU"
+ },
+ "subtitle": {
+  "es": "Parte de las exportaciones de bienes de cada país que va a otros países de la UE, en %, 2004 y 2025",
+  "en": "Share of each country's goods exports that goes to other EU countries, in %, 2004 and 2025"
+ },
+ "unit": {
+  "es": "% de las exportaciones",
+  "en": "% of exports"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "ext_lt_intratrd",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/ext_lt_intratrd/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Se compara con 2004, el año de la mayor ampliación de la UE.",
+   "Los países con grandes centros de multinacionales (Irlanda, Chipre o Eslovenia) pueden reflejar reexportaciones hacia fuera de la UE."
+  ],
+  "en": [
+   "Compared with 2004, the year of the EU's largest enlargement.",
+   "Countries hosting large multinational hubs (Ireland, Cyprus or Slovenia) may reflect re-exports outside the EU."
+  ]
+ },
+ "retrieved": "2026-09-24",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2004",
+   "value": 70.6
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 69.1
+  },
+  {
+   "geo": "BEL",
+   "time": "2004",
+   "value": 68.5
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 68.9
+  },
+  {
+   "geo": "BGR",
+   "time": "2004",
+   "value": 60.2
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 64.1
+  },
+  {
+   "geo": "CYP",
+   "time": "2004",
+   "value": 44.9
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 27.6
+  },
+  {
+   "geo": "CZE",
+   "time": "2004",
+   "value": 83.1
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 78.8
+  },
+  {
+   "geo": "DEU",
+   "time": "2004",
+   "value": 56.7
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 55.9
+  },
+  {
+   "geo": "DNK",
+   "time": "2004",
+   "value": 62.1
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 54.3
+  },
+  {
+   "geo": "ESP",
+   "time": "2004",
+   "value": 65.5
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 61.8
+  },
+  {
+   "geo": "EST",
+   "time": "2004",
+   "value": 76.6
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 74.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2004",
+   "value": 61.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 61.0
+  },
+  {
+   "geo": "FIN",
+   "time": "2004",
+   "value": 51.1
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 56.5
+  },
+  {
+   "geo": "FRA",
+   "time": "2004",
+   "value": 56.7
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 53.7
+  },
+  {
+   "geo": "GRC",
+   "time": "2004",
+   "value": 59.1
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 57.1
+  },
+  {
+   "geo": "HRV",
+   "time": "2004",
+   "value": 64.6
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 66.5
+  },
+  {
+   "geo": "HUN",
+   "time": "2004",
+   "value": 78.8
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 75.2
+  },
+  {
+   "geo": "IRL",
+   "time": "2004",
+   "value": 45.0
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 33.5
+  },
+  {
+   "geo": "ITA",
+   "time": "2004",
+   "value": 55.6
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 51.3
+  },
+  {
+   "geo": "LTU",
+   "time": "2004",
+   "value": 61.9
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 69.3
+  },
+  {
+   "geo": "LUX",
+   "time": "2004",
+   "value": 81.8
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 83.1
+  },
+  {
+   "geo": "LVA",
+   "time": "2004",
+   "value": 64.7
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 69.2
+  },
+  {
+   "geo": "MLT",
+   "time": "2004",
+   "value": 38.1
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 51.9
+  },
+  {
+   "geo": "NLD",
+   "time": "2004",
+   "value": 69.9
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 69.1
+  },
+  {
+   "geo": "POL",
+   "time": "2004",
+   "value": 75.2
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 74.8
+  },
+  {
+   "geo": "PRT",
+   "time": "2004",
+   "value": 70.5
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 72.1
+  },
+  {
+   "geo": "ROU",
+   "time": "2004",
+   "value": 68.8
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 71.4
+  },
+  {
+   "geo": "SVK",
+   "time": "2004",
+   "value": 84.3
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 78.3
+  },
+  {
+   "geo": "SVN",
+   "time": "2004",
+   "value": 74.5
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 49.2
+  },
+  {
+   "geo": "SWE",
+   "time": "2004",
+   "value": 51.5
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 54.4
+  }
+ ]
+}
