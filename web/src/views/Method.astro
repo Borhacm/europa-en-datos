@@ -1,0 +1,118 @@
+---
+import Base from "../layouts/Base.astro";
+import { loadChart } from "../lib/data";
+import { themeContent } from "../lib/content";
+import { ui, paths, formatDate, type Lang } from "../lib/i18n";
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = ui[lang];
+
+const figs = themeContent[lang].lenses.flatMap((l) =>
+  l.body.filter((b): b is { fig: string; code: string } => "fig" in b).map((b) => ({ ...b, lens: l.name, anchor: l.anchor })),
+);
+const charts = figs.map((f) => ({ ...f, chart: loadChart(f.fig) }));
+
+const copy = {
+  es: {
+    title: "Metodología",
+    intro: "Cómo se han obtenido, tratado y presentado los datos de esta web.",
+    principles: "Principios",
+    list: [
+      "Solo datos abiertos y públicos. Priorizamos fuentes oficiales (Eurostat, OCDE). Cuando no cubren un tema, usamos fuentes académicas o independientes reconocidas (Banco Mundial, Epoch AI, V-Dem) y lo indicamos en cada gráfico.",
+      "Cada gráfico enlaza a su fuente, indica su licencia y la fecha de descarga, y permite ver y descargar los datos.",
+      "Los datos se descargan con un proceso automático y reproducible, sin retoques manuales. Las advertencias metodológicas se muestran junto a cada gráfico.",
+      "La UE es siempre la Unión de 27 países (desde 2020). Cuando la fuente no publica un agregado para la UE, lo decimos y explicamos cómo se calcula.",
+    ],
+    colors: "Colores",
+    colorsText: "Los tres bloques tienen siempre el mismo color: azul para la UE, verde para Estados Unidos y rojo para China. El país que destacas aparece en dorado y el resto en gris. La paleta está comprobada para distintos tipos de daltonismo, en modo claro y oscuro.",
+    charts: "Gráficos y fuentes",
+    code: "Gráfico",
+    source: "Fuente",
+    license: "Licencia",
+    retrieved: "Descarga",
+    independent: "Independencia",
+    independentText: "Este es un proyecto independiente de Bocal. No está afiliado a la Unión Europea, a Eurostat, a la OCDE ni a ninguna de las fuentes citadas, y no representa sus opiniones.",
+  },
+  en: {
+    title: "Methodology",
+    intro: "How the data on this site was obtained, processed and presented.",
+    principles: "Principles",
+    list: [
+      "Open, public data only. We prioritise official sources (Eurostat, OECD). Where they do not cover a topic, we use recognised academic or independent sources (World Bank, Epoch AI, V-Dem) and say so on each chart.",
+      "Every chart links to its source, states its licence and download date, and lets you view and download the data.",
+      "Data is downloaded by an automated, reproducible process, with no manual edits. Methodological caveats are shown next to each chart.",
+      "The EU is always the 27-country Union (since 2020). When a source publishes no EU aggregate, we say so and explain how it is computed.",
+    ],
+    colors: "Colours",
+    colorsText: "The three blocs always keep the same colour: blue for the EU, green for the United States and red for China. The country you highlight appears in gold and the rest in grey. The palette is checked against different types of colour blindness, in light and dark mode.",
+    charts: "Charts and sources",
+    code: "Chart",
+    source: "Source",
+    license: "Licence",
+    retrieved: "Retrieved",
+    independent: "Independence",
+    independentText: "This is an independent project by Bocal. It is not affiliated with the European Union, Eurostat, the OECD or any of the sources cited, and does not represent their views.",
+  },
+}[lang];
+---
+<Base lang={lang} page="method" title={copy.title} description={copy.intro}>
+  <article class="wrap method">
+    <h1>{copy.title}</h1>
+    <p class="dek">{copy.intro}</p>
+
+    <h2>{copy.principles}</h2>
+    <ul class="prose">{copy.list.map((i) => <li>{i}</li>)}</ul>
+
+    <h2>{copy.colors}</h2>
+    <p class="prose">{copy.colorsText}</p>
+    <div class="swatches" aria-hidden="true">
+      <span><i style="background:var(--eu)"></i>{loadChart("g1-inversion-id").geos.EU27[lang]}</span>
+      <span><i style="background:var(--usa)"></i>{loadChart("g1-inversion-id").geos.USA[lang]}</span>
+      <span><i style="background:var(--chn)"></i>China</span>
+      <span><i style="background:var(--focus)"></i>{lang === "es" ? "País destacado" : "Highlighted country"}</span>
+      <span><i style="background:var(--context)"></i>{lang === "es" ? "Resto" : "Others"}</span>
+    </div>
+
+    <h2>{copy.charts}</h2>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th scope="col">{copy.code}</th><th scope="col">{copy.source}</th><th scope="col">{copy.license}</th><th scope="col">{copy.retrieved}</th></tr></thead>
+        <tbody>
+          {charts.map((c) => (
+            <tr>
+              <th scope="row"><a href={`${paths.theme[lang]}#${c.fig}`}>{c.code}</a> {c.chart.title[lang]}</th>
+              <td><a href={c.chart.source.url} rel="noopener">{c.chart.source.name}</a> <span class="ds">{c.chart.source.dataset}</span></td>
+              <td>{c.chart.source.license}</td>
+              <td class="num">{formatDate(c.chart.retrieved, lang)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+
+    <h2>{copy.independent}</h2>
+    <p class="prose">{copy.independentText}</p>
+    <p class="prose"><a href="https://bocal.online">bocal.online</a></p>
+  </article>
+</Base>
+
+<style>
+  .method { padding-top: clamp(3rem, 7vw, 5rem); }
+  h1 { font-size: clamp(3.2rem, 8vw, 6rem); line-height: 0.88; }
+  .dek { margin-top: 1.25rem; font-size: 1.25rem; color: var(--ink-2); max-width: 36rem; }
+  h2 { font-size: clamp(1.9rem, 3.5vw, 2.6rem); margin: 3.5rem 0 1.25rem; }
+  ul.prose { padding-left: 1.2rem; }
+  ul.prose li { margin-bottom: 0.75rem; }
+  .swatches { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; font-family: var(--font-semi); color: var(--ink-2); }
+  .swatches span { display: inline-flex; align-items: center; gap: 0.5rem; }
+  .swatches i { width: 14px; height: 14px; border-radius: 3px; display: inline-block; }
+  .table-scroll { overflow-x: auto; border-top: 2px solid var(--ink); }
+  table { border-collapse: collapse; width: 100%; font-family: var(--font-semi); font-size: 0.95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 0.75rem 1rem 0.75rem 0; border-bottom: 1px solid var(--rule); }
+  thead th { font-weight: 600; color: var(--ink-3); }
+  tbody th { font-weight: 500; max-width: 28rem; }
+  tbody th a { font-weight: 700; margin-right: 0.3rem; }
+  .ds { display: block; color: var(--ink-3); font-size: 0.85rem; }
+  td.num { white-space: nowrap; }
+</style>

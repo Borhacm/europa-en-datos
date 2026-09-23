@@ -1,0 +1,660 @@
+{
+ "id": "g3-modelos-ia",
+ "lens": "gigantes",
+ "theme": "ia-digital",
+ "title": {
+  "es": "Los modelos de IA que marcan el ritmo se hacen en EE. UU. y China",
+  "en": "The AI models that set the pace are built in the US and China"
+ },
+ "subtitle": {
+  "es": "Modelos de IA destacados publicados cada año, según el país de las organizaciones que los desarrollan",
+  "en": "Notable AI models released each year, by country of the developing organisations"
+ },
+ "unit": {
+  "es": "modelos",
+  "en": "models"
+ },
+ "source": {
+  "name": "Epoch AI, Data on AI Models",
+  "dataset": "notable_ai_models.csv",
+  "url": "https://epoch.ai/data/ai-models",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "'Destacado' sigue los criterios de Epoch: estado del arte, muchas citas, más de un millón de usuarios, relevancia histórica o coste de entrenamiento superior a un millón de dólares.",
+   "Regla 'participa': el modelo cuenta para un bloque si al menos una organización es de ese bloque. Regla 'solo': únicamente modelos desarrollados dentro de un solo bloque.",
+   "China incluye Hong Kong. El Reino Unido se muestra aparte porque no es de la UE.",
+   "El año 2026 está incompleto (datos hasta la fecha de descarga): no se dibuja en el gráfico, pero sí está en la tabla y en la descarga."
+  ],
+  "en": [
+   "'Notable' follows Epoch's criteria: state of the art, highly cited, over a million users, historical significance or training cost above one million dollars.",
+   "'participa' rule: a model counts for a bloc if at least one organisation is from that bloc. 'solo' rule: only models developed within a single bloc.",
+   "China includes Hong Kong. The United Kingdom is shown separately as it is not in the EU.",
+   "2026 is incomplete (data up to download date): it is not drawn in the chart, but it is in the table and the download."
+  ]
+ },
+ "retrieved": "2026-09-24",
+ "geos": {
+  "CHN": {
+   "es": "China",
+   "en": "China",
+   "eu": false,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "GBR": {
+   "es": "Reino Unido",
+   "en": "United Kingdom",
+   "eu": false,
+   "aggregate": false
+  },
+  "USA": {
+   "es": "Estados Unidos",
+   "en": "United States",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "dimensions": {
+  "rule": {
+   "participa": {
+    "es": "Con participación del bloque",
+    "en": "With bloc participation"
+   },
+   "solo": {
+    "es": "Solo del bloque",
+    "en": "Bloc only"
+   }
+  }
+ },
+ "highlight": [
+  "USA",
+  "CHN",
+  "EU27"
+ ],
+ "partial_year": "2026",
+ "rows": [
+  {
+   "geo": "USA",
+   "time": "2015",
+   "rule": "participa",
+   "value": 19
+  },
+  {
+   "geo": "USA",
+   "time": "2015",
+   "rule": "solo",
+   "value": 16
+  },
+  {
+   "geo": "USA",
+   "time": "2016",
+   "rule": "participa",
+   "value": 36
+  },
+  {
+   "geo": "USA",
+   "time": "2016",
+   "rule": "solo",
+   "value": 29
+  },
+  {
+   "geo": "USA",
+   "time": "2017",
+   "rule": "participa",
+   "value": 29
+  },
+  {
+   "geo": "USA",
+   "time": "2017",
+   "rule": "solo",
+   "value": 20
+  },
+  {
+   "geo": "USA",
+   "time": "2018",
+   "rule": "participa",
+   "value": 27
+  },
+  {
+   "geo": "USA",
+   "time": "2018",
+   "rule": "solo",
+   "value": 22
+  },
+  {
+   "geo": "USA",
+   "time": "2019",
+   "rule": "participa",
+   "value": 56
+  },
+  {
+   "geo": "USA",
+   "time": "2019",
+   "rule": "solo",
+   "value": 43
+  },
+  {
+   "geo": "USA",
+   "time": "2020",
+   "rule": "participa",
+   "value": 37
+  },
+  {
+   "geo": "USA",
+   "time": "2020",
+   "rule": "solo",
+   "value": 29
+  },
+  {
+   "geo": "USA",
+   "time": "2021",
+   "rule": "participa",
+   "value": 54
+  },
+  {
+   "geo": "USA",
+   "time": "2021",
+   "rule": "solo",
+   "value": 34
+  },
+  {
+   "geo": "USA",
+   "time": "2022",
+   "rule": "participa",
+   "value": 68
+  },
+  {
+   "geo": "USA",
+   "time": "2022",
+   "rule": "solo",
+   "value": 57
+  },
+  {
+   "geo": "USA",
+   "time": "2023",
+   "rule": "participa",
+   "value": 86
+  },
+  {
+   "geo": "USA",
+   "time": "2023",
+   "rule": "solo",
+   "value": 72
+  },
+  {
+   "geo": "USA",
+   "time": "2024",
+   "rule": "participa",
+   "value": 57
+  },
+  {
+   "geo": "USA",
+   "time": "2024",
+   "rule": "solo",
+   "value": 53
+  },
+  {
+   "geo": "USA",
+   "time": "2025",
+   "rule": "participa",
+   "value": 64
+  },
+  {
+   "geo": "USA",
+   "time": "2025",
+   "rule": "solo",
+   "value": 61
+  },
+  {
+   "geo": "USA",
+   "time": "2026",
+   "rule": "participa",
+   "value": 43
+  },
+  {
+   "geo": "USA",
+   "time": "2026",
+   "rule": "solo",
+   "value": 43
+  },
+  {
+   "geo": "CHN",
+   "time": "2015",
+   "rule": "participa",
+   "value": 4
+  },
+  {
+   "geo": "CHN",
+   "time": "2015",
+   "rule": "solo",
+   "value": 2
+  },
+  {
+   "geo": "CHN",
+   "time": "2016",
+   "rule": "participa",
+   "value": 7
+  },
+  {
+   "geo": "CHN",
+   "time": "2016",
+   "rule": "solo",
+   "value": 3
+  },
+  {
+   "geo": "CHN",
+   "time": "2017",
+   "rule": "participa",
+   "value": 11
+  },
+  {
+   "geo": "CHN",
+   "time": "2017",
+   "rule": "solo",
+   "value": 6
+  },
+  {
+   "geo": "CHN",
+   "time": "2018",
+   "rule": "participa",
+   "value": 1
+  },
+  {
+   "geo": "CHN",
+   "time": "2018",
+   "rule": "solo",
+   "value": 1
+  },
+  {
+   "geo": "CHN",
+   "time": "2019",
+   "rule": "participa",
+   "value": 6
+  },
+  {
+   "geo": "CHN",
+   "time": "2019",
+   "rule": "solo",
+   "value": 1
+  },
+  {
+   "geo": "CHN",
+   "time": "2020",
+   "rule": "participa",
+   "value": 8
+  },
+  {
+   "geo": "CHN",
+   "time": "2020",
+   "rule": "solo",
+   "value": 5
+  },
+  {
+   "geo": "CHN",
+   "time": "2021",
+   "rule": "participa",
+   "value": 21
+  },
+  {
+   "geo": "CHN",
+   "time": "2021",
+   "rule": "solo",
+   "value": 16
+  },
+  {
+   "geo": "CHN",
+   "time": "2022",
+   "rule": "participa",
+   "value": 12
+  },
+  {
+   "geo": "CHN",
+   "time": "2022",
+   "rule": "solo",
+   "value": 8
+  },
+  {
+   "geo": "CHN",
+   "time": "2023",
+   "rule": "participa",
+   "value": 24
+  },
+  {
+   "geo": "CHN",
+   "time": "2023",
+   "rule": "solo",
+   "value": 21
+  },
+  {
+   "geo": "CHN",
+   "time": "2024",
+   "rule": "participa",
+   "value": 32
+  },
+  {
+   "geo": "CHN",
+   "time": "2024",
+   "rule": "solo",
+   "value": 30
+  },
+  {
+   "geo": "CHN",
+   "time": "2025",
+   "rule": "participa",
+   "value": 35
+  },
+  {
+   "geo": "CHN",
+   "time": "2025",
+   "rule": "solo",
+   "value": 33
+  },
+  {
+   "geo": "CHN",
+   "time": "2026",
+   "rule": "participa",
+   "value": 29
+  },
+  {
+   "geo": "CHN",
+   "time": "2026",
+   "rule": "solo",
+   "value": 29
+  },
+  {
+   "geo": "EU27",
+   "time": "2015",
+   "rule": "participa",
+   "value": 3
+  },
+  {
+   "geo": "EU27",
+   "time": "2015",
+   "rule": "solo",
+   "value": 1
+  },
+  {
+   "geo": "EU27",
+   "time": "2016",
+   "rule": "participa",
+   "value": 7
+  },
+  {
+   "geo": "EU27",
+   "time": "2016",
+   "rule": "solo",
+   "value": 3
+  },
+  {
+   "geo": "EU27",
+   "time": "2017",
+   "rule": "participa",
+   "value": 8
+  },
+  {
+   "geo": "EU27",
+   "time": "2017",
+   "rule": "solo",
+   "value": 4
+  },
+  {
+   "geo": "EU27",
+   "time": "2018",
+   "rule": "participa",
+   "value": 5
+  },
+  {
+   "geo": "EU27",
+   "time": "2018",
+   "rule": "solo",
+   "value": 1
+  },
+  {
+   "geo": "EU27",
+   "time": "2019",
+   "rule": "participa",
+   "value": 9
+  },
+  {
+   "geo": "EU27",
+   "time": "2019",
+   "rule": "solo",
+   "value": 1
+  },
+  {
+   "geo": "EU27",
+   "time": "2020",
+   "rule": "participa",
+   "value": 8
+  },
+  {
+   "geo": "EU27",
+   "time": "2020",
+   "rule": "solo",
+   "value": 3
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "rule": "participa",
+   "value": 17
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "rule": "solo",
+   "value": 2
+  },
+  {
+   "geo": "EU27",
+   "time": "2022",
+   "rule": "participa",
+   "value": 4
+  },
+  {
+   "geo": "EU27",
+   "time": "2022",
+   "rule": "solo",
+   "value": 0
+  },
+  {
+   "geo": "EU27",
+   "time": "2023",
+   "rule": "participa",
+   "value": 12
+  },
+  {
+   "geo": "EU27",
+   "time": "2023",
+   "rule": "solo",
+   "value": 3
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "rule": "participa",
+   "value": 5
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "rule": "solo",
+   "value": 5
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "rule": "participa",
+   "value": 1
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "rule": "solo",
+   "value": 1
+  },
+  {
+   "geo": "EU27",
+   "time": "2026",
+   "rule": "participa",
+   "value": 0
+  },
+  {
+   "geo": "EU27",
+   "time": "2026",
+   "rule": "solo",
+   "value": 0
+  },
+  {
+   "geo": "GBR",
+   "time": "2015",
+   "rule": "participa",
+   "value": 5
+  },
+  {
+   "geo": "GBR",
+   "time": "2015",
+   "rule": "solo",
+   "value": 4
+  },
+  {
+   "geo": "GBR",
+   "time": "2016",
+   "rule": "participa",
+   "value": 6
+  },
+  {
+   "geo": "GBR",
+   "time": "2016",
+   "rule": "solo",
+   "value": 4
+  },
+  {
+   "geo": "GBR",
+   "time": "2017",
+   "rule": "participa",
+   "value": 12
+  },
+  {
+   "geo": "GBR",
+   "time": "2017",
+   "rule": "solo",
+   "value": 10
+  },
+  {
+   "geo": "GBR",
+   "time": "2018",
+   "rule": "participa",
+   "value": 5
+  },
+  {
+   "geo": "GBR",
+   "time": "2018",
+   "rule": "solo",
+   "value": 4
+  },
+  {
+   "geo": "GBR",
+   "time": "2019",
+   "rule": "participa",
+   "value": 10
+  },
+  {
+   "geo": "GBR",
+   "time": "2019",
+   "rule": "solo",
+   "value": 5
+  },
+  {
+   "geo": "GBR",
+   "time": "2020",
+   "rule": "participa",
+   "value": 5
+  },
+  {
+   "geo": "GBR",
+   "time": "2020",
+   "rule": "solo",
+   "value": 4
+  },
+  {
+   "geo": "GBR",
+   "time": "2021",
+   "rule": "participa",
+   "value": 8
+  },
+  {
+   "geo": "GBR",
+   "time": "2021",
+   "rule": "solo",
+   "value": 5
+  },
+  {
+   "geo": "GBR",
+   "time": "2022",
+   "rule": "participa",
+   "value": 13
+  },
+  {
+   "geo": "GBR",
+   "time": "2022",
+   "rule": "solo",
+   "value": 10
+  },
+  {
+   "geo": "GBR",
+   "time": "2023",
+   "rule": "participa",
+   "value": 6
+  },
+  {
+   "geo": "GBR",
+   "time": "2023",
+   "rule": "solo",
+   "value": 2
+  },
+  {
+   "geo": "GBR",
+   "time": "2024",
+   "rule": "participa",
+   "value": 3
+  },
+  {
+   "geo": "GBR",
+   "time": "2024",
+   "rule": "solo",
+   "value": 1
+  },
+  {
+   "geo": "GBR",
+   "time": "2025",
+   "rule": "participa",
+   "value": 1
+  },
+  {
+   "geo": "GBR",
+   "time": "2025",
+   "rule": "solo",
+   "value": 0
+  },
+  {
+   "geo": "GBR",
+   "time": "2026",
+   "rule": "participa",
+   "value": 0
+  },
+  {
+   "geo": "GBR",
+   "time": "2026",
+   "rule": "solo",
+   "value": 0
+  }
+ ]
+}

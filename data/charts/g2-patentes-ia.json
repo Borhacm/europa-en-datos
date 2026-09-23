@@ -1,0 +1,1219 @@
+{
+ "id": "g2-patentes-ia",
+ "lens": "gigantes",
+ "theme": "ia-digital",
+ "title": {
+  "es": "En patentes de IA, EE. UU. y China juegan otra liga",
+  "en": "In AI patents, the US and China are in another league"
+ },
+ "subtitle": {
+  "es": "Solicitudes internacionales (PCT) de patentes de IA, por país del inventor y año de prioridad",
+  "en": "International (PCT) AI patent applications, by inventor country and priority year"
+ },
+ "unit": {
+  "es": "solicitudes",
+  "en": "applications"
+ },
+ "source": {
+  "name": "OCDE, Patents in OECD selected technologies",
+  "dataset": "DSD_PATENTS@DF_PATENTS_OECDSPECIFIC",
+  "url": "https://data-explorer.oecd.org/?df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_PATENTS%40DF_PATENTS_OECDSPECIFIC&df[ag]=OECD.STI.PIE",
+  "license": "CC BY 4.0",
+  "also": [
+   {
+    "name": "Banco Mundial, población (SP.POP.TOTL)",
+    "url": "https://data.worldbank.org/indicator/SP.POP.TOTL"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Las solicitudes con varios inventores se reparten entre sus países (recuento fraccional).",
+   "Los dos o tres últimos años pueden estar incompletos por el retraso en la publicación de patentes.",
+   "El campo per_million divide por la población del Banco Mundial."
+  ],
+  "en": [
+   "Applications with several inventors are split between their countries (fractional count).",
+   "The last two or three years may be incomplete due to publication lags.",
+   "per_million divides by World Bank population."
+  ]
+ },
+ "retrieved": "2026-09-24",
+ "geos": {
+  "CHN": {
+   "es": "China",
+   "en": "China",
+   "eu": false,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "JPN": {
+   "es": "Japón",
+   "en": "Japan",
+   "eu": false,
+   "aggregate": false
+  },
+  "KOR": {
+   "es": "Corea del Sur",
+   "en": "South Korea",
+   "eu": false,
+   "aggregate": false
+  },
+  "USA": {
+   "es": "Estados Unidos",
+   "en": "United States",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "highlight": [
+  "USA",
+  "CHN",
+  "EU27"
+ ],
+ "rows": [
+  {
+   "geo": "CHN",
+   "time": "2005",
+   "value": 3.7,
+   "per_million": 0.0,
+   "flag": "A"
+  },
+  {
+   "geo": "CHN",
+   "time": "2006",
+   "value": 13.4,
+   "per_million": 0.01,
+   "flag": "A"
+  },
+  {
+   "geo": "CHN",
+   "time": "2007",
+   "value": 22.3,
+   "per_million": 0.02,
+   "flag": "A"
+  },
+  {
+   "geo": "CHN",
+   "time": "2008",
+   "value": 22.4,
+   "per_million": 0.02,
+   "flag": "A"
+  },
+  {
+   "geo": "CHN",
+   "time": "2009",
+   "value": 45.0,
+   "per_million": 0.03,
+   "flag": "A"
+  },
+  {
+   "geo": "CHN",
+   "time": "2010",
+   "value": 56.2,
+   "per_million": 0.04,
+   "flag": "A"
+  },
+  {
+   "geo": "CHN",
+   "time": "2011",
+   "value": 78.1,
+   "per_million": 0.06,
+   "flag": "A"
+  },
+  {
+   "geo": "CHN",
+   "time": "2012",
+   "value": 129.4,
+   "per_million": 0.1,
+   "flag": "A"
+  },
+  {
+   "geo": "CHN",
+   "time": "2013",
+   "value": 243.9,
+   "per_million": 0.18,
+   "flag": "A"
+  },
+  {
+   "geo": "CHN",
+   "time": "2014",
+   "value": 339.8,
+   "per_million": 0.25,
+   "flag": "A"
+  },
+  {
+   "geo": "CHN",
+   "time": "2015",
+   "value": 575.9,
+   "per_million": 0.42,
+   "flag": "A"
+  },
+  {
+   "geo": "CHN",
+   "time": "2016",
+   "value": 1228.2,
+   "per_million": 0.89,
+   "flag": "A"
+  },
+  {
+   "geo": "CHN",
+   "time": "2017",
+   "value": 2053.3,
+   "per_million": 1.47,
+   "flag": "A"
+  },
+  {
+   "geo": "CHN",
+   "time": "2018",
+   "value": 2895.8,
+   "per_million": 2.06,
+   "flag": "A"
+  },
+  {
+   "geo": "CHN",
+   "time": "2019",
+   "value": 3763.3,
+   "per_million": 2.67,
+   "flag": "A"
+  },
+  {
+   "geo": "CHN",
+   "time": "2020",
+   "value": 4995.5,
+   "per_million": 3.54,
+   "flag": "A"
+  },
+  {
+   "geo": "CHN",
+   "time": "2021",
+   "value": 4297.5,
+   "per_million": 3.04,
+   "flag": "A"
+  },
+  {
+   "geo": "CHN",
+   "time": "2022",
+   "value": 4282.0,
+   "per_million": 3.03,
+   "flag": "A"
+  },
+  {
+   "geo": "CHN",
+   "time": "2023",
+   "value": 4454.4,
+   "per_million": 3.16,
+   "flag": "A"
+  },
+  {
+   "geo": "CHN",
+   "time": "2024",
+   "value": 4913.9,
+   "per_million": 3.49,
+   "flag": "A"
+  },
+  {
+   "geo": "DEU",
+   "time": "2005",
+   "value": 36.0,
+   "per_million": 0.44,
+   "flag": "A"
+  },
+  {
+   "geo": "DEU",
+   "time": "2006",
+   "value": 38.9,
+   "per_million": 0.47,
+   "flag": "A"
+  },
+  {
+   "geo": "DEU",
+   "time": "2007",
+   "value": 40.8,
+   "per_million": 0.5,
+   "flag": "A"
+  },
+  {
+   "geo": "DEU",
+   "time": "2008",
+   "value": 40.5,
+   "per_million": 0.49,
+   "flag": "A"
+  },
+  {
+   "geo": "DEU",
+   "time": "2009",
+   "value": 43.0,
+   "per_million": 0.53,
+   "flag": "A"
+  },
+  {
+   "geo": "DEU",
+   "time": "2010",
+   "value": 48.3,
+   "per_million": 0.59,
+   "flag": "A"
+  },
+  {
+   "geo": "DEU",
+   "time": "2011",
+   "value": 68.2,
+   "per_million": 0.85,
+   "flag": "A"
+  },
+  {
+   "geo": "DEU",
+   "time": "2012",
+   "value": 84.1,
+   "per_million": 1.05,
+   "flag": "A"
+  },
+  {
+   "geo": "DEU",
+   "time": "2013",
+   "value": 83.4,
+   "per_million": 1.03,
+   "flag": "A"
+  },
+  {
+   "geo": "DEU",
+   "time": "2014",
+   "value": 89.0,
+   "per_million": 1.1,
+   "flag": "A"
+  },
+  {
+   "geo": "DEU",
+   "time": "2015",
+   "value": 86.9,
+   "per_million": 1.06,
+   "flag": "A"
+  },
+  {
+   "geo": "DEU",
+   "time": "2016",
+   "value": 151.4,
+   "per_million": 1.84,
+   "flag": "A"
+  },
+  {
+   "geo": "DEU",
+   "time": "2017",
+   "value": 229.7,
+   "per_million": 2.78,
+   "flag": "A"
+  },
+  {
+   "geo": "DEU",
+   "time": "2018",
+   "value": 368.2,
+   "per_million": 4.44,
+   "flag": "A"
+  },
+  {
+   "geo": "DEU",
+   "time": "2019",
+   "value": 493.4,
+   "per_million": 5.94,
+   "flag": "A"
+  },
+  {
+   "geo": "DEU",
+   "time": "2020",
+   "value": 555.0,
+   "per_million": 6.67,
+   "flag": "A"
+  },
+  {
+   "geo": "DEU",
+   "time": "2021",
+   "value": 520.5,
+   "per_million": 6.26,
+   "flag": "A"
+  },
+  {
+   "geo": "DEU",
+   "time": "2022",
+   "value": 553.8,
+   "per_million": 6.66,
+   "flag": "A"
+  },
+  {
+   "geo": "DEU",
+   "time": "2023",
+   "value": 595.3,
+   "per_million": 7.15,
+   "flag": "A"
+  },
+  {
+   "geo": "DEU",
+   "time": "2024",
+   "value": 628.3,
+   "per_million": 7.52,
+   "flag": "A"
+  },
+  {
+   "geo": "ESP",
+   "time": "2005",
+   "value": 1.4,
+   "per_million": 0.03,
+   "flag": "A"
+  },
+  {
+   "geo": "ESP",
+   "time": "2006",
+   "value": 3.2,
+   "per_million": 0.07,
+   "flag": "A"
+  },
+  {
+   "geo": "ESP",
+   "time": "2007",
+   "value": 7.0,
+   "per_million": 0.15,
+   "flag": "A"
+  },
+  {
+   "geo": "ESP",
+   "time": "2008",
+   "value": 12.3,
+   "per_million": 0.27,
+   "flag": "A"
+  },
+  {
+   "geo": "ESP",
+   "time": "2009",
+   "value": 8.0,
+   "per_million": 0.17,
+   "flag": "A"
+  },
+  {
+   "geo": "ESP",
+   "time": "2010",
+   "value": 10.7,
+   "per_million": 0.23,
+   "flag": "A"
+  },
+  {
+   "geo": "ESP",
+   "time": "2011",
+   "value": 9.4,
+   "per_million": 0.2,
+   "flag": "A"
+  },
+  {
+   "geo": "ESP",
+   "time": "2012",
+   "value": 14.9,
+   "per_million": 0.32,
+   "flag": "A"
+  },
+  {
+   "geo": "ESP",
+   "time": "2013",
+   "value": 14.8,
+   "per_million": 0.32,
+   "flag": "A"
+  },
+  {
+   "geo": "ESP",
+   "time": "2014",
+   "value": 12.9,
+   "per_million": 0.28,
+   "flag": "A"
+  },
+  {
+   "geo": "ESP",
+   "time": "2015",
+   "value": 12.4,
+   "per_million": 0.27,
+   "flag": "A"
+  },
+  {
+   "geo": "ESP",
+   "time": "2016",
+   "value": 14.2,
+   "per_million": 0.31,
+   "flag": "A"
+  },
+  {
+   "geo": "ESP",
+   "time": "2017",
+   "value": 23.2,
+   "per_million": 0.5,
+   "flag": "A"
+  },
+  {
+   "geo": "ESP",
+   "time": "2018",
+   "value": 26.7,
+   "per_million": 0.57,
+   "flag": "A"
+  },
+  {
+   "geo": "ESP",
+   "time": "2019",
+   "value": 40.3,
+   "per_million": 0.85,
+   "flag": "A"
+  },
+  {
+   "geo": "ESP",
+   "time": "2020",
+   "value": 48.5,
+   "per_million": 1.02,
+   "flag": "A"
+  },
+  {
+   "geo": "ESP",
+   "time": "2021",
+   "value": 32.5,
+   "per_million": 0.68,
+   "flag": "A"
+  },
+  {
+   "geo": "ESP",
+   "time": "2022",
+   "value": 46.0,
+   "per_million": 0.96,
+   "flag": "A"
+  },
+  {
+   "geo": "ESP",
+   "time": "2023",
+   "value": 48.7,
+   "per_million": 1.01,
+   "flag": "A"
+  },
+  {
+   "geo": "ESP",
+   "time": "2024",
+   "value": 47.6,
+   "per_million": 0.98,
+   "flag": "A"
+  },
+  {
+   "geo": "EU27",
+   "time": "2005",
+   "value": 135.1,
+   "per_million": 0.31,
+   "flag": "A"
+  },
+  {
+   "geo": "EU27",
+   "time": "2006",
+   "value": 127.8,
+   "per_million": 0.29,
+   "flag": "A"
+  },
+  {
+   "geo": "EU27",
+   "time": "2007",
+   "value": 150.7,
+   "per_million": 0.34,
+   "flag": "A"
+  },
+  {
+   "geo": "EU27",
+   "time": "2008",
+   "value": 145.6,
+   "per_million": 0.33,
+   "flag": "A"
+  },
+  {
+   "geo": "EU27",
+   "time": "2009",
+   "value": 151.2,
+   "per_million": 0.34,
+   "flag": "A"
+  },
+  {
+   "geo": "EU27",
+   "time": "2010",
+   "value": 170.9,
+   "per_million": 0.39,
+   "flag": "A"
+  },
+  {
+   "geo": "EU27",
+   "time": "2011",
+   "value": 219.2,
+   "per_million": 0.5,
+   "flag": "A"
+  },
+  {
+   "geo": "EU27",
+   "time": "2012",
+   "value": 251.0,
+   "per_million": 0.57,
+   "flag": "A"
+  },
+  {
+   "geo": "EU27",
+   "time": "2013",
+   "value": 270.3,
+   "per_million": 0.61,
+   "flag": "A"
+  },
+  {
+   "geo": "EU27",
+   "time": "2014",
+   "value": 306.9,
+   "per_million": 0.69,
+   "flag": "A"
+  },
+  {
+   "geo": "EU27",
+   "time": "2015",
+   "value": 356.2,
+   "per_million": 0.8,
+   "flag": "A"
+  },
+  {
+   "geo": "EU27",
+   "time": "2016",
+   "value": 479.5,
+   "per_million": 1.08,
+   "flag": "A"
+  },
+  {
+   "geo": "EU27",
+   "time": "2017",
+   "value": 699.9,
+   "per_million": 1.57,
+   "flag": "A"
+  },
+  {
+   "geo": "EU27",
+   "time": "2018",
+   "value": 1070.8,
+   "per_million": 2.4,
+   "flag": "A"
+  },
+  {
+   "geo": "EU27",
+   "time": "2019",
+   "value": 1236.4,
+   "per_million": 2.77,
+   "flag": "A"
+  },
+  {
+   "geo": "EU27",
+   "time": "2020",
+   "value": 1505.4,
+   "per_million": 3.37,
+   "flag": "A"
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "value": 1401.4,
+   "per_million": 3.14,
+   "flag": "A"
+  },
+  {
+   "geo": "EU27",
+   "time": "2022",
+   "value": 1648.8,
+   "per_million": 3.69,
+   "flag": "A"
+  },
+  {
+   "geo": "EU27",
+   "time": "2023",
+   "value": 1673.1,
+   "per_million": 3.73,
+   "flag": "A"
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "value": 1775.9,
+   "per_million": 3.94,
+   "flag": "A"
+  },
+  {
+   "geo": "FRA",
+   "time": "2005",
+   "value": 23.7,
+   "per_million": 0.37,
+   "flag": "A"
+  },
+  {
+   "geo": "FRA",
+   "time": "2006",
+   "value": 18.8,
+   "per_million": 0.3,
+   "flag": "A"
+  },
+  {
+   "geo": "FRA",
+   "time": "2007",
+   "value": 30.3,
+   "per_million": 0.47,
+   "flag": "A"
+  },
+  {
+   "geo": "FRA",
+   "time": "2008",
+   "value": 28.3,
+   "per_million": 0.44,
+   "flag": "A"
+  },
+  {
+   "geo": "FRA",
+   "time": "2009",
+   "value": 37.2,
+   "per_million": 0.57,
+   "flag": "A"
+  },
+  {
+   "geo": "FRA",
+   "time": "2010",
+   "value": 37.1,
+   "per_million": 0.57,
+   "flag": "A"
+  },
+  {
+   "geo": "FRA",
+   "time": "2011",
+   "value": 40.5,
+   "per_million": 0.62,
+   "flag": "A"
+  },
+  {
+   "geo": "FRA",
+   "time": "2012",
+   "value": 38.5,
+   "per_million": 0.59,
+   "flag": "A"
+  },
+  {
+   "geo": "FRA",
+   "time": "2013",
+   "value": 50.6,
+   "per_million": 0.77,
+   "flag": "A"
+  },
+  {
+   "geo": "FRA",
+   "time": "2014",
+   "value": 60.3,
+   "per_million": 0.91,
+   "flag": "A"
+  },
+  {
+   "geo": "FRA",
+   "time": "2015",
+   "value": 67.0,
+   "per_million": 1.01,
+   "flag": "A"
+  },
+  {
+   "geo": "FRA",
+   "time": "2016",
+   "value": 68.2,
+   "per_million": 1.02,
+   "flag": "A"
+  },
+  {
+   "geo": "FRA",
+   "time": "2017",
+   "value": 105.3,
+   "per_million": 1.57,
+   "flag": "A"
+  },
+  {
+   "geo": "FRA",
+   "time": "2018",
+   "value": 164.3,
+   "per_million": 2.45,
+   "flag": "A"
+  },
+  {
+   "geo": "FRA",
+   "time": "2019",
+   "value": 181.8,
+   "per_million": 2.7,
+   "flag": "A"
+  },
+  {
+   "geo": "FRA",
+   "time": "2020",
+   "value": 250.6,
+   "per_million": 3.71,
+   "flag": "A"
+  },
+  {
+   "geo": "FRA",
+   "time": "2021",
+   "value": 221.2,
+   "per_million": 3.26,
+   "flag": "A"
+  },
+  {
+   "geo": "FRA",
+   "time": "2022",
+   "value": 263.9,
+   "per_million": 3.87,
+   "flag": "A"
+  },
+  {
+   "geo": "FRA",
+   "time": "2023",
+   "value": 260.2,
+   "per_million": 3.81,
+   "flag": "A"
+  },
+  {
+   "geo": "FRA",
+   "time": "2024",
+   "value": 280.3,
+   "per_million": 4.09,
+   "flag": "A"
+  },
+  {
+   "geo": "JPN",
+   "time": "2005",
+   "value": 189.6,
+   "per_million": 1.48,
+   "flag": "A"
+  },
+  {
+   "geo": "JPN",
+   "time": "2006",
+   "value": 171.3,
+   "per_million": 1.34,
+   "flag": "A"
+  },
+  {
+   "geo": "JPN",
+   "time": "2007",
+   "value": 232.1,
+   "per_million": 1.81,
+   "flag": "A"
+  },
+  {
+   "geo": "JPN",
+   "time": "2008",
+   "value": 228.0,
+   "per_million": 1.78,
+   "flag": "A"
+  },
+  {
+   "geo": "JPN",
+   "time": "2009",
+   "value": 311.2,
+   "per_million": 2.43,
+   "flag": "A"
+  },
+  {
+   "geo": "JPN",
+   "time": "2010",
+   "value": 359.0,
+   "per_million": 2.8,
+   "flag": "A"
+  },
+  {
+   "geo": "JPN",
+   "time": "2011",
+   "value": 454.5,
+   "per_million": 3.56,
+   "flag": "A"
+  },
+  {
+   "geo": "JPN",
+   "time": "2012",
+   "value": 653.7,
+   "per_million": 5.12,
+   "flag": "A"
+  },
+  {
+   "geo": "JPN",
+   "time": "2013",
+   "value": 516.0,
+   "per_million": 4.05,
+   "flag": "A"
+  },
+  {
+   "geo": "JPN",
+   "time": "2014",
+   "value": 594.6,
+   "per_million": 4.67,
+   "flag": "A"
+  },
+  {
+   "geo": "JPN",
+   "time": "2015",
+   "value": 719.9,
+   "per_million": 5.66,
+   "flag": "A"
+  },
+  {
+   "geo": "JPN",
+   "time": "2016",
+   "value": 917.4,
+   "per_million": 7.22,
+   "flag": "A"
+  },
+  {
+   "geo": "JPN",
+   "time": "2017",
+   "value": 1265.6,
+   "per_million": 9.97,
+   "flag": "A"
+  },
+  {
+   "geo": "JPN",
+   "time": "2018",
+   "value": 1850.7,
+   "per_million": 14.59,
+   "flag": "A"
+  },
+  {
+   "geo": "JPN",
+   "time": "2019",
+   "value": 1887.5,
+   "per_million": 14.91,
+   "flag": "A"
+  },
+  {
+   "geo": "JPN",
+   "time": "2020",
+   "value": 1847.9,
+   "per_million": 14.64,
+   "flag": "A"
+  },
+  {
+   "geo": "JPN",
+   "time": "2021",
+   "value": 1696.7,
+   "per_million": 13.5,
+   "flag": "A"
+  },
+  {
+   "geo": "JPN",
+   "time": "2022",
+   "value": 1651.3,
+   "per_million": 13.2,
+   "flag": "A"
+  },
+  {
+   "geo": "JPN",
+   "time": "2023",
+   "value": 1772.2,
+   "per_million": 14.23,
+   "flag": "A"
+  },
+  {
+   "geo": "JPN",
+   "time": "2024",
+   "value": 1930.1,
+   "per_million": 15.57,
+   "flag": "A"
+  },
+  {
+   "geo": "KOR",
+   "time": "2005",
+   "value": 10.0,
+   "per_million": 0.21,
+   "flag": "A"
+  },
+  {
+   "geo": "KOR",
+   "time": "2006",
+   "value": 15.7,
+   "per_million": 0.32,
+   "flag": "A"
+  },
+  {
+   "geo": "KOR",
+   "time": "2007",
+   "value": 29.2,
+   "per_million": 0.6,
+   "flag": "A"
+  },
+  {
+   "geo": "KOR",
+   "time": "2008",
+   "value": 25.8,
+   "per_million": 0.52,
+   "flag": "A"
+  },
+  {
+   "geo": "KOR",
+   "time": "2009",
+   "value": 34.7,
+   "per_million": 0.7,
+   "flag": "A"
+  },
+  {
+   "geo": "KOR",
+   "time": "2010",
+   "value": 47.7,
+   "per_million": 0.96,
+   "flag": "A"
+  },
+  {
+   "geo": "KOR",
+   "time": "2011",
+   "value": 74.0,
+   "per_million": 1.48,
+   "flag": "A"
+  },
+  {
+   "geo": "KOR",
+   "time": "2012",
+   "value": 82.0,
+   "per_million": 1.63,
+   "flag": "A"
+  },
+  {
+   "geo": "KOR",
+   "time": "2013",
+   "value": 99.4,
+   "per_million": 1.97,
+   "flag": "A"
+  },
+  {
+   "geo": "KOR",
+   "time": "2014",
+   "value": 105.4,
+   "per_million": 2.08,
+   "flag": "A"
+  },
+  {
+   "geo": "KOR",
+   "time": "2015",
+   "value": 127.5,
+   "per_million": 2.5,
+   "flag": "A"
+  },
+  {
+   "geo": "KOR",
+   "time": "2016",
+   "value": 274.0,
+   "per_million": 5.35,
+   "flag": "A"
+  },
+  {
+   "geo": "KOR",
+   "time": "2017",
+   "value": 438.6,
+   "per_million": 8.54,
+   "flag": "A"
+  },
+  {
+   "geo": "KOR",
+   "time": "2018",
+   "value": 692.5,
+   "per_million": 13.42,
+   "flag": "A"
+  },
+  {
+   "geo": "KOR",
+   "time": "2019",
+   "value": 1047.9,
+   "per_million": 20.24,
+   "flag": "A"
+  },
+  {
+   "geo": "KOR",
+   "time": "2020",
+   "value": 1218.5,
+   "per_million": 23.51,
+   "flag": "A"
+  },
+  {
+   "geo": "KOR",
+   "time": "2021",
+   "value": 1451.5,
+   "per_million": 28.04,
+   "flag": "A"
+  },
+  {
+   "geo": "KOR",
+   "time": "2022",
+   "value": 1841.7,
+   "per_million": 35.64,
+   "flag": "A"
+  },
+  {
+   "geo": "KOR",
+   "time": "2023",
+   "value": 1818.0,
+   "per_million": 35.15,
+   "flag": "A"
+  },
+  {
+   "geo": "KOR",
+   "time": "2024",
+   "value": 1920.1,
+   "per_million": 37.1,
+   "flag": "A"
+  },
+  {
+   "geo": "USA",
+   "time": "2005",
+   "value": 350.0,
+   "per_million": 1.18,
+   "flag": "A"
+  },
+  {
+   "geo": "USA",
+   "time": "2006",
+   "value": 323.7,
+   "per_million": 1.09,
+   "flag": "A"
+  },
+  {
+   "geo": "USA",
+   "time": "2007",
+   "value": 348.2,
+   "per_million": 1.16,
+   "flag": "A"
+  },
+  {
+   "geo": "USA",
+   "time": "2008",
+   "value": 292.8,
+   "per_million": 0.96,
+   "flag": "A"
+  },
+  {
+   "geo": "USA",
+   "time": "2009",
+   "value": 272.3,
+   "per_million": 0.89,
+   "flag": "A"
+  },
+  {
+   "geo": "USA",
+   "time": "2010",
+   "value": 353.4,
+   "per_million": 1.14,
+   "flag": "A"
+  },
+  {
+   "geo": "USA",
+   "time": "2011",
+   "value": 463.3,
+   "per_million": 1.49,
+   "flag": "A"
+  },
+  {
+   "geo": "USA",
+   "time": "2012",
+   "value": 585.9,
+   "per_million": 1.86,
+   "flag": "A"
+  },
+  {
+   "geo": "USA",
+   "time": "2013",
+   "value": 832.2,
+   "per_million": 2.63,
+   "flag": "A"
+  },
+  {
+   "geo": "USA",
+   "time": "2014",
+   "value": 968.2,
+   "per_million": 3.03,
+   "flag": "A"
+  },
+  {
+   "geo": "USA",
+   "time": "2015",
+   "value": 1213.7,
+   "per_million": 3.77,
+   "flag": "A"
+  },
+  {
+   "geo": "USA",
+   "time": "2016",
+   "value": 1777.0,
+   "per_million": 5.48,
+   "flag": "A"
+  },
+  {
+   "geo": "USA",
+   "time": "2017",
+   "value": 2595.1,
+   "per_million": 7.95,
+   "flag": "A"
+  },
+  {
+   "geo": "USA",
+   "time": "2018",
+   "value": 3460.5,
+   "per_million": 10.53,
+   "flag": "A"
+  },
+  {
+   "geo": "USA",
+   "time": "2019",
+   "value": 3914.6,
+   "per_million": 11.85,
+   "flag": "A"
+  },
+  {
+   "geo": "USA",
+   "time": "2020",
+   "value": 4265.3,
+   "per_million": 12.86,
+   "flag": "A"
+  },
+  {
+   "geo": "USA",
+   "time": "2021",
+   "value": 4246.5,
+   "per_million": 12.79,
+   "flag": "A"
+  },
+  {
+   "geo": "USA",
+   "time": "2022",
+   "value": 4603.3,
+   "per_million": 13.78,
+   "flag": "A"
+  },
+  {
+   "geo": "USA",
+   "time": "2023",
+   "value": 4955.7,
+   "per_million": 14.72,
+   "flag": "A"
+  },
+  {
+   "geo": "USA",
+   "time": "2024",
+   "value": 5192.9,
+   "per_million": 15.27,
+   "flag": "A"
+  }
+ ]
+}

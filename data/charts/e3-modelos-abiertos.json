@@ -1,0 +1,210 @@
+{
+ "id": "e3-modelos-abiertos",
+ "lens": "elige",
+ "theme": "ia-digital",
+ "title": {
+  "es": "¿Apuesta Europa por la IA abierta?",
+  "en": "Is Europe betting on open AI?"
+ },
+ "subtitle": {
+  "es": "Modelos de IA destacados desde 2023 según cómo se publican, en % del total de cada bloque",
+  "en": "Notable AI models since 2023 by release type, as % of each bloc's total"
+ },
+ "unit": {
+  "es": "% de los modelos del bloque",
+  "en": "% of the bloc's models"
+ },
+ "source": {
+  "name": "Epoch AI, Data on AI Models",
+  "dataset": "notable_ai_models.csv",
+  "url": "https://epoch.ai/data/ai-models",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Regla 'participa': un modelo cuenta para cada bloque con al menos una organización participante.",
+   "La UE tiene pocos modelos destacados en el periodo: los porcentajes se basan en muestras pequeñas (ver 'total')."
+  ],
+  "en": [
+   "'participa' rule: a model counts for every bloc with at least one participating organisation.",
+   "The EU has few notable models in the period: shares rest on small samples (see 'total')."
+  ]
+ },
+ "retrieved": "2026-09-24",
+ "geos": {
+  "CHN": {
+   "es": "China",
+   "en": "China",
+   "eu": false,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "GBR": {
+   "es": "Reino Unido",
+   "en": "United Kingdom",
+   "eu": false,
+   "aggregate": false
+  },
+  "USA": {
+   "es": "Estados Unidos",
+   "en": "United States",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "dimensions": {
+  "access": {
+   "abierto": {
+    "es": "Pesos abiertos",
+    "en": "Open weights"
+   },
+   "api": {
+    "es": "Acceso por API o web",
+    "en": "API or hosted access"
+   },
+   "cerrado": {
+    "es": "No publicado",
+    "en": "Unreleased"
+   },
+   "desconocido": {
+    "es": "Sin dato",
+    "en": "Unknown"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "USA",
+   "time": "2023+",
+   "access": "abierto",
+   "value": 28.8,
+   "count": 72,
+   "total": 250
+  },
+  {
+   "geo": "USA",
+   "time": "2023+",
+   "access": "api",
+   "value": 51.6,
+   "count": 129,
+   "total": 250
+  },
+  {
+   "geo": "USA",
+   "time": "2023+",
+   "access": "cerrado",
+   "value": 19.6,
+   "count": 49,
+   "total": 250
+  },
+  {
+   "geo": "USA",
+   "time": "2023+",
+   "access": "desconocido",
+   "value": 0.0,
+   "count": 0,
+   "total": 250
+  },
+  {
+   "geo": "CHN",
+   "time": "2023+",
+   "access": "abierto",
+   "value": 64.2,
+   "count": 77,
+   "total": 120
+  },
+  {
+   "geo": "CHN",
+   "time": "2023+",
+   "access": "api",
+   "value": 27.5,
+   "count": 33,
+   "total": 120
+  },
+  {
+   "geo": "CHN",
+   "time": "2023+",
+   "access": "cerrado",
+   "value": 8.3,
+   "count": 10,
+   "total": 120
+  },
+  {
+   "geo": "CHN",
+   "time": "2023+",
+   "access": "desconocido",
+   "value": 0.0,
+   "count": 0,
+   "total": 120
+  },
+  {
+   "geo": "EU27",
+   "time": "2023+",
+   "access": "abierto",
+   "value": 72.2,
+   "count": 13,
+   "total": 18
+  },
+  {
+   "geo": "EU27",
+   "time": "2023+",
+   "access": "api",
+   "value": 16.7,
+   "count": 3,
+   "total": 18
+  },
+  {
+   "geo": "EU27",
+   "time": "2023+",
+   "access": "cerrado",
+   "value": 11.1,
+   "count": 2,
+   "total": 18
+  },
+  {
+   "geo": "EU27",
+   "time": "2023+",
+   "access": "desconocido",
+   "value": 0.0,
+   "count": 0,
+   "total": 18
+  },
+  {
+   "geo": "GBR",
+   "time": "2023+",
+   "access": "abierto",
+   "value": 70.0,
+   "count": 7,
+   "total": 10
+  },
+  {
+   "geo": "GBR",
+   "time": "2023+",
+   "access": "api",
+   "value": 10.0,
+   "count": 1,
+   "total": 10
+  },
+  {
+   "geo": "GBR",
+   "time": "2023+",
+   "access": "cerrado",
+   "value": 20.0,
+   "count": 2,
+   "total": 10
+  },
+  {
+   "geo": "GBR",
+   "time": "2023+",
+   "access": "desconocido",
+   "value": 0.0,
+   "count": 0,
+   "total": 10
+  }
+ ]
+}

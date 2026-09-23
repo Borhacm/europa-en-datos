@@ -1,0 +1,154 @@
+---
+import "../styles/global.css";
+import Mark from "../components/Mark.astro";
+import { ui, paths, type Lang, type PageKey } from "../lib/i18n";
+
+interface Props {
+  lang: Lang;
+  page: PageKey;
+  title?: string;
+  description?: string;
+}
+
+const { lang, page, title, description } = Astro.props;
+const t = ui[lang];
+const other: Lang = lang === "es" ? "en" : "es";
+const fullTitle = title ? `${title} | ${t.siteName}` : t.siteName;
+const desc = description ?? t.siteDescription;
+const site = Astro.site ?? new URL("https://eu-data.bocal.online");
+const canonical = new URL(paths[page][lang], site);
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={desc} />
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang={lang} href={canonical} />
+    <link rel="alternate" hreflang={other} href={new URL(paths[page][other], site)} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#f5f7fa" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0e1628" media="(prefers-color-scheme: dark)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={desc} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={lang === "es" ? "es_ES" : "en_GB"} />
+    <meta name="twitter:card" content="summary" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Sofia+Sans+Extra+Condensed:wght@700;800&family=Sofia+Sans+Semi+Condensed:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <a class="skip" href="#main">{t.skip}</a>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="brand" href={paths.home[lang]}>
+          <Mark size={30} class="brand-mark" />
+          <span>{t.siteName}</span>
+        </a>
+        <nav aria-label={lang === "es" ? "Principal" : "Main"}>
+          <a href={paths.theme[lang]} aria-current={page === "theme" ? "page" : undefined}>{t.navTheme}</a>
+          <a class="secondary" href={paths.method[lang]} aria-current={page === "method" ? "page" : undefined}>{t.navMethod}</a>
+          <a class="lang" href={paths[page][other]} hreflang={other} lang={other}>{t.otherLang}</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap foot">
+        <a class="brand brand-small" href={paths.home[lang]}>
+          <Mark size={24} class="brand-mark" />
+          <span>{t.siteName}</span>
+        </a>
+        <p>{t.footerIndependent}</p>
+        <p>{t.footerData} <a href={paths.method[lang]}>{t.navMethod}</a>.</p>
+        <p><a href="https://bocal.online">bocal.online</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  .skip {
+    position: absolute;
+    left: var(--gutter);
+    top: -3rem;
+    background: var(--ink);
+    color: var(--paper);
+    padding: 0.5rem 0.75rem;
+    z-index: 20;
+  }
+  .skip:focus { top: 0.75rem; }
+
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: color-mix(in srgb, var(--paper) 92%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 3.75rem;
+  }
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--ink);
+    text-decoration: none;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.55rem;
+    line-height: 1;
+    letter-spacing: -0.005em;
+  }
+  .brand :global(.brand-mark) { color: var(--eu); flex: none; }
+  nav { display: flex; gap: clamp(0.9rem, 2.5vw, 1.75rem); align-items: center; }
+  nav a {
+    color: var(--ink-2);
+    text-decoration: none;
+    font-family: var(--font-semi);
+    font-weight: 500;
+    font-size: 1rem;
+    padding-block: 0.4rem;
+    border-bottom: 2px solid transparent;
+  }
+  nav a:hover { color: var(--ink); }
+  nav a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--eu); }
+  nav .lang { color: var(--eu); }
+
+  @media (max-width: 560px) {
+    .brand span { font-size: 1.3rem; }
+    nav .secondary { display: none; }
+  }
+
+  .site-footer {
+    margin-top: 6rem;
+    border-top: 1px solid var(--rule);
+    background: var(--paper-raised);
+  }
+  .foot {
+    padding-block: 2.5rem 3rem;
+    display: grid;
+    gap: 0.25rem;
+    color: var(--ink-2);
+    font-size: 0.95rem;
+  }
+  .foot p { margin: 0; max-width: 46rem; }
+  .brand-small { font-size: 1.3rem; margin-bottom: 0.75rem; }
+</style>

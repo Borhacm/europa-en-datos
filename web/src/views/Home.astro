@@ -1,0 +1,115 @@
+---
+import Base from "../layouts/Base.astro";
+import Hero from "../components/Hero.astro";
+import { themeContent } from "../lib/content";
+import { ui, paths, type Lang } from "../lib/i18n";
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = ui[lang];
+const c = themeContent[lang];
+
+const copy = {
+  es: {
+    lensesTitle: "Una historia, tres miradas",
+    lensesIntro: "Cada tema se puede leer de tres formas. Empieza por la que te interese y cambia cuando quieras: los datos son los mismos.",
+    themesTitle: "Temas",
+    available: "Disponible",
+    read: "Leer",
+    upcoming: ["Productividad e I+D", "Comercio y dependencias", "Libertades, bienestar y clima"],
+    aboutTitle: "Sobre este proyecto",
+    about: [
+      "Europa en datos cuenta con datos abiertos cómo se compara la Unión Europea con Estados Unidos y China, y qué diferencias hay entre sus países.",
+      "Cada gráfico enlaza a su fuente original, explica sus límites y permite descargar los datos. Las fuentes principales son Eurostat y la OCDE, con el Banco Mundial, Epoch AI y V-Dem cuando hace falta.",
+    ],
+  },
+  en: {
+    lensesTitle: "One story, three lenses",
+    lensesIntro: "Each theme can be read three ways. Start with the one that interests you and switch whenever you like: the data is the same.",
+    themesTitle: "Themes",
+    available: "Available",
+    read: "Read",
+    upcoming: ["Productivity and R&D", "Trade and dependencies", "Freedoms, well-being and climate"],
+    aboutTitle: "About this project",
+    about: [
+      "Europe in data uses open data to show how the European Union compares with the United States and China, and how its countries differ from one another.",
+      "Every chart links to its original source, explains its limits and lets you download the data. The main sources are Eurostat and the OECD, with the World Bank, Epoch AI and V-Dem where needed.",
+    ],
+  },
+}[lang];
+---
+<Base lang={lang} page="home">
+  <Hero lang={lang} />
+
+  <section class="wrap block" aria-labelledby="lenses-h">
+    <div class="block-head">
+      <h2 id="lenses-h">{copy.lensesTitle}</h2>
+      <p>{copy.lensesIntro}</p>
+    </div>
+    <ul class="lenses">
+      {c.lenses.map((l) => (
+        <li>
+          <a href={`${paths.theme[lang]}#${l.anchor}`}>
+            <span class="l-name">{l.name}</span>
+            <span class="l-short">{l.short}</span>
+            <span class="l-lede">{l.lede}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="wrap block" aria-labelledby="themes-h">
+    <div class="block-head">
+      <h2 id="themes-h">{copy.themesTitle}</h2>
+    </div>
+    <ul class="themes">
+      <li class="on">
+        <a href={paths.theme[lang]}><span class="th-name">{c.title}</span><span class="th-state">{copy.available}</span></a>
+      </li>
+      {copy.upcoming.map((name) => (
+        <li><span class="th-name">{name}</span><span class="th-state">{t.comingSoon}</span></li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="wrap block about" aria-labelledby="about-h">
+    <div class="block-head">
+      <h2 id="about-h">{copy.aboutTitle}</h2>
+    </div>
+    <div class="prose">
+      {copy.about.map((p) => <p>{p}</p>)}
+      <p><a href={paths.method[lang]}>{t.navMethod}</a></p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .block { padding-top: clamp(3.5rem, 7vw, 5.5rem); display: grid; grid-template-columns: minmax(0, 18rem) minmax(0, 1fr); gap: 1.5rem clamp(2rem, 5vw, 4rem); }
+  .block-head h2 { font-size: clamp(2.2rem, 4.5vw, 3.2rem); line-height: 0.92; }
+  .block-head p { margin-top: 1rem; color: var(--ink-2); font-size: 1rem; }
+
+  .lenses { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 1.5rem; border-top: 2px solid var(--ink); }
+  .lenses a { display: grid; gap: 0.35rem; padding-block: 1.1rem 1.5rem; text-decoration: none; color: var(--ink); height: 100%; }
+  .lenses a:hover .l-name { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.12em; }
+  .l-name { font-family: var(--font-display); font-weight: 800; font-size: 1.85rem; line-height: 0.98; }
+  .l-short { font-family: var(--font-semi); font-size: 0.95rem; color: var(--ink-3); }
+  .l-lede { margin-top: 0.6rem; color: var(--ink-2); font-size: 1.02rem; line-height: 1.45; }
+
+  .themes { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--ink); }
+  .themes li { border-bottom: 1px solid var(--rule); }
+  .themes li > *, .themes li { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+  .themes li > span, .themes a { padding-block: 0.9rem; }
+  .themes a { flex: 1; text-decoration: none; color: var(--ink); }
+  .th-name { font-family: var(--font-display); font-weight: 800; font-size: 1.6rem; line-height: 1; }
+  .themes li:not(.on) .th-name { color: var(--ink-3); }
+  .th-state { font-family: var(--font-semi); font-size: 0.9rem; color: var(--ink-3); }
+  .on .th-state { color: var(--eu); font-weight: 600; }
+  .on a:hover .th-name { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.12em; }
+
+  @media (max-width: 860px) {
+    .block { grid-template-columns: 1fr; }
+    .lenses { grid-template-columns: 1fr; }
+    .lenses li + li { border-top: 1px solid var(--rule); }
+  }
+</style>

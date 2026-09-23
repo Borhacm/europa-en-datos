@@ -1,0 +1,3526 @@
+{
+ "id": "d2-mapa-regional-ia",
+ "lens": "dentro",
+ "theme": "ia-digital",
+ "title": {
+  "es": "La IA se concentra en las capitales: la región de la capital va primera en casi todos los países con datos regionales",
+  "en": "AI clusters around capitals: the capital region leads in almost every country with regional data"
+ },
+ "subtitle": {
+  "es": "Empresas que usan al menos una tecnología de IA, por región, en % del total (10 o más empleados)",
+  "en": "Enterprises using at least one AI technology, by region, as % of all enterprises (10+ employees)"
+ },
+ "unit": {
+  "es": "% de empresas",
+  "en": "% of enterprises"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "isoc_r_eb_ain2",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/isoc_r_eb_ain2/default/table",
+  "license": "CC BY 4.0",
+  "also": [
+   {
+    "name": "Eurostat GISCO, NUTS 2024 (geometrías)",
+    "url": "https://ec.europa.eu/eurostat/web/gisco/geodata/statistical-units/territorial-units-statistics"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Algunos países solo publican datos de grandes regiones (NUTS 1) o del país entero. El mapa usa el nivel más detallado disponible en cada país (best_level)."
+  ],
+  "en": [
+   "Some countries only publish data for large regions (NUTS 1) or the whole country. The map uses the most detailed level available per country (best_level)."
+  ]
+ },
+ "retrieved": "2026-09-24",
+ "geos": {
+  "ALB": {
+   "es": "Albania",
+   "en": "Albania",
+   "eu": false,
+   "aggregate": false
+  },
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BIH": {
+   "es": "Bosnia y Herzegovina",
+   "en": "Bosnia and Herzegovina",
+   "eu": false,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "MNE": {
+   "es": "Montenegro",
+   "en": "Montenegro",
+   "eu": false,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "NOR": {
+   "es": "Noruega",
+   "en": "Norway",
+   "eu": false,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SRB": {
+   "es": "Serbia",
+   "en": "Serbia",
+   "eu": false,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  },
+  "TUR": {
+   "es": "Turquía",
+   "en": "Türkiye",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "best_level": {
+  "ALB": 0,
+  "AUT": 2,
+  "BIH": 0,
+  "BEL": 1,
+  "BGR": 2,
+  "CYP": 0,
+  "CZE": 2,
+  "DEU": 0,
+  "DNK": 2,
+  "EST": 0,
+  "GRC": 0,
+  "ESP": 2,
+  "FIN": 0,
+  "FRA": 0,
+  "HRV": 2,
+  "HUN": 2,
+  "IRL": 0,
+  "ITA": 0,
+  "LTU": 2,
+  "LUX": 0,
+  "LVA": 0,
+  "MNE": 0,
+  "MLT": 0,
+  "NLD": 0,
+  "NOR": 2,
+  "POL": 2,
+  "PRT": 0,
+  "ROU": 0,
+  "SRB": 0,
+  "SWE": 2,
+  "SVN": 2,
+  "SVK": 2,
+  "TUR": 0
+ },
+ "latest": "2025",
+ "geometry": {
+  "0": "geo/nuts0.json",
+  "1": "geo/nuts1.json",
+  "2": "geo/nuts2.json"
+ },
+ "unmatched_geometry": {
+  "0": [],
+  "1": [],
+  "2": []
+ },
+ "rows": [
+  {
+   "geo": "AL",
+   "country": "ALB",
+   "level": 0,
+   "time": "2024",
+   "value": 8.91,
+   "name": "Albania"
+  },
+  {
+   "geo": "AL",
+   "country": "ALB",
+   "level": 0,
+   "time": "2025",
+   "value": 8.99,
+   "name": "Albania"
+  },
+  {
+   "geo": "AT",
+   "country": "AUT",
+   "level": 0,
+   "time": "2023",
+   "value": 10.79,
+   "name": "Austria"
+  },
+  {
+   "geo": "AT",
+   "country": "AUT",
+   "level": 0,
+   "time": "2024",
+   "value": 20.27,
+   "name": "Austria"
+  },
+  {
+   "geo": "AT",
+   "country": "AUT",
+   "level": 0,
+   "time": "2025",
+   "value": 29.95,
+   "name": "Austria"
+  },
+  {
+   "geo": "AT1",
+   "country": "AUT",
+   "level": 1,
+   "time": "2023",
+   "value": 11.96,
+   "name": "Ostösterreich"
+  },
+  {
+   "geo": "AT1",
+   "country": "AUT",
+   "level": 1,
+   "time": "2024",
+   "value": 20.72,
+   "name": "Ostösterreich"
+  },
+  {
+   "geo": "AT1",
+   "country": "AUT",
+   "level": 1,
+   "time": "2025",
+   "value": 29.84,
+   "name": "Ostösterreich"
+  },
+  {
+   "geo": "AT11",
+   "country": "AUT",
+   "level": 2,
+   "time": "2023",
+   "value": 2.94,
+   "name": "Burgenland"
+  },
+  {
+   "geo": "AT11",
+   "country": "AUT",
+   "level": 2,
+   "time": "2024",
+   "value": 12.66,
+   "name": "Burgenland"
+  },
+  {
+   "geo": "AT11",
+   "country": "AUT",
+   "level": 2,
+   "time": "2025",
+   "value": 18.33,
+   "name": "Burgenland"
+  },
+  {
+   "geo": "AT12",
+   "country": "AUT",
+   "level": 2,
+   "time": "2023",
+   "value": 7.96,
+   "name": "Niederösterreich"
+  },
+  {
+   "geo": "AT12",
+   "country": "AUT",
+   "level": 2,
+   "time": "2024",
+   "value": 14.55,
+   "name": "Niederösterreich"
+  },
+  {
+   "geo": "AT12",
+   "country": "AUT",
+   "level": 2,
+   "time": "2025",
+   "value": 21.81,
+   "name": "Niederösterreich"
+  },
+  {
+   "geo": "AT13",
+   "country": "AUT",
+   "level": 2,
+   "time": "2023",
+   "value": 16.26,
+   "name": "Wien"
+  },
+  {
+   "geo": "AT13",
+   "country": "AUT",
+   "level": 2,
+   "time": "2024",
+   "value": 26.48,
+   "name": "Wien"
+  },
+  {
+   "geo": "AT13",
+   "country": "AUT",
+   "level": 2,
+   "time": "2025",
+   "value": 37.36,
+   "name": "Wien"
+  },
+  {
+   "geo": "AT2",
+   "country": "AUT",
+   "level": 1,
+   "time": "2023",
+   "value": 8.58,
+   "name": "Südösterreich"
+  },
+  {
+   "geo": "AT2",
+   "country": "AUT",
+   "level": 1,
+   "time": "2024",
+   "value": 17.38,
+   "name": "Südösterreich"
+  },
+  {
+   "geo": "AT2",
+   "country": "AUT",
+   "level": 1,
+   "time": "2025",
+   "value": 24.97,
+   "name": "Südösterreich"
+  },
+  {
+   "geo": "AT21",
+   "country": "AUT",
+   "level": 2,
+   "time": "2023",
+   "value": 8.21,
+   "name": "Kärnten"
+  },
+  {
+   "geo": "AT21",
+   "country": "AUT",
+   "level": 2,
+   "time": "2024",
+   "value": 18.66,
+   "name": "Kärnten"
+  },
+  {
+   "geo": "AT21",
+   "country": "AUT",
+   "level": 2,
+   "time": "2025",
+   "value": 23.63,
+   "name": "Kärnten"
+  },
+  {
+   "geo": "AT22",
+   "country": "AUT",
+   "level": 2,
+   "time": "2023",
+   "value": 8.74,
+   "name": "Steiermark"
+  },
+  {
+   "geo": "AT22",
+   "country": "AUT",
+   "level": 2,
+   "time": "2024",
+   "value": 16.83,
+   "name": "Steiermark"
+  },
+  {
+   "geo": "AT22",
+   "country": "AUT",
+   "level": 2,
+   "time": "2025",
+   "value": 25.55,
+   "name": "Steiermark"
+  },
+  {
+   "geo": "AT3",
+   "country": "AUT",
+   "level": 1,
+   "time": "2023",
+   "value": 10.62,
+   "name": "Westösterreich"
+  },
+  {
+   "geo": "AT3",
+   "country": "AUT",
+   "level": 1,
+   "time": "2024",
+   "value": 21.18,
+   "name": "Westösterreich"
+  },
+  {
+   "geo": "AT3",
+   "country": "AUT",
+   "level": 1,
+   "time": "2025",
+   "value": 32.39,
+   "name": "Westösterreich"
+  },
+  {
+   "geo": "AT31",
+   "country": "AUT",
+   "level": 2,
+   "time": "2023",
+   "value": 10.85,
+   "name": "Oberösterreich"
+  },
+  {
+   "geo": "AT31",
+   "country": "AUT",
+   "level": 2,
+   "time": "2024",
+   "value": 21.57,
+   "name": "Oberösterreich"
+  },
+  {
+   "geo": "AT31",
+   "country": "AUT",
+   "level": 2,
+   "time": "2025",
+   "value": 32.93,
+   "name": "Oberösterreich"
+  },
+  {
+   "geo": "AT32",
+   "country": "AUT",
+   "level": 2,
+   "time": "2023",
+   "value": 12.26,
+   "name": "Salzburg"
+  },
+  {
+   "geo": "AT32",
+   "country": "AUT",
+   "level": 2,
+   "time": "2024",
+   "value": 19.18,
+   "name": "Salzburg"
+  },
+  {
+   "geo": "AT32",
+   "country": "AUT",
+   "level": 2,
+   "time": "2025",
+   "value": 31.45,
+   "name": "Salzburg"
+  },
+  {
+   "geo": "AT33",
+   "country": "AUT",
+   "level": 2,
+   "time": "2023",
+   "value": 8.1,
+   "name": "Tirol"
+  },
+  {
+   "geo": "AT33",
+   "country": "AUT",
+   "level": 2,
+   "time": "2024",
+   "value": 21.83,
+   "name": "Tirol"
+  },
+  {
+   "geo": "AT33",
+   "country": "AUT",
+   "level": 2,
+   "time": "2025",
+   "value": 30.28,
+   "name": "Tirol"
+  },
+  {
+   "geo": "AT34",
+   "country": "AUT",
+   "level": 2,
+   "time": "2023",
+   "value": 12.24,
+   "name": "Vorarlberg"
+  },
+  {
+   "geo": "AT34",
+   "country": "AUT",
+   "level": 2,
+   "time": "2024",
+   "value": 21.83,
+   "name": "Vorarlberg"
+  },
+  {
+   "geo": "AT34",
+   "country": "AUT",
+   "level": 2,
+   "time": "2025",
+   "value": 36.42,
+   "name": "Vorarlberg"
+  },
+  {
+   "geo": "BA",
+   "country": "BIH",
+   "level": 0,
+   "time": "2023",
+   "value": 5.34,
+   "name": "Bosnia and Herzegovina"
+  },
+  {
+   "geo": "BA",
+   "country": "BIH",
+   "level": 0,
+   "time": "2024",
+   "value": 6.36,
+   "name": "Bosnia and Herzegovina"
+  },
+  {
+   "geo": "BA",
+   "country": "BIH",
+   "level": 0,
+   "time": "2025",
+   "value": 10.78,
+   "name": "Bosnia and Herzegovina"
+  },
+  {
+   "geo": "BE",
+   "country": "BEL",
+   "level": 0,
+   "time": "2023",
+   "value": 13.81,
+   "name": "Belgium"
+  },
+  {
+   "geo": "BE",
+   "country": "BEL",
+   "level": 0,
+   "time": "2024",
+   "value": 24.71,
+   "name": "Belgium"
+  },
+  {
+   "geo": "BE",
+   "country": "BEL",
+   "level": 0,
+   "time": "2025",
+   "value": 34.54,
+   "name": "Belgium"
+  },
+  {
+   "geo": "BE1",
+   "country": "BEL",
+   "level": 1,
+   "time": "2023",
+   "value": 16.75,
+   "name": "Région de Bruxelles-Capitale/Brussels Hoofdstedelijk Gewest"
+  },
+  {
+   "geo": "BE1",
+   "country": "BEL",
+   "level": 1,
+   "time": "2024",
+   "value": 31.71,
+   "name": "Région de Bruxelles-Capitale/Brussels Hoofdstedelijk Gewest"
+  },
+  {
+   "geo": "BE1",
+   "country": "BEL",
+   "level": 1,
+   "time": "2025",
+   "value": 42.32,
+   "name": "Région de Bruxelles-Capitale/Brussels Hoofdstedelijk Gewest"
+  },
+  {
+   "geo": "BE2",
+   "country": "BEL",
+   "level": 1,
+   "time": "2023",
+   "value": 14.1,
+   "name": "Vlaams Gewest"
+  },
+  {
+   "geo": "BE2",
+   "country": "BEL",
+   "level": 1,
+   "time": "2024",
+   "value": 24.84,
+   "name": "Vlaams Gewest"
+  },
+  {
+   "geo": "BE2",
+   "country": "BEL",
+   "level": 1,
+   "time": "2025",
+   "value": 34.84,
+   "name": "Vlaams Gewest"
+  },
+  {
+   "geo": "BE3",
+   "country": "BEL",
+   "level": 1,
+   "time": "2023",
+   "value": 11.68,
+   "name": "Région wallonne"
+  },
+  {
+   "geo": "BE3",
+   "country": "BEL",
+   "level": 1,
+   "time": "2024",
+   "value": 21.11,
+   "name": "Région wallonne"
+  },
+  {
+   "geo": "BE3",
+   "country": "BEL",
+   "level": 1,
+   "time": "2025",
+   "value": 30.2,
+   "name": "Région wallonne"
+  },
+  {
+   "geo": "BG",
+   "country": "BGR",
+   "level": 0,
+   "time": "2023",
+   "value": 3.62,
+   "name": "Bulgaria"
+  },
+  {
+   "geo": "BG",
+   "country": "BGR",
+   "level": 0,
+   "time": "2024",
+   "value": 6.47,
+   "name": "Bulgaria"
+  },
+  {
+   "geo": "BG",
+   "country": "BGR",
+   "level": 0,
+   "time": "2025",
+   "value": 8.55,
+   "name": "Bulgaria"
+  },
+  {
+   "geo": "BG3",
+   "country": "BGR",
+   "level": 1,
+   "time": "2024",
+   "value": 4.12,
+   "name": "Severna i Yugoiztochna Bulgaria"
+  },
+  {
+   "geo": "BG3",
+   "country": "BGR",
+   "level": 1,
+   "time": "2025",
+   "value": 5.2,
+   "name": "Severna i Yugoiztochna Bulgaria"
+  },
+  {
+   "geo": "BG31",
+   "country": "BGR",
+   "level": 2,
+   "time": "2024",
+   "value": 2.64,
+   "name": "Severozapaden"
+  },
+  {
+   "geo": "BG31",
+   "country": "BGR",
+   "level": 2,
+   "time": "2025",
+   "value": 1.78,
+   "name": "Severozapaden"
+  },
+  {
+   "geo": "BG32",
+   "country": "BGR",
+   "level": 2,
+   "time": "2024",
+   "value": 3.9,
+   "name": "Severen tsentralen"
+  },
+  {
+   "geo": "BG32",
+   "country": "BGR",
+   "level": 2,
+   "time": "2025",
+   "value": 4.83,
+   "name": "Severen tsentralen"
+  },
+  {
+   "geo": "BG33",
+   "country": "BGR",
+   "level": 2,
+   "time": "2024",
+   "value": 5.38,
+   "name": "Severoiztochen"
+  },
+  {
+   "geo": "BG33",
+   "country": "BGR",
+   "level": 2,
+   "time": "2025",
+   "value": 8.1,
+   "name": "Severoiztochen"
+  },
+  {
+   "geo": "BG34",
+   "country": "BGR",
+   "level": 2,
+   "time": "2024",
+   "value": 3.82,
+   "name": "Yugoiztochen"
+  },
+  {
+   "geo": "BG34",
+   "country": "BGR",
+   "level": 2,
+   "time": "2025",
+   "value": 4.45,
+   "name": "Yugoiztochen"
+  },
+  {
+   "geo": "BG4",
+   "country": "BGR",
+   "level": 1,
+   "time": "2024",
+   "value": 7.91,
+   "name": "Yugozapadna i Yuzhna tsentralna Bulgaria"
+  },
+  {
+   "geo": "BG4",
+   "country": "BGR",
+   "level": 1,
+   "time": "2025",
+   "value": 10.66,
+   "name": "Yugozapadna i Yuzhna tsentralna Bulgaria"
+  },
+  {
+   "geo": "BG41",
+   "country": "BGR",
+   "level": 2,
+   "time": "2024",
+   "value": 9.57,
+   "name": "Yugozapaden"
+  },
+  {
+   "geo": "BG41",
+   "country": "BGR",
+   "level": 2,
+   "time": "2025",
+   "value": 13.29,
+   "name": "Yugozapaden"
+  },
+  {
+   "geo": "BG42",
+   "country": "BGR",
+   "level": 2,
+   "time": "2024",
+   "value": 3.94,
+   "name": "Yuzhen tsentralen"
+  },
+  {
+   "geo": "BG42",
+   "country": "BGR",
+   "level": 2,
+   "time": "2025",
+   "value": 4.58,
+   "name": "Yuzhen tsentralen"
+  },
+  {
+   "geo": "CY",
+   "country": "CYP",
+   "level": 0,
+   "time": "2023",
+   "value": 4.67,
+   "name": "Cyprus"
+  },
+  {
+   "geo": "CY",
+   "country": "CYP",
+   "level": 0,
+   "time": "2024",
+   "value": 7.9,
+   "name": "Cyprus"
+  },
+  {
+   "geo": "CY",
+   "country": "CYP",
+   "level": 0,
+   "time": "2025",
+   "value": 9.27,
+   "name": "Cyprus"
+  },
+  {
+   "geo": "CZ",
+   "country": "CZE",
+   "level": 0,
+   "time": "2023",
+   "value": 5.9,
+   "name": "Czechia"
+  },
+  {
+   "geo": "CZ",
+   "country": "CZE",
+   "level": 0,
+   "time": "2024",
+   "value": 11.26,
+   "name": "Czechia"
+  },
+  {
+   "geo": "CZ",
+   "country": "CZE",
+   "level": 0,
+   "time": "2025",
+   "value": 17.6,
+   "name": "Czechia"
+  },
+  {
+   "geo": "CZ01",
+   "country": "CZE",
+   "level": 2,
+   "time": "2025",
+   "value": 25.5,
+   "name": "Praha"
+  },
+  {
+   "geo": "CZ02",
+   "country": "CZE",
+   "level": 2,
+   "time": "2025",
+   "value": 13.47,
+   "name": "Střední Čechy"
+  },
+  {
+   "geo": "CZ03",
+   "country": "CZE",
+   "level": 2,
+   "time": "2025",
+   "value": 14.06,
+   "name": "Jihozápad"
+  },
+  {
+   "geo": "CZ04",
+   "country": "CZE",
+   "level": 2,
+   "time": "2025",
+   "value": 9.47,
+   "name": "Severozápad"
+  },
+  {
+   "geo": "CZ05",
+   "country": "CZE",
+   "level": 2,
+   "time": "2025",
+   "value": 17.81,
+   "name": "Severovýchod"
+  },
+  {
+   "geo": "CZ06",
+   "country": "CZE",
+   "level": 2,
+   "time": "2025",
+   "value": 15.49,
+   "name": "Jihovýchod"
+  },
+  {
+   "geo": "CZ07",
+   "country": "CZE",
+   "level": 2,
+   "time": "2025",
+   "value": 15.57,
+   "name": "Střední Morava"
+  },
+  {
+   "geo": "CZ08",
+   "country": "CZE",
+   "level": 2,
+   "time": "2025",
+   "value": 15.72,
+   "name": "Moravskoslezsko"
+  },
+  {
+   "geo": "DE",
+   "country": "DEU",
+   "level": 0,
+   "time": "2023",
+   "value": 11.55,
+   "name": "Germany"
+  },
+  {
+   "geo": "DE",
+   "country": "DEU",
+   "level": 0,
+   "time": "2024",
+   "value": 19.75,
+   "name": "Germany"
+  },
+  {
+   "geo": "DE",
+   "country": "DEU",
+   "level": 0,
+   "time": "2025",
+   "value": 25.97,
+   "name": "Germany"
+  },
+  {
+   "geo": "DK",
+   "country": "DNK",
+   "level": 0,
+   "time": "2023",
+   "value": 15.17,
+   "name": "Denmark"
+  },
+  {
+   "geo": "DK",
+   "country": "DNK",
+   "level": 0,
+   "time": "2024",
+   "value": 27.58,
+   "name": "Denmark"
+  },
+  {
+   "geo": "DK",
+   "country": "DNK",
+   "level": 0,
+   "time": "2025",
+   "value": 42.03,
+   "name": "Denmark"
+  },
+  {
+   "geo": "DK0",
+   "country": "DNK",
+   "level": 1,
+   "time": "2023",
+   "value": 15.17,
+   "name": "Danmark"
+  },
+  {
+   "geo": "DK0",
+   "country": "DNK",
+   "level": 1,
+   "time": "2024",
+   "value": 27.58,
+   "name": "Danmark"
+  },
+  {
+   "geo": "DK0",
+   "country": "DNK",
+   "level": 1,
+   "time": "2025",
+   "value": 42.03,
+   "name": "Danmark"
+  },
+  {
+   "geo": "DK01",
+   "country": "DNK",
+   "level": 2,
+   "time": "2024",
+   "value": 19.84,
+   "name": "Hovedstaden"
+  },
+  {
+   "geo": "DK01",
+   "country": "DNK",
+   "level": 2,
+   "time": "2025",
+   "value": 33.05,
+   "name": "Hovedstaden"
+  },
+  {
+   "geo": "DK02",
+   "country": "DNK",
+   "level": 2,
+   "time": "2024",
+   "value": 28.11,
+   "name": "Sjælland"
+  },
+  {
+   "geo": "DK02",
+   "country": "DNK",
+   "level": 2,
+   "time": "2025",
+   "value": 42.73,
+   "name": "Sjælland"
+  },
+  {
+   "geo": "DK03",
+   "country": "DNK",
+   "level": 2,
+   "time": "2024",
+   "value": 21.1,
+   "name": "Syddanmark"
+  },
+  {
+   "geo": "DK03",
+   "country": "DNK",
+   "level": 2,
+   "time": "2025",
+   "value": 34.68,
+   "name": "Syddanmark"
+  },
+  {
+   "geo": "DK04",
+   "country": "DNK",
+   "level": 2,
+   "time": "2024",
+   "value": 34.97,
+   "name": "Midtjylland"
+  },
+  {
+   "geo": "DK04",
+   "country": "DNK",
+   "level": 2,
+   "time": "2025",
+   "value": 50.82,
+   "name": "Midtjylland"
+  },
+  {
+   "geo": "DK05",
+   "country": "DNK",
+   "level": 2,
+   "time": "2024",
+   "value": 18.75,
+   "name": "Nordjylland"
+  },
+  {
+   "geo": "DK05",
+   "country": "DNK",
+   "level": 2,
+   "time": "2025",
+   "value": 32.13,
+   "name": "Nordjylland"
+  },
+  {
+   "geo": "EE",
+   "country": "EST",
+   "level": 0,
+   "time": "2023",
+   "value": 5.19,
+   "name": "Estonia"
+  },
+  {
+   "geo": "EE",
+   "country": "EST",
+   "level": 0,
+   "time": "2024",
+   "value": 13.89,
+   "name": "Estonia"
+  },
+  {
+   "geo": "EE",
+   "country": "EST",
+   "level": 0,
+   "time": "2025",
+   "value": 23.4,
+   "name": "Estonia"
+  },
+  {
+   "geo": "EL",
+   "country": "GRC",
+   "level": 0,
+   "time": "2023",
+   "value": 3.98,
+   "name": "Greece"
+  },
+  {
+   "geo": "EL",
+   "country": "GRC",
+   "level": 0,
+   "time": "2024",
+   "value": 9.81,
+   "name": "Greece"
+  },
+  {
+   "geo": "EL",
+   "country": "GRC",
+   "level": 0,
+   "time": "2025",
+   "value": 8.93,
+   "name": "Greece"
+  },
+  {
+   "geo": "ES",
+   "country": "ESP",
+   "level": 0,
+   "time": "2023",
+   "value": 9.18,
+   "name": "Spain"
+  },
+  {
+   "geo": "ES",
+   "country": "ESP",
+   "level": 0,
+   "time": "2024",
+   "value": 11.31,
+   "name": "Spain"
+  },
+  {
+   "geo": "ES",
+   "country": "ESP",
+   "level": 0,
+   "time": "2025",
+   "value": 20.27,
+   "name": "Spain"
+  },
+  {
+   "geo": "ES1",
+   "country": "ESP",
+   "level": 1,
+   "time": "2023",
+   "value": 8.37,
+   "name": "Noroeste"
+  },
+  {
+   "geo": "ES1",
+   "country": "ESP",
+   "level": 1,
+   "time": "2024",
+   "value": 9.69,
+   "name": "Noroeste"
+  },
+  {
+   "geo": "ES1",
+   "country": "ESP",
+   "level": 1,
+   "time": "2025",
+   "value": 15.81,
+   "name": "Noroeste"
+  },
+  {
+   "geo": "ES11",
+   "country": "ESP",
+   "level": 2,
+   "time": "2023",
+   "value": 7.24,
+   "name": "Galicia"
+  },
+  {
+   "geo": "ES11",
+   "country": "ESP",
+   "level": 2,
+   "time": "2024",
+   "value": 10.12,
+   "name": "Galicia"
+  },
+  {
+   "geo": "ES11",
+   "country": "ESP",
+   "level": 2,
+   "time": "2025",
+   "value": 17.06,
+   "name": "Galicia"
+  },
+  {
+   "geo": "ES12",
+   "country": "ESP",
+   "level": 2,
+   "time": "2023",
+   "value": 12.73,
+   "name": "Principado de Asturias"
+  },
+  {
+   "geo": "ES12",
+   "country": "ESP",
+   "level": 2,
+   "time": "2024",
+   "value": 9.99,
+   "name": "Principado de Asturias"
+  },
+  {
+   "geo": "ES12",
+   "country": "ESP",
+   "level": 2,
+   "time": "2025",
+   "value": 15.08,
+   "name": "Principado de Asturias"
+  },
+  {
+   "geo": "ES13",
+   "country": "ESP",
+   "level": 2,
+   "time": "2023",
+   "value": 6.38,
+   "name": "Cantabria"
+  },
+  {
+   "geo": "ES13",
+   "country": "ESP",
+   "level": 2,
+   "time": "2024",
+   "value": 7.36,
+   "name": "Cantabria"
+  },
+  {
+   "geo": "ES13",
+   "country": "ESP",
+   "level": 2,
+   "time": "2025",
+   "value": 10.99,
+   "name": "Cantabria"
+  },
+  {
+   "geo": "ES2",
+   "country": "ESP",
+   "level": 1,
+   "time": "2023",
+   "value": 10.87,
+   "name": "Noreste"
+  },
+  {
+   "geo": "ES2",
+   "country": "ESP",
+   "level": 1,
+   "time": "2024",
+   "value": 10.75,
+   "name": "Noreste"
+  },
+  {
+   "geo": "ES2",
+   "country": "ESP",
+   "level": 1,
+   "time": "2025",
+   "value": 18.76,
+   "name": "Noreste"
+  },
+  {
+   "geo": "ES21",
+   "country": "ESP",
+   "level": 2,
+   "time": "2023",
+   "value": 12.93,
+   "name": "País Vasco"
+  },
+  {
+   "geo": "ES21",
+   "country": "ESP",
+   "level": 2,
+   "time": "2024",
+   "value": 12.33,
+   "name": "País Vasco"
+  },
+  {
+   "geo": "ES21",
+   "country": "ESP",
+   "level": 2,
+   "time": "2025",
+   "value": 22.42,
+   "name": "País Vasco"
+  },
+  {
+   "geo": "ES22",
+   "country": "ESP",
+   "level": 2,
+   "time": "2023",
+   "value": 8.87,
+   "name": "Comunidad Foral de Navarra"
+  },
+  {
+   "geo": "ES22",
+   "country": "ESP",
+   "level": 2,
+   "time": "2024",
+   "value": 9.67,
+   "name": "Comunidad Foral de Navarra"
+  },
+  {
+   "geo": "ES22",
+   "country": "ESP",
+   "level": 2,
+   "time": "2025",
+   "value": 20.35,
+   "name": "Comunidad Foral de Navarra"
+  },
+  {
+   "geo": "ES23",
+   "country": "ESP",
+   "level": 2,
+   "time": "2023",
+   "value": 10.84,
+   "name": "La Rioja"
+  },
+  {
+   "geo": "ES23",
+   "country": "ESP",
+   "level": 2,
+   "time": "2024",
+   "value": 6.1,
+   "name": "La Rioja"
+  },
+  {
+   "geo": "ES23",
+   "country": "ESP",
+   "level": 2,
+   "time": "2025",
+   "value": 14.61,
+   "name": "La Rioja"
+  },
+  {
+   "geo": "ES24",
+   "country": "ESP",
+   "level": 2,
+   "time": "2023",
+   "value": 8.15,
+   "name": "Aragón"
+  },
+  {
+   "geo": "ES24",
+   "country": "ESP",
+   "level": 2,
+   "time": "2024",
+   "value": 10.1,
+   "name": "Aragón"
+  },
+  {
+   "geo": "ES24",
+   "country": "ESP",
+   "level": 2,
+   "time": "2025",
+   "value": 12.68,
+   "name": "Aragón"
+  },
+  {
+   "geo": "ES3",
+   "country": "ESP",
+   "level": 1,
+   "time": "2023",
+   "value": 11.43,
+   "name": "Comunidad de Madrid"
+  },
+  {
+   "geo": "ES3",
+   "country": "ESP",
+   "level": 1,
+   "time": "2024",
+   "value": 15.59,
+   "name": "Comunidad de Madrid"
+  },
+  {
+   "geo": "ES3",
+   "country": "ESP",
+   "level": 1,
+   "time": "2025",
+   "value": 27.42,
+   "name": "Comunidad de Madrid"
+  },
+  {
+   "geo": "ES30",
+   "country": "ESP",
+   "level": 2,
+   "time": "2023",
+   "value": 11.43,
+   "name": "Comunidad de Madrid"
+  },
+  {
+   "geo": "ES30",
+   "country": "ESP",
+   "level": 2,
+   "time": "2024",
+   "value": 15.59,
+   "name": "Comunidad de Madrid"
+  },
+  {
+   "geo": "ES30",
+   "country": "ESP",
+   "level": 2,
+   "time": "2025",
+   "value": 27.42,
+   "name": "Comunidad de Madrid"
+  },
+  {
+   "geo": "ES4",
+   "country": "ESP",
+   "level": 1,
+   "time": "2023",
+   "value": 7.31,
+   "name": "Centro (ES)"
+  },
+  {
+   "geo": "ES4",
+   "country": "ESP",
+   "level": 1,
+   "time": "2024",
+   "value": 7.53,
+   "name": "Centro (ES)"
+  },
+  {
+   "geo": "ES4",
+   "country": "ESP",
+   "level": 1,
+   "time": "2025",
+   "value": 17.47,
+   "name": "Centro (ES)"
+  },
+  {
+   "geo": "ES41",
+   "country": "ESP",
+   "level": 2,
+   "time": "2023",
+   "value": 8.85,
+   "name": "Castilla y León"
+  },
+  {
+   "geo": "ES41",
+   "country": "ESP",
+   "level": 2,
+   "time": "2024",
+   "value": 7.53,
+   "name": "Castilla y León"
+  },
+  {
+   "geo": "ES41",
+   "country": "ESP",
+   "level": 2,
+   "time": "2025",
+   "value": 17.13,
+   "name": "Castilla y León"
+  },
+  {
+   "geo": "ES42",
+   "country": "ESP",
+   "level": 2,
+   "time": "2023",
+   "value": 6.32,
+   "name": "Castilla-La Mancha"
+  },
+  {
+   "geo": "ES42",
+   "country": "ESP",
+   "level": 2,
+   "time": "2024",
+   "value": 7.1,
+   "name": "Castilla-La Mancha"
+  },
+  {
+   "geo": "ES42",
+   "country": "ESP",
+   "level": 2,
+   "time": "2025",
+   "value": 18.93,
+   "name": "Castilla-La Mancha"
+  },
+  {
+   "geo": "ES43",
+   "country": "ESP",
+   "level": 2,
+   "time": "2023",
+   "value": 5.87,
+   "name": "Extremadura"
+  },
+  {
+   "geo": "ES43",
+   "country": "ESP",
+   "level": 2,
+   "time": "2024",
+   "value": 8.51,
+   "name": "Extremadura"
+  },
+  {
+   "geo": "ES43",
+   "country": "ESP",
+   "level": 2,
+   "time": "2025",
+   "value": 14.88,
+   "name": "Extremadura"
+  },
+  {
+   "geo": "ES5",
+   "country": "ESP",
+   "level": 1,
+   "time": "2023",
+   "value": 9.4,
+   "name": "Este"
+  },
+  {
+   "geo": "ES5",
+   "country": "ESP",
+   "level": 1,
+   "time": "2024",
+   "value": 13.11,
+   "name": "Este"
+  },
+  {
+   "geo": "ES5",
+   "country": "ESP",
+   "level": 1,
+   "time": "2025",
+   "value": 21.61,
+   "name": "Este"
+  },
+  {
+   "geo": "ES51",
+   "country": "ESP",
+   "level": 2,
+   "time": "2023",
+   "value": 10.7,
+   "name": "Cataluña"
+  },
+  {
+   "geo": "ES51",
+   "country": "ESP",
+   "level": 2,
+   "time": "2024",
+   "value": 13.98,
+   "name": "Cataluña"
+  },
+  {
+   "geo": "ES51",
+   "country": "ESP",
+   "level": 2,
+   "time": "2025",
+   "value": 24.04,
+   "name": "Cataluña"
+  },
+  {
+   "geo": "ES52",
+   "country": "ESP",
+   "level": 2,
+   "time": "2023",
+   "value": 8.35,
+   "name": "Comunitat Valenciana"
+  },
+  {
+   "geo": "ES52",
+   "country": "ESP",
+   "level": 2,
+   "time": "2024",
+   "value": 12.07,
+   "name": "Comunitat Valenciana"
+  },
+  {
+   "geo": "ES52",
+   "country": "ESP",
+   "level": 2,
+   "time": "2025",
+   "value": 19.82,
+   "name": "Comunitat Valenciana"
+  },
+  {
+   "geo": "ES53",
+   "country": "ESP",
+   "level": 2,
+   "time": "2023",
+   "value": 5.13,
+   "name": "Illes Balears"
+  },
+  {
+   "geo": "ES53",
+   "country": "ESP",
+   "level": 2,
+   "time": "2024",
+   "value": 10.83,
+   "name": "Illes Balears"
+  },
+  {
+   "geo": "ES53",
+   "country": "ESP",
+   "level": 2,
+   "time": "2025",
+   "value": 11.87,
+   "name": "Illes Balears"
+  },
+  {
+   "geo": "ES6",
+   "country": "ESP",
+   "level": 1,
+   "time": "2023",
+   "value": 7.52,
+   "name": "Sur"
+  },
+  {
+   "geo": "ES6",
+   "country": "ESP",
+   "level": 1,
+   "time": "2024",
+   "value": 8.17,
+   "name": "Sur"
+  },
+  {
+   "geo": "ES6",
+   "country": "ESP",
+   "level": 1,
+   "time": "2025",
+   "value": 15.6,
+   "name": "Sur"
+  },
+  {
+   "geo": "ES61",
+   "country": "ESP",
+   "level": 2,
+   "time": "2023",
+   "value": 7.82,
+   "name": "Andalucía"
+  },
+  {
+   "geo": "ES61",
+   "country": "ESP",
+   "level": 2,
+   "time": "2024",
+   "value": 8.6,
+   "name": "Andalucía"
+  },
+  {
+   "geo": "ES61",
+   "country": "ESP",
+   "level": 2,
+   "time": "2025",
+   "value": 15.83,
+   "name": "Andalucía"
+  },
+  {
+   "geo": "ES62",
+   "country": "ESP",
+   "level": 2,
+   "time": "2023",
+   "value": 6.38,
+   "name": "Región de Murcia"
+  },
+  {
+   "geo": "ES62",
+   "country": "ESP",
+   "level": 2,
+   "time": "2024",
+   "value": 6.77,
+   "name": "Región de Murcia"
+  },
+  {
+   "geo": "ES62",
+   "country": "ESP",
+   "level": 2,
+   "time": "2025",
+   "value": 15.09,
+   "name": "Región de Murcia"
+  },
+  {
+   "geo": "ES63",
+   "country": "ESP",
+   "level": 2,
+   "time": "2023",
+   "value": 4.24,
+   "name": "Ciudad de Ceuta"
+  },
+  {
+   "geo": "ES63",
+   "country": "ESP",
+   "level": 2,
+   "time": "2024",
+   "value": 6.05,
+   "name": "Ciudad de Ceuta"
+  },
+  {
+   "geo": "ES63",
+   "country": "ESP",
+   "level": 2,
+   "time": "2025",
+   "value": 8.18,
+   "name": "Ciudad de Ceuta"
+  },
+  {
+   "geo": "ES64",
+   "country": "ESP",
+   "level": 2,
+   "time": "2023",
+   "value": 4.48,
+   "name": "Ciudad de Melilla"
+  },
+  {
+   "geo": "ES64",
+   "country": "ESP",
+   "level": 2,
+   "time": "2024",
+   "value": 1.46,
+   "name": "Ciudad de Melilla"
+  },
+  {
+   "geo": "ES64",
+   "country": "ESP",
+   "level": 2,
+   "time": "2025",
+   "value": 3.49,
+   "name": "Ciudad de Melilla"
+  },
+  {
+   "geo": "ES7",
+   "country": "ESP",
+   "level": 1,
+   "time": "2023",
+   "value": 5.91,
+   "name": "Canarias"
+  },
+  {
+   "geo": "ES7",
+   "country": "ESP",
+   "level": 1,
+   "time": "2024",
+   "value": 5.06,
+   "name": "Canarias"
+  },
+  {
+   "geo": "ES7",
+   "country": "ESP",
+   "level": 1,
+   "time": "2025",
+   "value": 15.85,
+   "name": "Canarias"
+  },
+  {
+   "geo": "ES70",
+   "country": "ESP",
+   "level": 2,
+   "time": "2023",
+   "value": 5.91,
+   "name": "Canarias"
+  },
+  {
+   "geo": "ES70",
+   "country": "ESP",
+   "level": 2,
+   "time": "2024",
+   "value": 5.06,
+   "name": "Canarias"
+  },
+  {
+   "geo": "ES70",
+   "country": "ESP",
+   "level": 2,
+   "time": "2025",
+   "value": 15.85,
+   "name": "Canarias"
+  },
+  {
+   "geo": "FI",
+   "country": "FIN",
+   "level": 0,
+   "time": "2023",
+   "value": 15.1,
+   "name": "Finland"
+  },
+  {
+   "geo": "FI",
+   "country": "FIN",
+   "level": 0,
+   "time": "2024",
+   "value": 24.37,
+   "name": "Finland"
+  },
+  {
+   "geo": "FI",
+   "country": "FIN",
+   "level": 0,
+   "time": "2025",
+   "value": 37.82,
+   "name": "Finland"
+  },
+  {
+   "geo": "FR",
+   "country": "FRA",
+   "level": 0,
+   "time": "2023",
+   "value": 5.88,
+   "name": "France"
+  },
+  {
+   "geo": "FR",
+   "country": "FRA",
+   "level": 0,
+   "time": "2024",
+   "value": 9.91,
+   "name": "France"
+  },
+  {
+   "geo": "FR",
+   "country": "FRA",
+   "level": 0,
+   "time": "2025",
+   "value": 18.16,
+   "name": "France"
+  },
+  {
+   "geo": "HR",
+   "country": "HRV",
+   "level": 0,
+   "time": "2023",
+   "value": 7.89,
+   "name": "Croatia"
+  },
+  {
+   "geo": "HR",
+   "country": "HRV",
+   "level": 0,
+   "time": "2024",
+   "value": 11.76,
+   "name": "Croatia"
+  },
+  {
+   "geo": "HR",
+   "country": "HRV",
+   "level": 0,
+   "time": "2025",
+   "value": 15.19,
+   "name": "Croatia"
+  },
+  {
+   "geo": "HR0",
+   "country": "HRV",
+   "level": 1,
+   "time": "2023",
+   "value": 7.89,
+   "name": "Hrvatska"
+  },
+  {
+   "geo": "HR0",
+   "country": "HRV",
+   "level": 1,
+   "time": "2024",
+   "value": 11.76,
+   "name": "Hrvatska"
+  },
+  {
+   "geo": "HR0",
+   "country": "HRV",
+   "level": 1,
+   "time": "2025",
+   "value": 15.19,
+   "name": "Hrvatska"
+  },
+  {
+   "geo": "HR02",
+   "country": "HRV",
+   "level": 2,
+   "time": "2023",
+   "value": 8.97,
+   "name": "Panonska Hrvatska"
+  },
+  {
+   "geo": "HR02",
+   "country": "HRV",
+   "level": 2,
+   "time": "2024",
+   "value": 8.29,
+   "name": "Panonska Hrvatska"
+  },
+  {
+   "geo": "HR02",
+   "country": "HRV",
+   "level": 2,
+   "time": "2025",
+   "value": 10.51,
+   "name": "Panonska Hrvatska"
+  },
+  {
+   "geo": "HR03",
+   "country": "HRV",
+   "level": 2,
+   "time": "2023",
+   "value": 5.7,
+   "name": "Jadranska Hrvatska"
+  },
+  {
+   "geo": "HR03",
+   "country": "HRV",
+   "level": 2,
+   "time": "2024",
+   "value": 10.49,
+   "name": "Jadranska Hrvatska"
+  },
+  {
+   "geo": "HR03",
+   "country": "HRV",
+   "level": 2,
+   "time": "2025",
+   "value": 10.98,
+   "name": "Jadranska Hrvatska"
+  },
+  {
+   "geo": "HR05",
+   "country": "HRV",
+   "level": 2,
+   "time": "2023",
+   "value": 11.55,
+   "name": "Grad Zagreb"
+  },
+  {
+   "geo": "HR05",
+   "country": "HRV",
+   "level": 2,
+   "time": "2024",
+   "value": 17.46,
+   "name": "Grad Zagreb"
+  },
+  {
+   "geo": "HR05",
+   "country": "HRV",
+   "level": 2,
+   "time": "2025",
+   "value": 25.44,
+   "name": "Grad Zagreb"
+  },
+  {
+   "geo": "HR06",
+   "country": "HRV",
+   "level": 2,
+   "time": "2023",
+   "value": 4.49,
+   "name": "Sjeverna Hrvatska"
+  },
+  {
+   "geo": "HR06",
+   "country": "HRV",
+   "level": 2,
+   "time": "2024",
+   "value": 9.7,
+   "name": "Sjeverna Hrvatska"
+  },
+  {
+   "geo": "HR06",
+   "country": "HRV",
+   "level": 2,
+   "time": "2025",
+   "value": 11.98,
+   "name": "Sjeverna Hrvatska"
+  },
+  {
+   "geo": "HU",
+   "country": "HUN",
+   "level": 0,
+   "time": "2023",
+   "value": 3.68,
+   "name": "Hungary"
+  },
+  {
+   "geo": "HU",
+   "country": "HUN",
+   "level": 0,
+   "time": "2024",
+   "value": 7.41,
+   "name": "Hungary"
+  },
+  {
+   "geo": "HU",
+   "country": "HUN",
+   "level": 0,
+   "time": "2025",
+   "value": 10.37,
+   "name": "Hungary"
+  },
+  {
+   "geo": "HU1",
+   "country": "HUN",
+   "level": 1,
+   "time": "2023",
+   "value": 4.54,
+   "name": "Közép-Magyarország"
+  },
+  {
+   "geo": "HU1",
+   "country": "HUN",
+   "level": 1,
+   "time": "2024",
+   "value": 10.09,
+   "name": "Közép-Magyarország"
+  },
+  {
+   "geo": "HU1",
+   "country": "HUN",
+   "level": 1,
+   "time": "2025",
+   "value": 14.33,
+   "name": "Közép-Magyarország"
+  },
+  {
+   "geo": "HU11",
+   "country": "HUN",
+   "level": 2,
+   "time": "2023",
+   "value": 5.53,
+   "name": "Budapest"
+  },
+  {
+   "geo": "HU11",
+   "country": "HUN",
+   "level": 2,
+   "time": "2024",
+   "value": 11.34,
+   "name": "Budapest"
+  },
+  {
+   "geo": "HU11",
+   "country": "HUN",
+   "level": 2,
+   "time": "2025",
+   "value": 17.66,
+   "name": "Budapest"
+  },
+  {
+   "geo": "HU12",
+   "country": "HUN",
+   "level": 2,
+   "time": "2023",
+   "value": 2.41,
+   "name": "Pest"
+  },
+  {
+   "geo": "HU12",
+   "country": "HUN",
+   "level": 2,
+   "time": "2024",
+   "value": 7.49,
+   "name": "Pest"
+  },
+  {
+   "geo": "HU12",
+   "country": "HUN",
+   "level": 2,
+   "time": "2025",
+   "value": 7.4,
+   "name": "Pest"
+  },
+  {
+   "geo": "HU2",
+   "country": "HUN",
+   "level": 1,
+   "time": "2023",
+   "value": 3.22,
+   "name": "Dunántúl"
+  },
+  {
+   "geo": "HU2",
+   "country": "HUN",
+   "level": 1,
+   "time": "2024",
+   "value": 5.73,
+   "name": "Dunántúl"
+  },
+  {
+   "geo": "HU2",
+   "country": "HUN",
+   "level": 1,
+   "time": "2025",
+   "value": 7.21,
+   "name": "Dunántúl"
+  },
+  {
+   "geo": "HU21",
+   "country": "HUN",
+   "level": 2,
+   "time": "2023",
+   "value": 3.95,
+   "name": "Közép-Dunántúl"
+  },
+  {
+   "geo": "HU21",
+   "country": "HUN",
+   "level": 2,
+   "time": "2024",
+   "value": 6.16,
+   "name": "Közép-Dunántúl"
+  },
+  {
+   "geo": "HU21",
+   "country": "HUN",
+   "level": 2,
+   "time": "2025",
+   "value": 7.72,
+   "name": "Közép-Dunántúl"
+  },
+  {
+   "geo": "HU22",
+   "country": "HUN",
+   "level": 2,
+   "time": "2023",
+   "value": 2.53,
+   "name": "Nyugat-Dunántúl"
+  },
+  {
+   "geo": "HU22",
+   "country": "HUN",
+   "level": 2,
+   "time": "2024",
+   "value": 3.3,
+   "name": "Nyugat-Dunántúl"
+  },
+  {
+   "geo": "HU22",
+   "country": "HUN",
+   "level": 2,
+   "time": "2025",
+   "value": 6.11,
+   "name": "Nyugat-Dunántúl"
+  },
+  {
+   "geo": "HU23",
+   "country": "HUN",
+   "level": 2,
+   "time": "2023",
+   "value": 3.12,
+   "name": "Dél-Dunántúl"
+  },
+  {
+   "geo": "HU23",
+   "country": "HUN",
+   "level": 2,
+   "time": "2024",
+   "value": 8.45,
+   "name": "Dél-Dunántúl"
+  },
+  {
+   "geo": "HU23",
+   "country": "HUN",
+   "level": 2,
+   "time": "2025",
+   "value": 7.98,
+   "name": "Dél-Dunántúl"
+  },
+  {
+   "geo": "HU3",
+   "country": "HUN",
+   "level": 1,
+   "time": "2023",
+   "value": 2.63,
+   "name": "Alföld és Észak"
+  },
+  {
+   "geo": "HU3",
+   "country": "HUN",
+   "level": 1,
+   "time": "2024",
+   "value": 4.34,
+   "name": "Alföld és Észak"
+  },
+  {
+   "geo": "HU3",
+   "country": "HUN",
+   "level": 1,
+   "time": "2025",
+   "value": 6.29,
+   "name": "Alföld és Észak"
+  },
+  {
+   "geo": "HU31",
+   "country": "HUN",
+   "level": 2,
+   "time": "2023",
+   "value": 1.4,
+   "name": "Észak-Magyarország"
+  },
+  {
+   "geo": "HU31",
+   "country": "HUN",
+   "level": 2,
+   "time": "2024",
+   "value": 3.72,
+   "name": "Észak-Magyarország"
+  },
+  {
+   "geo": "HU31",
+   "country": "HUN",
+   "level": 2,
+   "time": "2025",
+   "value": 6.26,
+   "name": "Észak-Magyarország"
+  },
+  {
+   "geo": "HU32",
+   "country": "HUN",
+   "level": 2,
+   "time": "2023",
+   "value": 2.41,
+   "name": "Észak-Alföld"
+  },
+  {
+   "geo": "HU32",
+   "country": "HUN",
+   "level": 2,
+   "time": "2024",
+   "value": 3.61,
+   "name": "Észak-Alföld"
+  },
+  {
+   "geo": "HU32",
+   "country": "HUN",
+   "level": 2,
+   "time": "2025",
+   "value": 5.48,
+   "name": "Észak-Alföld"
+  },
+  {
+   "geo": "HU33",
+   "country": "HUN",
+   "level": 2,
+   "time": "2023",
+   "value": 3.56,
+   "name": "Dél-Alföld"
+  },
+  {
+   "geo": "HU33",
+   "country": "HUN",
+   "level": 2,
+   "time": "2024",
+   "value": 5.39,
+   "name": "Dél-Alföld"
+  },
+  {
+   "geo": "HU33",
+   "country": "HUN",
+   "level": 2,
+   "time": "2025",
+   "value": 7.07,
+   "name": "Dél-Alföld"
+  },
+  {
+   "geo": "IE",
+   "country": "IRL",
+   "level": 0,
+   "time": "2023",
+   "value": 8.01,
+   "name": "Ireland"
+  },
+  {
+   "geo": "IE",
+   "country": "IRL",
+   "level": 0,
+   "time": "2024",
+   "value": 14.9,
+   "name": "Ireland"
+  },
+  {
+   "geo": "IE",
+   "country": "IRL",
+   "level": 0,
+   "time": "2025",
+   "value": 19.64,
+   "name": "Ireland"
+  },
+  {
+   "geo": "IT",
+   "country": "ITA",
+   "level": 0,
+   "time": "2023",
+   "value": 5.05,
+   "name": "Italy"
+  },
+  {
+   "geo": "IT",
+   "country": "ITA",
+   "level": 0,
+   "time": "2024",
+   "value": 8.2,
+   "name": "Italy"
+  },
+  {
+   "geo": "IT",
+   "country": "ITA",
+   "level": 0,
+   "time": "2025",
+   "value": 16.4,
+   "name": "Italy"
+  },
+  {
+   "geo": "LT",
+   "country": "LTU",
+   "level": 0,
+   "time": "2023",
+   "value": 4.86,
+   "name": "Lithuania"
+  },
+  {
+   "geo": "LT",
+   "country": "LTU",
+   "level": 0,
+   "time": "2024",
+   "value": 8.76,
+   "name": "Lithuania"
+  },
+  {
+   "geo": "LT",
+   "country": "LTU",
+   "level": 0,
+   "time": "2025",
+   "value": 21.3,
+   "name": "Lithuania"
+  },
+  {
+   "geo": "LT0",
+   "country": "LTU",
+   "level": 1,
+   "time": "2023",
+   "value": 4.86,
+   "name": "Lietuva"
+  },
+  {
+   "geo": "LT0",
+   "country": "LTU",
+   "level": 1,
+   "time": "2024",
+   "value": 8.76,
+   "name": "Lietuva"
+  },
+  {
+   "geo": "LT0",
+   "country": "LTU",
+   "level": 1,
+   "time": "2025",
+   "value": 21.3,
+   "name": "Lietuva"
+  },
+  {
+   "geo": "LT01",
+   "country": "LTU",
+   "level": 2,
+   "time": "2024",
+   "value": 12.41,
+   "name": "Sostinės regionas"
+  },
+  {
+   "geo": "LT01",
+   "country": "LTU",
+   "level": 2,
+   "time": "2025",
+   "value": 26.84,
+   "name": "Sostinės regionas"
+  },
+  {
+   "geo": "LT02",
+   "country": "LTU",
+   "level": 2,
+   "time": "2024",
+   "value": 6.47,
+   "name": "Vidurio ir vakarų Lietuvos regionas"
+  },
+  {
+   "geo": "LT02",
+   "country": "LTU",
+   "level": 2,
+   "time": "2025",
+   "value": 17.98,
+   "name": "Vidurio ir vakarų Lietuvos regionas"
+  },
+  {
+   "geo": "LU",
+   "country": "LUX",
+   "level": 0,
+   "time": "2023",
+   "value": 14.45,
+   "name": "Luxembourg"
+  },
+  {
+   "geo": "LU",
+   "country": "LUX",
+   "level": 0,
+   "time": "2024",
+   "value": 23.73,
+   "name": "Luxembourg"
+  },
+  {
+   "geo": "LU",
+   "country": "LUX",
+   "level": 0,
+   "time": "2025",
+   "value": 33.61,
+   "name": "Luxembourg"
+  },
+  {
+   "geo": "LV",
+   "country": "LVA",
+   "level": 0,
+   "time": "2023",
+   "value": 4.53,
+   "name": "Latvia"
+  },
+  {
+   "geo": "LV",
+   "country": "LVA",
+   "level": 0,
+   "time": "2024",
+   "value": 8.83,
+   "name": "Latvia"
+  },
+  {
+   "geo": "LV",
+   "country": "LVA",
+   "level": 0,
+   "time": "2025",
+   "value": 12.21,
+   "name": "Latvia"
+  },
+  {
+   "geo": "ME",
+   "country": "MNE",
+   "level": 0,
+   "time": "2023",
+   "value": 5.61,
+   "name": "Montenegro"
+  },
+  {
+   "geo": "ME",
+   "country": "MNE",
+   "level": 0,
+   "time": "2024",
+   "value": 7.91,
+   "name": "Montenegro"
+  },
+  {
+   "geo": "ME",
+   "country": "MNE",
+   "level": 0,
+   "time": "2025",
+   "value": 10.05,
+   "name": "Montenegro"
+  },
+  {
+   "geo": "MT",
+   "country": "MLT",
+   "level": 0,
+   "time": "2023",
+   "value": 13.17,
+   "name": "Malta"
+  },
+  {
+   "geo": "MT",
+   "country": "MLT",
+   "level": 0,
+   "time": "2024",
+   "value": 17.3,
+   "name": "Malta"
+  },
+  {
+   "geo": "MT",
+   "country": "MLT",
+   "level": 0,
+   "time": "2025",
+   "value": 21.51,
+   "name": "Malta"
+  },
+  {
+   "geo": "NL",
+   "country": "NLD",
+   "level": 0,
+   "time": "2023",
+   "value": 14.1,
+   "name": "Netherlands"
+  },
+  {
+   "geo": "NL",
+   "country": "NLD",
+   "level": 0,
+   "time": "2024",
+   "value": 23.06,
+   "name": "Netherlands"
+  },
+  {
+   "geo": "NL",
+   "country": "NLD",
+   "level": 0,
+   "time": "2025",
+   "value": 33.21,
+   "name": "Netherlands"
+  },
+  {
+   "geo": "NO",
+   "country": "NOR",
+   "level": 0,
+   "time": "2023",
+   "value": 9.17,
+   "name": "Norway"
+  },
+  {
+   "geo": "NO",
+   "country": "NOR",
+   "level": 0,
+   "time": "2024",
+   "value": 20.77,
+   "name": "Norway"
+  },
+  {
+   "geo": "NO",
+   "country": "NOR",
+   "level": 0,
+   "time": "2025",
+   "value": 28.89,
+   "name": "Norway"
+  },
+  {
+   "geo": "NO0",
+   "country": "NOR",
+   "level": 1,
+   "time": "2023",
+   "value": 9.17,
+   "name": "Norge"
+  },
+  {
+   "geo": "NO0",
+   "country": "NOR",
+   "level": 1,
+   "time": "2024",
+   "value": 20.77,
+   "name": "Norge"
+  },
+  {
+   "geo": "NO0",
+   "country": "NOR",
+   "level": 1,
+   "time": "2025",
+   "value": 28.89,
+   "name": "Norge"
+  },
+  {
+   "geo": "NO02",
+   "country": "NOR",
+   "level": 2,
+   "time": "2023",
+   "value": 7.8,
+   "name": "Innlandet"
+  },
+  {
+   "geo": "NO02",
+   "country": "NOR",
+   "level": 2,
+   "time": "2024",
+   "value": 19.6,
+   "name": "Innlandet"
+  },
+  {
+   "geo": "NO02",
+   "country": "NOR",
+   "level": 2,
+   "time": "2025",
+   "value": 23.64,
+   "name": "Innlandet"
+  },
+  {
+   "geo": "NO06",
+   "country": "NOR",
+   "level": 2,
+   "time": "2023",
+   "value": 9.16,
+   "name": "Trøndelag"
+  },
+  {
+   "geo": "NO06",
+   "country": "NOR",
+   "level": 2,
+   "time": "2024",
+   "value": 19.93,
+   "name": "Trøndelag"
+  },
+  {
+   "geo": "NO06",
+   "country": "NOR",
+   "level": 2,
+   "time": "2025",
+   "value": 27.18,
+   "name": "Trøndelag"
+  },
+  {
+   "geo": "NO07",
+   "country": "NOR",
+   "level": 2,
+   "time": "2023",
+   "value": 7.34,
+   "name": "Nord-Norge"
+  },
+  {
+   "geo": "NO07",
+   "country": "NOR",
+   "level": 2,
+   "time": "2024",
+   "value": 15.65,
+   "name": "Nord-Norge"
+  },
+  {
+   "geo": "NO07",
+   "country": "NOR",
+   "level": 2,
+   "time": "2025",
+   "value": 20.38,
+   "name": "Nord-Norge"
+  },
+  {
+   "geo": "NO08",
+   "country": "NOR",
+   "level": 2,
+   "time": "2023",
+   "value": 11.96,
+   "name": "Oslo og Viken"
+  },
+  {
+   "geo": "NO08",
+   "country": "NOR",
+   "level": 2,
+   "time": "2024",
+   "value": 25.79,
+   "name": "Oslo og Viken"
+  },
+  {
+   "geo": "NO08",
+   "country": "NOR",
+   "level": 2,
+   "time": "2025",
+   "value": 35.49,
+   "name": "Oslo og Viken"
+  },
+  {
+   "geo": "NO09",
+   "country": "NOR",
+   "level": 2,
+   "time": "2023",
+   "value": 5.81,
+   "name": "Agder og Sør-Østlandet"
+  },
+  {
+   "geo": "NO09",
+   "country": "NOR",
+   "level": 2,
+   "time": "2024",
+   "value": 16.81,
+   "name": "Agder og Sør-Østlandet"
+  },
+  {
+   "geo": "NO09",
+   "country": "NOR",
+   "level": 2,
+   "time": "2025",
+   "value": 24.22,
+   "name": "Agder og Sør-Østlandet"
+  },
+  {
+   "geo": "NO0A",
+   "country": "NOR",
+   "level": 2,
+   "time": "2023",
+   "value": 7.59,
+   "name": "Vestlandet"
+  },
+  {
+   "geo": "NO0A",
+   "country": "NOR",
+   "level": 2,
+   "time": "2024",
+   "value": 17.69,
+   "name": "Vestlandet"
+  },
+  {
+   "geo": "NO0A",
+   "country": "NOR",
+   "level": 2,
+   "time": "2025",
+   "value": 25.56,
+   "name": "Vestlandet"
+  },
+  {
+   "geo": "PL",
+   "country": "POL",
+   "level": 0,
+   "time": "2023",
+   "value": 3.67,
+   "name": "Poland"
+  },
+  {
+   "geo": "PL",
+   "country": "POL",
+   "level": 0,
+   "time": "2024",
+   "value": 5.9,
+   "name": "Poland"
+  },
+  {
+   "geo": "PL",
+   "country": "POL",
+   "level": 0,
+   "time": "2025",
+   "value": 8.36,
+   "name": "Poland"
+  },
+  {
+   "geo": "PL2",
+   "country": "POL",
+   "level": 1,
+   "time": "2025",
+   "value": 8.41,
+   "name": "Makroregion południowy"
+  },
+  {
+   "geo": "PL21",
+   "country": "POL",
+   "level": 2,
+   "time": "2025",
+   "value": 8.86,
+   "name": "Małopolskie"
+  },
+  {
+   "geo": "PL22",
+   "country": "POL",
+   "level": 2,
+   "time": "2025",
+   "value": 8.05,
+   "name": "Śląskie"
+  },
+  {
+   "geo": "PL4",
+   "country": "POL",
+   "level": 1,
+   "time": "2025",
+   "value": 7.33,
+   "name": "Makroregion północno-zachodni"
+  },
+  {
+   "geo": "PL41",
+   "country": "POL",
+   "level": 2,
+   "time": "2025",
+   "value": 7.5,
+   "name": "Wielkopolskie"
+  },
+  {
+   "geo": "PL42",
+   "country": "POL",
+   "level": 2,
+   "time": "2025",
+   "value": 7.92,
+   "name": "Zachodniopomorskie"
+  },
+  {
+   "geo": "PL43",
+   "country": "POL",
+   "level": 2,
+   "time": "2025",
+   "value": 5.58,
+   "name": "Lubuskie"
+  },
+  {
+   "geo": "PL5",
+   "country": "POL",
+   "level": 1,
+   "time": "2025",
+   "value": 9.12,
+   "name": "Makroregion południowo-zachodni"
+  },
+  {
+   "geo": "PL51",
+   "country": "POL",
+   "level": 2,
+   "time": "2025",
+   "value": 9.68,
+   "name": "Dolnośląskie"
+  },
+  {
+   "geo": "PL52",
+   "country": "POL",
+   "level": 2,
+   "time": "2025",
+   "value": 7.4,
+   "name": "Opolskie"
+  },
+  {
+   "geo": "PL6",
+   "country": "POL",
+   "level": 1,
+   "time": "2025",
+   "value": 7.28,
+   "name": "Makroregion północny"
+  },
+  {
+   "geo": "PL61",
+   "country": "POL",
+   "level": 2,
+   "time": "2025",
+   "value": 6.36,
+   "name": "Kujawsko-pomorskie"
+  },
+  {
+   "geo": "PL62",
+   "country": "POL",
+   "level": 2,
+   "time": "2025",
+   "value": 4.53,
+   "name": "Warmińsko-mazurskie"
+  },
+  {
+   "geo": "PL63",
+   "country": "POL",
+   "level": 2,
+   "time": "2025",
+   "value": 9.24,
+   "name": "Pomorskie"
+  },
+  {
+   "geo": "PL7",
+   "country": "POL",
+   "level": 1,
+   "time": "2025",
+   "value": 6.93,
+   "name": "Makroregion centralny"
+  },
+  {
+   "geo": "PL71",
+   "country": "POL",
+   "level": 2,
+   "time": "2025",
+   "value": 7.57,
+   "name": "Łódzkie"
+  },
+  {
+   "geo": "PL72",
+   "country": "POL",
+   "level": 2,
+   "time": "2025",
+   "value": 5.31,
+   "name": "Świętokrzyskie"
+  },
+  {
+   "geo": "PL8",
+   "country": "POL",
+   "level": 1,
+   "time": "2025",
+   "value": 6.27,
+   "name": "Makroregion wschodni"
+  },
+  {
+   "geo": "PL81",
+   "country": "POL",
+   "level": 2,
+   "time": "2025",
+   "value": 5.86,
+   "name": "Lubelskie"
+  },
+  {
+   "geo": "PL82",
+   "country": "POL",
+   "level": 2,
+   "time": "2025",
+   "value": 7.02,
+   "name": "Podkarpackie"
+  },
+  {
+   "geo": "PL84",
+   "country": "POL",
+   "level": 2,
+   "time": "2025",
+   "value": 5.56,
+   "name": "Podlaskie"
+  },
+  {
+   "geo": "PL9",
+   "country": "POL",
+   "level": 1,
+   "time": "2025",
+   "value": 11.88,
+   "name": "Makroregion województwo mazowieckie"
+  },
+  {
+   "geo": "PL91",
+   "country": "POL",
+   "level": 2,
+   "time": "2025",
+   "value": 15.99,
+   "name": "Warszawski stołeczny"
+  },
+  {
+   "geo": "PL92",
+   "country": "POL",
+   "level": 2,
+   "time": "2025",
+   "value": 2.94,
+   "name": "Mazowiecki regionalny"
+  },
+  {
+   "geo": "PT",
+   "country": "PRT",
+   "level": 0,
+   "time": "2023",
+   "value": 7.86,
+   "name": "Portugal"
+  },
+  {
+   "geo": "PT",
+   "country": "PRT",
+   "level": 0,
+   "time": "2024",
+   "value": 8.63,
+   "name": "Portugal"
+  },
+  {
+   "geo": "PT",
+   "country": "PRT",
+   "level": 0,
+   "time": "2025",
+   "value": 11.54,
+   "name": "Portugal"
+  },
+  {
+   "geo": "RO",
+   "country": "ROU",
+   "level": 0,
+   "time": "2023",
+   "value": 1.51,
+   "name": "Romania"
+  },
+  {
+   "geo": "RO",
+   "country": "ROU",
+   "level": 0,
+   "time": "2024",
+   "value": 3.07,
+   "name": "Romania"
+  },
+  {
+   "geo": "RO",
+   "country": "ROU",
+   "level": 0,
+   "time": "2025",
+   "value": 5.21,
+   "name": "Romania"
+  },
+  {
+   "geo": "RO1",
+   "country": "ROU",
+   "level": 1,
+   "time": "2023",
+   "value": 1.03,
+   "name": "Macroregiunea Unu"
+  },
+  {
+   "geo": "RO11",
+   "country": "ROU",
+   "level": 2,
+   "time": "2023",
+   "value": 0.79,
+   "name": "Nord-Vest"
+  },
+  {
+   "geo": "RO12",
+   "country": "ROU",
+   "level": 2,
+   "time": "2023",
+   "value": 1.33,
+   "name": "Centru"
+  },
+  {
+   "geo": "RO2",
+   "country": "ROU",
+   "level": 1,
+   "time": "2023",
+   "value": 0.64,
+   "name": "Macroregiunea Doi"
+  },
+  {
+   "geo": "RO21",
+   "country": "ROU",
+   "level": 2,
+   "time": "2023",
+   "value": 0.89,
+   "name": "Nord-Est"
+  },
+  {
+   "geo": "RO22",
+   "country": "ROU",
+   "level": 2,
+   "time": "2023",
+   "value": 0.41,
+   "name": "Sud-Est"
+  },
+  {
+   "geo": "RO3",
+   "country": "ROU",
+   "level": 1,
+   "time": "2023",
+   "value": 2.76,
+   "name": "Macroregiunea Trei"
+  },
+  {
+   "geo": "RO31",
+   "country": "ROU",
+   "level": 2,
+   "time": "2023",
+   "value": 1.17,
+   "name": "Sud-Muntenia"
+  },
+  {
+   "geo": "RO32",
+   "country": "ROU",
+   "level": 2,
+   "time": "2023",
+   "value": 3.61,
+   "name": "Bucureşti-Ilfov"
+  },
+  {
+   "geo": "RO4",
+   "country": "ROU",
+   "level": 1,
+   "time": "2023",
+   "value": 0.9,
+   "name": "Macroregiunea Patru"
+  },
+  {
+   "geo": "RO41",
+   "country": "ROU",
+   "level": 2,
+   "time": "2023",
+   "value": 0.15,
+   "name": "Sud-Vest Oltenia"
+  },
+  {
+   "geo": "RO42",
+   "country": "ROU",
+   "level": 2,
+   "time": "2023",
+   "value": 1.56,
+   "name": "Vest"
+  },
+  {
+   "geo": "RS",
+   "country": "SRB",
+   "level": 0,
+   "time": "2023",
+   "value": 1.82,
+   "name": "Serbia"
+  },
+  {
+   "geo": "RS",
+   "country": "SRB",
+   "level": 0,
+   "time": "2024",
+   "value": 6.95,
+   "name": "Serbia"
+  },
+  {
+   "geo": "RS",
+   "country": "SRB",
+   "level": 0,
+   "time": "2025",
+   "value": 10.12,
+   "name": "Serbia"
+  },
+  {
+   "geo": "SE",
+   "country": "SWE",
+   "level": 0,
+   "time": "2023",
+   "value": 10.37,
+   "name": "Sweden"
+  },
+  {
+   "geo": "SE",
+   "country": "SWE",
+   "level": 0,
+   "time": "2024",
+   "value": 25.09,
+   "name": "Sweden"
+  },
+  {
+   "geo": "SE",
+   "country": "SWE",
+   "level": 0,
+   "time": "2025",
+   "value": 35.04,
+   "name": "Sweden"
+  },
+  {
+   "geo": "SE1",
+   "country": "SWE",
+   "level": 1,
+   "time": "2025",
+   "value": 39.94,
+   "name": "Östra Sverige"
+  },
+  {
+   "geo": "SE11",
+   "country": "SWE",
+   "level": 2,
+   "time": "2025",
+   "value": 44.77,
+   "name": "Stockholm"
+  },
+  {
+   "geo": "SE12",
+   "country": "SWE",
+   "level": 2,
+   "time": "2025",
+   "value": 29.23,
+   "name": "Östra Mellansverige"
+  },
+  {
+   "geo": "SE2",
+   "country": "SWE",
+   "level": 1,
+   "time": "2025",
+   "value": 33.7,
+   "name": "Södra Sverige"
+  },
+  {
+   "geo": "SE21",
+   "country": "SWE",
+   "level": 2,
+   "time": "2025",
+   "value": 29.53,
+   "name": "Småland med öarna"
+  },
+  {
+   "geo": "SE22",
+   "country": "SWE",
+   "level": 2,
+   "time": "2025",
+   "value": 31.32,
+   "name": "Sydsverige"
+  },
+  {
+   "geo": "SE23",
+   "country": "SWE",
+   "level": 2,
+   "time": "2025",
+   "value": 37.08,
+   "name": "Västsverige"
+  },
+  {
+   "geo": "SE3",
+   "country": "SWE",
+   "level": 1,
+   "time": "2025",
+   "value": 24.68,
+   "name": "Norra Sverige"
+  },
+  {
+   "geo": "SE31",
+   "country": "SWE",
+   "level": 2,
+   "time": "2025",
+   "value": 22.09,
+   "name": "Norra Mellansverige"
+  },
+  {
+   "geo": "SE32",
+   "country": "SWE",
+   "level": 2,
+   "time": "2025",
+   "value": 18.43,
+   "name": "Mellersta Norrland"
+  },
+  {
+   "geo": "SE33",
+   "country": "SWE",
+   "level": 2,
+   "time": "2025",
+   "value": 31.51,
+   "name": "Övre Norrland"
+  },
+  {
+   "geo": "SI",
+   "country": "SVN",
+   "level": 0,
+   "time": "2023",
+   "value": 11.37,
+   "name": "Slovenia"
+  },
+  {
+   "geo": "SI",
+   "country": "SVN",
+   "level": 0,
+   "time": "2024",
+   "value": 20.89,
+   "name": "Slovenia"
+  },
+  {
+   "geo": "SI",
+   "country": "SVN",
+   "level": 0,
+   "time": "2025",
+   "value": 21.61,
+   "name": "Slovenia"
+  },
+  {
+   "geo": "SI0",
+   "country": "SVN",
+   "level": 1,
+   "time": "2023",
+   "value": 11.37,
+   "name": "Slovenija"
+  },
+  {
+   "geo": "SI0",
+   "country": "SVN",
+   "level": 1,
+   "time": "2024",
+   "value": 20.89,
+   "name": "Slovenija"
+  },
+  {
+   "geo": "SI0",
+   "country": "SVN",
+   "level": 1,
+   "time": "2025",
+   "value": 21.61,
+   "name": "Slovenija"
+  },
+  {
+   "geo": "SI03",
+   "country": "SVN",
+   "level": 2,
+   "time": "2023",
+   "value": 9.47,
+   "name": "Vzhodna Slovenija"
+  },
+  {
+   "geo": "SI03",
+   "country": "SVN",
+   "level": 2,
+   "time": "2024",
+   "value": 17.92,
+   "name": "Vzhodna Slovenija"
+  },
+  {
+   "geo": "SI03",
+   "country": "SVN",
+   "level": 2,
+   "time": "2025",
+   "value": 18.17,
+   "name": "Vzhodna Slovenija"
+  },
+  {
+   "geo": "SI04",
+   "country": "SVN",
+   "level": 2,
+   "time": "2023",
+   "value": 13.13,
+   "name": "Zahodna Slovenija"
+  },
+  {
+   "geo": "SI04",
+   "country": "SVN",
+   "level": 2,
+   "time": "2024",
+   "value": 23.59,
+   "name": "Zahodna Slovenija"
+  },
+  {
+   "geo": "SI04",
+   "country": "SVN",
+   "level": 2,
+   "time": "2025",
+   "value": 25.22,
+   "name": "Zahodna Slovenija"
+  },
+  {
+   "geo": "SK",
+   "country": "SVK",
+   "level": 0,
+   "time": "2023",
+   "value": 7.04,
+   "name": "Slovakia"
+  },
+  {
+   "geo": "SK",
+   "country": "SVK",
+   "level": 0,
+   "time": "2024",
+   "value": 10.78,
+   "name": "Slovakia"
+  },
+  {
+   "geo": "SK",
+   "country": "SVK",
+   "level": 0,
+   "time": "2025",
+   "value": 18.0,
+   "name": "Slovakia"
+  },
+  {
+   "geo": "SK0",
+   "country": "SVK",
+   "level": 1,
+   "time": "2023",
+   "value": 7.04,
+   "name": "Slovensko"
+  },
+  {
+   "geo": "SK0",
+   "country": "SVK",
+   "level": 1,
+   "time": "2024",
+   "value": 10.78,
+   "name": "Slovensko"
+  },
+  {
+   "geo": "SK0",
+   "country": "SVK",
+   "level": 1,
+   "time": "2025",
+   "value": 18.0,
+   "name": "Slovensko"
+  },
+  {
+   "geo": "SK01",
+   "country": "SVK",
+   "level": 2,
+   "time": "2023",
+   "value": 10.67,
+   "name": "Bratislavský kraj"
+  },
+  {
+   "geo": "SK01",
+   "country": "SVK",
+   "level": 2,
+   "time": "2024",
+   "value": 16.21,
+   "name": "Bratislavský kraj"
+  },
+  {
+   "geo": "SK01",
+   "country": "SVK",
+   "level": 2,
+   "time": "2025",
+   "value": 28.36,
+   "name": "Bratislavský kraj"
+  },
+  {
+   "geo": "SK02",
+   "country": "SVK",
+   "level": 2,
+   "time": "2023",
+   "value": 6.23,
+   "name": "Západné Slovensko"
+  },
+  {
+   "geo": "SK02",
+   "country": "SVK",
+   "level": 2,
+   "time": "2024",
+   "value": 9.08,
+   "name": "Západné Slovensko"
+  },
+  {
+   "geo": "SK02",
+   "country": "SVK",
+   "level": 2,
+   "time": "2025",
+   "value": 14.0,
+   "name": "Západné Slovensko"
+  },
+  {
+   "geo": "SK03",
+   "country": "SVK",
+   "level": 2,
+   "time": "2023",
+   "value": 6.06,
+   "name": "Stredné Slovensko"
+  },
+  {
+   "geo": "SK03",
+   "country": "SVK",
+   "level": 2,
+   "time": "2024",
+   "value": 7.19,
+   "name": "Stredné Slovensko"
+  },
+  {
+   "geo": "SK03",
+   "country": "SVK",
+   "level": 2,
+   "time": "2025",
+   "value": 14.0,
+   "name": "Stredné Slovensko"
+  },
+  {
+   "geo": "SK04",
+   "country": "SVK",
+   "level": 2,
+   "time": "2023",
+   "value": 4.47,
+   "name": "Východné Slovensko"
+  },
+  {
+   "geo": "SK04",
+   "country": "SVK",
+   "level": 2,
+   "time": "2024",
+   "value": 9.38,
+   "name": "Východné Slovensko"
+  },
+  {
+   "geo": "SK04",
+   "country": "SVK",
+   "level": 2,
+   "time": "2025",
+   "value": 13.36,
+   "name": "Východné Slovensko"
+  },
+  {
+   "geo": "TR",
+   "country": "TUR",
+   "level": 0,
+   "time": "2023",
+   "value": 5.51,
+   "name": "Türkiye"
+  },
+  {
+   "geo": "TR",
+   "country": "TUR",
+   "level": 0,
+   "time": "2024",
+   "value": 4.42,
+   "name": "Türkiye"
+  },
+  {
+   "geo": "TR",
+   "country": "TUR",
+   "level": 0,
+   "time": "2025",
+   "value": 7.41,
+   "name": "Türkiye"
+  }
+ ]
+}

@@ -1,0 +1,134 @@
+{
+ "lenses": {
+  "gigantes": {
+   "es": "Entre dos gigantes",
+   "en": "Between two giants"
+  },
+  "elige": {
+   "es": "¿Pierde Europa o elige?",
+   "en": "Is Europe losing, or choosing?"
+  },
+  "dentro": {
+   "es": "Europa por dentro",
+   "en": "Europe from within"
+  }
+ },
+ "themes": {
+  "ia-digital": {
+   "es": "IA y digital",
+   "en": "AI and digital"
+  }
+ },
+ "charts": [
+  {
+   "id": "g1-inversion-id",
+   "lens": "gigantes",
+   "theme": "ia-digital",
+   "title": {
+    "es": "Europa invierte menos en investigación, y la brecha está en las empresas",
+    "en": "Europe invests less in research, and the gap lies in business"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 400
+  },
+  {
+   "id": "g2-patentes-ia",
+   "lens": "gigantes",
+   "theme": "ia-digital",
+   "title": {
+    "es": "En patentes de IA, EE. UU. y China juegan otra liga",
+    "en": "In AI patents, the US and China are in another league"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 160
+  },
+  {
+   "id": "g3-modelos-ia",
+   "lens": "gigantes",
+   "theme": "ia-digital",
+   "title": {
+    "es": "Los modelos de IA que marcan el ritmo se hacen en EE. UU. y China",
+    "en": "The AI models that set the pace are built in the US and China"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 96
+  },
+  {
+   "id": "e1-motivos-no-ia-generativa",
+   "lens": "elige",
+   "theme": "ia-digital",
+   "title": {
+    "es": "Quien no usa IA generativa no es por prudencia: dice que no la necesita",
+    "en": "Europeans who skip generative AI are not being cautious: they say they don't need it"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 185
+  },
+  {
+   "id": "e2-control-internet",
+   "lens": "elige",
+   "theme": "ia-digital",
+   "title": {
+    "es": "China adopta tecnología bajo control estatal. Europa elige otro camino",
+    "en": "China adopts technology under state control. Europe takes another path"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 1612
+  },
+  {
+   "id": "e3-modelos-abiertos",
+   "lens": "elige",
+   "theme": "ia-digital",
+   "title": {
+    "es": "¿Apuesta Europa por la IA abierta?",
+    "en": "Is Europe betting on open AI?"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 16
+  },
+  {
+   "id": "d1-empresas-ia",
+   "lens": "dentro",
+   "theme": "ia-digital",
+   "title": {
+    "es": "Dos Europas de la IA: en Dinamarca la usan más de cuatro de cada diez empresas; en Rumanía, una de cada veinte",
+    "en": "Two AI Europes: in Denmark more than four in ten firms use it; in Romania, one in twenty"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 535
+  },
+  {
+   "id": "d2-mapa-regional-ia",
+   "lens": "dentro",
+   "theme": "ia-digital",
+   "title": {
+    "es": "La IA se concentra en las capitales: la región de la capital va primera en casi todos los países con datos regionales",
+    "en": "AI clusters around capitals: the capital region leads in almost every country with regional data"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 405
+  },
+  {
+   "id": "d3-ia-generativa",
+   "lens": "dentro",
+   "theme": "ia-digital",
+   "title": {
+    "es": "Uno de cada tres europeos ya usa IA generativa: casi la mitad en Dinamarca, menos de uno de cada cinco en Italia o Rumanía",
+    "en": "One in three Europeans already uses generative AI: nearly half in Denmark, fewer than one in five in Italy or Romania"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 288
+  },
+  {
+   "id": "d4-competencias-digitales",
+   "lens": "dentro",
+   "theme": "ia-digital",
+   "title": {
+    "es": "Europa se queda lejos de su objetivo de competencias digitales para 2030",
+    "en": "Europe falls far short of its 2030 digital skills target"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 109
+  }
+ ]
+}
