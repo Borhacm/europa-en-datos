@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import Mark from "../components/Mark.astro";
+import Analytics from "@vercel/analytics/astro";
 import { ui, paths, type Lang, type PageKey } from "../lib/i18n";
 
 interface Props {
@@ -15,7 +16,7 @@ const t = ui[lang];
 const other: Lang = lang === "es" ? "en" : "es";
 const fullTitle = title ? `${title} | ${t.siteName}` : t.siteName;
 const desc = description ?? t.siteDescription;
-const site = Astro.site ?? new URL("https://eu-data.bocal.online");
+const site = Astro.site ?? new URL("https://europa.bocal.online");
 const canonical = new URL(paths[page][lang], site);
 ---
 <!doctype html>
@@ -43,6 +44,7 @@ const canonical = new URL(paths[page][lang], site);
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Sofia+Sans+Extra+Condensed:wght@700;800&family=Sofia+Sans+Semi+Condensed:wght@400;500;600;700&display=swap"
     />
+    <Analytics />
   </head>
   <body>
     <a class="skip" href="#main">{t.skip}</a>

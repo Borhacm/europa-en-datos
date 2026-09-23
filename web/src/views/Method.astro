@@ -31,6 +31,8 @@ const copy = {
     source: "Fuente",
     license: "Licencia",
     retrieved: "Descarga",
+    privacy: "Privacidad",
+    privacyText: "Contamos las visitas con Vercel Web Analytics, que no usa cookies ni guarda datos que te identifiquen. Solo vemos cifras agregadas: páginas vistas, país, tipo de dispositivo y web de procedencia. Si eliges destacar un país, esa preferencia se guarda solo en tu navegador.",
     independent: "Independencia",
     independentText: "Este es un proyecto independiente de Bocal. No está afiliado a la Unión Europea, a Eurostat, a la OCDE ni a ninguna de las fuentes citadas, y no representa sus opiniones.",
   },
@@ -51,6 +53,8 @@ const copy = {
     source: "Source",
     license: "Licence",
     retrieved: "Retrieved",
+    privacy: "Privacy",
+    privacyText: "We count visits with Vercel Web Analytics, which uses no cookies and stores nothing that identifies you. We only see aggregate figures: page views, country, device type and referring site. If you choose a country to highlight, that preference is stored only in your browser.",
     independent: "Independence",
     independentText: "This is an independent project by Bocal. It is not affiliated with the European Union, Eurostat, the OECD or any of the sources cited, and does not represent their views.",
   },
@@ -90,6 +94,9 @@ const copy = {
         </tbody>
       </table>
     </div>
+
+    <h2>{copy.privacy}</h2>
+    <p class="prose">{copy.privacyText}</p>
 
     <h2>{copy.independent}</h2>
     <p class="prose">{copy.independentText}</p>
