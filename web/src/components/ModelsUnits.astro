@@ -1,0 +1,95 @@
+---
+// Gráfico de apertura del tema IA y digital: un punto por cada modelo de IA destacado del último año completo.
+import { loadChart } from "../lib/data";
+import type { Lang } from "../lib/i18n";
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+
+const chart = loadChart("g3-modelos-ia");
+const year = String(Number(chart.partial_year) - 1);
+const count = (geo: string) =>
+  chart.rows.find((r) => r.geo === geo && r.time === year && r.rule === "participa")?.value ?? 0;
+
+const blocs = [
+  { geo: "USA", color: "var(--usa)" },
+  { geo: "CHN", color: "var(--chn)" },
+  { geo: "EU27", color: "var(--eu)" },
+].map((b) => ({ ...b, n: count(b.geo), name: chart.geos[b.geo][lang] }));
+
+const copy = {
+  es: {
+    caption: `Cada punto es un modelo de IA destacado publicado en ${year}, según el país de las organizaciones que lo desarrollaron. Fuente: Epoch AI.`,
+    eu: "Mistral OCR, de Mistral AI (Francia)",
+    label: `Modelos de IA destacados en ${year}: Estados Unidos ${blocs[0].n}, China ${blocs[1].n}, Unión Europea ${blocs[2].n}.`,
+  },
+  en: {
+    caption: `Each dot is a notable AI model released in ${year}, by country of the organisations that developed it. Source: Epoch AI.`,
+    eu: "Mistral OCR, by Mistral AI (France)",
+    label: `Notable AI models in ${year}: United States ${blocs[0].n}, China ${blocs[1].n}, European Union ${blocs[2].n}.`,
+  },
+}[lang];
+
+const PER_ROW = 32;
+let order = 0;
+---
+<figure class="units wrap" aria-label={copy.label} role="img">
+  {blocs.map((b) => (
+    <div class={`unit-row${b.geo === "EU27" ? " eu" : ""}`} aria-hidden="true">
+      <div class="unit-label">
+        <span class="unit-n">{b.n}</span>
+        <span class="unit-name">{b.name}</span>
+      </div>
+      <div class="dots" style={`--per-row:${PER_ROW}`}>
+        {Array.from({ length: b.n }, () => (
+          <span class="dot" style={`background:${b.color};--i:${order++}`}></span>
+        ))}
+        {b.geo === "EU27" && <span class="dot-note">{copy.eu}</span>}
+      </div>
+    </div>
+  ))}
+  <figcaption>{copy.caption}</figcaption>
+</figure>
+
+<style>
+  .units { margin: 0 auto; padding-bottom: 3rem; display: grid; gap: 1.25rem; }
+  .unit-row { display: grid; grid-template-columns: 8rem 1fr; gap: 1rem; align-items: start; }
+  .unit-label { display: grid; line-height: 1; }
+  .unit-n { font-family: var(--font-display); font-weight: 800; font-size: 3rem; line-height: 0.9; }
+  .unit-name { font-family: var(--font-semi); font-size: 0.95rem; color: var(--ink-2); margin-top: 0.3rem; }
+  .dots {
+    display: grid;
+    grid-template-columns: repeat(var(--per-row), 1fr);
+    gap: 5px;
+    max-width: 40rem;
+    padding-top: 0.35rem;
+  }
+  .dot {
+    aspect-ratio: 1;
+    border-radius: 50%;
+    animation: dot-in 420ms cubic-bezier(0.2, 0.7, 0.3, 1) both;
+    animation-delay: calc(var(--i) * 12ms);
+  }
+  .eu .dot { animation-delay: calc(var(--i) * 12ms + 300ms); }
+  .dot-note {
+    grid-column: 2 / -1;
+    align-self: center;
+    font-family: var(--font-semi);
+    font-size: 0.92rem;
+    color: var(--ink-2);
+    padding-left: 0.4rem;
+    white-space: nowrap;
+  }
+  figcaption { font-size: 0.88rem; color: var(--ink-3); max-width: 40rem; line-height: 1.45; }
+
+  @keyframes dot-in {
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+
+  @media (max-width: 700px) {
+    .dots { --per-row: 16 !important; }
+    .unit-row { grid-template-columns: 5.5rem 1fr; }
+    .unit-n { font-size: 2.4rem; }
+  }
+</style>

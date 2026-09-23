@@ -4,6 +4,7 @@ import PageHead from "../components/PageHead.astro";
 import SectionBar from "../components/SectionBar.astro";
 import LensSection from "../components/LensSection.astro";
 import LinkList from "../components/LinkList.astro";
+import ModelsUnits from "../components/ModelsUnits.astro";
 import { LENSES, figuresOf, published, type Theme } from "../lib/themes";
 import { formatDate, lensPath, themePath, type Lang } from "../lib/i18n";
 import "../styles/charts.css";
@@ -25,6 +26,8 @@ const others = published().filter((t) => t.id !== theme.id);
     dek={theme.dek?.[lang]}
     meta={`${copy.published} ${formatDate(theme.published!, lang)}. ${nFigs} ${copy.charts}.`}
   />
+
+  {theme.opener === "models-units" && <ModelsUnits lang={lang} />}
 
   <SectionBar
     lang={lang}

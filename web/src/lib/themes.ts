@@ -28,6 +28,8 @@ export interface Theme {
   status: "published" | "upcoming";
   dek?: Bi;
   published?: string;
+  /** Gráfico de apertura propio del tema, bajo el titular (ver OPENERS en views/Theme.astro) */
+  opener?: "models-units";
   lenses?: Record<LensId, ThemeLens>;
 }
 
@@ -74,6 +76,7 @@ export const THEMES: Theme[] = [
     title: { es: "IA y digital", en: "AI and digital" },
     status: "published",
     published: "2026-09-24",
+    opener: "models-units",
     dek: {
       es: "La UE adopta la inteligencia artificial más rápido que nunca, pero casi toda la tecnología que usa se diseña fuera.",
       en: "The EU is adopting artificial intelligence faster than ever, but almost all the technology it uses is designed elsewhere.",

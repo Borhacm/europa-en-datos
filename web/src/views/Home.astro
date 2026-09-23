@@ -1,8 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
-import Hero from "../components/Hero.astro";
 import LinkList from "../components/LinkList.astro";
-import { LENSES, THEMES, figuresOf, published, upcoming } from "../lib/themes";
+import { LENSES, figuresOf, published, upcoming } from "../lib/themes";
 import { formatDate, lensPath, paths, themePath, ui, type Lang } from "../lib/i18n";
 
 interface Props { lang: Lang }
@@ -11,8 +10,10 @@ const t = ui[lang];
 
 const copy = {
   es: {
+    h1: ["Europa frente a Estados Unidos y China.", "Y frente a sí misma."],
+    dek: "Historias con datos abiertos sobre en qué se queda atrás la Unión Europea, en qué ha elegido otro camino y cuánto se diferencian sus 27 países. Cada tema se cuenta con tres miradas.",
     themesTitle: "Temas",
-    themesIntro: "Cada tema es una historia completa, contada con tres miradas.",
+    allThemes: "Todos los temas",
     charts: "gráficos",
     lensesTitle: "Tres miradas",
     lensesIntro: "Cada mirada recorre todos los temas. Elige una y síguela de principio a fin.",
@@ -23,8 +24,10 @@ const copy = {
     ],
   },
   en: {
+    h1: ["Europe against the United States and China.", "And against itself."],
+    dek: "Stories built on open data about where the European Union falls behind, where it has chosen a different path and how much its 27 countries differ. Each theme is told through three lenses.",
     themesTitle: "Themes",
-    themesIntro: "Each theme is a complete story, told through three lenses.",
+    allThemes: "All themes",
     charts: "charts",
     lensesTitle: "Three lenses",
     lensesIntro: "Each lens runs through every theme. Pick one and follow it from start to finish.",
@@ -36,29 +39,32 @@ const copy = {
   },
 }[lang];
 
-const featured = THEMES.find((th) => th.id === "ia-digital")!;
+// En portada caben los últimos temas; el resto, en el índice
+const MAX_HOME = 4;
+const latest = [...published()].sort((a, b) => (b.published ?? "").localeCompare(a.published ?? ""));
+const shown = latest.slice(0, MAX_HOME);
+const next = upcoming().slice(0, Math.max(0, MAX_HOME - shown.length));
 ---
 <Base lang={lang} path={paths.home} section="home">
-  <Hero lang={lang} href={themePath(featured.slug)[lang]} />
-
-  <section class="wrap block" aria-labelledby="themes-h">
-    <div class="block-head">
-      <h2 id="themes-h">{copy.themesTitle}</h2>
-      <p>{copy.themesIntro}</p>
+  <section class="hero wrap">
+    <div class="hero-text">
+      <h1>{copy.h1.map((l) => <span>{l}</span>)}</h1>
+      <p class="dek">{copy.dek}</p>
     </div>
-    <div>
+    <div class="hero-themes" aria-labelledby="themes-h">
+      <h2 id="themes-h">{copy.themesTitle}</h2>
       <LinkList
-        size="large"
         items={[
-          ...published().map((th) => ({
+          ...shown.map((th) => ({
             href: themePath(th.slug)[lang],
             title: th.title[lang],
             dek: th.dek?.[lang],
             meta: `${formatDate(th.published!, lang)}. ${figuresOf(th).length} ${copy.charts}.`,
           })),
-          ...upcoming().map((th) => ({ title: th.title[lang], meta: t.comingSoon, muted: true })),
+          ...next.map((th) => ({ title: th.title[lang], meta: t.comingSoon, muted: true })),
         ]}
       />
+      <a class="all" href={paths.themes[lang]}>{copy.allThemes}</a>
     </div>
   </section>
 
@@ -92,6 +98,21 @@ const featured = THEMES.find((th) => th.id === "ia-digital")!;
 </Base>
 
 <style>
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+    gap: clamp(2rem, 6vw, 5rem);
+    align-items: start;
+    padding-block: clamp(3rem, 7vw, 6rem) 1rem;
+  }
+  h1 { font-size: clamp(3rem, 7.2vw, 6.2rem); line-height: 0.9; letter-spacing: -0.015em; }
+  h1 span { display: block; }
+  .dek { margin-top: 1.75rem; max-width: 32rem; font-size: clamp(1.15rem, 1.6vw, 1.35rem); line-height: 1.45; color: var(--ink-2); }
+
+  .hero-themes { padding-top: 0.6rem; }
+  .hero-themes h2 { font-family: var(--font-semi); font-weight: 700; font-size: 1rem; line-height: 1; color: var(--ink-2); margin-bottom: 0.6rem; }
+  .all { display: inline-block; margin-top: 1rem; font-family: var(--font-semi); font-weight: 600; }
+
   .block { padding-top: clamp(3.5rem, 7vw, 5.5rem); display: grid; grid-template-columns: minmax(0, 18rem) minmax(0, 1fr); gap: 1.5rem clamp(2rem, 5vw, 4rem); }
   .block-head h2 { font-size: clamp(2.2rem, 4.5vw, 3.2rem); line-height: 0.92; }
   .block-head p { margin-top: 1rem; color: var(--ink-2); font-size: 1rem; }
@@ -104,7 +125,7 @@ const featured = THEMES.find((th) => th.id === "ia-digital")!;
   .l-about { margin-top: 0.6rem; color: var(--ink-2); font-size: 1.02rem; line-height: 1.45; }
 
   @media (max-width: 860px) {
-    .block { grid-template-columns: 1fr; }
+    .hero, .block { grid-template-columns: 1fr; }
     .lenses { grid-template-columns: 1fr; }
     .lenses li + li { border-top: 1px solid var(--rule); }
   }
