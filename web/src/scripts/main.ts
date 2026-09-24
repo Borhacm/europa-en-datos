@@ -136,14 +136,35 @@ const io = new IntersectionObserver((entries) => {
 }, { rootMargin: "400px 0px" });
 figures.forEach((f) => io.observe(f));
 
-// Mirada activa en la barra de miradas
+// Barra de secciones: pestaña activa al hacer scroll y desplazamiento lateral cuando no caben
+const sectionNav = document.querySelector<HTMLElement>(".sectionbar nav");
 const lensLinks = [...document.querySelectorAll<HTMLAnchorElement>(".sectionbar a[href^='#']")];
-if (lensLinks.length) {
+if (sectionNav && lensLinks.length) {
+  const updateEdges = () => {
+    const { scrollLeft, scrollWidth, clientWidth } = sectionNav;
+    sectionNav.classList.toggle("more-left", scrollLeft > 2);
+    sectionNav.classList.toggle("more-right", scrollLeft + clientWidth < scrollWidth - 2);
+  };
+  sectionNav.addEventListener("scroll", updateEdges, { passive: true });
+  new ResizeObserver(updateEdges).observe(sectionNav);
+  updateEdges();
+
   const sections = lensLinks.map((a) => document.getElementById(a.hash.slice(1))).filter((s): s is HTMLElement => !!s);
   const spy = new IntersectionObserver((entries) => {
     for (const e of entries) {
       if (!e.isIntersecting) continue;
-      lensLinks.forEach((a) => a.classList.toggle("active", a.hash === `#${e.target.id}`));
+      for (const a of lensLinks) {
+        const active = a.hash === `#${e.target.id}`;
+        a.classList.toggle("active", active);
+        if (active) {
+          a.setAttribute("aria-current", "location");
+          // Centra la pestaña activa dentro de la barra (sin mover la página)
+          const left = a.offsetLeft - (sectionNav.clientWidth - a.offsetWidth) / 2;
+          sectionNav.scrollTo({ left, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+        } else {
+          a.removeAttribute("aria-current");
+        }
+      }
     }
   }, { rootMargin: "-40% 0px -55% 0px" });
   sections.forEach((s) => spy.observe(s));

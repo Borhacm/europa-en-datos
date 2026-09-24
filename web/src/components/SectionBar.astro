@@ -47,7 +47,13 @@ const countries = Object.entries(geos)
     border-block: 1px solid var(--rule);
   }
   .inner { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; }
-  ul { list-style: none; margin: 0; padding: 0; display: flex; gap: clamp(1rem, 3vw, 2.5rem); }
+  /* Con muchas pestañas, la barra se desliza de lado; un degradado en el borde indica que hay más */
+  nav { flex: 1; min-width: 0; overflow-x: auto; scrollbar-width: none; overscroll-behavior-x: contain; }
+  nav::-webkit-scrollbar { display: none; }
+  nav:global(.more-right) { mask-image: linear-gradient(to right, #000 calc(100% - 4rem), transparent); }
+  nav:global(.more-left) { mask-image: linear-gradient(to right, transparent, #000 4rem); }
+  nav:global(.more-left.more-right) { mask-image: linear-gradient(to right, transparent, #000 4rem, #000 calc(100% - 4rem), transparent); }
+  ul { list-style: none; margin: 0; padding: 0; display: flex; gap: clamp(1rem, 3vw, 2.5rem); width: max-content; }
   a { display: grid; padding-block: 0.7rem; text-decoration: none; color: var(--ink); border-bottom: 3px solid transparent; }
   a:hover { border-bottom-color: var(--rule-strong); }
   a:global(.active) { border-bottom-color: var(--eu); }
@@ -67,7 +73,6 @@ const countries = Object.entries(geos)
 
   @media (max-width: 760px) {
     .inner { flex-direction: column; align-items: stretch; gap: 0; }
-    nav { overflow-x: auto; scrollbar-width: none; }
     .sb-short { display: none; }
     .sb-name { font-size: 1.1rem; }
     a { padding-block: 0.55rem; }

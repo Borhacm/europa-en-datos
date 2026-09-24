@@ -295,12 +295,14 @@
   {
    "geo": "EU27",
    "time": "2010",
-   "value": 0.805
+   "value": 0.805,
+   "stat": "median"
   },
   {
    "geo": "EU27",
    "time": "2025",
-   "value": 0.741
+   "value": 0.741,
+   "stat": "median"
   },
   {
    "geo": "FIN",

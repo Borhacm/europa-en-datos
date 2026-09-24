@@ -12,7 +12,8 @@ DEMOCRACY_FROM = "2010"
 def democracia_ue():
     rows = vdem_with_eu(LIBDEM, since=int(DEMOCRACY_FROM), countries=[])
     latest = max(r["time"] for r in rows)
-    out = [{k: v for k, v in r.items() if k not in ("measure", "stat")}
+    # Se conserva "stat" para que la fila de la UE se etiquete como mediana
+    out = [{k: v for k, v in r.items() if k != "measure" and not (k == "stat" and v == "country")}
            for r in rows if r["time"] in (DEMOCRACY_FROM, latest) and r["stat"] != "min"]
     return chart(
         id="ld1-democracia-ue",

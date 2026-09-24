@@ -61,6 +61,10 @@ export function nf(lang: Lang, digits = 1) {
 }
 
 export function geoName(chart: Chart, geo: string, lang: Lang): string {
+  // Con datos de V-Dem, la UE es la mediana de los 27: se dice en la etiqueta
+  if (geo === "EU27" && chart.rows.some((r) => r.stat === "median")) {
+    return lang === "es" ? "UE (mediana de los 27)" : "EU (median of the 27)";
+  }
   return chart.geos[geo]?.[lang] ?? chart.rows.find((r) => r.geo === geo)?.name ?? geo;
 }
 
