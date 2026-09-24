@@ -8,8 +8,13 @@ const BAR = 14;       // grosor de barra (<= 24px)
 const ROW = 24;       // alto de fila
 const R = 3;          // extremo redondeado
 
-/** Barra horizontal con el extremo de datos redondeado y el de la base recto. */
+/** Barra horizontal con el extremo de datos redondeado y el de la base recto (también hacia la izquierda). */
 function barPath(x0: number, x1: number, y: number, h: number): string {
+  if (x1 < x0) {
+    const w = x0 - x1;
+    const r = Math.min(R, w, h / 2);
+    return `M${x0},${y}H${x1 + r}Q${x1},${y} ${x1},${y + r}V${y + h - r}Q${x1},${y + h} ${x1 + r},${y + h}H${x0}Z`;
+  }
   const w = Math.max(x1 - x0, 0);
   const r = Math.min(R, w, h / 2);
   return `M${x0},${y}H${x0 + w - r}Q${x0 + w},${y} ${x0 + w},${y + r}V${y + h - r}Q${x0 + w},${y + h} ${x0 + w - r},${y + h}H${x0}Z`;
@@ -37,11 +42,15 @@ export function renderRank(ctx: RenderContext) {
 
   const targets: { value: number; label: { es: string; en: string } }[] = chart.targets ?? [];
   const left = nameWidth(width);
-  const m = { top: 28, right: 44, bottom: 8 };
+  // Con línea de objetivo, su etiqueta va en una franja propia bajo las barras
+  const m = { top: 28, right: 44, bottom: targets.length ? 26 : 8 };
   const height = m.top + rows.length * ROW + m.bottom;
   const max = Math.max(...rows.map((r) => r.value), ...targets.map((t) => t.value));
-  const ticks = niceTicks(max, 0, width < 520 ? 3 : 5);
-  const x = scaleLinear().domain([0, Math.max(ticks[ticks.length - 1], max)]).range([left, width - m.right]);
+  // Si hay valores negativos, el eje empieza justo antes del mínimo (no en el tick redondo anterior)
+  const min = Math.min(0, ...rows.map((r) => r.value));
+  const domMin = min < 0 ? min - (max - min) * 0.03 : 0;
+  const ticks = niceTicks(max, 0, width < 520 ? 3 : 5).filter((t) => t >= domMin);
+  const x = scaleLinear().domain([domMin, Math.max(ticks[ticks.length - 1], max)]).range([left, width - m.right]);
 
   const root = svg("svg", { width, height, viewBox: `0 0 ${width} ${height}`, class: "chart-svg" });
   plot.appendChild(root);
@@ -53,7 +62,7 @@ export function renderRank(ctx: RenderContext) {
 
   // Línea de objetivo por detrás de las barras, para no tachar las etiquetas
   for (const t of targets) {
-    svg("line", { x1: x(t.value), x2: x(t.value), y1: m.top - 4, y2: height - m.bottom, class: "target" }, root);
+    svg("line", { x1: x(t.value), x2: x(t.value), y1: m.top - 4, y2: height - m.bottom + 4, class: "target" }, root);
   }
 
   const tip = tooltip(plot);
@@ -65,7 +74,7 @@ export function renderRank(ctx: RenderContext) {
     const name = svg("text", { x: left - 10, y: y + ROW / 2 + 5, class: `row-name${hl ? " strong" : ""}`, "text-anchor": "end" }, g);
     name.textContent = geoName(chart, r.geo, lang);
     svg("path", { d: barPath(x(0), x(r.value), y + (ROW - BAR) / 2, BAR), fill: colorFor(r.geo, focus) }, g);
-    const val = svg("text", { x: x(r.value) + 6, y: y + ROW / 2 + 5, class: `row-value${hl ? " strong" : ""}` }, g);
+    const val = svg("text", { x: Math.max(x(r.value), x(0)) + 6, y: y + ROW / 2 + 5, class: `row-value${hl ? " strong" : ""}` }, g);
     val.textContent = fmt(r.value);
     const show = () => tip.show(x(r.value), y, tipRow(colorFor(r.geo, focus), geoName(chart, r.geo, lang), `${fmt(r.value)}${pct}`, true));
     g.addEventListener("pointerenter", show);
@@ -75,7 +84,7 @@ export function renderRank(ctx: RenderContext) {
   });
 
   for (const t of targets) {
-    const txt = svg("text", { x: x(t.value) - 6, y: height - m.bottom - 6, class: "target-label", "text-anchor": "end" }, root);
+    const txt = svg("text", { x: x(t.value), y: height - 6, class: "target-label", "text-anchor": "middle" }, root);
     txt.textContent = `${t.label[lang]}: ${fmt(t.value)}${pct}`;
   }
   ctx.legend.innerHTML = "";

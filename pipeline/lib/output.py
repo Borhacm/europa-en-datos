@@ -1,4 +1,4 @@
-"""Formato común de salida: un JSON por gráfico en data/charts, más un índice."""
+"""Formato común de salida: un JSON por gráfico en data/charts."""
 
 import datetime as dt
 import json
@@ -13,12 +13,8 @@ LENSES = {
     "elige": {"es": "¿Pierde Europa o elige?", "en": "Is Europe losing, or choosing?"},
     "dentro": {"es": "Europa por dentro", "en": "Europe from within"},
 }
-THEMES = {
-    "ia-digital": {"es": "IA y digital", "en": "AI and digital"},
-    "comercio": {"es": "Comercio y dependencias", "en": "Trade and dependencies"},
-    "productividad": {"es": "Productividad y crecimiento", "en": "Productivity and growth"},
-    "libertades": {"es": "Libertades, bienestar y clima", "en": "Freedoms, well-being and climate"},
-}
+# Se rellena al importar charts/: cada paquete de tema declara su THEME
+THEMES: dict[str, dict] = {}
 
 
 def chart(*, id, lens, theme, title, subtitle, unit, source, rows, geos=None, notes=None, extra=None) -> dict:
@@ -45,10 +41,7 @@ def chart(*, id, lens, theme, title, subtitle, unit, source, rows, geos=None, no
 
 
 def write(charts: list[dict]) -> None:
+    """Escribe solo los gráficos generados: una ejecución parcial no toca los demás."""
     CHARTS_DIR.mkdir(parents=True, exist_ok=True)
-    index = []
     for c in charts:
         (CHARTS_DIR / f"{c['id']}.json").write_text(json.dumps(c, ensure_ascii=False, indent=1))
-        index.append({k: c[k] for k in ("id", "lens", "theme", "title", "retrieved")} | {"n_rows": len(c["rows"])})
-    (DATA_DIR / "index.json").write_text(json.dumps(
-        {"lenses": LENSES, "themes": THEMES, "charts": index}, ensure_ascii=False, indent=1))

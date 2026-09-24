@@ -1,17 +1,27 @@
 ---
 import Base from "../layouts/Base.astro";
 import { loadChart } from "../lib/data";
-import { figuresOf, published } from "../lib/themes";
-import { paths, themePath, formatDate, type Lang } from "../lib/i18n";
+import { NOTES, figuresOf, noteFigures, published } from "../lib/themes";
+import { notePath, paths, themePath, formatDate, type Lang } from "../lib/i18n";
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 
 // Gráficos agrupados por tema
-const groups = published().map((th) => ({
-  theme: th,
-  charts: figuresOf(th).map((f) => ({ ...f, chart: loadChart(f.fig) })),
-}));
+const groups = [
+  ...published().map((th) => ({
+    title: th.title[lang],
+    href: themePath(th.slug)[lang],
+    charts: figuresOf(th).map((f) => ({ ...f, href: `${themePath(th.slug)[lang]}#${f.fig}`, chart: loadChart(f.fig) })),
+  })),
+  ...(NOTES.length
+    ? [{
+        title: lang === "es" ? "Notas" : "Notes",
+        href: paths.notes[lang],
+        charts: NOTES.flatMap((n) => noteFigures(n).map((f) => ({ ...f, href: `${notePath(n.slug)[lang]}#${f.fig}`, chart: loadChart(f.fig) }))),
+      }]
+    : []),
+];
 
 const copy = {
   es: {
@@ -84,10 +94,10 @@ const copy = {
         <thead><tr><th scope="col">{copy.code}</th><th scope="col">{copy.source}</th><th scope="col">{copy.license}</th><th scope="col">{copy.retrieved}</th></tr></thead>
         {groups.map((g) => (
           <tbody>
-            <tr class="group"><th scope="rowgroup" colspan="4"><a href={themePath(g.theme.slug)[lang]}>{g.theme.title[lang]}</a></th></tr>
+            <tr class="group"><th scope="rowgroup" colspan="4"><a href={g.href}>{g.title}</a></th></tr>
             {g.charts.map((c) => (
               <tr>
-                <th scope="row"><a href={`${themePath(g.theme.slug)[lang]}#${c.fig}`}>{c.code}</a> {c.chart.title[lang]}</th>
+                <th scope="row"><a href={c.href}>{c.code}</a> {c.chart.title[lang]}</th>
                 <td><a href={c.chart.source.url} rel="noopener">{c.chart.source.name}</a> <span class="ds">{c.chart.source.dataset}</span></td>
                 <td>{c.chart.source.license}</td>
                 <td class="num">{formatDate(c.chart.retrieved, lang)}</td>

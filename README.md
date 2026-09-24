@@ -10,33 +10,22 @@ Temas publicados: **IA y digital**, **Comercio y dependencias**, **Productividad
 
 ## Cómo se organiza
 
-- **Tema**: una historia completa con las tres miradas (`/es/<tema>/`).
+- **Tema** (o artículo): una historia completa con las tres miradas (`/es/<tema>/`).
+- **Nota**: una o dos gráficas sobre un dato concreto, contadas desde una mirada (`/es/notas/<nota>/`).
 - **Mirada**: una de las tres miradas a través de todos los temas (`/es/miradas/<mirada>/`). Aquí es donde las historias se combinan.
-- Cada gráfico tiene un código único con el prefijo del tema: `IA-G1`, `CO-D2`...
+- Cada gráfico tiene un código único con el prefijo del tema o de la nota: `IA-G1`, `CO-D2`, `N01-1`...
 
-## Cómo añadir un tema
+## Publicación editorial
 
-1. **Datos**: crea `pipeline/charts/<tema>/` con `gigantes.py`, `elige.py` y `dentro.py` (copia la estructura de `comercio/`), regístralo en `pipeline/charts/__init__.py` y en `THEMES` de `pipeline/lib/output.py`. Ejecuta `uv run run.py`.
-2. **Gráficos**: añade la configuración de cada gráfico en `web/src/lib/charts-config.ts` (reutiliza los renderizadores: `line`, `rank`, `paired`, `dumbbell`, `stack`, `map`).
-3. **Textos**: añade el tema en `web/src/lib/themes.ts` con su código, slugs, entradilla y los textos de cada mirada en ES y EN. Si estaba como `upcoming`, pásalo a `published`.
+Cada semana se prepara una nota y un artículo a partir de [editorial/calendario.yaml](editorial/calendario.yaml), siguiendo [editorial/MANUAL.md](editorial/MANUAL.md). Dos tareas programadas en la app de Claude preparan cada entrada en una rama y abren un pull request con vista previa; se publica al fusionarlo.
 
-Las páginas del tema, de las miradas, la portada, el índice de temas y la metodología se actualizan solas.
+Cada tema y cada nota vive en sus propios archivos, así que un tema nuevo solo añade archivos:
 
-## Datos
+- `pipeline/charts/<tema>/` o `pipeline/charts/notas/<id>_<palabra>.py`: los datos de sus gráficos.
+- `web/src/content/themes/<tema>.ts` o `web/src/content/notes/<id>.ts`: los textos en ES y EN.
+- `web/src/content/charts/<tema o id>.ts`: cómo se dibuja cada gráfico.
 
-Fuentes: Eurostat, OCDE, Banco Mundial, la OIT, Epoch AI y V-Dem. Cada gráfico cita su fuente y licencia.
-
-```bash
-cd pipeline
-uv run run.py            # usa la caché de data/raw
-uv run run.py --refresh  # vuelve a descargar todo
-```
-
-Salida:
-
-- `data/charts/<id>.json`: un fichero por gráfico, con textos en ES y EN, fuente, notas y observaciones.
-- `data/index.json`: catálogo de gráficos, miradas y temas.
-- `data/geo/nuts{0,1,2}.json`: geometrías NUTS 2024 (TopoJSON, Eurostat GISCO).
+Las páginas del tema o de la nota, las miradas, la portada, los índices y la metodología se actualizan solos.
 
 ## Publicación
 
