@@ -1,0 +1,441 @@
+{
+ "id": "n03-inversion",
+ "lens": "gigantes",
+ "theme": "productividad",
+ "title": {
+  "es": "La UE ya invierte lo mismo que EE. UU. en proporción a su PIB; Draghi pide llegar al 27 %",
+  "en": "The EU already invests as much as the US relative to GDP; Draghi calls for 27%"
+ },
+ "subtitle": {
+  "es": "Formación bruta de capital fijo (inversión en equipos, edificios, infraestructuras y tecnología), en % del PIB",
+  "en": "Gross fixed capital formation (investment in equipment, buildings, infrastructure and technology), as % of GDP"
+ },
+ "unit": {
+  "es": "% del PIB",
+  "en": "% of GDP"
+ },
+ "source": {
+  "name": "Banco Mundial, formación bruta de capital fijo",
+  "dataset": "NE.GDI.FTOT.ZS",
+  "url": "https://data.worldbank.org/indicator/NE.GDI.FTOT.ZS",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "La línea marca el 27 % del PIB que, según el informe Draghi (2024), necesitaría la UE: entre 750.000 y 800.000 millones de euros más al año."
+  ],
+  "en": [
+   "The line marks the 27% of GDP the EU would need according to the Draghi report (2024): an extra 750 to 800 billion euros a year."
+  ]
+ },
+ "retrieved": "2026-09-24",
+ "geos": {
+  "CHN": {
+   "es": "China",
+   "en": "China",
+   "eu": false,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "USA": {
+   "es": "Estados Unidos",
+   "en": "United States",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "ref_line": {
+  "value": 27,
+  "label": {
+   "es": "Lo que pide Draghi para la UE",
+   "en": "Draghi's target for the EU"
+  }
+ },
+ "rows": [
+  {
+   "geo": "CHN",
+   "time": "2000",
+   "value": 32.647
+  },
+  {
+   "geo": "CHN",
+   "time": "2001",
+   "value": 33.46
+  },
+  {
+   "geo": "CHN",
+   "time": "2002",
+   "value": 34.988
+  },
+  {
+   "geo": "CHN",
+   "time": "2003",
+   "value": 38.085
+  },
+  {
+   "geo": "CHN",
+   "time": "2004",
+   "value": 39.351
+  },
+  {
+   "geo": "CHN",
+   "time": "2005",
+   "value": 39.27
+  },
+  {
+   "geo": "CHN",
+   "time": "2006",
+   "value": 38.522
+  },
+  {
+   "geo": "CHN",
+   "time": "2007",
+   "value": 37.671
+  },
+  {
+   "geo": "CHN",
+   "time": "2008",
+   "value": 38.803
+  },
+  {
+   "geo": "CHN",
+   "time": "2009",
+   "value": 43.41
+  },
+  {
+   "geo": "CHN",
+   "time": "2010",
+   "value": 43.52
+  },
+  {
+   "geo": "CHN",
+   "time": "2011",
+   "value": 43.515
+  },
+  {
+   "geo": "CHN",
+   "time": "2012",
+   "value": 43.874
+  },
+  {
+   "geo": "CHN",
+   "time": "2013",
+   "value": 44.076
+  },
+  {
+   "geo": "CHN",
+   "time": "2014",
+   "value": 43.38
+  },
+  {
+   "geo": "CHN",
+   "time": "2015",
+   "value": 41.617
+  },
+  {
+   "geo": "CHN",
+   "time": "2016",
+   "value": 41.081
+  },
+  {
+   "geo": "CHN",
+   "time": "2017",
+   "value": 41.418
+  },
+  {
+   "geo": "CHN",
+   "time": "2018",
+   "value": 42.38
+  },
+  {
+   "geo": "CHN",
+   "time": "2019",
+   "value": 42.25
+  },
+  {
+   "geo": "CHN",
+   "time": "2020",
+   "value": 41.849
+  },
+  {
+   "geo": "CHN",
+   "time": "2021",
+   "value": 41.352
+  },
+  {
+   "geo": "CHN",
+   "time": "2022",
+   "value": 41.233
+  },
+  {
+   "geo": "CHN",
+   "time": "2023",
+   "value": 40.454
+  },
+  {
+   "geo": "CHN",
+   "time": "2024",
+   "value": 39.652
+  },
+  {
+   "geo": "EU27",
+   "time": "2000",
+   "value": 22.706
+  },
+  {
+   "geo": "EU27",
+   "time": "2001",
+   "value": 22.241
+  },
+  {
+   "geo": "EU27",
+   "time": "2002",
+   "value": 21.535
+  },
+  {
+   "geo": "EU27",
+   "time": "2003",
+   "value": 21.42
+  },
+  {
+   "geo": "EU27",
+   "time": "2004",
+   "value": 21.548
+  },
+  {
+   "geo": "EU27",
+   "time": "2005",
+   "value": 21.881
+  },
+  {
+   "geo": "EU27",
+   "time": "2006",
+   "value": 22.613
+  },
+  {
+   "geo": "EU27",
+   "time": "2007",
+   "value": 23.254
+  },
+  {
+   "geo": "EU27",
+   "time": "2008",
+   "value": 23.045
+  },
+  {
+   "geo": "EU27",
+   "time": "2009",
+   "value": 21.055
+  },
+  {
+   "geo": "EU27",
+   "time": "2010",
+   "value": 20.517
+  },
+  {
+   "geo": "EU27",
+   "time": "2011",
+   "value": 20.597
+  },
+  {
+   "geo": "EU27",
+   "time": "2012",
+   "value": 20.128
+  },
+  {
+   "geo": "EU27",
+   "time": "2013",
+   "value": 19.553
+  },
+  {
+   "geo": "EU27",
+   "time": "2014",
+   "value": 19.599
+  },
+  {
+   "geo": "EU27",
+   "time": "2015",
+   "value": 20.014
+  },
+  {
+   "geo": "EU27",
+   "time": "2016",
+   "value": 20.193
+  },
+  {
+   "geo": "EU27",
+   "time": "2017",
+   "value": 20.499
+  },
+  {
+   "geo": "EU27",
+   "time": "2018",
+   "value": 20.904
+  },
+  {
+   "geo": "EU27",
+   "time": "2019",
+   "value": 21.991
+  },
+  {
+   "geo": "EU27",
+   "time": "2020",
+   "value": 21.906
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "value": 21.805
+  },
+  {
+   "geo": "EU27",
+   "time": "2022",
+   "value": 22.049
+  },
+  {
+   "geo": "EU27",
+   "time": "2023",
+   "value": 22.114
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "value": 21.17
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 21.314
+  },
+  {
+   "geo": "USA",
+   "time": "2000",
+   "value": 23.146
+  },
+  {
+   "geo": "USA",
+   "time": "2001",
+   "value": 22.539
+  },
+  {
+   "geo": "USA",
+   "time": "2002",
+   "value": 21.54
+  },
+  {
+   "geo": "USA",
+   "time": "2003",
+   "value": 21.623
+  },
+  {
+   "geo": "USA",
+   "time": "2004",
+   "value": 22.128
+  },
+  {
+   "geo": "USA",
+   "time": "2005",
+   "value": 22.935
+  },
+  {
+   "geo": "USA",
+   "time": "2006",
+   "value": 23.038
+  },
+  {
+   "geo": "USA",
+   "time": "2007",
+   "value": 22.323
+  },
+  {
+   "geo": "USA",
+   "time": "2008",
+   "value": 21.235
+  },
+  {
+   "geo": "USA",
+   "time": "2009",
+   "value": 18.81
+  },
+  {
+   "geo": "USA",
+   "time": "2010",
+   "value": 18.314
+  },
+  {
+   "geo": "USA",
+   "time": "2011",
+   "value": 18.737
+  },
+  {
+   "geo": "USA",
+   "time": "2012",
+   "value": 19.513
+  },
+  {
+   "geo": "USA",
+   "time": "2013",
+   "value": 19.754
+  },
+  {
+   "geo": "USA",
+   "time": "2014",
+   "value": 20.42
+  },
+  {
+   "geo": "USA",
+   "time": "2015",
+   "value": 20.649
+  },
+  {
+   "geo": "USA",
+   "time": "2016",
+   "value": 20.68
+  },
+  {
+   "geo": "USA",
+   "time": "2017",
+   "value": 20.989
+  },
+  {
+   "geo": "USA",
+   "time": "2018",
+   "value": 21.296
+  },
+  {
+   "geo": "USA",
+   "time": "2019",
+   "value": 21.331
+  },
+  {
+   "geo": "USA",
+   "time": "2020",
+   "value": 21.58
+  },
+  {
+   "geo": "USA",
+   "time": "2021",
+   "value": 21.293
+  },
+  {
+   "geo": "USA",
+   "time": "2022",
+   "value": 21.331
+  },
+  {
+   "geo": "USA",
+   "time": "2023",
+   "value": 21.377
+  },
+  {
+   "geo": "USA",
+   "time": "2024",
+   "value": 21.35
+  }
+ ]
+}

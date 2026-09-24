@@ -1,16 +1,16 @@
 # Manual de publicación
 
-Procedimiento para preparar una **nota** o un **artículo** del [calendario](calendario.yaml). Lo siguen las tareas automáticas y sirve igual para hacerlo a mano.
+Procedimiento para preparar y publicar una **nota** o un **artículo** del [calendario](calendario.yaml). Lo siguen las tareas automáticas y sirve igual para hacerlo a mano.
 
-**La tarea prepara; Borja publica.** El resultado de cada ejecución es un pull request en GitHub con una vista previa privada de Vercel. Publicar es fusionar ese pull request, y eso lo hace siempre una persona.
+**La publicación es automática.** Cada ejecución abre un pull request en GitHub (que deja registro de la entrada y de su tabla de verificación) y, cuando todas las comprobaciones pasan, lo fusiona ella misma: al llegar a `main`, Vercel publica la web. Por eso las comprobaciones de este manual no son opcionales: nadie revisa antes de publicar.
 
 ## Reglas que no se rompen
 
-- Nunca hagas commit ni push en `main`, nunca fusiones un pull request y nunca borres ramas ajenas.
+- Nunca hagas commit ni push directamente en `main`. Solo fusionas **tu propio** pull request, y solo cuando `npm run check` y la comprobación de Vercel han pasado. Nunca fusiones pull requests ajenos ni borres ramas ajenas.
 - Nunca regeneres los datos de otros temas: ejecuta el pipeline siempre con `--only`. Nunca uses `--refresh`.
 - No cambies la configuración de Vercel, de GitHub ni la licencia (el proyecto no tiene licencia de código a propósito).
 - **Cada cifra y cada afirmación de un título o de un texto tiene que salir de los datos del JSON.** Si no puedes comprobarla, no la escribas. Esta es la regla más importante: en el pasado se colaron titulares como "casi todos los países", "más que nunca" o "uno de cada tres" que los datos no sostenían.
-- Si algo falla y no sabes arreglarlo, para, deja la rama sin pull request y explica el problema en el resumen final.
+- Si algo falla y no sabes arreglarlo, o tienes dudas serias sobre algún dato, **no publiques**: deja la rama sin fusionar y explica el problema en el resumen final.
 
 ## 1. Preparar el repositorio
 
@@ -115,8 +115,23 @@ El commit usa el email noreply configurado en el repositorio. El cuerpo del pull
 4. Decisiones y límites: fuentes cambiadas, países que faltan, comparaciones con matices.
 5. Recordatorio: "Al fusionar este pull request, la web se publica en europa.bocal.online".
 
-Vercel añade al pull request el enlace a la vista previa.
+## 9. Publicar
 
-## 9. Terminar
+Espera a que Vercel compile la vista previa del pull request y comprueba que pasa:
 
-Vuelve a `main` (`git checkout main`) y deja un resumen breve: qué entrada has preparado, el enlace al pull request y cualquier duda que tenga que resolver Borja antes de publicar.
+```bash
+gh pr checks <número> --watch      # "Vercel" debe terminar en pass
+```
+
+Si la comprobación de Vercel falla, no fusiones: revisa el error, corrígelo en la rama y vuelve a empezar este paso. Si pasa:
+
+```bash
+gh pr merge <número> --squash --delete-branch
+git checkout main && git pull --ff-only
+```
+
+Espera un par de minutos a que Vercel publique `main` y comprueba la web real: la página nueva responde (`curl -s -o /dev/null -w "%{http_code}" https://europa.bocal.online/es/notas/<slug>/` o `/es/<tema>/` debe dar 200) y sus datos también (`/data/charts/<id del gráfico>.json`).
+
+## 10. Terminar
+
+Deja un resumen breve: qué has publicado, el enlace a la página en la web y al pull request, y cualquier límite o duda que convenga que Borja conozca. Si no has publicado, di por qué.

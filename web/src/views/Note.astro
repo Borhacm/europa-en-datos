@@ -14,8 +14,8 @@ const theme = themeById(note.theme);
 const lens = lensById(note.lens);
 
 const copy = {
-  es: { note: "Nota", published: "Publicada el", theme: "Tema", lens: "Mirada", more: "Más notas", all: "Todas las notas", read: "Leer el tema completo" },
-  en: { note: "Note", published: "Published on", theme: "Theme", lens: "Lens", more: "More notes", all: "All notes", read: "Read the full theme" },
+  es: { sources: "Fuentes del texto", note: "Nota", published: "Publicada el", theme: "Tema", lens: "Mirada", more: "Más notas", all: "Todas las notas", read: "Leer el tema completo" },
+  en: { sources: "Sources for the text", note: "Note", published: "Published on", theme: "Theme", lens: "Lens", more: "More notes", all: "All notes", read: "Read the full theme" },
 }[lang];
 
 const others = NOTES.filter((n) => n.id !== note.id).slice(0, 3);
@@ -38,6 +38,13 @@ const others = NOTES.filter((n) => n.id !== note.id).slice(0, 3);
       "p" in b
         ? <p class="prose body">{b.p[lang]}</p>
         : <Figure id={b.fig} lang={lang} code={`${note.code}-${b.code}`} />
+    )}
+
+    {note.sources && note.sources.length > 0 && (
+      <section class="sources" aria-label={copy.sources}>
+        <h2>{copy.sources}</h2>
+        <ul>{note.sources.map((s) => <li><a href={s.url} rel="noopener">{s.name}</a></li>)}</ul>
+      </section>
     )}
 
     {theme && <p class="cross"><a href={themePath(theme.slug)[lang]}>{copy.read}: {theme.title[lang]}</a></p>}
@@ -63,6 +70,10 @@ const others = NOTES.filter((n) => n.id !== note.id).slice(0, 3);
   h1 { font-size: clamp(2.6rem, 6vw, 4.6rem); line-height: 0.92; max-width: 22ch; }
   .dek { margin: 0; max-width: 38rem; font-size: clamp(1.15rem, 1.7vw, 1.35rem); line-height: 1.45; color: var(--ink-2); }
   .body { margin-block: 2rem 2.5rem; }
+  .sources { margin-top: 2.5rem; max-width: 46rem; font-size: 0.95rem; color: var(--ink-2); }
+  .sources h2 { font-family: var(--font-semi); font-weight: 700; font-size: 1rem; margin: 0 0 0.5rem; }
+  .sources ul { margin: 0; padding-left: 1.1rem; }
+  .sources li { margin-bottom: 0.3rem; }
   .cross { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--rule); font-family: var(--font-semi); font-weight: 600; }
   .others { padding-top: 5rem; }
   .others h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem; }
