@@ -6,7 +6,7 @@ Visualización de datos abiertos europeos: la UE frente a EE. UU. y China, y las
 - **¿Pierde Europa o elige?**: lo que el modelo europeo gana y lo que cede.
 - **Europa por dentro**: diferencias entre los 27 países y sus regiones.
 
-Temas publicados: **IA y digital** y **Comercio y dependencias**. Publicado en https://europa.bocal.online.
+Temas publicados: **IA y digital**, **Comercio y dependencias**, **Productividad y crecimiento** y **Libertades, bienestar y clima**. Publicado en https://europa.bocal.online.
 
 ## Cómo se organiza
 
@@ -24,7 +24,7 @@ Las páginas del tema, de las miradas, la portada, el índice de temas y la meto
 
 ## Datos
 
-Fuentes: Eurostat, OCDE, Banco Mundial, Epoch AI y V-Dem. Cada gráfico cita su fuente y licencia.
+Fuentes: Eurostat, OCDE, Banco Mundial, la OIT, Epoch AI y V-Dem. Cada gráfico cita su fuente y licencia.
 
 ```bash
 cd pipeline

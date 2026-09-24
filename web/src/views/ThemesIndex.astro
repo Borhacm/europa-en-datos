@@ -27,10 +27,12 @@ const copy = {
       }))}
     />
   </section>
-  <section class="wrap next">
-    <h2>{copy.next}</h2>
-    <LinkList items={upcoming().map((th) => ({ title: th.title[lang], meta: t.comingSoon, muted: true }))} />
-  </section>
+  {upcoming().length > 0 && (
+    <section class="wrap next">
+      <h2>{copy.next}</h2>
+      <LinkList items={upcoming().map((th) => ({ title: th.title[lang], meta: t.comingSoon, muted: true }))} />
+    </section>
+  )}
 </Base>
 
 <style>

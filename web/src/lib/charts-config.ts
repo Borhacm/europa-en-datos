@@ -17,6 +17,8 @@ export interface ChartConfig {
   /** Series en color, en orden fijo. El resto se dibuja como contexto gris (o se oculta). */
   series?: string[];
   showContext?: boolean;
+  /** Solo estos países como contexto gris (si no se indica y showContext es true: todos los demás) */
+  context?: string[];
   /** Usa el país elegido por el lector ("Destacar un país") */
   usesFocus?: boolean;
   /** Tabla accesible: pivot de filas x columnas */
@@ -26,6 +28,10 @@ export interface ChartConfig {
   yLabel?: { es: string; en: string };
   /** Decimales en etiquetas y tooltips (por defecto: 1) */
   digits?: number;
+  /** Color (variable CSS) de series que no son países, p. ej. { hora: "--eu" } */
+  seriesColors?: Record<string, string>;
+  /** Países de fuera de la UE que se incluyen en los rankings, p. ej. ["USA"] */
+  extraGeos?: string[];
   domainMin?: number;
 }
 
@@ -137,6 +143,99 @@ export const CHARTS: Record<string, ChartConfig> = {
   "cd2-dependencia-energetica": {
     renderer: "rank",
     controls: [{ dim: "time", default: "2024", options: ["2004", "2014", "2024"] }],
+    usesFocus: true,
+    table: { rows: "geo", cols: "time", lastCols: 6 },
+  },
+
+  // ---------- Productividad y crecimiento ----------
+  "pg1-peso-pib-mundial": {
+    renderer: "line",
+    series: ["USA", "CHN", "EU27"],
+    context: ["JPN"],
+    table: { rows: "geo", cols: "time", lastCols: 6 },
+    domainMin: 0,
+  },
+  "pg2-productividad-hora": {
+    renderer: "line",
+    series: ["USA", "CHN", "EU27"],
+    context: ["JPN"],
+    table: { rows: "geo", cols: "time", lastCols: 6 },
+    domainMin: 0,
+  },
+  "pe1-brecha-ee-uu": {
+    renderer: "line",
+    series: ["hora", "habitante"],
+    seriesColors: { hora: "--eu", habitante: "--context-strong" },
+    table: { rows: "series", cols: "time", lastCols: 6 },
+  },
+  "pe2-horas-trabajadas": {
+    renderer: "rank",
+    controls: [{ dim: "time", default: "2025", options: ["2015", "2020", "2025"] }],
+    extraGeos: ["USA"],
+    usesFocus: true,
+    table: { rows: "geo", cols: "time", lastCols: 6 },
+  },
+  "pd1-convergencia": {
+    renderer: "dumbbell",
+    usesFocus: true,
+    digits: 0,
+    table: { rows: "geo", cols: "time" },
+  },
+  "pd2-mapa-renta": {
+    renderer: "map",
+    usesFocus: true,
+    digits: 0,
+    table: { rows: "geo", cols: "time" },
+  },
+
+  // ---------- Libertades, bienestar y clima ----------
+  "lg1-democracia": {
+    renderer: "line",
+    series: ["USA", "CHN", "EU27"],
+    table: { rows: "geo", cols: "time", lastCols: 6 },
+    domainMin: 0,
+    digits: 2,
+  },
+  "lg2-esperanza-vida": {
+    renderer: "line",
+    series: ["USA", "CHN", "EU27"],
+    table: { rows: "geo", cols: "time", lastCols: 6 },
+  },
+  "lg3-co2-habitante": {
+    renderer: "line",
+    series: ["USA", "CHN", "EU27"],
+    table: { rows: "geo", cols: "time", lastCols: 6 },
+    domainMin: 0,
+  },
+  "le1-emisiones-1990": {
+    renderer: "line",
+    series: ["USA", "CHN", "EU27"],
+    table: { rows: "geo", cols: "time", lastCols: 6 },
+    domainMin: 0,
+    digits: 0,
+  },
+  "le2-gasto-social": {
+    renderer: "rank",
+    controls: [{ dim: "time", default: "2022", options: ["2012", "2017", "2022"] }],
+    extraGeos: ["USA"],
+    usesFocus: true,
+    table: { rows: "geo", cols: "time", lastCols: 6 },
+  },
+  "ld1-democracia-ue": {
+    renderer: "dumbbell",
+    usesFocus: true,
+    digits: 2,
+    table: { rows: "geo", cols: "time" },
+  },
+  "ld2-pobreza": {
+    renderer: "rank",
+    controls: [{ dim: "time", default: "2025", options: ["2015", "2020", "2025"] }],
+    usesFocus: true,
+    table: { rows: "geo", cols: "time", lastCols: 6 },
+  },
+  "ld3-renovables": {
+    renderer: "rank",
+    controls: [{ dim: "time", default: "2025", options: ["2005", "2015", "2025"] }],
     usesFocus: true,
     table: { rows: "geo", cols: "time", lastCols: 6 },
   },

@@ -20,7 +20,7 @@
 .row-name { fill: var(--ink-2); font-size: 14px; }
 .row-name.strong { fill: var(--ink); font-weight: 700; }
 .row-meta { fill: var(--ink-3); font-size: 12.5px; }
-.row-value { fill: var(--ink-3); font-size: 13px; font-variant-numeric: tabular-nums; }
+.row-value { fill: var(--ink-3); font-size: 13px; font-variant-numeric: tabular-nums; paint-order: stroke; stroke: var(--paper); stroke-width: 3px; stroke-linejoin: round; }
 .row-value.strong { fill: var(--ink); font-weight: 700; }
 .bar-row { outline: none; }
 .bar-row:hover rect:first-child, .bar-row:focus-visible rect:first-child { fill: var(--wash); }
@@ -93,3 +93,6 @@
 }
 .seg button:hover { color: var(--ink); background: var(--wash); }
 .seg button[aria-checked="true"] { background: var(--ink); color: var(--paper); }
+
+.refline { stroke: var(--ink-2); stroke-width: 1; }
+.ref-label { fill: var(--ink-2); font-size: 12.5px; font-weight: 600; paint-order: stroke; stroke: var(--paper); stroke-width: 4px; }

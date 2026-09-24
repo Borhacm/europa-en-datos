@@ -16,6 +16,8 @@ LENSES = {
 THEMES = {
     "ia-digital": {"es": "IA y digital", "en": "AI and digital"},
     "comercio": {"es": "Comercio y dependencias", "en": "Trade and dependencies"},
+    "productividad": {"es": "Productividad y crecimiento", "en": "Productivity and growth"},
+    "libertades": {"es": "Libertades, bienestar y clima", "en": "Freedoms, well-being and climate"},
 }
 
 

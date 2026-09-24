@@ -34,7 +34,7 @@ export function pivot(chart: ChartData, lang: Lang, headers: { country: string; 
 
   const index = new Map(data.map((r) => [`${r[rowDim]}|${r[colDim]}`, r.value as number]));
   return {
-    rowHeader: rowDim === "geo" ? headers.country : rowDim,
+    rowHeader: rowDim === "geo" ? headers.country : lang === "es" ? "Serie" : "Series",
     cols: colKeys.map((k) => ({ key: k, label: colDim === "time" ? k : label(chart, colDim, k, lang) })),
     rows: rowKeys.map((k) => ({
       key: k,

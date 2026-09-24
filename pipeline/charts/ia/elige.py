@@ -3,7 +3,7 @@
 from lib import geo, sources
 from lib.output import chart
 
-from ..common import eurostat_source, from_eurostat
+from ..common import eurostat_source, from_eurostat, vdem_with_eu
 from .gigantes import EPOCH_BLOCS, epoch_blocs
 
 REASONS = {
@@ -46,18 +46,7 @@ VDEM_MEASURES = {
 
 
 def control_internet():
-    df = sources.vdem(list(VDEM_MEASURES))
-    df = df[(df.year >= 2000) & df.country_text_id.isin(["USA", "CHN", *geo.EU27])]
-    out = []
-    for m in VDEM_MEASURES:
-        for r in df[["country_text_id", "year", m]].dropna().itertuples(index=False):
-            out.append({"geo": r[0], "time": str(int(r[1])), "measure": m, "value": round(float(r[2]), 3), "stat": "country"})
-        # Mediana de los 27 como referencia de la UE (V-Dem no publica agregados)
-        eu = df[df.country_text_id.isin(geo.EU27)].groupby("year")[m]
-        for year, med in eu.median().dropna().items():
-            out.append({"geo": "EU27", "time": str(int(year)), "measure": m, "value": round(float(med), 3), "stat": "median"})
-        for year, lo in eu.min().dropna().items():
-            out.append({"geo": "EU27", "time": str(int(year)), "measure": m, "value": round(float(lo), 3), "stat": "min"})
+    out = vdem_with_eu(VDEM_MEASURES, since=2000, countries=["USA", "CHN"])
     return chart(
         id="e2-control-internet",
         lens="elige", theme="ia-digital",
@@ -75,7 +64,7 @@ def control_internet():
                "en": ["Indices built from country expert surveys. The scale is unbounded, roughly from -4 (full control) to +4 (no control).",
                       "For the EU, the median of the 27 countries and the most controlled country (stat=min) are shown.",
                       "CC BY-SA licence: derived data must be shared under the same licence."]},
-        rows=sorted(out, key=lambda r: (r["measure"], r["geo"], r["time"])),
+        rows=out,
         geos=geo.geo_table(r["geo"] for r in out),
         extra={"dimensions": {"measure": VDEM_MEASURES}},
     )

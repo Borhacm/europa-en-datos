@@ -17,14 +17,21 @@ function barPath(x0: number, x1: number, y: number, h: number): string {
 
 function nameWidth(width: number) { return width < 520 ? 104 : 150; }
 
+/** Sufijo de unidad para ticks y tooltips: " %" solo si el gráfico se mide en porcentaje. */
+function pctSuffix(ctx: RenderContext): string {
+  return ctx.chart.unit.es.startsWith("%") ? " %" : "";
+}
+
 function euRows(ctx: RenderContext, rows: Row[]): Row[] {
-  return rows.filter((r) => ctx.chart.geos[r.geo]?.eu);
+  const extra = ctx.cfg.extraGeos ?? [];
+  return rows.filter((r) => ctx.chart.geos[r.geo]?.eu || extra.includes(r.geo));
 }
 
 /** Ranking de países: d3 (IA generativa) y d4 (competencias digitales). */
 export function renderRank(ctx: RenderContext) {
   const { chart, lang, plot, focus, width } = ctx;
-  const fmt = nf(lang, 1);
+  const fmt = nf(lang, ctx.cfg.digits ?? 1);
+  const pct = pctSuffix(ctx);
   const rows = euRows(ctx, slice(ctx)).sort((a, b) => b.value - a.value);
   if (!rows.length) return;
 
@@ -44,10 +51,15 @@ export function renderRank(ctx: RenderContext) {
     txt.textContent = fmt(t);
   }
 
+  // Línea de objetivo por detrás de las barras, para no tachar las etiquetas
+  for (const t of targets) {
+    svg("line", { x1: x(t.value), x2: x(t.value), y1: m.top - 4, y2: height - m.bottom, class: "target" }, root);
+  }
+
   const tip = tooltip(plot);
   rows.forEach((r, i) => {
     const y = m.top + i * ROW;
-    const hl = r.geo === "EU27" || r.geo === focus;
+    const hl = r.geo === "EU27" || r.geo === focus || (ctx.cfg.extraGeos ?? []).includes(r.geo);
     const g = svg("g", { class: `bar-row${hl ? " hl" : ""}`, tabindex: 0 }, root);
     svg("rect", { x: 0, y, width, height: ROW, fill: "transparent" }, g);
     const name = svg("text", { x: left - 10, y: y + ROW / 2 + 5, class: `row-name${hl ? " strong" : ""}`, "text-anchor": "end" }, g);
@@ -55,7 +67,7 @@ export function renderRank(ctx: RenderContext) {
     svg("path", { d: barPath(x(0), x(r.value), y + (ROW - BAR) / 2, BAR), fill: colorFor(r.geo, focus) }, g);
     const val = svg("text", { x: x(r.value) + 6, y: y + ROW / 2 + 5, class: `row-value${hl ? " strong" : ""}` }, g);
     val.textContent = fmt(r.value);
-    const show = () => tip.show(x(r.value), y, tipRow(colorFor(r.geo, focus), geoName(chart, r.geo, lang), `${fmt(r.value)} %`, true));
+    const show = () => tip.show(x(r.value), y, tipRow(colorFor(r.geo, focus), geoName(chart, r.geo, lang), `${fmt(r.value)}${pct}`, true));
     g.addEventListener("pointerenter", show);
     g.addEventListener("focus", show);
     g.addEventListener("pointerleave", () => tip.hide());
@@ -63,9 +75,8 @@ export function renderRank(ctx: RenderContext) {
   });
 
   for (const t of targets) {
-    svg("line", { x1: x(t.value), x2: x(t.value), y1: m.top - 4, y2: height - m.bottom, class: "target" }, root);
     const txt = svg("text", { x: x(t.value) - 6, y: height - m.bottom - 6, class: "target-label", "text-anchor": "end" }, root);
-    txt.textContent = `${t.label[lang]}: ${fmt(t.value)} %`;
+    txt.textContent = `${t.label[lang]}: ${fmt(t.value)}${pct}`;
   }
   ctx.legend.innerHTML = "";
 }
@@ -121,7 +132,8 @@ export function renderPaired(ctx: RenderContext) {
 /** Evolución 2021 a último año por país (d1). */
 export function renderDumbbell(ctx: RenderContext) {
   const { chart, lang, plot, focus, width } = ctx;
-  const fmt = nf(lang, 1);
+  const fmt = nf(lang, ctx.cfg.digits ?? 1);
+  const pct = pctSuffix(ctx);
   const rows = euRows(ctx, slice(ctx));
   const years = [...new Set(rows.map((r) => r.time))].sort();
   const first = years[0], last = years[years.length - 1];
@@ -144,7 +156,7 @@ export function renderDumbbell(ctx: RenderContext) {
   for (const t of ticks) {
     svg("line", { x1: x(t), x2: x(t), y1: m.top - 6, y2: height - m.bottom, class: t === 0 ? "baseline" : "gridline" }, root);
     const txt = svg("text", { x: x(t), y: m.top - 12, class: "tick", "text-anchor": "middle" }, root);
-    txt.textContent = `${fmt(t)} %`;
+    txt.textContent = `${fmt(t)}${pct}`;
   }
   const tip = tooltip(plot);
   const paper = cssVar("--paper");
@@ -163,7 +175,7 @@ export function renderDumbbell(ctx: RenderContext) {
     const val = svg("text", { x: Math.max(x(d.a), x(d.b)) + 10, y: cy + 5, class: `row-value${hl ? " strong" : ""}` }, g);
     val.textContent = fmt(d.b);
     const show = () => tip.show(x(d.b), cy - 12,
-      `<div class="tip-title">${geoName(chart, d.g, lang)}</div>${tipRow(cssVar("--context"), first, `${fmt(d.a)} %`)}${tipRow(color, last, `${fmt(d.b)} %`, true)}`);
+      `<div class="tip-title">${geoName(chart, d.g, lang)}</div>${tipRow(cssVar("--context"), first, `${fmt(d.a)}${pct}`)}${tipRow(color, last, `${fmt(d.b)}${pct}`, true)}`);
     g.addEventListener("pointerenter", show);
     g.addEventListener("focus", show);
     g.addEventListener("pointerleave", () => tip.hide());

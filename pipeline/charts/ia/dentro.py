@@ -1,12 +1,9 @@
 """Mirada 3. Europa por dentro: diferencias entre los 27 países y sus regiones."""
 
-import json
-
 from lib import geo, sources
-from lib.http import fetch
-from lib.output import DATA_DIR, chart
+from lib.output import chart
 
-from ..common import eurostat_source, from_eurostat
+from ..common import eurostat_source, from_eurostat, nuts_map
 
 SIZES = {
     "GE10": {"es": "Todas (10 o más empleados)", "en": "All (10+ employees)"},
@@ -40,38 +37,9 @@ def empresas_ia():
     )
 
 
-GISCO = "https://gisco-services.ec.europa.eu/distribution/v2/nuts/topojson/NUTS_RG_20M_2024_4326_LEVL_{level}.json"
-
-
 def mapa_regional_ia():
     rows = sources.eurostat("isoc_r_eb_ain2", indic_is="E_AI_TANY", unit="PC_ENT", size_emp="GE10", nace_r2="C10-S951_X_K")
-    out = []
-    for r in rows:
-        nuts = r["geo"]
-        if nuts.startswith(("EU", "EA")):
-            continue
-        country = geo.from_eurostat(nuts[:2])
-        if country is None:
-            continue
-        out.append({"geo": nuts, "country": country, "level": len(nuts) - 2, "time": r["time"],
-                    "value": round(r["value"], 2), "name": r["geo_label"]})
-
-    # Cada país publica al nivel regional que puede: elegimos el más detallado del último año
-    latest = max(r["time"] for r in out)
-    best_level = {}
-    for r in out:
-        if r["time"] == latest:
-            best_level[r["country"]] = max(best_level.get(r["country"], 0), r["level"])
-
-    geo_dir = DATA_DIR / "geo"
-    geo_dir.mkdir(parents=True, exist_ok=True)
-    missing = {}
-    for level in (0, 1, 2):
-        topo = json.loads(fetch(GISCO.format(level=level), ".json").read_text())
-        (geo_dir / f"nuts{level}.json").write_text(json.dumps(topo, separators=(",", ":")))
-        obj = next(iter(topo["objects"].values()))
-        ids = {g["properties"].get("id") or g.get("id") for g in obj["geometries"]}
-        missing[level] = sorted({r["geo"] for r in out if r["level"] == level} - ids)
+    out, extra = nuts_map(rows)
 
     return chart(
         id="d2-mapa-regional-ia",
@@ -86,10 +54,8 @@ def mapa_regional_ia():
         notes={"es": ["Algunos países solo publican datos de grandes regiones (NUTS 1) o del país entero. El mapa usa el nivel más detallado disponible en cada país (best_level)."],
                "en": ["Some countries only publish data for large regions (NUTS 1) or the whole country. The map uses the most detailed level available per country (best_level)."]},
         rows=sorted(out, key=lambda r: (r["geo"], r["time"])),
-        geos=geo.geo_table(best_level),
-        extra={"best_level": best_level, "latest": latest,
-               "geometry": {str(lvl): f"geo/nuts{lvl}.json" for lvl in (0, 1, 2)},
-               "unmatched_geometry": missing},
+        geos=geo.geo_table(extra["best_level"]),
+        extra=extra,
     )
 
 

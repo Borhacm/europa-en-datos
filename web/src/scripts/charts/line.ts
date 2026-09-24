@@ -1,7 +1,7 @@
 import { scaleLinear } from "d3-scale";
 import { line as d3line } from "d3-shape";
 import {
-  svg, colorFor, cssVar, nf, geoName, slice, tooltip, tipRow, legend, niceTicks,
+  svg, colorFor, cssVar, nf, geoName, dimLabel, slice, tooltip, tipRow, legend, niceTicks,
   type RenderContext, type Row,
 } from "./core";
 
@@ -19,8 +19,10 @@ export function renderLine(ctx: RenderContext) {
 
   // Qué series se dibujan: bloques en color, país destacado en oro, contexto en gris
   const byKey = new Map<string, Row[]>();
+  // Una serie es un país o bloque; en algunos gráficos es una medida de un mismo bloque (dimensión "series")
+  const hasMedian = rows.some((r) => r.stat === "median");
   for (const r of rows) {
-    const key = r.stat === "min" ? "EU27_min" : r.geo;
+    const key = r.stat === "min" ? "EU27_min" : (r.series ?? r.geo);
     if (!byKey.has(key)) byKey.set(key, []);
     byKey.get(key)!.push(r);
   }
@@ -30,17 +32,19 @@ export function renderLine(ctx: RenderContext) {
     const rs = byKey.get(key);
     if (!rs) return;
     const label = key === "EU27_min"
-      ? (lang === "es" ? "País de la UE con más control" : "EU country with most control")
-      : key === "EU27" && chart.id === "e2-control-internet"
+      ? (lang === "es" ? "País de la UE con el valor más bajo" : "EU country with the lowest value")
+      : key === "EU27" && hasMedian
         ? (lang === "es" ? "UE (mediana de los 27)" : "EU (median of the 27)")
-        : geoName(chart, key, lang);
+        : chart.dimensions?.series?.[key] ? dimLabel(chart, "series", key, lang) : geoName(chart, key, lang);
+    const seriesVar = cfg.seriesColors?.[key];
     series.push({
       key, label, context,
-      color: key === "EU27_min" ? cssVar("--context-strong") : colorFor(key, focus),
+      color: key === "EU27_min" ? cssVar("--context-strong") : seriesVar ? cssVar(seriesVar) : colorFor(key, focus),
       points: rs.map((r) => ({ x: +r.time, y: r.value })).sort((a, b) => a.x - b.x),
     });
   };
-  for (const k of byKey.keys()) if (!main.includes(k) && k !== focus && (cfg.showContext || k === "EU27_min")) add(k, true);
+  const isContext = (k: string) => k === "EU27_min" || (cfg.context ? cfg.context.includes(k) : !!cfg.showContext);
+  for (const k of byKey.keys()) if (!main.includes(k) && k !== focus && isContext(k)) add(k, true);
   if (focus && !main.includes(focus)) add(focus, false);
   for (const k of main) add(k, false);
   if (!series.length) return;
@@ -52,6 +56,8 @@ export function renderLine(ctx: RenderContext) {
   const m = { top: 20, right: narrow ? 12 : 150, bottom: 30, left: 4 };
   const xs = series.flatMap((s) => s.points.map((p) => p.x));
   const ys = series.flatMap((s) => s.points.map((p) => p.y));
+  const ref: { value: number; label: { es: string; en: string } } | undefined = chart.ref_line;
+  if (ref) ys.push(ref.value);
   const yMin = cfg.domainMin ?? Math.min(...ys);
   const yMaxRaw = Math.max(...ys);
   const ticks = niceTicks(yMaxRaw, Math.min(yMin, Math.min(...ys)), narrow ? 4 : 5);
@@ -67,6 +73,12 @@ export function renderLine(ctx: RenderContext) {
     svg("line", { x1: m.left, x2: width - m.right, y1: y(t), y2: y(t), class: t === 0 ? "baseline" : "gridline" }, grid);
     const txt = svg("text", { x: m.left, y: y(t) - 5, class: "tick" }, grid);
     txt.textContent = fmt(t);
+  }
+  // Línea de referencia (p. ej. 100 = EE. UU. o nivel de 1990)
+  if (ref) {
+    svg("line", { x1: m.left, x2: width - m.right, y1: y(ref.value), y2: y(ref.value), class: "refline" }, grid);
+    const lbl = svg("text", { x: width - m.right, y: y(ref.value) - 6, class: "ref-label", "text-anchor": "end" }, grid);
+    lbl.textContent = ref.label[lang];
   }
   const [x0, x1] = x.domain();
   const step = Math.max(1, Math.ceil((x1 - x0) / (narrow ? 4 : 8)));

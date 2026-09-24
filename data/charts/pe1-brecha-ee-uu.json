@@ -1,0 +1,339 @@
+{
+ "id": "pe1-brecha-ee-uu",
+ "lens": "elige",
+ "theme": "productividad",
+ "title": {
+  "es": "Por hora trabajada, la UE está al 87 % de EE. UU.; por habitante, solo al 74 %",
+  "en": "Per hour worked, the EU is at 87% of the US; per person, only at 74%"
+ },
+ "subtitle": {
+  "es": "PIB de la UE en % del de EE. UU. (100 = EE. UU.), por hora trabajada y por habitante",
+  "en": "EU GDP as % of US GDP (100 = US), per hour worked and per person"
+ },
+ "unit": {
+  "es": "% del nivel de EE. UU.",
+  "en": "% of US level"
+ },
+ "source": {
+  "name": "OIT, ILOSTAT, y Eurostat",
+  "dataset": "DF_GDP_2HRW_NOC_NB, sdg_10_10",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/sdg_10_10/default/table",
+  "license": "CC BY 4.0",
+  "also": [
+   {
+    "name": "OIT, ILOSTAT",
+    "url": "https://ilostat.ilo.org/data/"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Por hora: PIB por hora trabajada de la OIT (estimaciones modelizadas). Por habitante: PIB por habitante en paridad de poder adquisitivo de Eurostat.",
+   "La diferencia entre las dos líneas se explica por las horas trabajadas y por la parte de la población que tiene empleo."
+  ],
+  "en": [
+   "Per hour: ILO GDP per hour worked (modelled estimates). Per person: Eurostat GDP per person at purchasing power parity.",
+   "The difference between the two lines comes from hours worked and from the share of the population in work."
+  ]
+ },
+ "retrieved": "2026-09-24",
+ "geos": {
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  }
+ },
+ "dimensions": {
+  "series": {
+   "hora": {
+    "es": "PIB por hora trabajada",
+    "en": "GDP per hour worked"
+   },
+   "habitante": {
+    "es": "PIB por habitante",
+    "en": "GDP per person"
+   }
+  }
+ },
+ "ref_line": {
+  "value": 100,
+  "label": {
+   "es": "Estados Unidos",
+   "en": "United States"
+  }
+ },
+ "rows": [
+  {
+   "geo": "EU27",
+   "series": "habitante",
+   "time": "2000",
+   "value": 61.0
+  },
+  {
+   "geo": "EU27",
+   "series": "habitante",
+   "time": "2001",
+   "value": 62.9
+  },
+  {
+   "geo": "EU27",
+   "series": "habitante",
+   "time": "2002",
+   "value": 64.1
+  },
+  {
+   "geo": "EU27",
+   "series": "habitante",
+   "time": "2003",
+   "value": 62.9
+  },
+  {
+   "geo": "EU27",
+   "series": "habitante",
+   "time": "2004",
+   "value": 62.5
+  },
+  {
+   "geo": "EU27",
+   "series": "habitante",
+   "time": "2005",
+   "value": 61.3
+  },
+  {
+   "geo": "EU27",
+   "series": "habitante",
+   "time": "2006",
+   "value": 63.3
+  },
+  {
+   "geo": "EU27",
+   "series": "habitante",
+   "time": "2007",
+   "value": 65.4
+  },
+  {
+   "geo": "EU27",
+   "series": "habitante",
+   "time": "2008",
+   "value": 67.6
+  },
+  {
+   "geo": "EU27",
+   "series": "habitante",
+   "time": "2009",
+   "value": 68.0
+  },
+  {
+   "geo": "EU27",
+   "series": "habitante",
+   "time": "2010",
+   "value": 68.0
+  },
+  {
+   "geo": "EU27",
+   "series": "habitante",
+   "time": "2011",
+   "value": 69.4
+  },
+  {
+   "geo": "EU27",
+   "series": "habitante",
+   "time": "2012",
+   "value": 68.0
+  },
+  {
+   "geo": "EU27",
+   "series": "habitante",
+   "time": "2013",
+   "value": 68.5
+  },
+  {
+   "geo": "EU27",
+   "series": "habitante",
+   "time": "2014",
+   "value": 68.0
+  },
+  {
+   "geo": "EU27",
+   "series": "habitante",
+   "time": "2015",
+   "value": 68.0
+  },
+  {
+   "geo": "EU27",
+   "series": "habitante",
+   "time": "2016",
+   "value": 70.9
+  },
+  {
+   "geo": "EU27",
+   "series": "habitante",
+   "time": "2017",
+   "value": 71.9
+  },
+  {
+   "geo": "EU27",
+   "series": "habitante",
+   "time": "2018",
+   "value": 71.9
+  },
+  {
+   "geo": "EU27",
+   "series": "habitante",
+   "time": "2019",
+   "value": 74.6
+  },
+  {
+   "geo": "EU27",
+   "series": "habitante",
+   "time": "2020",
+   "value": 74.1
+  },
+  {
+   "geo": "EU27",
+   "series": "habitante",
+   "time": "2021",
+   "value": 73.0
+  },
+  {
+   "geo": "EU27",
+   "series": "habitante",
+   "time": "2022",
+   "value": 75.2
+  },
+  {
+   "geo": "EU27",
+   "series": "habitante",
+   "time": "2023",
+   "value": 74.6
+  },
+  {
+   "geo": "EU27",
+   "series": "habitante",
+   "time": "2024",
+   "value": 74.1
+  },
+  {
+   "geo": "EU27",
+   "series": "hora",
+   "time": "2005",
+   "value": 89.9
+  },
+  {
+   "geo": "EU27",
+   "series": "hora",
+   "time": "2006",
+   "value": 90.9
+  },
+  {
+   "geo": "EU27",
+   "series": "hora",
+   "time": "2007",
+   "value": 91.4
+  },
+  {
+   "geo": "EU27",
+   "series": "hora",
+   "time": "2008",
+   "value": 91.0
+  },
+  {
+   "geo": "EU27",
+   "series": "hora",
+   "time": "2009",
+   "value": 87.4
+  },
+  {
+   "geo": "EU27",
+   "series": "hora",
+   "time": "2010",
+   "value": 87.5
+  },
+  {
+   "geo": "EU27",
+   "series": "hora",
+   "time": "2011",
+   "value": 89.3
+  },
+  {
+   "geo": "EU27",
+   "series": "hora",
+   "time": "2012",
+   "value": 90.0
+  },
+  {
+   "geo": "EU27",
+   "series": "hora",
+   "time": "2013",
+   "value": 90.4
+  },
+  {
+   "geo": "EU27",
+   "series": "hora",
+   "time": "2014",
+   "value": 90.6
+  },
+  {
+   "geo": "EU27",
+   "series": "hora",
+   "time": "2015",
+   "value": 90.8
+  },
+  {
+   "geo": "EU27",
+   "series": "hora",
+   "time": "2016",
+   "value": 91.1
+  },
+  {
+   "geo": "EU27",
+   "series": "hora",
+   "time": "2017",
+   "value": 92.2
+  },
+  {
+   "geo": "EU27",
+   "series": "hora",
+   "time": "2018",
+   "value": 92.6
+  },
+  {
+   "geo": "EU27",
+   "series": "hora",
+   "time": "2019",
+   "value": 93.1
+  },
+  {
+   "geo": "EU27",
+   "series": "hora",
+   "time": "2020",
+   "value": 88.7
+  },
+  {
+   "geo": "EU27",
+   "series": "hora",
+   "time": "2021",
+   "value": 89.2
+  },
+  {
+   "geo": "EU27",
+   "series": "hora",
+   "time": "2022",
+   "value": 90.0
+  },
+  {
+   "geo": "EU27",
+   "series": "hora",
+   "time": "2023",
+   "value": 88.1
+  },
+  {
+   "geo": "EU27",
+   "series": "hora",
+   "time": "2024",
+   "value": 86.6
+  }
+ ]
+}

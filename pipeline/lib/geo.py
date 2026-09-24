@@ -57,6 +57,8 @@ _FROM_EUROSTAT = {c[0]: iso3 for iso3, c in COUNTRIES.items() if c[0]}
 _AGGREGATES = {"EU27_2020": "EU27", "EU27": "EU27", "EUU": "EU27"}
 # Códigos de socios comerciales de Eurostat fuera de Europa (China sin Hong Kong)
 _PARTNERS = {"US": "USA", "CN_X_HK": "CHN", "JP": "JPN", "KR": "KOR"}
+# Agregado UE-27 en la OIT
+_ILO = {"X92": "EU27"}
 
 
 def from_eurostat(code: str) -> str | None:
@@ -65,7 +67,7 @@ def from_eurostat(code: str) -> str | None:
 
 
 def from_iso3(code: str) -> str | None:
-    return _AGGREGATES.get(code) or (code if code in COUNTRIES else None)
+    return _AGGREGATES.get(code) or _ILO.get(code) or (code if code in COUNTRIES else None)
 
 
 def name(code: str, lang: str) -> str:

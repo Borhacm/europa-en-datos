@@ -55,10 +55,12 @@ export async function renderMap(ctx: RenderContext) {
   );
   const insetPath = geoPath(insetProj);
 
-  const max = Math.max(...rows.map((r) => r.value));
+  // Tope opcional de la escala (map_max): los valores por encima toman el color más intenso
+  const cap: number | undefined = chart.map_max;
+  const max = Math.min(Math.max(...rows.map((r) => r.value)), cap ?? Infinity);
   const ticks = niceTicks(max, 0, 4);
-  const top = Math.max(ticks[ticks.length - 1], max);
-  const color = scaleLinear<string>().domain([0, top]).range([cssVar("--seq-0"), cssVar("--seq-1")]).interpolate(interpolateLab);
+  const top = cap ?? Math.max(ticks[ticks.length - 1], max);
+  const color = scaleLinear<string>().domain([0, top]).range([cssVar("--seq-0"), cssVar("--seq-1")]).interpolate(interpolateLab).clamp(true);
 
   const root = svg("svg", { width, height, viewBox: `0 0 ${width} ${height}`, class: "chart-svg map" });
   plot.appendChild(root);
@@ -111,13 +113,13 @@ export async function renderMap(ctx: RenderContext) {
   const grad = svg("linearGradient", { id: gradId }, defs);
   for (let i = 0; i <= 10; i++) svg("stop", { offset: `${i * 10}%`, "stop-color": color((top * i) / 10) }, grad);
   const lg = svg("g", { transform: "translate(8, 6)" }, root);
-  const cap = svg("text", { x: 0, y: 10, class: "tick" }, lg);
-  cap.textContent = lang === "es" ? `% de empresas que usan IA, ${latest}` : `% of enterprises using AI, ${latest}`;
+  const caption = svg("text", { x: 0, y: 10, class: "tick" }, lg);
+  caption.textContent = `${chart.unit[lang]}, ${latest}`;
   svg("rect", { x: 0, y: 16, width: lw, height: 10, fill: `url(#${gradId})` }, lg);
   const lx = scaleLinear().domain([0, top]).range([0, lw]);
   for (const t of ticks) {
     const txt = svg("text", { x: lx(t), y: 38, class: "tick", "text-anchor": t === 0 ? "start" : "middle" }, lg);
-    txt.textContent = fmt(t);
+    txt.textContent = cap !== undefined && t === top ? `≥ ${fmt(t)}` : fmt(t);
   }
   svg("rect", { x: lw + 16, y: 16, width: 10, height: 10, class: "land-nodata" }, lg);
   const nd = svg("text", { x: lw + 30, y: 25, class: "tick" }, lg);

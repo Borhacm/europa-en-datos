@@ -24,7 +24,7 @@ export const ui = {
     loadError: "No se ha podido cargar el gráfico. Los datos siguen disponibles en la tabla.",
     footerIndependent:
       "Proyecto independiente de Bocal. No es una publicación oficial de la Unión Europea ni de ninguna institución.",
-    footerData: "Datos abiertos de Eurostat, OCDE, Banco Mundial, Epoch AI y V-Dem.",
+    footerData: "Datos abiertos de Eurostat, OCDE, Banco Mundial, la OIT, Epoch AI y V-Dem.",
     comingSoon: "En preparación",
     table: { country: "País", year: "Año", value: "Valor" },
   },
@@ -50,7 +50,7 @@ export const ui = {
     loadError: "The chart could not be loaded. The data is still available in the table.",
     footerIndependent:
       "An independent project by Bocal. Not an official publication of the European Union or any institution.",
-    footerData: "Open data from Eurostat, the OECD, the World Bank, Epoch AI and V-Dem.",
+    footerData: "Open data from Eurostat, the OECD, the World Bank, the ILO, Epoch AI and V-Dem.",
     comingSoon: "In preparation",
     table: { country: "Country", year: "Year", value: "Value" },
   },

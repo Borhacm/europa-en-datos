@@ -21,6 +21,14 @@
   "comercio": {
    "es": "Comercio y dependencias",
    "en": "Trade and dependencies"
+  },
+  "productividad": {
+   "es": "Productividad y crecimiento",
+   "en": "Productivity and growth"
+  },
+  "libertades": {
+   "es": "Libertades, bienestar y clima",
+   "en": "Freedoms, well-being and climate"
   }
  },
  "charts": [
@@ -199,6 +207,160 @@
    },
    "retrieved": "2026-09-24",
    "n_rows": 1320
+  },
+  {
+   "id": "pg1-peso-pib-mundial",
+   "lens": "gigantes",
+   "theme": "productividad",
+   "title": {
+    "es": "China ya es la mayor economía del mundo en poder adquisitivo. La UE y EE. UU. pesan casi lo mismo",
+    "en": "China is now the world's largest economy in purchasing power. The EU and the US weigh almost the same"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 140
+  },
+  {
+   "id": "pg2-productividad-hora",
+   "lens": "gigantes",
+   "theme": "productividad",
+   "title": {
+    "es": "Por cada hora trabajada, la UE produce un 13 % menos que EE. UU., y la distancia ha crecido desde 2019",
+    "en": "For every hour worked, the EU produces 13% less than the US, and the gap has widened since 2019"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 620
+  },
+  {
+   "id": "pe1-brecha-ee-uu",
+   "lens": "elige",
+   "theme": "productividad",
+   "title": {
+    "es": "Por hora trabajada, la UE está al 87 % de EE. UU.; por habitante, solo al 74 %",
+    "en": "Per hour worked, the EU is at 87% of the US; per person, only at 74%"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 45
+  },
+  {
+   "id": "pe2-horas-trabajadas",
+   "lens": "elige",
+   "theme": "productividad",
+   "title": {
+    "es": "El oeste y el norte de Europa trabajan menos horas que EE. UU.; casi todo el este y parte del sur, más",
+    "en": "Western and northern Europe work fewer hours than the US; most of the east and part of the south, more"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 308
+  },
+  {
+   "id": "pd1-convergencia",
+   "lens": "dentro",
+   "theme": "productividad",
+   "title": {
+    "es": "El este de Europa se ha acercado a la media desde 2004. El sur, no",
+    "en": "Eastern Europe has closed in on the average since 2004. The south has not"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 78
+  },
+  {
+   "id": "pd2-mapa-renta",
+   "lens": "dentro",
+   "theme": "productividad",
+   "title": {
+    "es": "Las regiones de las capitales tiran de la renta europea; el sur y el este quedan por debajo de la media",
+    "en": "Capital regions drive European income; the south and east sit below average"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 5973
+  },
+  {
+   "id": "lg1-democracia",
+   "lens": "gigantes",
+   "theme": "libertades",
+   "title": {
+    "es": "La democracia de EE. UU. cayó en 2025 a su nivel más bajo del siglo, por debajo de la mediana de la UE",
+    "en": "US democracy fell in 2025 to its lowest level this century, below the EU median"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 806
+  },
+  {
+   "id": "lg2-esperanza-vida",
+   "lens": "gigantes",
+   "theme": "libertades",
+   "title": {
+    "es": "En la UE se vive casi tres años más que en EE. UU., y China ya casi ha alcanzado a EE. UU.",
+    "en": "People in the EU live almost three years longer than in the US, and China has nearly caught up with the US"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 1050
+  },
+  {
+   "id": "lg3-co2-habitante",
+   "lens": "gigantes",
+   "theme": "libertades",
+   "title": {
+    "es": "Un chino ya emite más CO₂ que un europeo; un estadounidense, más del doble",
+    "en": "A Chinese person now emits more CO₂ than a European; an American, more than twice as much"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 1050
+  },
+  {
+   "id": "le1-emisiones-1990",
+   "lens": "elige",
+   "theme": "libertades",
+   "title": {
+    "es": "La UE emite un 35 % menos de CO₂ que en 1990. China, más de cinco veces más",
+    "en": "The EU emits 35% less CO₂ than in 1990. China, more than five times as much"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 105
+  },
+  {
+   "id": "le2-gasto-social",
+   "lens": "elige",
+   "theme": "libertades",
+   "title": {
+    "es": "Francia, Italia, Alemania o España dedican al gasto social entre 7 y 12 puntos de PIB más que EE. UU.; varios países de la UE, menos",
+    "en": "France, Italy, Germany or Spain devote 7 to 12 more points of GDP to social spending than the US; several EU countries, less"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 621
+  },
+  {
+   "id": "ld1-democracia-ue",
+   "lens": "dentro",
+   "theme": "libertades",
+   "title": {
+    "es": "La calidad democrática ha bajado desde 2010 en 24 de los 27 países de la UE, con Hungría a la cabeza",
+    "en": "Democratic quality has fallen since 2010 in 24 of the 27 EU countries, led by Hungary"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 56
+  },
+  {
+   "id": "ld2-pobreza",
+   "lens": "dentro",
+   "theme": "libertades",
+   "title": {
+    "es": "Uno de cada cinco europeos está en riesgo de pobreza o exclusión social; en Bulgaria, Grecia o Rumanía, más de uno de cada cuatro",
+    "en": "One in five Europeans is at risk of poverty or social exclusion; in Bulgaria, Greece or Romania, more than one in four"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 388
+  },
+  {
+   "id": "ld3-renovables",
+   "lens": "dentro",
+   "theme": "libertades",
+   "title": {
+    "es": "Suecia ya obtiene dos tercios de su energía de fuentes renovables; la UE, una cuarta parte, lejos de su objetivo para 2030",
+    "en": "Sweden already gets two thirds of its energy from renewables; the EU, a quarter, far from its 2030 target"
+   },
+   "retrieved": "2026-09-24",
+   "n_rows": 791
   }
  ]
 }

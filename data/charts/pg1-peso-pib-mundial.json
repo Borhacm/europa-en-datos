@@ -1,0 +1,760 @@
+{
+ "id": "pg1-peso-pib-mundial",
+ "lens": "gigantes",
+ "theme": "productividad",
+ "title": {
+  "es": "China ya es la mayor economía del mundo en poder adquisitivo. La UE y EE. UU. pesan casi lo mismo",
+  "en": "China is now the world's largest economy in purchasing power. The EU and the US weigh almost the same"
+ },
+ "subtitle": {
+  "es": "Peso de cada economía en el PIB mundial, medido en paridad de poder adquisitivo, en %",
+  "en": "Each economy's share of world GDP, measured in purchasing power parity, in %"
+ },
+ "unit": {
+  "es": "% del PIB mundial",
+  "en": "% of world GDP"
+ },
+ "source": {
+  "name": "Banco Mundial, PIB en paridad de poder adquisitivo",
+  "dataset": "NY.GDP.MKTP.PP.CD",
+  "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.PP.CD",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "La paridad de poder adquisitivo corrige las diferencias de precios entre países: un dólar compra más en China que en EE. UU."
+  ],
+  "en": [
+   "Purchasing power parity corrects for price differences between countries: a dollar buys more in China than in the US."
+  ]
+ },
+ "retrieved": "2026-09-24",
+ "geos": {
+  "CHN": {
+   "es": "China",
+   "en": "China",
+   "eu": false,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "JPN": {
+   "es": "Japón",
+   "en": "Japan",
+   "eu": false,
+   "aggregate": false
+  },
+  "USA": {
+   "es": "Estados Unidos",
+   "en": "United States",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "CHN",
+   "time": "1990",
+   "value": 3.78
+  },
+  {
+   "geo": "CHN",
+   "time": "1991",
+   "value": 4.07
+  },
+  {
+   "geo": "CHN",
+   "time": "1992",
+   "value": 4.55
+  },
+  {
+   "geo": "CHN",
+   "time": "1993",
+   "value": 5.09
+  },
+  {
+   "geo": "CHN",
+   "time": "1994",
+   "value": 5.58
+  },
+  {
+   "geo": "CHN",
+   "time": "1995",
+   "value": 5.99
+  },
+  {
+   "geo": "CHN",
+   "time": "1996",
+   "value": 6.33
+  },
+  {
+   "geo": "CHN",
+   "time": "1997",
+   "value": 6.65
+  },
+  {
+   "geo": "CHN",
+   "time": "1998",
+   "value": 7.02
+  },
+  {
+   "geo": "CHN",
+   "time": "1999",
+   "value": 7.31
+  },
+  {
+   "geo": "CHN",
+   "time": "2000",
+   "value": 7.55
+  },
+  {
+   "geo": "CHN",
+   "time": "2001",
+   "value": 7.97
+  },
+  {
+   "geo": "CHN",
+   "time": "2002",
+   "value": 8.44
+  },
+  {
+   "geo": "CHN",
+   "time": "2003",
+   "value": 8.97
+  },
+  {
+   "geo": "CHN",
+   "time": "2004",
+   "value": 9.38
+  },
+  {
+   "geo": "CHN",
+   "time": "2005",
+   "value": 10.01
+  },
+  {
+   "geo": "CHN",
+   "time": "2006",
+   "value": 10.61
+  },
+  {
+   "geo": "CHN",
+   "time": "2007",
+   "value": 11.48
+  },
+  {
+   "geo": "CHN",
+   "time": "2008",
+   "value": 12.12
+  },
+  {
+   "geo": "CHN",
+   "time": "2009",
+   "value": 13.23
+  },
+  {
+   "geo": "CHN",
+   "time": "2010",
+   "value": 13.89
+  },
+  {
+   "geo": "CHN",
+   "time": "2011",
+   "value": 14.56
+  },
+  {
+   "geo": "CHN",
+   "time": "2012",
+   "value": 15.2
+  },
+  {
+   "geo": "CHN",
+   "time": "2013",
+   "value": 15.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2014",
+   "value": 15.97
+  },
+  {
+   "geo": "CHN",
+   "time": "2015",
+   "value": 16.34
+  },
+  {
+   "geo": "CHN",
+   "time": "2016",
+   "value": 16.59
+  },
+  {
+   "geo": "CHN",
+   "time": "2017",
+   "value": 16.77
+  },
+  {
+   "geo": "CHN",
+   "time": "2018",
+   "value": 17.18
+  },
+  {
+   "geo": "CHN",
+   "time": "2019",
+   "value": 17.57
+  },
+  {
+   "geo": "CHN",
+   "time": "2020",
+   "value": 18.33
+  },
+  {
+   "geo": "CHN",
+   "time": "2021",
+   "value": 18.71
+  },
+  {
+   "geo": "CHN",
+   "time": "2022",
+   "value": 18.5
+  },
+  {
+   "geo": "CHN",
+   "time": "2023",
+   "value": 18.86
+  },
+  {
+   "geo": "CHN",
+   "time": "2024",
+   "value": 19.14
+  },
+  {
+   "geo": "EU27",
+   "time": "1990",
+   "value": 21.17
+  },
+  {
+   "geo": "EU27",
+   "time": "1991",
+   "value": 21.0
+  },
+  {
+   "geo": "EU27",
+   "time": "1992",
+   "value": 20.68
+  },
+  {
+   "geo": "EU27",
+   "time": "1993",
+   "value": 20.19
+  },
+  {
+   "geo": "EU27",
+   "time": "1994",
+   "value": 20.09
+  },
+  {
+   "geo": "EU27",
+   "time": "1995",
+   "value": 19.97
+  },
+  {
+   "geo": "EU27",
+   "time": "1996",
+   "value": 19.51
+  },
+  {
+   "geo": "EU27",
+   "time": "1997",
+   "value": 19.18
+  },
+  {
+   "geo": "EU27",
+   "time": "1998",
+   "value": 19.47
+  },
+  {
+   "geo": "EU27",
+   "time": "1999",
+   "value": 19.32
+  },
+  {
+   "geo": "EU27",
+   "time": "2000",
+   "value": 19.16
+  },
+  {
+   "geo": "EU27",
+   "time": "2001",
+   "value": 19.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2002",
+   "value": 19.15
+  },
+  {
+   "geo": "EU27",
+   "time": "2003",
+   "value": 18.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2004",
+   "value": 18.07
+  },
+  {
+   "geo": "EU27",
+   "time": "2005",
+   "value": 17.47
+  },
+  {
+   "geo": "EU27",
+   "time": "2006",
+   "value": 17.38
+  },
+  {
+   "geo": "EU27",
+   "time": "2007",
+   "value": 17.16
+  },
+  {
+   "geo": "EU27",
+   "time": "2008",
+   "value": 17.02
+  },
+  {
+   "geo": "EU27",
+   "time": "2009",
+   "value": 16.58
+  },
+  {
+   "geo": "EU27",
+   "time": "2010",
+   "value": 16.09
+  },
+  {
+   "geo": "EU27",
+   "time": "2011",
+   "value": 15.84
+  },
+  {
+   "geo": "EU27",
+   "time": "2012",
+   "value": 15.26
+  },
+  {
+   "geo": "EU27",
+   "time": "2013",
+   "value": 15.02
+  },
+  {
+   "geo": "EU27",
+   "time": "2014",
+   "value": 14.89
+  },
+  {
+   "geo": "EU27",
+   "time": "2015",
+   "value": 15.05
+  },
+  {
+   "geo": "EU27",
+   "time": "2016",
+   "value": 15.35
+  },
+  {
+   "geo": "EU27",
+   "time": "2017",
+   "value": 15.32
+  },
+  {
+   "geo": "EU27",
+   "time": "2018",
+   "value": 15.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2019",
+   "value": 15.4
+  },
+  {
+   "geo": "EU27",
+   "time": "2020",
+   "value": 15.11
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "value": 14.74
+  },
+  {
+   "geo": "EU27",
+   "time": "2022",
+   "value": 14.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2023",
+   "value": 14.65
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "value": 14.38
+  },
+  {
+   "geo": "JPN",
+   "time": "1990",
+   "value": 8.44
+  },
+  {
+   "geo": "JPN",
+   "time": "1991",
+   "value": 8.6
+  },
+  {
+   "geo": "JPN",
+   "time": "1992",
+   "value": 8.49
+  },
+  {
+   "geo": "JPN",
+   "time": "1993",
+   "value": 8.29
+  },
+  {
+   "geo": "JPN",
+   "time": "1994",
+   "value": 8.12
+  },
+  {
+   "geo": "JPN",
+   "time": "1995",
+   "value": 8.03
+  },
+  {
+   "geo": "JPN",
+   "time": "1996",
+   "value": 7.98
+  },
+  {
+   "geo": "JPN",
+   "time": "1997",
+   "value": 7.74
+  },
+  {
+   "geo": "JPN",
+   "time": "1998",
+   "value": 7.44
+  },
+  {
+   "geo": "JPN",
+   "time": "1999",
+   "value": 7.15
+  },
+  {
+   "geo": "JPN",
+   "time": "2000",
+   "value": 7.09
+  },
+  {
+   "geo": "JPN",
+   "time": "2001",
+   "value": 6.94
+  },
+  {
+   "geo": "JPN",
+   "time": "2002",
+   "value": 6.79
+  },
+  {
+   "geo": "JPN",
+   "time": "2003",
+   "value": 6.6
+  },
+  {
+   "geo": "JPN",
+   "time": "2004",
+   "value": 6.39
+  },
+  {
+   "geo": "JPN",
+   "time": "2005",
+   "value": 6.18
+  },
+  {
+   "geo": "JPN",
+   "time": "2006",
+   "value": 5.91
+  },
+  {
+   "geo": "JPN",
+   "time": "2007",
+   "value": 5.69
+  },
+  {
+   "geo": "JPN",
+   "time": "2008",
+   "value": 5.41
+  },
+  {
+   "geo": "JPN",
+   "time": "2009",
+   "value": 5.1
+  },
+  {
+   "geo": "JPN",
+   "time": "2010",
+   "value": 5.04
+  },
+  {
+   "geo": "JPN",
+   "time": "2011",
+   "value": 4.83
+  },
+  {
+   "geo": "JPN",
+   "time": "2012",
+   "value": 4.76
+  },
+  {
+   "geo": "JPN",
+   "time": "2013",
+   "value": 4.75
+  },
+  {
+   "geo": "JPN",
+   "time": "2014",
+   "value": 4.61
+  },
+  {
+   "geo": "JPN",
+   "time": "2015",
+   "value": 4.66
+  },
+  {
+   "geo": "JPN",
+   "time": "2016",
+   "value": 4.45
+  },
+  {
+   "geo": "JPN",
+   "time": "2017",
+   "value": 4.3
+  },
+  {
+   "geo": "JPN",
+   "time": "2018",
+   "value": 4.11
+  },
+  {
+   "geo": "JPN",
+   "time": "2019",
+   "value": 3.93
+  },
+  {
+   "geo": "JPN",
+   "time": "2020",
+   "value": 3.91
+  },
+  {
+   "geo": "JPN",
+   "time": "2021",
+   "value": 3.67
+  },
+  {
+   "geo": "JPN",
+   "time": "2022",
+   "value": 3.51
+  },
+  {
+   "geo": "JPN",
+   "time": "2023",
+   "value": 3.48
+  },
+  {
+   "geo": "JPN",
+   "time": "2024",
+   "value": 3.36
+  },
+  {
+   "geo": "USA",
+   "time": "1990",
+   "value": 20.05
+  },
+  {
+   "geo": "USA",
+   "time": "1991",
+   "value": 19.7
+  },
+  {
+   "geo": "USA",
+   "time": "1992",
+   "value": 19.96
+  },
+  {
+   "geo": "USA",
+   "time": "1993",
+   "value": 20.13
+  },
+  {
+   "geo": "USA",
+   "time": "1994",
+   "value": 20.29
+  },
+  {
+   "geo": "USA",
+   "time": "1995",
+   "value": 20.15
+  },
+  {
+   "geo": "USA",
+   "time": "1996",
+   "value": 20.1
+  },
+  {
+   "geo": "USA",
+   "time": "1997",
+   "value": 20.18
+  },
+  {
+   "geo": "USA",
+   "time": "1998",
+   "value": 20.64
+  },
+  {
+   "geo": "USA",
+   "time": "1999",
+   "value": 20.89
+  },
+  {
+   "geo": "USA",
+   "time": "2000",
+   "value": 20.68
+  },
+  {
+   "geo": "USA",
+   "time": "2001",
+   "value": 20.36
+  },
+  {
+   "geo": "USA",
+   "time": "2002",
+   "value": 20.05
+  },
+  {
+   "geo": "USA",
+   "time": "2003",
+   "value": 19.9
+  },
+  {
+   "geo": "USA",
+   "time": "2004",
+   "value": 19.63
+  },
+  {
+   "geo": "USA",
+   "time": "2005",
+   "value": 19.44
+  },
+  {
+   "geo": "USA",
+   "time": "2006",
+   "value": 18.8
+  },
+  {
+   "geo": "USA",
+   "time": "2007",
+   "value": 18.19
+  },
+  {
+   "geo": "USA",
+   "time": "2008",
+   "value": 17.52
+  },
+  {
+   "geo": "USA",
+   "time": "2009",
+   "value": 17.03
+  },
+  {
+   "geo": "USA",
+   "time": "2010",
+   "value": 16.6
+  },
+  {
+   "geo": "USA",
+   "time": "2011",
+   "value": 16.14
+  },
+  {
+   "geo": "USA",
+   "time": "2012",
+   "value": 15.98
+  },
+  {
+   "geo": "USA",
+   "time": "2013",
+   "value": 15.79
+  },
+  {
+   "geo": "USA",
+   "time": "2014",
+   "value": 15.84
+  },
+  {
+   "geo": "USA",
+   "time": "2015",
+   "value": 16.09
+  },
+  {
+   "geo": "USA",
+   "time": "2016",
+   "value": 15.87
+  },
+  {
+   "geo": "USA",
+   "time": "2017",
+   "value": 15.68
+  },
+  {
+   "geo": "USA",
+   "time": "2018",
+   "value": 15.52
+  },
+  {
+   "geo": "USA",
+   "time": "2019",
+   "value": 15.27
+  },
+  {
+   "geo": "USA",
+   "time": "2020",
+   "value": 15.2
+  },
+  {
+   "geo": "USA",
+   "time": "2021",
+   "value": 15.08
+  },
+  {
+   "geo": "USA",
+   "time": "2022",
+   "value": 14.82
+  },
+  {
+   "geo": "USA",
+   "time": "2023",
+   "value": 14.75
+  },
+  {
+   "geo": "USA",
+   "time": "2024",
+   "value": 14.66
+  }
+ ]
+}

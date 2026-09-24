@@ -1,6 +1,7 @@
 """Lectores de cada fuente. Todos devuelven una lista de dicts planos, una fila por observación."""
 
 import csv
+import functools
 import json
 import urllib.parse
 
@@ -9,6 +10,7 @@ from .http import fetch
 EUROSTAT_API = "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data"
 OECD_API = "https://sdmx.oecd.org/public/rest/data"
 WORLDBANK_API = "https://api.worldbank.org/v2"
+ILO_API = "https://sdmx.ilo.org/rest/data/ILO"
 
 
 def eurostat(dataset: str, **filters) -> list[dict]:
@@ -51,6 +53,16 @@ def oecd(flow: str, key: str, start: str | None = None) -> list[dict]:
         return list(csv.DictReader(f))
 
 
+def ilo(flow: str, key: str, start: str | None = None) -> list[dict]:
+    """Dataflow SDMX de la OIT (ILOSTAT), p. ej. flow='DF_GDP_2HRW_NOC_NB'."""
+    url = f"{ILO_API},{flow},1.0/{key}?format=csv"
+    if start:
+        url += f"&startPeriod={start}"
+    path = fetch(url, ".csv")
+    with path.open(newline="", encoding="utf-8-sig") as f:
+        return list(csv.DictReader(f))
+
+
 def worldbank(indicator: str, countries: list[str], start: int, end: int) -> list[dict]:
     url = (f"{WORLDBANK_API}/country/{';'.join(countries)}/indicator/{indicator}"
            f"?format=json&date={start}:{end}&per_page=2000")
@@ -68,10 +80,17 @@ def epoch_models() -> list[dict]:
         return list(csv.DictReader(f))
 
 
-def vdem(columns: list[str]):
-    """Dataset país-año de V-Dem (CC BY-SA 4.0), desde el paquete oficial vdemdata."""
+@functools.cache
+def _vdem_frame():
     import pyreadr
 
     path = fetch("https://github.com/vdeminstitute/vdemdata/raw/master/data/vdem.RData", ".RData")
-    df = next(iter(pyreadr.read_r(str(path)).values()))
-    return df[["country_name", "country_text_id", "year", *columns]]
+    return next(iter(pyreadr.read_r(str(path)).values()))
+
+
+def vdem(columns: list[str]):
+    """Dataset país-año de V-Dem (CC BY-SA 4.0), desde el paquete oficial vdemdata.
+
+    El fichero es grande (unas 4.600 columnas): se lee una sola vez por ejecución.
+    """
+    return _vdem_frame()[["country_name", "country_text_id", "year", *columns]]

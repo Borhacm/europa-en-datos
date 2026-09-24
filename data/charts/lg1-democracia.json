@@ -1,0 +1,5870 @@
+{
+ "id": "lg1-democracia",
+ "lens": "gigantes",
+ "theme": "libertades",
+ "title": {
+  "es": "La democracia de EE. UU. cayó en 2025 a su nivel más bajo del siglo, por debajo de la mediana de la UE",
+  "en": "US democracy fell in 2025 to its lowest level this century, below the EU median"
+ },
+ "subtitle": {
+  "es": "Índice de democracia liberal de V-Dem, de 0 (ninguna) a 1 (plena)",
+  "en": "V-Dem liberal democracy index, from 0 (none) to 1 (full)"
+ },
+ "unit": {
+  "es": "índice de 0 a 1",
+  "en": "index from 0 to 1"
+ },
+ "source": {
+  "name": "V-Dem (v16)",
+  "dataset": "vdem.RData",
+  "url": "https://www.v-dem.net/data/the-v-dem-dataset/",
+  "license": "CC BY-SA 4.0"
+ },
+ "notes": {
+  "es": [
+   "Mide elecciones libres, libertades civiles, estado de derecho y controles al poder, a partir de encuestas a expertos de cada país.",
+   "Para la UE se muestra la mediana de los 27 y el país con el valor más bajo de cada año.",
+   "Licencia CC BY-SA: los datos derivados deben compartirse con la misma licencia."
+  ],
+  "en": [
+   "Measures free elections, civil liberties, rule of law and checks on power, based on country expert surveys.",
+   "For the EU, the median of the 27 and the lowest-scoring country each year are shown.",
+   "CC BY-SA licence: derived data must be shared under the same licence."
+  ]
+ },
+ "retrieved": "2026-09-24",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CHN": {
+   "es": "China",
+   "en": "China",
+   "eu": false,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  },
+  "USA": {
+   "es": "Estados Unidos",
+   "en": "United States",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "dimensions": {
+  "measure": {
+   "v2x_libdem": {
+    "es": "Índice de democracia liberal",
+    "en": "Liberal democracy index"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.782,
+   "stat": "country"
+  },
+  {
+   "geo": "AUT",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.782,
+   "stat": "country"
+  },
+  {
+   "geo": "AUT",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.782,
+   "stat": "country"
+  },
+  {
+   "geo": "AUT",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.786,
+   "stat": "country"
+  },
+  {
+   "geo": "AUT",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.785,
+   "stat": "country"
+  },
+  {
+   "geo": "AUT",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.784,
+   "stat": "country"
+  },
+  {
+   "geo": "AUT",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.788,
+   "stat": "country"
+  },
+  {
+   "geo": "AUT",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.802,
+   "stat": "country"
+  },
+  {
+   "geo": "AUT",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.802,
+   "stat": "country"
+  },
+  {
+   "geo": "AUT",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.804,
+   "stat": "country"
+  },
+  {
+   "geo": "AUT",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.803,
+   "stat": "country"
+  },
+  {
+   "geo": "AUT",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.804,
+   "stat": "country"
+  },
+  {
+   "geo": "AUT",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.803,
+   "stat": "country"
+  },
+  {
+   "geo": "AUT",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.807,
+   "stat": "country"
+  },
+  {
+   "geo": "AUT",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.805,
+   "stat": "country"
+  },
+  {
+   "geo": "AUT",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.805,
+   "stat": "country"
+  },
+  {
+   "geo": "AUT",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.78,
+   "stat": "country"
+  },
+  {
+   "geo": "AUT",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.782,
+   "stat": "country"
+  },
+  {
+   "geo": "AUT",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.776,
+   "stat": "country"
+  },
+  {
+   "geo": "AUT",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.793,
+   "stat": "country"
+  },
+  {
+   "geo": "AUT",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.786,
+   "stat": "country"
+  },
+  {
+   "geo": "AUT",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.784,
+   "stat": "country"
+  },
+  {
+   "geo": "AUT",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.762,
+   "stat": "country"
+  },
+  {
+   "geo": "AUT",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.775,
+   "stat": "country"
+  },
+  {
+   "geo": "AUT",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.762,
+   "stat": "country"
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.757,
+   "stat": "country"
+  },
+  {
+   "geo": "BEL",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.819,
+   "stat": "country"
+  },
+  {
+   "geo": "BEL",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.819,
+   "stat": "country"
+  },
+  {
+   "geo": "BEL",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.819,
+   "stat": "country"
+  },
+  {
+   "geo": "BEL",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.819,
+   "stat": "country"
+  },
+  {
+   "geo": "BEL",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.795,
+   "stat": "country"
+  },
+  {
+   "geo": "BEL",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.816,
+   "stat": "country"
+  },
+  {
+   "geo": "BEL",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.818,
+   "stat": "country"
+  },
+  {
+   "geo": "BEL",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.828,
+   "stat": "country"
+  },
+  {
+   "geo": "BEL",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.832,
+   "stat": "country"
+  },
+  {
+   "geo": "BEL",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.834,
+   "stat": "country"
+  },
+  {
+   "geo": "BEL",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.834,
+   "stat": "country"
+  },
+  {
+   "geo": "BEL",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.835,
+   "stat": "country"
+  },
+  {
+   "geo": "BEL",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.835,
+   "stat": "country"
+  },
+  {
+   "geo": "BEL",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.839,
+   "stat": "country"
+  },
+  {
+   "geo": "BEL",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.838,
+   "stat": "country"
+  },
+  {
+   "geo": "BEL",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.837,
+   "stat": "country"
+  },
+  {
+   "geo": "BEL",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.837,
+   "stat": "country"
+  },
+  {
+   "geo": "BEL",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.836,
+   "stat": "country"
+  },
+  {
+   "geo": "BEL",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.836,
+   "stat": "country"
+  },
+  {
+   "geo": "BEL",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.837,
+   "stat": "country"
+  },
+  {
+   "geo": "BEL",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.826,
+   "stat": "country"
+  },
+  {
+   "geo": "BEL",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.827,
+   "stat": "country"
+  },
+  {
+   "geo": "BEL",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.833,
+   "stat": "country"
+  },
+  {
+   "geo": "BEL",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.812,
+   "stat": "country"
+  },
+  {
+   "geo": "BEL",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.81,
+   "stat": "country"
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.794,
+   "stat": "country"
+  },
+  {
+   "geo": "BGR",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.617,
+   "stat": "country"
+  },
+  {
+   "geo": "BGR",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.595,
+   "stat": "country"
+  },
+  {
+   "geo": "BGR",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.619,
+   "stat": "country"
+  },
+  {
+   "geo": "BGR",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.621,
+   "stat": "country"
+  },
+  {
+   "geo": "BGR",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.623,
+   "stat": "country"
+  },
+  {
+   "geo": "BGR",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.604,
+   "stat": "country"
+  },
+  {
+   "geo": "BGR",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.61,
+   "stat": "country"
+  },
+  {
+   "geo": "BGR",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.611,
+   "stat": "country"
+  },
+  {
+   "geo": "BGR",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.617,
+   "stat": "country"
+  },
+  {
+   "geo": "BGR",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.587,
+   "stat": "country"
+  },
+  {
+   "geo": "BGR",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.568,
+   "stat": "country"
+  },
+  {
+   "geo": "BGR",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.565,
+   "stat": "country"
+  },
+  {
+   "geo": "BGR",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.561,
+   "stat": "country"
+  },
+  {
+   "geo": "BGR",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.542,
+   "stat": "country"
+  },
+  {
+   "geo": "BGR",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.561,
+   "stat": "country"
+  },
+  {
+   "geo": "BGR",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.566,
+   "stat": "country"
+  },
+  {
+   "geo": "BGR",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.561,
+   "stat": "country"
+  },
+  {
+   "geo": "BGR",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.521,
+   "stat": "country"
+  },
+  {
+   "geo": "BGR",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.508,
+   "stat": "country"
+  },
+  {
+   "geo": "BGR",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.506,
+   "stat": "country"
+  },
+  {
+   "geo": "BGR",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.501,
+   "stat": "country"
+  },
+  {
+   "geo": "BGR",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.549,
+   "stat": "country"
+  },
+  {
+   "geo": "BGR",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.602,
+   "stat": "country"
+  },
+  {
+   "geo": "BGR",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.58,
+   "stat": "country"
+  },
+  {
+   "geo": "BGR",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.533,
+   "stat": "country"
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.499,
+   "stat": "country"
+  },
+  {
+   "geo": "CHN",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.07,
+   "stat": "country"
+  },
+  {
+   "geo": "CHN",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.071,
+   "stat": "country"
+  },
+  {
+   "geo": "CHN",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.073,
+   "stat": "country"
+  },
+  {
+   "geo": "CHN",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.074,
+   "stat": "country"
+  },
+  {
+   "geo": "CHN",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.073,
+   "stat": "country"
+  },
+  {
+   "geo": "CHN",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.057,
+   "stat": "country"
+  },
+  {
+   "geo": "CHN",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.057,
+   "stat": "country"
+  },
+  {
+   "geo": "CHN",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.057,
+   "stat": "country"
+  },
+  {
+   "geo": "CHN",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.057,
+   "stat": "country"
+  },
+  {
+   "geo": "CHN",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.057,
+   "stat": "country"
+  },
+  {
+   "geo": "CHN",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.057,
+   "stat": "country"
+  },
+  {
+   "geo": "CHN",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.056,
+   "stat": "country"
+  },
+  {
+   "geo": "CHN",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.056,
+   "stat": "country"
+  },
+  {
+   "geo": "CHN",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.053,
+   "stat": "country"
+  },
+  {
+   "geo": "CHN",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.052,
+   "stat": "country"
+  },
+  {
+   "geo": "CHN",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.052,
+   "stat": "country"
+  },
+  {
+   "geo": "CHN",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.052,
+   "stat": "country"
+  },
+  {
+   "geo": "CHN",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.052,
+   "stat": "country"
+  },
+  {
+   "geo": "CHN",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.048,
+   "stat": "country"
+  },
+  {
+   "geo": "CHN",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.047,
+   "stat": "country"
+  },
+  {
+   "geo": "CHN",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.042,
+   "stat": "country"
+  },
+  {
+   "geo": "CHN",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.044,
+   "stat": "country"
+  },
+  {
+   "geo": "CHN",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.042,
+   "stat": "country"
+  },
+  {
+   "geo": "CHN",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.037,
+   "stat": "country"
+  },
+  {
+   "geo": "CHN",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.037,
+   "stat": "country"
+  },
+  {
+   "geo": "CHN",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.039,
+   "stat": "country"
+  },
+  {
+   "geo": "CYP",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.668,
+   "stat": "country"
+  },
+  {
+   "geo": "CYP",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.678,
+   "stat": "country"
+  },
+  {
+   "geo": "CYP",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.684,
+   "stat": "country"
+  },
+  {
+   "geo": "CYP",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.668,
+   "stat": "country"
+  },
+  {
+   "geo": "CYP",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.704,
+   "stat": "country"
+  },
+  {
+   "geo": "CYP",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.704,
+   "stat": "country"
+  },
+  {
+   "geo": "CYP",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.713,
+   "stat": "country"
+  },
+  {
+   "geo": "CYP",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.724,
+   "stat": "country"
+  },
+  {
+   "geo": "CYP",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.723,
+   "stat": "country"
+  },
+  {
+   "geo": "CYP",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.722,
+   "stat": "country"
+  },
+  {
+   "geo": "CYP",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.734,
+   "stat": "country"
+  },
+  {
+   "geo": "CYP",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.734,
+   "stat": "country"
+  },
+  {
+   "geo": "CYP",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.733,
+   "stat": "country"
+  },
+  {
+   "geo": "CYP",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.732,
+   "stat": "country"
+  },
+  {
+   "geo": "CYP",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.733,
+   "stat": "country"
+  },
+  {
+   "geo": "CYP",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.737,
+   "stat": "country"
+  },
+  {
+   "geo": "CYP",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.739,
+   "stat": "country"
+  },
+  {
+   "geo": "CYP",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.731,
+   "stat": "country"
+  },
+  {
+   "geo": "CYP",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.722,
+   "stat": "country"
+  },
+  {
+   "geo": "CYP",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.71,
+   "stat": "country"
+  },
+  {
+   "geo": "CYP",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.691,
+   "stat": "country"
+  },
+  {
+   "geo": "CYP",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.653,
+   "stat": "country"
+  },
+  {
+   "geo": "CYP",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.645,
+   "stat": "country"
+  },
+  {
+   "geo": "CYP",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.643,
+   "stat": "country"
+  },
+  {
+   "geo": "CYP",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.653,
+   "stat": "country"
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.664,
+   "stat": "country"
+  },
+  {
+   "geo": "CZE",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.801,
+   "stat": "country"
+  },
+  {
+   "geo": "CZE",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.801,
+   "stat": "country"
+  },
+  {
+   "geo": "CZE",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.808,
+   "stat": "country"
+  },
+  {
+   "geo": "CZE",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.814,
+   "stat": "country"
+  },
+  {
+   "geo": "CZE",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.815,
+   "stat": "country"
+  },
+  {
+   "geo": "CZE",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.816,
+   "stat": "country"
+  },
+  {
+   "geo": "CZE",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.821,
+   "stat": "country"
+  },
+  {
+   "geo": "CZE",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.824,
+   "stat": "country"
+  },
+  {
+   "geo": "CZE",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.821,
+   "stat": "country"
+  },
+  {
+   "geo": "CZE",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.813,
+   "stat": "country"
+  },
+  {
+   "geo": "CZE",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.805,
+   "stat": "country"
+  },
+  {
+   "geo": "CZE",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.808,
+   "stat": "country"
+  },
+  {
+   "geo": "CZE",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.814,
+   "stat": "country"
+  },
+  {
+   "geo": "CZE",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.779,
+   "stat": "country"
+  },
+  {
+   "geo": "CZE",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.766,
+   "stat": "country"
+  },
+  {
+   "geo": "CZE",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.766,
+   "stat": "country"
+  },
+  {
+   "geo": "CZE",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.763,
+   "stat": "country"
+  },
+  {
+   "geo": "CZE",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.726,
+   "stat": "country"
+  },
+  {
+   "geo": "CZE",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.708,
+   "stat": "country"
+  },
+  {
+   "geo": "CZE",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.699,
+   "stat": "country"
+  },
+  {
+   "geo": "CZE",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.709,
+   "stat": "country"
+  },
+  {
+   "geo": "CZE",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.698,
+   "stat": "country"
+  },
+  {
+   "geo": "CZE",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.784,
+   "stat": "country"
+  },
+  {
+   "geo": "CZE",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.796,
+   "stat": "country"
+  },
+  {
+   "geo": "CZE",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.811,
+   "stat": "country"
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.794,
+   "stat": "country"
+  },
+  {
+   "geo": "DEU",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.86,
+   "stat": "country"
+  },
+  {
+   "geo": "DEU",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.86,
+   "stat": "country"
+  },
+  {
+   "geo": "DEU",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.859,
+   "stat": "country"
+  },
+  {
+   "geo": "DEU",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.857,
+   "stat": "country"
+  },
+  {
+   "geo": "DEU",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.857,
+   "stat": "country"
+  },
+  {
+   "geo": "DEU",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.859,
+   "stat": "country"
+  },
+  {
+   "geo": "DEU",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.864,
+   "stat": "country"
+  },
+  {
+   "geo": "DEU",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.864,
+   "stat": "country"
+  },
+  {
+   "geo": "DEU",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.864,
+   "stat": "country"
+  },
+  {
+   "geo": "DEU",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.862,
+   "stat": "country"
+  },
+  {
+   "geo": "DEU",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.862,
+   "stat": "country"
+  },
+  {
+   "geo": "DEU",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.864,
+   "stat": "country"
+  },
+  {
+   "geo": "DEU",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.863,
+   "stat": "country"
+  },
+  {
+   "geo": "DEU",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.853,
+   "stat": "country"
+  },
+  {
+   "geo": "DEU",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.845,
+   "stat": "country"
+  },
+  {
+   "geo": "DEU",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.845,
+   "stat": "country"
+  },
+  {
+   "geo": "DEU",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.848,
+   "stat": "country"
+  },
+  {
+   "geo": "DEU",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.842,
+   "stat": "country"
+  },
+  {
+   "geo": "DEU",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.834,
+   "stat": "country"
+  },
+  {
+   "geo": "DEU",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.831,
+   "stat": "country"
+  },
+  {
+   "geo": "DEU",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.821,
+   "stat": "country"
+  },
+  {
+   "geo": "DEU",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.814,
+   "stat": "country"
+  },
+  {
+   "geo": "DEU",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.806,
+   "stat": "country"
+  },
+  {
+   "geo": "DEU",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.812,
+   "stat": "country"
+  },
+  {
+   "geo": "DEU",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.778,
+   "stat": "country"
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.782,
+   "stat": "country"
+  },
+  {
+   "geo": "DNK",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.878,
+   "stat": "country"
+  },
+  {
+   "geo": "DNK",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.879,
+   "stat": "country"
+  },
+  {
+   "geo": "DNK",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.88,
+   "stat": "country"
+  },
+  {
+   "geo": "DNK",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.88,
+   "stat": "country"
+  },
+  {
+   "geo": "DNK",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.88,
+   "stat": "country"
+  },
+  {
+   "geo": "DNK",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.895,
+   "stat": "country"
+  },
+  {
+   "geo": "DNK",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.896,
+   "stat": "country"
+  },
+  {
+   "geo": "DNK",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.896,
+   "stat": "country"
+  },
+  {
+   "geo": "DNK",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.895,
+   "stat": "country"
+  },
+  {
+   "geo": "DNK",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.895,
+   "stat": "country"
+  },
+  {
+   "geo": "DNK",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.895,
+   "stat": "country"
+  },
+  {
+   "geo": "DNK",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.894,
+   "stat": "country"
+  },
+  {
+   "geo": "DNK",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.895,
+   "stat": "country"
+  },
+  {
+   "geo": "DNK",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.895,
+   "stat": "country"
+  },
+  {
+   "geo": "DNK",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.895,
+   "stat": "country"
+  },
+  {
+   "geo": "DNK",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.894,
+   "stat": "country"
+  },
+  {
+   "geo": "DNK",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.892,
+   "stat": "country"
+  },
+  {
+   "geo": "DNK",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.891,
+   "stat": "country"
+  },
+  {
+   "geo": "DNK",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.89,
+   "stat": "country"
+  },
+  {
+   "geo": "DNK",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.886,
+   "stat": "country"
+  },
+  {
+   "geo": "DNK",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.882,
+   "stat": "country"
+  },
+  {
+   "geo": "DNK",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.882,
+   "stat": "country"
+  },
+  {
+   "geo": "DNK",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.887,
+   "stat": "country"
+  },
+  {
+   "geo": "DNK",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.884,
+   "stat": "country"
+  },
+  {
+   "geo": "DNK",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.885,
+   "stat": "country"
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.884,
+   "stat": "country"
+  },
+  {
+   "geo": "ESP",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.817,
+   "stat": "country"
+  },
+  {
+   "geo": "ESP",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.817,
+   "stat": "country"
+  },
+  {
+   "geo": "ESP",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.817,
+   "stat": "country"
+  },
+  {
+   "geo": "ESP",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.796,
+   "stat": "country"
+  },
+  {
+   "geo": "ESP",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.808,
+   "stat": "country"
+  },
+  {
+   "geo": "ESP",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.811,
+   "stat": "country"
+  },
+  {
+   "geo": "ESP",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.812,
+   "stat": "country"
+  },
+  {
+   "geo": "ESP",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.808,
+   "stat": "country"
+  },
+  {
+   "geo": "ESP",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.819,
+   "stat": "country"
+  },
+  {
+   "geo": "ESP",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.821,
+   "stat": "country"
+  },
+  {
+   "geo": "ESP",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.825,
+   "stat": "country"
+  },
+  {
+   "geo": "ESP",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.821,
+   "stat": "country"
+  },
+  {
+   "geo": "ESP",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.799,
+   "stat": "country"
+  },
+  {
+   "geo": "ESP",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.778,
+   "stat": "country"
+  },
+  {
+   "geo": "ESP",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.774,
+   "stat": "country"
+  },
+  {
+   "geo": "ESP",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.759,
+   "stat": "country"
+  },
+  {
+   "geo": "ESP",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.766,
+   "stat": "country"
+  },
+  {
+   "geo": "ESP",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.757,
+   "stat": "country"
+  },
+  {
+   "geo": "ESP",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.776,
+   "stat": "country"
+  },
+  {
+   "geo": "ESP",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.804,
+   "stat": "country"
+  },
+  {
+   "geo": "ESP",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.786,
+   "stat": "country"
+  },
+  {
+   "geo": "ESP",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.775,
+   "stat": "country"
+  },
+  {
+   "geo": "ESP",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.782,
+   "stat": "country"
+  },
+  {
+   "geo": "ESP",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.759,
+   "stat": "country"
+  },
+  {
+   "geo": "ESP",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.743,
+   "stat": "country"
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.741,
+   "stat": "country"
+  },
+  {
+   "geo": "EST",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.808,
+   "stat": "country"
+  },
+  {
+   "geo": "EST",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.808,
+   "stat": "country"
+  },
+  {
+   "geo": "EST",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.811,
+   "stat": "country"
+  },
+  {
+   "geo": "EST",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.808,
+   "stat": "country"
+  },
+  {
+   "geo": "EST",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.811,
+   "stat": "country"
+  },
+  {
+   "geo": "EST",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.811,
+   "stat": "country"
+  },
+  {
+   "geo": "EST",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.811,
+   "stat": "country"
+  },
+  {
+   "geo": "EST",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.811,
+   "stat": "country"
+  },
+  {
+   "geo": "EST",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.811,
+   "stat": "country"
+  },
+  {
+   "geo": "EST",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.814,
+   "stat": "country"
+  },
+  {
+   "geo": "EST",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.829,
+   "stat": "country"
+  },
+  {
+   "geo": "EST",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.832,
+   "stat": "country"
+  },
+  {
+   "geo": "EST",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.832,
+   "stat": "country"
+  },
+  {
+   "geo": "EST",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.834,
+   "stat": "country"
+  },
+  {
+   "geo": "EST",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.838,
+   "stat": "country"
+  },
+  {
+   "geo": "EST",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.845,
+   "stat": "country"
+  },
+  {
+   "geo": "EST",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.859,
+   "stat": "country"
+  },
+  {
+   "geo": "EST",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.861,
+   "stat": "country"
+  },
+  {
+   "geo": "EST",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.863,
+   "stat": "country"
+  },
+  {
+   "geo": "EST",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.848,
+   "stat": "country"
+  },
+  {
+   "geo": "EST",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.842,
+   "stat": "country"
+  },
+  {
+   "geo": "EST",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.853,
+   "stat": "country"
+  },
+  {
+   "geo": "EST",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.853,
+   "stat": "country"
+  },
+  {
+   "geo": "EST",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.845,
+   "stat": "country"
+  },
+  {
+   "geo": "EST",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.848,
+   "stat": "country"
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.837,
+   "stat": "country"
+  },
+  {
+   "geo": "EU27",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.798,
+   "stat": "median"
+  },
+  {
+   "geo": "EU27",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.432,
+   "stat": "min"
+  },
+  {
+   "geo": "EU27",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.798,
+   "stat": "median"
+  },
+  {
+   "geo": "EU27",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.424,
+   "stat": "min"
+  },
+  {
+   "geo": "EU27",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.801,
+   "stat": "median"
+  },
+  {
+   "geo": "EU27",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.424,
+   "stat": "min"
+  },
+  {
+   "geo": "EU27",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.796,
+   "stat": "median"
+  },
+  {
+   "geo": "EU27",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.437,
+   "stat": "min"
+  },
+  {
+   "geo": "EU27",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.795,
+   "stat": "median"
+  },
+  {
+   "geo": "EU27",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.435,
+   "stat": "min"
+  },
+  {
+   "geo": "EU27",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.802,
+   "stat": "median"
+  },
+  {
+   "geo": "EU27",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.468,
+   "stat": "min"
+  },
+  {
+   "geo": "EU27",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.802,
+   "stat": "median"
+  },
+  {
+   "geo": "EU27",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.471,
+   "stat": "min"
+  },
+  {
+   "geo": "EU27",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.803,
+   "stat": "median"
+  },
+  {
+   "geo": "EU27",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.484,
+   "stat": "min"
+  },
+  {
+   "geo": "EU27",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.811,
+   "stat": "median"
+  },
+  {
+   "geo": "EU27",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.495,
+   "stat": "min"
+  },
+  {
+   "geo": "EU27",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.812,
+   "stat": "median"
+  },
+  {
+   "geo": "EU27",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.529,
+   "stat": "min"
+  },
+  {
+   "geo": "EU27",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.805,
+   "stat": "median"
+  },
+  {
+   "geo": "EU27",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.55,
+   "stat": "min"
+  },
+  {
+   "geo": "EU27",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.808,
+   "stat": "median"
+  },
+  {
+   "geo": "EU27",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.553,
+   "stat": "min"
+  },
+  {
+   "geo": "EU27",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.803,
+   "stat": "median"
+  },
+  {
+   "geo": "EU27",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.54,
+   "stat": "min"
+  },
+  {
+   "geo": "EU27",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.792,
+   "stat": "median"
+  },
+  {
+   "geo": "EU27",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.542,
+   "stat": "min"
+  },
+  {
+   "geo": "EU27",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.794,
+   "stat": "median"
+  },
+  {
+   "geo": "EU27",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.521,
+   "stat": "min"
+  },
+  {
+   "geo": "EU27",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.786,
+   "stat": "median"
+  },
+  {
+   "geo": "EU27",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.477,
+   "stat": "min"
+  },
+  {
+   "geo": "EU27",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.78,
+   "stat": "median"
+  },
+  {
+   "geo": "EU27",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.474,
+   "stat": "min"
+  },
+  {
+   "geo": "EU27",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.775,
+   "stat": "median"
+  },
+  {
+   "geo": "EU27",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.432,
+   "stat": "min"
+  },
+  {
+   "geo": "EU27",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.776,
+   "stat": "median"
+  },
+  {
+   "geo": "EU27",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.373,
+   "stat": "min"
+  },
+  {
+   "geo": "EU27",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.777,
+   "stat": "median"
+  },
+  {
+   "geo": "EU27",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.364,
+   "stat": "min"
+  },
+  {
+   "geo": "EU27",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.774,
+   "stat": "median"
+  },
+  {
+   "geo": "EU27",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.351,
+   "stat": "min"
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.774,
+   "stat": "median"
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.346,
+   "stat": "min"
+  },
+  {
+   "geo": "EU27",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.762,
+   "stat": "median"
+  },
+  {
+   "geo": "EU27",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.335,
+   "stat": "min"
+  },
+  {
+   "geo": "EU27",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.759,
+   "stat": "median"
+  },
+  {
+   "geo": "EU27",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.323,
+   "stat": "min"
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.754,
+   "stat": "median"
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.325,
+   "stat": "min"
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.741,
+   "stat": "median"
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.315,
+   "stat": "min"
+  },
+  {
+   "geo": "FIN",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.834,
+   "stat": "country"
+  },
+  {
+   "geo": "FIN",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.834,
+   "stat": "country"
+  },
+  {
+   "geo": "FIN",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.834,
+   "stat": "country"
+  },
+  {
+   "geo": "FIN",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.831,
+   "stat": "country"
+  },
+  {
+   "geo": "FIN",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.83,
+   "stat": "country"
+  },
+  {
+   "geo": "FIN",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.83,
+   "stat": "country"
+  },
+  {
+   "geo": "FIN",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.842,
+   "stat": "country"
+  },
+  {
+   "geo": "FIN",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.842,
+   "stat": "country"
+  },
+  {
+   "geo": "FIN",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.842,
+   "stat": "country"
+  },
+  {
+   "geo": "FIN",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.842,
+   "stat": "country"
+  },
+  {
+   "geo": "FIN",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.842,
+   "stat": "country"
+  },
+  {
+   "geo": "FIN",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.843,
+   "stat": "country"
+  },
+  {
+   "geo": "FIN",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.844,
+   "stat": "country"
+  },
+  {
+   "geo": "FIN",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.858,
+   "stat": "country"
+  },
+  {
+   "geo": "FIN",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.858,
+   "stat": "country"
+  },
+  {
+   "geo": "FIN",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.827,
+   "stat": "country"
+  },
+  {
+   "geo": "FIN",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.827,
+   "stat": "country"
+  },
+  {
+   "geo": "FIN",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.836,
+   "stat": "country"
+  },
+  {
+   "geo": "FIN",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.849,
+   "stat": "country"
+  },
+  {
+   "geo": "FIN",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.842,
+   "stat": "country"
+  },
+  {
+   "geo": "FIN",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.844,
+   "stat": "country"
+  },
+  {
+   "geo": "FIN",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.835,
+   "stat": "country"
+  },
+  {
+   "geo": "FIN",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.827,
+   "stat": "country"
+  },
+  {
+   "geo": "FIN",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.812,
+   "stat": "country"
+  },
+  {
+   "geo": "FIN",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.782,
+   "stat": "country"
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.808,
+   "stat": "country"
+  },
+  {
+   "geo": "FRA",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.798,
+   "stat": "country"
+  },
+  {
+   "geo": "FRA",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.798,
+   "stat": "country"
+  },
+  {
+   "geo": "FRA",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.801,
+   "stat": "country"
+  },
+  {
+   "geo": "FRA",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.802,
+   "stat": "country"
+  },
+  {
+   "geo": "FRA",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.802,
+   "stat": "country"
+  },
+  {
+   "geo": "FRA",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.802,
+   "stat": "country"
+  },
+  {
+   "geo": "FRA",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.802,
+   "stat": "country"
+  },
+  {
+   "geo": "FRA",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.807,
+   "stat": "country"
+  },
+  {
+   "geo": "FRA",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.816,
+   "stat": "country"
+  },
+  {
+   "geo": "FRA",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.816,
+   "stat": "country"
+  },
+  {
+   "geo": "FRA",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.816,
+   "stat": "country"
+  },
+  {
+   "geo": "FRA",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.818,
+   "stat": "country"
+  },
+  {
+   "geo": "FRA",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.82,
+   "stat": "country"
+  },
+  {
+   "geo": "FRA",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.822,
+   "stat": "country"
+  },
+  {
+   "geo": "FRA",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.821,
+   "stat": "country"
+  },
+  {
+   "geo": "FRA",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.812,
+   "stat": "country"
+  },
+  {
+   "geo": "FRA",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.812,
+   "stat": "country"
+  },
+  {
+   "geo": "FRA",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.817,
+   "stat": "country"
+  },
+  {
+   "geo": "FRA",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.802,
+   "stat": "country"
+  },
+  {
+   "geo": "FRA",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.793,
+   "stat": "country"
+  },
+  {
+   "geo": "FRA",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.789,
+   "stat": "country"
+  },
+  {
+   "geo": "FRA",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.789,
+   "stat": "country"
+  },
+  {
+   "geo": "FRA",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.807,
+   "stat": "country"
+  },
+  {
+   "geo": "FRA",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.807,
+   "stat": "country"
+  },
+  {
+   "geo": "FRA",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.8,
+   "stat": "country"
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.8,
+   "stat": "country"
+  },
+  {
+   "geo": "GRC",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.798,
+   "stat": "country"
+  },
+  {
+   "geo": "GRC",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.802,
+   "stat": "country"
+  },
+  {
+   "geo": "GRC",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.802,
+   "stat": "country"
+  },
+  {
+   "geo": "GRC",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.802,
+   "stat": "country"
+  },
+  {
+   "geo": "GRC",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.803,
+   "stat": "country"
+  },
+  {
+   "geo": "GRC",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.804,
+   "stat": "country"
+  },
+  {
+   "geo": "GRC",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.803,
+   "stat": "country"
+  },
+  {
+   "geo": "GRC",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.805,
+   "stat": "country"
+  },
+  {
+   "geo": "GRC",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.811,
+   "stat": "country"
+  },
+  {
+   "geo": "GRC",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.812,
+   "stat": "country"
+  },
+  {
+   "geo": "GRC",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.812,
+   "stat": "country"
+  },
+  {
+   "geo": "GRC",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.814,
+   "stat": "country"
+  },
+  {
+   "geo": "GRC",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.81,
+   "stat": "country"
+  },
+  {
+   "geo": "GRC",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.801,
+   "stat": "country"
+  },
+  {
+   "geo": "GRC",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.804,
+   "stat": "country"
+  },
+  {
+   "geo": "GRC",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.785,
+   "stat": "country"
+  },
+  {
+   "geo": "GRC",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.776,
+   "stat": "country"
+  },
+  {
+   "geo": "GRC",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.775,
+   "stat": "country"
+  },
+  {
+   "geo": "GRC",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.767,
+   "stat": "country"
+  },
+  {
+   "geo": "GRC",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.763,
+   "stat": "country"
+  },
+  {
+   "geo": "GRC",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.669,
+   "stat": "country"
+  },
+  {
+   "geo": "GRC",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.63,
+   "stat": "country"
+  },
+  {
+   "geo": "GRC",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.607,
+   "stat": "country"
+  },
+  {
+   "geo": "GRC",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.573,
+   "stat": "country"
+  },
+  {
+   "geo": "GRC",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.565,
+   "stat": "country"
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.568,
+   "stat": "country"
+  },
+  {
+   "geo": "HRV",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.61,
+   "stat": "country"
+  },
+  {
+   "geo": "HRV",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.622,
+   "stat": "country"
+  },
+  {
+   "geo": "HRV",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.622,
+   "stat": "country"
+  },
+  {
+   "geo": "HRV",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.624,
+   "stat": "country"
+  },
+  {
+   "geo": "HRV",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.606,
+   "stat": "country"
+  },
+  {
+   "geo": "HRV",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.635,
+   "stat": "country"
+  },
+  {
+   "geo": "HRV",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.63,
+   "stat": "country"
+  },
+  {
+   "geo": "HRV",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.642,
+   "stat": "country"
+  },
+  {
+   "geo": "HRV",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.638,
+   "stat": "country"
+  },
+  {
+   "geo": "HRV",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.653,
+   "stat": "country"
+  },
+  {
+   "geo": "HRV",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.73,
+   "stat": "country"
+  },
+  {
+   "geo": "HRV",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.744,
+   "stat": "country"
+  },
+  {
+   "geo": "HRV",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.744,
+   "stat": "country"
+  },
+  {
+   "geo": "HRV",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.71,
+   "stat": "country"
+  },
+  {
+   "geo": "HRV",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.704,
+   "stat": "country"
+  },
+  {
+   "geo": "HRV",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.703,
+   "stat": "country"
+  },
+  {
+   "geo": "HRV",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.651,
+   "stat": "country"
+  },
+  {
+   "geo": "HRV",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.623,
+   "stat": "country"
+  },
+  {
+   "geo": "HRV",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.615,
+   "stat": "country"
+  },
+  {
+   "geo": "HRV",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.617,
+   "stat": "country"
+  },
+  {
+   "geo": "HRV",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.647,
+   "stat": "country"
+  },
+  {
+   "geo": "HRV",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.641,
+   "stat": "country"
+  },
+  {
+   "geo": "HRV",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.636,
+   "stat": "country"
+  },
+  {
+   "geo": "HRV",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.628,
+   "stat": "country"
+  },
+  {
+   "geo": "HRV",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.607,
+   "stat": "country"
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.593,
+   "stat": "country"
+  },
+  {
+   "geo": "HUN",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.75,
+   "stat": "country"
+  },
+  {
+   "geo": "HUN",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.75,
+   "stat": "country"
+  },
+  {
+   "geo": "HUN",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.755,
+   "stat": "country"
+  },
+  {
+   "geo": "HUN",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.759,
+   "stat": "country"
+  },
+  {
+   "geo": "HUN",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.759,
+   "stat": "country"
+  },
+  {
+   "geo": "HUN",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.754,
+   "stat": "country"
+  },
+  {
+   "geo": "HUN",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.742,
+   "stat": "country"
+  },
+  {
+   "geo": "HUN",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.765,
+   "stat": "country"
+  },
+  {
+   "geo": "HUN",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.766,
+   "stat": "country"
+  },
+  {
+   "geo": "HUN",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.766,
+   "stat": "country"
+  },
+  {
+   "geo": "HUN",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.677,
+   "stat": "country"
+  },
+  {
+   "geo": "HUN",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.639,
+   "stat": "country"
+  },
+  {
+   "geo": "HUN",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.621,
+   "stat": "country"
+  },
+  {
+   "geo": "HUN",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.575,
+   "stat": "country"
+  },
+  {
+   "geo": "HUN",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.521,
+   "stat": "country"
+  },
+  {
+   "geo": "HUN",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.477,
+   "stat": "country"
+  },
+  {
+   "geo": "HUN",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.474,
+   "stat": "country"
+  },
+  {
+   "geo": "HUN",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.432,
+   "stat": "country"
+  },
+  {
+   "geo": "HUN",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.373,
+   "stat": "country"
+  },
+  {
+   "geo": "HUN",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.364,
+   "stat": "country"
+  },
+  {
+   "geo": "HUN",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.351,
+   "stat": "country"
+  },
+  {
+   "geo": "HUN",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.346,
+   "stat": "country"
+  },
+  {
+   "geo": "HUN",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.335,
+   "stat": "country"
+  },
+  {
+   "geo": "HUN",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.323,
+   "stat": "country"
+  },
+  {
+   "geo": "HUN",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.325,
+   "stat": "country"
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.315,
+   "stat": "country"
+  },
+  {
+   "geo": "IRL",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.809,
+   "stat": "country"
+  },
+  {
+   "geo": "IRL",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.809,
+   "stat": "country"
+  },
+  {
+   "geo": "IRL",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.807,
+   "stat": "country"
+  },
+  {
+   "geo": "IRL",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.806,
+   "stat": "country"
+  },
+  {
+   "geo": "IRL",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.806,
+   "stat": "country"
+  },
+  {
+   "geo": "IRL",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.806,
+   "stat": "country"
+  },
+  {
+   "geo": "IRL",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.806,
+   "stat": "country"
+  },
+  {
+   "geo": "IRL",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.815,
+   "stat": "country"
+  },
+  {
+   "geo": "IRL",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.82,
+   "stat": "country"
+  },
+  {
+   "geo": "IRL",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.82,
+   "stat": "country"
+  },
+  {
+   "geo": "IRL",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.82,
+   "stat": "country"
+  },
+  {
+   "geo": "IRL",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.821,
+   "stat": "country"
+  },
+  {
+   "geo": "IRL",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.822,
+   "stat": "country"
+  },
+  {
+   "geo": "IRL",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.823,
+   "stat": "country"
+  },
+  {
+   "geo": "IRL",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.824,
+   "stat": "country"
+  },
+  {
+   "geo": "IRL",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.825,
+   "stat": "country"
+  },
+  {
+   "geo": "IRL",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.815,
+   "stat": "country"
+  },
+  {
+   "geo": "IRL",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.821,
+   "stat": "country"
+  },
+  {
+   "geo": "IRL",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.821,
+   "stat": "country"
+  },
+  {
+   "geo": "IRL",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.822,
+   "stat": "country"
+  },
+  {
+   "geo": "IRL",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.824,
+   "stat": "country"
+  },
+  {
+   "geo": "IRL",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.833,
+   "stat": "country"
+  },
+  {
+   "geo": "IRL",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.827,
+   "stat": "country"
+  },
+  {
+   "geo": "IRL",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.829,
+   "stat": "country"
+  },
+  {
+   "geo": "IRL",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.83,
+   "stat": "country"
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.822,
+   "stat": "country"
+  },
+  {
+   "geo": "ITA",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.756,
+   "stat": "country"
+  },
+  {
+   "geo": "ITA",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.746,
+   "stat": "country"
+  },
+  {
+   "geo": "ITA",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.751,
+   "stat": "country"
+  },
+  {
+   "geo": "ITA",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.753,
+   "stat": "country"
+  },
+  {
+   "geo": "ITA",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.753,
+   "stat": "country"
+  },
+  {
+   "geo": "ITA",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.761,
+   "stat": "country"
+  },
+  {
+   "geo": "ITA",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.775,
+   "stat": "country"
+  },
+  {
+   "geo": "ITA",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.782,
+   "stat": "country"
+  },
+  {
+   "geo": "ITA",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.768,
+   "stat": "country"
+  },
+  {
+   "geo": "ITA",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.775,
+   "stat": "country"
+  },
+  {
+   "geo": "ITA",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.775,
+   "stat": "country"
+  },
+  {
+   "geo": "ITA",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.786,
+   "stat": "country"
+  },
+  {
+   "geo": "ITA",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.793,
+   "stat": "country"
+  },
+  {
+   "geo": "ITA",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.786,
+   "stat": "country"
+  },
+  {
+   "geo": "ITA",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.786,
+   "stat": "country"
+  },
+  {
+   "geo": "ITA",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.786,
+   "stat": "country"
+  },
+  {
+   "geo": "ITA",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.791,
+   "stat": "country"
+  },
+  {
+   "geo": "ITA",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.797,
+   "stat": "country"
+  },
+  {
+   "geo": "ITA",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.787,
+   "stat": "country"
+  },
+  {
+   "geo": "ITA",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.777,
+   "stat": "country"
+  },
+  {
+   "geo": "ITA",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.774,
+   "stat": "country"
+  },
+  {
+   "geo": "ITA",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.774,
+   "stat": "country"
+  },
+  {
+   "geo": "ITA",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.763,
+   "stat": "country"
+  },
+  {
+   "geo": "ITA",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.727,
+   "stat": "country"
+  },
+  {
+   "geo": "ITA",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.687,
+   "stat": "country"
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.642,
+   "stat": "country"
+  },
+  {
+   "geo": "LTU",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.759,
+   "stat": "country"
+  },
+  {
+   "geo": "LTU",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.757,
+   "stat": "country"
+  },
+  {
+   "geo": "LTU",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.757,
+   "stat": "country"
+  },
+  {
+   "geo": "LTU",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.752,
+   "stat": "country"
+  },
+  {
+   "geo": "LTU",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.759,
+   "stat": "country"
+  },
+  {
+   "geo": "LTU",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.762,
+   "stat": "country"
+  },
+  {
+   "geo": "LTU",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.761,
+   "stat": "country"
+  },
+  {
+   "geo": "LTU",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.762,
+   "stat": "country"
+  },
+  {
+   "geo": "LTU",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.765,
+   "stat": "country"
+  },
+  {
+   "geo": "LTU",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.788,
+   "stat": "country"
+  },
+  {
+   "geo": "LTU",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.794,
+   "stat": "country"
+  },
+  {
+   "geo": "LTU",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.791,
+   "stat": "country"
+  },
+  {
+   "geo": "LTU",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.783,
+   "stat": "country"
+  },
+  {
+   "geo": "LTU",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.771,
+   "stat": "country"
+  },
+  {
+   "geo": "LTU",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.773,
+   "stat": "country"
+  },
+  {
+   "geo": "LTU",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.78,
+   "stat": "country"
+  },
+  {
+   "geo": "LTU",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.772,
+   "stat": "country"
+  },
+  {
+   "geo": "LTU",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.753,
+   "stat": "country"
+  },
+  {
+   "geo": "LTU",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.754,
+   "stat": "country"
+  },
+  {
+   "geo": "LTU",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.756,
+   "stat": "country"
+  },
+  {
+   "geo": "LTU",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.745,
+   "stat": "country"
+  },
+  {
+   "geo": "LTU",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.732,
+   "stat": "country"
+  },
+  {
+   "geo": "LTU",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.734,
+   "stat": "country"
+  },
+  {
+   "geo": "LTU",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.724,
+   "stat": "country"
+  },
+  {
+   "geo": "LTU",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.732,
+   "stat": "country"
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.712,
+   "stat": "country"
+  },
+  {
+   "geo": "LUX",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.787,
+   "stat": "country"
+  },
+  {
+   "geo": "LUX",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.787,
+   "stat": "country"
+  },
+  {
+   "geo": "LUX",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.787,
+   "stat": "country"
+  },
+  {
+   "geo": "LUX",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.787,
+   "stat": "country"
+  },
+  {
+   "geo": "LUX",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.787,
+   "stat": "country"
+  },
+  {
+   "geo": "LUX",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.787,
+   "stat": "country"
+  },
+  {
+   "geo": "LUX",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.787,
+   "stat": "country"
+  },
+  {
+   "geo": "LUX",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.787,
+   "stat": "country"
+  },
+  {
+   "geo": "LUX",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.787,
+   "stat": "country"
+  },
+  {
+   "geo": "LUX",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.79,
+   "stat": "country"
+  },
+  {
+   "geo": "LUX",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.792,
+   "stat": "country"
+  },
+  {
+   "geo": "LUX",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.792,
+   "stat": "country"
+  },
+  {
+   "geo": "LUX",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.792,
+   "stat": "country"
+  },
+  {
+   "geo": "LUX",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.792,
+   "stat": "country"
+  },
+  {
+   "geo": "LUX",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.793,
+   "stat": "country"
+  },
+  {
+   "geo": "LUX",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.793,
+   "stat": "country"
+  },
+  {
+   "geo": "LUX",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.793,
+   "stat": "country"
+  },
+  {
+   "geo": "LUX",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.793,
+   "stat": "country"
+  },
+  {
+   "geo": "LUX",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.793,
+   "stat": "country"
+  },
+  {
+   "geo": "LUX",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.788,
+   "stat": "country"
+  },
+  {
+   "geo": "LUX",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.786,
+   "stat": "country"
+  },
+  {
+   "geo": "LUX",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.785,
+   "stat": "country"
+  },
+  {
+   "geo": "LUX",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.788,
+   "stat": "country"
+  },
+  {
+   "geo": "LUX",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.789,
+   "stat": "country"
+  },
+  {
+   "geo": "LUX",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.781,
+   "stat": "country"
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.777,
+   "stat": "country"
+  },
+  {
+   "geo": "LVA",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.702,
+   "stat": "country"
+  },
+  {
+   "geo": "LVA",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.702,
+   "stat": "country"
+  },
+  {
+   "geo": "LVA",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.705,
+   "stat": "country"
+  },
+  {
+   "geo": "LVA",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.714,
+   "stat": "country"
+  },
+  {
+   "geo": "LVA",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.715,
+   "stat": "country"
+  },
+  {
+   "geo": "LVA",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.71,
+   "stat": "country"
+  },
+  {
+   "geo": "LVA",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.703,
+   "stat": "country"
+  },
+  {
+   "geo": "LVA",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.685,
+   "stat": "country"
+  },
+  {
+   "geo": "LVA",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.686,
+   "stat": "country"
+  },
+  {
+   "geo": "LVA",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.694,
+   "stat": "country"
+  },
+  {
+   "geo": "LVA",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.704,
+   "stat": "country"
+  },
+  {
+   "geo": "LVA",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.723,
+   "stat": "country"
+  },
+  {
+   "geo": "LVA",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.728,
+   "stat": "country"
+  },
+  {
+   "geo": "LVA",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.743,
+   "stat": "country"
+  },
+  {
+   "geo": "LVA",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.748,
+   "stat": "country"
+  },
+  {
+   "geo": "LVA",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.754,
+   "stat": "country"
+  },
+  {
+   "geo": "LVA",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.748,
+   "stat": "country"
+  },
+  {
+   "geo": "LVA",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.744,
+   "stat": "country"
+  },
+  {
+   "geo": "LVA",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.745,
+   "stat": "country"
+  },
+  {
+   "geo": "LVA",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.741,
+   "stat": "country"
+  },
+  {
+   "geo": "LVA",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.737,
+   "stat": "country"
+  },
+  {
+   "geo": "LVA",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.74,
+   "stat": "country"
+  },
+  {
+   "geo": "LVA",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.74,
+   "stat": "country"
+  },
+  {
+   "geo": "LVA",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.762,
+   "stat": "country"
+  },
+  {
+   "geo": "LVA",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.759,
+   "stat": "country"
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.751,
+   "stat": "country"
+  },
+  {
+   "geo": "MLT",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.597,
+   "stat": "country"
+  },
+  {
+   "geo": "MLT",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.597,
+   "stat": "country"
+  },
+  {
+   "geo": "MLT",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.597,
+   "stat": "country"
+  },
+  {
+   "geo": "MLT",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.599,
+   "stat": "country"
+  },
+  {
+   "geo": "MLT",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.599,
+   "stat": "country"
+  },
+  {
+   "geo": "MLT",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.599,
+   "stat": "country"
+  },
+  {
+   "geo": "MLT",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.599,
+   "stat": "country"
+  },
+  {
+   "geo": "MLT",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.596,
+   "stat": "country"
+  },
+  {
+   "geo": "MLT",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.61,
+   "stat": "country"
+  },
+  {
+   "geo": "MLT",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.624,
+   "stat": "country"
+  },
+  {
+   "geo": "MLT",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.623,
+   "stat": "country"
+  },
+  {
+   "geo": "MLT",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.623,
+   "stat": "country"
+  },
+  {
+   "geo": "MLT",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.624,
+   "stat": "country"
+  },
+  {
+   "geo": "MLT",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.597,
+   "stat": "country"
+  },
+  {
+   "geo": "MLT",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.587,
+   "stat": "country"
+  },
+  {
+   "geo": "MLT",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.584,
+   "stat": "country"
+  },
+  {
+   "geo": "MLT",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.572,
+   "stat": "country"
+  },
+  {
+   "geo": "MLT",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.558,
+   "stat": "country"
+  },
+  {
+   "geo": "MLT",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.552,
+   "stat": "country"
+  },
+  {
+   "geo": "MLT",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.569,
+   "stat": "country"
+  },
+  {
+   "geo": "MLT",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.605,
+   "stat": "country"
+  },
+  {
+   "geo": "MLT",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.605,
+   "stat": "country"
+  },
+  {
+   "geo": "MLT",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.617,
+   "stat": "country"
+  },
+  {
+   "geo": "MLT",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.623,
+   "stat": "country"
+  },
+  {
+   "geo": "MLT",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.621,
+   "stat": "country"
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.621,
+   "stat": "country"
+  },
+  {
+   "geo": "NLD",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.808,
+   "stat": "country"
+  },
+  {
+   "geo": "NLD",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.808,
+   "stat": "country"
+  },
+  {
+   "geo": "NLD",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.803,
+   "stat": "country"
+  },
+  {
+   "geo": "NLD",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.813,
+   "stat": "country"
+  },
+  {
+   "geo": "NLD",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.813,
+   "stat": "country"
+  },
+  {
+   "geo": "NLD",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.813,
+   "stat": "country"
+  },
+  {
+   "geo": "NLD",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.817,
+   "stat": "country"
+  },
+  {
+   "geo": "NLD",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.823,
+   "stat": "country"
+  },
+  {
+   "geo": "NLD",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.823,
+   "stat": "country"
+  },
+  {
+   "geo": "NLD",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.823,
+   "stat": "country"
+  },
+  {
+   "geo": "NLD",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.828,
+   "stat": "country"
+  },
+  {
+   "geo": "NLD",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.827,
+   "stat": "country"
+  },
+  {
+   "geo": "NLD",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.825,
+   "stat": "country"
+  },
+  {
+   "geo": "NLD",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.83,
+   "stat": "country"
+  },
+  {
+   "geo": "NLD",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.831,
+   "stat": "country"
+  },
+  {
+   "geo": "NLD",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.831,
+   "stat": "country"
+  },
+  {
+   "geo": "NLD",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.831,
+   "stat": "country"
+  },
+  {
+   "geo": "NLD",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.833,
+   "stat": "country"
+  },
+  {
+   "geo": "NLD",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.83,
+   "stat": "country"
+  },
+  {
+   "geo": "NLD",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.819,
+   "stat": "country"
+  },
+  {
+   "geo": "NLD",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.813,
+   "stat": "country"
+  },
+  {
+   "geo": "NLD",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.812,
+   "stat": "country"
+  },
+  {
+   "geo": "NLD",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.798,
+   "stat": "country"
+  },
+  {
+   "geo": "NLD",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.791,
+   "stat": "country"
+  },
+  {
+   "geo": "NLD",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.766,
+   "stat": "country"
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.774,
+   "stat": "country"
+  },
+  {
+   "geo": "POL",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.8,
+   "stat": "country"
+  },
+  {
+   "geo": "POL",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.806,
+   "stat": "country"
+  },
+  {
+   "geo": "POL",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.813,
+   "stat": "country"
+  },
+  {
+   "geo": "POL",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.813,
+   "stat": "country"
+  },
+  {
+   "geo": "POL",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.813,
+   "stat": "country"
+  },
+  {
+   "geo": "POL",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.815,
+   "stat": "country"
+  },
+  {
+   "geo": "POL",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.807,
+   "stat": "country"
+  },
+  {
+   "geo": "POL",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.803,
+   "stat": "country"
+  },
+  {
+   "geo": "POL",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.825,
+   "stat": "country"
+  },
+  {
+   "geo": "POL",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.825,
+   "stat": "country"
+  },
+  {
+   "geo": "POL",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.827,
+   "stat": "country"
+  },
+  {
+   "geo": "POL",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.827,
+   "stat": "country"
+  },
+  {
+   "geo": "POL",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.825,
+   "stat": "country"
+  },
+  {
+   "geo": "POL",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.821,
+   "stat": "country"
+  },
+  {
+   "geo": "POL",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.812,
+   "stat": "country"
+  },
+  {
+   "geo": "POL",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.775,
+   "stat": "country"
+  },
+  {
+   "geo": "POL",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.598,
+   "stat": "country"
+  },
+  {
+   "geo": "POL",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.542,
+   "stat": "country"
+  },
+  {
+   "geo": "POL",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.524,
+   "stat": "country"
+  },
+  {
+   "geo": "POL",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.505,
+   "stat": "country"
+  },
+  {
+   "geo": "POL",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.45,
+   "stat": "country"
+  },
+  {
+   "geo": "POL",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.424,
+   "stat": "country"
+  },
+  {
+   "geo": "POL",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.417,
+   "stat": "country"
+  },
+  {
+   "geo": "POL",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.457,
+   "stat": "country"
+  },
+  {
+   "geo": "POL",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.613,
+   "stat": "country"
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.645,
+   "stat": "country"
+  },
+  {
+   "geo": "PRT",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.813,
+   "stat": "country"
+  },
+  {
+   "geo": "PRT",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.816,
+   "stat": "country"
+  },
+  {
+   "geo": "PRT",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.821,
+   "stat": "country"
+  },
+  {
+   "geo": "PRT",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.821,
+   "stat": "country"
+  },
+  {
+   "geo": "PRT",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.821,
+   "stat": "country"
+  },
+  {
+   "geo": "PRT",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.835,
+   "stat": "country"
+  },
+  {
+   "geo": "PRT",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.839,
+   "stat": "country"
+  },
+  {
+   "geo": "PRT",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.839,
+   "stat": "country"
+  },
+  {
+   "geo": "PRT",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.839,
+   "stat": "country"
+  },
+  {
+   "geo": "PRT",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.838,
+   "stat": "country"
+  },
+  {
+   "geo": "PRT",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.838,
+   "stat": "country"
+  },
+  {
+   "geo": "PRT",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.829,
+   "stat": "country"
+  },
+  {
+   "geo": "PRT",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.83,
+   "stat": "country"
+  },
+  {
+   "geo": "PRT",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.829,
+   "stat": "country"
+  },
+  {
+   "geo": "PRT",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.829,
+   "stat": "country"
+  },
+  {
+   "geo": "PRT",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.829,
+   "stat": "country"
+  },
+  {
+   "geo": "PRT",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.83,
+   "stat": "country"
+  },
+  {
+   "geo": "PRT",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.848,
+   "stat": "country"
+  },
+  {
+   "geo": "PRT",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.849,
+   "stat": "country"
+  },
+  {
+   "geo": "PRT",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.82,
+   "stat": "country"
+  },
+  {
+   "geo": "PRT",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.806,
+   "stat": "country"
+  },
+  {
+   "geo": "PRT",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.81,
+   "stat": "country"
+  },
+  {
+   "geo": "PRT",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.758,
+   "stat": "country"
+  },
+  {
+   "geo": "PRT",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.757,
+   "stat": "country"
+  },
+  {
+   "geo": "PRT",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.754,
+   "stat": "country"
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.717,
+   "stat": "country"
+  },
+  {
+   "geo": "ROU",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.432,
+   "stat": "country"
+  },
+  {
+   "geo": "ROU",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.424,
+   "stat": "country"
+  },
+  {
+   "geo": "ROU",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.424,
+   "stat": "country"
+  },
+  {
+   "geo": "ROU",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.437,
+   "stat": "country"
+  },
+  {
+   "geo": "ROU",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.435,
+   "stat": "country"
+  },
+  {
+   "geo": "ROU",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.468,
+   "stat": "country"
+  },
+  {
+   "geo": "ROU",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.471,
+   "stat": "country"
+  },
+  {
+   "geo": "ROU",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.484,
+   "stat": "country"
+  },
+  {
+   "geo": "ROU",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.495,
+   "stat": "country"
+  },
+  {
+   "geo": "ROU",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.529,
+   "stat": "country"
+  },
+  {
+   "geo": "ROU",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.55,
+   "stat": "country"
+  },
+  {
+   "geo": "ROU",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.553,
+   "stat": "country"
+  },
+  {
+   "geo": "ROU",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.54,
+   "stat": "country"
+  },
+  {
+   "geo": "ROU",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.563,
+   "stat": "country"
+  },
+  {
+   "geo": "ROU",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.57,
+   "stat": "country"
+  },
+  {
+   "geo": "ROU",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.609,
+   "stat": "country"
+  },
+  {
+   "geo": "ROU",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.63,
+   "stat": "country"
+  },
+  {
+   "geo": "ROU",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.532,
+   "stat": "country"
+  },
+  {
+   "geo": "ROU",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.483,
+   "stat": "country"
+  },
+  {
+   "geo": "ROU",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.555,
+   "stat": "country"
+  },
+  {
+   "geo": "ROU",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.676,
+   "stat": "country"
+  },
+  {
+   "geo": "ROU",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.611,
+   "stat": "country"
+  },
+  {
+   "geo": "ROU",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.542,
+   "stat": "country"
+  },
+  {
+   "geo": "ROU",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.503,
+   "stat": "country"
+  },
+  {
+   "geo": "ROU",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.449,
+   "stat": "country"
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.464,
+   "stat": "country"
+  },
+  {
+   "geo": "SVK",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.75,
+   "stat": "country"
+  },
+  {
+   "geo": "SVK",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.75,
+   "stat": "country"
+  },
+  {
+   "geo": "SVK",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.748,
+   "stat": "country"
+  },
+  {
+   "geo": "SVK",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.746,
+   "stat": "country"
+  },
+  {
+   "geo": "SVK",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.748,
+   "stat": "country"
+  },
+  {
+   "geo": "SVK",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.748,
+   "stat": "country"
+  },
+  {
+   "geo": "SVK",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.723,
+   "stat": "country"
+  },
+  {
+   "geo": "SVK",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.736,
+   "stat": "country"
+  },
+  {
+   "geo": "SVK",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.735,
+   "stat": "country"
+  },
+  {
+   "geo": "SVK",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.734,
+   "stat": "country"
+  },
+  {
+   "geo": "SVK",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.752,
+   "stat": "country"
+  },
+  {
+   "geo": "SVK",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.755,
+   "stat": "country"
+  },
+  {
+   "geo": "SVK",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.739,
+   "stat": "country"
+  },
+  {
+   "geo": "SVK",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.73,
+   "stat": "country"
+  },
+  {
+   "geo": "SVK",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.726,
+   "stat": "country"
+  },
+  {
+   "geo": "SVK",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.725,
+   "stat": "country"
+  },
+  {
+   "geo": "SVK",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.726,
+   "stat": "country"
+  },
+  {
+   "geo": "SVK",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.72,
+   "stat": "country"
+  },
+  {
+   "geo": "SVK",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.698,
+   "stat": "country"
+  },
+  {
+   "geo": "SVK",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.737,
+   "stat": "country"
+  },
+  {
+   "geo": "SVK",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.757,
+   "stat": "country"
+  },
+  {
+   "geo": "SVK",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.757,
+   "stat": "country"
+  },
+  {
+   "geo": "SVK",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.76,
+   "stat": "country"
+  },
+  {
+   "geo": "SVK",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.724,
+   "stat": "country"
+  },
+  {
+   "geo": "SVK",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.59,
+   "stat": "country"
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.573,
+   "stat": "country"
+  },
+  {
+   "geo": "SVN",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.749,
+   "stat": "country"
+  },
+  {
+   "geo": "SVN",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.742,
+   "stat": "country"
+  },
+  {
+   "geo": "SVN",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.756,
+   "stat": "country"
+  },
+  {
+   "geo": "SVN",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.752,
+   "stat": "country"
+  },
+  {
+   "geo": "SVN",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.735,
+   "stat": "country"
+  },
+  {
+   "geo": "SVN",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.733,
+   "stat": "country"
+  },
+  {
+   "geo": "SVN",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.734,
+   "stat": "country"
+  },
+  {
+   "geo": "SVN",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.738,
+   "stat": "country"
+  },
+  {
+   "geo": "SVN",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.737,
+   "stat": "country"
+  },
+  {
+   "geo": "SVN",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.791,
+   "stat": "country"
+  },
+  {
+   "geo": "SVN",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.796,
+   "stat": "country"
+  },
+  {
+   "geo": "SVN",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.789,
+   "stat": "country"
+  },
+  {
+   "geo": "SVN",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.768,
+   "stat": "country"
+  },
+  {
+   "geo": "SVN",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.778,
+   "stat": "country"
+  },
+  {
+   "geo": "SVN",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.794,
+   "stat": "country"
+  },
+  {
+   "geo": "SVN",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.804,
+   "stat": "country"
+  },
+  {
+   "geo": "SVN",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.795,
+   "stat": "country"
+  },
+  {
+   "geo": "SVN",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.772,
+   "stat": "country"
+  },
+  {
+   "geo": "SVN",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.759,
+   "stat": "country"
+  },
+  {
+   "geo": "SVN",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.743,
+   "stat": "country"
+  },
+  {
+   "geo": "SVN",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.665,
+   "stat": "country"
+  },
+  {
+   "geo": "SVN",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.624,
+   "stat": "country"
+  },
+  {
+   "geo": "SVN",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.728,
+   "stat": "country"
+  },
+  {
+   "geo": "SVN",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.659,
+   "stat": "country"
+  },
+  {
+   "geo": "SVN",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.63,
+   "stat": "country"
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.589,
+   "stat": "country"
+  },
+  {
+   "geo": "SWE",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.876,
+   "stat": "country"
+  },
+  {
+   "geo": "SWE",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.876,
+   "stat": "country"
+  },
+  {
+   "geo": "SWE",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.876,
+   "stat": "country"
+  },
+  {
+   "geo": "SWE",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.877,
+   "stat": "country"
+  },
+  {
+   "geo": "SWE",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.877,
+   "stat": "country"
+  },
+  {
+   "geo": "SWE",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.877,
+   "stat": "country"
+  },
+  {
+   "geo": "SWE",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.879,
+   "stat": "country"
+  },
+  {
+   "geo": "SWE",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.881,
+   "stat": "country"
+  },
+  {
+   "geo": "SWE",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.881,
+   "stat": "country"
+  },
+  {
+   "geo": "SWE",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.881,
+   "stat": "country"
+  },
+  {
+   "geo": "SWE",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.881,
+   "stat": "country"
+  },
+  {
+   "geo": "SWE",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.881,
+   "stat": "country"
+  },
+  {
+   "geo": "SWE",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.886,
+   "stat": "country"
+  },
+  {
+   "geo": "SWE",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.885,
+   "stat": "country"
+  },
+  {
+   "geo": "SWE",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.885,
+   "stat": "country"
+  },
+  {
+   "geo": "SWE",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.881,
+   "stat": "country"
+  },
+  {
+   "geo": "SWE",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.88,
+   "stat": "country"
+  },
+  {
+   "geo": "SWE",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.88,
+   "stat": "country"
+  },
+  {
+   "geo": "SWE",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.875,
+   "stat": "country"
+  },
+  {
+   "geo": "SWE",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.866,
+   "stat": "country"
+  },
+  {
+   "geo": "SWE",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.868,
+   "stat": "country"
+  },
+  {
+   "geo": "SWE",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.866,
+   "stat": "country"
+  },
+  {
+   "geo": "SWE",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.861,
+   "stat": "country"
+  },
+  {
+   "geo": "SWE",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.849,
+   "stat": "country"
+  },
+  {
+   "geo": "SWE",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.846,
+   "stat": "country"
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.853,
+   "stat": "country"
+  },
+  {
+   "geo": "USA",
+   "time": "2000",
+   "measure": "v2x_libdem",
+   "value": 0.808,
+   "stat": "country"
+  },
+  {
+   "geo": "USA",
+   "time": "2001",
+   "measure": "v2x_libdem",
+   "value": 0.769,
+   "stat": "country"
+  },
+  {
+   "geo": "USA",
+   "time": "2002",
+   "measure": "v2x_libdem",
+   "value": 0.769,
+   "stat": "country"
+  },
+  {
+   "geo": "USA",
+   "time": "2003",
+   "measure": "v2x_libdem",
+   "value": 0.798,
+   "stat": "country"
+  },
+  {
+   "geo": "USA",
+   "time": "2004",
+   "measure": "v2x_libdem",
+   "value": 0.799,
+   "stat": "country"
+  },
+  {
+   "geo": "USA",
+   "time": "2005",
+   "measure": "v2x_libdem",
+   "value": 0.794,
+   "stat": "country"
+  },
+  {
+   "geo": "USA",
+   "time": "2006",
+   "measure": "v2x_libdem",
+   "value": 0.801,
+   "stat": "country"
+  },
+  {
+   "geo": "USA",
+   "time": "2007",
+   "measure": "v2x_libdem",
+   "value": 0.84,
+   "stat": "country"
+  },
+  {
+   "geo": "USA",
+   "time": "2008",
+   "measure": "v2x_libdem",
+   "value": 0.845,
+   "stat": "country"
+  },
+  {
+   "geo": "USA",
+   "time": "2009",
+   "measure": "v2x_libdem",
+   "value": 0.848,
+   "stat": "country"
+  },
+  {
+   "geo": "USA",
+   "time": "2010",
+   "measure": "v2x_libdem",
+   "value": 0.848,
+   "stat": "country"
+  },
+  {
+   "geo": "USA",
+   "time": "2011",
+   "measure": "v2x_libdem",
+   "value": 0.845,
+   "stat": "country"
+  },
+  {
+   "geo": "USA",
+   "time": "2012",
+   "measure": "v2x_libdem",
+   "value": 0.842,
+   "stat": "country"
+  },
+  {
+   "geo": "USA",
+   "time": "2013",
+   "measure": "v2x_libdem",
+   "value": 0.852,
+   "stat": "country"
+  },
+  {
+   "geo": "USA",
+   "time": "2014",
+   "measure": "v2x_libdem",
+   "value": 0.848,
+   "stat": "country"
+  },
+  {
+   "geo": "USA",
+   "time": "2015",
+   "measure": "v2x_libdem",
+   "value": 0.848,
+   "stat": "country"
+  },
+  {
+   "geo": "USA",
+   "time": "2016",
+   "measure": "v2x_libdem",
+   "value": 0.83,
+   "stat": "country"
+  },
+  {
+   "geo": "USA",
+   "time": "2017",
+   "measure": "v2x_libdem",
+   "value": 0.749,
+   "stat": "country"
+  },
+  {
+   "geo": "USA",
+   "time": "2018",
+   "measure": "v2x_libdem",
+   "value": 0.739,
+   "stat": "country"
+  },
+  {
+   "geo": "USA",
+   "time": "2019",
+   "measure": "v2x_libdem",
+   "value": 0.74,
+   "stat": "country"
+  },
+  {
+   "geo": "USA",
+   "time": "2020",
+   "measure": "v2x_libdem",
+   "value": 0.734,
+   "stat": "country"
+  },
+  {
+   "geo": "USA",
+   "time": "2021",
+   "measure": "v2x_libdem",
+   "value": 0.756,
+   "stat": "country"
+  },
+  {
+   "geo": "USA",
+   "time": "2022",
+   "measure": "v2x_libdem",
+   "value": 0.769,
+   "stat": "country"
+  },
+  {
+   "geo": "USA",
+   "time": "2023",
+   "measure": "v2x_libdem",
+   "value": 0.789,
+   "stat": "country"
+  },
+  {
+   "geo": "USA",
+   "time": "2024",
+   "measure": "v2x_libdem",
+   "value": 0.751,
+   "stat": "country"
+  },
+  {
+   "geo": "USA",
+   "time": "2025",
+   "measure": "v2x_libdem",
+   "value": 0.571,
+   "stat": "country"
+  }
+ ]
+}

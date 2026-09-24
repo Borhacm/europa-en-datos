@@ -1,0 +1,679 @@
+{
+ "id": "pd1-convergencia",
+ "lens": "dentro",
+ "theme": "productividad",
+ "title": {
+  "es": "El este de Europa se ha acercado a la media desde 2004. El sur, no",
+  "en": "Eastern Europe has closed in on the average since 2004. The south has not"
+ },
+ "subtitle": {
+  "es": "PIB por habitante en paridad de poder adquisitivo, índice UE = 100, 2004 y 2025",
+  "en": "GDP per person at purchasing power parity, index EU = 100, 2004 and 2025"
+ },
+ "unit": {
+  "es": "índice (UE = 100)",
+  "en": "index (EU = 100)"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "sdg_10_10",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/sdg_10_10/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Luxemburgo e Irlanda aparecen muy por encima de la media por los trabajadores transfronterizos (Luxemburgo) y la contabilidad de las multinacionales (Irlanda)."
+  ],
+  "en": [
+   "Luxembourg and Ireland appear far above average because of cross-border workers (Luxembourg) and multinational accounting (Ireland)."
+  ]
+ },
+ "retrieved": "2026-09-24",
+ "geos": {
+  "ALB": {
+   "es": "Albania",
+   "en": "Albania",
+   "eu": false,
+   "aggregate": false
+  },
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BIH": {
+   "es": "Bosnia y Herzegovina",
+   "en": "Bosnia and Herzegovina",
+   "eu": false,
+   "aggregate": false
+  },
+  "CHE": {
+   "es": "Suiza",
+   "en": "Switzerland",
+   "eu": false,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GBR": {
+   "es": "Reino Unido",
+   "en": "United Kingdom",
+   "eu": false,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ISL": {
+   "es": "Islandia",
+   "en": "Iceland",
+   "eu": false,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "JPN": {
+   "es": "Japón",
+   "en": "Japan",
+   "eu": false,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MKD": {
+   "es": "Macedonia del Norte",
+   "en": "North Macedonia",
+   "eu": false,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "MNE": {
+   "es": "Montenegro",
+   "en": "Montenegro",
+   "eu": false,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "NOR": {
+   "es": "Noruega",
+   "en": "Norway",
+   "eu": false,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SRB": {
+   "es": "Serbia",
+   "en": "Serbia",
+   "eu": false,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  },
+  "TUR": {
+   "es": "Turquía",
+   "en": "Türkiye",
+   "eu": false,
+   "aggregate": false
+  },
+  "USA": {
+   "es": "Estados Unidos",
+   "en": "United States",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "ALB",
+   "time": "2004",
+   "value": 22
+  },
+  {
+   "geo": "ALB",
+   "time": "2025",
+   "value": 43
+  },
+  {
+   "geo": "AUT",
+   "time": "2004",
+   "value": 129
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 118
+  },
+  {
+   "geo": "BEL",
+   "time": "2004",
+   "value": 123
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 114,
+   "flag": "p"
+  },
+  {
+   "geo": "BGR",
+   "time": "2004",
+   "value": 35
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 68,
+   "flag": "p"
+  },
+  {
+   "geo": "BIH",
+   "time": "2025",
+   "value": 36
+  },
+  {
+   "geo": "CHE",
+   "time": "2004",
+   "value": 155
+  },
+  {
+   "geo": "CHE",
+   "time": "2025",
+   "value": 157,
+   "flag": "p"
+  },
+  {
+   "geo": "CYP",
+   "time": "2004",
+   "value": 100
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 98,
+   "flag": "p"
+  },
+  {
+   "geo": "CZE",
+   "time": "2004",
+   "value": 81
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 92
+  },
+  {
+   "geo": "DEU",
+   "time": "2004",
+   "value": 124
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 115,
+   "flag": "p"
+  },
+  {
+   "geo": "DNK",
+   "time": "2004",
+   "value": 127
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 127
+  },
+  {
+   "geo": "ESP",
+   "time": "2004",
+   "value": 101
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 92,
+   "flag": "p"
+  },
+  {
+   "geo": "EST",
+   "time": "2004",
+   "value": 56
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 79
+  },
+  {
+   "geo": "EU27",
+   "time": "2004",
+   "value": 100
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 100
+  },
+  {
+   "geo": "FIN",
+   "time": "2004",
+   "value": 120
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 101
+  },
+  {
+   "geo": "FRA",
+   "time": "2004",
+   "value": 112
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 98,
+   "flag": "p"
+  },
+  {
+   "geo": "GBR",
+   "time": "2004",
+   "value": 124
+  },
+  {
+   "geo": "GBR",
+   "time": "2025",
+   "value": 99
+  },
+  {
+   "geo": "GRC",
+   "time": "2004",
+   "value": 95
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 68,
+   "flag": "p"
+  },
+  {
+   "geo": "HRV",
+   "time": "2004",
+   "value": 56
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 78,
+   "flag": "p"
+  },
+  {
+   "geo": "HUN",
+   "time": "2004",
+   "value": 62
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 76,
+   "flag": "p"
+  },
+  {
+   "geo": "IRL",
+   "time": "2004",
+   "value": 149
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 238
+  },
+  {
+   "geo": "ISL",
+   "time": "2004",
+   "value": 138
+  },
+  {
+   "geo": "ISL",
+   "time": "2025",
+   "value": 128
+  },
+  {
+   "geo": "ITA",
+   "time": "2004",
+   "value": 114
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 96
+  },
+  {
+   "geo": "JPN",
+   "time": "2004",
+   "value": 120
+  },
+  {
+   "geo": "JPN",
+   "time": "2025",
+   "value": 85
+  },
+  {
+   "geo": "LTU",
+   "time": "2004",
+   "value": 50
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 87
+  },
+  {
+   "geo": "LUX",
+   "time": "2004",
+   "value": 248
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 239,
+   "flag": "p"
+  },
+  {
+   "geo": "LVA",
+   "time": "2004",
+   "value": 45
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 71
+  },
+  {
+   "geo": "MKD",
+   "time": "2004",
+   "value": 28
+  },
+  {
+   "geo": "MKD",
+   "time": "2025",
+   "value": 43
+  },
+  {
+   "geo": "MLT",
+   "time": "2004",
+   "value": 83
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 110
+  },
+  {
+   "geo": "MNE",
+   "time": "2025",
+   "value": 54
+  },
+  {
+   "geo": "NLD",
+   "time": "2004",
+   "value": 138
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 133
+  },
+  {
+   "geo": "NOR",
+   "time": "2004",
+   "value": 164
+  },
+  {
+   "geo": "NOR",
+   "time": "2025",
+   "value": 159
+  },
+  {
+   "geo": "POL",
+   "time": "2004",
+   "value": 52
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 81
+  },
+  {
+   "geo": "PRT",
+   "time": "2004",
+   "value": 83
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 81,
+   "flag": "p"
+  },
+  {
+   "geo": "ROU",
+   "time": "2004",
+   "value": 35
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 78,
+   "flag": "p"
+  },
+  {
+   "geo": "SRB",
+   "time": "2004",
+   "value": 34
+  },
+  {
+   "geo": "SRB",
+   "time": "2025",
+   "value": 52
+  },
+  {
+   "geo": "SVK",
+   "time": "2004",
+   "value": 58
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 75
+  },
+  {
+   "geo": "SVN",
+   "time": "2004",
+   "value": 87
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 90
+  },
+  {
+   "geo": "SWE",
+   "time": "2004",
+   "value": 130
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 111
+  },
+  {
+   "geo": "TUR",
+   "time": "2004",
+   "value": 42
+  },
+  {
+   "geo": "TUR",
+   "time": "2025",
+   "value": 67
+  },
+  {
+   "geo": "USA",
+   "time": "2004",
+   "value": 160
+  },
+  {
+   "geo": "USA",
+   "time": "2025",
+   "value": 138
+  }
+ ]
+}

@@ -176,8 +176,106 @@ export const THEMES: Theme[] = [
       },
     },
   },
-  { id: "productividad", code: "PR", slug: { es: "productividad", en: "productivity" }, title: { es: "Productividad e I+D", en: "Productivity and R&D" }, status: "upcoming" },
-  { id: "libertades", code: "LI", slug: { es: "libertades", en: "freedoms" }, title: { es: "Libertades, bienestar y clima", en: "Freedoms, well-being and climate" }, status: "upcoming" },
+  {
+    id: "productividad",
+    code: "PR",
+    slug: { es: "productividad", en: "productivity" },
+    title: { es: "Productividad y crecimiento", en: "Productivity and growth" },
+    status: "published",
+    published: "2026-09-25",
+    dek: {
+      es: "La UE pesa tanto en la economía mundial como Estados Unidos, pero produce menos por hora y mucho menos por habitante. La pregunta es cuánto de esa distancia es atraso y cuánto es elección.",
+      en: "The EU weighs as much in the world economy as the United States, but it produces less per hour and much less per person. The question is how much of that gap is lagging behind and how much is choice.",
+    },
+    lenses: {
+      gigantes: {
+        lede: { es: "China ya es la mayor economía del mundo. La UE y EE. UU. pesan casi lo mismo, pero no producen igual.", en: "China is now the world's largest economy. The EU and the US weigh almost the same, but they do not produce the same." },
+        body: [
+          p("Medida en poder adquisitivo, la economía china supera a la estadounidense desde 2014 y ya aporta el 19,1 % del PIB mundial. La UE (14,4 %) y EE. UU. (14,7 %) están prácticamente empatadas, y las dos pesan mucho menos que en 1990, cuando cada una superaba el 20 %.",
+            "Measured in purchasing power, China's economy has been larger than the US's since 2014 and now accounts for 19.1% of world GDP. The EU (14.4%) and the US (14.7%) are practically level, and both weigh far less than in 1990, when each was above 20%."),
+          { fig: "pg1-peso-pib-mundial", code: "G1" },
+          p("La diferencia está en la productividad. En 2024, cada hora trabajada en la UE produjo 69,8 dólares, frente a 80,6 en EE. UU.: un 13 % menos. En 2019 la distancia era del 7 %. China, con 19,7 dólares por hora, sigue lejos de ambos.",
+            "The difference lies in productivity. In 2024, each hour worked in the EU produced 69.8 dollars, against 80.6 in the US: 13% less. In 2019 the gap was 7%. China, at 19.7 dollars per hour, is still far behind both."),
+          { fig: "pg2-productividad-hora", code: "G2" },
+        ],
+      },
+      elige: {
+        lede: { es: "Europa produce menos por habitante que por hora. Parte de la diferencia es que trabaja menos horas.", en: "Europe produces less per person than per hour. Part of the difference is that it works fewer hours." },
+        body: [
+          p("Por hora trabajada, la UE está al 87 % del nivel de EE. UU. Por habitante, solo al 74 %. La distancia entre esas dos cifras se explica por las horas que trabaja cada persona y por la parte de la población que tiene empleo.",
+            "Per hour worked, the EU is at 87% of the US level. Per person, only at 74%. The distance between those two figures comes from the hours each person works and from the share of the population in work."),
+          { fig: "pe1-brecha-ee-uu", code: "E1" },
+          p("Las horas no son iguales en toda Europa. Un trabajador de Países Bajos hace 31 horas a la semana; uno de Alemania, 33,5; uno de EE. UU., 37,5. En cambio, en Grecia, Polonia o Lituania se trabaja más que en EE. UU. España, con 36,4, queda algo por debajo. Trabajar menos horas es, sobre todo, un rasgo de los países más ricos del oeste y el norte.",
+            "Hours are not the same across Europe. A worker in the Netherlands puts in 31 hours a week; in Germany, 33.5; in the US, 37.5. By contrast, people in Greece, Poland or Lithuania work more than in the US. Spain, at 36.4, is slightly below. Working fewer hours is above all a feature of the richest countries of the west and north."),
+          { fig: "pe2-horas-trabajadas", code: "E2" },
+        ],
+      },
+      dentro: {
+        lede: { es: "Desde 2004, el este se ha acercado a la media europea. El sur se ha quedado atrás.", en: "Since 2004, the east has closed in on the European average. The south has fallen behind." },
+        body: [
+          p("En 2004, Rumanía tenía un PIB por habitante del 35 % de la media europea; en 2025, del 78 %. Polonia ha pasado del 52 % al 81 %, y Lituania, del 50 % al 87 %. En el sur ha ocurrido lo contrario: Grecia ha caído del 95 % al 68 %, Italia del 114 % al 96 % y España del 101 % al 92 %.",
+            "In 2004, Romania's GDP per person was 35% of the European average; in 2025, 78%. Poland has gone from 52% to 81%, and Lithuania from 50% to 87%. The south has gone the other way: Greece has fallen from 95% to 68%, Italy from 114% to 96% and Spain from 101% to 92%."),
+          { fig: "pd1-convergencia", code: "D1" },
+          p("Por regiones, las distancias son todavía mayores. La región de Dublín (268 % de la media), Luxemburgo (245 %) y Hamburgo (196 %) encabezan la lista. En España, la Comunidad de Madrid llega al 125 % y Melilla se queda en el 59 %.",
+            "By region, the gaps are even wider. The Dublin region (268% of the average), Luxembourg (245%) and Hamburg (196%) top the list. In Spain, the Madrid region reaches 125% and Melilla stays at 59%."),
+          { fig: "pd2-mapa-renta", code: "D2" },
+        ],
+      },
+    },
+  },
+  {
+    id: "libertades",
+    code: "LI",
+    slug: { es: "libertades", en: "freedoms" },
+    title: { es: "Libertades, bienestar y clima", en: "Freedoms, well-being and climate" },
+    status: "published",
+    published: "2026-09-25",
+    dek: {
+      es: "Europa vive más años, contamina menos y protege más las libertades que Estados Unidos o China. Pero esas ventajas no son iguales en todos sus países, y algunas se están erosionando.",
+      en: "Europe lives longer, pollutes less and protects freedoms more than the United States or China. But those advantages are not equal across its countries, and some are eroding.",
+    },
+    lenses: {
+      gigantes: {
+        lede: { es: "En democracia, salud y clima, la UE sale mejor parada que los dos gigantes.", en: "On democracy, health and climate, the EU fares better than both giants." },
+        body: [
+          p("Según V-Dem, la democracia estadounidense cayó en 2025 hasta 0,57 sobre 1, su nivel más bajo del siglo y ya por debajo de la mediana de la UE (0,74). China sigue en el extremo opuesto, con 0,04.",
+            "According to V-Dem, US democracy fell in 2025 to 0.57 out of 1, its lowest level this century and now below the EU median (0.74). China remains at the opposite end, at 0.04."),
+          { fig: "lg1-democracia", code: "G1" },
+          p("En la UE se vive de media 81,6 años, casi tres más que en EE. UU. (78,9), donde la esperanza de vida apenas ha cambiado desde 2010. China, con 78,0, casi ha alcanzado a EE. UU.",
+            "People in the EU live 81.6 years on average, almost three more than in the US (78.9), where life expectancy has barely changed since 2010. China, at 78.0, has nearly caught up with the US."),
+          { fig: "lg2-esperanza-vida", code: "G2" },
+          p("En clima, cada estadounidense emite 13,6 toneladas de CO₂ al año, más del doble que un europeo (5,5). Un chino emite ya 9,3 toneladas: más que un europeo desde 2012.",
+            "On climate, each American emits 13.6 tonnes of CO₂ a year, more than twice as much as a European (5.5). A Chinese person now emits 9.3 tonnes: more than a European since 2012."),
+          { fig: "lg3-co2-habitante", code: "G3" },
+        ],
+      },
+      elige: {
+        lede: { es: "Europa ha elegido recortar emisiones y proteger más a su población. Son decisiones con costes.", en: "Europe has chosen to cut emissions and protect its population more. Those are choices with costs." },
+        body: [
+          p("La UE emite hoy un 35 % menos de CO₂ que en 1990. Estados Unidos, un 7 % menos. China, más de cinco veces más. Parte del recorte europeo se explica porque fabrica fuera muchos de los bienes que consume.",
+            "The EU now emits 35% less CO₂ than in 1990. The United States, 7% less. China, more than five times as much. Part of Europe's cut comes from producing abroad many of the goods it consumes."),
+          { fig: "le1-emisiones-1990", code: "E1" },
+          p("El gasto social público es la otra gran diferencia. En 2022, Francia le dedicaba el 31,4 % de su PIB; Italia, el 28,2 %; Alemania, el 27,7 %; España, el 26,0 %. EE. UU., el 19,0 %. Pero no es un rasgo de toda la UE: Irlanda, Países Bajos o varios países del este gastan menos que EE. UU.",
+            "Public social spending is the other big difference. In 2022, France devoted 31.4% of its GDP to it; Italy, 28.2%; Germany, 27.7%; Spain, 26.0%. The US, 19.0%. But it is not a feature of the whole EU: Ireland, the Netherlands and several eastern countries spend less than the US."),
+          { fig: "le2-gasto-social", code: "E2" },
+        ],
+      },
+      dentro: {
+        lede: { es: "La media europea esconde países que retroceden en democracia, con mucha más pobreza o muy por detrás en renovables.", en: "The European average hides countries sliding back on democracy, with far more poverty or far behind on renewables." },
+        body: [
+          p("Desde 2010, la calidad democrática ha bajado en 24 de los 27 países de la UE. Hungría es el caso más grave, seguida de Grecia, Eslovenia y Polonia. España ha pasado de 0,83 a 0,74.",
+            "Since 2010, democratic quality has fallen in 24 of the 27 EU countries. Hungary is the most severe case, followed by Greece, Slovenia and Poland. Spain has gone from 0.83 to 0.74."),
+          { fig: "ld1-democracia-ue", code: "D1" },
+          p("El 20,9 % de los europeos está en riesgo de pobreza o exclusión social. En Chequia, el 11,5 %; en Bulgaria, el 29,0 %. España, con un 25,7 %, es el quinto país con más riesgo.",
+            "20.9% of Europeans are at risk of poverty or social exclusion. In Czechia, 11.5%; in Bulgaria, 29.0%. Spain, at 25.7%, has the fifth highest risk."),
+          { fig: "ld2-pobreza", code: "D2" },
+          p("En renovables, Suecia (65 %) y Finlandia (53 %) ya superan de largo el objetivo europeo del 42,5 % para 2030. La UE en conjunto está en el 26 %, como España, y Bélgica no llega al 15 %.",
+            "On renewables, Sweden (65%) and Finland (53%) are already well past the EU's 42.5% target for 2030. The EU as a whole is at 26%, like Spain, and Belgium does not reach 15%."),
+          { fig: "ld3-renovables", code: "D3" },
+        ],
+      },
+    },
+  },
 ];
 
 export const published = () => THEMES.filter((t) => t.status === "published");
