@@ -38,6 +38,12 @@ Salida:
 - `data/index.json`: catálogo de gráficos, miradas y temas.
 - `data/geo/nuts{0,1,2}.json`: geometrías NUTS 2024 (TopoJSON, Eurostat GISCO).
 
+## Publicación
+
+Cada push a `main` se publica automáticamente en https://europa.bocal.online (Vercel, directorio raíz `web`). Las demás ramas generan previsualizaciones privadas.
+
+Vercel no ejecuta el pipeline de Python: para actualizar los datos, ejecuta `uv run run.py` en local y sube los cambios de `data/`.
+
 ## Estructura
 
 ```

@@ -8,6 +8,6 @@ npm run dev     # sincroniza ../data en public/data y arranca el servidor local
 npm run build   # genera dist/
 ```
 
-Publicación en Vercel desde esta carpeta: `vercel build --prod && vercel deploy --prebuilt --prod`. Se construye en local porque el build necesita `../data`, que queda fuera de esta carpeta.
+El build lee `../data`, fuera de esta carpeta: Vercel lo permite porque el proyecto tiene `web` como directorio raíz y acceso a los archivos de fuera.
 
 Más detalles en el [README principal](../README.md).
