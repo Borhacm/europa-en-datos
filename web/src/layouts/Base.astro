@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import Mark from "../components/Mark.astro";
 import Analytics from "@vercel/analytics/astro";
+import Consent from "../components/Consent.astro";
 import { ui, paths, type Lang, type Bi, type Section } from "../lib/i18n";
 
 interface Props {
@@ -79,12 +80,23 @@ const canonical = new URL(path[lang], site);
         <p>{t.footerIndependent}</p>
         <p>{t.footerData} <a href={paths.method[lang]}>{t.navMethod}</a>.</p>
         <p><a href="https://bocal.online">bocal.online</a></p>
+        <p><button type="button" class="linklike" data-open-consent>{lang === "es" ? "Preferencias de cookies" : "Cookie settings"}</button></p>
       </div>
     </footer>
+    <Consent lang={lang} />
   </body>
 </html>
 
 <style>
+  .linklike {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: 0;
+    padding: 0;
+    text-decoration: underline;
+    cursor: pointer;
+  }
   .skip {
     position: absolute;
     left: var(--gutter);
