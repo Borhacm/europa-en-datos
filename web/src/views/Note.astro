@@ -1,0 +1,70 @@
+---
+// Una nota: uno o dos gráficos sobre un tema publicado, contados desde una sola mirada.
+import Base from "../layouts/Base.astro";
+import Figure from "../components/Figure.astro";
+import FocusSelect from "../components/FocusSelect.astro";
+import LinkList from "../components/LinkList.astro";
+import { NOTES, lensById, themeById, type Note } from "../lib/themes";
+import { formatDate, lensPath, notePath, paths, themePath, type Lang } from "../lib/i18n";
+import "../styles/charts.css";
+
+interface Props { lang: Lang; note: Note }
+const { lang, note } = Astro.props;
+const theme = themeById(note.theme);
+const lens = lensById(note.lens);
+
+const copy = {
+  es: { note: "Nota", published: "Publicada el", theme: "Tema", lens: "Mirada", more: "Más notas", all: "Todas las notas", read: "Leer el tema completo" },
+  en: { note: "Note", published: "Published on", theme: "Theme", lens: "Lens", more: "More notes", all: "All notes", read: "Read the full theme" },
+}[lang];
+
+const others = NOTES.filter((n) => n.id !== note.id).slice(0, 3);
+---
+<Base lang={lang} path={notePath(note.slug)} section="notes" title={note.title[lang]} description={note.dek[lang]}>
+  <article class="wrap note">
+    <header class="note-head">
+      <p class="kicker">
+        {copy.note} {note.code}.
+        {" "}{copy.published} {formatDate(note.published, lang)}.
+        {theme && <>{" "}{copy.theme}: <a href={themePath(theme.slug)[lang]}>{theme.title[lang]}</a>.</>}
+        {" "}{copy.lens}: <a href={lensPath(lens.slug)[lang]}>{lens.name[lang]}</a>.
+      </p>
+      <h1>{note.title[lang]}</h1>
+      <p class="dek">{note.dek[lang]}</p>
+      <FocusSelect lang={lang} />
+    </header>
+
+    {note.body.map((b) =>
+      "p" in b
+        ? <p class="prose body">{b.p[lang]}</p>
+        : <Figure id={b.fig} lang={lang} code={`${note.code}-${b.code}`} />
+    )}
+
+    {theme && <p class="cross"><a href={themePath(theme.slug)[lang]}>{copy.read}: {theme.title[lang]}</a></p>}
+  </article>
+
+  {others.length > 0 && (
+    <section class="wrap others">
+      <h2>{copy.more}</h2>
+      <LinkList items={others.map((n) => ({ href: notePath(n.slug)[lang], title: n.title[lang], dek: n.dek[lang], meta: formatDate(n.published, lang) }))} />
+      <a class="all" href={paths.notes[lang]}>{copy.all}</a>
+    </section>
+  )}
+
+  <script>
+    import "../scripts/main.ts";
+  </script>
+</Base>
+
+<style>
+  .note { padding-top: clamp(3rem, 7vw, 5rem); }
+  .note-head { display: grid; gap: 1.25rem; justify-items: start; margin-bottom: 1rem; }
+  .kicker { margin: 0; font-family: var(--font-semi); font-size: 0.95rem; color: var(--ink-3); max-width: 46rem; }
+  h1 { font-size: clamp(2.6rem, 6vw, 4.6rem); line-height: 0.92; max-width: 22ch; }
+  .dek { margin: 0; max-width: 38rem; font-size: clamp(1.15rem, 1.7vw, 1.35rem); line-height: 1.45; color: var(--ink-2); }
+  .body { margin-block: 2rem 2.5rem; }
+  .cross { margin-top: 2.5rem; padding-top: 1rem; border-top: 1px solid var(--rule); font-family: var(--font-semi); font-weight: 600; }
+  .others { padding-top: 5rem; }
+  .others h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem; }
+  .all { display: inline-block; margin-top: 1rem; font-family: var(--font-semi); font-weight: 600; }
+</style>

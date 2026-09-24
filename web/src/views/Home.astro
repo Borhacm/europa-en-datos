@@ -1,8 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
 import LinkList from "../components/LinkList.astro";
-import { LENSES, figuresOf, published, upcoming } from "../lib/themes";
-import { formatDate, lensPath, paths, themePath, ui, type Lang } from "../lib/i18n";
+import { LENSES, NOTES, figuresOf, lensById, published, themeById, upcoming } from "../lib/themes";
+import { formatDate, lensPath, notePath, paths, themePath, ui, type Lang } from "../lib/i18n";
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -15,6 +15,9 @@ const copy = {
     themesTitle: "Temas",
     allThemes: "Todos los temas",
     charts: "gráficos",
+    notesTitle: "Notas",
+    notesIntro: "Piezas breves sobre un dato concreto, con uno o dos gráficos.",
+    allNotes: "Todas las notas",
     lensesTitle: "Tres miradas",
     lensesIntro: "Cada mirada recorre todos los temas. Elige una y síguela de principio a fin.",
     aboutTitle: "Sobre este proyecto",
@@ -29,6 +32,9 @@ const copy = {
     themesTitle: "Themes",
     allThemes: "All themes",
     charts: "charts",
+    notesTitle: "Notes",
+    notesIntro: "Short pieces on a specific figure, with one or two charts.",
+    allNotes: "All notes",
     lensesTitle: "Three lenses",
     lensesIntro: "Each lens runs through every theme. Pick one and follow it from start to finish.",
     aboutTitle: "About this project",
@@ -44,6 +50,7 @@ const MAX_HOME = 4;
 const latest = [...published()].sort((a, b) => (b.published ?? "").localeCompare(a.published ?? ""));
 const shown = latest.slice(0, MAX_HOME);
 const next = upcoming().slice(0, Math.max(0, MAX_HOME - shown.length));
+const latestNotes = NOTES.slice(0, 3);
 ---
 <Base lang={lang} path={paths.home} section="home">
   <section class="hero wrap">
@@ -67,6 +74,26 @@ const next = upcoming().slice(0, Math.max(0, MAX_HOME - shown.length));
       <a class="all" href={paths.themes[lang]}>{copy.allThemes}</a>
     </div>
   </section>
+
+  {latestNotes.length > 0 && (
+    <section class="wrap block" aria-labelledby="notes-h">
+      <div class="block-head">
+        <h2 id="notes-h">{copy.notesTitle}</h2>
+        <p>{copy.notesIntro}</p>
+      </div>
+      <div>
+        <LinkList
+          items={latestNotes.map((n) => ({
+            href: notePath(n.slug)[lang],
+            title: n.title[lang],
+            dek: n.dek[lang],
+            meta: [formatDate(n.published, lang), themeById(n.theme)?.title[lang], lensById(n.lens).name[lang]].filter(Boolean).join(". ") + ".",
+          }))}
+        />
+        <a class="all" href={paths.notes[lang]}>{copy.allNotes}</a>
+      </div>
+    </section>
+  )}
 
   <section class="wrap block" aria-labelledby="lenses-h">
     <div class="block-head">

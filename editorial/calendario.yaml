@@ -1,0 +1,161 @@
+# Calendario editorial de Europa en datos.
+#
+# Las tareas automáticas toman, en este orden, la primera entrada de su tipo que todavía no esté hecha.
+# Una entrada está hecha si ya existe su archivo de contenido en main
+# (web/src/content/notes/<id>.ts o web/src/content/themes/<tema>.ts) o si tiene un pull request abierto
+# en una rama que empieza por editorial/<id>.
+#
+# Puedes reordenar, añadir o quitar entradas cuando quieras. Campos:
+#   id        identificador (n01, a01...). Para las notas es también el prefijo de sus gráficos.
+#   tipo      nota | articulo
+#   titulo    idea de título (la tarea lo ajusta a lo que digan los datos)
+#   angulo    qué se quiere contar
+#   mirada    (notas) gigantes | elige | dentro
+#   tema      (notas) tema al que pertenece: ia-digital, comercio, productividad, libertades...
+#   tema_id   (artículos) id del tema nuevo, en minúsculas y sin acentos
+#   codigo    (artículos) prefijo de dos letras de sus gráficos (SA-G1...)
+#   fuentes   datasets candidatos; hay que comprobar que existen y tienen datos recientes
+#   relacionada  (artículos) nota que adelantó el tema: el artículo la enlaza
+
+notas:
+  - id: n01
+    titulo: Cuánto ha subido la vivienda desde 2015, país por país
+    angulo: Subida del precio de la vivienda frente a la inflación
+    mirada: dentro
+    tema: libertades
+    fuentes: [Eurostat prc_hpi_a, Eurostat prc_hicp_aind]
+
+  - id: n02
+    titulo: El precio de la luz para los hogares en cada país
+    angulo: Precio de la electricidad para hogares, con y sin impuestos, y cambio desde 2021
+    mirada: dentro
+    tema: comercio
+    fuentes: [Eurostat nrg_pc_204]
+
+  - id: n03
+    titulo: "Coche eléctrico: qué parte de los coches nuevos ya lo son"
+    angulo: Cuota de eléctricos en las matriculaciones por país; qué está eligiendo Europa
+    mirada: elige
+    tema: libertades
+    fuentes: [Eurostat road_eqr_carpda]
+
+  - id: n04
+    titulo: "Deuda pública: la UE frente a EE. UU. y China"
+    angulo: Deuda pública en % del PIB de los tres bloques y de los países de la UE
+    mirada: gigantes
+    tema: productividad
+    fuentes: [Eurostat gov_10dd_edpt1, FMI World Economic Outlook]
+
+  - id: n05
+    titulo: Gasto en defensa por país
+    angulo: Gasto público en defensa en % del PIB y su evolución reciente
+    mirada: dentro
+    tema: comercio
+    fuentes: [Eurostat gov_10a_exp (COFOG GF02), Banco Mundial MS.MIL.XPND.GD.ZS]
+
+  - id: n06
+    titulo: "Paro juvenil: de Alemania a España"
+    angulo: Tasa de paro de 15 a 24 años por país
+    mirada: dentro
+    tema: productividad
+    fuentes: [Eurostat une_rt_a]
+
+  - id: n07
+    titulo: "Envejecimiento: la UE, EE. UU. y China"
+    angulo: Población de 65 años o más, en % del total, en los tres bloques
+    mirada: gigantes
+    tema: productividad
+    fuentes: [Banco Mundial SP.POP.65UP.TO.ZS, Eurostat demo_pjanind]
+
+  - id: n08
+    titulo: Población nacida fuera de la UE, país por país
+    angulo: Parte de la población nacida fuera de la UE y cambio desde 2015
+    mirada: dentro
+    tema: libertades
+    fuentes: [Eurostat migr_pop3ctb]
+
+  - id: n09
+    titulo: "Pobreza energética: no poder calentar la casa"
+    angulo: Personas que no pueden mantener su casa a una temperatura adecuada
+    mirada: dentro
+    tema: libertades
+    fuentes: [Eurostat ilc_mdes01]
+
+  - id: n10
+    titulo: Universitarios de 25 a 34 años frente al objetivo de la UE
+    angulo: Población de 25 a 34 años con estudios superiores frente al objetivo del 45 % para 2030
+    mirada: dentro
+    tema: ia-digital
+    fuentes: [Eurostat edat_lfse_03]
+
+articulos:
+  - id: a01
+    tema_id: sanidad
+    codigo: SA
+    titulo: Sanidad
+    angulo: "Gigantes: gasto sanitario y resultados (esperanza de vida sana) frente a EE. UU. y China. Elige: sanidad pública frente a privada. Dentro: médicos, camas y listas de espera entre países."
+    fuentes: [Banco Mundial SH.XPD.CHEX.GD.ZS, Eurostat hlth_rs_prs2, Eurostat hlth_silc_08, OCDE Health Statistics]
+
+  - id: a02
+    tema_id: vivienda
+    codigo: VI
+    titulo: Vivienda y coste de vida
+    angulo: "Gigantes: precio de la vivienda y alquiler frente a EE. UU. Elige: vivienda en propiedad frente a alquiler. Dentro: sobrecarga del coste de la vivienda y hacinamiento por país."
+    fuentes: [Eurostat prc_hpi_a, Eurostat ilc_lvho07a, Eurostat ilc_lvho05a, OCDE house prices]
+    relacionada: n01
+
+  - id: a03
+    tema_id: energia
+    codigo: EN
+    titulo: Energía
+    angulo: "Gigantes: consumo y producción de energía, peso de las renovables y la nuclear. Elige: precio de la energía para la industria frente a EE. UU. y China. Dentro: mezcla energética y precios por país."
+    fuentes: [Eurostat nrg_bal_c, Eurostat nrg_pc_205, Eurostat nrg_ind_ren, Banco Mundial]
+    relacionada: n02
+
+  - id: a04
+    tema_id: transporte
+    codigo: TR
+    titulo: Transporte y transición verde
+    angulo: "Gigantes: coche eléctrico y emisiones del transporte frente a EE. UU. y China. Elige: tren frente a avión y carretera. Dentro: flota, electrificación y emisiones por país."
+    fuentes: [Eurostat road_eqr_carpda, Eurostat env_air_gge, Eurostat rail_pa_total]
+    relacionada: n03
+
+  - id: a05
+    tema_id: finanzas
+    codigo: FP
+    titulo: Finanzas públicas
+    angulo: "Gigantes: deuda y déficit frente a EE. UU. y China. Elige: presión fiscal y en qué se gasta. Dentro: deuda, déficit e impuestos por país."
+    fuentes: [Eurostat gov_10dd_edpt1, Eurostat gov_10a_taxag, Eurostat gov_10a_exp, FMI World Economic Outlook]
+    relacionada: n04
+
+  - id: a06
+    tema_id: defensa
+    codigo: DF
+    titulo: Defensa y seguridad
+    angulo: "Gigantes: gasto militar de la UE, EE. UU. y China. Elige: dependencia de la OTAN y compras de armamento. Dentro: gasto en defensa por país y frente al objetivo del 2 %."
+    fuentes: [Banco Mundial MS.MIL.XPND.GD.ZS, Banco Mundial MS.MIL.XPND.CD, Eurostat gov_10a_exp]
+    relacionada: n05
+
+  - id: a07
+    tema_id: empleo
+    codigo: EM
+    titulo: Empleo y jóvenes
+    angulo: "Gigantes: tasa de empleo frente a EE. UU. y China. Elige: protección del empleo y contratos temporales. Dentro: paro juvenil, jóvenes que ni estudian ni trabajan y edad de emancipación."
+    fuentes: [Eurostat lfsi_emp_a, Eurostat une_rt_a, Eurostat edat_lfse_20, Eurostat yth_demo_030, Banco Mundial]
+    relacionada: n06
+
+  - id: a08
+    tema_id: demografia
+    codigo: DM
+    titulo: Demografía y migración
+    angulo: "Gigantes: envejecimiento y natalidad en los tres bloques. Elige: la migración como respuesta al envejecimiento. Dentro: fecundidad, población extranjera y saldo migratorio por país."
+    fuentes: [Banco Mundial SP.DYN.TFRT.IN, Banco Mundial SP.POP.65UP.TO.ZS, Eurostat demo_find, Eurostat migr_pop3ctb]
+    relacionada: n08
+
+  - id: a09
+    tema_id: educacion
+    codigo: ED
+    titulo: Educación y talento
+    angulo: "Gigantes: estudios superiores e investigadores frente a EE. UU. y China. Elige: gasto público en educación. Dentro: abandono escolar y universitarios por país."
+    fuentes: [Eurostat edat_lfse_03, Eurostat edat_lfse_14, Banco Mundial SP.POP.SCIE.RD.P6, Banco Mundial SE.XPD.TOTL.GD.ZS]
+    relacionada: n10

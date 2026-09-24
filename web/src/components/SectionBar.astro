@@ -1,7 +1,7 @@
 ---
 // Barra fija bajo la cabecera: navegación por secciones de la página + "Destacar un país".
-import { loadChart } from "../lib/data";
-import { ui, type Lang } from "../lib/i18n";
+import FocusSelect from "./FocusSelect.astro";
+import type { Lang } from "../lib/i18n";
 
 interface Props {
   lang: Lang;
@@ -9,14 +9,6 @@ interface Props {
   items: { href: string; name: string; short?: string }[];
 }
 const { lang, label, items } = Astro.props;
-const t = ui[lang];
-
-// Países de la UE, ordenados por nombre en el idioma de la página
-const geos = loadChart("d1-empresas-ia").geos;
-const countries = Object.entries(geos)
-  .filter(([, g]) => g.eu && !g.aggregate)
-  .map(([code, g]) => ({ code, name: g[lang] }))
-  .sort((a, b) => a.name.localeCompare(b.name, lang));
 ---
 <div class="sectionbar">
   <div class="wrap inner">
@@ -27,13 +19,7 @@ const countries = Object.entries(geos)
         ))}
       </ul>
     </nav>
-    <label class="focus">
-      <span>{t.yourCountry}</span>
-      <select data-focus-select>
-        <option value="">{t.none}</option>
-        {countries.map((o) => <option value={o.code}>{o.name}</option>)}
-      </select>
-    </label>
+    <FocusSelect lang={lang} />
   </div>
 </div>
 
@@ -60,22 +46,11 @@ const countries = Object.entries(geos)
   .sb-name { font-family: var(--font-display); font-weight: 800; font-size: 1.3rem; line-height: 1.05; white-space: nowrap; }
   .sb-short { font-family: var(--font-semi); font-size: 0.85rem; color: var(--ink-3); }
 
-  .focus { display: grid; gap: 0.2rem; font-family: var(--font-semi); font-size: 0.85rem; color: var(--ink-3); flex: none; }
-  .focus select {
-    font: 600 1rem var(--font-semi);
-    color: var(--ink);
-    background: var(--paper-raised);
-    border: 1px solid var(--rule-strong);
-    border-radius: 4px;
-    padding: 0.35rem 2rem 0.35rem 0.6rem;
-    min-height: 36px;
-  }
 
   @media (max-width: 760px) {
     .inner { flex-direction: column; align-items: stretch; gap: 0; }
     .sb-short { display: none; }
     .sb-name { font-size: 1.1rem; }
     a { padding-block: 0.55rem; }
-    .focus { grid-template-columns: auto 1fr; align-items: center; gap: 0.6rem; padding-bottom: 0.5rem; }
   }
 </style>

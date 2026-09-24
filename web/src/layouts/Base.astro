@@ -58,7 +58,8 @@ const canonical = new URL(path[lang], site);
         </a>
         <nav aria-label={lang === "es" ? "Principal" : "Main"}>
           <a href={paths.themes[lang]} aria-current={section === "themes" ? "page" : undefined}>{t.navThemes}</a>
-          <a href={paths.lenses[lang]} aria-current={section === "lenses" ? "page" : undefined}>{t.navLenses}</a>
+          <a href={paths.notes[lang]} aria-current={section === "notes" ? "page" : undefined}>{t.navNotes}</a>
+          <a class="secondary" href={paths.lenses[lang]} aria-current={section === "lenses" ? "page" : undefined}>{t.navLenses}</a>
           <a class="secondary" href={paths.method[lang]} aria-current={section === "method" ? "page" : undefined}>{t.navMethod}</a>
           <a class="lang" href={path[other]} hreflang={other} lang={other}>{t.otherLang}</a>
         </nav>
