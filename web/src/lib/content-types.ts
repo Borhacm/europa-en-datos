@@ -49,6 +49,8 @@ export interface Note {
   /** Tema al que pertenece (id de un tema publicado) */
   theme: string;
   body: Block[];
+  /** Fuentes de las afirmaciones del texto que no salen de los gráficos (leyes, informes...) */
+  sources?: { name: string; url: string }[];
 }
 
 /** Atajo para párrafos bilingües */

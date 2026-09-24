@@ -17,7 +17,7 @@ Temas publicados: **IA y digital**, **Comercio y dependencias**, **Productividad
 
 ## Publicación editorial
 
-Cada semana se prepara una nota y un artículo a partir de [editorial/calendario.yaml](editorial/calendario.yaml), siguiendo [editorial/MANUAL.md](editorial/MANUAL.md). Dos tareas programadas en la app de Claude preparan cada entrada en una rama y abren un pull request con vista previa; se publica al fusionarlo.
+Cada semana se prepara una nota y un artículo a partir de [editorial/calendario.yaml](editorial/calendario.yaml), siguiendo [editorial/MANUAL.md](editorial/MANUAL.md). Dos tareas programadas en la app de Claude preparan cada entrada en una rama, abren un pull request con su tabla de verificación y, si todas las comprobaciones pasan, lo fusionan: la publicación es automática.
 
 Cada tema y cada nota vive en sus propios archivos, así que un tema nuevo solo añade archivos:
 
