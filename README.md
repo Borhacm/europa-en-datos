@@ -51,3 +51,13 @@ web/src/lib/charts-config.ts  cómo se dibuja cada gráfico
 docs/              inventario de datos y decisiones del piloto
 data/              salida del pipeline (data/raw es caché, no se versiona)
 ```
+
+## Licencias de los datos
+
+Cada gráfico indica su fuente y su licencia, y lo mismo aplica a sus datos en `data/charts/`.
+
+- **Eurostat, OCDE, Banco Mundial, OIT y Epoch AI**: CC BY 4.0. Se pueden reutilizar citando la fuente.
+- **V-Dem** (gráficos IA-E2, LI-G1 y LI-D1): CC BY-SA 4.0. Los datos derivados deben compartirse con la misma licencia.
+- **Geometrías NUTS** (`data/geo/`): © EuroGeographics para los límites administrativos, distribuidas por Eurostat GISCO.
+
+Proyecto independiente de [Bocal](https://bocal.online). No está afiliado a la Unión Europea ni a ninguna de las fuentes citadas.
