@@ -2,7 +2,20 @@
 
 export type Bi = { es: string; en: string };
 export type LensId = "gigantes" | "elige" | "dentro";
-export type Block = { p: Bi } | { fig: string; code: string };
+export type Block =
+  | { p: Bi }
+  /** Gráfico. `code` corto ("1") se prefija con el código de la pieza; uno completo ("N02-1") se muestra tal cual */
+  | { fig: string; code: string }
+  /** Subtítulo de sección (los análisis generan el índice con ellos) */
+  | { h: Bi; id: string }
+  /** Lista de puntos */
+  | { list: Bi[] }
+  /** Pasos numerados, para procedimientos */
+  | { steps: { title: Bi; text: Bi }[] }
+  /** Cita breve atribuida, con su fuente */
+  | { quote: Bi; who: Bi; url: string }
+  /** Cronología */
+  | { timeline: { date: Bi; text: Bi }[] };
 
 export interface Lens {
   id: LensId;
@@ -38,6 +51,8 @@ export interface Theme {
 export interface Note {
   /** Identificador del calendario editorial, en minúsculas: "n01" */
   id: string;
+  /** "analisis": pieza larga con secciones e índice. Por defecto, nota breve */
+  kind?: "nota" | "analisis";
   /** Código visible y citable: "N01". Los gráficos se numeran N01-1, N01-2... */
   code: string;
   slug: Bi;
