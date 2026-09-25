@@ -1,0 +1,420 @@
+{
+ "id": "sae1-gasto-publico",
+ "lens": "elige",
+ "theme": "sanidad",
+ "title": {
+  "es": "Tres de cada cuatro euros de la sanidad europea son públicos; en EE. UU. y en China, algo más de la mitad",
+  "en": "Three in every four euros of European healthcare are public; in the US and China, just over half"
+ },
+ "subtitle": {
+  "es": "Gasto sanitario de las administraciones públicas y la seguridad social, en % del gasto sanitario corriente",
+  "en": "Health spending by government and social security, as % of current health expenditure"
+ },
+ "unit": {
+  "es": "% del gasto sanitario",
+  "en": "% of health spending"
+ },
+ "source": {
+  "name": "Banco Mundial, gasto sanitario público nacional (% del gasto sanitario corriente)",
+  "dataset": "SH.XPD.GHED.CH.ZS",
+  "url": "https://data.worldbank.org/indicator/SH.XPD.GHED.CH.ZS",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Estimaciones de la Organización Mundial de la Salud (base de datos de gasto sanitario mundial) publicadas por el Banco Mundial.",
+   "Se muestra hasta 2023, el último año con datos de casi todos los países.",
+   "Incluye los seguros sociales obligatorios. En EE. UU., Medicare y Medicaid cuentan como gasto público; los seguros de empresa, como privado.",
+   "No incluye la ayuda exterior, muy pequeña en estos países."
+  ],
+  "en": [
+   "World Health Organization estimates (Global Health Expenditure Database) published by the World Bank.",
+   "Shown up to 2023, the last year with data for almost every country.",
+   "Includes compulsory social health insurance. In the US, Medicare and Medicaid count as public spending; employer insurance, as private.",
+   "Excludes foreign aid, which is very small in these countries."
+  ]
+ },
+ "retrieved": "2026-09-25",
+ "geos": {
+  "CHN": {
+   "es": "China",
+   "en": "China",
+   "eu": false,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "USA": {
+   "es": "Estados Unidos",
+   "en": "United States",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "CHN",
+   "time": "2000",
+   "value": 21.98
+  },
+  {
+   "geo": "CHN",
+   "time": "2001",
+   "value": 22.92
+  },
+  {
+   "geo": "CHN",
+   "time": "2002",
+   "value": 25.39
+  },
+  {
+   "geo": "CHN",
+   "time": "2003",
+   "value": 28.37
+  },
+  {
+   "geo": "CHN",
+   "time": "2004",
+   "value": 30.24
+  },
+  {
+   "geo": "CHN",
+   "time": "2005",
+   "value": 32.76
+  },
+  {
+   "geo": "CHN",
+   "time": "2006",
+   "value": 35.14
+  },
+  {
+   "geo": "CHN",
+   "time": "2007",
+   "value": 39.03
+  },
+  {
+   "geo": "CHN",
+   "time": "2008",
+   "value": 44.52
+  },
+  {
+   "geo": "CHN",
+   "time": "2009",
+   "value": 49.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2010",
+   "value": 51.91
+  },
+  {
+   "geo": "CHN",
+   "time": "2011",
+   "value": 53.72
+  },
+  {
+   "geo": "CHN",
+   "time": "2012",
+   "value": 55.73
+  },
+  {
+   "geo": "CHN",
+   "time": "2013",
+   "value": 57.05
+  },
+  {
+   "geo": "CHN",
+   "time": "2014",
+   "value": 58.41
+  },
+  {
+   "geo": "CHN",
+   "time": "2015",
+   "value": 60.18
+  },
+  {
+   "geo": "CHN",
+   "time": "2016",
+   "value": 58.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2017",
+   "value": 56.67
+  },
+  {
+   "geo": "CHN",
+   "time": "2018",
+   "value": 56.42
+  },
+  {
+   "geo": "CHN",
+   "time": "2019",
+   "value": 55.98
+  },
+  {
+   "geo": "CHN",
+   "time": "2020",
+   "value": 54.72
+  },
+  {
+   "geo": "CHN",
+   "time": "2021",
+   "value": 54.07
+  },
+  {
+   "geo": "CHN",
+   "time": "2022",
+   "value": 57.69
+  },
+  {
+   "geo": "CHN",
+   "time": "2023",
+   "value": 57.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2000",
+   "value": 74.83
+  },
+  {
+   "geo": "EU27",
+   "time": "2001",
+   "value": 74.99
+  },
+  {
+   "geo": "EU27",
+   "time": "2002",
+   "value": 74.97
+  },
+  {
+   "geo": "EU27",
+   "time": "2003",
+   "value": 74.75
+  },
+  {
+   "geo": "EU27",
+   "time": "2004",
+   "value": 74.22
+  },
+  {
+   "geo": "EU27",
+   "time": "2005",
+   "value": 74.38
+  },
+  {
+   "geo": "EU27",
+   "time": "2006",
+   "value": 73.82
+  },
+  {
+   "geo": "EU27",
+   "time": "2007",
+   "value": 73.72
+  },
+  {
+   "geo": "EU27",
+   "time": "2008",
+   "value": 74.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2009",
+   "value": 74.36
+  },
+  {
+   "geo": "EU27",
+   "time": "2010",
+   "value": 74.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2011",
+   "value": 73.81
+  },
+  {
+   "geo": "EU27",
+   "time": "2012",
+   "value": 73.46
+  },
+  {
+   "geo": "EU27",
+   "time": "2013",
+   "value": 73.78
+  },
+  {
+   "geo": "EU27",
+   "time": "2014",
+   "value": 73.69
+  },
+  {
+   "geo": "EU27",
+   "time": "2015",
+   "value": 73.93
+  },
+  {
+   "geo": "EU27",
+   "time": "2016",
+   "value": 74.67
+  },
+  {
+   "geo": "EU27",
+   "time": "2017",
+   "value": 74.66
+  },
+  {
+   "geo": "EU27",
+   "time": "2018",
+   "value": 74.73
+  },
+  {
+   "geo": "EU27",
+   "time": "2019",
+   "value": 74.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2020",
+   "value": 76.52
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "value": 76.4
+  },
+  {
+   "geo": "EU27",
+   "time": "2022",
+   "value": 76.37
+  },
+  {
+   "geo": "EU27",
+   "time": "2023",
+   "value": 74.43
+  },
+  {
+   "geo": "USA",
+   "time": "2000",
+   "value": 44.38
+  },
+  {
+   "geo": "USA",
+   "time": "2001",
+   "value": 45.32
+  },
+  {
+   "geo": "USA",
+   "time": "2002",
+   "value": 45.2
+  },
+  {
+   "geo": "USA",
+   "time": "2003",
+   "value": 44.98
+  },
+  {
+   "geo": "USA",
+   "time": "2004",
+   "value": 45.42
+  },
+  {
+   "geo": "USA",
+   "time": "2005",
+   "value": 45.48
+  },
+  {
+   "geo": "USA",
+   "time": "2006",
+   "value": 46.31
+  },
+  {
+   "geo": "USA",
+   "time": "2007",
+   "value": 46.34
+  },
+  {
+   "geo": "USA",
+   "time": "2008",
+   "value": 47.49
+  },
+  {
+   "geo": "USA",
+   "time": "2009",
+   "value": 48.59
+  },
+  {
+   "geo": "USA",
+   "time": "2010",
+   "value": 48.96
+  },
+  {
+   "geo": "USA",
+   "time": "2011",
+   "value": 49.14
+  },
+  {
+   "geo": "USA",
+   "time": "2012",
+   "value": 48.85
+  },
+  {
+   "geo": "USA",
+   "time": "2013",
+   "value": 49.52
+  },
+  {
+   "geo": "USA",
+   "time": "2014",
+   "value": 50.79
+  },
+  {
+   "geo": "USA",
+   "time": "2015",
+   "value": 51.4
+  },
+  {
+   "geo": "USA",
+   "time": "2016",
+   "value": 51.27
+  },
+  {
+   "geo": "USA",
+   "time": "2017",
+   "value": 51.27
+  },
+  {
+   "geo": "USA",
+   "time": "2018",
+   "value": 51.6
+  },
+  {
+   "geo": "USA",
+   "time": "2019",
+   "value": 51.96
+  },
+  {
+   "geo": "USA",
+   "time": "2020",
+   "value": 56.93
+  },
+  {
+   "geo": "USA",
+   "time": "2021",
+   "value": 55.45
+  },
+  {
+   "geo": "USA",
+   "time": "2022",
+   "value": 55.17
+  },
+  {
+   "geo": "USA",
+   "time": "2023",
+   "value": 53.95
+  }
+ ]
+}

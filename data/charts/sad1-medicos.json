@@ -1,0 +1,370 @@
+{
+ "id": "sad1-medicos",
+ "lens": "dentro",
+ "theme": "sanidad",
+ "title": {
+  "es": "En Grecia, Italia o Austria hay más de 560 médicos por cada 100.000 habitantes; en Letonia o Bélgica, unos 340",
+  "en": "Greece, Italy and Austria have more than 560 doctors per 100,000 people; Latvia and Belgium, about 340"
+ },
+ "subtitle": {
+  "es": "Médicos en ejercicio por cada 100.000 habitantes, 2024",
+  "en": "Practising physicians per 100,000 people, 2024"
+ },
+ "unit": {
+  "es": "por 100.000 habitantes",
+  "en": "per 100,000 people"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "hlth_rs_prs2",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/hlth_rs_prs2/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Médicos que atienden directamente a pacientes. Eslovaquia no publica ese dato: se usan los médicos profesionalmente activos, que incluyen también a los que trabajan en gestión o investigación.",
+   "Grecia y Portugal solo publican médicos en ejercicio desde 2023, y otros países, como Italia o Francia, tienen saltos en la serie: por eso se muestra solo el último año.",
+   "Eurostat marca el dato de Bélgica con una ruptura de serie y el de Eslovenia con una definición distinta; el de España es una estimación.",
+   "No hay un dato agregado de la UE para este indicador."
+  ],
+  "en": [
+   "Physicians who treat patients directly. Slovakia does not publish this figure: professionally active physicians are used instead, which also include those working in management or research.",
+   "Greece and Portugal have only reported practising physicians since 2023, and other countries, such as Italy or France, have jumps in the series: that is why only the latest year is shown.",
+   "Eurostat flags Belgium's figure with a break in series and Slovenia's with a different definition; Spain's is an estimate.",
+   "There is no EU aggregate for this indicator."
+  ]
+ },
+ "retrieved": "2026-09-25",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2024",
+   "value": 563.51,
+   "wstatus": "PRACT"
+  },
+  {
+   "geo": "BEL",
+   "time": "2024",
+   "value": 334.25,
+   "wstatus": "PRACT",
+   "flag": "b"
+  },
+  {
+   "geo": "BGR",
+   "time": "2024",
+   "value": 467.07,
+   "wstatus": "PRACT"
+  },
+  {
+   "geo": "CYP",
+   "time": "2024",
+   "value": 549.62,
+   "wstatus": "PRACT"
+  },
+  {
+   "geo": "CZE",
+   "time": "2024",
+   "value": 429.41,
+   "wstatus": "PRACT"
+  },
+  {
+   "geo": "DEU",
+   "time": "2024",
+   "value": 475.4,
+   "wstatus": "PRACT"
+  },
+  {
+   "geo": "DNK",
+   "time": "2024",
+   "value": 466.42,
+   "wstatus": "PRACT"
+  },
+  {
+   "geo": "ESP",
+   "time": "2024",
+   "value": 463.78,
+   "wstatus": "PRACT",
+   "flag": "e"
+  },
+  {
+   "geo": "EST",
+   "time": "2024",
+   "value": 357.86,
+   "wstatus": "PRACT"
+  },
+  {
+   "geo": "FIN",
+   "time": "2024",
+   "value": 362.12,
+   "wstatus": "PRACT"
+  },
+  {
+   "geo": "FRA",
+   "time": "2024",
+   "value": 393.85,
+   "wstatus": "PRACT"
+  },
+  {
+   "geo": "GRC",
+   "time": "2024",
+   "value": 626.89,
+   "wstatus": "PRACT"
+  },
+  {
+   "geo": "HRV",
+   "time": "2024",
+   "value": 410.14,
+   "wstatus": "PRACT"
+  },
+  {
+   "geo": "HUN",
+   "time": "2024",
+   "value": 371.53,
+   "wstatus": "PRACT"
+  },
+  {
+   "geo": "IRL",
+   "time": "2024",
+   "value": 388.46,
+   "wstatus": "PRACT"
+  },
+  {
+   "geo": "ITA",
+   "time": "2024",
+   "value": 575.43,
+   "wstatus": "PRACT"
+  },
+  {
+   "geo": "LTU",
+   "time": "2024",
+   "value": 466.96,
+   "wstatus": "PRACT"
+  },
+  {
+   "geo": "LUX",
+   "time": "2024",
+   "value": 408.86,
+   "wstatus": "PRACT"
+  },
+  {
+   "geo": "LVA",
+   "time": "2024",
+   "value": 340.19,
+   "wstatus": "PRACT"
+  },
+  {
+   "geo": "MLT",
+   "time": "2024",
+   "value": 458.12,
+   "wstatus": "PRACT"
+  },
+  {
+   "geo": "NLD",
+   "time": "2024",
+   "value": 395.61,
+   "wstatus": "PRACT"
+  },
+  {
+   "geo": "POL",
+   "time": "2024",
+   "value": 386.2,
+   "wstatus": "PRACT"
+  },
+  {
+   "geo": "PRT",
+   "time": "2024",
+   "value": 431.35,
+   "wstatus": "PRACT"
+  },
+  {
+   "geo": "ROU",
+   "time": "2024",
+   "value": 381.24,
+   "wstatus": "PRACT"
+  },
+  {
+   "geo": "SVK",
+   "time": "2024",
+   "value": 394.74,
+   "wstatus": "PACT",
+   "flag": "d"
+  },
+  {
+   "geo": "SVN",
+   "time": "2024",
+   "value": 356.91,
+   "wstatus": "PRACT",
+   "flag": "d"
+  },
+  {
+   "geo": "SWE",
+   "time": "2024",
+   "value": 465.86,
+   "wstatus": "PRACT"
+  }
+ ]
+}

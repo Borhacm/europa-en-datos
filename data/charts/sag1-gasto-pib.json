@@ -1,0 +1,418 @@
+{
+ "id": "sag1-gasto-pib",
+ "lens": "gigantes",
+ "theme": "sanidad",
+ "title": {
+  "es": "EE. UU. dedica a la sanidad el 16,7 % de su PIB; la UE, el 10 %, y China, menos del 6 %",
+  "en": "The US spends 16.7% of its GDP on health; the EU, 10%, and China, less than 6%"
+ },
+ "subtitle": {
+  "es": "Gasto sanitario corriente, público y privado, en % del PIB",
+  "en": "Current health expenditure, public and private, as % of GDP"
+ },
+ "unit": {
+  "es": "% del PIB",
+  "en": "% of GDP"
+ },
+ "source": {
+  "name": "Banco Mundial, gasto sanitario corriente (% del PIB)",
+  "dataset": "SH.XPD.CHEX.GD.ZS",
+  "url": "https://data.worldbank.org/indicator/SH.XPD.CHEX.GD.ZS",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Gasto sanitario corriente: público y privado, sin inversiones en hospitales o equipos.",
+   "Estimaciones de la Organización Mundial de la Salud (base de datos de gasto sanitario mundial) publicadas por el Banco Mundial.",
+   "Se muestra hasta 2023, el último año con datos de casi todos los países: el agregado de la UE para años posteriores se calcula con menos de 27."
+  ],
+  "en": [
+   "Current health expenditure: public and private, excluding investment in hospitals or equipment.",
+   "World Health Organization estimates (Global Health Expenditure Database) published by the World Bank.",
+   "Shown up to 2023, the last year with data for almost every country: the EU aggregate for later years is computed from fewer than 27."
+  ]
+ },
+ "retrieved": "2026-09-25",
+ "geos": {
+  "CHN": {
+   "es": "China",
+   "en": "China",
+   "eu": false,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "USA": {
+   "es": "Estados Unidos",
+   "en": "United States",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "CHN",
+   "time": "2000",
+   "value": 4.45
+  },
+  {
+   "geo": "CHN",
+   "time": "2001",
+   "value": 4.2
+  },
+  {
+   "geo": "CHN",
+   "time": "2002",
+   "value": 4.32
+  },
+  {
+   "geo": "CHN",
+   "time": "2003",
+   "value": 4.36
+  },
+  {
+   "geo": "CHN",
+   "time": "2004",
+   "value": 4.23
+  },
+  {
+   "geo": "CHN",
+   "time": "2005",
+   "value": 4.11
+  },
+  {
+   "geo": "CHN",
+   "time": "2006",
+   "value": 3.89
+  },
+  {
+   "geo": "CHN",
+   "time": "2007",
+   "value": 3.62
+  },
+  {
+   "geo": "CHN",
+   "time": "2008",
+   "value": 3.84
+  },
+  {
+   "geo": "CHN",
+   "time": "2009",
+   "value": 4.28
+  },
+  {
+   "geo": "CHN",
+   "time": "2010",
+   "value": 4.16
+  },
+  {
+   "geo": "CHN",
+   "time": "2011",
+   "value": 4.27
+  },
+  {
+   "geo": "CHN",
+   "time": "2012",
+   "value": 4.49
+  },
+  {
+   "geo": "CHN",
+   "time": "2013",
+   "value": 4.64
+  },
+  {
+   "geo": "CHN",
+   "time": "2014",
+   "value": 4.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2015",
+   "value": 4.85
+  },
+  {
+   "geo": "CHN",
+   "time": "2016",
+   "value": 4.88
+  },
+  {
+   "geo": "CHN",
+   "time": "2017",
+   "value": 4.97
+  },
+  {
+   "geo": "CHN",
+   "time": "2018",
+   "value": 5.07
+  },
+  {
+   "geo": "CHN",
+   "time": "2019",
+   "value": 5.26
+  },
+  {
+   "geo": "CHN",
+   "time": "2020",
+   "value": 5.5
+  },
+  {
+   "geo": "CHN",
+   "time": "2021",
+   "value": 5.26
+  },
+  {
+   "geo": "CHN",
+   "time": "2022",
+   "value": 5.88
+  },
+  {
+   "geo": "CHN",
+   "time": "2023",
+   "value": 5.94
+  },
+  {
+   "geo": "EU27",
+   "time": "2000",
+   "value": 8.42
+  },
+  {
+   "geo": "EU27",
+   "time": "2001",
+   "value": 8.54
+  },
+  {
+   "geo": "EU27",
+   "time": "2002",
+   "value": 8.76
+  },
+  {
+   "geo": "EU27",
+   "time": "2003",
+   "value": 8.97
+  },
+  {
+   "geo": "EU27",
+   "time": "2004",
+   "value": 8.98
+  },
+  {
+   "geo": "EU27",
+   "time": "2005",
+   "value": 9.04
+  },
+  {
+   "geo": "EU27",
+   "time": "2006",
+   "value": 9.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2007",
+   "value": 8.89
+  },
+  {
+   "geo": "EU27",
+   "time": "2008",
+   "value": 9.16
+  },
+  {
+   "geo": "EU27",
+   "time": "2009",
+   "value": 9.91
+  },
+  {
+   "geo": "EU27",
+   "time": "2010",
+   "value": 9.84
+  },
+  {
+   "geo": "EU27",
+   "time": "2011",
+   "value": 9.77
+  },
+  {
+   "geo": "EU27",
+   "time": "2012",
+   "value": 9.88
+  },
+  {
+   "geo": "EU27",
+   "time": "2013",
+   "value": 9.93
+  },
+  {
+   "geo": "EU27",
+   "time": "2014",
+   "value": 9.96
+  },
+  {
+   "geo": "EU27",
+   "time": "2015",
+   "value": 9.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2016",
+   "value": 9.89
+  },
+  {
+   "geo": "EU27",
+   "time": "2017",
+   "value": 9.85
+  },
+  {
+   "geo": "EU27",
+   "time": "2018",
+   "value": 9.83
+  },
+  {
+   "geo": "EU27",
+   "time": "2019",
+   "value": 9.87
+  },
+  {
+   "geo": "EU27",
+   "time": "2020",
+   "value": 10.8
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "value": 10.81
+  },
+  {
+   "geo": "EU27",
+   "time": "2022",
+   "value": 10.3
+  },
+  {
+   "geo": "EU27",
+   "time": "2023",
+   "value": 10.0
+  },
+  {
+   "geo": "USA",
+   "time": "2000",
+   "value": 12.49
+  },
+  {
+   "geo": "USA",
+   "time": "2001",
+   "value": 13.17
+  },
+  {
+   "geo": "USA",
+   "time": "2002",
+   "value": 13.99
+  },
+  {
+   "geo": "USA",
+   "time": "2003",
+   "value": 14.51
+  },
+  {
+   "geo": "USA",
+   "time": "2004",
+   "value": 14.55
+  },
+  {
+   "geo": "USA",
+   "time": "2005",
+   "value": 14.58
+  },
+  {
+   "geo": "USA",
+   "time": "2006",
+   "value": 14.71
+  },
+  {
+   "geo": "USA",
+   "time": "2007",
+   "value": 14.92
+  },
+  {
+   "geo": "USA",
+   "time": "2008",
+   "value": 15.21
+  },
+  {
+   "geo": "USA",
+   "time": "2009",
+   "value": 16.2
+  },
+  {
+   "geo": "USA",
+   "time": "2010",
+   "value": 16.2
+  },
+  {
+   "geo": "USA",
+   "time": "2011",
+   "value": 16.14
+  },
+  {
+   "geo": "USA",
+   "time": "2012",
+   "value": 16.12
+  },
+  {
+   "geo": "USA",
+   "time": "2013",
+   "value": 15.95
+  },
+  {
+   "geo": "USA",
+   "time": "2014",
+   "value": 16.14
+  },
+  {
+   "geo": "USA",
+   "time": "2015",
+   "value": 16.4
+  },
+  {
+   "geo": "USA",
+   "time": "2016",
+   "value": 16.69
+  },
+  {
+   "geo": "USA",
+   "time": "2017",
+   "value": 16.64
+  },
+  {
+   "geo": "USA",
+   "time": "2018",
+   "value": 16.51
+  },
+  {
+   "geo": "USA",
+   "time": "2019",
+   "value": 16.55
+  },
+  {
+   "geo": "USA",
+   "time": "2020",
+   "value": 18.52
+  },
+  {
+   "geo": "USA",
+   "time": "2021",
+   "value": 17.35
+  },
+  {
+   "geo": "USA",
+   "time": "2022",
+   "value": 16.53
+  },
+  {
+   "geo": "USA",
+   "time": "2023",
+   "value": 16.69
+  }
+ ]
+}
