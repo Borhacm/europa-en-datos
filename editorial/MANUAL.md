@@ -34,7 +34,7 @@ Crea la rama: `git checkout -b editorial/<id>-<palabra-clave>` (por ejemplo `edi
 ## 3. Buscar y comprobar los datos
 
 - Empieza por las fuentes del calendario, pero compruébalas: que existen, qué dimensiones tienen y cuál es el **último año con datos para casi todos los países**. Si una fuente no sirve, busca otra fiable (Eurostat, OCDE, Banco Mundial, OIT, FMI, V-Dem) y explícalo en el pull request.
-- Lectores disponibles en `pipeline/lib/sources.py`: `eurostat`, `oecd`, `worldbank`, `ilo`, `vdem`, `epoch_models`. Funciones comunes en `pipeline/charts/common.py`: `from_eurostat`, `eurostat_source`, `worldbank_rows`, `worldbank_source`, `vdem_with_eu`, `nuts_map` (mapas regionales).
+- Lectores disponibles en `pipeline/lib/sources.py`: `eurostat`, `oecd`, `worldbank`, `ilo`, `vdem`, `epoch_models`, `bis` (estadísticas del BIS, p. ej. pagos del CPMI) y `ecb` (Data Portal del BCE). El BIS usa `XM` para la eurozona: no es la UE27, dilo en las notas. Funciones comunes en `pipeline/charts/common.py`: `from_eurostat`, `eurostat_source`, `worldbank_rows`, `worldbank_source`, `vdem_with_eu`, `nuts_map` (mapas regionales).
 - Para comparar bloques: la UE es `EU27` (UE de 27, desde 2020), EE. UU. `USA`, China `CHN`. Eurostat usa `EU27_2020`, `US` y `CN_X_HK`; el Banco Mundial `EUU`; la OIT `X92`. `pipeline/lib/geo.py` los traduce.
 - Las series con proyecciones (la OIT, por ejemplo) se cortan en el último año observado.
 

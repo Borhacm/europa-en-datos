@@ -11,6 +11,8 @@ EUROSTAT_API = "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/d
 OECD_API = "https://sdmx.oecd.org/public/rest/data"
 WORLDBANK_API = "https://api.worldbank.org/v2"
 ILO_API = "https://sdmx.ilo.org/rest/data/ILO"
+BIS_API = "https://stats.bis.org/api/v2/data/dataflow/BIS"
+ECB_API = "https://data-api.ecb.europa.eu/service/data"
 
 
 def eurostat(dataset: str, **filters) -> list[dict]:
@@ -61,6 +63,23 @@ def ilo(flow: str, key: str, start: str | None = None) -> list[dict]:
     path = fetch(url, ".csv")
     with path.open(newline="", encoding="utf-8-sig") as f:
         return list(csv.DictReader(f))
+
+
+def bis(flow: str, key: str = "*") -> list[dict]:
+    """Dataflow SDMX del BIS, p. ej. flow='WS_CPMI_CT1' (estadísticas de pagos del CPMI). Filas con REP_CTY, TIME_PERIOD, OBS_VALUE."""
+    path = fetch(f"{BIS_API}/{flow}/1.0/{key}?format=csv", ".csv")
+    with path.open(newline="", encoding="utf-8-sig") as f:
+        return [r for r in csv.DictReader(f) if r["OBS_VALUE"] not in ("", "NaN")]
+
+
+def ecb(flow: str, key: str, start: str | None = None) -> list[dict]:
+    """Dataflow del Data Portal del BCE, p. ej. flow='PSS' (pagos). Filas con REF_AREA, TIME_PERIOD, OBS_VALUE, UNIT_MULT."""
+    url = f"{ECB_API}/{flow}/{key}?format=csvdata"
+    if start:
+        url += f"&startPeriod={start}"
+    path = fetch(url, ".csv")
+    with path.open(newline="", encoding="utf-8-sig") as f:
+        return [r for r in csv.DictReader(f) if r["OBS_VALUE"]]
 
 
 def worldbank(indicator: str, countries: list[str], start: int, end: int) -> list[dict]:
