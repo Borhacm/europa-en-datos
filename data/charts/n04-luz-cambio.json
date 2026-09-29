@@ -1,0 +1,493 @@
+{
+ "id": "n04-luz-cambio",
+ "lens": "dentro",
+ "theme": "comercio",
+ "title": {
+  "es": "Desde 2021, la luz de los hogares se ha encarecido en 26 de los 27 países; en la UE, un 31,5 %",
+  "en": "Since 2021, household electricity has become more expensive in 26 of the 27 countries; in the EU, by 31.5%"
+ },
+ "subtitle": {
+  "es": "Precio de la electricidad para los hogares, con impuestos, primer semestre de 2021 y segundo semestre de 2025, en céntimos de euro por kWh",
+  "en": "Household electricity price including taxes, first half of 2021 and second half of 2025, in euro cents per kWh"
+ },
+ "unit": {
+  "es": "céntimos de euro por kWh",
+  "en": "euro cents per kWh"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "nrg_pc_204",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/nrg_pc_204/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Hogares con un consumo de entre 2.500 y 5.000 kWh al año, el tramo de referencia de Eurostat. Precio medio del semestre en euros corrientes, sin descontar la inflación.",
+   "El precio sin impuestos incluye la energía, el suministro y las redes. Los impuestos incluyen el IVA, otros impuestos y cargos, y restan las bonificaciones y ayudas públicas que se aplican a través de ellos.",
+   "El primer semestre de 2021 es el último antes de la subida de precios de la energía de 2021 y 2022.",
+   "En Malta el precio apenas ha cambiado (-0,2 %). Austria: dato estimado. Croacia y Malta: datos provisionales en 2025."
+  ],
+  "en": [
+   "Households consuming 2,500 to 5,000 kWh a year, Eurostat's reference band. Average price for the half-year in current euros, not adjusted for inflation.",
+   "The price excluding taxes covers energy, supply and networks. Taxes include VAT, other taxes and levies, net of the allowances and public support applied through them.",
+   "The first half of 2021 is the last one before the 2021-2022 energy price surge.",
+   "In Malta the price has barely changed (-0.2%). Austria: estimated. Croatia and Malta: provisional 2025 data."
+  ]
+ },
+ "retrieved": "2026-09-29",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2021-S1",
+   "value": 22.16
+  },
+  {
+   "geo": "AUT",
+   "time": "2025-S2",
+   "value": 32.72,
+   "flag": "e"
+  },
+  {
+   "geo": "BEL",
+   "time": "2021-S1",
+   "value": 27.02
+  },
+  {
+   "geo": "BEL",
+   "time": "2025-S2",
+   "value": 34.99
+  },
+  {
+   "geo": "BGR",
+   "time": "2021-S1",
+   "value": 10.24
+  },
+  {
+   "geo": "BGR",
+   "time": "2025-S2",
+   "value": 13.55
+  },
+  {
+   "geo": "CYP",
+   "time": "2021-S1",
+   "value": 19.76
+  },
+  {
+   "geo": "CYP",
+   "time": "2025-S2",
+   "value": 27.74
+  },
+  {
+   "geo": "CZE",
+   "time": "2021-S1",
+   "value": 18.02
+  },
+  {
+   "geo": "CZE",
+   "time": "2025-S2",
+   "value": 32.17
+  },
+  {
+   "geo": "DEU",
+   "time": "2021-S1",
+   "value": 31.93
+  },
+  {
+   "geo": "DEU",
+   "time": "2025-S2",
+   "value": 38.69
+  },
+  {
+   "geo": "DNK",
+   "time": "2021-S1",
+   "value": 29.0
+  },
+  {
+   "geo": "DNK",
+   "time": "2025-S2",
+   "value": 33.12
+  },
+  {
+   "geo": "ESP",
+   "time": "2021-S1",
+   "value": 23.23
+  },
+  {
+   "geo": "ESP",
+   "time": "2025-S2",
+   "value": 26.69
+  },
+  {
+   "geo": "EST",
+   "time": "2021-S1",
+   "value": 13.24
+  },
+  {
+   "geo": "EST",
+   "time": "2025-S2",
+   "value": 23.03
+  },
+  {
+   "geo": "EU27",
+   "time": "2021-S1",
+   "value": 22.03
+  },
+  {
+   "geo": "EU27",
+   "time": "2025-S2",
+   "value": 28.96
+  },
+  {
+   "geo": "FIN",
+   "time": "2021-S1",
+   "value": 17.67
+  },
+  {
+   "geo": "FIN",
+   "time": "2025-S2",
+   "value": 22.54
+  },
+  {
+   "geo": "FRA",
+   "time": "2021-S1",
+   "value": 19.46
+  },
+  {
+   "geo": "FRA",
+   "time": "2025-S2",
+   "value": 25.61
+  },
+  {
+   "geo": "GRC",
+   "time": "2021-S1",
+   "value": 16.8
+  },
+  {
+   "geo": "GRC",
+   "time": "2025-S2",
+   "value": 23.81
+  },
+  {
+   "geo": "HRV",
+   "time": "2021-S1",
+   "value": 12.91
+  },
+  {
+   "geo": "HRV",
+   "time": "2025-S2",
+   "value": 16.58,
+   "flag": "p"
+  },
+  {
+   "geo": "HUN",
+   "time": "2021-S1",
+   "value": 10.1
+  },
+  {
+   "geo": "HUN",
+   "time": "2025-S2",
+   "value": 10.82
+  },
+  {
+   "geo": "IRL",
+   "time": "2021-S1",
+   "value": 25.55
+  },
+  {
+   "geo": "IRL",
+   "time": "2025-S2",
+   "value": 40.42
+  },
+  {
+   "geo": "ITA",
+   "time": "2021-S1",
+   "value": 22.59
+  },
+  {
+   "geo": "ITA",
+   "time": "2025-S2",
+   "value": 29.66
+  },
+  {
+   "geo": "LTU",
+   "time": "2021-S1",
+   "value": 13.48
+  },
+  {
+   "geo": "LTU",
+   "time": "2025-S2",
+   "value": 19.55
+  },
+  {
+   "geo": "LUX",
+   "time": "2021-S1",
+   "value": 19.88
+  },
+  {
+   "geo": "LUX",
+   "time": "2025-S2",
+   "value": 26.65
+  },
+  {
+   "geo": "LVA",
+   "time": "2021-S1",
+   "value": 14.03
+  },
+  {
+   "geo": "LVA",
+   "time": "2025-S2",
+   "value": 24.52
+  },
+  {
+   "geo": "MLT",
+   "time": "2021-S1",
+   "value": 12.85
+  },
+  {
+   "geo": "MLT",
+   "time": "2025-S2",
+   "value": 12.82,
+   "flag": "p"
+  },
+  {
+   "geo": "NLD",
+   "time": "2021-S1",
+   "value": 12.84
+  },
+  {
+   "geo": "NLD",
+   "time": "2025-S2",
+   "value": 25.58
+  },
+  {
+   "geo": "POL",
+   "time": "2021-S1",
+   "value": 15.48
+  },
+  {
+   "geo": "POL",
+   "time": "2025-S2",
+   "value": 27.09
+  },
+  {
+   "geo": "PRT",
+   "time": "2021-S1",
+   "value": 20.89
+  },
+  {
+   "geo": "PRT",
+   "time": "2025-S2",
+   "value": 24.35
+  },
+  {
+   "geo": "ROU",
+   "time": "2021-S1",
+   "value": 15.36
+  },
+  {
+   "geo": "ROU",
+   "time": "2025-S2",
+   "value": 28.93
+  },
+  {
+   "geo": "SVK",
+   "time": "2021-S1",
+   "value": 16.68
+  },
+  {
+   "geo": "SVK",
+   "time": "2025-S2",
+   "value": 18.53
+  },
+  {
+   "geo": "SVN",
+   "time": "2021-S1",
+   "value": 16.62
+  },
+  {
+   "geo": "SVN",
+   "time": "2025-S2",
+   "value": 21.21
+  },
+  {
+   "geo": "SWE",
+   "time": "2021-S1",
+   "value": 21.14
+  },
+  {
+   "geo": "SWE",
+   "time": "2025-S2",
+   "value": 27.11
+  }
+ ]
+}
