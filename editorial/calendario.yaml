@@ -103,6 +103,13 @@ notas:
     fuentes: [Eurostat edat_lfse_03]
 
 articulos:
+  - id: a10
+    tema_id: dinero
+    codigo: DI
+    titulo: El euro digital y el futuro del dinero
+    angulo: "Gigantes: efectivo en circulación (% del PIB) y pagos sin efectivo por habitante en la eurozona, EE. UU. y China; China ya tiene su e-CNY y EE. UU. ha optado por las stablecoins privadas en lugar de un dólar digital. Elige: por qué la UE quiere un euro digital (soberanía frente a Visa, Mastercard y las stablecoins en dólares, privacidad, mantener el dinero público) y qué cuesta o preocupa (bancos, límites de tenencia, privacidad). Dentro: pagos con tarjeta por habitante y uso del efectivo en cada país. Comprobar en fuentes oficiales el estado legislativo y el calendario del BCE; nada de fechas sin fuente. Puede usar los bloques de análisis (h, timeline, quote) si ayudan."
+    fuentes: ["BIS WS_CPMI_CT1 (efectivo en % del PIB, pagos sin efectivo por habitante; XM = eurozona, US, CN)", "BCE PAY (pagos por país, semestral; p. ej. H..W0.CP0.1._Z.N.PN = número de pagos con tarjeta)", "BCE estudio SPACE (uso del efectivo en el punto de venta)", "BCE y Comisión Europea: propuesta de reglamento del euro digital"]
+
   - id: a01
     tema_id: sanidad
     codigo: SA
