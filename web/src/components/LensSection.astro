@@ -1,7 +1,7 @@
 ---
 // Una mirada dentro de un tema: titular, entradilla, texto y gráficos.
 // En la página del tema el titular es la mirada; en la página de la mirada, el tema.
-import Figure from "./Figure.astro";
+import Blocks from "./Blocks.astro";
 import type { ThemeLens } from "../lib/themes";
 import type { Lang } from "../lib/i18n";
 
@@ -20,11 +20,7 @@ const { lang, anchor, heading, content, codePrefix, crossLink } = Astro.props;
     <h2 id={`${anchor}-h`}>{heading}</h2>
     <p class="lede">{content.lede[lang]}</p>
   </header>
-  {content.body.map((b) =>
-    "p" in b
-      ? <p class="prose body">{b.p[lang]}</p>
-      : <Figure id={b.fig} lang={lang} code={`${codePrefix}-${b.code}`} />
-  )}
+  <Blocks lang={lang} blocks={content.body} codePrefix={codePrefix} />
   <p class="cross"><a href={crossLink.href}>{crossLink.text}</a></p>
 </section>
 

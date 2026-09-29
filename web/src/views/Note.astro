@@ -1,7 +1,7 @@
 ---
 // Una nota: uno o dos gráficos sobre un tema publicado, contados desde una sola mirada.
 import Base from "../layouts/Base.astro";
-import Figure from "../components/Figure.astro";
+import Blocks from "../components/Blocks.astro";
 import FocusSelect from "../components/FocusSelect.astro";
 import LinkList from "../components/LinkList.astro";
 import { NOTES, lensById, themeById, type Note } from "../lib/themes";
@@ -19,12 +19,16 @@ const copy = {
 }[lang];
 
 const others = NOTES.filter((n) => n.id !== note.id).slice(0, 3);
+const isAnalysis = note.kind === "analisis";
+const label = isAnalysis ? (lang === "es" ? "Análisis" : "Analysis") : copy.note;
+// Índice de un análisis: sus subtítulos
+const toc = note.body.filter((b): b is { h: { es: string; en: string }; id: string } => "h" in b);
 ---
 <Base lang={lang} path={notePath(note.slug)} section="notes" title={note.title[lang]} description={note.dek[lang]}>
   <article class="wrap note">
     <header class="note-head">
       <p class="kicker">
-        {copy.note} {note.code}.
+        {label} {note.code}.
         {" "}{copy.published} {formatDate(note.published, lang)}.
         {theme && <>{" "}{copy.theme}: <a href={themePath(theme.slug)[lang]}>{theme.title[lang]}</a>.</>}
         {" "}{copy.lens}: <a href={lensPath(lens.slug)[lang]}>{lens.name[lang]}</a>.
@@ -34,11 +38,14 @@ const others = NOTES.filter((n) => n.id !== note.id).slice(0, 3);
       <FocusSelect lang={lang} />
     </header>
 
-    {note.body.map((b) =>
-      "p" in b
-        ? <p class="prose body">{b.p[lang]}</p>
-        : <Figure id={b.fig} lang={lang} code={`${note.code}-${b.code}`} />
+    {isAnalysis && toc.length > 0 && (
+      <nav class="toc" aria-label={lang === "es" ? "Índice" : "Contents"}>
+        <p class="toc-title">{lang === "es" ? "En este análisis" : "In this analysis"}</p>
+        <ol>{toc.map((h) => <li><a href={`#${h.id}`}>{h.h[lang]}</a></li>)}</ol>
+      </nav>
     )}
+
+    <Blocks lang={lang} blocks={note.body} codePrefix={note.code} />
 
     {note.sources && note.sources.length > 0 && (
       <section class="sources" aria-label={copy.sources}>
@@ -69,7 +76,10 @@ const others = NOTES.filter((n) => n.id !== note.id).slice(0, 3);
   .kicker { margin: 0; font-family: var(--font-semi); font-size: 0.95rem; color: var(--ink-3); max-width: 46rem; }
   h1 { font-size: clamp(2.6rem, 6vw, 4.6rem); line-height: 0.92; max-width: 22ch; }
   .dek { margin: 0; max-width: 38rem; font-size: clamp(1.15rem, 1.7vw, 1.35rem); line-height: 1.45; color: var(--ink-2); }
-  .body { margin-block: 2rem 2.5rem; }
+  .toc { margin: 1.5rem 0 1rem; padding: 1rem 1.25rem; max-width: 40rem; background: var(--paper-raised); border: 1px solid var(--rule); border-radius: 6px; }
+  .toc-title { margin: 0 0 0.5rem; font-family: var(--font-semi); font-weight: 700; font-size: 0.95rem; color: var(--ink-2); }
+  .toc ol { margin: 0; padding-left: 1.3rem; font-family: var(--font-semi); }
+  .toc li { margin-bottom: 0.3rem; }
   .sources { margin-top: 2.5rem; max-width: 46rem; font-size: 0.95rem; color: var(--ink-2); }
   .sources h2 { font-family: var(--font-semi); font-weight: 700; font-size: 1rem; margin: 0 0 0.5rem; }
   .sources ul { margin: 0; padding-left: 1.1rem; }

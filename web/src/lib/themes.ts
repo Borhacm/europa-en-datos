@@ -67,7 +67,11 @@ export function figuresOf(theme: Theme, lens?: LensId) {
 }
 
 export function noteFigures(note: Note) {
-  return note.body.filter((b): b is { fig: string; code: string } => "fig" in b).map((b) => ({ ...b, code: `${note.code}-${b.code}` }));
+  return note.body
+    .filter((b): b is { fig: string; code: string } => "fig" in b)
+    // Un código completo ("N02-1") indica un gráfico reutilizado de otra pieza: no se duplica en la metodología
+    .filter((b) => !b.code.includes("-"))
+    .map((b) => ({ ...b, code: `${note.code}-${b.code}` }));
 }
 
 export const lensById = (id: LensId) => LENSES.find((l) => l.id === id)!;
