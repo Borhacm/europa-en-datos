@@ -1,0 +1,162 @@
+{
+ "id": "die2-pagos-zona-euro",
+ "lens": "elige",
+ "theme": "dinero",
+ "title": {
+  "es": "Las tarjetas suman el 57 % de los pagos sin efectivo de la zona del euro",
+  "en": "Cards account for 57% of cashless payments in the euro area"
+ },
+ "subtitle": {
+  "es": "Zona del euro. Número de operaciones al año por medio de pago, en miles de millones",
+  "en": "Euro area. Number of transactions per year by payment instrument, in billions"
+ },
+ "unit": {
+  "es": "miles de millones de operaciones",
+  "en": "billion transactions"
+ },
+ "source": {
+  "name": "BCE, estadísticas de pagos (indicadores clave)",
+  "dataset": "PAY",
+  "url": "https://data.ecb.europa.eu/data/datasets/PAY",
+  "license": "ECB, reutilización con cita de la fuente"
+ },
+ "notes": {
+  "es": [
+   "Suma de los dos semestres de cada año. El BCE publica esta serie con la metodología actual desde 2022.",
+   "El total incluye también el dinero electrónico, los cheques y otros pagos, y no las retiradas de efectivo. No es la suma exacta de las series, que el BCE mide por separado. La zona del euro incluye a Croacia desde 2023.",
+   "El BCE no publica en esta serie qué parte de los pagos con tarjeta pasa por sistemas internacionales como Visa o Mastercard: según su informe de febrero de 2025, fueron el 61 % en 2022."
+  ],
+  "en": [
+   "Sum of the two half-years of each year. The ECB publishes this series under the current methodology from 2022.",
+   "The total also includes e-money, cheques and other payments, but not cash withdrawals. It is not the exact sum of the series, which the ECB measures separately. The euro area includes Croatia from 2023.",
+   "This series does not show what share of card payments goes through international schemes such as Visa or Mastercard: according to an ECB report of February 2025, it was 61% in 2022."
+  ]
+ },
+ "retrieved": "2026-10-02",
+ "geos": {
+  "EA": {
+   "es": "Zona del euro",
+   "en": "Euro area",
+   "eu": false,
+   "aggregate": true
+  }
+ },
+ "dimensions": {
+  "series": {
+   "TOTL1": {
+    "es": "Total sin efectivo",
+    "en": "All cashless"
+   },
+   "CP0": {
+    "es": "Tarjetas",
+    "en": "Cards"
+   },
+   "CT0": {
+    "es": "Transferencias",
+    "en": "Credit transfers"
+   },
+   "DD": {
+    "es": "Adeudos",
+    "en": "Direct debits"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "EA",
+   "series": "CP0",
+   "time": "2022",
+   "value": 67.46
+  },
+  {
+   "geo": "EA",
+   "series": "CP0",
+   "time": "2023",
+   "value": 77.77
+  },
+  {
+   "geo": "EA",
+   "series": "CP0",
+   "time": "2024",
+   "value": 84.56
+  },
+  {
+   "geo": "EA",
+   "series": "CP0",
+   "time": "2025",
+   "value": 91.71
+  },
+  {
+   "geo": "EA",
+   "series": "CT0",
+   "time": "2022",
+   "value": 28.18
+  },
+  {
+   "geo": "EA",
+   "series": "CT0",
+   "time": "2023",
+   "value": 30.22
+  },
+  {
+   "geo": "EA",
+   "series": "CT0",
+   "time": "2024",
+   "value": 32.48
+  },
+  {
+   "geo": "EA",
+   "series": "CT0",
+   "time": "2025",
+   "value": 34.67
+  },
+  {
+   "geo": "EA",
+   "series": "DD",
+   "time": "2022",
+   "value": 24.78
+  },
+  {
+   "geo": "EA",
+   "series": "DD",
+   "time": "2023",
+   "value": 26.87
+  },
+  {
+   "geo": "EA",
+   "series": "DD",
+   "time": "2024",
+   "value": 28.72
+  },
+  {
+   "geo": "EA",
+   "series": "DD",
+   "time": "2025",
+   "value": 30.26
+  },
+  {
+   "geo": "EA",
+   "series": "TOTL1",
+   "time": "2022",
+   "value": 128.66
+  },
+  {
+   "geo": "EA",
+   "series": "TOTL1",
+   "time": "2023",
+   "value": 140.74
+  },
+  {
+   "geo": "EA",
+   "series": "TOTL1",
+   "time": "2024",
+   "value": 150.44
+  },
+  {
+   "geo": "EA",
+   "series": "TOTL1",
+   "time": "2025",
+   "value": 161.22
+  }
+ ]
+}

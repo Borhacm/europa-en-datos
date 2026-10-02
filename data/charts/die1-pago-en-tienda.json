@@ -1,0 +1,136 @@
+{
+ "id": "die1-pago-en-tienda",
+ "lens": "elige",
+ "theme": "dinero",
+ "title": {
+  "es": "El efectivo ha pasado del 79 % al 52 % de los pagos en tienda desde 2016; el 55 % ya prefiere la tarjeta",
+  "en": "Cash has fallen from 79% to 52% of in-store payments since 2016; 55% now prefer cards"
+ },
+ "subtitle": {
+  "es": "Zona del euro. Parte de los pagos en tiendas, bares y otros puntos de venta hechos con efectivo, y medio de pago que prefieren los consumidores, en %",
+  "en": "Euro area. Share of payments in shops, bars and other points of sale made in cash, and consumers' preferred means of payment, in %"
+ },
+ "unit": {
+  "es": "%",
+  "en": "%"
+ },
+ "source": {
+  "name": "BCE, estudio sobre las actitudes de pago de los consumidores de la zona del euro (SPACE 2024)",
+  "dataset": "SPACE 2024",
+  "url": "https://www.ecb.europa.eu/stats/ecb_surveys/space/html/ecb.space2024~19d46f0f17.en.html",
+  "license": "ECB, reutilización con cita de la fuente"
+ },
+ "notes": {
+  "es": [
+   "Encuesta con diario de pagos: cuenta el número de pagos, no su importe. Por importe, en 2024 las tarjetas suponían el 45 % y el efectivo el 39 %.",
+   "El dato de 2016 procede de un estudio anterior del BCE (SUCH), solo en parte comparable con las encuestas SPACE de 2019, 2022 y 2024.",
+   "«Prefiere tarjeta» incluye otros medios sin efectivo, como el móvil. Cifras tomadas del texto del informe. Quien no prefiere ni efectivo ni tarjeta no tiene una preferencia clara.",
+   "En la misma encuesta, el 62 % considera importante o muy importante poder pagar con efectivo, y el 60 % dice preocuparse por su privacidad en los pagos digitales (2024)."
+  ],
+  "en": [
+   "Payment diary survey: it counts the number of payments, not their value. By value, cards accounted for 45% and cash for 39% in 2024.",
+   "The 2016 figure comes from an earlier ECB study (SUCH), only partly comparable with the 2019, 2022 and 2024 SPACE surveys.",
+   "\"Prefer cards\" includes other cashless means, such as phones. Figures taken from the text of the report. People who prefer neither cash nor cards have no clear preference.",
+   "In the same survey, 62% consider it important or very important to be able to pay in cash, and 60% say they are concerned about their privacy in digital payments (2024)."
+  ]
+ },
+ "retrieved": "2026-10-02",
+ "geos": {
+  "EA": {
+   "es": "Zona del euro",
+   "en": "Euro area",
+   "eu": false,
+   "aggregate": true
+  }
+ },
+ "dimensions": {
+  "series": {
+   "efectivo": {
+    "es": "Pagos en efectivo",
+    "en": "Cash payments"
+   },
+   "prefiere_tarjeta": {
+    "es": "Prefiere tarjeta",
+    "en": "Prefer cards"
+   },
+   "prefiere_efectivo": {
+    "es": "Prefiere efectivo",
+    "en": "Prefer cash"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "EA",
+   "series": "efectivo",
+   "time": "2016",
+   "value": 79
+  },
+  {
+   "geo": "EA",
+   "series": "efectivo",
+   "time": "2019",
+   "value": 72
+  },
+  {
+   "geo": "EA",
+   "series": "efectivo",
+   "time": "2022",
+   "value": 59
+  },
+  {
+   "geo": "EA",
+   "series": "efectivo",
+   "time": "2024",
+   "value": 52
+  },
+  {
+   "geo": "EA",
+   "series": "prefiere_efectivo",
+   "time": "2016",
+   "value": 32
+  },
+  {
+   "geo": "EA",
+   "series": "prefiere_efectivo",
+   "time": "2019",
+   "value": 27
+  },
+  {
+   "geo": "EA",
+   "series": "prefiere_efectivo",
+   "time": "2022",
+   "value": 22
+  },
+  {
+   "geo": "EA",
+   "series": "prefiere_efectivo",
+   "time": "2024",
+   "value": 22
+  },
+  {
+   "geo": "EA",
+   "series": "prefiere_tarjeta",
+   "time": "2016",
+   "value": 43
+  },
+  {
+   "geo": "EA",
+   "series": "prefiere_tarjeta",
+   "time": "2019",
+   "value": 49
+  },
+  {
+   "geo": "EA",
+   "series": "prefiere_tarjeta",
+   "time": "2022",
+   "value": 55
+  },
+  {
+   "geo": "EA",
+   "series": "prefiere_tarjeta",
+   "time": "2024",
+   "value": 55
+  }
+ ]
+}

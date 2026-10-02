@@ -1,0 +1,253 @@
+{
+ "id": "dig1-efectivo-pib",
+ "lens": "gigantes",
+ "theme": "dinero",
+ "title": {
+  "es": "La zona del euro tiene más efectivo en relación con su economía que China y EE. UU.: el 10,7 % de su PIB",
+  "en": "The euro area holds more cash relative to its economy than China and the US: 10.7% of its GDP"
+ },
+ "subtitle": {
+  "es": "Billetes y monedas en circulación, en % del PIB",
+  "en": "Banknotes and coins in circulation, as % of GDP"
+ },
+ "unit": {
+  "es": "% del PIB",
+  "en": "% of GDP"
+ },
+ "source": {
+  "name": "BIS, estadísticas de pagos del CPMI (billetes y monedas en circulación)",
+  "dataset": "WS_CPMI_CT1",
+  "url": "https://data.bis.org/topics/CPMI_CT",
+  "license": "BIS terms of use (reutilización con cita)"
+ },
+ "notes": {
+  "es": [
+   "El BIS publica la zona del euro (los países que usan el euro cada año), no la UE de 27: Suecia, Polonia o Hungría, por ejemplo, tienen su propia moneda.",
+   "Es todo el efectivo emitido, se use o no para pagar: incluye el que se guarda como ahorro y el que circula fuera de la zona emisora, algo habitual en monedas internacionales como el dólar y el euro.",
+   "La serie de cada bloque es la que publica su banco central al CPMI; China incluye los billetes y monedas en yuanes (M0)."
+  ],
+  "en": [
+   "The BIS publishes the euro area (the countries using the euro each year), not the 27-country EU: Sweden, Poland and Hungary, for example, have their own currency.",
+   "This is all the cash issued, whether or not it is used for payments: it includes cash kept as savings and cash circulating outside the issuing area, which is common for international currencies such as the dollar and the euro.",
+   "Each bloc's series is the one its central bank reports to the CPMI; for China it is yuan banknotes and coins (M0)."
+  ]
+ },
+ "retrieved": "2026-10-02",
+ "geos": {
+  "CHN": {
+   "es": "China",
+   "en": "China",
+   "eu": false,
+   "aggregate": false
+  },
+  "USA": {
+   "es": "Estados Unidos",
+   "en": "United States",
+   "eu": false,
+   "aggregate": false
+  },
+  "EA": {
+   "es": "Zona del euro",
+   "en": "Euro area",
+   "eu": false,
+   "aggregate": true
+  }
+ },
+ "rows": [
+  {
+   "geo": "CHN",
+   "time": "2012",
+   "value": 11.08
+  },
+  {
+   "geo": "CHN",
+   "time": "2013",
+   "value": 10.76
+  },
+  {
+   "geo": "CHN",
+   "time": "2014",
+   "value": 10.24
+  },
+  {
+   "geo": "CHN",
+   "time": "2015",
+   "value": 9.95
+  },
+  {
+   "geo": "CHN",
+   "time": "2016",
+   "value": 9.84
+  },
+  {
+   "geo": "CHN",
+   "time": "2017",
+   "value": 9.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2018",
+   "value": 8.46
+  },
+  {
+   "geo": "CHN",
+   "time": "2019",
+   "value": 8.24
+  },
+  {
+   "geo": "CHN",
+   "time": "2020",
+   "value": 8.68
+  },
+  {
+   "geo": "CHN",
+   "time": "2021",
+   "value": 8.19
+  },
+  {
+   "geo": "CHN",
+   "time": "2022",
+   "value": 8.91
+  },
+  {
+   "geo": "CHN",
+   "time": "2023",
+   "value": 9.17
+  },
+  {
+   "geo": "CHN",
+   "time": "2024",
+   "value": 9.88
+  },
+  {
+   "geo": "EA",
+   "time": "2012",
+   "value": 9.43
+  },
+  {
+   "geo": "EA",
+   "time": "2013",
+   "value": 9.77
+  },
+  {
+   "geo": "EA",
+   "time": "2014",
+   "value": 10.14
+  },
+  {
+   "geo": "EA",
+   "time": "2015",
+   "value": 10.43
+  },
+  {
+   "geo": "EA",
+   "time": "2016",
+   "value": 10.55
+  },
+  {
+   "geo": "EA",
+   "time": "2017",
+   "value": 10.57
+  },
+  {
+   "geo": "EA",
+   "time": "2018",
+   "value": 10.75
+  },
+  {
+   "geo": "EA",
+   "time": "2019",
+   "value": 10.92
+  },
+  {
+   "geo": "EA",
+   "time": "2020",
+   "value": 12.63
+  },
+  {
+   "geo": "EA",
+   "time": "2021",
+   "value": 12.5
+  },
+  {
+   "geo": "EA",
+   "time": "2022",
+   "value": 11.68
+  },
+  {
+   "geo": "EA",
+   "time": "2023",
+   "value": 10.94
+  },
+  {
+   "geo": "EA",
+   "time": "2024",
+   "value": 10.67
+  },
+  {
+   "geo": "USA",
+   "time": "2012",
+   "value": 7.11
+  },
+  {
+   "geo": "USA",
+   "time": "2013",
+   "value": 7.2
+  },
+  {
+   "geo": "USA",
+   "time": "2014",
+   "value": 7.5
+  },
+  {
+   "geo": "USA",
+   "time": "2015",
+   "value": 7.74
+  },
+  {
+   "geo": "USA",
+   "time": "2016",
+   "value": 7.91
+  },
+  {
+   "geo": "USA",
+   "time": "2017",
+   "value": 8.07
+  },
+  {
+   "geo": "USA",
+   "time": "2018",
+   "value": 8.2
+  },
+  {
+   "geo": "USA",
+   "time": "2019",
+   "value": 8.22
+  },
+  {
+   "geo": "USA",
+   "time": "2020",
+   "value": 9.45
+  },
+  {
+   "geo": "USA",
+   "time": "2021",
+   "value": 9.01
+  },
+  {
+   "geo": "USA",
+   "time": "2022",
+   "value": 8.62
+  },
+  {
+   "geo": "USA",
+   "time": "2023",
+   "value": 8.25
+  },
+  {
+   "geo": "USA",
+   "time": "2024",
+   "value": 7.94
+  }
+ ]
+}
