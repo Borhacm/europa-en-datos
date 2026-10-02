@@ -46,6 +46,8 @@ export interface Theme {
   lenses?: Record<LensId, ThemeLens>;
   /** Notas de otros temas que adelantaron este (se listan en la página del tema) */
   notes?: string[];
+  /** Fuentes de las afirmaciones del texto que no salen de los gráficos (leyes, informes...) */
+  sources?: { name: string; url: string }[];
 }
 
 export interface Note {

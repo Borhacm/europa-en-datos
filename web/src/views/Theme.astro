@@ -13,8 +13,8 @@ interface Props { lang: Lang; theme: Theme }
 const { lang, theme } = Astro.props;
 
 const copy = {
-  es: { lenses: "Miradas", sameLens: "Esta mirada en todos los temas", notes: "Notas sobre este tema", published: "Publicado el", charts: "gráficos", other: "Otros temas" },
-  en: { lenses: "Lenses", sameLens: "This lens across all themes", notes: "Notes on this theme", published: "Published on", charts: "charts", other: "Other themes" },
+  es: { lenses: "Miradas", sameLens: "Esta mirada en todos los temas", notes: "Notas sobre este tema", sources: "Fuentes del texto", published: "Publicado el", charts: "gráficos", other: "Otros temas" },
+  en: { lenses: "Lenses", sameLens: "This lens across all themes", notes: "Notes on this theme", sources: "Sources for the text", published: "Published on", charts: "charts", other: "Other themes" },
 }[lang];
 
 const nFigs = figuresOf(theme).length;
@@ -47,6 +47,13 @@ const notes = notesOf(theme.id);
     />
   ))}
 
+  {theme.sources && theme.sources.length > 0 && (
+    <section class="wrap sources" aria-label={copy.sources}>
+      <h2>{copy.sources}</h2>
+      <ul>{theme.sources.map((s) => <li><a href={s.url} rel="noopener">{s.name}</a></li>)}</ul>
+    </section>
+  )}
+
   {notes.length > 0 && (
     <section class="wrap others">
       <h2>{copy.notes}</h2>
@@ -69,4 +76,8 @@ const notes = notesOf(theme.id);
 <style>
   .others { padding-top: 5rem; }
   .others h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1rem; }
+  .sources { padding-top: 3rem; font-size: 0.95rem; color: var(--ink-2); }
+  .sources h2 { font-family: var(--font-semi); font-weight: 700; font-size: 1rem; margin: 0 0 0.5rem; }
+  .sources ul { margin: 0; padding-left: 1.1rem; max-width: 46rem; }
+  .sources li { margin-bottom: 0.3rem; }
 </style>

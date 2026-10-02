@@ -1,0 +1,654 @@
+{
+ "id": "dig2-pagos-sin-efectivo",
+ "lens": "gigantes",
+ "theme": "dinero",
+ "title": {
+  "es": "Suecia hace más pagos sin efectivo por habitante que EE. UU.; China los ha multiplicado por casi 28 desde 2012",
+  "en": "Sweden makes more cashless payments per person than the US; China has multiplied them by almost 28 since 2012"
+ },
+ "subtitle": {
+  "es": "Pagos sin efectivo (tarjetas, transferencias, adeudos, dinero electrónico y cheques) por habitante y año",
+  "en": "Cashless payments (cards, credit transfers, direct debits, e-money and cheques) per person per year"
+ },
+ "unit": {
+  "es": "pagos por habitante",
+  "en": "payments per person"
+ },
+ "source": {
+  "name": "BIS, estadísticas de pagos del CPMI (número de pagos sin efectivo por habitante)",
+  "dataset": "WS_CPMI_CT1",
+  "url": "https://data.bis.org/topics/CPMI_CT",
+  "license": "BIS terms of use (reutilización con cita)"
+ },
+ "notes": {
+  "es": [
+   "El BIS no publica este dato para la zona del euro ni para la UE: se muestran los siete países de la UE que informan al CPMI. Los Países Bajos solo tienen datos hasta 2021 y España desde 2014.",
+   "Cada banco central recoge los pagos con sus propias fuentes y definiciones: las tendencias son más comparables que los niveles exactos entre países.",
+   "Cuenta operaciones, no su importe."
+  ],
+  "en": [
+   "The BIS does not publish this figure for the euro area or the EU: the chart shows the seven EU countries that report to the CPMI. The Netherlands only has data up to 2021, and Spain from 2014.",
+   "Each central bank collects payment data with its own sources and definitions: trends are more comparable than exact levels across countries.",
+   "It counts transactions, not their value."
+  ]
+ },
+ "retrieved": "2026-10-02",
+ "geos": {
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "CHN": {
+   "es": "China",
+   "en": "China",
+   "eu": false,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  },
+  "USA": {
+   "es": "Estados Unidos",
+   "en": "United States",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "BEL",
+   "time": "2012",
+   "value": 226.2
+  },
+  {
+   "geo": "BEL",
+   "time": "2013",
+   "value": 242.3
+  },
+  {
+   "geo": "BEL",
+   "time": "2014",
+   "value": 306.3
+  },
+  {
+   "geo": "BEL",
+   "time": "2015",
+   "value": 282.8
+  },
+  {
+   "geo": "BEL",
+   "time": "2016",
+   "value": 305.6
+  },
+  {
+   "geo": "BEL",
+   "time": "2017",
+   "value": 331.6
+  },
+  {
+   "geo": "BEL",
+   "time": "2018",
+   "value": 370.7
+  },
+  {
+   "geo": "BEL",
+   "time": "2019",
+   "value": 400.3
+  },
+  {
+   "geo": "BEL",
+   "time": "2020",
+   "value": 418.3
+  },
+  {
+   "geo": "BEL",
+   "time": "2021",
+   "value": 453.8
+  },
+  {
+   "geo": "BEL",
+   "time": "2022",
+   "value": 477.0
+  },
+  {
+   "geo": "BEL",
+   "time": "2023",
+   "value": 516.3
+  },
+  {
+   "geo": "BEL",
+   "time": "2024",
+   "value": 557.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2012",
+   "value": 14.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2013",
+   "value": 19.0
+  },
+  {
+   "geo": "CHN",
+   "time": "2014",
+   "value": 26.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2015",
+   "value": 48.2
+  },
+  {
+   "geo": "CHN",
+   "time": "2016",
+   "value": 69.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2017",
+   "value": 95.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2018",
+   "value": 141.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2019",
+   "value": 221.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2020",
+   "value": 241.5
+  },
+  {
+   "geo": "CHN",
+   "time": "2021",
+   "value": 302.2
+  },
+  {
+   "geo": "CHN",
+   "time": "2022",
+   "value": 319.9
+  },
+  {
+   "geo": "CHN",
+   "time": "2023",
+   "value": 377.0
+  },
+  {
+   "geo": "CHN",
+   "time": "2024",
+   "value": 401.9
+  },
+  {
+   "geo": "DEU",
+   "time": "2012",
+   "value": 226.4
+  },
+  {
+   "geo": "DEU",
+   "time": "2013",
+   "value": 242.9
+  },
+  {
+   "geo": "DEU",
+   "time": "2014",
+   "value": 217.6
+  },
+  {
+   "geo": "DEU",
+   "time": "2015",
+   "value": 237.1
+  },
+  {
+   "geo": "DEU",
+   "time": "2016",
+   "value": 242.0
+  },
+  {
+   "geo": "DEU",
+   "time": "2017",
+   "value": 252.8
+  },
+  {
+   "geo": "DEU",
+   "time": "2018",
+   "value": 265.7
+  },
+  {
+   "geo": "DEU",
+   "time": "2019",
+   "value": 284.0
+  },
+  {
+   "geo": "DEU",
+   "time": "2020",
+   "value": 309.8
+  },
+  {
+   "geo": "DEU",
+   "time": "2021",
+   "value": 327.4
+  },
+  {
+   "geo": "DEU",
+   "time": "2022",
+   "value": 363.6
+  },
+  {
+   "geo": "DEU",
+   "time": "2023",
+   "value": 402.1
+  },
+  {
+   "geo": "DEU",
+   "time": "2024",
+   "value": 436.2
+  },
+  {
+   "geo": "ESP",
+   "time": "2014",
+   "value": 141.1
+  },
+  {
+   "geo": "ESP",
+   "time": "2015",
+   "value": 140.9
+  },
+  {
+   "geo": "ESP",
+   "time": "2016",
+   "value": 153.6
+  },
+  {
+   "geo": "ESP",
+   "time": "2017",
+   "value": 177.2
+  },
+  {
+   "geo": "ESP",
+   "time": "2018",
+   "value": 185.4
+  },
+  {
+   "geo": "ESP",
+   "time": "2019",
+   "value": 204.1
+  },
+  {
+   "geo": "ESP",
+   "time": "2020",
+   "value": 211.4
+  },
+  {
+   "geo": "ESP",
+   "time": "2021",
+   "value": 249.4
+  },
+  {
+   "geo": "ESP",
+   "time": "2022",
+   "value": 296.1
+  },
+  {
+   "geo": "ESP",
+   "time": "2023",
+   "value": 328.3
+  },
+  {
+   "geo": "ESP",
+   "time": "2024",
+   "value": 363.6
+  },
+  {
+   "geo": "FRA",
+   "time": "2012",
+   "value": 282.9
+  },
+  {
+   "geo": "FRA",
+   "time": "2013",
+   "value": 281.8
+  },
+  {
+   "geo": "FRA",
+   "time": "2014",
+   "value": 294.9
+  },
+  {
+   "geo": "FRA",
+   "time": "2015",
+   "value": 313.5
+  },
+  {
+   "geo": "FRA",
+   "time": "2016",
+   "value": 324.4
+  },
+  {
+   "geo": "FRA",
+   "time": "2017",
+   "value": 339.8
+  },
+  {
+   "geo": "FRA",
+   "time": "2018",
+   "value": 360.0
+  },
+  {
+   "geo": "FRA",
+   "time": "2019",
+   "value": 382.5
+  },
+  {
+   "geo": "FRA",
+   "time": "2020",
+   "value": 370.7
+  },
+  {
+   "geo": "FRA",
+   "time": "2021",
+   "value": 412.9
+  },
+  {
+   "geo": "FRA",
+   "time": "2022",
+   "value": 439.2
+  },
+  {
+   "geo": "FRA",
+   "time": "2023",
+   "value": 462.4
+  },
+  {
+   "geo": "FRA",
+   "time": "2024",
+   "value": 489.4
+  },
+  {
+   "geo": "ITA",
+   "time": "2012",
+   "value": 70.8
+  },
+  {
+   "geo": "ITA",
+   "time": "2013",
+   "value": 74.4
+  },
+  {
+   "geo": "ITA",
+   "time": "2014",
+   "value": 78.1
+  },
+  {
+   "geo": "ITA",
+   "time": "2015",
+   "value": 86.0
+  },
+  {
+   "geo": "ITA",
+   "time": "2016",
+   "value": 94.8
+  },
+  {
+   "geo": "ITA",
+   "time": "2017",
+   "value": 100.6
+  },
+  {
+   "geo": "ITA",
+   "time": "2018",
+   "value": 113.3
+  },
+  {
+   "geo": "ITA",
+   "time": "2019",
+   "value": 127.3
+  },
+  {
+   "geo": "ITA",
+   "time": "2020",
+   "value": 134.7
+  },
+  {
+   "geo": "ITA",
+   "time": "2021",
+   "value": 167.7
+  },
+  {
+   "geo": "ITA",
+   "time": "2022",
+   "value": 195.0
+  },
+  {
+   "geo": "ITA",
+   "time": "2023",
+   "value": 221.3
+  },
+  {
+   "geo": "ITA",
+   "time": "2024",
+   "value": 247.3
+  },
+  {
+   "geo": "NLD",
+   "time": "2012",
+   "value": 345.2
+  },
+  {
+   "geo": "NLD",
+   "time": "2013",
+   "value": 378.0
+  },
+  {
+   "geo": "NLD",
+   "time": "2014",
+   "value": 382.5
+  },
+  {
+   "geo": "NLD",
+   "time": "2015",
+   "value": 401.3
+  },
+  {
+   "geo": "NLD",
+   "time": "2016",
+   "value": 421.4
+  },
+  {
+   "geo": "NLD",
+   "time": "2017",
+   "value": 455.3
+  },
+  {
+   "geo": "NLD",
+   "time": "2018",
+   "value": 505.4
+  },
+  {
+   "geo": "NLD",
+   "time": "2019",
+   "value": 543.1
+  },
+  {
+   "geo": "NLD",
+   "time": "2020",
+   "value": 527.0
+  },
+  {
+   "geo": "NLD",
+   "time": "2021",
+   "value": 554.7
+  },
+  {
+   "geo": "SWE",
+   "time": "2012",
+   "value": 351.5
+  },
+  {
+   "geo": "SWE",
+   "time": "2013",
+   "value": 375.4
+  },
+  {
+   "geo": "SWE",
+   "time": "2014",
+   "value": 402.2
+  },
+  {
+   "geo": "SWE",
+   "time": "2015",
+   "value": 428.8
+  },
+  {
+   "geo": "SWE",
+   "time": "2016",
+   "value": 481.4
+  },
+  {
+   "geo": "SWE",
+   "time": "2017",
+   "value": 496.6
+  },
+  {
+   "geo": "SWE",
+   "time": "2018",
+   "value": 528.3
+  },
+  {
+   "geo": "SWE",
+   "time": "2019",
+   "value": 544.3
+  },
+  {
+   "geo": "SWE",
+   "time": "2020",
+   "value": 537.2
+  },
+  {
+   "geo": "SWE",
+   "time": "2021",
+   "value": 569.1
+  },
+  {
+   "geo": "SWE",
+   "time": "2022",
+   "value": 635.2
+  },
+  {
+   "geo": "SWE",
+   "time": "2023",
+   "value": 655.3
+  },
+  {
+   "geo": "SWE",
+   "time": "2024",
+   "value": 685.3
+  },
+  {
+   "geo": "USA",
+   "time": "2012",
+   "value": 365.2
+  },
+  {
+   "geo": "USA",
+   "time": "2013",
+   "value": 381.9
+  },
+  {
+   "geo": "USA",
+   "time": "2014",
+   "value": 398.0
+  },
+  {
+   "geo": "USA",
+   "time": "2015",
+   "value": 406.9
+  },
+  {
+   "geo": "USA",
+   "time": "2016",
+   "value": 425.8
+  },
+  {
+   "geo": "USA",
+   "time": "2017",
+   "value": 455.6
+  },
+  {
+   "geo": "USA",
+   "time": "2018",
+   "value": 484.1
+  },
+  {
+   "geo": "USA",
+   "time": "2019",
+   "value": 508.8
+  },
+  {
+   "geo": "USA",
+   "time": "2020",
+   "value": 502.9
+  },
+  {
+   "geo": "USA",
+   "time": "2021",
+   "value": 567.5
+  },
+  {
+   "geo": "USA",
+   "time": "2022",
+   "value": 590.4
+  },
+  {
+   "geo": "USA",
+   "time": "2023",
+   "value": 615.3
+  },
+  {
+   "geo": "USA",
+   "time": "2024",
+   "value": 644.1
+  }
+ ]
+}

@@ -1,0 +1,435 @@
+{
+ "id": "did1-pagos-tarjeta",
+ "lens": "dentro",
+ "theme": "dinero",
+ "title": {
+  "es": "Los pagos con tarjeta por habitante aumentaron en los 24 países con datos de 2022 y 2025; Alemania e Italia siguen entre los que menos los usan",
+  "en": "Card payments per person rose in all 24 countries with data for 2022 and 2025; Germany and Italy are still among those using them least"
+ },
+ "subtitle": {
+  "es": "Pagos con tarjeta por habitante y año",
+  "en": "Card payments per person per year"
+ },
+ "unit": {
+  "es": "pagos por habitante",
+  "en": "payments per person"
+ },
+ "source": {
+  "name": "BCE, estadísticas de pagos (PAY); Eurostat, población (tps00001)",
+  "dataset": "PAY",
+  "url": "https://data.ecb.europa.eu/data/datasets/PAY",
+  "license": "ECB, reutilización con cita de la fuente"
+ },
+ "notes": {
+  "es": [
+   "Operaciones de cada año (suma de los dos semestres) divididas por la población a 1 de enero.",
+   "El BCE asigna cada operación al país de la entidad que emitió la tarjeta, no al de quien la usa. Las cifras muy altas de Lituania, Luxemburgo o Irlanda pueden reflejar entidades de pago con clientes en otros países.",
+   "Dinamarca y Suecia no aparecen en esta serie del BCE. Faltan algunos países en 2022 porque no publicaron los dos semestres."
+  ],
+  "en": [
+   "Transactions in each year (sum of both half-years) divided by the population on 1 January.",
+   "The ECB assigns each transaction to the country of the institution that issued the card, not to that of the user. The very high figures for Lithuania, Luxembourg and Ireland may reflect payment institutions with customers in other countries.",
+   "Denmark and Sweden are not included in this ECB series. Some countries are missing in 2022 because they did not report both half-years."
+  ]
+ },
+ "retrieved": "2026-10-02",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2022",
+   "value": 162.9
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 226.4
+  },
+  {
+   "geo": "BEL",
+   "time": "2022",
+   "value": 275.9
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 361.3
+  },
+  {
+   "geo": "BGR",
+   "time": "2022",
+   "value": 57.9
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 104.8
+  },
+  {
+   "geo": "CYP",
+   "time": "2022",
+   "value": 187.4
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 255.1
+  },
+  {
+   "geo": "CZE",
+   "time": "2022",
+   "value": 211.6
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 305.0
+  },
+  {
+   "geo": "DEU",
+   "time": "2022",
+   "value": 121.9
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 173.9
+  },
+  {
+   "geo": "ESP",
+   "time": "2022",
+   "value": 191.9
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 264.8
+  },
+  {
+   "geo": "EST",
+   "time": "2022",
+   "value": 322.3
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 380.0
+  },
+  {
+   "geo": "FIN",
+   "time": "2022",
+   "value": 386.9
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 456.2
+  },
+  {
+   "geo": "FRA",
+   "time": "2022",
+   "value": 261.7
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 320.0
+  },
+  {
+   "geo": "GRC",
+   "time": "2022",
+   "value": 169.2
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 238.4
+  },
+  {
+   "geo": "HRV",
+   "time": "2022",
+   "value": 145.0
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 211.9
+  },
+  {
+   "geo": "HUN",
+   "time": "2022",
+   "value": 164.8
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 220.8
+  },
+  {
+   "geo": "IRL",
+   "time": "2022",
+   "value": 425.3
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 606.9
+  },
+  {
+   "geo": "ITA",
+   "time": "2022",
+   "value": 104.0
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 162.4
+  },
+  {
+   "geo": "LTU",
+   "time": "2022",
+   "value": 746.6
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 1204.9
+  },
+  {
+   "geo": "LUX",
+   "time": "2022",
+   "value": 501.7
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 795.9
+  },
+  {
+   "geo": "LVA",
+   "time": "2022",
+   "value": 237.4
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 300.6
+  },
+  {
+   "geo": "MLT",
+   "time": "2022",
+   "value": 151.1
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 249.0
+  },
+  {
+   "geo": "NLD",
+   "time": "2022",
+   "value": 333.5
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 376.3
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 294.0
+  },
+  {
+   "geo": "PRT",
+   "time": "2022",
+   "value": 217.6
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 268.8
+  },
+  {
+   "geo": "ROU",
+   "time": "2022",
+   "value": 89.4
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 172.1
+  },
+  {
+   "geo": "SVK",
+   "time": "2022",
+   "value": 160.6
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 224.7
+  },
+  {
+   "geo": "SVN",
+   "time": "2022",
+   "value": 147.8
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 205.9
+  }
+ ]
+}
