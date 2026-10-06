@@ -8,6 +8,7 @@
 
 .line { fill: none; stroke-linejoin: round; stroke-linecap: round; }
 .series.context .line { opacity: 0.9; }
+.series.context.hovered .line { stroke: var(--ink); stroke-width: 2; opacity: 1; }
 
 .end-label { font-size: 14px; }
 .end-name { fill: var(--ink-2); font-weight: 500; }

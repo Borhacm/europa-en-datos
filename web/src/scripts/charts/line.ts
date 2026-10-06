@@ -89,8 +89,10 @@ export function renderLine(ctx: RenderContext) {
 
   // Líneas: contexto debajo, después las principales
   const path = d3line<{ x: number; y: number }>().x((p) => x(p.x)).y((p) => y(p.y));
+  const contextGroups = new Map<Series, SVGGElement>();
   for (const s of series) {
     const g = svg("g", { class: s.context ? "series context" : "series" }, root);
+    if (s.context && s.key !== "EU27_min") contextGroups.set(s, g as SVGGElement);
     svg("path", { d: path(s.points) ?? "", stroke: s.color, class: "line", "stroke-width": s.context ? 1.5 : 2 }, g);
     const last = s.points[s.points.length - 1];
     if (!s.context) {
@@ -125,10 +127,14 @@ export function renderLine(ctx: RenderContext) {
   const dots = series.filter((s) => !s.context || s.key === "EU27_min").map((s) =>
     ({ s, dot: svg("circle", { r: 4.5, fill: s.color, stroke: cssVar("--paper"), "stroke-width": 2 }, hover) }));
   const years = [...new Set(xs)].sort((a, b) => a - b);
+  // Línea gris bajo el puntero: se resalta y se nombra en el tooltip
+  const ctxDot = svg("circle", { r: 4, fill: cssVar("--ink"), stroke: cssVar("--paper"), "stroke-width": 2 }, hover);
+  let hovered: SVGGElement | null = null;
+  const NEAR = 12;
 
   const overlay = svg("rect", { x: m.left, y: 0, width: width - m.left - m.right, height, fill: "transparent", tabindex: 0, class: "overlay" }, root);
   let idx = years.length - 1;
-  const showAt = (i: number) => {
+  const showAt = (i: number, py?: number) => {
     idx = Math.max(0, Math.min(years.length - 1, i));
     const yr = years[idx];
     hover.style.display = "";
@@ -143,16 +149,42 @@ export function renderLine(ctx: RenderContext) {
       dot.setAttribute("cy", String(y(p.y)));
       lines.push({ color: s.color, label: s.label, v: p.y });
     }
+    // Serie de contexto más cercana al puntero en ese año
+    let near: { s: Series; p: { x: number; y: number } } | null = null;
+    if (py !== undefined) {
+      let best = NEAR;
+      for (const s of contextGroups.keys()) {
+        const p = s.points.find((q) => q.x === yr);
+        if (p && Math.abs(y(p.y) - py) < best) { best = Math.abs(y(p.y) - py); near = { s, p }; }
+      }
+    }
+    const g = near ? contextGroups.get(near.s)! : null;
+    if (g !== hovered) {
+      hovered?.classList.remove("hovered");
+      g?.classList.add("hovered");
+      // Encima de las demás grises, debajo de las series en color
+      if (g) root.insertBefore(g, root.querySelector(".series:not(.context)") ?? hover);
+      hovered = g;
+    }
+    ctxDot.style.display = near ? "" : "none";
+    if (near) {
+      ctxDot.setAttribute("cx", String(x(yr)));
+      ctxDot.setAttribute("cy", String(y(near.p.y)));
+      lines.push({ color: cssVar("--ink"), label: near.s.label, v: near.p.y });
+    }
     lines.sort((a, b) => b.v - a.v);
     tip.show(x(yr), m.top + 10, `<div class="tip-title">${yr}</div>${lines.map((l) => tipRow(l.color, l.label, fmt(l.v))).join("")}`);
   };
-  const hide = () => { hover.style.display = "none"; tip.hide(); };
+  const hide = () => {
+    hover.style.display = "none"; tip.hide();
+    hovered?.classList.remove("hovered"); hovered = null;
+  };
   overlay.addEventListener("pointermove", (e) => {
     const rect = root.getBoundingClientRect();
     const px = x.invert(e.clientX - rect.left);
     let best = 0;
     years.forEach((yr, i) => { if (Math.abs(yr - px) < Math.abs(years[best] - px)) best = i; });
-    showAt(best);
+    showAt(best, e.clientY - rect.top);
   });
   overlay.addEventListener("pointerleave", hide);
   overlay.addEventListener("focus", () => showAt(idx));
