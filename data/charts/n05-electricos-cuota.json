@@ -1,0 +1,594 @@
+{
+ "id": "n05-electricos-cuota",
+ "lens": "elige",
+ "theme": "libertades",
+ "title": {
+  "es": "En Dinamarca, más de dos de cada tres coches nuevos son eléctricos; en Croacia, menos de dos de cada cien",
+  "en": "In Denmark, more than two in three new cars are electric; in Croatia, fewer than two in a hundred"
+ },
+ "subtitle": {
+  "es": "Turismos eléctricos de batería, en % de los turismos nuevos matriculados, 2025",
+  "en": "Battery electric cars as a % of new passenger car registrations, 2025"
+ },
+ "unit": {
+  "es": "% de los turismos nuevos",
+  "en": "% of new passenger cars"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "road_eqr_carpda",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/road_eqr_carpda/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Cuota sobre el total de turismos nuevos matriculados en el año. Eléctricos de batería: solo con motor eléctrico. No incluye los híbridos no enchufables ni los de hidrógeno.",
+   "Eurostat calcula el agregado de la UE como suma de los 27 países.",
+   "Híbridos enchufables: de gasolina o de diésel con batería que se recarga en la red.",
+   "Noruega no es miembro de la UE; se incluye como referencia.",
+   "Portugal: datos provisionales. Eslovenia: ruptura de serie en 2025. Varios países tienen alguna categoría marcada por Eurostat como información adicional en sus metadatos."
+  ],
+  "en": [
+   "Share of all new passenger cars registered in the year. Battery electric: electric motor only. Excludes non-plug-in hybrids and hydrogen cars.",
+   "Eurostat computes the EU aggregate as the sum of the 27 countries.",
+   "Plug-in hybrids: petrol or diesel cars with a battery charged from the grid.",
+   "Norway is not an EU member; it is shown for reference.",
+   "Portugal: provisional. Slovenia: break in series in 2025. Several countries have some categories flagged by Eurostat with additional information in the metadata."
+  ]
+ },
+ "retrieved": "2026-10-06",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "NOR": {
+   "es": "Noruega",
+   "en": "Norway",
+   "eu": false,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "dimensions": {
+  "fuel": {
+   "ELC": {
+    "es": "Eléctricos de batería",
+    "en": "Battery electric"
+   },
+   "ELC_PLUG": {
+    "es": "Eléctricos e híbridos enchufables",
+    "en": "Battery electric and plug-in hybrids"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 21.28,
+   "fuel": "ELC"
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 31.4,
+   "fuel": "ELC_PLUG"
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 34.12,
+   "fuel": "ELC"
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 43.17,
+   "fuel": "ELC_PLUG"
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 4.92,
+   "flag": "i",
+   "fuel": "ELC"
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 6.07,
+   "flag": "i",
+   "fuel": "ELC_PLUG"
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 10.07,
+   "fuel": "ELC"
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 15.33,
+   "fuel": "ELC_PLUG"
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 5.91,
+   "fuel": "ELC"
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 10.74,
+   "fuel": "ELC_PLUG"
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 19.08,
+   "fuel": "ELC"
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 29.97,
+   "fuel": "ELC_PLUG"
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 67.75,
+   "fuel": "ELC"
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 70.34,
+   "fuel": "ELC_PLUG"
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 8.71,
+   "fuel": "ELC"
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 19.24,
+   "fuel": "ELC_PLUG"
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 6.64,
+   "fuel": "ELC"
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 17.31,
+   "fuel": "ELC_PLUG"
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 17.26,
+   "fuel": "ELC"
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 26.65,
+   "fuel": "ELC_PLUG"
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 37.21,
+   "fuel": "ELC"
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 57.4,
+   "fuel": "ELC_PLUG"
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 19.58,
+   "fuel": "ELC"
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 26.07,
+   "fuel": "ELC_PLUG"
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 6.17,
+   "flag": "i",
+   "fuel": "ELC"
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 14.27,
+   "flag": "i",
+   "fuel": "ELC_PLUG"
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 1.87,
+   "fuel": "ELC"
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 3.07,
+   "fuel": "ELC_PLUG"
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 8.5,
+   "flag": "i",
+   "fuel": "ELC"
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 14.01,
+   "flag": "i",
+   "fuel": "ELC_PLUG"
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 18.64,
+   "flag": "i",
+   "fuel": "ELC"
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 33.5,
+   "flag": "i",
+   "fuel": "ELC_PLUG"
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 6.12,
+   "fuel": "ELC"
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 12.46,
+   "fuel": "ELC_PLUG"
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 8.95,
+   "fuel": "ELC"
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 21.02,
+   "fuel": "ELC_PLUG"
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 26.64,
+   "fuel": "ELC"
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 34.47,
+   "fuel": "ELC_PLUG"
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 7.14,
+   "fuel": "ELC"
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 19.32,
+   "fuel": "ELC_PLUG"
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 37.56,
+   "fuel": "ELC"
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 43.92,
+   "fuel": "ELC_PLUG"
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 40.24,
+   "fuel": "ELC"
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 59.19,
+   "fuel": "ELC_PLUG"
+  },
+  {
+   "geo": "NOR",
+   "time": "2025",
+   "value": 95.08,
+   "fuel": "ELC"
+  },
+  {
+   "geo": "NOR",
+   "time": "2025",
+   "value": 96.6,
+   "fuel": "ELC_PLUG"
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 7.21,
+   "flag": "i",
+   "fuel": "ELC"
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 12.86,
+   "flag": "i",
+   "fuel": "ELC_PLUG"
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 23.32,
+   "flag": "p",
+   "fuel": "ELC"
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 38.49,
+   "flag": "p",
+   "fuel": "ELC_PLUG"
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 5.64,
+   "fuel": "ELC"
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 12.07,
+   "fuel": "ELC_PLUG"
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 4.73,
+   "flag": "i",
+   "fuel": "ELC"
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 9.14,
+   "flag": "i",
+   "fuel": "ELC_PLUG"
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 11.13,
+   "flag": "b",
+   "fuel": "ELC"
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 14.49,
+   "flag": "b",
+   "fuel": "ELC_PLUG"
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 36.4,
+   "fuel": "ELC"
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 62.94,
+   "fuel": "ELC_PLUG"
+  }
+ ]
+}
