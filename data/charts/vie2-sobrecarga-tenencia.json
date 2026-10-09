@@ -1,0 +1,486 @@
+{
+ "id": "vie2-sobrecarga-tenencia",
+ "lens": "elige",
+ "theme": "vivienda",
+ "title": {
+  "es": "El 18,6 % de los inquilinos a precio de mercado dedica más del 40 % de sus ingresos a la vivienda; entre los propietarios, el 5 % o menos",
+  "en": "18.6% of tenants at market rent spend more than 40% of their income on housing; among owners, 5% or less"
+ },
+ "subtitle": {
+  "es": "Población de la UE que vive en hogares que gastan más del 40 % de su renta disponible en vivienda, según régimen de tenencia, en %",
+  "en": "EU population living in households that spend more than 40% of their disposable income on housing, by tenure status, in %"
+ },
+ "unit": {
+  "es": "% de cada grupo",
+  "en": "% of each group"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "ilc_lvho07c",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/ilc_lvho07c/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Encuesta de condiciones de vida (EU-SILC). La encuesta cambió de base legal en 2021; algunos países tienen rupturas de serie.",
+   "Gastos de vivienda: alquiler o intereses de la hipoteca, más suministros, comunidad y reparaciones habituales, descontadas las ayudas a la vivienda. No incluye la devolución del capital de la hipoteca.",
+   "Eurostat marca como estimación el agregado de la UE de 2010 a 2018."
+  ],
+  "en": [
+   "EU Statistics on Income and Living Conditions (EU-SILC). The survey changed its legal basis in 2021; some countries have breaks in series.",
+   "Housing costs: rent or mortgage interest, plus utilities, service charges and regular repairs, net of housing allowances. Mortgage principal repayments are not included.",
+   "Eurostat flags the EU aggregate for 2010 to 2018 as an estimate."
+  ]
+ },
+ "retrieved": "2026-10-09",
+ "geos": {
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  }
+ },
+ "dimensions": {
+  "series": {
+   "OWN_NL": {
+    "es": "Propietario sin hipoteca",
+    "en": "Owner without a mortgage"
+   },
+   "OWN_L": {
+    "es": "Propietario con hipoteca",
+    "en": "Owner with a mortgage"
+   },
+   "RENT_FR": {
+    "es": "Alquiler reducido o gratuito",
+    "en": "Reduced-rent or free"
+   },
+   "RENT_MKT": {
+    "es": "Inquilino a precio de mercado",
+    "en": "Tenant at market rent"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "EU27",
+   "series": "OWN_L",
+   "time": "2010",
+   "value": 8.4,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_L",
+   "time": "2011",
+   "value": 8.6,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_L",
+   "time": "2012",
+   "value": 8.4,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_L",
+   "time": "2013",
+   "value": 8.4,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_L",
+   "time": "2014",
+   "value": 7.7,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_L",
+   "time": "2015",
+   "value": 7.1,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_L",
+   "time": "2016",
+   "value": 5.6,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_L",
+   "time": "2017",
+   "value": 4.6,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_L",
+   "time": "2018",
+   "value": 4.0,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_L",
+   "time": "2019",
+   "value": 4.0
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_L",
+   "time": "2020",
+   "value": 3.5
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_L",
+   "time": "2021",
+   "value": 5.0
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_L",
+   "time": "2022",
+   "value": 4.2
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_L",
+   "time": "2023",
+   "value": 5.2
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_L",
+   "time": "2024",
+   "value": 5.0
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_L",
+   "time": "2025",
+   "value": 5.0
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_NL",
+   "time": "2010",
+   "value": 6.3,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_NL",
+   "time": "2011",
+   "value": 6.1,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_NL",
+   "time": "2012",
+   "value": 7.2,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_NL",
+   "time": "2013",
+   "value": 7.4,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_NL",
+   "time": "2014",
+   "value": 7.1,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_NL",
+   "time": "2015",
+   "value": 7.0,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_NL",
+   "time": "2016",
+   "value": 6.6,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_NL",
+   "time": "2017",
+   "value": 6.0,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_NL",
+   "time": "2018",
+   "value": 5.5,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_NL",
+   "time": "2019",
+   "value": 5.3
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_NL",
+   "time": "2020",
+   "value": 4.2
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_NL",
+   "time": "2021",
+   "value": 4.7
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_NL",
+   "time": "2022",
+   "value": 5.1
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_NL",
+   "time": "2023",
+   "value": 4.8
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_NL",
+   "time": "2024",
+   "value": 4.4
+  },
+  {
+   "geo": "EU27",
+   "series": "OWN_NL",
+   "time": "2025",
+   "value": 3.8
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_FR",
+   "time": "2010",
+   "value": 9.5,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_FR",
+   "time": "2011",
+   "value": 11.2,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_FR",
+   "time": "2012",
+   "value": 12.6,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_FR",
+   "time": "2013",
+   "value": 11.6,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_FR",
+   "time": "2014",
+   "value": 11.3,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_FR",
+   "time": "2015",
+   "value": 11.1,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_FR",
+   "time": "2016",
+   "value": 12.1,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_FR",
+   "time": "2017",
+   "value": 12.2,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_FR",
+   "time": "2018",
+   "value": 10.2,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_FR",
+   "time": "2019",
+   "value": 10.7
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_FR",
+   "time": "2020",
+   "value": 8.5
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_FR",
+   "time": "2021",
+   "value": 9.9
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_FR",
+   "time": "2022",
+   "value": 11.3
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_FR",
+   "time": "2023",
+   "value": 11.8
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_FR",
+   "time": "2024",
+   "value": 10.0
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_FR",
+   "time": "2025",
+   "value": 9.2
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_MKT",
+   "time": "2010",
+   "value": 22.2,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_MKT",
+   "time": "2011",
+   "value": 24.9,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_MKT",
+   "time": "2012",
+   "value": 26.1,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_MKT",
+   "time": "2013",
+   "value": 25.9,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_MKT",
+   "time": "2014",
+   "value": 27.1,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_MKT",
+   "time": "2015",
+   "value": 26.4,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_MKT",
+   "time": "2016",
+   "value": 27.0,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_MKT",
+   "time": "2017",
+   "value": 25.1,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_MKT",
+   "time": "2018",
+   "value": 25.1,
+   "flag": "e"
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_MKT",
+   "time": "2019",
+   "value": 24.2
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_MKT",
+   "time": "2020",
+   "value": 20.9
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_MKT",
+   "time": "2021",
+   "value": 21.8
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_MKT",
+   "time": "2022",
+   "value": 20.8
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_MKT",
+   "time": "2023",
+   "value": 20.3
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_MKT",
+   "time": "2024",
+   "value": 19.2
+  },
+  {
+   "geo": "EU27",
+   "series": "RENT_MKT",
+   "time": "2025",
+   "value": 18.6
+  }
+ ]
+}

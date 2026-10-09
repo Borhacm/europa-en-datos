@@ -1,0 +1,370 @@
+{
+ "id": "vig1-precio-real",
+ "lens": "gigantes",
+ "theme": "vivienda",
+ "title": {
+  "es": "Descontada la inflación, la vivienda cuesta un 11 % más que en 2010 en la zona del euro, un 58,5 % más en EE. UU. y un 10,5 % menos en China",
+  "en": "After inflation, housing costs 11% more than in 2010 in the euro area, 58.5% more in the US and 10.5% less in China"
+ },
+ "subtitle": {
+  "es": "Precio real de la vivienda residencial, índice 2010 = 100, media anual",
+  "en": "Real residential property prices, index 2010 = 100, annual average"
+ },
+ "unit": {
+  "es": "índice 2010 = 100",
+  "en": "index 2010 = 100"
+ },
+ "source": {
+  "name": "BIS, precios de la propiedad residencial (selección)",
+  "dataset": "WS_SPP",
+  "url": "https://data.bis.org/topics/RPP",
+  "license": "BIS terms of use (reutilización con cita)"
+ },
+ "notes": {
+  "es": [
+   "Precios reales: el índice de precios de la vivienda de cada bloque, deflactado con su índice de precios de consumo.",
+   "El BIS publica la zona del euro (los países que usan el euro cada año), no la UE de 27.",
+   "Cada índice lo elabora una fuente nacional distinta y no mide lo mismo: el de EE. UU. cubre todo el país; el de China, las ventas de vivienda nueva en las grandes ciudades. Sirven para comparar la evolución, no el nivel de precios.",
+   "Media de los cuatro trimestres de cada año; China empieza en 2006, su primer año completo."
+  ],
+  "en": [
+   "Real prices: each bloc's house price index deflated by its consumer price index.",
+   "The BIS publishes the euro area (the countries using the euro each year), not the 27-country EU.",
+   "Each index is compiled by a different national source and they do not measure the same thing: the US index covers the whole country; China's, sales of new homes in large cities. They are useful to compare trends, not price levels.",
+   "Average of the four quarters of each year; China starts in 2006, its first full year."
+  ]
+ },
+ "retrieved": "2026-10-09",
+ "geos": {
+  "CHN": {
+   "es": "China",
+   "en": "China",
+   "eu": false,
+   "aggregate": false
+  },
+  "USA": {
+   "es": "Estados Unidos",
+   "en": "United States",
+   "eu": false,
+   "aggregate": false
+  },
+  "EA": {
+   "es": "Zona del euro",
+   "en": "Euro area",
+   "eu": false,
+   "aggregate": true
+  }
+ },
+ "rows": [
+  {
+   "geo": "CHN",
+   "time": "2006",
+   "value": 91.0
+  },
+  {
+   "geo": "CHN",
+   "time": "2007",
+   "value": 92.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2008",
+   "value": 92.9
+  },
+  {
+   "geo": "CHN",
+   "time": "2009",
+   "value": 94.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2010",
+   "value": 100.0
+  },
+  {
+   "geo": "CHN",
+   "time": "2011",
+   "value": 98.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2012",
+   "value": 95.5
+  },
+  {
+   "geo": "CHN",
+   "time": "2013",
+   "value": 98.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2014",
+   "value": 99.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2015",
+   "value": 93.9
+  },
+  {
+   "geo": "CHN",
+   "time": "2016",
+   "value": 98.0
+  },
+  {
+   "geo": "CHN",
+   "time": "2017",
+   "value": 103.3
+  },
+  {
+   "geo": "CHN",
+   "time": "2018",
+   "value": 106.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2019",
+   "value": 109.8
+  },
+  {
+   "geo": "CHN",
+   "time": "2020",
+   "value": 109.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2021",
+   "value": 111.8
+  },
+  {
+   "geo": "CHN",
+   "time": "2022",
+   "value": 107.2
+  },
+  {
+   "geo": "CHN",
+   "time": "2023",
+   "value": 103.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2024",
+   "value": 95.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2025",
+   "value": 89.5
+  },
+  {
+   "geo": "EA",
+   "time": "2005",
+   "value": 99.5
+  },
+  {
+   "geo": "EA",
+   "time": "2006",
+   "value": 103.8
+  },
+  {
+   "geo": "EA",
+   "time": "2007",
+   "value": 106.7
+  },
+  {
+   "geo": "EA",
+   "time": "2008",
+   "value": 105.2
+  },
+  {
+   "geo": "EA",
+   "time": "2009",
+   "value": 101.2
+  },
+  {
+   "geo": "EA",
+   "time": "2010",
+   "value": 100.0
+  },
+  {
+   "geo": "EA",
+   "time": "2011",
+   "value": 98.0
+  },
+  {
+   "geo": "EA",
+   "time": "2012",
+   "value": 93.9
+  },
+  {
+   "geo": "EA",
+   "time": "2013",
+   "value": 90.8
+  },
+  {
+   "geo": "EA",
+   "time": "2014",
+   "value": 90.9
+  },
+  {
+   "geo": "EA",
+   "time": "2015",
+   "value": 92.4
+  },
+  {
+   "geo": "EA",
+   "time": "2016",
+   "value": 95.9
+  },
+  {
+   "geo": "EA",
+   "time": "2017",
+   "value": 98.6
+  },
+  {
+   "geo": "EA",
+   "time": "2018",
+   "value": 101.7
+  },
+  {
+   "geo": "EA",
+   "time": "2019",
+   "value": 104.8
+  },
+  {
+   "geo": "EA",
+   "time": "2020",
+   "value": 110.1
+  },
+  {
+   "geo": "EA",
+   "time": "2021",
+   "value": 116.0
+  },
+  {
+   "geo": "EA",
+   "time": "2022",
+   "value": 115.0
+  },
+  {
+   "geo": "EA",
+   "time": "2023",
+   "value": 107.9
+  },
+  {
+   "geo": "EA",
+   "time": "2024",
+   "value": 107.7
+  },
+  {
+   "geo": "EA",
+   "time": "2025",
+   "value": 111.0
+  },
+  {
+   "geo": "USA",
+   "time": "2005",
+   "value": 146.8
+  },
+  {
+   "geo": "USA",
+   "time": "2006",
+   "value": 150.5
+  },
+  {
+   "geo": "USA",
+   "time": "2007",
+   "value": 137.9
+  },
+  {
+   "geo": "USA",
+   "time": "2008",
+   "value": 113.7
+  },
+  {
+   "geo": "USA",
+   "time": "2009",
+   "value": 103.0
+  },
+  {
+   "geo": "USA",
+   "time": "2010",
+   "value": 100.0
+  },
+  {
+   "geo": "USA",
+   "time": "2011",
+   "value": 94.3
+  },
+  {
+   "geo": "USA",
+   "time": "2012",
+   "value": 96.7
+  },
+  {
+   "geo": "USA",
+   "time": "2013",
+   "value": 104.7
+  },
+  {
+   "geo": "USA",
+   "time": "2014",
+   "value": 109.5
+  },
+  {
+   "geo": "USA",
+   "time": "2015",
+   "value": 115.1
+  },
+  {
+   "geo": "USA",
+   "time": "2016",
+   "value": 119.8
+  },
+  {
+   "geo": "USA",
+   "time": "2017",
+   "value": 124.2
+  },
+  {
+   "geo": "USA",
+   "time": "2018",
+   "value": 127.9
+  },
+  {
+   "geo": "USA",
+   "time": "2019",
+   "value": 130.6
+  },
+  {
+   "geo": "USA",
+   "time": "2020",
+   "value": 137.8
+  },
+  {
+   "geo": "USA",
+   "time": "2021",
+   "value": 151.5
+  },
+  {
+   "geo": "USA",
+   "time": "2022",
+   "value": 158.1
+  },
+  {
+   "geo": "USA",
+   "time": "2023",
+   "value": 157.8
+  },
+  {
+   "geo": "USA",
+   "time": "2024",
+   "value": 159.9
+  },
+  {
+   "geo": "USA",
+   "time": "2025",
+   "value": 158.5
+  }
+ ]
+}
