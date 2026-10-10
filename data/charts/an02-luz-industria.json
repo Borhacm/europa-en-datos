@@ -1,0 +1,501 @@
+{
+ "id": "an02-luz-industria",
+ "lens": "gigantes",
+ "theme": "productividad",
+ "title": {
+  "es": "Una empresa mediana paga la luz en Chipre o Dinamarca a más del triple que en Finlandia",
+  "en": "A medium-sized firm pays more than three times as much for electricity in Cyprus or Denmark as in Finland"
+ },
+ "subtitle": {
+  "es": "Precio de la electricidad para empresas con un consumo de 2.000 a 20.000 MWh al año, sin IVA ni impuestos recuperables, en céntimos de euro por kWh",
+  "en": "Electricity price for businesses using 2,000 to 20,000 MWh a year, excluding VAT and recoverable taxes, in euro cents per kWh"
+ },
+ "unit": {
+  "es": "céntimos de euro por kWh",
+  "en": "euro cents per kWh"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "nrg_pc_205",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/nrg_pc_205/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Consumidores no domésticos de la banda ID (2.000 a 20.000 MWh al año), la de una fábrica mediana. Incluye los impuestos y cargos no recuperables; no incluye el IVA.",
+   "Datos semestrales: segundo semestre de 2019, antes de la pandemia y de la crisis energética, y segundo semestre de 2025, el último con datos de los 27 países y de la UE.",
+   "Eurostat no publica precios de EE. UU. o China. La comparación con EE. UU. (de dos a tres veces más cara) es la del informe Draghi, de 2024."
+  ],
+  "en": [
+   "Non-household consumers in band ID (2,000 to 20,000 MWh a year), typical of a medium-sized factory. Includes non-recoverable taxes and levies; excludes VAT.",
+   "Half-yearly data: second half of 2019, before the pandemic and the energy crisis, and second half of 2025, the latest with data for all 27 countries and the EU.",
+   "Eurostat does not publish US or Chinese prices. The comparison with the US (two to three times more expensive) is the one in the 2024 Draghi report."
+  ]
+ },
+ "retrieved": "2026-10-10",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "dimensions": {
+  "time": {
+   "2019-S2": {
+    "es": "2.º semestre de 2019",
+    "en": "Second half of 2019"
+   },
+   "2025-S2": {
+    "es": "2.º semestre de 2025",
+    "en": "Second half of 2025"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2019-S2",
+   "value": 11.49
+  },
+  {
+   "geo": "AUT",
+   "time": "2025-S2",
+   "value": 21.59,
+   "flag": "e"
+  },
+  {
+   "geo": "BEL",
+   "time": "2019-S2",
+   "value": 11.92
+  },
+  {
+   "geo": "BEL",
+   "time": "2025-S2",
+   "value": 19.01
+  },
+  {
+   "geo": "BGR",
+   "time": "2019-S2",
+   "value": 9.91
+  },
+  {
+   "geo": "BGR",
+   "time": "2025-S2",
+   "value": 16.26
+  },
+  {
+   "geo": "CYP",
+   "time": "2019-S2",
+   "value": 20.03
+  },
+  {
+   "geo": "CYP",
+   "time": "2025-S2",
+   "value": 27.6
+  },
+  {
+   "geo": "CZE",
+   "time": "2019-S2",
+   "value": 9.14
+  },
+  {
+   "geo": "CZE",
+   "time": "2025-S2",
+   "value": 19.79
+  },
+  {
+   "geo": "DEU",
+   "time": "2019-S2",
+   "value": 17.81
+  },
+  {
+   "geo": "DEU",
+   "time": "2025-S2",
+   "value": 23.69
+  },
+  {
+   "geo": "DNK",
+   "time": "2019-S2",
+   "value": 23.11
+  },
+  {
+   "geo": "DNK",
+   "time": "2025-S2",
+   "value": 27.32
+  },
+  {
+   "geo": "ESP",
+   "time": "2019-S2",
+   "value": 11.23
+  },
+  {
+   "geo": "ESP",
+   "time": "2025-S2",
+   "value": 14.31
+  },
+  {
+   "geo": "EST",
+   "time": "2019-S2",
+   "value": 9.82
+  },
+  {
+   "geo": "EST",
+   "time": "2025-S2",
+   "value": 16.04
+  },
+  {
+   "geo": "EU27",
+   "time": "2019-S2",
+   "value": 12.73
+  },
+  {
+   "geo": "EU27",
+   "time": "2025-S2",
+   "value": 19.2
+  },
+  {
+   "geo": "FIN",
+   "time": "2019-S2",
+   "value": 8.39
+  },
+  {
+   "geo": "FIN",
+   "time": "2025-S2",
+   "value": 8.46
+  },
+  {
+   "geo": "FRA",
+   "time": "2019-S2",
+   "value": 9.41
+  },
+  {
+   "geo": "FRA",
+   "time": "2025-S2",
+   "value": 14.25
+  },
+  {
+   "geo": "GRC",
+   "time": "2019-S2",
+   "value": 10.06
+  },
+  {
+   "geo": "GRC",
+   "time": "2025-S2",
+   "value": 17.18
+  },
+  {
+   "geo": "HRV",
+   "time": "2019-S2",
+   "value": 10.75
+  },
+  {
+   "geo": "HRV",
+   "time": "2025-S2",
+   "value": 15.67
+  },
+  {
+   "geo": "HUN",
+   "time": "2019-S2",
+   "value": 10.8
+  },
+  {
+   "geo": "HUN",
+   "time": "2025-S2",
+   "value": 23.39
+  },
+  {
+   "geo": "IRL",
+   "time": "2019-S2",
+   "value": 11.52
+  },
+  {
+   "geo": "IRL",
+   "time": "2025-S2",
+   "value": 23.49
+  },
+  {
+   "geo": "ITA",
+   "time": "2019-S2",
+   "value": 15.75
+  },
+  {
+   "geo": "ITA",
+   "time": "2025-S2",
+   "value": 21.77
+  },
+  {
+   "geo": "LTU",
+   "time": "2019-S2",
+   "value": 10.22
+  },
+  {
+   "geo": "LTU",
+   "time": "2025-S2",
+   "value": 16.42
+  },
+  {
+   "geo": "LUX",
+   "time": "2019-S2",
+   "value": 7.98
+  },
+  {
+   "geo": "LUX",
+   "time": "2025-S2",
+   "value": 15.64
+  },
+  {
+   "geo": "LVA",
+   "time": "2019-S2",
+   "value": 11.16
+  },
+  {
+   "geo": "LVA",
+   "time": "2025-S2",
+   "value": 14.06
+  },
+  {
+   "geo": "MLT",
+   "time": "2019-S2",
+   "value": 12.44
+  },
+  {
+   "geo": "MLT",
+   "time": "2025-S2",
+   "value": 12.57
+  },
+  {
+   "geo": "NLD",
+   "time": "2019-S2",
+   "value": 10.6
+  },
+  {
+   "geo": "NLD",
+   "time": "2025-S2",
+   "value": 22.07
+  },
+  {
+   "geo": "POL",
+   "time": "2019-S2",
+   "value": 9.44
+  },
+  {
+   "geo": "POL",
+   "time": "2025-S2",
+   "value": 21.35
+  },
+  {
+   "geo": "PRT",
+   "time": "2019-S2",
+   "value": 12.88
+  },
+  {
+   "geo": "PRT",
+   "time": "2025-S2",
+   "value": 14.82
+  },
+  {
+   "geo": "ROU",
+   "time": "2019-S2",
+   "value": 11.24
+  },
+  {
+   "geo": "ROU",
+   "time": "2025-S2",
+   "value": 20.71
+  },
+  {
+   "geo": "SVK",
+   "time": "2019-S2",
+   "value": 14.96
+  },
+  {
+   "geo": "SVK",
+   "time": "2025-S2",
+   "value": 21.88
+  },
+  {
+   "geo": "SVN",
+   "time": "2019-S2",
+   "value": 9.91
+  },
+  {
+   "geo": "SVN",
+   "time": "2025-S2",
+   "value": 17.28
+  },
+  {
+   "geo": "SWE",
+   "time": "2019-S2",
+   "value": 7.45
+  },
+  {
+   "geo": "SWE",
+   "time": "2025-S2",
+   "value": 10.65
+  }
+ ]
+}
