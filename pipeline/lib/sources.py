@@ -13,6 +13,7 @@ WORLDBANK_API = "https://api.worldbank.org/v2"
 ILO_API = "https://sdmx.ilo.org/rest/data/ILO"
 BIS_API = "https://stats.bis.org/api/v2/data/dataflow/BIS"
 ECB_API = "https://data-api.ecb.europa.eu/service/data"
+IMF_API = "https://www.imf.org/external/datamapper/api/v1"
 
 
 def eurostat(dataset: str, **filters) -> list[dict]:
@@ -80,6 +81,17 @@ def ecb(flow: str, key: str, start: str | None = None) -> list[dict]:
     path = fetch(url, ".csv")
     with path.open(newline="", encoding="utf-8-sig") as f:
         return [r for r in csv.DictReader(f) if r["OBS_VALUE"]]
+
+
+def imf(indicator: str, countries: list[str]) -> list[dict]:
+    """Indicador del FMI (DataMapper, World Economic Outlook), p. ej. 'GGXWDG_NGDP'. Incluye proyecciones: hay que cortarlas."""
+    url = f"{IMF_API}/{indicator}/{'/'.join(countries)}"
+    # El cortafuegos del FMI rechaza agentes de usuario desconocidos (403) y acepta el de urllib
+    values = json.loads(fetch(url, ".json", headers={"User-Agent": "Python-urllib/3"}).read_text())["values"][indicator]
+    return [
+        {"iso3": code, "time": year, "value": value}
+        for code in countries for year, value in values.get(code, {}).items() if value is not None
+    ]
 
 
 def worldbank(indicator: str, countries: list[str], start: int, end: int) -> list[dict]:
