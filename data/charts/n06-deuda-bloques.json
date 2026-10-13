@@ -1,0 +1,418 @@
+{
+ "id": "n06-deuda-bloques",
+ "lens": "gigantes",
+ "theme": "productividad",
+ "title": {
+  "es": "Desde 2001, la deuda pública de EE. UU. ha pasado del 53,5 % al 122,3 % de su PIB; la de la UE, del 65,6 % al 81,6 %",
+  "en": "Since 2001, US public debt has risen from 53.5% to 122.3% of GDP; the EU's, from 65.6% to 81.6%"
+ },
+ "subtitle": {
+  "es": "Deuda bruta de las administraciones públicas, en % del PIB, 2001-2024",
+  "en": "General government gross debt, as % of GDP, 2001-2024"
+ },
+ "unit": {
+  "es": "% del PIB",
+  "en": "% of GDP"
+ },
+ "source": {
+  "name": "FMI, World Economic Outlook (octubre de 2026)",
+  "dataset": "GGXWDG_NGDP",
+  "url": "https://www.imf.org/external/datamapper/GGXWDG_NGDP@WEO",
+  "license": "Términos de uso del FMI (uso libre citando la fuente)"
+ },
+ "notes": {
+  "es": [
+   "Las tres series salen de la misma fuente, el FMI, para que sean comparables. La serie se corta en 2024: desde 2025, el World Economic Outlook da estimaciones y proyecciones.",
+   "La cifra de la UE del FMI (81,6 % en 2024) difiere un poco de la de Eurostat (80,7 %), que es la que usa el segundo gráfico.",
+   "China: el FMI publica varias medidas. En su consulta del artículo IV de febrero de 2026, la deuda pública con la definición estrecha era del 60,9 % del PIB en 2024, y la deuda 'aumentada', que suma la de los vehículos de financiación de los gobiernos locales, del 126,6 % en 2025. La serie del World Economic Outlook queda entre ambas."
+  ],
+  "en": [
+   "All three series come from the same source, the IMF, so they are comparable. The series stops in 2024: from 2025 on, the World Economic Outlook gives estimates and projections.",
+   "The IMF's EU figure (81.6% in 2024) differs slightly from Eurostat's (80.7%), which the second chart uses.",
+   "China: the IMF publishes several measures. In its February 2026 Article IV consultation, public debt on the narrow definition was 60.9% of GDP in 2024, and 'augmented' debt, which adds local government financing vehicles, 126.6% in 2025. The World Economic Outlook series falls between the two."
+  ]
+ },
+ "retrieved": "2026-10-13",
+ "geos": {
+  "CHN": {
+   "es": "China",
+   "en": "China",
+   "eu": false,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "USA": {
+   "es": "Estados Unidos",
+   "en": "United States",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "CHN",
+   "time": "2001",
+   "value": 24.2
+  },
+  {
+   "geo": "CHN",
+   "time": "2002",
+   "value": 25.5
+  },
+  {
+   "geo": "CHN",
+   "time": "2003",
+   "value": 26.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2004",
+   "value": 25.9
+  },
+  {
+   "geo": "CHN",
+   "time": "2005",
+   "value": 26
+  },
+  {
+   "geo": "CHN",
+   "time": "2006",
+   "value": 25.2
+  },
+  {
+   "geo": "CHN",
+   "time": "2007",
+   "value": 28.8
+  },
+  {
+   "geo": "CHN",
+   "time": "2008",
+   "value": 26.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2009",
+   "value": 33.9
+  },
+  {
+   "geo": "CHN",
+   "time": "2010",
+   "value": 33.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2011",
+   "value": 33
+  },
+  {
+   "geo": "CHN",
+   "time": "2012",
+   "value": 33.9
+  },
+  {
+   "geo": "CHN",
+   "time": "2013",
+   "value": 36.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2014",
+   "value": 39.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2015",
+   "value": 40.9
+  },
+  {
+   "geo": "CHN",
+   "time": "2016",
+   "value": 50
+  },
+  {
+   "geo": "CHN",
+   "time": "2017",
+   "value": 53.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2018",
+   "value": 55.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2019",
+   "value": 59.9
+  },
+  {
+   "geo": "CHN",
+   "time": "2020",
+   "value": 70.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2021",
+   "value": 72.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2022",
+   "value": 77.3
+  },
+  {
+   "geo": "CHN",
+   "time": "2023",
+   "value": 84.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2024",
+   "value": 90.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2001",
+   "value": 65.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2002",
+   "value": 65.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2003",
+   "value": 66.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2004",
+   "value": 67
+  },
+  {
+   "geo": "EU27",
+   "time": "2005",
+   "value": 67.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2006",
+   "value": 64.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2007",
+   "value": 62.3
+  },
+  {
+   "geo": "EU27",
+   "time": "2008",
+   "value": 65.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2009",
+   "value": 75.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2010",
+   "value": 80.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2011",
+   "value": 82.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2012",
+   "value": 86.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2013",
+   "value": 88.8
+  },
+  {
+   "geo": "EU27",
+   "time": "2014",
+   "value": 89.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2015",
+   "value": 87
+  },
+  {
+   "geo": "EU27",
+   "time": "2016",
+   "value": 85.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2017",
+   "value": 83.3
+  },
+  {
+   "geo": "EU27",
+   "time": "2018",
+   "value": 81.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2019",
+   "value": 79
+  },
+  {
+   "geo": "EU27",
+   "time": "2020",
+   "value": 91.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "value": 88.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2022",
+   "value": 83.8
+  },
+  {
+   "geo": "EU27",
+   "time": "2023",
+   "value": 81.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "value": 81.6
+  },
+  {
+   "geo": "USA",
+   "time": "2001",
+   "value": 53.5
+  },
+  {
+   "geo": "USA",
+   "time": "2002",
+   "value": 55.9
+  },
+  {
+   "geo": "USA",
+   "time": "2003",
+   "value": 59
+  },
+  {
+   "geo": "USA",
+   "time": "2004",
+   "value": 66.4
+  },
+  {
+   "geo": "USA",
+   "time": "2005",
+   "value": 65.8
+  },
+  {
+   "geo": "USA",
+   "time": "2006",
+   "value": 64.5
+  },
+  {
+   "geo": "USA",
+   "time": "2007",
+   "value": 65
+  },
+  {
+   "geo": "USA",
+   "time": "2008",
+   "value": 73.9
+  },
+  {
+   "geo": "USA",
+   "time": "2009",
+   "value": 87.1
+  },
+  {
+   "geo": "USA",
+   "time": "2010",
+   "value": 95.7
+  },
+  {
+   "geo": "USA",
+   "time": "2011",
+   "value": 100
+  },
+  {
+   "geo": "USA",
+   "time": "2012",
+   "value": 103.7
+  },
+  {
+   "geo": "USA",
+   "time": "2013",
+   "value": 105
+  },
+  {
+   "geo": "USA",
+   "time": "2014",
+   "value": 105
+  },
+  {
+   "geo": "USA",
+   "time": "2015",
+   "value": 105.5
+  },
+  {
+   "geo": "USA",
+   "time": "2016",
+   "value": 107.5
+  },
+  {
+   "geo": "USA",
+   "time": "2017",
+   "value": 106.5
+  },
+  {
+   "geo": "USA",
+   "time": "2018",
+   "value": 107.7
+  },
+  {
+   "geo": "USA",
+   "time": "2019",
+   "value": 108.8
+  },
+  {
+   "geo": "USA",
+   "time": "2020",
+   "value": 132.6
+  },
+  {
+   "geo": "USA",
+   "time": "2021",
+   "value": 125
+  },
+  {
+   "geo": "USA",
+   "time": "2022",
+   "value": 119.2
+  },
+  {
+   "geo": "USA",
+   "time": "2023",
+   "value": 120
+  },
+  {
+   "geo": "USA",
+   "time": "2024",
+   "value": 122.3
+  }
+ ]
+}
