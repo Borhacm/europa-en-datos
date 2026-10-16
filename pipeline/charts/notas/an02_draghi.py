@@ -13,15 +13,15 @@ ELEC_TIMES = ["2019-S2", "2025-S2"]
 
 def luz_industria():
     rows = sources.eurostat("nrg_pc_205", siec="E7000", nrg_cons="MWH2000-19999", unit="KWH",
-                            tax="I_TAX", currency="EUR", time=ELEC_TIMES)
+                            tax="X_VAT", currency="EUR", time=ELEC_TIMES)
     # En céntimos: se multiplica antes de redondear para no perder precisión
     out = [r for r in from_eurostat([{**r, "value": r["value"] * 100} for r in rows], [])
            if r["geo"] in geo.EU27 or r["geo"] == "EU27"]
     return chart(
         id="an02-luz-industria",
         lens="gigantes", theme="productividad",
-        title={"es": "Una empresa mediana paga la luz en Chipre o Dinamarca a más del triple que en Finlandia",
-               "en": "A medium-sized firm pays more than three times as much for electricity in Cyprus or Denmark as in Finland"},
+        title={"es": "Una empresa mediana paga la luz en Chipre a 3,5 veces lo que en Finlandia",
+               "en": "A medium-sized firm pays 3.5 times as much for electricity in Cyprus as in Finland"},
         subtitle={"es": "Precio de la electricidad para empresas con un consumo de 2.000 a 20.000 MWh al año, sin IVA ni impuestos recuperables, en céntimos de euro por kWh",
                   "en": "Electricity price for businesses using 2,000 to 20,000 MWh a year, excluding VAT and recoverable taxes, in euro cents per kWh"},
         unit={"es": "céntimos de euro por kWh", "en": "euro cents per kWh"},
