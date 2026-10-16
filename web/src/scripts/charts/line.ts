@@ -9,6 +9,19 @@ interface Series { key: string; label: string; color: string; points: { x: numbe
 
 const MIN_LABEL_GAP = 15;
 
+/** Posición en el eje X: años ("2024") o semestres ("2024-S2" = 2024,5). */
+const SEMESTER = /^(\d{4})-S([12])$/;
+function toX(time: string): number {
+  const m = SEMESTER.exec(time);
+  return m ? +m[1] + (m[2] === "2" ? 0.5 : 0) : +time;
+}
+function timeLabel(x: number, semesters: boolean, lang: string): string {
+  if (!semesters) return String(x);
+  const year = Math.floor(x);
+  const half = x - year >= 0.5 ? 2 : 1;
+  return lang === "es" ? `${half}.º semestre de ${year}` : `H${half} ${year}`;
+}
+
 export function renderLine(ctx: RenderContext) {
   const { chart, cfg, lang, plot, focus } = ctx;
   const digits = cfg.digits ?? (ctx.state.scale === "total" ? 0 : 1);
@@ -40,7 +53,7 @@ export function renderLine(ctx: RenderContext) {
     series.push({
       key, label, context,
       color: key === "EU27_min" ? cssVar("--context-strong") : seriesVar ? cssVar(seriesVar) : colorFor(key, focus),
-      points: rs.map((r) => ({ x: +r.time, y: r.value })).sort((a, b) => a.x - b.x),
+      points: rs.map((r) => ({ x: toX(r.time), y: r.value })).sort((a, b) => a.x - b.x),
     });
   };
   const isContext = (k: string) => k === "EU27_min" || (cfg.context ? cfg.context.includes(k) : !!cfg.showContext);
@@ -80,7 +93,8 @@ export function renderLine(ctx: RenderContext) {
     const lbl = svg("text", { x: width - m.right, y: y(ref.value) - 6, class: "ref-label", "text-anchor": "end" }, grid);
     lbl.textContent = ref.label[lang];
   }
-  const [x0, x1] = x.domain();
+  // Marcas del eje X siempre en años enteros (en series semestrales, el primer semestre de cada año)
+  const [x0, x1] = [Math.ceil(x.domain()[0]), Math.floor(x.domain()[1])];
   const step = Math.max(1, Math.ceil((x1 - x0) / (narrow ? 4 : 8)));
   for (let v = x1; v >= x0; v -= step) {
     const txt = svg("text", { x: x(v), y: height - 8, class: "tick", "text-anchor": v === x0 ? "start" : "middle" }, grid);
@@ -110,9 +124,12 @@ export function renderLine(ctx: RenderContext) {
     }).sort((a, b) => a.y - b.y);
     let prev = -Infinity;
     for (const l of labels) {
-      if (l.y - prev < MIN_LABEL_GAP) continue; // la leyenda y el tooltip cubren la etiqueta omitida
-      prev = l.y;
-      const txt = svg("text", { x: l.x + 10, y: l.y + 4, class: "end-label" }, root);
+      // Si choca con la anterior, se baja hasta un hueco; si tendría que alejarse demasiado de su punto,
+      // se omite (la leyenda y el tooltip la cubren)
+      const ly = Math.max(l.y, prev + MIN_LABEL_GAP);
+      if (ly - l.y > MIN_LABEL_GAP) continue;
+      prev = ly;
+      const txt = svg("text", { x: l.x + 10, y: ly + 4, class: "end-label" }, root);
       txt.innerHTML = `<tspan class="end-name">${l.s.label}</tspan> <tspan class="end-value">${fmt(l.value)}</tspan>`;
     }
   }
@@ -127,6 +144,7 @@ export function renderLine(ctx: RenderContext) {
   const dots = series.filter((s) => !s.context || s.key === "EU27_min").map((s) =>
     ({ s, dot: svg("circle", { r: 4.5, fill: s.color, stroke: cssVar("--paper"), "stroke-width": 2 }, hover) }));
   const years = [...new Set(xs)].sort((a, b) => a - b);
+  const semesters = rows.some((r) => SEMESTER.test(r.time));
   // Línea gris bajo el puntero: se resalta y se nombra en el tooltip
   const ctxDot = svg("circle", { r: 4, fill: cssVar("--ink"), stroke: cssVar("--paper"), "stroke-width": 2 }, hover);
   let hovered: SVGGElement | null = null;
@@ -173,7 +191,7 @@ export function renderLine(ctx: RenderContext) {
       lines.push({ color: cssVar("--ink"), label: near.s.label, v: near.p.y });
     }
     lines.sort((a, b) => b.v - a.v);
-    tip.show(x(yr), m.top + 10, `<div class="tip-title">${yr}</div>${lines.map((l) => tipRow(l.color, l.label, fmt(l.v))).join("")}`);
+    tip.show(x(yr), m.top + 10, `<div class="tip-title">${timeLabel(yr, semesters, lang)}</div>${lines.map((l) => tipRow(l.color, l.label, fmt(l.v))).join("")}`);
   };
   const hide = () => {
     hover.style.display = "none"; tip.hide();

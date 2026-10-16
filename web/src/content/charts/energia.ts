@@ -20,16 +20,17 @@ const charts: Record<string, ChartConfig> = {
   "ene1-renovables-ue": {
     renderer: "line",
     series: ["REN", "REN_ELC", "REN_HEAT_CL", "REN_TRA"],
-    seriesColors: { REN: "--eu", REN_ELC: "--ord-1", REN_HEAT_CL: "--ord-2", REN_TRA: "--ord-3" },
+    seriesColors: { REN: "--ink", REN_ELC: "--ord-1", REN_HEAT_CL: "--ord-2", REN_TRA: "--ord-3" },
     table: { rows: "series", cols: "time", lastCols: 6 },
     domainMin: 0,
   },
   "ene2-precio-industria": {
     renderer: "line",
     series: ["X_VAT", "X_TAX"],
-    seriesColors: { X_VAT: "--eu", X_TAX: "--ord-2" },
+    seriesColors: { X_VAT: "--eu", X_TAX: "--context-strong" },
     table: { rows: "series", cols: "time", lastCols: 6 },
     domainMin: 0,
+    digits: 2,
   },
   "end1-renovables-paises": {
     renderer: "rank",
@@ -41,6 +42,7 @@ const charts: Record<string, ChartConfig> = {
     renderer: "dumbbell",
     usesFocus: true,
     table: { rows: "geo", cols: "time" },
+    digits: 2,
   },
 };
 
