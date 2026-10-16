@@ -23,13 +23,13 @@
  "notes": {
   "es": [
    "Empresas que consumen entre 2.000 y 20.000 MWh al año, la banda de referencia de Eurostat para la industria. Precio medio del semestre en euros corrientes, sin descontar la inflación.",
-   "Las empresas suelen recuperar el IVA y algunos impuestos: el precio sin IVA ni impuestos recuperables es lo que pagan de verdad. El precio sin impuestos incluye la energía, el suministro y las redes.",
+   "Las empresas suelen recuperar el IVA y algunos impuestos: el precio sin IVA ni impuestos recuperables (en el gráfico, 'sin IVA') es lo que pagan de verdad. El precio sin impuestos incluye la energía, el suministro y las redes.",
    "El primer semestre de 2021 es el último antes de la subida de precios de la energía de 2021 y 2022.",
    "En Malta el precio apenas ha cambiado (+0,9 %). Austria: dato estimado en 2025."
   ],
   "en": [
    "Businesses consuming 2,000 to 20,000 MWh a year, Eurostat's reference band for industry. Average price for the half-year in current euros, not adjusted for inflation.",
-   "Businesses usually recover VAT and some taxes: the price excluding VAT and recoverable taxes is what they actually pay. The price excluding taxes covers energy, supply and networks.",
+   "Businesses usually recover VAT and some taxes: the price excluding VAT and recoverable taxes ('excluding VAT' in the chart) is what they actually pay. The price excluding taxes covers energy, supply and networks.",
    "The first half of 2021 is the last one before the 2021-2022 energy price surge.",
    "In Malta the price has barely changed (+0.9%). Austria: estimated 2025 data."
   ]

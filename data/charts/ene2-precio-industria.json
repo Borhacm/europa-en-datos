@@ -23,12 +23,12 @@
  "notes": {
   "es": [
    "Empresas que consumen entre 2.000 y 20.000 MWh al año, la banda de referencia de Eurostat para la industria. Precio medio del semestre en euros corrientes, sin descontar la inflación.",
-   "Las empresas suelen recuperar el IVA y algunos impuestos: el precio sin IVA ni impuestos recuperables es lo que pagan de verdad. El precio sin impuestos incluye la energía, el suministro y las redes.",
+   "Las empresas suelen recuperar el IVA y algunos impuestos: el precio sin IVA ni impuestos recuperables (en el gráfico, 'sin IVA') es lo que pagan de verdad. El precio sin impuestos incluye la energía, el suministro y las redes.",
    "No hay una serie abierta y comparable de precios industriales de EE. UU. y China con la misma metodología."
   ],
   "en": [
    "Businesses consuming 2,000 to 20,000 MWh a year, Eurostat's reference band for industry. Average price for the half-year in current euros, not adjusted for inflation.",
-   "Businesses usually recover VAT and some taxes: the price excluding VAT and recoverable taxes is what they actually pay. The price excluding taxes covers energy, supply and networks.",
+   "Businesses usually recover VAT and some taxes: the price excluding VAT and recoverable taxes ('excluding VAT' in the chart) is what they actually pay. The price excluding taxes covers energy, supply and networks.",
    "There is no open, comparable series of industrial prices for the US and China using the same method."
   ]
  },
@@ -48,8 +48,8 @@
     "en": "Excluding taxes"
    },
    "X_VAT": {
-    "es": "Sin IVA ni impuestos recuperables",
-    "en": "Excluding VAT and recoverable taxes"
+    "es": "Sin IVA",
+    "en": "Excluding VAT"
    }
   }
  },
