@@ -133,6 +133,14 @@ articulos:
     fuentes: [Eurostat nrg_bal_c, Eurostat nrg_pc_205, Eurostat nrg_ind_ren, Banco Mundial]
     relacionada: n04
 
+  - id: a11
+    tema_id: competitividad
+    codigo: CP
+    titulo: "La agenda Draghi, sector a sector: dónde avanza y dónde se atasca"
+    angulo: "Ángulo nuevo, sin repetir AN02 (que cuenta qué pedía el informe y el balance general a los dos años): aquí el protagonista es cada sector del informe y la distancia entre lo que se ha aprobado y lo que muestran los datos. Gigantes: en los sectores con más recomendaciones (energía, materias primas críticas, digital, defensa), la posición de la UE frente a EE. UU. y China con datos abiertos (precios o dependencias, inversión, gasto). Elige: el índice de EPIC por sector y en tres cortes (septiembre de 2025, enero y julio de 2026): Europa avanza donde hay urgencia (defensa, materias primas) y se atasca en energía, digital y farmacia; incluir el reparto por direcciones generales de la Comisión y el frenazo del ritmo entre enero y julio de 2026. Dentro: los mismos sectores país por país (por ejemplo, precio de la energía para la industria, adopción digital de las empresas, gasto en defensa) para ver qué países ya están donde pide Draghi. Las cifras de EPIC se leen en su panel (no hay API ni licencia abierta declarada): cítalas como fuente en las notas, con la fecha de la actualización, y no publiques su base de datos de medidas. Enlazar AN02."
+    fuentes: ["EPIC, Draghi Observatory & Implementation Index: https://draghiwatch.eu/ (383 recomendaciones, 10 sectores, estado en septiembre de 2025, enero y julio de 2026; metodología en https://draghiwatch.eu/methodology)", "Banco de España, el informe Draghi dos años después (8/09/2026)", "Eurostat nrg_pc_205, isoc_eb_ai, gov_10a_exp", "Banco Mundial MS.MIL.XPND.GD.ZS"]
+    relacionada: an02
+
   - id: a04
     tema_id: transporte
     codigo: TR

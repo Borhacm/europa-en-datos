@@ -32,7 +32,7 @@
    "Eurostat does not publish US or Chinese prices. The comparison with the US (two to three times more expensive) is the one in the 2024 Draghi report."
   ]
  },
- "retrieved": "2026-10-10",
+ "retrieved": "2026-10-16",
  "geos": {
   "AUT": {
    "es": "Austria",
@@ -219,283 +219,283 @@
   {
    "geo": "AUT",
    "time": "2019-S2",
-   "value": 11.49
+   "value": 9.58
   },
   {
    "geo": "AUT",
    "time": "2025-S2",
-   "value": 21.59,
+   "value": 17.99,
    "flag": "e"
   },
   {
    "geo": "BEL",
    "time": "2019-S2",
-   "value": 11.92
+   "value": 9.89
   },
   {
    "geo": "BEL",
    "time": "2025-S2",
-   "value": 19.01
+   "value": 15.71
   },
   {
    "geo": "BGR",
    "time": "2019-S2",
-   "value": 9.91
+   "value": 8.26
   },
   {
    "geo": "BGR",
    "time": "2025-S2",
-   "value": 16.26
+   "value": 13.55
   },
   {
    "geo": "CYP",
    "time": "2019-S2",
-   "value": 20.03
+   "value": 17.26
   },
   {
    "geo": "CYP",
    "time": "2025-S2",
-   "value": 27.6
+   "value": 23.66
   },
   {
    "geo": "CZE",
    "time": "2019-S2",
-   "value": 9.14
+   "value": 7.55
   },
   {
    "geo": "CZE",
    "time": "2025-S2",
-   "value": 19.79
+   "value": 16.36
   },
   {
    "geo": "DEU",
    "time": "2019-S2",
-   "value": 17.81
+   "value": 13.61
   },
   {
    "geo": "DEU",
    "time": "2025-S2",
-   "value": 23.69
+   "value": 19.22
   },
   {
    "geo": "DNK",
    "time": "2019-S2",
-   "value": 23.11
+   "value": 6.7
   },
   {
    "geo": "DNK",
    "time": "2025-S2",
-   "value": 27.32
+   "value": 12.32
   },
   {
    "geo": "ESP",
    "time": "2019-S2",
-   "value": 11.23
+   "value": 9.28
   },
   {
    "geo": "ESP",
    "time": "2025-S2",
-   "value": 14.31
+   "value": 11.91
   },
   {
    "geo": "EST",
    "time": "2019-S2",
-   "value": 9.82
+   "value": 8.18
   },
   {
    "geo": "EST",
    "time": "2025-S2",
-   "value": 16.04
+   "value": 12.94
   },
   {
    "geo": "EU27",
    "time": "2019-S2",
-   "value": 12.73
+   "value": 10.31
   },
   {
    "geo": "EU27",
    "time": "2025-S2",
-   "value": 19.2
+   "value": 15.96
   },
   {
    "geo": "FIN",
    "time": "2019-S2",
-   "value": 8.39
+   "value": 6.76
   },
   {
    "geo": "FIN",
    "time": "2025-S2",
-   "value": 8.46
+   "value": 6.74
   },
   {
    "geo": "FRA",
    "time": "2019-S2",
-   "value": 9.41
+   "value": 7.89
   },
   {
    "geo": "FRA",
    "time": "2025-S2",
-   "value": 14.25
+   "value": 12.12
   },
   {
    "geo": "GRC",
    "time": "2019-S2",
-   "value": 10.06
+   "value": 9.5
   },
   {
    "geo": "GRC",
    "time": "2025-S2",
-   "value": 17.18
+   "value": 16.21
   },
   {
    "geo": "HRV",
    "time": "2019-S2",
-   "value": 10.75
+   "value": 9.52
   },
   {
    "geo": "HRV",
    "time": "2025-S2",
-   "value": 15.67
+   "value": 13.86
   },
   {
    "geo": "HUN",
    "time": "2019-S2",
-   "value": 10.8
+   "value": 8.69
   },
   {
    "geo": "HUN",
    "time": "2025-S2",
-   "value": 23.39
+   "value": 18.76
   },
   {
    "geo": "IRL",
    "time": "2019-S2",
-   "value": 11.52
+   "value": 10.36
   },
   {
    "geo": "IRL",
    "time": "2025-S2",
-   "value": 23.49
+   "value": 21.87
   },
   {
    "geo": "ITA",
    "time": "2019-S2",
-   "value": 15.75
+   "value": 13.99
   },
   {
    "geo": "ITA",
    "time": "2025-S2",
-   "value": 21.77
+   "value": 19.48
   },
   {
    "geo": "LTU",
    "time": "2019-S2",
-   "value": 10.22
+   "value": 8.44
   },
   {
    "geo": "LTU",
    "time": "2025-S2",
-   "value": 16.42
+   "value": 13.61
   },
   {
    "geo": "LUX",
    "time": "2019-S2",
-   "value": 7.98
+   "value": 7.34
   },
   {
    "geo": "LUX",
    "time": "2025-S2",
-   "value": 15.64
+   "value": 14.44
   },
   {
    "geo": "LVA",
    "time": "2019-S2",
-   "value": 11.16
+   "value": 9.22
   },
   {
    "geo": "LVA",
    "time": "2025-S2",
-   "value": 14.06
+   "value": 11.62
   },
   {
    "geo": "MLT",
    "time": "2019-S2",
-   "value": 12.44
+   "value": 11.85
   },
   {
    "geo": "MLT",
    "time": "2025-S2",
-   "value": 12.57
+   "value": 11.97
   },
   {
    "geo": "NLD",
    "time": "2019-S2",
-   "value": 10.6
+   "value": 8.8
   },
   {
    "geo": "NLD",
    "time": "2025-S2",
-   "value": 22.07
+   "value": 18.24
   },
   {
    "geo": "POL",
    "time": "2019-S2",
-   "value": 9.44
+   "value": 7.67
   },
   {
    "geo": "POL",
    "time": "2025-S2",
-   "value": 21.35
+   "value": 17.35
   },
   {
    "geo": "PRT",
    "time": "2019-S2",
-   "value": 12.88
+   "value": 10.63
   },
   {
    "geo": "PRT",
    "time": "2025-S2",
-   "value": 14.82
+   "value": 12.16
   },
   {
    "geo": "ROU",
    "time": "2019-S2",
-   "value": 11.24
+   "value": 9.45
   },
   {
    "geo": "ROU",
    "time": "2025-S2",
-   "value": 20.71
+   "value": 17.15
   },
   {
    "geo": "SVK",
    "time": "2019-S2",
-   "value": 14.96
+   "value": 12.47
   },
   {
    "geo": "SVK",
    "time": "2025-S2",
-   "value": 21.88
+   "value": 18.39
   },
   {
    "geo": "SVN",
    "time": "2019-S2",
-   "value": 9.91
+   "value": 8.12
   },
   {
    "geo": "SVN",
    "time": "2025-S2",
-   "value": 17.28
+   "value": 14.16
   },
   {
    "geo": "SWE",
    "time": "2019-S2",
-   "value": 7.45
+   "value": 5.96
   },
   {
    "geo": "SWE",
    "time": "2025-S2",
-   "value": 10.65
+   "value": 8.52
   }
  ]
 }
