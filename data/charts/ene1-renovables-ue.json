@@ -1,0 +1,577 @@
+{
+ "id": "ene1-renovables-ue",
+ "lens": "elige",
+ "theme": "energia",
+ "title": {
+  "es": "Las renovables ya cubren el 47,5 % de la electricidad que consume la UE, pero solo el 25,2 % de toda su energía",
+  "en": "Renewables now cover 47.5% of the electricity the EU consumes, but only 25.2% of all its energy"
+ },
+ "subtitle": {
+  "es": "Energías renovables en la UE, en % del consumo final bruto de energía, total y por uso",
+  "en": "Renewable energy in the EU, as % of gross final energy consumption, total and by use"
+ },
+ "unit": {
+  "es": "% del consumo final bruto",
+  "en": "% of gross final consumption"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "nrg_ind_ren",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/nrg_ind_ren/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Consumo final bruto: la energía que llega a hogares, empresas y transporte, más las pérdidas de la red y el consumo propio de las centrales. Se calcula con las reglas de la directiva de renovables.",
+   "El objetivo de la UE para 2030 es que las renovables lleguen al 42,5 % del consumo final bruto de energía (Directiva (UE) 2023/2413).",
+   "Se muestra hasta 2024, el último año con datos definitivos de todos los usos. Eurostat ya publica un dato provisional de 2025 para el total (26,2 % en la UE), pero no para el transporte.",
+   "No coincide con la mezcla de producción eléctrica del gráfico G2: aquí se mide el consumo, y la directiva corrige la hidráulica y la eólica para quitar el efecto de los años más o menos lluviosos y ventosos."
+  ],
+  "en": [
+   "Gross final consumption: the energy delivered to households, businesses and transport, plus grid losses and power plants' own use. It is calculated under the rules of the renewable energy directive.",
+   "The EU target for 2030 is for renewables to reach 42.5% of gross final energy consumption (Directive (EU) 2023/2413).",
+   "Shown up to 2024, the last year with final data for every use. Eurostat already publishes a provisional 2025 figure for the total (26.2% in the EU), but not for transport.",
+   "It does not match the electricity production mix in chart G2: this measures consumption, and the directive normalises hydro and wind to remove the effect of wetter or windier years."
+  ]
+ },
+ "retrieved": "2026-10-16",
+ "geos": {
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  }
+ },
+ "dimensions": {
+  "series": {
+   "REN": {
+    "es": "Total",
+    "en": "Total"
+   },
+   "REN_ELC": {
+    "es": "Electricidad",
+    "en": "Electricity"
+   },
+   "REN_HEAT_CL": {
+    "es": "Calefacción y refrigeración",
+    "en": "Heating and cooling"
+   },
+   "REN_TRA": {
+    "es": "Transporte",
+    "en": "Transport"
+   }
+  }
+ },
+ "target": {
+  "value": 42.5,
+  "year": "2030",
+  "source": "https://eur-lex.europa.eu/eli/dir/2023/2413/oj"
+ },
+ "rows": [
+  {
+   "geo": "EU27",
+   "series": "REN",
+   "time": "2004",
+   "value": 9.6
+  },
+  {
+   "geo": "EU27",
+   "series": "REN",
+   "time": "2005",
+   "value": 10.2
+  },
+  {
+   "geo": "EU27",
+   "series": "REN",
+   "time": "2006",
+   "value": 10.8
+  },
+  {
+   "geo": "EU27",
+   "series": "REN",
+   "time": "2007",
+   "value": 11.8
+  },
+  {
+   "geo": "EU27",
+   "series": "REN",
+   "time": "2008",
+   "value": 12.6
+  },
+  {
+   "geo": "EU27",
+   "series": "REN",
+   "time": "2009",
+   "value": 13.8
+  },
+  {
+   "geo": "EU27",
+   "series": "REN",
+   "time": "2010",
+   "value": 14.4
+  },
+  {
+   "geo": "EU27",
+   "series": "REN",
+   "time": "2011",
+   "value": 14.6
+  },
+  {
+   "geo": "EU27",
+   "series": "REN",
+   "time": "2012",
+   "value": 16.0
+  },
+  {
+   "geo": "EU27",
+   "series": "REN",
+   "time": "2013",
+   "value": 16.7
+  },
+  {
+   "geo": "EU27",
+   "series": "REN",
+   "time": "2014",
+   "value": 17.4
+  },
+  {
+   "geo": "EU27",
+   "series": "REN",
+   "time": "2015",
+   "value": 17.8
+  },
+  {
+   "geo": "EU27",
+   "series": "REN",
+   "time": "2016",
+   "value": 18.0
+  },
+  {
+   "geo": "EU27",
+   "series": "REN",
+   "time": "2017",
+   "value": 18.4
+  },
+  {
+   "geo": "EU27",
+   "series": "REN",
+   "time": "2018",
+   "value": 19.1
+  },
+  {
+   "geo": "EU27",
+   "series": "REN",
+   "time": "2019",
+   "value": 19.9
+  },
+  {
+   "geo": "EU27",
+   "series": "REN",
+   "time": "2020",
+   "value": 22.0
+  },
+  {
+   "geo": "EU27",
+   "series": "REN",
+   "time": "2021",
+   "value": 21.9
+  },
+  {
+   "geo": "EU27",
+   "series": "REN",
+   "time": "2022",
+   "value": 23.0
+  },
+  {
+   "geo": "EU27",
+   "series": "REN",
+   "time": "2023",
+   "value": 24.6
+  },
+  {
+   "geo": "EU27",
+   "series": "REN",
+   "time": "2024",
+   "value": 25.2
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_ELC",
+   "time": "2004",
+   "value": 15.9
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_ELC",
+   "time": "2005",
+   "value": 16.4
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_ELC",
+   "time": "2006",
+   "value": 16.9
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_ELC",
+   "time": "2007",
+   "value": 17.6
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_ELC",
+   "time": "2008",
+   "value": 18.5
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_ELC",
+   "time": "2009",
+   "value": 20.6
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_ELC",
+   "time": "2010",
+   "value": 21.3
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_ELC",
+   "time": "2011",
+   "value": 23.3
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_ELC",
+   "time": "2012",
+   "value": 25.1
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_ELC",
+   "time": "2013",
+   "value": 26.8
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_ELC",
+   "time": "2014",
+   "value": 28.6
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_ELC",
+   "time": "2015",
+   "value": 29.7
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_ELC",
+   "time": "2016",
+   "value": 30.2
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_ELC",
+   "time": "2017",
+   "value": 31.1
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_ELC",
+   "time": "2018",
+   "value": 32.1
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_ELC",
+   "time": "2019",
+   "value": 34.1
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_ELC",
+   "time": "2020",
+   "value": 37.4
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_ELC",
+   "time": "2021",
+   "value": 37.8
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_ELC",
+   "time": "2022",
+   "value": 41.2
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_ELC",
+   "time": "2023",
+   "value": 45.4
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_ELC",
+   "time": "2024",
+   "value": 47.5
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_HEAT_CL",
+   "time": "2004",
+   "value": 11.7
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_HEAT_CL",
+   "time": "2005",
+   "value": 12.4
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_HEAT_CL",
+   "time": "2006",
+   "value": 13.2
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_HEAT_CL",
+   "time": "2007",
+   "value": 14.8
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_HEAT_CL",
+   "time": "2008",
+   "value": 15.3
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_HEAT_CL",
+   "time": "2009",
+   "value": 16.8
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_HEAT_CL",
+   "time": "2010",
+   "value": 17.0
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_HEAT_CL",
+   "time": "2011",
+   "value": 17.4
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_HEAT_CL",
+   "time": "2012",
+   "value": 18.6
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_HEAT_CL",
+   "time": "2013",
+   "value": 19.0
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_HEAT_CL",
+   "time": "2014",
+   "value": 19.9
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_HEAT_CL",
+   "time": "2015",
+   "value": 20.3
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_HEAT_CL",
+   "time": "2016",
+   "value": 20.4
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_HEAT_CL",
+   "time": "2017",
+   "value": 20.8
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_HEAT_CL",
+   "time": "2018",
+   "value": 21.6
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_HEAT_CL",
+   "time": "2019",
+   "value": 22.4
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_HEAT_CL",
+   "time": "2020",
+   "value": 23.0
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_HEAT_CL",
+   "time": "2021",
+   "value": 23.0
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_HEAT_CL",
+   "time": "2022",
+   "value": 24.8
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_HEAT_CL",
+   "time": "2023",
+   "value": 26.2
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_HEAT_CL",
+   "time": "2024",
+   "value": 26.7
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_TRA",
+   "time": "2004",
+   "value": 1.4
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_TRA",
+   "time": "2005",
+   "value": 1.8
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_TRA",
+   "time": "2006",
+   "value": 2.5
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_TRA",
+   "time": "2007",
+   "value": 2.9
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_TRA",
+   "time": "2008",
+   "value": 4.1
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_TRA",
+   "time": "2009",
+   "value": 4.9
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_TRA",
+   "time": "2010",
+   "value": 5.5
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_TRA",
+   "time": "2011",
+   "value": 4.1
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_TRA",
+   "time": "2012",
+   "value": 5.8
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_TRA",
+   "time": "2013",
+   "value": 6.1
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_TRA",
+   "time": "2014",
+   "value": 6.5
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_TRA",
+   "time": "2015",
+   "value": 6.8
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_TRA",
+   "time": "2016",
+   "value": 7.2
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_TRA",
+   "time": "2017",
+   "value": 7.5
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_TRA",
+   "time": "2018",
+   "value": 8.3
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_TRA",
+   "time": "2019",
+   "value": 8.8
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_TRA",
+   "time": "2020",
+   "value": 10.2
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_TRA",
+   "time": "2021",
+   "value": 9.1
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_TRA",
+   "time": "2022",
+   "value": 9.6
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_TRA",
+   "time": "2023",
+   "value": 11.0
+  },
+  {
+   "geo": "EU27",
+   "series": "REN_TRA",
+   "time": "2024",
+   "value": 11.2
+  }
+ ]
+}
