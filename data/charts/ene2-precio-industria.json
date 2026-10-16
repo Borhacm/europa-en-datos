@@ -1,0 +1,514 @@
+{
+ "id": "ene2-precio-industria",
+ "lens": "elige",
+ "theme": "energia",
+ "title": {
+  "es": "La electricidad para la industria de la UE cuesta un 45,8 % más que a principios de 2021, pero un 20,8 % menos que en su máximo de finales de 2022",
+  "en": "Electricity for EU industry costs 45.8% more than in early 2021, but 20.8% less than at its peak in late 2022"
+ },
+ "subtitle": {
+  "es": "Precio medio de la electricidad para la industria en la UE, en céntimos de euro por kWh",
+  "en": "Average electricity price for industry in the EU, in euro cents per kWh"
+ },
+ "unit": {
+  "es": "céntimos de euro por kWh",
+  "en": "euro cents per kWh"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "nrg_pc_205",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/nrg_pc_205/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Empresas que consumen entre 2.000 y 20.000 MWh al año, la banda de referencia de Eurostat para la industria. Precio medio del semestre en euros corrientes, sin descontar la inflación.",
+   "Las empresas suelen recuperar el IVA y algunos impuestos: el precio sin IVA ni impuestos recuperables es lo que pagan de verdad. El precio sin impuestos incluye la energía, el suministro y las redes.",
+   "No hay una serie abierta y comparable de precios industriales de EE. UU. y China con la misma metodología."
+  ],
+  "en": [
+   "Businesses consuming 2,000 to 20,000 MWh a year, Eurostat's reference band for industry. Average price for the half-year in current euros, not adjusted for inflation.",
+   "Businesses usually recover VAT and some taxes: the price excluding VAT and recoverable taxes is what they actually pay. The price excluding taxes covers energy, supply and networks.",
+   "There is no open, comparable series of industrial prices for the US and China using the same method."
+  ]
+ },
+ "retrieved": "2026-10-16",
+ "geos": {
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  }
+ },
+ "dimensions": {
+  "series": {
+   "X_TAX": {
+    "es": "Sin impuestos",
+    "en": "Excluding taxes"
+   },
+   "X_VAT": {
+    "es": "Sin IVA ni impuestos recuperables",
+    "en": "Excluding VAT and recoverable taxes"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2007-S1",
+   "value": 6.9
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2007-S2",
+   "value": 6.84
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2008-S1",
+   "value": 7.42
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2008-S2",
+   "value": 7.58
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2009-S1",
+   "value": 7.91
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2009-S2",
+   "value": 7.72
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2010-S1",
+   "value": 7.7
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2010-S2",
+   "value": 7.93
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2011-S1",
+   "value": 8.11
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2011-S2",
+   "value": 8.05
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2012-S1",
+   "value": 8.46
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2012-S2",
+   "value": 8.18
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2013-S1",
+   "value": 8.13
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2013-S2",
+   "value": 8.08
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2014-S1",
+   "value": 7.72
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2014-S2",
+   "value": 7.63
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2015-S1",
+   "value": 7.38
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2015-S2",
+   "value": 7.3
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2016-S1",
+   "value": 6.9
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2016-S2",
+   "value": 6.88
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2017-S1",
+   "value": 6.6
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2017-S2",
+   "value": 6.52
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2018-S1",
+   "value": 6.72
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2018-S2",
+   "value": 6.83
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2019-S1",
+   "value": 7.47
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2019-S2",
+   "value": 7.01
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2020-S1",
+   "value": 7.08
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2020-S2",
+   "value": 7.18
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2021-S1",
+   "value": 7.47
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2021-S2",
+   "value": 9.72
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2022-S1",
+   "value": 15.49
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2022-S2",
+   "value": 19.18
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2023-S1",
+   "value": 18.31
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2023-S2",
+   "value": 16.65
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2024-S1",
+   "value": 13.89
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2024-S2",
+   "value": 14.71
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2025-S1",
+   "value": 13.87
+  },
+  {
+   "geo": "EU27",
+   "series": "X_TAX",
+   "time": "2025-S2",
+   "value": 13.49
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2007-S1",
+   "value": 7.66
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2007-S2",
+   "value": 7.52
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2008-S1",
+   "value": 8.67
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2008-S2",
+   "value": 9.05
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2009-S1",
+   "value": 9.29
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2009-S2",
+   "value": 9.03
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2010-S1",
+   "value": 9.06
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2010-S2",
+   "value": 9.22
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2011-S1",
+   "value": 9.67
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2011-S2",
+   "value": 9.74
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2012-S1",
+   "value": 10.35
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2012-S2",
+   "value": 10.3
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2013-S1",
+   "value": 10.6
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2013-S2",
+   "value": 10.49
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2014-S1",
+   "value": 10.61
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2014-S2",
+   "value": 10.48
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2015-S1",
+   "value": 10.33
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2015-S2",
+   "value": 10.16
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2016-S1",
+   "value": 9.77
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2016-S2",
+   "value": 9.66
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2017-S1",
+   "value": 9.7
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2017-S2",
+   "value": 9.62
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2018-S1",
+   "value": 9.53
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2018-S2",
+   "value": 9.59
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2019-S1",
+   "value": 10.45
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2019-S2",
+   "value": 10.31
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2020-S1",
+   "value": 10.64
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2020-S2",
+   "value": 10.72
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2021-S1",
+   "value": 10.95
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2021-S2",
+   "value": 13.16
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2022-S1",
+   "value": 17.42
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2022-S2",
+   "value": 20.16
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2023-S1",
+   "value": 20.15
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2023-S2",
+   "value": 18.66
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2024-S1",
+   "value": 16.3
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2024-S2",
+   "value": 17.12
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2025-S1",
+   "value": 16.4
+  },
+  {
+   "geo": "EU27",
+   "series": "X_VAT",
+   "time": "2025-S2",
+   "value": 15.96
+  }
+ ]
+}
