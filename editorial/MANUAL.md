@@ -10,6 +10,8 @@ Procedimiento para preparar y publicar una **nota** o un **artículo** del [cale
 - Nunca regeneres los datos de otros temas: ejecuta el pipeline siempre con `--only`. Nunca uses `--refresh`.
 - No cambies la configuración de Vercel, de GitHub ni la licencia (el proyecto no tiene licencia de código a propósito).
 - **Cada cifra y cada afirmación de un título o de un texto tiene que salir de los datos del JSON.** Si no puedes comprobarla, no la escribas. Esta es la regla más importante: en el pasado se colaron titulares como "casi todos los países", "más que nunca" o "uno de cada tres" que los datos no sostenían.
+- **Lo que dice el texto tiene que coincidir con lo que pide la consulta.** Si el subtítulo dice "sin IVA", el filtro es `tax="X_VAT"`; si dice "de 25 a 34 años", el filtro de edad es ese. En octubre de 2026 se publicó un gráfico con el precio con todos los impuestos rotulado como "sin IVA".
+- **Un hallazgo ya publicado no se repite: se enlaza.** Ni entre las miradas de una pieza ni entre piezas distintas (Libertades y Energía llegaron a publicar el mismo ranking de renovables).
 - Si algo falla y no sabes arreglarlo, o tienes dudas serias sobre algún dato, **no publiques**: deja la rama sin fusionar y explica el problema en el resumen final.
 
 ## 1. Preparar el repositorio
@@ -30,6 +32,25 @@ Lee `editorial/calendario.yaml` y toma la **primera** entrada del tipo que te to
 Si no queda ninguna, termina y dilo.
 
 Crea la rama: `git checkout -b editorial/<id>-<palabra-clave>` (por ejemplo `editorial/n02-luz`).
+
+## 2b. Guion antes de los datos
+
+Antes de abrir ninguna fuente, copia `editorial/registro/PLANTILLA.md` en `editorial/registro/<id>.md` y escribe el **guion**. El registro se publica con la pieza (va en el pull request) y es lo que permite revisarla después.
+
+**Artículos:**
+
+- **Entre 5 y 7 preguntas** que se haría un lector informado sobre el tema, no solo "cuánto" y "dónde": también "quién", "por qué", "qué ha cambiado", "qué ha decidido la UE" y "qué dice la evidencia".
+- **Inventario de fuentes:** al menos 10 conjuntos de datos candidatos (Eurostat, OCDE, Banco Mundial, BCE, BIS, FMI, AIE, JRC...) con la pregunta que respondería cada uno, y por qué se descartan los que no se usan. Elige los gráficos por las preguntas, no por lo primero que encuentres.
+- **Solapes:** antes de elegir, busca lo ya publicado con `python3 editorial/revisar.py solapes <dataset> <palabra>` (por ejemplo `solapes nrg_ind_ren renovables`). Si un hallazgo ya está en otro tema o nota, no lo repitas: enlázalo y cuenta otra cosa.
+- **Una pregunta, un gráfico.** Cada gráfico responde a una pregunta distinta del guion. Un mismo hallazgo no se repite en dos miradas, y ninguna cifra de un titular se repite en el titular de otro gráfico.
+- **Mínimos de un artículo** (si no se cumplen, no se publica: ver paso 7b):
+  1. Seis gráficos, dos por mirada.
+  2. Al menos dos gráficos **explicativos**: composición (por fuente, uso, edad, sector...), descomposición de un cambio o relación entre dos variables. No basta con niveles y rankings.
+  3. Una **ficha de política** sobre una norma o decisión europea vigente relacionada (directiva, reglamento, objetivo, plan), con su enlace a EUR-Lex o a la fuente oficial: qué es, quién la aprobó y cuándo, qué debería pasar y con qué se puede comparar. Se escribe con un bloque `h` y un bloque `steps` dentro de la mirada que corresponda. Si no hay ninguna relevante, al menos **dos evaluaciones o estudios independientes** (BCE, Comisión o JRC, OCDE, FMI, AIE, Tribunal de Cuentas Europeo, Bruegel, bancos centrales nacionales, artículos académicos), diciendo dónde la evidencia no es concluyente. Todo va en `sources`.
+  4. Un párrafo que empiece por **"Lo que no dicen estos datos."**: qué falta, qué no se puede comparar entre bloques o países y qué no se puede atribuir.
+  5. Un enlace en el texto a otro tema, nota o análisis publicado cuando estén conectados (además del campo `notes` si hay `relacionada`).
+
+**Notas:** una o dos preguntas, el resultado de `revisar.py solapes` y la fuente. Una nota no repite el titular de un tema publicado: si el dato ya está, aporta otro ángulo (otro año, otro desglose) o se elige otra entrada. Lleva al menos una frase de límites y enlaza el tema al que pertenece.
 
 ## 3. Buscar y comprobar los datos
 
@@ -59,6 +80,8 @@ cd pipeline && uv run run.py --only <id o tema_id>
 
 `git status` solo debe mostrar archivos nuevos tuyos en `data/charts/` (y, si hiciste un mapa, `data/geo/` sin cambios de contenido).
 
+**Lo que se publica es el JSON, no el código.** Si cambias un título, un subtítulo o una nota en el pipeline, vuelve a ejecutar `uv run run.py --only <id>` antes del commit. Si `--only` regenera piezas ajenas (filtra por subcadena) y solo cambia su fecha `retrieved`, devuélvelas a su estado con `git checkout <archivo>`.
+
 ## 5. Verificar cada afirmación
 
 Antes de escribir textos, abre los JSON y calcula lo que vas a afirmar. Para cada número de un título, entradilla o párrafo, anota de dónde sale. Comprueba sobre todo:
@@ -69,6 +92,10 @@ Antes de escribir textos, abre los JSON y calcula lo que vas a afirmar. Para cad
 - **Rankings:** "el quinto", "encabeza": ordena los datos.
 - **Periodos:** el año inicial y el final que citas existen para esos países.
 - **Comparabilidad:** si mezclas fuentes o definiciones, dilo en las notas del gráfico.
+- **Filtros:** cada condición del subtítulo y de las notas (impuestos, banda de consumo, unidad, edad, sexo, año, precios corrientes o constantes) coincide con el filtro de la consulta. `python3 editorial/revisar.py pieza <id>` las pone una al lado de otra.
+- **Coherencia con lo publicado:** si otra pieza usa el mismo dataset, tus cifras para el mismo año y país coinciden con las suyas o explicas en las notas por qué no (otro filtro, otro año).
+
+Apunta cada cifra en la tabla de verificación del registro (`editorial/registro/<id>.md`) a medida que la compruebas.
 
 Si la historia que esperabas no se sostiene, cuenta la que sí dicen los datos.
 
@@ -78,7 +105,8 @@ Mira los ejemplos: `web/src/content/notes/n01.ts` y `web/src/content/charts/n01.
 
 - **Configuración de los gráficos:** `web/src/content/charts/<id o tema_id>.ts`. Renderizadores: `line` (series temporales), `rank` (ranking de países, admite `targets` y `extraGeos`), `paired` (UE frente a un país por categorías), `dumbbell` (dos años por país), `stack` (barras al 100 %), `map` (regiones NUTS). Las opciones están documentadas en `web/src/lib/charts-config.ts`.
 - **Nota:** `web/src/content/notes/<id>.ts` con `id`, `code` (`N02`...), `slug` ES y EN, `title`, `dek`, `published` (fecha de hoy), `lens`, `theme` y `body` (párrafos con `p(es, en)` y gráficos `{ fig, code: "1" }`). Unas 250 palabras por idioma.
-- **Artículo:** `web/src/content/themes/<tema_id>.ts` con `code` (el del calendario), `slug`, `title`, `status: "published"`, `published` (hoy), `dek` y `lenses` (entradilla y cuerpo de cada mirada, con gráficos `G1`, `G2`, `E1`...). Si el calendario indica `relacionada`, añade `notes: ["<id de la nota>"]` y menciona la nota en el texto.
+- **Artículo:** `web/src/content/themes/<tema_id>.ts` con `code` (el del calendario), `slug`, `title`, `status: "published"`, `published` (hoy), `dek`, `lenses` (entradilla y cuerpo de cada mirada, con gráficos `G1`, `G2`, `E1`...) y `sources` (normas y estudios citados en el texto). Si el calendario indica `relacionada`, añade `notes: ["<id de la nota>"]` y menciona la nota en el texto. La ficha de política, el párrafo de "Lo que no dicen estos datos" y los enlaces a otras piezas siguen el paso 2b.
+- **Las notas de los gráficos no repiten el texto:** explican qué mide la serie, qué falta y qué no es comparable. Cada gráfico lleva al menos una nota.
 
 ### Estilo
 
@@ -97,7 +125,33 @@ cd web && npm run build && npm run check
 
 `npm run check` comprueba en un navegador sin interfaz que todos los gráficos se dibujan. Tiene que terminar sin errores. Si falla por Chromium: `npx playwright install chromium`.
 
+Después, desde la raíz del repositorio:
+
+```bash
+python3 editorial/revisar.py pieza <id o tema_id>
+```
+
+Resuelve cada AVISO (titulares en pregunta, gráficos sin notas, cifras repetidas en dos titulares). Los REVISAR y los apartados de filtros y de datasets compartidos se miran uno a uno: una cifra repetida entre miradas solo se queda si es un dato de contexto (un objetivo, un umbral) y no el mismo hallazgo contado dos veces.
+
 Revisa también `git status`: solo archivos tuyos (contenido, configuración, pipeline y `data/charts`).
+
+## 7b. Autoevaluación (artículos)
+
+Rellena al final de `editorial/registro/<id>.md` esta lista:
+
+- [ ] Cada pregunta del guion tiene su gráfico o su párrafo con fuente.
+- [ ] Ningún hallazgo se repite en dos miradas ni en otra pieza publicada, y ninguna cifra de titular está en dos gráficos.
+- [ ] Dos gráficos explicativos o más (di cuáles).
+- [ ] Ficha de política con enlace oficial, o dos estudios independientes citados en `sources`.
+- [ ] Párrafo de "Lo que no dicen estos datos".
+- [ ] Enlace a otra pieza publicada en el texto.
+- [ ] Los filtros de cada consulta coinciden con los subtítulos y las notas.
+- [ ] Las notas de los gráficos no repiten el texto.
+- [ ] Un lector que sigue la prensa aprende al menos tres cosas que no sabía (escríbelas).
+
+Compárala con los mejores ejemplos publicados de la misma familia, en `/Users/bcm/espana-en-datos`: `web/src/content/themes/empleo.ts` (ficha de la reforma laboral, evaluaciones de la AIReF y del Banco de España, límites) y `editorial/registro/a04.md` (guion, inventario, verificación y autoevaluación).
+
+Si alguna casilla queda sin marcar y no se puede resolver en esta ejecución, **no publiques el artículo**: sube la rama como `borrador/<id>-<palabra>`, no abras pull request contra `main` y explica en el resumen final qué falta.
 
 ## 8. Abrir el pull request
 
@@ -111,7 +165,8 @@ El commit usa el email noreply configurado en el repositorio. El cuerpo del pull
 
 1. Qué cuenta, en dos o tres frases.
 2. Los gráficos, con su código y su título.
-3. **Tabla de verificación:** cada cifra del texto, el valor exacto en el JSON y el gráfico del que sale.
+3. **Tabla de verificación:** cada cifra del texto, el valor exacto en el JSON y el gráfico del que sale (la misma del registro).
+   En los artículos, además, el guion y la autoevaluación del paso 7b, o un enlace a `editorial/registro/<id>.md`.
 4. Decisiones y límites: fuentes cambiadas, países que faltan, comparaciones con matices.
 5. Recordatorio: "Al fusionar este pull request, la web se publica en europa.bocal.online".
 
