@@ -34,7 +34,8 @@ export function pivot(chart: ChartData, lang: Lang, headers: { country: string; 
   data = data.map((r) => (r.stat === "min" ? { ...r, geo: "EU27_min" } : r));
 
   let colKeys = [...new Set(data.map((r) => String(r[colDim])))].sort();
-  if (colDim === "reason" || colDim === "access") colKeys = Object.keys(chart.dimensions?.[colDim] ?? {}).filter((k) => colKeys.includes(k));
+  // Columnas de una dimensión con etiquetas: en el orden en que las declara el JSON
+  if (colDim !== "time" && chart.dimensions?.[colDim]) colKeys = Object.keys(chart.dimensions[colDim]).filter((k) => colKeys.includes(k));
   if (lastCols) colKeys = colKeys.slice(-lastCols);
 
   const rowKeys = [...new Set(data.map((r) => String(r[rowDim])))];

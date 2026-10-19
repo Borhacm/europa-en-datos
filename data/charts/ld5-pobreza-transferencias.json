@@ -1,0 +1,570 @@
+{
+ "id": "ld5-pobreza-transferencias",
+ "lens": "dentro",
+ "theme": "libertades",
+ "title": {
+  "es": "Las prestaciones sociales sacan de la pobreza a un tercio de quienes estarían en ella; en España, a menos de una cuarta parte",
+  "en": "Social benefits lift a third of those who would be poor out of poverty; in Spain, less than a quarter"
+ },
+ "subtitle": {
+  "es": "Población en riesgo de pobreza (ingresos por debajo del 60 % de la mediana de su país) antes y después de las transferencias sociales, en %, 2025",
+  "en": "Population at risk of poverty (income below 60% of their country's median) before and after social transfers, in %, 2025"
+ },
+ "unit": {
+  "es": "% de la población",
+  "en": "% of the population"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "ilc_li02",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/ilc_li02/default/table",
+  "license": "CC BY 4.0",
+  "also": [
+   {
+    "name": "Eurostat, ilc_li10 (antes de las transferencias)",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/ilc_li10/default/table"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Las pensiones de jubilación y supervivencia cuentan como ingreso en las dos series: las transferencias que se restan son el resto (desempleo, familia, vivienda, discapacidad, rentas mínimas...).",
+   "Es un cálculo mecánico: supone que, sin prestaciones, nadie cambiaría su conducta ni sus ingresos. No mide lo que pasaría de verdad sin ellas.",
+   "Pobreza relativa: el umbral es el 60 % de la mediana de cada país, así que no compara niveles de vida entre países. Encuesta EU-SILC; los ingresos son del año anterior.",
+   "Eslovaquia y Luxemburgo tienen una ruptura de serie en 2025; Lituania es provisional."
+  ],
+  "en": [
+   "Old-age and survivors' pensions count as income in both series: the transfers removed are the rest (unemployment, family, housing, disability, minimum income...).",
+   "It is a mechanical calculation: it assumes that, without benefits, nobody would change their behaviour or income. It does not measure what would really happen without them.",
+   "Relative poverty: the threshold is 60% of each country's median, so it does not compare living standards across countries. EU-SILC survey; incomes refer to the previous year.",
+   "Slovakia and Luxembourg have a break in series in 2025; Lithuania is provisional."
+  ]
+ },
+ "retrieved": "2026-10-19",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "dimensions": {
+  "transfers": {
+   "before": {
+    "es": "Antes de las transferencias sociales",
+    "en": "Before social transfers"
+   },
+   "after": {
+    "es": "Después de las transferencias",
+    "en": "After transfers"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 15.9,
+   "transfers": "after"
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 24.4,
+   "transfers": "before"
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 10.9,
+   "transfers": "after"
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 23.0,
+   "transfers": "before"
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 21.2,
+   "transfers": "after"
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 29.0,
+   "transfers": "before"
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 14.9,
+   "transfers": "after"
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 21.7,
+   "transfers": "before"
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 9.6,
+   "transfers": "after"
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 16.0,
+   "transfers": "before"
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 16.1,
+   "transfers": "after"
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 24.4,
+   "transfers": "before"
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 11.8,
+   "transfers": "after"
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 24.5,
+   "transfers": "before"
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 19.5,
+   "transfers": "after"
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 25.4,
+   "transfers": "before"
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 19.5,
+   "transfers": "after"
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 27.7,
+   "transfers": "before"
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 16.3,
+   "transfers": "after"
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 24.4,
+   "transfers": "before"
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 13.4,
+   "transfers": "after"
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 24.2,
+   "transfers": "before"
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 16.3,
+   "transfers": "after"
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 26.5,
+   "transfers": "before"
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 19.6,
+   "transfers": "after"
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 23.2,
+   "transfers": "before"
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 19.5,
+   "transfers": "after"
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 25.5,
+   "transfers": "before"
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 14.0,
+   "transfers": "after"
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 18.2,
+   "transfers": "before"
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 13.0,
+   "transfers": "after"
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 26.8,
+   "transfers": "before"
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 18.6,
+   "transfers": "after"
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 26.8,
+   "transfers": "before"
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 22.6,
+   "flag": "p",
+   "transfers": "after"
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 31.1,
+   "flag": "p",
+   "transfers": "before"
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 14.8,
+   "flag": "b",
+   "transfers": "after"
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 26.5,
+   "flag": "b",
+   "transfers": "before"
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 22.0,
+   "transfers": "after"
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 28.2,
+   "transfers": "before"
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 16.9,
+   "transfers": "after"
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 22.5,
+   "transfers": "before"
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 13.4,
+   "transfers": "after"
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 21.2,
+   "transfers": "before"
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 13.2,
+   "transfers": "after"
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 21.6,
+   "transfers": "before"
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 15.4,
+   "transfers": "after"
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 20.8,
+   "transfers": "before"
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 18.4,
+   "transfers": "after"
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 23.5,
+   "transfers": "before"
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 12.2,
+   "flag": "b",
+   "transfers": "after"
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 20.6,
+   "flag": "b",
+   "transfers": "before"
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 14.3,
+   "transfers": "after"
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 21.8,
+   "transfers": "before"
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 15.6,
+   "transfers": "after"
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 25.3,
+   "transfers": "before"
+  }
+ ]
+}

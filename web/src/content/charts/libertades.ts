@@ -1,6 +1,9 @@
 // Cómo se dibuja cada gráfico de este tema. Ver ChartConfig en lib/charts-config.ts.
 import type { ChartConfig } from "../../lib/charts-config";
 
+// Componentes del índice de V-Dem: las filas del gráfico de pesas no son países
+const COMPONENTS = ["v2xlg_legcon", "v2x_freexp_altinf", "v2xcl_rol", "v2x_jucon", "v2x_frassoc_thick", "v2xel_frefair"];
+
 const charts: Record<string, ChartConfig> = {
   "lg1-democracia": {
     renderer: "line",
@@ -9,16 +12,17 @@ const charts: Record<string, ChartConfig> = {
     domainMin: 0,
     digits: 2,
   },
+  "lg4-componentes-democracia": {
+    renderer: "dumbbell",
+    extraGeos: COMPONENTS,
+    seriesColors: Object.fromEntries(COMPONENTS.map((c) => [c, "--usa"])),
+    digits: 2,
+    table: { rows: "geo", cols: "time" },
+  },
   "lg2-esperanza-vida": {
     renderer: "line",
     series: ["USA", "CHN", "EU27"],
     table: { rows: "geo", cols: "time", lastCols: 6 },
-  },
-  "lg3-co2-habitante": {
-    renderer: "line",
-    series: ["USA", "CHN", "EU27"],
-    table: { rows: "geo", cols: "time", lastCols: 6 },
-    domainMin: 0,
   },
   "le1-emisiones-1990": {
     renderer: "line",
@@ -26,6 +30,14 @@ const charts: Record<string, ChartConfig> = {
     table: { rows: "geo", cols: "time", lastCols: 6 },
     domainMin: 0,
     digits: 0,
+  },
+  "le3-huella-emisiones": {
+    renderer: "line",
+    controls: [{ dim: "bloc", default: "EU27", options: ["EU27", "USA", "CHN"] }],
+    series: ["FD_GHG", "PROD_GHG"],
+    seriesColors: { FD_GHG: "--eu", PROD_GHG: "--context-strong" },
+    table: { rows: "series", cols: "time", lastCols: 6 },
+    domainMin: 0,
   },
   "le2-gasto-social": {
     renderer: "rank",
@@ -40,17 +52,19 @@ const charts: Record<string, ChartConfig> = {
     digits: 2,
     table: { rows: "geo", cols: "time" },
   },
-  "ld2-pobreza": {
-    renderer: "rank",
-    controls: [{ dim: "time", default: "2025", options: ["2015", "2020", "2025"] }],
-    usesFocus: true,
+  "ld4-trayectorias-democracia": {
+    renderer: "line",
+    series: ["EU27", "POL", "SVK", "HUN"],
+    seriesColors: { HUN: "--ink", POL: "--focus", SVK: "--context-strong" },
     table: { rows: "geo", cols: "time", lastCols: 6 },
+    domainMin: 0,
+    digits: 2,
   },
-  "ld3-renovables": {
-    renderer: "rank",
-    controls: [{ dim: "time", default: "2025", options: ["2005", "2015", "2025"] }],
+  "ld5-pobreza-transferencias": {
+    renderer: "dumbbell",
+    pair: { dim: "transfers", from: "before", to: "after" },
     usesFocus: true,
-    table: { rows: "geo", cols: "time", lastCols: 6 },
+    table: { rows: "geo", cols: "transfers" },
   },
 };
 

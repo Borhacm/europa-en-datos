@@ -15,7 +15,9 @@ export type Block =
   /** Cita breve atribuida, con su fuente */
   | { quote: Bi; who: Bi; url: string }
   /** Cronología */
-  | { timeline: { date: Bi; text: Bi }[] };
+  | { timeline: { date: Bi; text: Bi }[] }
+  /** Enlace a otra pieza publicada: ruta completa en cada idioma, p. ej. { es: "/es/energia/", en: "/en/energy/" } */
+  | { see: Bi; href: Bi };
 
 export interface Lens {
   id: LensId;
@@ -39,6 +41,8 @@ export interface Theme {
   status: "published" | "upcoming";
   dek?: Bi;
   published?: string;
+  /** Fecha de la última revisión a fondo, si la hubo (se muestra junto a la de publicación) */
+  updated?: string;
   /** Desempate si dos temas se publican el mismo día (menor = antes) */
   order?: number;
   /** Gráfico de apertura propio del tema, bajo el titular (ver OPENERS en views/Theme.astro) */
