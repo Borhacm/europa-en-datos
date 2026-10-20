@@ -1,0 +1,490 @@
+{
+ "id": "n07-defensa-cambio",
+ "lens": "dentro",
+ "theme": "comercio",
+ "title": {
+  "es": "En 2021, 4 de los 27 países de la UE gastaban en defensa el 2 % de su PIB o más; en 2025, 18",
+  "en": "In 2021, 4 of the 27 EU countries spent 2% of GDP or more on defence; in 2025, 18 did"
+ },
+ "subtitle": {
+  "es": "Gasto militar, en % del PIB, 2021 y 2025",
+  "en": "Military expenditure, as % of GDP, 2021 and 2025"
+ },
+ "unit": {
+  "es": "% del PIB",
+  "en": "% of GDP"
+ },
+ "source": {
+  "name": "Banco Mundial, gasto militar (% del PIB), con datos del SIPRI",
+  "dataset": "MS.MIL.XPND.GD.ZS",
+  "url": "https://data.worldbank.org/indicator/MS.MIL.XPND.GD.ZS",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Datos del Instituto Internacional de Estudios para la Paz de Estocolmo (SIPRI) publicados por el Banco Mundial. Incluyen personal, operaciones, compras de armamento e investigación militar.",
+   "No es la definición que usa la OTAN para medir su objetivo, así que las cifras pueden diferir de las que publican la OTAN y los gobiernos. Eurostat publica otra medida, el gasto de las administraciones públicas en defensa (COFOG GF02), con otra definición.",
+   "2021 es el último año completo antes de la invasión rusa de Ucrania, en febrero de 2022.",
+   "Es una proporción del PIB: puede bajar aunque el gasto suba, si la economía crece más deprisa."
+  ],
+  "en": [
+   "Stockholm International Peace Research Institute (SIPRI) data published by the World Bank. They include personnel, operations, arms procurement and military research.",
+   "This is not the definition NATO uses to measure its target, so the figures may differ from those published by NATO and by governments. Eurostat publishes another measure, general government expenditure on defence (COFOG GF02), with a different definition.",
+   "2021 is the last full year before Russia's invasion of Ukraine in February 2022.",
+   "It is a share of GDP: it can fall even if spending rises, when the economy grows faster."
+  ]
+ },
+ "retrieved": "2026-10-20",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2021",
+   "value": 0.87
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 1.1
+  },
+  {
+   "geo": "BEL",
+   "time": "2021",
+   "value": 1.04
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 2.01
+  },
+  {
+   "geo": "BGR",
+   "time": "2021",
+   "value": 1.51
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 2.01
+  },
+  {
+   "geo": "CYP",
+   "time": "2021",
+   "value": 1.78
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 1.6
+  },
+  {
+   "geo": "CZE",
+   "time": "2021",
+   "value": 1.35
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 1.84
+  },
+  {
+   "geo": "DEU",
+   "time": "2021",
+   "value": 1.3
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 2.27
+  },
+  {
+   "geo": "DNK",
+   "time": "2021",
+   "value": 1.3
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 3.25
+  },
+  {
+   "geo": "ESP",
+   "time": "2021",
+   "value": 1.37
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 2.13
+  },
+  {
+   "geo": "EST",
+   "time": "2021",
+   "value": 2.01
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 3.37
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "value": 1.49
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 2.18
+  },
+  {
+   "geo": "FIN",
+   "time": "2021",
+   "value": 1.3
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 2.57
+  },
+  {
+   "geo": "FRA",
+   "time": "2021",
+   "value": 1.98
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 2.03
+  },
+  {
+   "geo": "GRC",
+   "time": "2021",
+   "value": 3.8
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 2.99
+  },
+  {
+   "geo": "HRV",
+   "time": "2021",
+   "value": 1.97
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 2.02
+  },
+  {
+   "geo": "HUN",
+   "time": "2021",
+   "value": 1.31
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 2.04
+  },
+  {
+   "geo": "IRL",
+   "time": "2021",
+   "value": 0.24
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 0.22
+  },
+  {
+   "geo": "ITA",
+   "time": "2021",
+   "value": 1.61
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 1.89
+  },
+  {
+   "geo": "LTU",
+   "time": "2021",
+   "value": 1.95
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 3.08
+  },
+  {
+   "geo": "LUX",
+   "time": "2021",
+   "value": 0.41
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 0.85
+  },
+  {
+   "geo": "LVA",
+   "time": "2021",
+   "value": 2.16
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 3.61
+  },
+  {
+   "geo": "MLT",
+   "time": "2021",
+   "value": 0.45
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 0.45
+  },
+  {
+   "geo": "NLD",
+   "time": "2021",
+   "value": 1.36
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 2.19
+  },
+  {
+   "geo": "POL",
+   "time": "2021",
+   "value": 2.22
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 4.5
+  },
+  {
+   "geo": "PRT",
+   "time": "2021",
+   "value": 1.52
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 1.71
+  },
+  {
+   "geo": "ROU",
+   "time": "2021",
+   "value": 1.86
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 2.28
+  },
+  {
+   "geo": "SVK",
+   "time": "2021",
+   "value": 1.65
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 2.03
+  },
+  {
+   "geo": "SVN",
+   "time": "2021",
+   "value": 1.24
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 1.54
+  },
+  {
+   "geo": "SWE",
+   "time": "2021",
+   "value": 1.2
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 2.47
+  }
+ ]
+}
