@@ -1,0 +1,343 @@
+{
+ "id": "trd1-tren-paises",
+ "lens": "dentro",
+ "theme": "transporte",
+ "title": {
+  "es": "En Hungría y Austria, el tren mueve a más de uno de cada ocho viajeros; en Grecia, a menos de uno de cada cien",
+  "en": "In Hungary and Austria, trains carry more than one in eight passengers; in Greece, fewer than one in a hundred"
+ },
+ "subtitle": {
+  "es": "Tren (con metro y tranvía), en % de los pasajeros-kilómetro del transporte terrestre, 2024",
+  "en": "Train (including metro and tram), as % of inland passenger-kilometres, 2024"
+ },
+ "unit": {
+  "es": "% de los pasajeros-km",
+  "en": "% of passenger-km"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "tran_hv_psmod",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/tran_hv_psmod/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Parte del tren en el transporte terrestre de viajeros (coche, autobús y tren). No incluye el avión.",
+   "Chipre y Malta no tienen ferrocarril."
+  ],
+  "en": [
+   "Rail's share of inland passenger transport (car, bus and train). It excludes air travel.",
+   "Cyprus and Malta have no railways."
+  ]
+ },
+ "retrieved": "2026-10-20",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2024",
+   "value": 13.7,
+   "flag": "e"
+  },
+  {
+   "geo": "BEL",
+   "time": "2024",
+   "value": 9.7,
+   "flag": "e"
+  },
+  {
+   "geo": "BGR",
+   "time": "2024",
+   "value": 2.2,
+   "flag": "e"
+  },
+  {
+   "geo": "CZE",
+   "time": "2024",
+   "value": 8.8
+  },
+  {
+   "geo": "DEU",
+   "time": "2024",
+   "value": 10.6,
+   "flag": "e"
+  },
+  {
+   "geo": "DNK",
+   "time": "2024",
+   "value": 7.7
+  },
+  {
+   "geo": "ESP",
+   "time": "2024",
+   "value": 8.8,
+   "flag": "e"
+  },
+  {
+   "geo": "EST",
+   "time": "2024",
+   "value": 2.5,
+   "flag": "be"
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "value": 8.9,
+   "flag": "be"
+  },
+  {
+   "geo": "FIN",
+   "time": "2024",
+   "value": 7.4
+  },
+  {
+   "geo": "FRA",
+   "time": "2024",
+   "value": 11.6
+  },
+  {
+   "geo": "GRC",
+   "time": "2024",
+   "value": 0.6,
+   "flag": "e"
+  },
+  {
+   "geo": "HRV",
+   "time": "2024",
+   "value": 4.0
+  },
+  {
+   "geo": "HUN",
+   "time": "2024",
+   "value": 14.0,
+   "flag": "ep"
+  },
+  {
+   "geo": "IRL",
+   "time": "2024",
+   "value": 3.1,
+   "flag": "e"
+  },
+  {
+   "geo": "ITA",
+   "time": "2024",
+   "value": 7.0
+  },
+  {
+   "geo": "LTU",
+   "time": "2024",
+   "value": 1.1,
+   "flag": "e"
+  },
+  {
+   "geo": "LUX",
+   "time": "2024",
+   "value": 5.4,
+   "flag": "e"
+  },
+  {
+   "geo": "LVA",
+   "time": "2024",
+   "value": 4.3
+  },
+  {
+   "geo": "NLD",
+   "time": "2024",
+   "value": 11.0,
+   "flag": "e"
+  },
+  {
+   "geo": "POL",
+   "time": "2024",
+   "value": 9.2,
+   "flag": "e"
+  },
+  {
+   "geo": "PRT",
+   "time": "2024",
+   "value": 4.6,
+   "flag": "e"
+  },
+  {
+   "geo": "ROU",
+   "time": "2024",
+   "value": 3.8,
+   "flag": "e"
+  },
+  {
+   "geo": "SVK",
+   "time": "2024",
+   "value": 9.1,
+   "flag": "e"
+  },
+  {
+   "geo": "SVN",
+   "time": "2024",
+   "value": 3.0,
+   "flag": "ep"
+  },
+  {
+   "geo": "SWE",
+   "time": "2024",
+   "value": 11.3,
+   "flag": "e"
+  }
+ ]
+}

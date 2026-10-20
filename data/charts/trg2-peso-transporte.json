@@ -1,0 +1,88 @@
+{
+ "id": "trg2-peso-transporte",
+ "lens": "gigantes",
+ "theme": "transporte",
+ "title": {
+  "es": "El transporte ya supone una de cada cuatro toneladas de gases que emite la UE; en 1990, una de cada siete",
+  "en": "Transport now accounts for one in four tonnes of greenhouse gases the EU emits; in 1990, one in seven"
+ },
+ "subtitle": {
+  "es": "Emisiones del transporte, en % del total de emisiones de gases de efecto invernadero, 1990 y 2024",
+  "en": "Transport emissions, as % of total greenhouse gas emissions, 1990 and 2024"
+ },
+ "unit": {
+  "es": "% de las emisiones",
+  "en": "% of emissions"
+ },
+ "source": {
+  "name": "Comisión Europea, JRC: EDGAR, emisiones de gases de efecto invernadero (informe de 2025)",
+  "dataset": "EDGAR_2025_GHG",
+  "url": "https://edgar.jrc.ec.europa.eu/report_2025",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Todos los gases de efecto invernadero (CO2, metano, óxido nitroso y gases fluorados), en millones de toneladas de CO2 equivalente con el potencial de calentamiento a 100 años del IPCC (AR5).",
+   "Transporte: carretera, ferrocarril, navegación y aviación dentro de cada país. No incluye la aviación ni la navegación internacionales, que EDGAR cuenta aparte, sin asignarlas a ningún país.",
+   "En 2024, el transporte fue el sector que más emitió en la UE (791 millones de toneladas), por delante de la generación de electricidad y calor (598). El total no incluye el uso de la tierra y los bosques."
+  ],
+  "en": [
+   "All greenhouse gases (CO2, methane, nitrous oxide and fluorinated gases), in million tonnes of CO2 equivalent using the IPCC 100-year warming potentials (AR5).",
+   "Transport: road, rail, shipping and aviation within each country. It excludes international aviation and shipping, which EDGAR counts separately without assigning them to any country.",
+   "In 2024, transport was the EU's largest emitting sector (791 million tonnes), ahead of power and heat generation (598). The total excludes land use and forestry."
+  ]
+ },
+ "retrieved": "2026-10-20",
+ "geos": {
+  "CHN": {
+   "es": "China",
+   "en": "China",
+   "eu": false,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "USA": {
+   "es": "Estados Unidos",
+   "en": "United States",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "EU27",
+   "time": "1990",
+   "value": 13.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "value": 25.0
+  },
+  {
+   "geo": "USA",
+   "time": "1990",
+   "value": 23.4
+  },
+  {
+   "geo": "USA",
+   "time": "2024",
+   "value": 28.8
+  },
+  {
+   "geo": "CHN",
+   "time": "1990",
+   "value": 2.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2024",
+   "value": 6.2
+  }
+ ]
+}

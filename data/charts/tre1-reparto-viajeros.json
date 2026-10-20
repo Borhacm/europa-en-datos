@@ -1,0 +1,512 @@
+{
+ "id": "tre1-reparto-viajeros",
+ "lens": "elige",
+ "theme": "transporte",
+ "title": {
+  "es": "El coche sigue moviendo a más de 8 de cada 10 viajeros en la UE, igual que en 2000; el tren, al 8,9 %",
+  "en": "Cars still carry more than 8 in 10 passengers in the EU, as in 2000; trains, 8.9%"
+ },
+ "subtitle": {
+  "es": "Reparto del transporte terrestre de viajeros por modo, en % de los pasajeros-kilómetro, 2000-2024",
+  "en": "Inland passenger transport by mode, as % of passenger-kilometres, 2000-2024"
+ },
+ "unit": {
+  "es": "% de los pasajeros-km",
+  "en": "% of passenger-km"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "tran_hv_psmod",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/tran_hv_psmod/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Solo transporte terrestre: coche, autobús y tren (con metro y tranvía). No incluye el avión, la bicicleta ni los desplazamientos a pie.",
+   "En 2020 y 2021, la pandemia hundió el transporte público: el tren y el autobús cayeron y el coche ganó peso.",
+   "De 2009 a 2013, Eurostat marca el dato de la UE como estimado y con ruptura de serie. El salto del tren de 2010 a 2012 coincide con unos datos anómalos de Francia, donde el tren aparece esos tres años con el 99,1 % de los viajeros."
+  ],
+  "en": [
+   "Inland transport only: car, bus and train (including metro and tram). It excludes air travel, cycling and walking.",
+   "In 2020 and 2021 the pandemic hit public transport: trains and buses fell and cars gained share.",
+   "From 2009 to 2013, Eurostat flags the EU figure as estimated and with a break in series. The jump in rail from 2010 to 2012 coincides with anomalous data for France, where trains appear with 99.1% of passengers in those three years."
+  ]
+ },
+ "retrieved": "2026-10-20",
+ "geos": {
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  }
+ },
+ "dimensions": {
+  "series": {
+   "CAR": {
+    "es": "Coche",
+    "en": "Car"
+   },
+   "BUS_TOT": {
+    "es": "Autobús",
+    "en": "Bus and coach"
+   },
+   "TRN": {
+    "es": "Tren",
+    "en": "Train"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "EU27",
+   "time": "2000",
+   "series": "BUS_TOT",
+   "value": 10.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2001",
+   "series": "BUS_TOT",
+   "value": 10.4
+  },
+  {
+   "geo": "EU27",
+   "time": "2002",
+   "series": "BUS_TOT",
+   "value": 10.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2003",
+   "series": "BUS_TOT",
+   "value": 10.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2004",
+   "series": "BUS_TOT",
+   "value": 10.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2005",
+   "series": "BUS_TOT",
+   "value": 10.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2006",
+   "series": "BUS_TOT",
+   "value": 9.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2007",
+   "series": "BUS_TOT",
+   "value": 10.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2008",
+   "series": "BUS_TOT",
+   "value": 10.3
+  },
+  {
+   "geo": "EU27",
+   "time": "2009",
+   "series": "BUS_TOT",
+   "value": 10.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2010",
+   "series": "BUS_TOT",
+   "value": 11.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2011",
+   "series": "BUS_TOT",
+   "value": 11.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2012",
+   "series": "BUS_TOT",
+   "value": 11.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2013",
+   "series": "BUS_TOT",
+   "value": 10.3
+  },
+  {
+   "geo": "EU27",
+   "time": "2014",
+   "series": "BUS_TOT",
+   "value": 9.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2015",
+   "series": "BUS_TOT",
+   "value": 9.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2016",
+   "series": "BUS_TOT",
+   "value": 9.8
+  },
+  {
+   "geo": "EU27",
+   "time": "2017",
+   "series": "BUS_TOT",
+   "value": 9.4
+  },
+  {
+   "geo": "EU27",
+   "time": "2018",
+   "series": "BUS_TOT",
+   "value": 9.3
+  },
+  {
+   "geo": "EU27",
+   "time": "2019",
+   "series": "BUS_TOT",
+   "value": 9.4
+  },
+  {
+   "geo": "EU27",
+   "time": "2020",
+   "series": "BUS_TOT",
+   "value": 7.4
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "series": "BUS_TOT",
+   "value": 7.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2022",
+   "series": "BUS_TOT",
+   "value": 8.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2023",
+   "series": "BUS_TOT",
+   "value": 8.8
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "series": "BUS_TOT",
+   "value": 8.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2000",
+   "series": "CAR",
+   "value": 82.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2001",
+   "series": "CAR",
+   "value": 82.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2002",
+   "series": "CAR",
+   "value": 82.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2003",
+   "series": "CAR",
+   "value": 82.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2004",
+   "series": "CAR",
+   "value": 82.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2005",
+   "series": "CAR",
+   "value": 82.4
+  },
+  {
+   "geo": "EU27",
+   "time": "2006",
+   "series": "CAR",
+   "value": 82.8
+  },
+  {
+   "geo": "EU27",
+   "time": "2007",
+   "series": "CAR",
+   "value": 82.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2008",
+   "series": "CAR",
+   "value": 82.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2009",
+   "series": "CAR",
+   "value": 82.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2010",
+   "series": "CAR",
+   "value": 80.3
+  },
+  {
+   "geo": "EU27",
+   "time": "2011",
+   "series": "CAR",
+   "value": 80.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2012",
+   "series": "CAR",
+   "value": 79.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2013",
+   "series": "CAR",
+   "value": 82.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2014",
+   "series": "CAR",
+   "value": 82.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2015",
+   "series": "CAR",
+   "value": 82.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2016",
+   "series": "CAR",
+   "value": 82.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2017",
+   "series": "CAR",
+   "value": 83.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2018",
+   "series": "CAR",
+   "value": 82.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2019",
+   "series": "CAR",
+   "value": 82.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2020",
+   "series": "CAR",
+   "value": 87.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "series": "CAR",
+   "value": 86.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2022",
+   "series": "CAR",
+   "value": 83.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2023",
+   "series": "CAR",
+   "value": 82.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "series": "CAR",
+   "value": 82.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2000",
+   "series": "TRN",
+   "value": 7.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2001",
+   "series": "TRN",
+   "value": 7.4
+  },
+  {
+   "geo": "EU27",
+   "time": "2002",
+   "series": "TRN",
+   "value": 7.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2003",
+   "series": "TRN",
+   "value": 6.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2004",
+   "series": "TRN",
+   "value": 7.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2005",
+   "series": "TRN",
+   "value": 7.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2006",
+   "series": "TRN",
+   "value": 7.3
+  },
+  {
+   "geo": "EU27",
+   "time": "2007",
+   "series": "TRN",
+   "value": 7.3
+  },
+  {
+   "geo": "EU27",
+   "time": "2008",
+   "series": "TRN",
+   "value": 7.3
+  },
+  {
+   "geo": "EU27",
+   "time": "2009",
+   "series": "TRN",
+   "value": 7.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2010",
+   "series": "TRN",
+   "value": 8.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2011",
+   "series": "TRN",
+   "value": 9.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2012",
+   "series": "TRN",
+   "value": 9.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2013",
+   "series": "TRN",
+   "value": 7.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2014",
+   "series": "TRN",
+   "value": 7.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2015",
+   "series": "TRN",
+   "value": 7.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2016",
+   "series": "TRN",
+   "value": 7.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2017",
+   "series": "TRN",
+   "value": 7.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2018",
+   "series": "TRN",
+   "value": 7.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2019",
+   "series": "TRN",
+   "value": 7.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2020",
+   "series": "TRN",
+   "value": 5.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "series": "TRN",
+   "value": 5.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2022",
+   "series": "TRN",
+   "value": 8.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2023",
+   "series": "TRN",
+   "value": 8.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "series": "TRN",
+   "value": 8.9
+  }
+ ]
+}
