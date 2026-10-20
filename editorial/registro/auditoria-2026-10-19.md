@@ -31,5 +31,5 @@ Revisión de los 8 temas y las 8 notas publicados con los criterios de profundid
 
 - **P0 (hecho en este pull request):** guion y autoevaluación en el manual (pasos 2b y 7b), comprobación de filtros y de solapes, `editorial/revisar.py` y este registro.
 - **P1:** (hecho: Libertades el 19 de octubre, y Comercio, Productividad, Sanidad e IA y digital el 20; ver `libertades.md`, `comercio.md`, `productividad.md`, `sanidad.md` e `ia-digital.md`) rehacer los cinco temas del piloto con el método del manual, por este orden: Libertades (dividir o recortar y quitar el solape con Energía), Comercio, Productividad (enlazar N03, N06 y AN02), Sanidad e IA y digital.
-- **P2:** completar Energía, Vivienda y Dinero: ficha de política (por ejemplo, la directiva de renovables o la reforma del mercado eléctrico), párrafo de límites y cifras sin repetir entre miradas.
+- **P2:** (hecho el 20 de octubre; ver `energia.md`, `vivienda.md` y `dinero.md`) completar Energía, Vivienda y Dinero: ficha de política (por ejemplo, la directiva de renovables o la reforma del mercado eléctrico), párrafo de límites y cifras sin repetir entre miradas.
 - **P3:** reasignar el tema de N01, N04 y N05; ampliar N01; una frase de límites en cada nota.
