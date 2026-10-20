@@ -48,6 +48,7 @@ COUNTRIES = {
     "CHN": (None, "China", "China", False),
     "JPN": (None, "Japón", "Japan", False),
     "KOR": (None, "Corea del Sur", "South Korea", False),
+    "RUS": (None, "Rusia", "Russia", False),
 }
 
 EU27 = [iso3 for iso3, c in COUNTRIES.items() if c[3]]

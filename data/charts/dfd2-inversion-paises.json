@@ -1,0 +1,346 @@
+{
+ "id": "dfd2-inversion-paises",
+ "lens": "dentro",
+ "theme": "defensa",
+ "title": {
+  "es": "Estonia y Polonia dedican cerca del 40 % o más de su gasto en defensa a inversión; 3 países, menos del 10 %",
+  "en": "Estonia and Poland put around 40% or more of their defence spending into investment; 3 countries, less than 10%"
+ },
+ "subtitle": {
+  "es": "Inversión (formación bruta de capital) en % del gasto de las administraciones públicas en defensa, 2024",
+  "en": "Investment (gross capital formation) as % of general government defence expenditure, 2024"
+ },
+ "unit": {
+  "es": "% del gasto en defensa",
+  "en": "% of defence spending"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "gov_10a_exp",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Función 02 (defensa) de la clasificación COFOG. Inversión: equipos e infraestructuras militares.",
+   "Un solo contrato grande puede mover mucho la proporción de un país en un año."
+  ],
+  "en": [
+   "Function 02 (defence) of the COFOG classification. Investment: military equipment and infrastructure.",
+   "A single large contract can move a country's share a lot in one year."
+  ]
+ },
+ "retrieved": "2026-10-20",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2024",
+   "value": 15.6
+  },
+  {
+   "geo": "BEL",
+   "time": "2024",
+   "value": 23.3
+  },
+  {
+   "geo": "BGR",
+   "time": "2024",
+   "value": 9.3
+  },
+  {
+   "geo": "CYP",
+   "time": "2024",
+   "value": 33.9
+  },
+  {
+   "geo": "CZE",
+   "time": "2024",
+   "value": 28.5
+  },
+  {
+   "geo": "DEU",
+   "time": "2024",
+   "value": 14.3
+  },
+  {
+   "geo": "DNK",
+   "time": "2024",
+   "value": 11.1
+  },
+  {
+   "geo": "ESP",
+   "time": "2024",
+   "value": 21.5
+  },
+  {
+   "geo": "EST",
+   "time": "2024",
+   "value": 43.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "value": 21.6
+  },
+  {
+   "geo": "FIN",
+   "time": "2024",
+   "value": 9.6
+  },
+  {
+   "geo": "FRA",
+   "time": "2024",
+   "value": 18.4
+  },
+  {
+   "geo": "GRC",
+   "time": "2024",
+   "value": 10.7
+  },
+  {
+   "geo": "HRV",
+   "time": "2024",
+   "value": 34.0
+  },
+  {
+   "geo": "HUN",
+   "time": "2024",
+   "value": 37.2
+  },
+  {
+   "geo": "IRL",
+   "time": "2024",
+   "value": 7.7
+  },
+  {
+   "geo": "ITA",
+   "time": "2024",
+   "value": 32.9
+  },
+  {
+   "geo": "LTU",
+   "time": "2024",
+   "value": 37.6
+  },
+  {
+   "geo": "LUX",
+   "time": "2024",
+   "value": 17.7
+  },
+  {
+   "geo": "LVA",
+   "time": "2024",
+   "value": 34.4
+  },
+  {
+   "geo": "MLT",
+   "time": "2024",
+   "value": 21.8
+  },
+  {
+   "geo": "NLD",
+   "time": "2024",
+   "value": 10.5
+  },
+  {
+   "geo": "POL",
+   "time": "2024",
+   "value": 38.9
+  },
+  {
+   "geo": "PRT",
+   "time": "2024",
+   "value": 25.9
+  },
+  {
+   "geo": "ROU",
+   "time": "2024",
+   "value": 26.6
+  },
+  {
+   "geo": "SVK",
+   "time": "2024",
+   "value": 11.6
+  },
+  {
+   "geo": "SVN",
+   "time": "2024",
+   "value": 31.4
+  },
+  {
+   "geo": "SWE",
+   "time": "2024",
+   "value": 25.7
+  }
+ ]
+}
