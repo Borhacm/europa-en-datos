@@ -104,11 +104,20 @@ def modelos_abiertos(since: int = 2023):
             n = counts.get((b, g), 0)
             out.append({"geo": b, "time": f"{since}+", "access": g, "value": round(100 * n / total, 1) if total else 0.0,
                         "count": n, "total": total})
+    # El titular se calcula con los datos: Epoch añade modelos con cada actualización
+    eu_open, eu_total = counts.get(("EU27", "abierto"), 0), sum(counts.get(("EU27", g), 0) for g in ACCESS_GROUPS)
+    us_open = counts.get(("USA", "abierto"), 0)
+    us_total = sum(counts.get(("USA", g), 0) for g in ACCESS_GROUPS)
+    if 3 * us_open < us_total:
+        us_es, us_en = "menos de un tercio", "less than a third"
+    else:
+        pct = round(100 * us_open / us_total, 1)
+        us_es, us_en = f"el {fmt_es(pct)} %", f"{pct:g}%"
     return chart(
         id="e3-modelos-abiertos",
         lens="elige", theme="ia-digital",
-        title={"es": f"13 de los 18 modelos destacados de la UE desde {since} se publicaron con pesos abiertos; en EE. UU., menos de un tercio",
-               "en": f"13 of the EU's 18 notable models since {since} were released with open weights; in the US, less than a third"},
+        title={"es": f"{eu_open} de los {eu_total} modelos destacados de la UE desde {since} se publicaron con pesos abiertos; en EE. UU., {us_es}",
+               "en": f"{eu_open} of the EU's {eu_total} notable models since {since} were released with open weights; in the US, {us_en}"},
         subtitle={"es": f"Modelos de IA destacados desde {since} según cómo se publican, en % del total de cada bloque",
                   "en": f"Notable AI models since {since} by release type, as % of each bloc's total"},
         unit={"es": "% de los modelos del bloque", "en": "% of the bloc's models"},
@@ -122,6 +131,10 @@ def modelos_abiertos(since: int = 2023):
         geos=geo.geo_table(["USA", "CHN", "EU27", "GBR"]),
         extra={"dimensions": {"access": ACCESS_GROUPS}},
     )
+
+
+def fmt_es(x: float) -> str:
+    return f"{x:g}".replace(".", ",")
 
 
 BUILDERS = [motivos_no_ia_generativa, control_internet, modelos_abiertos]
