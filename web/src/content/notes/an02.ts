@@ -26,6 +26,7 @@ const note: Note = {
     en: "In 2024 Mario Draghi warned that Europe faced an existential challenge: it grows less, innovates less, pays more for energy and relies on others for its security. Two years on, defence spending has risen sharply, but investment and energy remain far from what he asked for.",
   },
   published: "2026-10-10",
+  updated: "2026-10-20",
   lens: "gigantes",
   theme: "productividad",
   body: [
@@ -101,6 +102,8 @@ const note: Note = {
     { h: t("Qué dicen hoy los datos", "What the data say today"), id: "datos-hoy" },
     p("Dos años después, los datos confirman el diagnóstico más que la cura. La brecha de productividad con EE. UU. era en 2024 mayor que cuando se escribió el informe, la inversión sigue en torno al 21 % del PIB, lejos del 27 % que pedía el informe, y la electricidad para la industria cuesta un 54,8 % más que en 2019, antes de la crisis energética. El cambio más visible está en la defensa, donde el gasto ya ha superado el 2 % del PIB. Los líderes europeos se han dado hasta finales de 2027 para cerrar los acuerdos. Los próximos datos dirán si llegan a tiempo.",
       "Two years on, the data confirm the diagnosis more than the cure. The productivity gap with the US was wider in 2024 than when the report was written, investment remains around 21% of GDP, far from the 27% the report called for, and electricity for industry costs 54.8% more than in 2019, before the energy crisis. The most visible change is in defence, where spending has now passed 2% of GDP. European leaders have given themselves until the end of 2027 to close the agreements. The next data will show whether they make it in time."),
+    p("Lo que no dicen estos datos. Los seguimientos cuentan propuestas aplicadas, no su efecto: que una recomendación esté aprobada no dice si ha servido. Y los datos de esta pieza llegan a 2024 o 2025, así que todavía no recogen el efecto de lo aprobado después.",
+      "What these data do not say. The trackers count proposals implemented, not their effect: a recommendation being adopted does not say whether it has worked. And the data in this piece run to 2024 or 2025, so they do not yet capture the effect of what has been adopted since."),
   ],
   sources: [
     { name: "Comisión Europea: el informe Draghi sobre la competitividad de la UE", url: "https://commission.europa.eu/topics/competitiveness/draghi-report_en" },

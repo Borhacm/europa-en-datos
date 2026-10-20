@@ -15,6 +15,7 @@ const note: Note = {
     en: "Poland spends 4.5% of its GDP on defence, more than any other EU country. The Baltic states and Denmark are above 3%. Ireland, Malta, Luxembourg and Austria remain below 1.5%.",
   },
   published: "2026-10-20",
+  updated: "2026-10-20",
   lens: "dentro",
   theme: "comercio",
   body: [
@@ -30,6 +31,8 @@ const note: Note = {
       "The bar has moved. At the Hague summit in June 2025, allies pledged to spend at least 3.5% of GDP on defence by 2035, on NATO's definition, which differs from SIPRI's. On these figures, only Poland and Latvia are above it today. The comparison of the EU with the US and China is in the analysis of the Draghi report."),
     { see: { es: "El informe Draghi, dos años después: qué pedía, qué se ha hecho y qué dicen hoy los datos", en: "The Draghi report, two years on: what it asked for, what has been done and what the data say today" },
       href: { es: "/es/notas/informe-draghi-dos-anos-despues/", en: "/en/notes/draghi-report-two-years-on/" } },
+    p("Lo que no dicen estos datos. El gasto en proporción del PIB no dice en qué se gasta, si en personal, armamento o investigación, ni si los ejércitos europeos pueden actuar juntos.",
+      "What these data do not say. Spending as a share of GDP does not say what it goes on, whether personnel, weapons or research, or whether European armies can act together."),
   ],
   sources: [
     { name: "OTAN: Declaración de la cumbre de Gales (5/09/2014), párrafo 14", url: "https://www.nato.int/cps/en/natohq/official_texts_112964.htm" },

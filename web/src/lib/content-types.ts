@@ -65,6 +65,8 @@ export interface Note {
   title: Bi;
   dek: Bi;
   published: string;
+  /** Fecha de la última revisión del texto, si la hubo */
+  updated?: string;
   /** Mirada desde la que se cuenta */
   lens: LensId;
   /** Tema al que pertenece (id de un tema publicado) */

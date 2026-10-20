@@ -8,6 +8,13 @@ const charts: Record<string, ChartConfig> = {
     digits: 0,
     table: { rows: "geo", cols: "time" },
   },
+  "n01-alquiler-compra": {
+    renderer: "dumbbell",
+    pair: { dim: "measure", from: "alquiler", to: "compra" },
+    usesFocus: true,
+    digits: 0,
+    table: { rows: "geo", cols: "measure" },
+  },
 };
 
 export default charts;

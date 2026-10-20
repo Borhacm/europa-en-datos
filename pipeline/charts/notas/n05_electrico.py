@@ -54,7 +54,7 @@ def cuota_2025():
             out.append({**_row(code, time, 100 * plug / v["TOTAL"], flag), "fuel": "ELC_PLUG"})
     return chart(
         id="n05-electricos-cuota",
-        lens="elige", theme="libertades",
+        lens="elige", theme="energia",
         title={"es": "En Dinamarca, más de dos de cada tres coches nuevos son eléctricos; en Croacia, menos de dos de cada cien",
                "en": "In Denmark, more than two in three new cars are electric; in Croatia, fewer than two in a hundred"},
         subtitle={"es": "Turismos eléctricos de batería, en % de los turismos nuevos matriculados, 2025",
@@ -80,7 +80,7 @@ def evolucion():
            for (code, time), v in data.items() if "TOTAL" in v and "ELC" in v and v["TOTAL"]]
     return chart(
         id="n05-electricos-evolucion",
-        lens="elige", theme="libertades",
+        lens="elige", theme="energia",
         title={"es": "En la UE, la cuota del coche eléctrico pasó del 1,9 % en 2019 al 17,3 % en 2025",
                "en": "In the EU, the electric car share rose from 1.9% in 2019 to 17.3% in 2025"},
         subtitle={"es": "Turismos eléctricos de batería, en % de los turismos nuevos matriculados, 2013-2025",

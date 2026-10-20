@@ -57,7 +57,6 @@ const theme: Theme = {
       ],
     },
   },
-  notes: ["n01"],
   sources: [
     { name: "Eurostat, glosario: tasa de sobrecarga del coste de la vivienda", url: "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Housing_cost_overburden_rate" },
     { name: "EUR-Lex: Directiva 2014/17/UE, sobre los contratos de crédito celebrados con los consumidores para bienes inmuebles de uso residencial", url: "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32014L0017" },

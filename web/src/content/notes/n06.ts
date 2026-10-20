@@ -15,6 +15,7 @@ const note: Note = {
     en: "In 2001, the EU owed more than the US. Today the US owes 122.3% of its GDP and the EU 81.6%. Within the EU, 12 of the 27 countries exceed the 60% set in the Treaty.",
   },
   published: "2026-10-13",
+  updated: "2026-10-20",
   lens: "gigantes",
   theme: "productividad",
   body: [
@@ -28,6 +29,8 @@ const note: Note = {
     p("Dentro de la UE, las diferencias son enormes. El Tratado fija en el 60 % del PIB el valor de referencia para la deuda pública. En 2025, 12 de los 27 países lo superaban, con Grecia (146,1 %), Italia (137,1 %) y Francia (115,6 %) a la cabeza. España, con el 100,7 %, es la quinta. En el otro extremo, Estonia debe el 24,1 % y Luxemburgo, el 26,5 %. El conjunto de la UE, el 81,7 %, según Eurostat.",
       "Within the EU, the gaps are huge. The Treaty sets 60% of GDP as the reference value for public debt. In 2025, 12 of the 27 countries were above it, led by Greece (146.1%), Italy (137.1%) and France (115.6%). Spain, at 100.7%, ranks fifth. At the other end, Estonia owes 24.1% and Luxembourg 26.5%. The EU as a whole, 81.7%, according to Eurostat."),
     { fig: "n06-deuda-paises", code: "2" },
+    p("Lo que no dicen estos datos. Es deuda bruta: no descuenta lo que las administraciones tienen en activos ni dice cuánto cuesta pagarla, que depende de los tipos de interés de cada país.",
+      "What these data do not say. This is gross debt: it does not subtract what governments hold in assets, nor does it say how much it costs to service, which depends on each country's interest rates."),
   ],
   sources: [
     { name: "FMI (18/02/2026): conclusión de la consulta del artículo IV de 2025 con China", url: "https://www.imf.org/en/News/Articles/2026/02/18/pr-26053-china-imf-executive-board-concludes-2025-article-iv-consultation" },

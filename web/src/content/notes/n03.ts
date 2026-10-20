@@ -15,6 +15,7 @@ const note: Note = {
     en: "Since 2000, the US economy has grown 69% and the EU's 41%. Draghi estimated that closing the gap requires an extra 750 to 800 billion euros of investment a year. Two years on, a quarter of his recommendations have been implemented.",
   },
   published: "2026-09-24",
+  updated: "2026-10-20",
   lens: "gigantes",
   theme: "productividad",
   body: [
@@ -26,11 +27,14 @@ const note: Note = {
     { fig: "n03-inversion", code: "2" },
     p("Dos años después, el seguimiento del JEDI Draghi Tracker, publicado el 10 de septiembre de 2026, calcula que se ha aplicado el 26 % de sus recomendaciones y que ninguna de las 30 clave se ha ejecutado por completo. El avance es desigual: un 35 % en energía y materias primas, un 13 % en salud. El informe sigue marcando la agenda europea, pero la inversión que pedía todavía no ha llegado.",
       "Two years on, the JEDI Draghi Tracker assessment published on 10 September 2026 finds that 26% of his recommendations have been implemented and that none of the 30 key ones has been fully executed. Progress is uneven: 35% in energy and raw materials, 13% in health. The report still sets the European agenda, but the investment it called for has not yet arrived."),
+    p("Lo que no dicen estos datos. El PIB real mide el tamaño de la economía, no la renta de cada persona: la población de EE. UU. ha crecido más que la de la UE desde 2000, y eso explica una parte de la diferencia. La renta por habitante y por hora trabajada se cuenta en el tema de productividad.",
+      "What these data do not say. Real GDP measures the size of the economy, not each person's income: the US population has grown faster than the EU's since 2000, which explains part of the gap. Income per person and per hour worked are covered in the productivity theme."),
   ],
   sources: [
     { name: "Comisión Europea: el informe Draghi sobre la competitividad de la UE", url: "https://commission.europa.eu/topics/competitiveness/draghi-report_en" },
     { name: "Euronews (10/09/2026): EU falls short on Draghi reform agenda", url: "https://www.euronews.com/my-europe/2026/09/10/eu-falls-short-on-draghi-reform-agenda-new-report-shows" },
     { name: "JEDI Draghi Tracker", url: "https://draghitracker.org/" },
+    { name: "Banco Mundial: población total (SP.POP.TOTL)", url: "https://data.worldbank.org/indicator/SP.POP.TOTL" },
   ],
 };
 

@@ -1,7 +1,7 @@
 {
  "id": "n04-luz-cambio",
  "lens": "dentro",
- "theme": "comercio",
+ "theme": "energia",
  "title": {
   "es": "Desde 2021, la luz de los hogares se ha encarecido en 26 de los 27 países; en la UE, un 31,5 %",
   "en": "Since 2021, household electricity has become more expensive in 26 of the 27 countries; in the EU, by 31.5%"
@@ -34,7 +34,7 @@
    "In Malta the price has barely changed (-0.2%). Austria: estimated. Croatia and Malta: provisional 2025 data."
   ]
  },
- "retrieved": "2026-09-29",
+ "retrieved": "2026-10-20",
  "geos": {
   "AUT": {
    "es": "Austria",

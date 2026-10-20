@@ -1,7 +1,7 @@
 {
  "id": "n01-vivienda-precios",
  "lens": "dentro",
- "theme": "libertades",
+ "theme": "vivienda",
  "title": {
   "es": "La vivienda ha subido un 62 % en la UE desde 2015, casi el doble que los precios en general",
   "en": "Housing has risen 62% in the EU since 2015, almost twice as much as prices overall"
@@ -38,7 +38,7 @@
    "Greece does not publish this index on Eurostat."
   ]
  },
- "retrieved": "2026-09-24",
+ "retrieved": "2026-10-20",
  "geos": {
   "AUT": {
    "es": "Austria",

@@ -41,7 +41,7 @@ def precio_hogares():
     out = _rows(list(TAXES), LAST)
     return chart(
         id="n04-luz-precio",
-        lens="dentro", theme="comercio",
+        lens="dentro", theme="energia",
         title={"es": "En Irlanda, la luz de los hogares cuesta 3,7 veces lo que en Hungría",
                "en": "Household electricity in Ireland costs 3.7 times as much as in Hungary"},
         subtitle={"es": "Precio de la electricidad para los hogares, segundo semestre de 2025, en céntimos de euro por kWh",
@@ -62,7 +62,7 @@ def cambio_2021():
     out = [{k: v for k, v in r.items() if k != "tax"} for r in _rows("I_TAX", [BASE, LAST])]
     return chart(
         id="n04-luz-cambio",
-        lens="dentro", theme="comercio",
+        lens="dentro", theme="energia",
         title={"es": "Desde 2021, la luz de los hogares se ha encarecido en 26 de los 27 países; en la UE, un 31,5 %",
                "en": "Since 2021, household electricity has become more expensive in 26 of the 27 countries; in the EU, by 31.5%"},
         subtitle={"es": "Precio de la electricidad para los hogares, con impuestos, primer semestre de 2021 y segundo semestre de 2025, en céntimos de euro por kWh",

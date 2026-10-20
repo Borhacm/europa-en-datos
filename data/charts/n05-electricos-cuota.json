@@ -1,7 +1,7 @@
 {
  "id": "n05-electricos-cuota",
  "lens": "elige",
- "theme": "libertades",
+ "theme": "energia",
  "title": {
   "es": "En Dinamarca, más de dos de cada tres coches nuevos son eléctricos; en Croacia, menos de dos de cada cien",
   "en": "In Denmark, more than two in three new cars are electric; in Croatia, fewer than two in a hundred"
@@ -36,7 +36,7 @@
    "Portugal: provisional. Slovenia: break in series in 2025. Several countries have some categories flagged by Eurostat with additional information in the metadata."
   ]
  },
- "retrieved": "2026-10-06",
+ "retrieved": "2026-10-20",
  "geos": {
   "AUT": {
    "es": "Austria",
