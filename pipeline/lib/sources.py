@@ -125,6 +125,24 @@ def epoch_models() -> list[dict]:
         return list(csv.DictReader(f))
 
 
+EDGAR_URL = "https://edgar.jrc.ec.europa.eu/booklet/EDGAR_2025_GHG_booklet_2025.xlsx"
+
+
+@functools.cache
+def edgar_sectors() -> list[dict]:
+    """Emisiones de gases de efecto invernadero por sector y país de EDGAR (JRC, CC BY 4.0), en Mt de CO2 equivalente.
+
+    Una fila por gas (CO2, CH4, N2O y gases fluorados, con el potencial de calentamiento del AR5), sector, país y año.
+    """
+    import pandas as pd
+
+    df = pd.read_excel(fetch(EDGAR_URL, ".xlsx"), sheet_name="GHG_by_sector_and_country").dropna(subset=["Sector"])
+    years = [c for c in df.columns if isinstance(c, int)]
+    long = df.melt(id_vars=["Substance", "Sector", "EDGAR Country Code"], value_vars=years, var_name="time").dropna(subset=["value"])
+    return [{"gas": r[0], "sector": r[1], "code": r[2], "time": str(r[3]), "value": float(r[4])}
+            for r in long.itertuples(index=False, name=None)]
+
+
 @functools.cache
 def _vdem_frame():
     import pyreadr

@@ -1,0 +1,566 @@
+{
+ "id": "trd2-electricos-parque",
+ "lens": "dentro",
+ "theme": "transporte",
+ "title": {
+  "es": "Solo el 2,9 % de los coches que circulan por la UE son eléctricos; en Dinamarca, el 17,9 %",
+  "en": "Only 2.9% of the cars on EU roads are electric; in Denmark, 17.9%"
+ },
+ "subtitle": {
+  "es": "Turismos eléctricos de batería, en % del parque de turismos, 2020 y 2025",
+  "en": "Battery electric passenger cars, as % of the passenger car fleet, 2020 and 2025"
+ },
+ "unit": {
+  "es": "% del parque",
+  "en": "% of the fleet"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "road_eqs_carpda",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/road_eqs_carpda/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Coches matriculados a 31 de diciembre de cada año. Solo eléctricos de batería: no incluye los híbridos enchufables.",
+   "El parque cambia despacio: cada año se renueva una pequeña parte de los coches que circulan."
+  ],
+  "en": [
+   "Cars registered at 31 December of each year. Battery electric only: plug-in hybrids are not included.",
+   "The fleet changes slowly: only a small part of the cars on the road is replaced each year."
+  ]
+ },
+ "retrieved": "2026-10-20",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2020",
+   "value": 0.87
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 32.25
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 5.74
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 4.88
+  },
+  {
+   "geo": "BEL",
+   "time": "2020",
+   "value": 0.54
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 6.44
+  },
+  {
+   "geo": "BGR",
+   "time": "2020",
+   "value": 0.07
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 0.66
+  },
+  {
+   "geo": "CYP",
+   "time": "2020",
+   "value": 0.04
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 0.79
+  },
+  {
+   "geo": "CZE",
+   "time": "2020",
+   "value": 0.13
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 0.85
+  },
+  {
+   "geo": "DEU",
+   "time": "2020",
+   "value": 0.64
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 4.11
+  },
+  {
+   "geo": "DNK",
+   "time": "2020",
+   "value": 1.17
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 284.75
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 19.13
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 17.92
+  },
+  {
+   "geo": "ESP",
+   "time": "2020",
+   "value": 0.17
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 1.15
+  },
+  {
+   "geo": "EST",
+   "time": "2020",
+   "value": 0.22
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 1.26
+  },
+  {
+   "geo": "EU27",
+   "time": "2020",
+   "value": 0.44
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 2.88
+  },
+  {
+   "geo": "FIN",
+   "time": "2020",
+   "value": 0.28
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 18.61
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 5.88
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 4.47
+  },
+  {
+   "geo": "FRA",
+   "time": "2020",
+   "value": 0.64
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 3.86
+  },
+  {
+   "geo": "GRC",
+   "time": "2020",
+   "value": 0.02
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 0.49
+  },
+  {
+   "geo": "HRV",
+   "time": "2020",
+   "value": 0.08
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 5.22
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 0.69
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 0.61
+  },
+  {
+   "geo": "HUN",
+   "time": "2020",
+   "value": 0.28
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 1.97
+  },
+  {
+   "geo": "IRL",
+   "time": "2020",
+   "value": 0.55
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 3.94
+  },
+  {
+   "geo": "ITA",
+   "time": "2020",
+   "value": 0.13
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 0.87
+  },
+  {
+   "geo": "LTU",
+   "time": "2020",
+   "value": 0.16
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 1.27
+  },
+  {
+   "geo": "LUX",
+   "time": "2020",
+   "value": 1.03
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 40.41
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 11.02
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 8.66
+  },
+  {
+   "geo": "LVA",
+   "time": "2020",
+   "value": 0.16
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 1.73
+  },
+  {
+   "geo": "MLT",
+   "time": "2020",
+   "value": 0.42
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 36.6
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 3.17
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 2.92
+  },
+  {
+   "geo": "NLD",
+   "time": "2020",
+   "value": 2.0
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 7.23
+  },
+  {
+   "geo": "POL",
+   "time": "2020",
+   "value": 0.05
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 0.44
+  },
+  {
+   "geo": "PRT",
+   "time": "2020",
+   "value": 0.48
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 3.77
+  },
+  {
+   "geo": "ROU",
+   "time": "2020",
+   "value": 0.08
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 0.7
+  },
+  {
+   "geo": "SVK",
+   "time": "2020",
+   "value": 0.08
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 0.68
+  },
+  {
+   "geo": "SVN",
+   "time": "2020",
+   "value": 0.31
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 26.42
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 2.06
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 1.91
+  },
+  {
+   "geo": "SWE",
+   "time": "2020",
+   "value": 1.13
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 41.81
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 10.81
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 8.59
+  }
+ ]
+}

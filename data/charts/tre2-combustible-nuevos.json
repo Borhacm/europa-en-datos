@@ -1,0 +1,124 @@
+{
+ "id": "tre2-combustible-nuevos",
+ "lens": "elige",
+ "theme": "transporte",
+ "title": {
+  "es": "Los híbridos sin enchufe ya son el tipo de coche nuevo más vendido en la UE, el 33,1 %; en 2023 lo era el de gasolina",
+  "en": "Non-plug-in hybrids are now the best-selling type of new car in the EU, at 33.1%; in 2023 it was petrol"
+ },
+ "subtitle": {
+  "es": "Matriculaciones de turismos nuevos por tipo de motor, en % del total, 2023 y 2025",
+  "en": "New passenger car registrations by type of engine, as % of the total, 2023 and 2025"
+ },
+ "unit": {
+  "es": "% de los coches nuevos",
+  "en": "% of new cars"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "road_eqr_carpda",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/road_eqr_carpda/default/table",
+  "license": "CC BY 4.0",
+  "also": [
+   {
+    "name": "Reglamento (UE) 2023/851, que refuerza las normas de emisiones de CO2 de los turismos nuevos",
+    "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32023R0851"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Híbrido sin enchufe: combina un motor de combustión con uno eléctrico que no se enchufa a la red. Gasolina y diésel: sin ningún tipo de hibridación.",
+   "Eurostat da el desglose completo de los híbridos (de gasolina y de diésel) desde 2023. El resto, hasta el 100 %, son coches de gas, hidrógeno y otros combustibles."
+  ],
+  "en": [
+   "Non-plug-in hybrid: combines a combustion engine with an electric motor that is not plugged into the grid. Petrol and diesel: with no hybridisation.",
+   "Eurostat gives the full breakdown of hybrids (petrol and diesel) since 2023. The rest, up to 100%, are gas, hydrogen and other fuel cars."
+  ]
+ },
+ "retrieved": "2026-10-20",
+ "geos": {
+  "HYB": {
+   "es": "Híbrido sin enchufe",
+   "en": "Non-plug-in hybrid",
+   "eu": false,
+   "aggregate": false
+  },
+  "PET": {
+   "es": "Gasolina",
+   "en": "Petrol",
+   "eu": false,
+   "aggregate": false
+  },
+  "ELC": {
+   "es": "Eléctrico",
+   "en": "Battery electric",
+   "eu": false,
+   "aggregate": false
+  },
+  "DIE": {
+   "es": "Diésel",
+   "en": "Diesel",
+   "eu": false,
+   "aggregate": false
+  },
+  "PHEV": {
+   "es": "Híbrido enchufable",
+   "en": "Plug-in hybrid",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "HYB",
+   "time": "2023",
+   "value": 25.2
+  },
+  {
+   "geo": "HYB",
+   "time": "2025",
+   "value": 33.1
+  },
+  {
+   "geo": "PET",
+   "time": "2023",
+   "value": 35.6
+  },
+  {
+   "geo": "PET",
+   "time": "2025",
+   "value": 27.3
+  },
+  {
+   "geo": "ELC",
+   "time": "2023",
+   "value": 14.5
+  },
+  {
+   "geo": "ELC",
+   "time": "2025",
+   "value": 17.3
+  },
+  {
+   "geo": "DIE",
+   "time": "2023",
+   "value": 14.1
+  },
+  {
+   "geo": "DIE",
+   "time": "2025",
+   "value": 9.8
+  },
+  {
+   "geo": "PHEV",
+   "time": "2023",
+   "value": 7.7
+  },
+  {
+   "geo": "PHEV",
+   "time": "2025",
+   "value": 9.4
+  }
+ ]
+}
