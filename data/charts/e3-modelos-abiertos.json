@@ -3,8 +3,8 @@
  "lens": "elige",
  "theme": "ia-digital",
  "title": {
-  "es": "¿Apuesta Europa por la IA abierta?",
-  "en": "Is Europe betting on open AI?"
+  "es": "13 de los 18 modelos destacados de la UE desde 2023 se publicaron con pesos abiertos; en EE. UU., menos de un tercio",
+  "en": "13 of the EU's 18 notable models since 2023 were released with open weights; in the US, less than a third"
  },
  "subtitle": {
   "es": "Modelos de IA destacados desde 2023 según cómo se publican, en % del total de cada bloque",
@@ -30,7 +30,7 @@
    "The EU has few notable models in the period: shares rest on small samples (see 'total')."
   ]
  },
- "retrieved": "2026-09-24",
+ "retrieved": "2026-10-20",
  "geos": {
   "CHN": {
    "es": "China",

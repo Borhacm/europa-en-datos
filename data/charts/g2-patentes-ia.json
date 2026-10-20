@@ -3,8 +3,8 @@
  "lens": "gigantes",
  "theme": "ia-digital",
  "title": {
-  "es": "En patentes de IA, EE. UU. y China juegan otra liga",
-  "en": "In AI patents, the US and China are in another league"
+  "es": "EE. UU. y China presentan cada uno casi el triple de solicitudes internacionales de patentes de IA que la UE",
+  "en": "The US and China each file almost three times as many international AI patent applications as the EU"
  },
  "subtitle": {
   "es": "Solicitudes internacionales (PCT) de patentes de IA, por país del inventor y año de prioridad",
@@ -38,7 +38,7 @@
    "per_million divides by World Bank population."
   ]
  },
- "retrieved": "2026-09-24",
+ "retrieved": "2026-10-20",
  "geos": {
   "CHN": {
    "es": "China",

@@ -3,8 +3,8 @@
  "lens": "elige",
  "theme": "ia-digital",
  "title": {
-  "es": "Quien no usa IA generativa no es por prudencia: dice que no la necesita",
-  "en": "Europeans who skip generative AI are not being cautious: they say they don't need it"
+  "es": "Casi dos de cada tres europeos que no usan IA generativa dicen que no la necesitan; solo el 7 % alude a la privacidad o la seguridad",
+  "en": "Almost two in three Europeans who do not use generative AI say they do not need it; only 7% mention privacy or security"
  },
  "subtitle": {
   "es": "Motivos para no usar herramientas de IA generativa, en % de quienes no las usaron en los últimos 3 meses (16 a 74 años)",
@@ -30,7 +30,7 @@
    "2025 survey, the first to include this question."
   ]
  },
- "retrieved": "2026-09-24",
+ "retrieved": "2026-10-20",
  "geos": {
   "ALB": {
    "es": "Albania",

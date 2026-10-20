@@ -3,8 +3,8 @@
  "lens": "elige",
  "theme": "ia-digital",
  "title": {
-  "es": "China adopta tecnología bajo control estatal. Europa elige otro camino",
-  "en": "China adopts technology under state control. Europe takes another path"
+  "es": "China filtra y censura internet mucho más que EE. UU. y la UE; en EE. UU., el filtrado del Gobierno aumentó en 2023",
+  "en": "China filters and censors the internet far more than the US and the EU; in the US, government filtering increased in 2023"
  },
  "subtitle": {
   "es": "Grado en que el Gobierno filtra internet y censura las redes sociales en la práctica (valores altos = menos control)",
@@ -32,7 +32,7 @@
    "CC BY-SA licence: derived data must be shared under the same licence."
   ]
  },
- "retrieved": "2026-09-24",
+ "retrieved": "2026-10-20",
  "geos": {
   "AUT": {
    "es": "Austria",

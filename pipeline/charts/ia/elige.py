@@ -23,8 +23,8 @@ def motivos_no_ia_generativa():
     return chart(
         id="e1-motivos-no-ia-generativa",
         lens="elige", theme="ia-digital",
-        title={"es": "Quien no usa IA generativa no es por prudencia: dice que no la necesita",
-               "en": "Europeans who skip generative AI are not being cautious: they say they don't need it"},
+        title={"es": "Casi dos de cada tres europeos que no usan IA generativa dicen que no la necesitan; solo el 7 % alude a la privacidad o la seguridad",
+               "en": "Almost two in three Europeans who do not use generative AI say they do not need it; only 7% mention privacy or security"},
         subtitle={"es": "Motivos para no usar herramientas de IA generativa, en % de quienes no las usaron en los últimos 3 meses (16 a 74 años)",
                   "en": "Reasons for not using generative AI tools, as % of those who did not use them in the last 3 months (aged 16-74)"},
         unit={"es": "% de quienes no usan IA generativa", "en": "% of non-users of generative AI"},
@@ -50,8 +50,8 @@ def control_internet():
     return chart(
         id="e2-control-internet",
         lens="elige", theme="ia-digital",
-        title={"es": "China adopta tecnología bajo control estatal. Europa elige otro camino",
-               "en": "China adopts technology under state control. Europe takes another path"},
+        title={"es": "China filtra y censura internet mucho más que EE. UU. y la UE; en EE. UU., el filtrado del Gobierno aumentó en 2023",
+               "en": "China filters and censors the internet far more than the US and the EU; in the US, government filtering increased in 2023"},
         subtitle={"es": "Grado en que el Gobierno filtra internet y censura las redes sociales en la práctica (valores altos = menos control)",
                   "en": "Extent to which the government filters the internet and censors social media in practice (higher = less control)"},
         unit={"es": "índice V-Dem (estimación del modelo de medición)", "en": "V-Dem index (measurement model estimate)"},
@@ -107,8 +107,8 @@ def modelos_abiertos(since: int = 2023):
     return chart(
         id="e3-modelos-abiertos",
         lens="elige", theme="ia-digital",
-        title={"es": "¿Apuesta Europa por la IA abierta?",
-               "en": "Is Europe betting on open AI?"},
+        title={"es": f"13 de los 18 modelos destacados de la UE desde {since} se publicaron con pesos abiertos; en EE. UU., menos de un tercio",
+               "en": f"13 of the EU's 18 notable models since {since} were released with open weights; in the US, less than a third"},
         subtitle={"es": f"Modelos de IA destacados desde {since} según cómo se publican, en % del total de cada bloque",
                   "en": f"Notable AI models since {since} by release type, as % of each bloc's total"},
         unit={"es": "% de los modelos del bloque", "en": "% of the bloc's models"},
