@@ -7,44 +7,44 @@ from lib.output import chart
 
 from .gigantes import LAST_YEAR
 
+PDB_FLOW = "OECD.SDD.TPS,DSD_PDB@DF_PDB,2.0"
+PDB_SOURCE = {"name": "OCDE, Productivity Database", "dataset": "DSD_PDB@DF_PDB",
+              "url": "https://data-explorer.oecd.org/vis?df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_PDB%40DF_PDB&df[ag]=OECD.SDD.TPS",
+              "license": "CC BY 4.0"}
 SERIES = {
-    "hora": {"es": "PIB por hora trabajada", "en": "GDP per hour worked"},
-    "habitante": {"es": "PIB por habitante", "en": "GDP per person"},
+    "empleo": {"es": "Tasa de empleo", "en": "Employment rate"},
+    "horas": {"es": "Horas por ocupado", "en": "Hours per worker"},
 }
 
 
-def brecha_ee_uu():
-    # Por hora: OIT, UE-27 (X92) sobre EE. UU.
-    per_hour = {}
-    for r in sources.ilo("DF_GDP_2HRW_NOC_NB", "USA+X92..", start="2000"):
-        if r["FREQ"] == "A" and r["OBS_VALUE"] and int(r["TIME_PERIOD"]) <= LAST_YEAR:
-            per_hour.setdefault(r["TIME_PERIOD"], {})[r["REF_AREA"]] = float(r["OBS_VALUE"])
-    # Por habitante: Eurostat, índice de volumen en PPS (UE = 100) de EE. UU.
-    us_index = {r["time"]: r["value"] for r in sources.eurostat(
-        "sdg_10_10", indic_ppp="VI_PPS_EU27_2020_HAB", ppp_cat18="GDP", geo="US")}
-
+def empleo_horas():
+    # Empleo, población y horas por habitante: no dependen de precios ni de paridades de poder adquisitivo
+    rows = sources.oecd(PDB_FLOW, "USA+EU27_2020.A.EMP+POP+HRSPOP._T.PS+H_PS._Z.N._Z._Z", start="2000")
+    v = {(r["REF_AREA"], r["MEASURE"], r["TIME_PERIOD"]): float(r["OBS_VALUE"]) for r in rows if r["OBS_VALUE"]}
     out = []
-    for t, v in per_hour.items():
-        if "USA" in v and "X92" in v:
-            out.append({"geo": "EU27", "series": "hora", "time": t, "value": round(100 * v["X92"] / v["USA"], 1)})
-    for t, us in us_index.items():
-        if int(t) <= LAST_YEAR:
-            out.append({"geo": "EU27", "series": "habitante", "time": t, "value": round(100 * 100 / us, 1)})
+    years = sorted({t for (_, _, t) in v})
+    for t in years:
+        try:
+            rate = {a: v[(a, "EMP", t)] / v[(a, "POP", t)] for a in ("EU27_2020", "USA")}
+            hours = {a: v[(a, "HRSPOP", t)] / rate[a] for a in ("EU27_2020", "USA")}
+        except KeyError:
+            continue
+        out.append({"geo": "EU27", "series": "empleo", "time": t, "value": round(100 * rate["EU27_2020"] / rate["USA"], 1)})
+        out.append({"geo": "EU27", "series": "horas", "time": t, "value": round(100 * hours["EU27_2020"] / hours["USA"], 1)})
+    latest = max(r["time"] for r in out)
     return chart(
-        id="pe1-brecha-ee-uu",
+        id="pe3-empleo-horas",
         lens="elige", theme="productividad",
-        title={"es": "Por hora trabajada, la UE está al 87 % de EE. UU.; por habitante, solo al 74 %",
-               "en": "Per hour worked, the EU is at 87% of the US; per person, only at 74%"},
-        subtitle={"es": "PIB de la UE en % del de EE. UU. (100 = EE. UU.), por hora trabajada y por habitante",
-                  "en": "EU GDP as % of US GDP (100 = US), per hour worked and per person"},
+        title={"es": "En la UE ya trabaja la misma parte de la población que en EE. UU.; cada ocupado hace casi un 10 % menos de horas",
+               "en": "The same share of the population now works in the EU as in the US; each worker puts in almost 10% fewer hours"},
+        subtitle={"es": f"UE en % del nivel de EE. UU. (100 = EE. UU.), personas ocupadas por habitante y horas al año por persona ocupada, 2000 a {latest}",
+                  "en": f"EU as % of the US level (100 = US), employed people per inhabitant and hours a year per employed person, 2000 to {latest}"},
         unit={"es": "% del nivel de EE. UU.", "en": "% of US level"},
-        source={"name": "OIT, ILOSTAT, y Eurostat", "dataset": "DF_GDP_2HRW_NOC_NB, sdg_10_10",
-                "url": "https://ec.europa.eu/eurostat/databrowser/view/sdg_10_10/default/table", "license": "CC BY 4.0",
-                "also": [{"name": "OIT, ILOSTAT", "url": "https://ilostat.ilo.org/data/"}]},
-        notes={"es": ["Por hora: PIB por hora trabajada de la OIT (estimaciones modelizadas). Por habitante: PIB por habitante en paridad de poder adquisitivo de Eurostat.",
-                      "La diferencia entre las dos líneas se explica por las horas trabajadas y por la parte de la población que tiene empleo."],
-               "en": ["Per hour: ILO GDP per hour worked (modelled estimates). Per person: Eurostat GDP per person at purchasing power parity.",
-                      "The difference between the two lines comes from hours worked and from the share of the population in work."]},
+        source=PDB_SOURCE,
+        notes={"es": ["Tasa de empleo: ocupados entre población total, no solo la de edad de trabajar. Horas trabajadas en el año entre ocupados, de las cuentas nacionales. No dependen de precios ni de paridades de poder adquisitivo.",
+                      "El PIB por habitante es el producto de tres factores: lo que se produce por hora, las horas de cada ocupado y los ocupados por habitante. Este gráfico muestra los dos últimos."],
+               "en": ["Employment rate: employed people over the total population, not only the working-age population. Hours worked in the year over employed people, from national accounts. They do not depend on prices or purchasing power parities.",
+                      "GDP per person is the product of three factors: output per hour, hours per worker and workers per inhabitant. This chart shows the last two."]},
         rows=sorted(out, key=lambda r: (r["series"], r["time"])),
         geos=geo.geo_table(["EU27"]),
         extra={"dimensions": {"series": SERIES}, "ref_line": {"value": 100, "label": {"es": "Estados Unidos", "en": "United States"}}},
@@ -79,4 +79,4 @@ def horas_trabajadas():
     )
 
 
-BUILDERS = [brecha_ee_uu, horas_trabajadas]
+BUILDERS = [empleo_horas, horas_trabajadas]

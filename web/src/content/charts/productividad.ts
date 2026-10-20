@@ -16,10 +16,10 @@ const charts: Record<string, ChartConfig> = {
     table: { rows: "geo", cols: "time", lastCols: 6 },
     domainMin: 0,
   },
-  "pe1-brecha-ee-uu": {
+  "pe3-empleo-horas": {
     renderer: "line",
-    series: ["hora", "habitante"],
-    seriesColors: { hora: "--eu", habitante: "--context-strong" },
+    series: ["empleo", "horas"],
+    seriesColors: { empleo: "--eu", horas: "--focus" },
     table: { rows: "series", cols: "time", lastCols: 6 },
   },
   "pe2-horas-trabajadas": {
@@ -33,6 +33,11 @@ const charts: Record<string, ChartConfig> = {
     renderer: "dumbbell",
     usesFocus: true,
     digits: 0,
+    table: { rows: "geo", cols: "time" },
+  },
+  "pd3-productividad-paises": {
+    renderer: "rank",
+    usesFocus: true,
     table: { rows: "geo", cols: "time" },
   },
   "pd2-mapa-renta": {

@@ -28,6 +28,36 @@ def convergencia():
     )
 
 
+def productividad_paises():
+    rows = sources.eurostat("nama_10_lp_ulc", na_item="RLPR_HW", unit="I15")
+    v = {(r["geo"], r["time"]): r["value"] for r in rows}
+    latest = max(t for (g, t) in v if g == "EU27_2020")
+    out = []
+    for r in from_eurostat([r for r in rows if r["time"] == latest], []):
+        src = "EU27_2020" if r["geo"] == "EU27" else geo.COUNTRIES[r["geo"]][0]
+        base = v.get((src, ENLARGEMENT))
+        if base and r["geo"] in (*geo.EU27, "EU27"):
+            out.append({"geo": r["geo"], "time": latest, "value": round(100 * (v[(src, latest)] / base - 1), 1)})
+    return chart(
+        id="pd3-productividad-paises",
+        lens="dentro", theme="productividad",
+        title={"es": "Desde 2004, la productividad por hora se ha más que duplicado en Rumanía; en Italia apenas ha cambiado y en Grecia ha caído",
+               "en": "Since 2004, output per hour has more than doubled in Romania; in Italy it has barely changed and in Greece it has fallen"},
+        subtitle={"es": f"Variación de la productividad real por hora trabajada entre {ENLARGEMENT} y {latest}, en %",
+                  "en": f"Change in real labour productivity per hour worked between {ENLARGEMENT} and {latest}, in %"},
+        unit={"es": "% de variación", "en": "% change"},
+        source=eurostat_source("nama_10_lp_ulc"),
+        notes={"es": ["PIB a precios constantes de cada país por hora trabajada. Mide cuánto ha crecido cada economía, no su nivel frente a las demás.",
+                      "Irlanda sale muy arriba porque parte de su PIB son beneficios de multinacionales que salen del país; su oficina de estadística publica por eso otra medida, la renta nacional modificada (GNI*).",
+                      f"{latest}: primeras estimaciones de las cuentas nacionales, que pueden revisarse."],
+               "en": ["GDP at each country's constant prices per hour worked. It measures how much each economy has grown, not its level compared with the others.",
+                      "Ireland comes out very high because part of its GDP is multinational profits that leave the country; its statistics office therefore publishes another measure, modified national income (GNI*).",
+                      f"{latest}: first national accounts estimates, which may be revised."]},
+        rows=sorted(out, key=lambda r: r["geo"]),
+        geos=geo.geo_table(r["geo"] for r in out),
+    )
+
+
 def mapa_renta():
     rows = sources.eurostat("nama_10r_2gdp", unit="PPS_HAB_EU27_2020")
     # Solo regiones NUTS 2 de la UE (fuera de la UE la cobertura por años es distinta y desplazaría el año de referencia)
@@ -53,4 +83,4 @@ def mapa_renta():
     )
 
 
-BUILDERS = [convergencia, mapa_renta]
+BUILDERS = [convergencia, productividad_paises, mapa_renta]
