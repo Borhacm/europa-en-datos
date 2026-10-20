@@ -39,6 +39,10 @@ def inversion_id():
         source={"name": "OCDE, Main Science and Technology Indicators", "dataset": "DSD_MSTI@DF_MSTI",
                 "url": "https://data-explorer.oecd.org/?df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_MSTI%40DF_MSTI&df[ag]=OECD.STI.STP",
                 "license": "CC BY 4.0"},
+        notes={"es": ["Total (GERD): gasto en I+D de empresas, Administración, universidades e instituciones sin fines de lucro. Empresas (BERD): solo el que ejecutan las empresas.",
+                      "UE: agregado de los 27 calculado por la OCDE. Los últimos años pueden ser estimaciones provisionales."],
+               "en": ["Total (GERD): R&D spending by business, government, universities and non-profit institutions. Business (BERD): only what companies carry out.",
+                      "EU: aggregate of the 27 computed by the OECD. The latest years may be provisional estimates."]},
         rows=sorted(out, key=lambda r: (r["measure"], r["geo"], r["time"])),
         geos=geo.geo_table(r["geo"] for r in out),
         extra={"dimensions": {"measure": {
@@ -73,8 +77,8 @@ def patentes_ia():
     return chart(
         id="g2-patentes-ia",
         lens="gigantes", theme="ia-digital",
-        title={"es": "En patentes de IA, EE. UU. y China juegan otra liga",
-               "en": "In AI patents, the US and China are in another league"},
+        title={"es": "EE. UU. y China presentan cada uno casi el triple de solicitudes internacionales de patentes de IA que la UE",
+               "en": "The US and China each file almost three times as many international AI patent applications as the EU"},
         subtitle={"es": "Solicitudes internacionales (PCT) de patentes de IA, por país del inventor y año de prioridad",
                   "en": "International (PCT) AI patent applications, by inventor country and priority year"},
         unit={"es": "solicitudes", "en": "applications"},

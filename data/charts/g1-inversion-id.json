@@ -21,10 +21,16 @@
   "license": "CC BY 4.0"
  },
  "notes": {
-  "es": [],
-  "en": []
+  "es": [
+   "Total (GERD): gasto en I+D de empresas, Administración, universidades e instituciones sin fines de lucro. Empresas (BERD): solo el que ejecutan las empresas.",
+   "UE: agregado de los 27 calculado por la OCDE. Los últimos años pueden ser estimaciones provisionales."
+  ],
+  "en": [
+   "Total (GERD): R&D spending by business, government, universities and non-profit institutions. Business (BERD): only what companies carry out.",
+   "EU: aggregate of the 27 computed by the OECD. The latest years may be provisional estimates."
+  ]
  },
- "retrieved": "2026-09-24",
+ "retrieved": "2026-10-20",
  "geos": {
   "CHN": {
    "es": "China",
