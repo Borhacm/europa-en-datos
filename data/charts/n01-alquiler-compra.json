@@ -1,0 +1,542 @@
+{
+ "id": "n01-alquiler-compra",
+ "lens": "dentro",
+ "theme": "vivienda",
+ "title": {
+  "es": "Comprar una casa ha subido tres veces más que el alquiler desde 2015",
+  "en": "Buying a home has risen three times as much as renting since 2015"
+ },
+ "subtitle": {
+  "es": "Subida del precio de compra de la vivienda y del alquiler entre 2015 y 2025, en %",
+  "en": "Rise in house purchase prices and in rents between 2015 and 2025, in %"
+ },
+ "unit": {
+  "es": "% de subida",
+  "en": "% rise"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "prc_hpi_a",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/prc_hpi_a/default/table",
+  "license": "CC BY 4.0",
+  "also": [
+   {
+    "name": "Eurostat, prc_hicp_aind (alquileres, IPCA 04.1)",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_aind/default/table"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Compra: índice de precios de la vivienda (nueva y usada). Alquiler: componente de alquileres reales del índice de precios de consumo armonizado (IPCA), que sigue lo que pagan los hogares inquilinos.",
+   "Precios nominales, sin descontar la inflación. Grecia no publica el índice de precios de la vivienda en Eurostat."
+  ],
+  "en": [
+   "Purchase: house price index (new and existing dwellings). Rent: actual rentals component of the harmonised index of consumer prices (HICP), which tracks what tenant households pay.",
+   "Nominal prices, not adjusted for inflation. Greece does not publish the house price index on Eurostat."
+  ]
+ },
+ "retrieved": "2026-10-20",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "dimensions": {
+  "measure": {
+   "alquiler": {
+    "es": "Alquiler",
+    "en": "Rent"
+   },
+   "compra": {
+    "es": "Compra",
+    "en": "Purchase"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "measure": "alquiler",
+   "value": 47.2
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "measure": "compra",
+   "value": 67.3
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "measure": "alquiler",
+   "value": 30.3
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "measure": "compra",
+   "value": 44.9
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "measure": "alquiler",
+   "value": 48.6
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "measure": "compra",
+   "value": 149.2
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "measure": "alquiler",
+   "value": 29.2
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "measure": "compra",
+   "value": 50.9
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "measure": "alquiler",
+   "value": 48.3
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "measure": "compra",
+   "value": 145.4
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "measure": "alquiler",
+   "value": 17.9
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "measure": "compra",
+   "value": 52.7
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "measure": "alquiler",
+   "value": 17.5
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "measure": "compra",
+   "value": 52.8
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "measure": "alquiler",
+   "value": 13.6
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "measure": "compra",
+   "value": 80.6
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "measure": "alquiler",
+   "value": 65.3
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "measure": "compra",
+   "value": 120.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "measure": "alquiler",
+   "value": 20.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "measure": "compra",
+   "value": 61.9
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "measure": "alquiler",
+   "value": 18.4
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "measure": "compra",
+   "value": -1.0
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "measure": "alquiler",
+   "value": 9.7
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "measure": "compra",
+   "value": 27.3
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "measure": "alquiler",
+   "value": 46.5
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "measure": "compra",
+   "value": 127.1
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "measure": "alquiler",
+   "value": 105.4
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "measure": "compra",
+   "value": 266.6
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "measure": "alquiler",
+   "value": 73.6
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "measure": "compra",
+   "value": 97.2
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "measure": "alquiler",
+   "value": 12.6
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "measure": "compra",
+   "value": 16.2
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "measure": "alquiler",
+   "value": 83.5
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "measure": "compra",
+   "value": 158.1
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "measure": "alquiler",
+   "value": 14.6
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "measure": "compra",
+   "value": 65.1
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "measure": "alquiler",
+   "value": 27.8
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "measure": "compra",
+   "value": 114.1
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "measure": "alquiler",
+   "value": 53.1
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "measure": "compra",
+   "value": 73.6
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "measure": "alquiler",
+   "value": 29.3
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "measure": "compra",
+   "value": 115.2
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "measure": "alquiler",
+   "value": 73.7
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "measure": "compra",
+   "value": 116.8
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "measure": "alquiler",
+   "value": 36.4
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "measure": "compra",
+   "value": 163.9
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "measure": "alquiler",
+   "value": 56.5
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "measure": "compra",
+   "value": 64.8
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "measure": "alquiler",
+   "value": 27.5
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "measure": "compra",
+   "value": 104.2
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "measure": "alquiler",
+   "value": 73.8
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "measure": "compra",
+   "value": 114.9
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "measure": "alquiler",
+   "value": 25.4
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "measure": "compra",
+   "value": 33.4
+  }
+ ]
+}

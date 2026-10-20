@@ -25,6 +25,7 @@ const note: Note = {
     en: "A practical guide to the European AI law after its 2026 reform: what it requires of each company, in what order to act, the problems it is causing, what has already happened in practice and why the UN, Washington and Beijing see it so differently.",
   },
   published: "2026-09-25",
+  updated: "2026-10-20",
   lens: "elige",
   theme: "ia-digital",
   body: [
@@ -136,6 +137,8 @@ const note: Note = {
     ] },
     p("Para una empresa española, la autoridad de referencia es la Agencia Española de Supervisión de la Inteligencia Artificial (AESIA), con sede en A Coruña. La recomendación práctica es no esperar a 2027: el inventario, la clasificación y las cláusulas con proveedores se pueden hacer hoy, y son lo que más cuesta improvisar.",
       "For a Spanish company, the reference authority is the Spanish Agency for the Supervision of Artificial Intelligence (AESIA), based in A Coruña. The practical advice is not to wait for 2027: the inventory, the classification and the supplier clauses can be done today, and they are the hardest things to improvise."),
+    p("Lo que no dice este análisis. Resume la ley y su calendario en la fecha de publicación: no sustituye al asesoramiento jurídico, y las fechas pueden cambiar si se aprueban nuevos aplazamientos. Los datos de Eurostat no distinguen entre leyes.",
+      "What this analysis does not say. It summarises the law and its timetable as of publication: it is not a substitute for legal advice, and the dates may change if further postponements are adopted. Eurostat's data do not distinguish between laws."),
   ],
   sources: [
     { name: "EUR-Lex: Reglamento (UE) 2024/1689 (AI Act)", url: "https://eur-lex.europa.eu/eli/reg/2024/1689/oj" },

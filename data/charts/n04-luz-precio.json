@@ -1,7 +1,7 @@
 {
  "id": "n04-luz-precio",
  "lens": "dentro",
- "theme": "comercio",
+ "theme": "energia",
  "title": {
   "es": "En Irlanda, la luz de los hogares cuesta 3,7 veces lo que en Hungría",
   "en": "Household electricity in Ireland costs 3.7 times as much as in Hungary"
@@ -34,7 +34,7 @@
    "Austria: estimated. Croatia and Malta: provisional."
   ]
  },
- "retrieved": "2026-09-29",
+ "retrieved": "2026-10-20",
  "geos": {
   "AUT": {
    "es": "Austria",

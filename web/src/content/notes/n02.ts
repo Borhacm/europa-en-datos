@@ -15,6 +15,7 @@ const note: Note = {
     en: "Europe chose to be first to regulate artificial intelligence. Among companies that consider using it but do not, 54% now say the legal consequences are unclear, up from 46% in 2023.",
   },
   published: "2026-09-24",
+  updated: "2026-10-20",
   lens: "elige",
   theme: "ia-digital",
   body: [
@@ -26,6 +27,8 @@ const note: Note = {
     p("La subida es general: la incertidumbre legal pesa más que en 2023 en 17 de los 18 países con datos de ambos años. En España llega al 51 %, y en Alemania, que no tiene dato de 2023, al 62 %. La encuesta no distingue entre leyes, así que no todo es atribuible al AI Act: también cuentan el reglamento de protección de datos y la propiedad intelectual. Pero el aplazamiento de 2026 reconoce el problema: cumplir la ley sin normas técnicas terminadas era difícil.",
       "The rise is widespread: legal uncertainty weighs more than in 2023 in 17 of the 18 countries with data for both years. In Spain it reaches 51%, and in Germany, which has no 2023 figure, 62%. The survey does not distinguish between laws, so not all of it can be attributed to the AI Act: data protection rules and intellectual property also count. But the 2026 postponement acknowledges the problem: complying with the law without finished technical standards was hard."),
     { fig: "n02-ia-incertidumbre-legal", code: "2" },
+    p("Lo que no dicen estos datos. La encuesta solo pregunta a las empresas que se plantearon usar IA y no lo hicieron: no dice si las que sí la usan han tenido problemas legales ni cuánto les cuesta cumplir la ley.",
+      "What these data do not say. The survey only asks companies that considered using AI and did not: it does not say whether those that do use it have run into legal problems or how much complying with the law costs them."),
   ],
   sources: [
     { name: "EUR-Lex: Reglamento (UE) 2024/1689 (AI Act)", url: "https://eur-lex.europa.eu/eli/reg/2024/1689/oj" },

@@ -58,7 +58,6 @@ const theme: Theme = {
       ],
     },
   },
-  notes: ["n04"],
   sources: [
     { name: "EUR-Lex: Directiva (UE) 2023/2413, que modifica la Directiva (UE) 2018/2001 relativa al fomento del uso de energía procedente de fuentes renovables", url: "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32023L2413" },
   ],

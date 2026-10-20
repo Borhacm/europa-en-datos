@@ -15,8 +15,9 @@ const note: Note = {
     en: "In 2025, 17.3% of new cars in the EU were battery electric, up from 1.9% in 2019. In Denmark, 67.8%; in Spain, 8.7%; in Croatia, 1.9%.",
   },
   published: "2026-10-06",
+  updated: "2026-10-20",
   lens: "elige",
-  theme: "libertades",
+  theme: "energia",
   body: [
     p("La UE ya ha elegido hacia dónde va el coche. La norma aprobada en 2023 fija para 2035 una reducción del 100 % de las emisiones de CO2 de los turismos nuevos, lo que en la práctica deja fuera a los de combustión. En diciembre de 2025, la Comisión propuso rebajar ese objetivo al 90 % y compensar el resto; la propuesta está en manos del Parlamento y del Consejo.",
       "The EU has already chosen where cars are heading. The rules adopted in 2023 set a 100% cut in CO2 emissions from new cars by 2035, which in practice rules out combustion engines. In December 2025 the Commission proposed lowering that target to 90% and offsetting the rest; the proposal is now with Parliament and the Council."),
@@ -28,6 +29,8 @@ const note: Note = {
     p("El salto ha sido rápido: en 2019 eran el 1,9 % en la UE. Pero no ha sido lineal. En 2024 la cuota bajó por primera vez, del 14,5 % al 13,5 %, arrastrada sobre todo por Alemania, el mayor mercado, que cerró su ayuda a la compra en diciembre de 2023 y pasó del 18,4 % al 13,5 %. En 2025 se recuperó: subió en 22 de los 27 países, y Alemania llegó al 19,1 %.",
       "The jump has been fast: in 2019 they were 1.9% in the EU. But it has not been a straight line. In 2024 the share fell for the first time, from 14.5% to 13.5%, dragged down mainly by Germany, the largest market, which closed its purchase subsidy in December 2023 and went from 18.4% to 13.5%. In 2025 it recovered: it rose in 22 of the 27 countries, and Germany reached 19.1%."),
     { fig: "n05-electricos-evolucion", code: "2" },
+    p("Lo que no dicen estos datos. La cuota cuenta los coches nuevos que se matriculan cada año, no todos los que circulan, que cambian mucho más despacio, y no dice dónde se fabrican. Cuántos eléctricos llegan de China se cuenta en el tema de comercio.",
+      "What these data do not say. The share counts new cars registered each year, not all the cars on the road, which change much more slowly, and it does not say where they are made. How many electric cars arrive from China is covered in the trade theme."),
   ],
   sources: [
     { name: "Comisión Europea: normas de CO2 para turismos y furgonetas (Reglamento (UE) 2023/851 y propuesta de diciembre de 2025)", url: "https://climate.ec.europa.eu/areas-action/transport-decarbonisation/road-transport/cars-and-vans_en" },

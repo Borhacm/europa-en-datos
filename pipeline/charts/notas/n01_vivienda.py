@@ -18,7 +18,7 @@ def precio_vivienda():
     inflation_es = f"{inflation}".replace(".", ",")
     return chart(
         id="n01-vivienda-precios",
-        lens="dentro", theme="libertades",
+        lens="dentro", theme="vivienda",
         title={"es": f"La vivienda ha subido un {round(next(r['value'] for r in out if r['geo'] == 'EU27'))} % en la UE desde {BASE}, casi el doble que los precios en general",
                "en": f"Housing has risen {round(next(r['value'] for r in out if r['geo'] == 'EU27'))}% in the EU since {BASE}, almost twice as much as prices overall"},
         subtitle={"es": f"Subida del precio de la vivienda entre {BASE} y {LAST}, en %",
@@ -40,4 +40,41 @@ def precio_vivienda():
     )
 
 
-BUILDERS = [precio_vivienda]
+MEASURES = {
+    "alquiler": {"es": "Alquiler", "en": "Rent"},
+    "compra": {"es": "Compra", "en": "Purchase"},
+}
+
+
+def alquiler_frente_compra():
+    prices = {r["geo"]: r["value"] for r in from_eurostat(
+        sources.eurostat("prc_hpi_a", purchase="TOTAL", unit="I15_A_AVG", time=LAST), [])}
+    rent_rows = from_eurostat(sources.eurostat("prc_hicp_aind", unit="INX_A_AVG", coicop="CP041", time=[BASE, LAST]), [])
+    rent = {(r["geo"], r["time"]): r["value"] for r in rent_rows}
+    out = []
+    for g, price in prices.items():
+        if (g, BASE) in rent and (g, LAST) in rent and (g in geo.EU27 or g == "EU27"):
+            out.append({"geo": g, "time": LAST, "measure": "alquiler", "value": round(100 * rent[(g, LAST)] / rent[(g, BASE)] - 100, 1)})
+            out.append({"geo": g, "time": LAST, "measure": "compra", "value": round(price - 100, 1)})
+    return chart(
+        id="n01-alquiler-compra",
+        lens="dentro", theme="vivienda",
+        title={"es": f"Comprar una casa ha subido tres veces más que el alquiler desde {BASE}",
+               "en": f"Buying a home has risen three times as much as renting since {BASE}"},
+        subtitle={"es": f"Subida del precio de compra de la vivienda y del alquiler entre {BASE} y {LAST}, en %",
+                  "en": f"Rise in house purchase prices and in rents between {BASE} and {LAST}, in %"},
+        unit={"es": "% de subida", "en": "% rise"},
+        source=eurostat_source("prc_hpi_a", also=[{
+            "name": "Eurostat, prc_hicp_aind (alquileres, IPCA 04.1)",
+            "url": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_aind/default/table"}]),
+        notes={"es": ["Compra: índice de precios de la vivienda (nueva y usada). Alquiler: componente de alquileres reales del índice de precios de consumo armonizado (IPCA), que sigue lo que pagan los hogares inquilinos.",
+                      "Precios nominales, sin descontar la inflación. Grecia no publica el índice de precios de la vivienda en Eurostat."],
+               "en": ["Purchase: house price index (new and existing dwellings). Rent: actual rentals component of the harmonised index of consumer prices (HICP), which tracks what tenant households pay.",
+                      "Nominal prices, not adjusted for inflation. Greece does not publish the house price index on Eurostat."]},
+        rows=sorted(out, key=lambda r: (r["geo"], r["measure"])),
+        geos=geo.geo_table(r["geo"] for r in out),
+        extra={"dimensions": {"measure": MEASURES}},
+    )
+
+
+BUILDERS = [precio_vivienda, alquiler_frente_compra]

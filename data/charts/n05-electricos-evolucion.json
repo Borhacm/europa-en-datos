@@ -1,7 +1,7 @@
 {
  "id": "n05-electricos-evolucion",
  "lens": "elige",
- "theme": "libertades",
+ "theme": "energia",
  "title": {
   "es": "En la UE, la cuota del coche eléctrico pasó del 1,9 % en 2019 al 17,3 % en 2025",
   "en": "In the EU, the electric car share rose from 1.9% in 2019 to 17.3% in 2025"
@@ -32,7 +32,7 @@
    "In 2024 the EU share fell for the first time in the series (from 14.5% to 13.5%). Germany, the largest market, stopped accepting applications for its purchase subsidy on 17 December 2023."
   ]
  },
- "retrieved": "2026-10-06",
+ "retrieved": "2026-10-20",
  "geos": {
   "AUT": {
    "es": "Austria",

@@ -14,8 +14,8 @@ const theme = themeById(note.theme);
 const lens = lensById(note.lens);
 
 const copy = {
-  es: { sources: "Fuentes del texto", note: "Nota", published: "Publicada el", theme: "Tema", lens: "Mirada", more: "Más notas", all: "Todas las notas", read: "Leer el tema completo" },
-  en: { sources: "Sources for the text", note: "Note", published: "Published on", theme: "Theme", lens: "Lens", more: "More notes", all: "All notes", read: "Read the full theme" },
+  es: { sources: "Fuentes del texto", note: "Nota", published: "Publicada el", updated: "revisada el", theme: "Tema", lens: "Mirada", more: "Más notas", all: "Todas las notas", read: "Leer el tema completo" },
+  en: { sources: "Sources for the text", note: "Note", published: "Published on", updated: "revised on", theme: "Theme", lens: "Lens", more: "More notes", all: "All notes", read: "Read the full theme" },
 }[lang];
 
 const others = NOTES.filter((n) => n.id !== note.id).slice(0, 3);
@@ -29,7 +29,7 @@ const toc = note.body.filter((b): b is { h: { es: string; en: string }; id: stri
     <header class="note-head">
       <p class="kicker">
         {label} {note.code}.
-        {" "}{copy.published} {formatDate(note.published, lang)}.
+        {" "}{copy.published} {formatDate(note.published, lang)}{note.updated ? `, ${copy.updated} ${formatDate(note.updated, lang)}` : ""}.
         {theme && <>{" "}{copy.theme}: <a href={themePath(theme.slug)[lang]}>{theme.title[lang]}</a>.</>}
         {" "}{copy.lens}: <a href={lensPath(lens.slug)[lang]}>{lens.name[lang]}</a>.
       </p>
