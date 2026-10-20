@@ -1,0 +1,1260 @@
+{
+ "id": "le3-huella-emisiones",
+ "lens": "elige",
+ "theme": "libertades",
+ "title": {
+  "es": "Lo que consume un europeo lleva 10,2 toneladas de gases de efecto invernadero al año; lo que se produce en la UE, 8,1 por habitante",
+  "en": "What a European consumes carries 10.2 tonnes of greenhouse gases a year; what is produced in the EU, 8.1 per person"
+ },
+ "subtitle": {
+  "es": "Emisiones de gases de efecto invernadero por habitante, producidas en el territorio y contenidas en la demanda final, en toneladas de CO₂ equivalente",
+  "en": "Greenhouse gas emissions per person, produced in the territory and embodied in final demand, in tonnes of CO₂ equivalent"
+ },
+ "unit": {
+  "es": "toneladas de CO₂ equivalente por habitante",
+  "en": "tonnes of CO₂ equivalent per person"
+ },
+ "source": {
+  "name": "OCDE, Greenhouse Gas Footprints, edición de 2025",
+  "dataset": "DSD_ICIO_GHG_MAIN_2025@DF_ICIO_GHG_MAIN_2025",
+  "url": "https://data-explorer.oecd.org/vis?df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_ICIO_GHG_MAIN_2025%40DF_ICIO_GHG_MAIN_2025&df[ag]=OECD.STI.PIE",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Producción: emisiones generadas en el territorio. Consumo: emisiones contenidas en lo que consumen e invierten sus habitantes, se produzca donde se produzca.",
+   "La huella suma las emisiones de todo lo que se consume o se invierte en un territorio, se produzca donde se produzca, y resta las de lo que exporta. Si la huella supera a las emisiones producidas, el territorio importa emisiones.",
+   "Se calcula con las tablas input-output de la OCDE (TIVA): es una estimación y se publica con varios años de retraso. Incluye todos los gases de efecto invernadero, no solo el CO₂, así que no coincide con el gráfico E1."
+  ],
+  "en": [
+   "Production: emissions generated in the territory. Consumption: emissions embodied in what its people consume and invest, wherever it is produced.",
+   "The footprint adds up the emissions of everything consumed or invested in a territory, wherever it is produced, and subtracts those of its exports. If the footprint exceeds the emissions produced, the territory imports emissions.",
+   "It is calculated with the OECD's input-output tables (TiVA): it is an estimate and is published with a lag of several years. It covers all greenhouse gases, not just CO₂, so it does not match chart E1."
+  ]
+ },
+ "retrieved": "2026-10-19",
+ "geos": {
+  "CHN": {
+   "es": "China",
+   "en": "China",
+   "eu": false,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "USA": {
+   "es": "Estados Unidos",
+   "en": "United States",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "dimensions": {
+  "bloc": {
+   "EU27": {
+    "es": "Unión Europea",
+    "en": "European Union"
+   },
+   "USA": {
+    "es": "Estados Unidos",
+    "en": "United States"
+   },
+   "CHN": {
+    "es": "China",
+    "en": "China"
+   }
+  },
+  "series": {
+   "PROD_GHG": {
+    "es": "Producción",
+    "en": "Production"
+   },
+   "FD_GHG": {
+    "es": "Consumo (huella)",
+    "en": "Consumption (footprint)"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "FD_GHG",
+   "time": "1995",
+   "value": 3.0
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "FD_GHG",
+   "time": "1996",
+   "value": 3.14
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "FD_GHG",
+   "time": "1997",
+   "value": 3.07
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "FD_GHG",
+   "time": "1998",
+   "value": 3.22
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "FD_GHG",
+   "time": "1999",
+   "value": 3.29
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "FD_GHG",
+   "time": "2000",
+   "value": 3.48
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "FD_GHG",
+   "time": "2001",
+   "value": 3.64
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "FD_GHG",
+   "time": "2002",
+   "value": 3.79
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "FD_GHG",
+   "time": "2003",
+   "value": 4.09
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "FD_GHG",
+   "time": "2004",
+   "value": 4.37
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "FD_GHG",
+   "time": "2005",
+   "value": 4.59
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "FD_GHG",
+   "time": "2006",
+   "value": 4.81
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "FD_GHG",
+   "time": "2007",
+   "value": 5.13
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "FD_GHG",
+   "time": "2008",
+   "value": 5.35
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "FD_GHG",
+   "time": "2009",
+   "value": 5.99
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "FD_GHG",
+   "time": "2010",
+   "value": 6.39
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "FD_GHG",
+   "time": "2011",
+   "value": 6.98
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "FD_GHG",
+   "time": "2012",
+   "value": 7.24
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "FD_GHG",
+   "time": "2013",
+   "value": 7.56
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "FD_GHG",
+   "time": "2014",
+   "value": 7.62
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "FD_GHG",
+   "time": "2015",
+   "value": 7.61
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "FD_GHG",
+   "time": "2016",
+   "value": 7.74
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "FD_GHG",
+   "time": "2017",
+   "value": 8.01
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "FD_GHG",
+   "time": "2018",
+   "value": 8.61
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "FD_GHG",
+   "time": "2019",
+   "value": 8.68
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "FD_GHG",
+   "time": "2020",
+   "value": 8.78
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "FD_GHG",
+   "time": "2021",
+   "value": 9.12
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "FD_GHG",
+   "time": "2022",
+   "value": 8.97
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "PROD_GHG",
+   "time": "1995",
+   "value": 3.35
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "PROD_GHG",
+   "time": "1996",
+   "value": 3.51
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "PROD_GHG",
+   "time": "1997",
+   "value": 3.49
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "PROD_GHG",
+   "time": "1998",
+   "value": 3.63
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "PROD_GHG",
+   "time": "1999",
+   "value": 3.66
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "PROD_GHG",
+   "time": "2000",
+   "value": 3.88
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "PROD_GHG",
+   "time": "2001",
+   "value": 4.01
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "PROD_GHG",
+   "time": "2002",
+   "value": 4.26
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "PROD_GHG",
+   "time": "2003",
+   "value": 4.67
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "PROD_GHG",
+   "time": "2004",
+   "value": 5.16
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "PROD_GHG",
+   "time": "2005",
+   "value": 5.7
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "PROD_GHG",
+   "time": "2006",
+   "value": 6.05
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "PROD_GHG",
+   "time": "2007",
+   "value": 6.46
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "PROD_GHG",
+   "time": "2008",
+   "value": 6.6
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "PROD_GHG",
+   "time": "2009",
+   "value": 6.92
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "PROD_GHG",
+   "time": "2010",
+   "value": 7.43
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "PROD_GHG",
+   "time": "2011",
+   "value": 8.04
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "PROD_GHG",
+   "time": "2012",
+   "value": 8.24
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "PROD_GHG",
+   "time": "2013",
+   "value": 8.53
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "PROD_GHG",
+   "time": "2014",
+   "value": 8.63
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "PROD_GHG",
+   "time": "2015",
+   "value": 8.48
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "PROD_GHG",
+   "time": "2016",
+   "value": 8.5
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "PROD_GHG",
+   "time": "2017",
+   "value": 8.72
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "PROD_GHG",
+   "time": "2018",
+   "value": 9.25
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "PROD_GHG",
+   "time": "2019",
+   "value": 9.31
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "PROD_GHG",
+   "time": "2020",
+   "value": 9.43
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "PROD_GHG",
+   "time": "2021",
+   "value": 9.82
+  },
+  {
+   "geo": "CHN",
+   "bloc": "CHN",
+   "series": "PROD_GHG",
+   "time": "2022",
+   "value": 9.8
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "FD_GHG",
+   "time": "1995",
+   "value": 12.12
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "FD_GHG",
+   "time": "1996",
+   "value": 12.08
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "FD_GHG",
+   "time": "1997",
+   "value": 11.76
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "FD_GHG",
+   "time": "1998",
+   "value": 11.96
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "FD_GHG",
+   "time": "1999",
+   "value": 12.19
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "FD_GHG",
+   "time": "2000",
+   "value": 12.33
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "FD_GHG",
+   "time": "2001",
+   "value": 12.38
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "FD_GHG",
+   "time": "2002",
+   "value": 12.22
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "FD_GHG",
+   "time": "2003",
+   "value": 12.77
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "FD_GHG",
+   "time": "2004",
+   "value": 12.87
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "FD_GHG",
+   "time": "2005",
+   "value": 13.01
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "FD_GHG",
+   "time": "2006",
+   "value": 13.13
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "FD_GHG",
+   "time": "2007",
+   "value": 13.18
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "FD_GHG",
+   "time": "2008",
+   "value": 13.1
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "FD_GHG",
+   "time": "2009",
+   "value": 11.81
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "FD_GHG",
+   "time": "2010",
+   "value": 11.74
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "FD_GHG",
+   "time": "2011",
+   "value": 11.51
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "FD_GHG",
+   "time": "2012",
+   "value": 10.74
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "FD_GHG",
+   "time": "2013",
+   "value": 10.52
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "FD_GHG",
+   "time": "2014",
+   "value": 10.34
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "FD_GHG",
+   "time": "2015",
+   "value": 10.16
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "FD_GHG",
+   "time": "2016",
+   "value": 10.15
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "FD_GHG",
+   "time": "2017",
+   "value": 10.32
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "FD_GHG",
+   "time": "2018",
+   "value": 10.48
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "FD_GHG",
+   "time": "2019",
+   "value": 10.12
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "FD_GHG",
+   "time": "2020",
+   "value": 9.13
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "FD_GHG",
+   "time": "2021",
+   "value": 9.94
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "FD_GHG",
+   "time": "2022",
+   "value": 10.24
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "PROD_GHG",
+   "time": "1995",
+   "value": 10.68
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "PROD_GHG",
+   "time": "1996",
+   "value": 10.89
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "PROD_GHG",
+   "time": "1997",
+   "value": 10.7
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "PROD_GHG",
+   "time": "1998",
+   "value": 10.63
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "PROD_GHG",
+   "time": "1999",
+   "value": 10.47
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "PROD_GHG",
+   "time": "2000",
+   "value": 10.6
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "PROD_GHG",
+   "time": "2001",
+   "value": 10.69
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "PROD_GHG",
+   "time": "2002",
+   "value": 10.61
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "PROD_GHG",
+   "time": "2003",
+   "value": 10.79
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "PROD_GHG",
+   "time": "2004",
+   "value": 10.82
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "PROD_GHG",
+   "time": "2005",
+   "value": 10.74
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "PROD_GHG",
+   "time": "2006",
+   "value": 10.75
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "PROD_GHG",
+   "time": "2007",
+   "value": 10.65
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "PROD_GHG",
+   "time": "2008",
+   "value": 10.61
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "PROD_GHG",
+   "time": "2009",
+   "value": 9.97
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "PROD_GHG",
+   "time": "2010",
+   "value": 9.98
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "PROD_GHG",
+   "time": "2011",
+   "value": 9.71
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "PROD_GHG",
+   "time": "2012",
+   "value": 9.53
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "PROD_GHG",
+   "time": "2013",
+   "value": 9.29
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "PROD_GHG",
+   "time": "2014",
+   "value": 8.94
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "PROD_GHG",
+   "time": "2015",
+   "value": 9.07
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "PROD_GHG",
+   "time": "2016",
+   "value": 9.07
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "PROD_GHG",
+   "time": "2017",
+   "value": 9.16
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "PROD_GHG",
+   "time": "2018",
+   "value": 8.99
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "PROD_GHG",
+   "time": "2019",
+   "value": 8.62
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "PROD_GHG",
+   "time": "2020",
+   "value": 7.78
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "PROD_GHG",
+   "time": "2021",
+   "value": 8.25
+  },
+  {
+   "geo": "EU27",
+   "bloc": "EU27",
+   "series": "PROD_GHG",
+   "time": "2022",
+   "value": 8.1
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "FD_GHG",
+   "time": "1995",
+   "value": 26.48
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "FD_GHG",
+   "time": "1996",
+   "value": 26.85
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "FD_GHG",
+   "time": "1997",
+   "value": 27.92
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "FD_GHG",
+   "time": "1998",
+   "value": 28.36
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "FD_GHG",
+   "time": "1999",
+   "value": 28.62
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "FD_GHG",
+   "time": "2000",
+   "value": 29.46
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "FD_GHG",
+   "time": "2001",
+   "value": 28.85
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "FD_GHG",
+   "time": "2002",
+   "value": 28.43
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "FD_GHG",
+   "time": "2003",
+   "value": 28.61
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "FD_GHG",
+   "time": "2004",
+   "value": 29.28
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "FD_GHG",
+   "time": "2005",
+   "value": 29.62
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "FD_GHG",
+   "time": "2006",
+   "value": 29.09
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "FD_GHG",
+   "time": "2007",
+   "value": 28.63
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "FD_GHG",
+   "time": "2008",
+   "value": 26.99
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "FD_GHG",
+   "time": "2009",
+   "value": 24.59
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "FD_GHG",
+   "time": "2010",
+   "value": 25.1
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "FD_GHG",
+   "time": "2011",
+   "value": 24.3
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "FD_GHG",
+   "time": "2012",
+   "value": 23.43
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "FD_GHG",
+   "time": "2013",
+   "value": 23.67
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "FD_GHG",
+   "time": "2014",
+   "value": 23.86
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "FD_GHG",
+   "time": "2015",
+   "value": 23.45
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "FD_GHG",
+   "time": "2016",
+   "value": 22.71
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "FD_GHG",
+   "time": "2017",
+   "value": 22.55
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "FD_GHG",
+   "time": "2018",
+   "value": 23.11
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "FD_GHG",
+   "time": "2019",
+   "value": 22.48
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "FD_GHG",
+   "time": "2020",
+   "value": 20.23
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "FD_GHG",
+   "time": "2021",
+   "value": 21.49
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "FD_GHG",
+   "time": "2022",
+   "value": 22.21
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "PROD_GHG",
+   "time": "1995",
+   "value": 24.82
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "PROD_GHG",
+   "time": "1996",
+   "value": 25.08
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "PROD_GHG",
+   "time": "1997",
+   "value": 25.97
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "PROD_GHG",
+   "time": "1998",
+   "value": 25.79
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "PROD_GHG",
+   "time": "1999",
+   "value": 25.57
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "PROD_GHG",
+   "time": "2000",
+   "value": 25.73
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "PROD_GHG",
+   "time": "2001",
+   "value": 25.27
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "PROD_GHG",
+   "time": "2002",
+   "value": 24.58
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "PROD_GHG",
+   "time": "2003",
+   "value": 24.63
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "PROD_GHG",
+   "time": "2004",
+   "value": 24.84
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "PROD_GHG",
+   "time": "2005",
+   "value": 24.71
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "PROD_GHG",
+   "time": "2006",
+   "value": 24.22
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "PROD_GHG",
+   "time": "2007",
+   "value": 24.52
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "PROD_GHG",
+   "time": "2008",
+   "value": 23.49
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "PROD_GHG",
+   "time": "2009",
+   "value": 21.77
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "PROD_GHG",
+   "time": "2010",
+   "value": 22.27
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "PROD_GHG",
+   "time": "2011",
+   "value": 21.67
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "PROD_GHG",
+   "time": "2012",
+   "value": 20.87
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "PROD_GHG",
+   "time": "2013",
+   "value": 21.21
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "PROD_GHG",
+   "time": "2014",
+   "value": 21.23
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "PROD_GHG",
+   "time": "2015",
+   "value": 20.5
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "PROD_GHG",
+   "time": "2016",
+   "value": 19.87
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "PROD_GHG",
+   "time": "2017",
+   "value": 19.73
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "PROD_GHG",
+   "time": "2018",
+   "value": 20.2
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "PROD_GHG",
+   "time": "2019",
+   "value": 19.64
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "PROD_GHG",
+   "time": "2020",
+   "value": 17.56
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "PROD_GHG",
+   "time": "2021",
+   "value": 18.38
+  },
+  {
+   "geo": "USA",
+   "bloc": "USA",
+   "series": "PROD_GHG",
+   "time": "2022",
+   "value": 18.64
+  }
+ ]
+}

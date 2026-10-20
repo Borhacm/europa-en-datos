@@ -33,6 +33,8 @@ export interface ChartConfig {
   /** Países de fuera de la UE que se incluyen en los rankings, p. ej. ["USA"] */
   extraGeos?: string[];
   domainMin?: number;
+  /** Dumbbell: compara dos valores de una dimensión en vez del primer y el último año, p. ej. { dim: "transfers", from: "before", to: "after" } */
+  pair?: { dim: string; from: string; to: string };
 }
 
 // Cada tema y cada nota tiene su archivo en content/charts/: así un tema nuevo solo añade archivos

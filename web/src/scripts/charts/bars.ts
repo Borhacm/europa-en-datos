@@ -144,10 +144,14 @@ export function renderDumbbell(ctx: RenderContext) {
   const fmt = nf(lang, ctx.cfg.digits ?? 1);
   const pct = pctSuffix(ctx);
   const rows = euRows(ctx, slice(ctx));
+  // Por defecto compara el primer y el último año; con `pair`, dos valores de otra dimensión
+  const pair = ctx.cfg.pair;
+  const key = pair?.dim ?? "time";
   const years = [...new Set(rows.map((r) => r.time))].sort();
-  const first = years[0], last = years[years.length - 1];
+  const [first, last] = pair ? [pair.from, pair.to] : [years[0], years[years.length - 1]];
+  const label = (k: string) => (pair ? dimLabel(chart, key, k, lang) : k);
   const geos = [...new Set(rows.map((r) => r.geo))];
-  const get = (g: string, t: string) => rows.find((r) => r.geo === g && r.time === t)?.value;
+  const get = (g: string, t: string) => rows.find((r) => r.geo === g && r[key] === t)?.value;
   const data = geos
     .map((g) => ({ g, a: get(g, first), b: get(g, last) }))
     .filter((d): d is { g: string; a: number; b: number } => d.a !== undefined && d.b !== undefined)
@@ -171,8 +175,10 @@ export function renderDumbbell(ctx: RenderContext) {
   const paper = cssVar("--paper");
   data.forEach((d, i) => {
     const cy = m.top + i * ROW + ROW / 2;
-    const hl = d.g === "EU27" || d.g === focus;
-    const color = colorFor(d.g, focus);
+    // Filas con color propio en seriesColors (cuando las filas no son países, p. ej. componentes de un índice)
+    const own = ctx.cfg.seriesColors?.[d.g];
+    const hl = d.g === "EU27" || d.g === focus || !!own;
+    const color = own ? cssVar(own) : colorFor(d.g, focus);
     const g = svg("g", { class: `bar-row${hl ? " hl" : ""}`, tabindex: 0 }, root);
     svg("rect", { x: 0, y: cy - ROW / 2, width, height: ROW, fill: "transparent" }, g);
     const name = svg("text", { x: left - 10, y: cy + 5, class: `row-name${hl ? " strong" : ""}`, "text-anchor": "end" }, g);
@@ -184,11 +190,11 @@ export function renderDumbbell(ctx: RenderContext) {
     const val = svg("text", { x: Math.max(x(d.a), x(d.b)) + 10, y: cy + 5, class: `row-value${hl ? " strong" : ""}` }, g);
     val.textContent = fmt(d.b);
     const show = () => tip.show(x(d.b), cy - 12,
-      `<div class="tip-title">${geoName(chart, d.g, lang)}</div>${tipRow(cssVar("--context"), first, `${fmt(d.a)}${pct}`)}${tipRow(color, last, `${fmt(d.b)}${pct}`, true)}`);
+      `<div class="tip-title">${geoName(chart, d.g, lang)}</div>${tipRow(cssVar("--context"), label(first), `${fmt(d.a)}${pct}`)}${tipRow(color, label(last), `${fmt(d.b)}${pct}`, true)}`);
     g.addEventListener("pointerenter", show);
     g.addEventListener("focus", show);
     g.addEventListener("pointerleave", () => tip.hide());
     g.addEventListener("blur", () => tip.hide());
   });
-  ctx.legend.innerHTML = `<span class="lg lg-hollow"><span class="key"></span>${first}</span><span class="lg lg-dot"><span class="key"></span>${last}</span>`;
+  ctx.legend.innerHTML = `<span class="lg lg-hollow"><span class="key"></span>${label(first)}</span><span class="lg lg-dot"><span class="key"></span>${label(last)}</span>`;
 }

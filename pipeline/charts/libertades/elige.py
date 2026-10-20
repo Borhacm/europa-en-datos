@@ -20,11 +20,50 @@ def emisiones_1990():
         subtitle={"es": "Emisiones totales de CO₂, índice 1990 = 100", "en": "Total CO₂ emissions, index 1990 = 100"},
         unit={"es": "índice (1990 = 100)", "en": "index (1990 = 100)"},
         source=worldbank_source("EN.GHG.CO2.MT.CE.AR5", "emisiones totales de CO₂ (EDGAR)"),
-        notes={"es": ["Emisiones producidas en cada territorio, sin las de los bienes importados. Parte de la reducción europea se debe a que produce fuera bienes que consume."],
-               "en": ["Emissions produced in each territory, excluding those embodied in imports. Part of Europe's cut comes from producing abroad goods it consumes."]},
+        notes={"es": ["Emisiones de CO₂ de combustibles fósiles y procesos industriales producidas en cada territorio, sin las de los bienes importados ni las del uso del suelo. El gráfico E2 compara las emisiones producidas con las que lleva lo que se consume.",
+                      "El objetivo de la Ley Europea del Clima se refiere a todos los gases de efecto invernadero y descuenta las absorciones (bosques, suelos), así que no se puede leer directamente en esta serie."],
+               "en": ["CO₂ emissions from fossil fuels and industrial processes produced in each territory, excluding those embodied in imports and those from land use. Chart E2 compares emissions produced with those embodied in what is consumed.",
+                      "The European Climate Law target covers all greenhouse gases and nets out removals (forests, soils), so it cannot be read directly from this series."]},
         rows=out,
         geos=geo.geo_table(r["geo"] for r in out),
         extra={"ref_line": {"value": 100, "label": {"es": "Nivel de 1990", "en": "1990 level"}}},
+    )
+
+
+BLOCS = {"EU27": {"es": "Unión Europea", "en": "European Union"},
+         "USA": {"es": "Estados Unidos", "en": "United States"},
+         "CHN": {"es": "China", "en": "China"}}
+FOOTPRINT = {"PROD_GHG": {"es": "Producción", "en": "Production"},
+             "FD_GHG": {"es": "Consumo (huella)", "en": "Consumption (footprint)"}}
+
+
+def huella():
+    rows = sources.oecd("OECD.STI.PIE,DSD_ICIO_GHG_MAIN_2025@DF_ICIO_GHG_MAIN_2025,1.0",
+                        "A.PROD_GHG+FD_GHG.EU27_2020+USA+CHN._T.T_CO2E_PS")
+    out = []
+    for r in rows:
+        code = geo.from_eurostat(r["REF_AREA"]) or r["REF_AREA"]
+        out.append({"geo": code, "bloc": code, "series": r["MEASURE"], "time": r["TIME_PERIOD"],
+                    "value": round(float(r["OBS_VALUE"]), 2)})
+    return chart(
+        id="le3-huella-emisiones",
+        lens="elige", theme="libertades",
+        title={"es": "Lo que consume un europeo lleva 10,2 toneladas de gases de efecto invernadero al año; lo que se produce en la UE, 8,1 por habitante",
+               "en": "What a European consumes carries 10.2 tonnes of greenhouse gases a year; what is produced in the EU, 8.1 per person"},
+        subtitle={"es": "Emisiones de gases de efecto invernadero por habitante, producidas en el territorio y contenidas en la demanda final, en toneladas de CO₂ equivalente",
+                  "en": "Greenhouse gas emissions per person, produced in the territory and embodied in final demand, in tonnes of CO₂ equivalent"},
+        unit={"es": "toneladas de CO₂ equivalente por habitante", "en": "tonnes of CO₂ equivalent per person"},
+        source={"name": "OCDE, Greenhouse Gas Footprints, edición de 2025", "dataset": "DSD_ICIO_GHG_MAIN_2025@DF_ICIO_GHG_MAIN_2025",
+                "url": "https://data-explorer.oecd.org/vis?df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_ICIO_GHG_MAIN_2025%40DF_ICIO_GHG_MAIN_2025&df[ag]=OECD.STI.PIE", "license": "CC BY 4.0"},
+        notes={"es": ["Producción: emisiones generadas en el territorio. Consumo: emisiones contenidas en lo que consumen e invierten sus habitantes, se produzca donde se produzca.",
+                      "La huella suma las emisiones de todo lo que se consume o se invierte en un territorio, se produzca donde se produzca, y resta las de lo que exporta. Si la huella supera a las emisiones producidas, el territorio importa emisiones.",
+                      "Se calcula con las tablas input-output de la OCDE (TIVA): es una estimación y se publica con varios años de retraso. Incluye todos los gases de efecto invernadero, no solo el CO₂, así que no coincide con el gráfico E1."],
+               "en": ["Production: emissions generated in the territory. Consumption: emissions embodied in what its people consume and invest, wherever it is produced.",
+                      "The footprint adds up the emissions of everything consumed or invested in a territory, wherever it is produced, and subtracts those of its exports. If the footprint exceeds the emissions produced, the territory imports emissions.",
+                      "It is calculated with the OECD's input-output tables (TiVA): it is an estimate and is published with a lag of several years. It covers all greenhouse gases, not just CO₂, so it does not match chart E1."]},
+        rows=sorted(out, key=lambda r: (r["bloc"], r["series"], r["time"])),
+        geos=geo.geo_table(BLOCS),
+        extra={"dimensions": {"bloc": BLOCS, "series": FOOTPRINT}},
     )
 
 
@@ -58,4 +97,4 @@ def gasto_social():
     )
 
 
-BUILDERS = [emisiones_1990, gasto_social]
+BUILDERS = [emisiones_1990, huella, gasto_social]

@@ -1,4 +1,4 @@
-"""Libertades, bienestar y clima. Mirada 1: democracia, salud y emisiones en los tres bloques."""
+"""Libertades, bienestar y clima. Mirada 1: democracia y salud en los tres bloques."""
 
 from lib import geo
 from lib.output import chart
@@ -50,22 +50,50 @@ def esperanza_vida():
     )
 
 
-def co2_habitante():
-    out = worldbank_rows("EN.GHG.CO2.PC.CE.AR5", 1990, 2024)
+# Componentes del índice de democracia liberal (todos de 0 a 1)
+COMPONENTS = {
+    "v2xlg_legcon": {"es": "Control legislativo", "en": "Legislative constraints"},
+    "v2x_freexp_altinf": {"es": "Libertad de expresión", "en": "Free expression"},
+    "v2xcl_rol": {"es": "Igualdad ante la ley", "en": "Equality before the law"},
+    "v2x_jucon": {"es": "Control judicial", "en": "Judicial constraints"},
+    "v2x_frassoc_thick": {"es": "Libertad de asociación", "en": "Freedom of association"},
+    "v2xel_frefair": {"es": "Elecciones limpias", "en": "Clean elections"},
+}
+# Nombres completos de V-Dem, para las notas
+FULL = {
+    "v2xlg_legcon": {"es": "control del legislativo sobre el ejecutivo", "en": "legislative constraints on the executive"},
+    "v2x_freexp_altinf": {"es": "libertad de expresión y fuentes alternativas de información", "en": "freedom of expression and alternative sources of information"},
+    "v2xcl_rol": {"es": "igualdad ante la ley y libertades individuales", "en": "equality before the law and individual liberty"},
+    "v2x_jucon": {"es": "control judicial del ejecutivo", "en": "judicial constraints on the executive"},
+    "v2x_frassoc_thick": {"es": "libertad de asociación", "en": "freedom of association"},
+    "v2xel_frefair": {"es": "elecciones limpias", "en": "clean elections"},
+}
+COMPONENT_YEARS = ("2024", "2025")
+
+
+def componentes():
+    rows = vdem_with_eu(COMPONENTS, since=int(COMPONENT_YEARS[0]), countries=["USA"])
+    out = [{"geo": r["measure"], "time": r["time"], "value": r["value"]}
+           for r in rows if r["geo"] == "USA" and r["time"] in COMPONENT_YEARS]
+    eu = {r["measure"]: r["value"] for r in rows if r["geo"] == "EU27" and r["stat"] == "median" and r["time"] == COMPONENT_YEARS[1]}
     return chart(
-        id="lg3-co2-habitante",
+        id="lg4-componentes-democracia",
         lens="gigantes", theme="libertades",
-        title={"es": "Un chino ya emite más CO₂ que un europeo; un estadounidense, más del doble",
-               "en": "A Chinese person now emits more CO₂ than a European; an American, more than twice as much"},
-        subtitle={"es": "Emisiones de CO₂ por habitante, en toneladas al año (sin cambios de uso del suelo)",
-                  "en": "CO₂ emissions per person, in tonnes a year (excluding land use change)"},
-        unit={"es": "toneladas por habitante", "en": "tonnes per person"},
-        source=worldbank_source("EN.GHG.CO2.PC.CE.AR5", "emisiones de CO₂ por habitante (EDGAR)"),
-        notes={"es": ["Emisiones producidas en cada territorio. No incluyen las emisiones de los bienes importados."],
-               "en": ["Emissions produced in each territory. They exclude emissions embodied in imported goods."]},
-        rows=out,
-        geos=geo.geo_table(r["geo"] for r in out),
+        title={"es": "En 2025, lo que más cayó en EE. UU. fue el control del Congreso sobre el presidente: de 0,86 a 0,61",
+               "en": "In 2025, what fell most in the US was Congress's check on the president: from 0.86 to 0.61"},
+        subtitle={"es": "Componentes del índice de democracia liberal de V-Dem en EE. UU., de 0 a 1, 2024 y 2025",
+                  "en": "Components of V-Dem's liberal democracy index in the US, from 0 to 1, 2024 and 2025"},
+        unit={"es": "índice de 0 a 1", "en": "index from 0 to 1"},
+        source=VDEM_SOURCE,
+        notes={"es": ["Seis de los índices con los que V-Dem construye el de democracia liberal. El índice final no es su media: combina la democracia electoral con un componente liberal (límites al poder y derechos).",
+                      "Mediana de los 27 países de la UE en 2025, como referencia: " + "; ".join(f"{FULL[k]['es']}, {f'{v:.2f}'.replace('.', ',')}" for k, v in eu.items()) + ".",
+                      "Licencia CC BY-SA: los datos derivados deben compartirse con la misma licencia."],
+               "en": ["Six of the indices V-Dem uses to build its liberal democracy index. The final index is not their average: it combines electoral democracy with a liberal component (limits on power and rights).",
+                      "Median of the 27 EU countries in 2025, for reference: " + "; ".join(f"{FULL[k]['en']}, {v:.2f}" for k, v in eu.items()) + ".",
+                      "CC BY-SA licence: derived data must be shared under the same licence."]},
+        rows=sorted(out, key=lambda r: (r["geo"], r["time"])),
+        geos={k: {**v, "eu": False, "aggregate": False} for k, v in COMPONENTS.items()},
     )
 
 
-BUILDERS = [democracia, esperanza_vida, co2_habitante]
+BUILDERS = [democracia, componentes, esperanza_vida]

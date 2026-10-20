@@ -130,7 +130,9 @@ export function renderLine(ctx: RenderContext) {
       if (ly - l.y > MIN_LABEL_GAP) continue;
       prev = ly;
       const txt = svg("text", { x: l.x + 10, y: ly + 4, class: "end-label" }, root);
-      txt.innerHTML = `<tspan class="end-name">${l.s.label}</tspan> <tspan class="end-value">${fmt(l.value)}</tspan>`;
+      // La etiqueta larga de la mediana de la UE no cabe al final de la línea: la leyenda la da completa
+      const name = l.s.key === "EU27" && hasMedian ? (lang === "es" ? "UE (mediana)" : "EU (median)") : l.s.label;
+      txt.innerHTML = `<tspan class="end-name">${name}</tspan> <tspan class="end-value">${fmt(l.value)}</tspan>`;
     }
   }
 

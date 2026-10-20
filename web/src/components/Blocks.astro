@@ -31,6 +31,7 @@ const figCode = (code: string) => (code.includes("-") ? code : `${codePrefix}-${
         {b.timeline.map((t) => <li><span class="t-date">{t.date[lang]}</span><span class="t-text">{t.text[lang]}</span></li>)}
       </ol>
     )
+  : "see" in b ? <p class="prose b-see"><a href={b.href[lang]}>{b.see[lang]}</a></p>
   : null
 )}
 
@@ -58,6 +59,9 @@ const figCode = (code: string) => (code.includes("-") ? code : `${codePrefix}-${
   .b-timeline li::before { content: ""; position: absolute; left: -6px; top: 0.95rem; width: 10px; height: 10px; border-radius: 50%; background: var(--eu); }
   .t-date { font-family: var(--font-semi); font-weight: 700; color: var(--ink); }
   .t-text { color: var(--ink-2); line-height: 1.45; }
+  .b-see { margin-block: 1rem 2rem; font-family: var(--font-semi); font-weight: 600; }
+  .b-see a { color: var(--eu); text-underline-offset: 3px; }
+  .b-see a::before { content: "→ "; }
   @media (max-width: 560px) {
     .b-timeline li { grid-template-columns: 1fr; gap: 0.15rem; }
   }

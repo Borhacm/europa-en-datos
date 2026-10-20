@@ -1,0 +1,136 @@
+{
+ "id": "lg4-componentes-democracia",
+ "lens": "gigantes",
+ "theme": "libertades",
+ "title": {
+  "es": "En 2025, lo que más cayó en EE. UU. fue el control del Congreso sobre el presidente: de 0,86 a 0,61",
+  "en": "In 2025, what fell most in the US was Congress's check on the president: from 0.86 to 0.61"
+ },
+ "subtitle": {
+  "es": "Componentes del índice de democracia liberal de V-Dem en EE. UU., de 0 a 1, 2024 y 2025",
+  "en": "Components of V-Dem's liberal democracy index in the US, from 0 to 1, 2024 and 2025"
+ },
+ "unit": {
+  "es": "índice de 0 a 1",
+  "en": "index from 0 to 1"
+ },
+ "source": {
+  "name": "V-Dem (v16)",
+  "dataset": "vdem.RData",
+  "url": "https://www.v-dem.net/data/the-v-dem-dataset/",
+  "license": "CC BY-SA 4.0"
+ },
+ "notes": {
+  "es": [
+   "Seis de los índices con los que V-Dem construye el de democracia liberal. El índice final no es su media: combina la democracia electoral con un componente liberal (límites al poder y derechos).",
+   "Mediana de los 27 países de la UE en 2025, como referencia: libertad de asociación, 0,87; libertad de expresión y fuentes alternativas de información, 0,91; control judicial del ejecutivo, 0,92; igualdad ante la ley y libertades individuales, 0,94; elecciones limpias, 0,94; control del legislativo sobre el ejecutivo, 0,90.",
+   "Licencia CC BY-SA: los datos derivados deben compartirse con la misma licencia."
+  ],
+  "en": [
+   "Six of the indices V-Dem uses to build its liberal democracy index. The final index is not their average: it combines electoral democracy with a liberal component (limits on power and rights).",
+   "Median of the 27 EU countries in 2025, for reference: freedom of association, 0.87; freedom of expression and alternative sources of information, 0.91; judicial constraints on the executive, 0.92; equality before the law and individual liberty, 0.94; clean elections, 0.94; legislative constraints on the executive, 0.90.",
+   "CC BY-SA licence: derived data must be shared under the same licence."
+  ]
+ },
+ "retrieved": "2026-10-19",
+ "geos": {
+  "v2xlg_legcon": {
+   "es": "Control legislativo",
+   "en": "Legislative constraints",
+   "eu": false,
+   "aggregate": false
+  },
+  "v2x_freexp_altinf": {
+   "es": "Libertad de expresión",
+   "en": "Free expression",
+   "eu": false,
+   "aggregate": false
+  },
+  "v2xcl_rol": {
+   "es": "Igualdad ante la ley",
+   "en": "Equality before the law",
+   "eu": false,
+   "aggregate": false
+  },
+  "v2x_jucon": {
+   "es": "Control judicial",
+   "en": "Judicial constraints",
+   "eu": false,
+   "aggregate": false
+  },
+  "v2x_frassoc_thick": {
+   "es": "Libertad de asociación",
+   "en": "Freedom of association",
+   "eu": false,
+   "aggregate": false
+  },
+  "v2xel_frefair": {
+   "es": "Elecciones limpias",
+   "en": "Clean elections",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "v2x_frassoc_thick",
+   "time": "2024",
+   "value": 0.943
+  },
+  {
+   "geo": "v2x_frassoc_thick",
+   "time": "2025",
+   "value": 0.913
+  },
+  {
+   "geo": "v2x_freexp_altinf",
+   "time": "2024",
+   "value": 0.904
+  },
+  {
+   "geo": "v2x_freexp_altinf",
+   "time": "2025",
+   "value": 0.729
+  },
+  {
+   "geo": "v2x_jucon",
+   "time": "2024",
+   "value": 0.902
+  },
+  {
+   "geo": "v2x_jucon",
+   "time": "2025",
+   "value": 0.844
+  },
+  {
+   "geo": "v2xcl_rol",
+   "time": "2024",
+   "value": 0.931
+  },
+  {
+   "geo": "v2xcl_rol",
+   "time": "2025",
+   "value": 0.822
+  },
+  {
+   "geo": "v2xel_frefair",
+   "time": "2024",
+   "value": 0.9
+  },
+  {
+   "geo": "v2xel_frefair",
+   "time": "2025",
+   "value": 0.902
+  },
+  {
+   "geo": "v2xlg_legcon",
+   "time": "2024",
+   "value": 0.863
+  },
+  {
+   "geo": "v2xlg_legcon",
+   "time": "2025",
+   "value": 0.61
+  }
+ ]
+}

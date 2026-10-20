@@ -22,13 +22,15 @@
  },
  "notes": {
   "es": [
-   "Emisiones producidas en cada territorio, sin las de los bienes importados. Parte de la reducción europea se debe a que produce fuera bienes que consume."
+   "Emisiones de CO₂ de combustibles fósiles y procesos industriales producidas en cada territorio, sin las de los bienes importados ni las del uso del suelo. El gráfico E2 compara las emisiones producidas con las que lleva lo que se consume.",
+   "El objetivo de la Ley Europea del Clima se refiere a todos los gases de efecto invernadero y descuenta las absorciones (bosques, suelos), así que no se puede leer directamente en esta serie."
   ],
   "en": [
-   "Emissions produced in each territory, excluding those embodied in imports. Part of Europe's cut comes from producing abroad goods it consumes."
+   "CO₂ emissions from fossil fuels and industrial processes produced in each territory, excluding those embodied in imports and those from land use. Chart E2 compares emissions produced with those embodied in what is consumed.",
+   "The European Climate Law target covers all greenhouse gases and nets out removals (forests, soils), so it cannot be read directly from this series."
   ]
  },
- "retrieved": "2026-09-24",
+ "retrieved": "2026-10-19",
  "geos": {
   "CHN": {
    "es": "China",
