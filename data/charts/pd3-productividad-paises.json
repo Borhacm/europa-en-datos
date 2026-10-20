@@ -1,0 +1,348 @@
+{
+ "id": "pd3-productividad-paises",
+ "lens": "dentro",
+ "theme": "productividad",
+ "title": {
+  "es": "Desde 2004, la productividad por hora se ha más que duplicado en Rumanía; en Italia apenas ha cambiado y en Grecia ha caído",
+  "en": "Since 2004, output per hour has more than doubled in Romania; in Italy it has barely changed and in Greece it has fallen"
+ },
+ "subtitle": {
+  "es": "Variación de la productividad real por hora trabajada entre 2004 y 2025, en %",
+  "en": "Change in real labour productivity per hour worked between 2004 and 2025, in %"
+ },
+ "unit": {
+  "es": "% de variación",
+  "en": "% change"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "nama_10_lp_ulc",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/nama_10_lp_ulc/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "PIB a precios constantes de cada país por hora trabajada. Mide cuánto ha crecido cada economía, no su nivel frente a las demás.",
+   "Irlanda sale muy arriba porque parte de su PIB son beneficios de multinacionales que salen del país; su oficina de estadística publica por eso otra medida, la renta nacional modificada (GNI*).",
+   "2025: primeras estimaciones de las cuentas nacionales, que pueden revisarse."
+  ],
+  "en": [
+   "GDP at each country's constant prices per hour worked. It measures how much each economy has grown, not its level compared with the others.",
+   "Ireland comes out very high because part of its GDP is multinational profits that leave the country; its statistics office therefore publishes another measure, modified national income (GNI*).",
+   "2025: first national accounts estimates, which may be revised."
+  ]
+ },
+ "retrieved": "2026-10-20",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 21.2
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 11.6
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 72.7
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 34.0
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 39.3
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 17.4
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 24.8
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 17.7
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 60.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 19.6
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 11.9
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 10.3
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": -10.6
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 37.8
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 39.8
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 113.1
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 1.5
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 83.8
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": -1.3
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 80.7
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 43.1
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 12.2
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 78.2
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 15.0
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 114.5
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 73.8
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 41.7
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 19.9
+  }
+ ]
+}

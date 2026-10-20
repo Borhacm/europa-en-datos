@@ -1,0 +1,375 @@
+{
+ "id": "pe3-empleo-horas",
+ "lens": "elige",
+ "theme": "productividad",
+ "title": {
+  "es": "En la UE ya trabaja la misma parte de la población que en EE. UU.; cada ocupado hace casi un 10 % menos de horas",
+  "en": "The same share of the population now works in the EU as in the US; each worker puts in almost 10% fewer hours"
+ },
+ "subtitle": {
+  "es": "UE en % del nivel de EE. UU. (100 = EE. UU.), personas ocupadas por habitante y horas al año por persona ocupada, 2000 a 2025",
+  "en": "EU as % of the US level (100 = US), employed people per inhabitant and hours a year per employed person, 2000 to 2025"
+ },
+ "unit": {
+  "es": "% del nivel de EE. UU.",
+  "en": "% of US level"
+ },
+ "source": {
+  "name": "OCDE, Productivity Database",
+  "dataset": "DSD_PDB@DF_PDB",
+  "url": "https://data-explorer.oecd.org/vis?df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_PDB%40DF_PDB&df[ag]=OECD.SDD.TPS",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Tasa de empleo: ocupados entre población total, no solo la de edad de trabajar. Horas trabajadas en el año entre ocupados, de las cuentas nacionales. No dependen de precios ni de paridades de poder adquisitivo.",
+   "El PIB por habitante es el producto de tres factores: lo que se produce por hora, las horas de cada ocupado y los ocupados por habitante. Este gráfico muestra los dos últimos."
+  ],
+  "en": [
+   "Employment rate: employed people over the total population, not only the working-age population. Hours worked in the year over employed people, from national accounts. They do not depend on prices or purchasing power parities.",
+   "GDP per person is the product of three factors: output per hour, hours per worker and workers per inhabitant. This chart shows the last two."
+  ]
+ },
+ "retrieved": "2026-10-20",
+ "geos": {
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  }
+ },
+ "dimensions": {
+  "series": {
+   "empleo": {
+    "es": "Tasa de empleo",
+    "en": "Employment rate"
+   },
+   "horas": {
+    "es": "Horas por ocupado",
+    "en": "Hours per worker"
+   }
+  }
+ },
+ "ref_line": {
+  "value": 100,
+  "label": {
+   "es": "Estados Unidos",
+   "en": "United States"
+  }
+ },
+ "rows": [
+  {
+   "geo": "EU27",
+   "series": "empleo",
+   "time": "2000",
+   "value": 88.8
+  },
+  {
+   "geo": "EU27",
+   "series": "empleo",
+   "time": "2001",
+   "value": 90.2
+  },
+  {
+   "geo": "EU27",
+   "series": "empleo",
+   "time": "2002",
+   "value": 91.0
+  },
+  {
+   "geo": "EU27",
+   "series": "empleo",
+   "time": "2003",
+   "value": 91.0
+  },
+  {
+   "geo": "EU27",
+   "series": "empleo",
+   "time": "2004",
+   "value": 90.9
+  },
+  {
+   "geo": "EU27",
+   "series": "empleo",
+   "time": "2005",
+   "value": 90.8
+  },
+  {
+   "geo": "EU27",
+   "series": "empleo",
+   "time": "2006",
+   "value": 91.4
+  },
+  {
+   "geo": "EU27",
+   "series": "empleo",
+   "time": "2007",
+   "value": 92.9
+  },
+  {
+   "geo": "EU27",
+   "series": "empleo",
+   "time": "2008",
+   "value": 94.8
+  },
+  {
+   "geo": "EU27",
+   "series": "empleo",
+   "time": "2009",
+   "value": 97.3
+  },
+  {
+   "geo": "EU27",
+   "series": "empleo",
+   "time": "2010",
+   "value": 97.6
+  },
+  {
+   "geo": "EU27",
+   "series": "empleo",
+   "time": "2011",
+   "value": 97.7
+  },
+  {
+   "geo": "EU27",
+   "series": "empleo",
+   "time": "2012",
+   "value": 96.3
+  },
+  {
+   "geo": "EU27",
+   "series": "empleo",
+   "time": "2013",
+   "value": 95.7
+  },
+  {
+   "geo": "EU27",
+   "series": "empleo",
+   "time": "2014",
+   "value": 95.7
+  },
+  {
+   "geo": "EU27",
+   "series": "empleo",
+   "time": "2015",
+   "value": 95.6
+  },
+  {
+   "geo": "EU27",
+   "series": "empleo",
+   "time": "2016",
+   "value": 95.8
+  },
+  {
+   "geo": "EU27",
+   "series": "empleo",
+   "time": "2017",
+   "value": 96.7
+  },
+  {
+   "geo": "EU27",
+   "series": "empleo",
+   "time": "2018",
+   "value": 97.0
+  },
+  {
+   "geo": "EU27",
+   "series": "empleo",
+   "time": "2019",
+   "value": 97.5
+  },
+  {
+   "geo": "EU27",
+   "series": "empleo",
+   "time": "2020",
+   "value": 102.9
+  },
+  {
+   "geo": "EU27",
+   "series": "empleo",
+   "time": "2021",
+   "value": 101.6
+  },
+  {
+   "geo": "EU27",
+   "series": "empleo",
+   "time": "2022",
+   "value": 100.1
+  },
+  {
+   "geo": "EU27",
+   "series": "empleo",
+   "time": "2023",
+   "value": 100.0
+  },
+  {
+   "geo": "EU27",
+   "series": "empleo",
+   "time": "2024",
+   "value": 100.3
+  },
+  {
+   "geo": "EU27",
+   "series": "empleo",
+   "time": "2025",
+   "value": 100.7
+  },
+  {
+   "geo": "EU27",
+   "series": "horas",
+   "time": "2000",
+   "value": 90.9
+  },
+  {
+   "geo": "EU27",
+   "series": "horas",
+   "time": "2001",
+   "value": 91.7
+  },
+  {
+   "geo": "EU27",
+   "series": "horas",
+   "time": "2002",
+   "value": 92.0
+  },
+  {
+   "geo": "EU27",
+   "series": "horas",
+   "time": "2003",
+   "value": 92.9
+  },
+  {
+   "geo": "EU27",
+   "series": "horas",
+   "time": "2004",
+   "value": 93.1
+  },
+  {
+   "geo": "EU27",
+   "series": "horas",
+   "time": "2005",
+   "value": 93.0
+  },
+  {
+   "geo": "EU27",
+   "series": "horas",
+   "time": "2006",
+   "value": 93.0
+  },
+  {
+   "geo": "EU27",
+   "series": "horas",
+   "time": "2007",
+   "value": 93.3
+  },
+  {
+   "geo": "EU27",
+   "series": "horas",
+   "time": "2008",
+   "value": 93.9
+  },
+  {
+   "geo": "EU27",
+   "series": "horas",
+   "time": "2009",
+   "value": 94.9
+  },
+  {
+   "geo": "EU27",
+   "series": "horas",
+   "time": "2010",
+   "value": 94.3
+  },
+  {
+   "geo": "EU27",
+   "series": "horas",
+   "time": "2011",
+   "value": 93.3
+  },
+  {
+   "geo": "EU27",
+   "series": "horas",
+   "time": "2012",
+   "value": 92.4
+  },
+  {
+   "geo": "EU27",
+   "series": "horas",
+   "time": "2013",
+   "value": 91.3
+  },
+  {
+   "geo": "EU27",
+   "series": "horas",
+   "time": "2014",
+   "value": 91.1
+  },
+  {
+   "geo": "EU27",
+   "series": "horas",
+   "time": "2015",
+   "value": 91.0
+  },
+  {
+   "geo": "EU27",
+   "series": "horas",
+   "time": "2016",
+   "value": 91.8
+  },
+  {
+   "geo": "EU27",
+   "series": "horas",
+   "time": "2017",
+   "value": 91.1
+  },
+  {
+   "geo": "EU27",
+   "series": "horas",
+   "time": "2018",
+   "value": 90.8
+  },
+  {
+   "geo": "EU27",
+   "series": "horas",
+   "time": "2019",
+   "value": 90.8
+  },
+  {
+   "geo": "EU27",
+   "series": "horas",
+   "time": "2020",
+   "value": 86.0
+  },
+  {
+   "geo": "EU27",
+   "series": "horas",
+   "time": "2021",
+   "value": 88.6
+  },
+  {
+   "geo": "EU27",
+   "series": "horas",
+   "time": "2022",
+   "value": 89.9
+  },
+  {
+   "geo": "EU27",
+   "series": "horas",
+   "time": "2023",
+   "value": 90.1
+  },
+  {
+   "geo": "EU27",
+   "series": "horas",
+   "time": "2024",
+   "value": 90.7
+  },
+  {
+   "geo": "EU27",
+   "series": "horas",
+   "time": "2025",
+   "value": 90.5
+  }
+ ]
+}
