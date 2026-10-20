@@ -97,6 +97,8 @@ Antes de escribir textos, abre los JSON y calcula lo que vas a afirmar. Para cad
 
 Apunta cada cifra en la tabla de verificación del registro (`editorial/registro/<id>.md`) a medida que la compruebas.
 
+Cuando todas las cifras estén comprobadas, apunta la huella de sus datos: `python3 editorial/revisar.py verificada <id o tema_id>`. Así, si una actualización cambia las filas de un gráfico, `revisar.py todo` lo señala y sabes que hay que volver a comprobar sus titulares y su texto.
+
 Si la historia que esperabas no se sostiene, cuenta la que sí dicen los datos.
 
 ## 6. Escribir la web
@@ -152,6 +154,10 @@ Rellena al final de `editorial/registro/<id>.md` esta lista:
 Compárala con los mejores ejemplos publicados de la misma familia, en `/Users/bcm/espana-en-datos`: `web/src/content/themes/empleo.ts` (ficha de la reforma laboral, evaluaciones de la AIReF y del Banco de España, límites) y `editorial/registro/a04.md` (guion, inventario, verificación y autoevaluación).
 
 Si alguna casilla queda sin marcar y no se puede resolver en esta ejecución, **no publiques el artículo**: sube la rama como `borrador/<id>-<palabra>`, no abras pull request contra `main` y explica en el resumen final qué falta.
+
+## 7c. Después de actualizar los datos
+
+Si una ejecución del pipeline cambia datos ya publicados (por ejemplo, una nueva versión de Epoch o de Eurostat), ejecuta `python3 editorial/revisar.py todo`. Los gráficos marcados con datos sin verificar tienen titulares o textos que pueden haberse quedado viejos: vuelve a hacer el paso 5 con ellos, corrige lo que haga falta y apúntalos con `revisar.py verificada <id>`.
 
 ## 8. Abrir el pull request
 

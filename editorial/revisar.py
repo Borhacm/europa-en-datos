@@ -8,7 +8,18 @@
       Revisa una pieza: filtros de cada consulta frente al subtítulo, cifras repetidas entre
       titulares y entre miradas, gráficos sin notas, títulos en pregunta y datasets que ya usan
       otras piezas.
+
+  python3 editorial/revisar.py verificada <tema_id o id de nota>
+      Apunta en editorial/verificadas.json la huella de los datos de cada gráfico de la pieza.
+      Ejecútalo cuando hayas comprobado sus cifras (paso 5), antes del commit.
+
+  python3 editorial/revisar.py todo
+      Repasa todas las piezas: avisos de la revisión y gráficos cuyos datos han cambiado desde
+      la última verificación. Úsalo después de actualizar los datos: si las filas cambian, los
+      titulares y los textos de esa pieza se vuelven a comprobar.
 """
+
+import hashlib
 
 import json
 import re
@@ -20,6 +31,7 @@ ROOT = Path(__file__).resolve().parent.parent
 CHARTS = ROOT / "data" / "charts"
 CONTENT = ROOT / "web" / "src" / "content"
 PIPELINE = ROOT / "pipeline" / "charts"
+VERIFIED = ROOT / "editorial" / "verificadas.json"
 # Cifras en español: "12,5 %", "40 %", "3,5"
 NUM = re.compile(r"\d+(?:\.\d{3})*(?:,\d+)?\s%|\d+,\d+")
 
@@ -52,13 +64,55 @@ def solapes(terms: list[str]) -> None:
             print(f"  {owners.get(cid, '?'):14s} {cid:32s} [{dataset(c)}] {c['title']['es']}")
 
 
-def pieza(pid: str) -> None:
+def _shown(v) -> set[str]:
+    """Formas en que un valor de las filas puede aparecer en un titular: 12,5 / 12 / 13."""
+    if not isinstance(v, (int, float)):
+        return set()
+    out = {f"{round(v):d}", f"{v:.1f}".replace(".", ","), f"{v:.2f}".replace(".", ",")}
+    return out | {x.rstrip("0").rstrip(",") for x in out if "," in x}
+
+
+def stale_titles(c: dict) -> list[str]:
+    """Cifras del titular en español que no salen tal cual de las filas (pueden ser derivadas)."""
+    seen = set()
+    for r in c.get("rows", []):
+        for k, v in r.items():
+            seen |= _shown(v)
+            if k == "time":
+                seen.add(str(v)[:4])
+    nums = [n.replace(".", "") for n in re.findall(r"\d+(?:\.\d{3})*(?:,\d+)?", c["title"]["es"])]
+    return [n for n in nums if n not in seen and not re.fullmatch(r"(19|20)\d\d", n)]
+
+
+def fingerprint(c: dict) -> str:
+    return hashlib.sha256(json.dumps(c.get("rows", []), sort_keys=True).encode()).hexdigest()[:16]
+
+
+def verified() -> dict[str, str]:
+    return json.loads(VERIFIED.read_text()) if VERIFIED.exists() else {}
+
+
+def verificada(pid: str) -> None:
+    charts, done = published(), verified()
+    mine = sorted(cid for cid, o in owner_of().items() if o == pid and cid in charts)
+    if not mine:
+        sys.exit(f"No hay gráficos configurados en web/src/content/charts/{pid}.ts")
+    for cid in mine:
+        done[cid] = fingerprint(charts[cid])
+    VERIFIED.write_text(json.dumps(dict(sorted(done.items())), indent=1, ensure_ascii=False) + "\n")
+    print(f"{len(mine)} gráficos de {pid} apuntados como verificados")
+
+
+def pieza(pid: str, quiet: bool = False) -> int:
     charts = published()
     owners = owner_of()
-    mine = [cid for cid, o in owners.items() if o == pid]
+    mine = [cid for cid, o in owners.items() if o == pid and cid in charts]
     if not mine:
         sys.exit(f"No hay gráficos configurados en web/src/content/charts/{pid}.ts")
     problems = 0
+    if quiet:
+        print_ = print
+        globals()["print"] = lambda *a, **k: None
 
     print("\n1. Filtros de cada consulta (compáralos con el subtítulo: impuestos, banda, unidad, edad, año)")
     files = sorted((PIPELINE / pid).glob("*.py")) if (PIPELINE / pid).is_dir() else sorted((PIPELINE / "notas").glob(f"{pid}_*.py"))
@@ -88,6 +142,10 @@ def pieza(pid: str) -> None:
         if not c["notes"]["es"]:
             print(f"   AVISO {cid}: sin notas metodológicas")
             problems += 1
+    for cid in mine:
+        derived = stale_titles(charts[cid])
+        if derived:
+            print(f"   REVISAR {cid}: {', '.join(derived)} no está tal cual en las filas; si es un cálculo, compruébalo con los datos actuales")
     for n, ids in by_num.items():
         if len(ids) > 1:
             print(f"   AVISO la cifra «{n}» está en el titular de {', '.join(ids)}")
@@ -120,9 +178,36 @@ def pieza(pid: str) -> None:
             print(f"   {cid} [{ds}] también en {owners.get(o, '?')}/{o}: {c['title']['es']}")
 
     print(f"\n{problems} avisos. Los de los apartados 1 y 4 se revisan a mano.")
+    if quiet:
+        globals()["print"] = print_
+    return problems
+
+
+def todo() -> None:
+    charts, done, owners = published(), verified(), owner_of()
+    pieces = sorted(set(owners.values()))
+    total = changed_total = 0
+    for pid in pieces:
+        n = pieza(pid, quiet=True)
+        mine = sorted(cid for cid, o in owners.items() if o == pid and cid in charts)
+        changed = [cid for cid in mine if done.get(cid) != fingerprint(charts[cid])]
+        total += n
+        changed_total += len(changed)
+        flag = "ok " if not n and not changed else "-> "
+        print(f"{flag}{pid:14s} {n} avisos, {len(changed)} gráficos con datos sin verificar")
+        for cid in changed:
+            print(f"      {cid}: {'cambió desde la verificación' if cid in done else 'nunca verificado'}: {charts[cid]['title']['es']}")
+    print(f"\n{total} avisos y {changed_total} gráficos por verificar en {len(pieces)} piezas.")
+    print("Detalle: python3 editorial/revisar.py pieza <id>. Tras comprobar las cifras: revisar.py verificada <id>.")
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 3 or sys.argv[1] not in ("solapes", "pieza"):
+    cmd = sys.argv[1] if len(sys.argv) > 1 else ""
+    if cmd == "todo":
+        todo()
+    elif cmd == "verificada" and len(sys.argv) > 2:
+        verificada(sys.argv[2])
+    elif cmd in ("solapes", "pieza") and len(sys.argv) > 2:
+        solapes(sys.argv[2:]) if cmd == "solapes" else pieza(sys.argv[2])
+    else:
         sys.exit(__doc__)
-    solapes(sys.argv[2:]) if sys.argv[1] == "solapes" else pieza(sys.argv[2])
