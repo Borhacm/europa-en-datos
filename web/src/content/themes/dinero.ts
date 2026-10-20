@@ -1,5 +1,7 @@
 import { p, type Theme } from "../../lib/content-types";
 
+// Completado el 20/10/2026 (P2, ver editorial/registro/dinero.md): ficha de la propuesta de reglamento del euro digital,
+// párrafo de límites y enlace a IA y digital.
 const theme: Theme = {
   id: "dinero",
   code: "DI",
@@ -8,6 +10,7 @@ const theme: Theme = {
   status: "published",
   order: 6,
   published: "2026-10-02",
+  updated: "2026-10-20",
   dek: {
     es: "La zona del euro guarda más efectivo que EE. UU. y China en relación con su economía, pero cada vez paga menos con él. El hueco lo llenan las tarjetas, en buena parte de redes no europeas. El euro digital es la apuesta de la UE para que el dinero público siga presente en los pagos electrónicos.",
     en: "The euro area holds more cash relative to its economy than the US and China, but uses it less and less to pay. Cards are filling the gap, largely through non-European networks. The digital euro is the EU's bet to keep public money present in electronic payments.",
@@ -41,8 +44,10 @@ const theme: Theme = {
         p("El hueco del efectivo lo llenan sobre todo las tarjetas. En 2025 se hicieron en la zona del euro casi 92.000 millones de pagos con tarjeta, el 57 % de todos los pagos sin efectivo y un 36 % más que en 2022. Ahí está lo que preocupa al BCE: en 2022, el 61 % de los pagos con tarjeta de la zona del euro pasó por redes internacionales como Visa o Mastercard, y 13 países de la zona dependen por completo de ellas.",
           "Cards are filling most of the gap left by cash. In 2025, the euro area made almost 92 billion card payments, 57% of all cashless payments and 36% more than in 2022. That is what worries the ECB: in 2022, 61% of euro area card payments went through international networks such as Visa or Mastercard, and 13 euro area countries rely on them entirely."),
         { fig: "die2-pagos-zona-euro", code: "E2" },
-        p("El euro digital busca ser una alternativa europea y pública: dinero emitido por el BCE, como los billetes, pero para pagar en tiendas, en internet y también sin conexión. Los servicios básicos serían gratuitos y habría un límite de cuánto puede guardar cada persona. Lo que falta es la ley. Parlamento y Consejo negocian sobre todo cómo se compensa a los bancos y entidades que lo distribuyan, cómo se reparte y cuál es ese límite. La privacidad es la otra gran duda: el 60 % de los consumidores de la zona del euro dice preocuparse por su privacidad en los pagos digitales.",
-          "The digital euro aims to be a European, public alternative: money issued by the ECB, like banknotes, but for paying in shops, online and offline too. Basic services would be free and there would be a cap on how much each person can hold. What is missing is the law. Parliament and Council are negotiating mainly how banks and payment firms that distribute it are compensated, how distribution works and where that cap lies. Privacy is the other big question: 60% of euro area consumers say they are concerned about their privacy in digital payments."),
+        { see: { es: "IA y digital: cuánto de la tecnología que usa la UE se diseña fuera", en: "AI and digital: how much of the technology the EU uses is designed elsewhere" }, href: { es: "/es/ia-digital/", en: "/en/ai-digital/" } },
+        { h: { es: "La ficha: el reglamento del euro digital", en: "The policy card: the digital euro regulation" }, id: "ficha-euro-digital" },
+        p("El euro digital busca ser una alternativa europea y pública: dinero emitido por el BCE, como los billetes, pero para pagar en tiendas, en internet y también sin conexión. Los servicios básicos serían gratuitos y habría un límite de cuánto puede guardar cada persona. Lo que falta es la ley. Parlamento y Consejo negocian sobre todo cómo se compensa a los bancos y entidades que lo distribuyan, cómo se reparte y cuál es ese límite. La privacidad es la otra gran duda: el 60 % de los consumidores de la zona del euro dice preocuparse por su privacidad en los pagos digitales. La propuesta de la Comisión, de 28 de junio de 2023, lo trata como un medio de curso legal: los comercios que aceptan pagos electrónicos privados tendrían que aceptar también el euro digital, con excepciones para algunos, y sería el BCE quien fijara los límites para que no se use como depósito de ahorro.",
+          "The digital euro aims to be a European, public alternative: money issued by the ECB, like banknotes, but for paying in shops, online and offline too. Basic services would be free and there would be a cap on how much each person can hold. What is missing is the law. Parliament and Council are negotiating mainly how banks and payment firms that distribute it are compensated, how distribution works and where that cap lies. Privacy is the other big question: 60% of euro area consumers say they are concerned about their privacy in digital payments. The Commission's proposal of 28 June 2023 treats it as legal tender: merchants that accept private electronic payments would also have to accept the digital euro, with exceptions for some, and the ECB would set the limits so that it is not used as a store of savings."),
         {
           timeline: [
             { date: { es: "Junio de 2023", en: "June 2023" }, text: { es: "La Comisión Europea propone el reglamento del euro digital.", en: "The European Commission proposes the digital euro regulation." } },
@@ -67,10 +72,13 @@ const theme: Theme = {
         p("Las retiradas de efectivo con tarjeta bajaron en 20 de los 21 países con datos de 2022 y 2025; en Rumanía apenas cambiaron. La mayor caída fue la de Estonia, un 28 %. Donde más se saca dinero con tarjeta es en Portugal, 30,6 veces por habitante al año, y donde menos, en Hungría (8,6), Finlandia (9,1) y los Países Bajos (9,3). En España, 13,5 veces, casi igual que en 2022 (13,6).",
           "Cash withdrawals with cards fell in 20 of the 21 countries with data for 2022 and 2025; in Romania they barely changed. The biggest drop was in Estonia, 28%. People withdraw cash with cards most often in Portugal, 30.6 times per person a year, and least often in Hungary (8.6), Finland (9.1) and the Netherlands (9.3). In Spain, 13.5 times, almost the same as in 2022 (13.6)."),
         { fig: "did2-retiradas-efectivo", code: "D2" },
+        p("Lo que no dicen estos datos. Los pagos por habitante cuentan operaciones, no importes: un café y un coche pesan lo mismo. La parte de pagos en efectivo de E1 sale de una encuesta a consumidores del BCE, y las cifras de E2, D1 y D2, de lo que declaran las entidades de pago, así que no se pueden mezclar. El BIS no publica un dato del conjunto de la UE. Ninguno de estos gráficos mide los pagos con criptoactivos o stablecoins, ni cuánto cobran las redes de tarjetas a los comercios.",
+          "What these data do not say. Payments per person count transactions, not amounts: a coffee and a car weigh the same. The cash share of payments in E1 comes from an ECB consumer survey, and the figures in E2, D1 and D2 from what payment providers report, so they cannot be mixed. The BIS does not publish a figure for the EU as a whole. None of these charts measures payments with crypto-assets or stablecoins, or how much card networks charge merchants."),
       ],
     },
   },
   sources: [
+    { name: "EUR-Lex: Propuesta de Reglamento relativo a la instauración del euro digital, COM(2023) 369 (28 de junio de 2023)", url: "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:52023PC0369" },
     { name: "Parlamento Europeo, Legislative Train: Digital euro (actualizado el 20 de septiembre de 2026)", url: "https://www.europarl.europa.eu/legislative-train/theme-a-new-plan-for-europe-s-sustainable-prosperity-and-competitiveness/file-digital-euro" },
     { name: "BCE, El Eurosistema pasa a la siguiente fase del proyecto del euro digital (30 de octubre de 2025)", url: "https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.pr251030~8c5b5beef0.en.html" },
     { name: "Consejo de la UE, posición sobre el euro digital y el papel del efectivo (diciembre de 2025)", url: "https://www.consilium.europa.eu/en/press/press-releases/2025/12/19/single-currency-council-agrees-position-on-the-digital-euro-and-on-strengthening-the-role-of-cash/" },
