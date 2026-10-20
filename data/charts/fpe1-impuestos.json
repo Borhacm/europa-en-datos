@@ -1,0 +1,152 @@
+{
+ "id": "fpe1-impuestos",
+ "lens": "elige",
+ "theme": "finanzas",
+ "title": {
+  "es": "La UE recauda en impuestos 13 puntos de PIB más que EE. UU.; la diferencia está en las cotizaciones sociales y los impuestos sobre el consumo, no en los de la renta",
+  "en": "The EU collects 13 points of GDP more in taxes than the US; the gap lies in social contributions and consumption taxes, not in income taxes"
+ },
+ "subtitle": {
+  "es": "Ingresos tributarios de las administraciones públicas por tipo de impuesto, en % del PIB, 2023",
+  "en": "General government tax revenue by type of tax, as % of GDP, 2023"
+ },
+ "unit": {
+  "es": "% del PIB",
+  "en": "% of GDP"
+ },
+ "source": {
+  "name": "OCDE, Global Revenue Statistics",
+  "dataset": "DSD_REV_COMP_GLOBAL@DF_RSGLOBAL",
+  "url": "https://data-explorer.oecd.org/vis?df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_REV_COMP_GLOBAL%40DF_RSGLOBAL&df[ag]=OECD.CTP.TPS",
+  "license": "CC BY 4.0",
+  "also": [
+   {
+    "name": "FMI, World Economic Outlook (octubre de 2026)",
+    "dataset": "NGDPD",
+    "url": "https://www.imf.org/external/datamapper/NGDPD@WEO",
+    "license": "Términos de uso del FMI (uso libre citando la fuente)"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "En total, la UE recauda el 38,6 % de su PIB y EE. UU., el 25,6 %.",
+   "UE: 26 países, ponderados por su PIB; la OCDE no publica todavía los datos de Chipre, que supone menos del 0,3 % del PIB de la UE.",
+   "Las cotizaciones sociales son las obligatorias que se pagan a las administraciones. En EE. UU., las pensiones privadas de empresa y los seguros médicos privados no cuentan como impuestos, aunque cumplen funciones que en Europa se pagan con cotizaciones.",
+   "Consumo: IVA, impuestos especiales (carburantes, tabaco, alcohol) y aranceles. EE. UU. no tiene IVA: sus impuestos sobre las ventas son de los estados."
+  ],
+  "en": [
+   "In total, the EU collects 38.6% of its GDP and the US 25.6%.",
+   "EU: 26 countries, weighted by GDP; the OECD does not yet publish data for Cyprus, which accounts for less than 0.3% of EU GDP.",
+   "Social contributions are compulsory payments to government. In the US, private occupational pensions and private health insurance do not count as taxes, although they do jobs that in Europe are paid for with contributions.",
+   "Consumption: VAT, excise duties (fuel, tobacco, alcohol) and customs duties. The US has no VAT: its sales taxes are levied by the states."
+  ]
+ },
+ "retrieved": "2026-10-20",
+ "geos": {
+  "T_1000": {
+   "es": "Renta y beneficios",
+   "en": "Income and profits",
+   "eu": false,
+   "aggregate": false
+  },
+  "T_2000": {
+   "es": "Cotizaciones sociales",
+   "en": "Social contributions",
+   "eu": false,
+   "aggregate": false
+  },
+  "T_5000": {
+   "es": "Consumo (IVA y otros)",
+   "en": "Consumption (VAT etc.)",
+   "eu": false,
+   "aggregate": false
+  },
+  "T_4000": {
+   "es": "Propiedad",
+   "en": "Property",
+   "eu": false,
+   "aggregate": false
+  },
+  "T_OTH": {
+   "es": "Otros",
+   "en": "Other",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "dimensions": {
+  "bloc": {
+   "EU27": {
+    "es": "UE",
+    "en": "EU"
+   },
+   "USA": {
+    "es": "EE. UU.",
+    "en": "US"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "T_1000",
+   "time": "2023",
+   "bloc": "EU27",
+   "value": 12.4
+  },
+  {
+   "geo": "T_1000",
+   "time": "2023",
+   "bloc": "USA",
+   "value": 12.4
+  },
+  {
+   "geo": "T_2000",
+   "time": "2023",
+   "bloc": "EU27",
+   "value": 12.6
+  },
+  {
+   "geo": "T_2000",
+   "time": "2023",
+   "bloc": "USA",
+   "value": 6.0
+  },
+  {
+   "geo": "T_5000",
+   "time": "2023",
+   "bloc": "EU27",
+   "value": 11.0
+  },
+  {
+   "geo": "T_5000",
+   "time": "2023",
+   "bloc": "USA",
+   "value": 4.2
+  },
+  {
+   "geo": "T_4000",
+   "time": "2023",
+   "bloc": "EU27",
+   "value": 1.7
+  },
+  {
+   "geo": "T_4000",
+   "time": "2023",
+   "bloc": "USA",
+   "value": 2.9
+  },
+  {
+   "geo": "T_OTH",
+   "time": "2023",
+   "bloc": "EU27",
+   "value": 0.9
+  },
+  {
+   "geo": "T_OTH",
+   "time": "2023",
+   "bloc": "USA",
+   "value": 0.0
+  }
+ ]
+}

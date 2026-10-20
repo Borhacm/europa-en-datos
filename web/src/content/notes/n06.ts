@@ -17,7 +17,7 @@ const note: Note = {
   published: "2026-10-13",
   updated: "2026-10-20",
   lens: "gigantes",
-  theme: "productividad",
+  theme: "finanzas",
   body: [
     p("En 2024, las administraciones públicas de EE. UU. debían el 122,3 % de su PIB, según el FMI. Las de la UE, el 81,6 %. En 2001 era al revés: la deuda de EE. UU. era del 53,5 % y la de la UE, del 65,6 %. Desde entonces, la de EE. UU. se ha más que duplicado; la de la UE ha subido 16 puntos.",
       "In 2024, US general government debt stood at 122.3% of GDP, according to the IMF. The EU's, at 81.6%. In 2001 it was the other way round: US debt was 53.5% and the EU's 65.6%. Since then, US debt has more than doubled; the EU's has risen by 16 points."),
@@ -29,6 +29,7 @@ const note: Note = {
     p("Dentro de la UE, las diferencias son enormes. El Tratado fija en el 60 % del PIB el valor de referencia para la deuda pública. En 2025, 12 de los 27 países lo superaban, con Grecia (146,1 %), Italia (137,1 %) y Francia (115,6 %) a la cabeza. España, con el 100,7 %, es la quinta. En el otro extremo, Estonia debe el 24,1 % y Luxemburgo, el 26,5 %. El conjunto de la UE, el 81,7 %, según Eurostat.",
       "Within the EU, the gaps are huge. The Treaty sets 60% of GDP as the reference value for public debt. In 2025, 12 of the 27 countries were above it, led by Greece (146.1%), Italy (137.1%) and France (115.6%). Spain, at 100.7%, ranks fifth. At the other end, Estonia owes 24.1% and Luxembourg 26.5%. The EU as a whole, 81.7%, according to Eurostat."),
     { fig: "n06-deuda-paises", code: "2" },
+    { see: { es: "Finanzas públicas: el déficit, los impuestos y el gasto de la UE, EE. UU. y China", en: "Public finances: deficits, taxes and spending in the EU, the US and China" }, href: { es: "/es/finanzas-publicas/", en: "/en/public-finances/" } },
     p("Lo que no dicen estos datos. Es deuda bruta: no descuenta lo que las administraciones tienen en activos ni dice cuánto cuesta pagarla, que depende de los tipos de interés de cada país.",
       "What these data do not say. This is gross debt: it does not subtract what governments hold in assets, nor does it say how much it costs to service, which depends on each country's interest rates."),
   ],

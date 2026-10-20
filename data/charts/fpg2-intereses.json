@@ -1,0 +1,120 @@
+{
+ "id": "fpg2-intereses",
+ "lens": "gigantes",
+ "theme": "finanzas",
+ "title": {
+  "es": "EE. UU. dedica a pagar intereses el 3,2 % de su PIB, más del doble que la UE; aun sin ellos, su déficit sería del 4,6 %",
+  "en": "The US spends 3.2% of its GDP on interest, more than twice the EU; even without it, its deficit would be 4.6%"
+ },
+ "subtitle": {
+  "es": "Déficit de las administraciones públicas sin contar los intereses netos (déficit primario) y con ellos, en % del PIB, 2024",
+  "en": "General government deficit excluding net interest (primary deficit) and including it, as % of GDP, 2024"
+ },
+ "unit": {
+  "es": "% del PIB",
+  "en": "% of GDP"
+ },
+ "source": {
+  "name": "FMI, Fiscal Monitor (octubre de 2026)",
+  "dataset": "GGXONLB_G01_GDP_PT",
+  "url": "https://www.imf.org/external/datamapper/GGXONLB_G01_GDP_PT@FM",
+  "license": "Términos de uso del FMI (uso libre citando la fuente)",
+  "also": [
+   {
+    "name": "FMI, Fiscal Monitor (octubre de 2026)",
+    "dataset": "GGXCNL_G01_GDP_PT",
+    "url": "https://www.imf.org/external/datamapper/GGXCNL_G01_GDP_PT@FM",
+    "license": "Términos de uso del FMI (uso libre citando la fuente)"
+   },
+   {
+    "name": "FMI, World Economic Outlook (octubre de 2026)",
+    "dataset": "NGDPD",
+    "url": "https://www.imf.org/external/datamapper/NGDPD@WEO",
+    "license": "Términos de uso del FMI (uso libre citando la fuente)"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "La distancia entre los dos puntos son los intereses netos: los que pagan las administraciones menos los que cobran.",
+   "UE: media de los 27 ponderada por su PIB en dólares corrientes, con los datos del Fiscal Monitor de cada país. El saldo resultante coincide con el agregado de la UE del World Economic Outlook.",
+   "Eurostat publica los intereses brutos (sin restar los que se cobran), que son algo más altos: son los del gráfico D2."
+  ],
+  "en": [
+   "The distance between the two dots is net interest: what governments pay minus what they receive.",
+   "EU: average of the 27 weighted by GDP in current dollars, using each country's Fiscal Monitor data. The resulting balance matches the World Economic Outlook EU aggregate.",
+   "Eurostat publishes gross interest (without subtracting what is received), which is somewhat higher: it is the measure in chart D2."
+  ]
+ },
+ "retrieved": "2026-10-20",
+ "geos": {
+  "CHN": {
+   "es": "China",
+   "en": "China",
+   "eu": false,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "USA": {
+   "es": "Estados Unidos",
+   "en": "United States",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "dimensions": {
+  "measure": {
+   "primario": {
+    "es": "Déficit sin intereses",
+    "en": "Deficit excluding interest"
+   },
+   "total": {
+    "es": "Déficit con intereses",
+    "en": "Deficit including interest"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "measure": "primario",
+   "value": 1.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "measure": "total",
+   "value": 3.1
+  },
+  {
+   "geo": "USA",
+   "time": "2024",
+   "measure": "primario",
+   "value": 4.6
+  },
+  {
+   "geo": "USA",
+   "time": "2024",
+   "measure": "total",
+   "value": 7.8
+  },
+  {
+   "geo": "CHN",
+   "time": "2024",
+   "measure": "primario",
+   "value": 6.3
+  },
+  {
+   "geo": "CHN",
+   "time": "2024",
+   "measure": "total",
+   "value": 7.2
+  }
+ ]
+}
