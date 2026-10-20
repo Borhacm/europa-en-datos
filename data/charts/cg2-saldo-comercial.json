@@ -3,8 +3,8 @@
  "lens": "gigantes",
  "theme": "comercio",
  "title": {
-  "es": "China vende al mundo, EE. UU. le compra y la UE está en medio",
-  "en": "China sells to the world, the US buys, and the EU sits in between"
+  "es": "En 2024, China vendió al mundo 916.000 millones de euros más de lo que compró; EE. UU. compró 1,19 billones más de lo que vendió",
+  "en": "In 2024, China sold the world 916 billion euros more than it bought; the US bought 1.19 trillion more than it sold"
  },
  "subtitle": {
   "es": "Saldo comercial de bienes (exportaciones menos importaciones), en miles de millones de euros",
@@ -32,7 +32,7 @@
    "Trade in goods. Services are not included."
   ]
  },
- "retrieved": "2026-09-24",
+ "retrieved": "2026-10-20",
  "geos": {
   "CHN": {
    "es": "China",

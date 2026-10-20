@@ -1,0 +1,614 @@
+{
+ "id": "ce3-gas-origen",
+ "lens": "elige",
+ "theme": "comercio",
+ "title": {
+  "es": "Rusia pasó de casi la mitad del gas que la UE compra fuera al 14,6 %; Noruega y EE. UU. han ocupado su lugar",
+  "en": "Russia went from almost half the gas the EU buys abroad to 14.6%; Norway and the US have taken its place"
+ },
+ "subtitle": {
+  "es": "Origen de las importaciones de gas natural de la UE desde fuera de la Unión, en % del total",
+  "en": "Origin of the EU's natural gas imports from outside the Union, as % of the total"
+ },
+ "unit": {
+  "es": "% de las importaciones extra-UE",
+  "en": "% of extra-EU imports"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "nrg_ti_gas",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/nrg_ti_gas/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Gas por gasoducto y gas natural licuado (GNL), en energía (terajulios de poder calorífico superior).",
+   "El porcentaje es sobre lo que se importa de fuera de la UE: no cuenta el gas que se compran entre sí los países miembros. 'Resto' suma los demás países y los orígenes que Eurostat no detalla.",
+   "El origen es el país del que llega el gas según las estadísticas de energía, que no siempre es el país donde se extrae."
+  ],
+  "en": [
+   "Pipeline gas and liquefied natural gas (LNG), in energy terms (terajoules, gross calorific value).",
+   "The share is of imports from outside the EU: gas member states buy from each other is not counted. 'Others' adds the remaining countries and origins Eurostat does not detail.",
+   "The origin is the country the gas arrives from according to energy statistics, which is not always where it is extracted."
+  ]
+ },
+ "retrieved": "2026-10-20",
+ "geos": {
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  }
+ },
+ "dimensions": {
+  "series": {
+   "RU": {
+    "es": "Rusia",
+    "en": "Russia"
+   },
+   "NO": {
+    "es": "Noruega",
+    "en": "Norway"
+   },
+   "US": {
+    "es": "Estados Unidos",
+    "en": "United States"
+   },
+   "DZ": {
+    "es": "Argelia",
+    "en": "Algeria"
+   },
+   "QA": {
+    "es": "Catar",
+    "en": "Qatar"
+   },
+   "OTH": {
+    "es": "Resto",
+    "en": "Others"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "EU27",
+   "series": "DZ",
+   "time": "2010",
+   "value": 16.7
+  },
+  {
+   "geo": "EU27",
+   "series": "DZ",
+   "time": "2011",
+   "value": 15.9
+  },
+  {
+   "geo": "EU27",
+   "series": "DZ",
+   "time": "2012",
+   "value": 16.0
+  },
+  {
+   "geo": "EU27",
+   "series": "DZ",
+   "time": "2013",
+   "value": 14.8
+  },
+  {
+   "geo": "EU27",
+   "series": "DZ",
+   "time": "2014",
+   "value": 14.1
+  },
+  {
+   "geo": "EU27",
+   "series": "DZ",
+   "time": "2015",
+   "value": 12.6
+  },
+  {
+   "geo": "EU27",
+   "series": "DZ",
+   "time": "2016",
+   "value": 15.7
+  },
+  {
+   "geo": "EU27",
+   "series": "DZ",
+   "time": "2017",
+   "value": 14.5
+  },
+  {
+   "geo": "EU27",
+   "series": "DZ",
+   "time": "2018",
+   "value": 14.9
+  },
+  {
+   "geo": "EU27",
+   "series": "DZ",
+   "time": "2019",
+   "value": 9.9
+  },
+  {
+   "geo": "EU27",
+   "series": "DZ",
+   "time": "2020",
+   "value": 9.6
+  },
+  {
+   "geo": "EU27",
+   "series": "DZ",
+   "time": "2021",
+   "value": 13.4
+  },
+  {
+   "geo": "EU27",
+   "series": "DZ",
+   "time": "2022",
+   "value": 12.9
+  },
+  {
+   "geo": "EU27",
+   "series": "DZ",
+   "time": "2023",
+   "value": 14.8
+  },
+  {
+   "geo": "EU27",
+   "series": "DZ",
+   "time": "2024",
+   "value": 15.3
+  },
+  {
+   "geo": "EU27",
+   "series": "NO",
+   "time": "2010",
+   "value": 24.2
+  },
+  {
+   "geo": "EU27",
+   "series": "NO",
+   "time": "2011",
+   "value": 24.7
+  },
+  {
+   "geo": "EU27",
+   "series": "NO",
+   "time": "2012",
+   "value": 27.1
+  },
+  {
+   "geo": "EU27",
+   "series": "NO",
+   "time": "2013",
+   "value": 24.8
+  },
+  {
+   "geo": "EU27",
+   "series": "NO",
+   "time": "2014",
+   "value": 28.0
+  },
+  {
+   "geo": "EU27",
+   "series": "NO",
+   "time": "2015",
+   "value": 27.4
+  },
+  {
+   "geo": "EU27",
+   "series": "NO",
+   "time": "2016",
+   "value": 20.6
+  },
+  {
+   "geo": "EU27",
+   "series": "NO",
+   "time": "2017",
+   "value": 19.2
+  },
+  {
+   "geo": "EU27",
+   "series": "NO",
+   "time": "2018",
+   "value": 18.8
+  },
+  {
+   "geo": "EU27",
+   "series": "NO",
+   "time": "2019",
+   "value": 18.1
+  },
+  {
+   "geo": "EU27",
+   "series": "NO",
+   "time": "2020",
+   "value": 22.4
+  },
+  {
+   "geo": "EU27",
+   "series": "NO",
+   "time": "2021",
+   "value": 18.2
+  },
+  {
+   "geo": "EU27",
+   "series": "NO",
+   "time": "2022",
+   "value": 22.2
+  },
+  {
+   "geo": "EU27",
+   "series": "NO",
+   "time": "2023",
+   "value": 28.6
+  },
+  {
+   "geo": "EU27",
+   "series": "NO",
+   "time": "2024",
+   "value": 32.2
+  },
+  {
+   "geo": "EU27",
+   "series": "OTH",
+   "time": "2010",
+   "value": 15.5
+  },
+  {
+   "geo": "EU27",
+   "series": "OTH",
+   "time": "2011",
+   "value": 13.6
+  },
+  {
+   "geo": "EU27",
+   "series": "OTH",
+   "time": "2012",
+   "value": 13.0
+  },
+  {
+   "geo": "EU27",
+   "series": "OTH",
+   "time": "2013",
+   "value": 9.3
+  },
+  {
+   "geo": "EU27",
+   "series": "OTH",
+   "time": "2014",
+   "value": 9.6
+  },
+  {
+   "geo": "EU27",
+   "series": "OTH",
+   "time": "2015",
+   "value": 10.4
+  },
+  {
+   "geo": "EU27",
+   "series": "OTH",
+   "time": "2016",
+   "value": 8.5
+  },
+  {
+   "geo": "EU27",
+   "series": "OTH",
+   "time": "2017",
+   "value": 8.7
+  },
+  {
+   "geo": "EU27",
+   "series": "OTH",
+   "time": "2018",
+   "value": 8.9
+  },
+  {
+   "geo": "EU27",
+   "series": "OTH",
+   "time": "2019",
+   "value": 11.1
+  },
+  {
+   "geo": "EU27",
+   "series": "OTH",
+   "time": "2020",
+   "value": 9.8
+  },
+  {
+   "geo": "EU27",
+   "series": "OTH",
+   "time": "2021",
+   "value": 10.6
+  },
+  {
+   "geo": "EU27",
+   "series": "OTH",
+   "time": "2022",
+   "value": 15.7
+  },
+  {
+   "geo": "EU27",
+   "series": "OTH",
+   "time": "2023",
+   "value": 18.8
+  },
+  {
+   "geo": "EU27",
+   "series": "OTH",
+   "time": "2024",
+   "value": 16.6
+  },
+  {
+   "geo": "EU27",
+   "series": "QA",
+   "time": "2010",
+   "value": 6.9
+  },
+  {
+   "geo": "EU27",
+   "series": "QA",
+   "time": "2011",
+   "value": 6.6
+  },
+  {
+   "geo": "EU27",
+   "series": "QA",
+   "time": "2012",
+   "value": 5.2
+  },
+  {
+   "geo": "EU27",
+   "series": "QA",
+   "time": "2013",
+   "value": 4.5
+  },
+  {
+   "geo": "EU27",
+   "series": "QA",
+   "time": "2014",
+   "value": 4.0
+  },
+  {
+   "geo": "EU27",
+   "series": "QA",
+   "time": "2015",
+   "value": 4.4
+  },
+  {
+   "geo": "EU27",
+   "series": "QA",
+   "time": "2016",
+   "value": 3.9
+  },
+  {
+   "geo": "EU27",
+   "series": "QA",
+   "time": "2017",
+   "value": 5.2
+  },
+  {
+   "geo": "EU27",
+   "series": "QA",
+   "time": "2018",
+   "value": 5.8
+  },
+  {
+   "geo": "EU27",
+   "series": "QA",
+   "time": "2019",
+   "value": 6.8
+  },
+  {
+   "geo": "EU27",
+   "series": "QA",
+   "time": "2020",
+   "value": 5.4
+  },
+  {
+   "geo": "EU27",
+   "series": "QA",
+   "time": "2021",
+   "value": 4.7
+  },
+  {
+   "geo": "EU27",
+   "series": "QA",
+   "time": "2022",
+   "value": 6.1
+  },
+  {
+   "geo": "EU27",
+   "series": "QA",
+   "time": "2023",
+   "value": 5.6
+  },
+  {
+   "geo": "EU27",
+   "series": "QA",
+   "time": "2024",
+   "value": 4.2
+  },
+  {
+   "geo": "EU27",
+   "series": "RU",
+   "time": "2010",
+   "value": 36.6
+  },
+  {
+   "geo": "EU27",
+   "series": "RU",
+   "time": "2011",
+   "value": 39.2
+  },
+  {
+   "geo": "EU27",
+   "series": "RU",
+   "time": "2012",
+   "value": 38.8
+  },
+  {
+   "geo": "EU27",
+   "series": "RU",
+   "time": "2013",
+   "value": 46.6
+  },
+  {
+   "geo": "EU27",
+   "series": "RU",
+   "time": "2014",
+   "value": 44.4
+  },
+  {
+   "geo": "EU27",
+   "series": "RU",
+   "time": "2015",
+   "value": 45.2
+  },
+  {
+   "geo": "EU27",
+   "series": "RU",
+   "time": "2016",
+   "value": 51.2
+  },
+  {
+   "geo": "EU27",
+   "series": "RU",
+   "time": "2017",
+   "value": 51.8
+  },
+  {
+   "geo": "EU27",
+   "series": "RU",
+   "time": "2018",
+   "value": 50.8
+  },
+  {
+   "geo": "EU27",
+   "series": "RU",
+   "time": "2019",
+   "value": 50.2
+  },
+  {
+   "geo": "EU27",
+   "series": "RU",
+   "time": "2020",
+   "value": 47.8
+  },
+  {
+   "geo": "EU27",
+   "series": "RU",
+   "time": "2021",
+   "value": 46.9
+  },
+  {
+   "geo": "EU27",
+   "series": "RU",
+   "time": "2022",
+   "value": 26.5
+  },
+  {
+   "geo": "EU27",
+   "series": "RU",
+   "time": "2023",
+   "value": 12.2
+  },
+  {
+   "geo": "EU27",
+   "series": "RU",
+   "time": "2024",
+   "value": 14.6
+  },
+  {
+   "geo": "EU27",
+   "series": "US",
+   "time": "2010",
+   "value": 0.0
+  },
+  {
+   "geo": "EU27",
+   "series": "US",
+   "time": "2011",
+   "value": 0.0
+  },
+  {
+   "geo": "EU27",
+   "series": "US",
+   "time": "2012",
+   "value": 0.0
+  },
+  {
+   "geo": "EU27",
+   "series": "US",
+   "time": "2013",
+   "value": 0.0
+  },
+  {
+   "geo": "EU27",
+   "series": "US",
+   "time": "2014",
+   "value": 0.0
+  },
+  {
+   "geo": "EU27",
+   "series": "US",
+   "time": "2015",
+   "value": 0.0
+  },
+  {
+   "geo": "EU27",
+   "series": "US",
+   "time": "2016",
+   "value": 0.1
+  },
+  {
+   "geo": "EU27",
+   "series": "US",
+   "time": "2017",
+   "value": 0.6
+  },
+  {
+   "geo": "EU27",
+   "series": "US",
+   "time": "2018",
+   "value": 0.7
+  },
+  {
+   "geo": "EU27",
+   "series": "US",
+   "time": "2019",
+   "value": 4.0
+  },
+  {
+   "geo": "EU27",
+   "series": "US",
+   "time": "2020",
+   "value": 5.1
+  },
+  {
+   "geo": "EU27",
+   "series": "US",
+   "time": "2021",
+   "value": 6.2
+  },
+  {
+   "geo": "EU27",
+   "series": "US",
+   "time": "2022",
+   "value": 16.7
+  },
+  {
+   "geo": "EU27",
+   "series": "US",
+   "time": "2023",
+   "value": 20.1
+  },
+  {
+   "geo": "EU27",
+   "series": "US",
+   "time": "2024",
+   "value": 17.1
+  }
+ ]
+}

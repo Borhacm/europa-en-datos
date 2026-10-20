@@ -1,0 +1,382 @@
+{
+ "id": "cd3-exposicion-eeuu",
+ "lens": "dentro",
+ "theme": "comercio",
+ "title": {
+  "es": "Irlanda exporta a EE. UU. el equivalente al 18,5 % de su PIB; Alemania, el 3,2 %, y España, el 1 %",
+  "en": "Ireland's exports to the US equal 18.5% of its GDP; Germany's, 3.2%, and Spain's, 1%"
+ },
+ "subtitle": {
+  "es": "Exportaciones de bienes a EE. UU., en % del PIB de cada país, 2025",
+  "en": "Goods exports to the US, as % of each country's GDP, 2025"
+ },
+ "unit": {
+  "es": "% del PIB",
+  "en": "% of GDP"
+ },
+ "source": {
+  "name": "Eurostat, Comext (comercio por producto) y cuentas nacionales",
+  "dataset": "DS-045409",
+  "url": "https://ec.europa.eu/eurostat/comext/newxtweb/",
+  "license": "CC BY 4.0",
+  "also": [
+   {
+    "name": "Eurostat, nama_10_gdp (PIB)",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/nama_10_gdp/default/table"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Las exportaciones se atribuyen al país desde el que salen de la UE. Los puertos de Bélgica y Países Bajos pueden despachar bienes producidos en otros países, así que su exposición real puede ser menor y la de sus vecinos, mayor.",
+   "En 2025, el 82 % de lo que Irlanda vendió a EE. UU. fueron químicos orgánicos y productos farmacéuticos (capítulos 29 y 30 del Sistema Armonizado, 91.200 de 111.200 millones de euros en Comext).",
+   "Compara un flujo (exportaciones) con el PIB, que mide valor añadido: no es la parte del PIB que depende de EE. UU., sino una medida de tamaño relativo."
+  ],
+  "en": [
+   "Exports are attributed to the country they leave the EU from. Belgian and Dutch ports may ship goods produced in other countries, so their real exposure may be lower and their neighbours' higher.",
+   "In 2025, 82% of what Ireland sold to the US was organic chemicals and pharmaceuticals (Harmonised System chapters 29 and 30, 91.2 of 111.2 billion euros in Comext).",
+   "It compares a flow (exports) with GDP, which measures value added: it is not the share of GDP that depends on the US, but a measure of relative size."
+  ]
+ },
+ "retrieved": "2026-10-20",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 2.47,
+   "exports_bn": 12.8
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 5.0,
+   "exports_bn": 32.0
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 0.78,
+   "exports_bn": 0.9
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 0.2,
+   "exports_bn": 0.1
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 2.0,
+   "exports_bn": 7.0
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 3.24,
+   "exports_bn": 146.9
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 2.27,
+   "exports_bn": 9.5
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 1.01,
+   "exports_bn": 17.0
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 1.36,
+   "exports_bn": 0.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 2.94,
+   "exports_bn": 554.7
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 2.73,
+   "exports_bn": 7.7
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 1.56,
+   "exports_bn": 46.7
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 0.97,
+   "exports_bn": 2.4
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 0.69,
+   "exports_bn": 0.7
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 2.64,
+   "exports_bn": 5.8
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 18.46,
+   "exports_bn": 111.2
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 3.07,
+   "exports_bn": 69.6
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 2.06,
+   "exports_bn": 1.7
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 0.47,
+   "exports_bn": 0.4
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 1.15,
+   "exports_bn": 0.5
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 0.65,
+   "exports_bn": 0.2
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 3.69,
+   "exports_bn": 43.1
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 1.26,
+   "exports_bn": 11.6
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 1.51,
+   "exports_bn": 4.7
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 0.55,
+   "exports_bn": 2.1
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 2.64,
+   "exports_bn": 3.7
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 1.18,
+   "exports_bn": 0.8
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 2.51,
+   "exports_bn": 15.0
+  }
+ ]
+}
