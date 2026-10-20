@@ -1,0 +1,480 @@
+{
+ "id": "dfe1-importaciones-armas",
+ "lens": "elige",
+ "theme": "defensa",
+ "title": {
+  "es": "Los países de la UE han triplicado sus compras de armas al extranjero; Polonia es el que más importa",
+  "en": "EU countries have tripled their arms imports; Poland imports the most"
+ },
+ "subtitle": {
+  "es": "Importaciones de armas, en miles de millones de valores indicadores de tendencia (TIV) del SIPRI, 2016-2020 y 2021-2025",
+  "en": "Arms imports, in billions of SIPRI trend-indicator values (TIV), 2016-2020 and 2021-2025"
+ },
+ "unit": {
+  "es": "miles de millones de TIV",
+  "en": "billion TIV"
+ },
+ "source": {
+  "name": "Banco Mundial, importaciones de armas (TIV del SIPRI)",
+  "dataset": "MS.MIL.MPRT.KD",
+  "url": "https://data.worldbank.org/indicator/MS.MIL.MPRT.KD",
+  "license": "CC BY 4.0",
+  "also": [
+   {
+    "name": "Reglamento (UE) 2025/1106 del Consejo, por el que se crea el instrumento SAFE",
+    "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32025R1106"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "En total, los 27 importaron 26,7 miles de millones de TIV en 2021-2025, frente a 8,7 en 2016-2020.",
+   "Datos del SIPRI publicados por el Banco Mundial, en valores indicadores de tendencia (TIV): miden el volumen de armas transferidas con un precio estándar por tipo de arma, no lo que se paga por ellas.",
+   "El SIPRI recomienda comparar periodos de cinco años, porque las entregas de un año dependen de pocos contratos grandes.",
+   "Incluye las compras a otros países de la UE: estos datos no separan lo que viene de fuera de la Unión."
+  ],
+  "en": [
+   "In total, the 27 imported 26.7 billion TIV in 2021-2025, against 8.7 in 2016-2020.",
+   "SIPRI data published by the World Bank, in trend-indicator values (TIV): they measure the volume of arms transferred using a standard price per type of weapon, not what is paid for them.",
+   "SIPRI recommends comparing five-year periods, because a single year's deliveries depend on a few large contracts.",
+   "Includes purchases from other EU countries: these data do not separate what comes from outside the Union."
+  ]
+ },
+ "retrieved": "2026-10-20",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2016-2020",
+   "value": 0.06
+  },
+  {
+   "geo": "AUT",
+   "time": "2021-2025",
+   "value": 0.1
+  },
+  {
+   "geo": "BEL",
+   "time": "2016-2020",
+   "value": 0.11
+  },
+  {
+   "geo": "BEL",
+   "time": "2021-2025",
+   "value": 1.38
+  },
+  {
+   "geo": "BGR",
+   "time": "2016-2020",
+   "value": 0.05
+  },
+  {
+   "geo": "BGR",
+   "time": "2021-2025",
+   "value": 0.54
+  },
+  {
+   "geo": "CYP",
+   "time": "2016-2020",
+   "value": 0.08
+  },
+  {
+   "geo": "CYP",
+   "time": "2021-2025",
+   "value": 0.17
+  },
+  {
+   "geo": "CZE",
+   "time": "2016-2020",
+   "value": 0.02
+  },
+  {
+   "geo": "CZE",
+   "time": "2021-2025",
+   "value": 0.33
+  },
+  {
+   "geo": "DEU",
+   "time": "2016-2020",
+   "value": 0.26
+  },
+  {
+   "geo": "DEU",
+   "time": "2021-2025",
+   "value": 2.58
+  },
+  {
+   "geo": "DNK",
+   "time": "2016-2020",
+   "value": 0.33
+  },
+  {
+   "geo": "DNK",
+   "time": "2021-2025",
+   "value": 1.48
+  },
+  {
+   "geo": "ESP",
+   "time": "2016-2020",
+   "value": 0.44
+  },
+  {
+   "geo": "ESP",
+   "time": "2021-2025",
+   "value": 0.89
+  },
+  {
+   "geo": "EST",
+   "time": "2016-2020",
+   "value": 0.13
+  },
+  {
+   "geo": "EST",
+   "time": "2021-2025",
+   "value": 0.38
+  },
+  {
+   "geo": "FIN",
+   "time": "2016-2020",
+   "value": 0.43
+  },
+  {
+   "geo": "FIN",
+   "time": "2021-2025",
+   "value": 0.23
+  },
+  {
+   "geo": "FRA",
+   "time": "2016-2020",
+   "value": 0.65
+  },
+  {
+   "geo": "FRA",
+   "time": "2021-2025",
+   "value": 0.77
+  },
+  {
+   "geo": "GRC",
+   "time": "2016-2020",
+   "value": 0.58
+  },
+  {
+   "geo": "GRC",
+   "time": "2021-2025",
+   "value": 2.28
+  },
+  {
+   "geo": "HRV",
+   "time": "2016-2020",
+   "value": 0.04
+  },
+  {
+   "geo": "HRV",
+   "time": "2021-2025",
+   "value": 0.35
+  },
+  {
+   "geo": "HUN",
+   "time": "2016-2020",
+   "value": 0.12
+  },
+  {
+   "geo": "HUN",
+   "time": "2021-2025",
+   "value": 1.29
+  },
+  {
+   "geo": "IRL",
+   "time": "2016-2020",
+   "value": 0.09
+  },
+  {
+   "geo": "IRL",
+   "time": "2021-2025",
+   "value": 0.08
+  },
+  {
+   "geo": "ITA",
+   "time": "2016-2020",
+   "value": 2.1
+  },
+  {
+   "geo": "ITA",
+   "time": "2021-2025",
+   "value": 1.93
+  },
+  {
+   "geo": "LTU",
+   "time": "2016-2020",
+   "value": 0.21
+  },
+  {
+   "geo": "LTU",
+   "time": "2021-2025",
+   "value": 0.39
+  },
+  {
+   "geo": "LUX",
+   "time": "2016-2020",
+   "value": 0.09
+  },
+  {
+   "geo": "LUX",
+   "time": "2021-2025",
+   "value": 0.01
+  },
+  {
+   "geo": "LVA",
+   "time": "2016-2020",
+   "value": 0.12
+  },
+  {
+   "geo": "LVA",
+   "time": "2021-2025",
+   "value": 0.12
+  },
+  {
+   "geo": "MLT",
+   "time": "2016-2020",
+   "value": 0.01
+  },
+  {
+   "geo": "MLT",
+   "time": "2021-2025",
+   "value": 0.04
+  },
+  {
+   "geo": "NLD",
+   "time": "2016-2020",
+   "value": 1.31
+  },
+  {
+   "geo": "NLD",
+   "time": "2021-2025",
+   "value": 2.77
+  },
+  {
+   "geo": "POL",
+   "time": "2016-2020",
+   "value": 0.59
+  },
+  {
+   "geo": "POL",
+   "time": "2021-2025",
+   "value": 5.58
+  },
+  {
+   "geo": "PRT",
+   "time": "2016-2020",
+   "value": 0.14
+  },
+  {
+   "geo": "PRT",
+   "time": "2021-2025",
+   "value": 0.22
+  },
+  {
+   "geo": "ROU",
+   "time": "2016-2020",
+   "value": 0.48
+  },
+  {
+   "geo": "ROU",
+   "time": "2021-2025",
+   "value": 1.4
+  },
+  {
+   "geo": "SVK",
+   "time": "2016-2020",
+   "value": 0.12
+  },
+  {
+   "geo": "SVK",
+   "time": "2021-2025",
+   "value": 0.66
+  },
+  {
+   "geo": "SVN",
+   "time": "2016-2020",
+   "value": 0.0
+  },
+  {
+   "geo": "SVN",
+   "time": "2021-2025",
+   "value": 0.05
+  },
+  {
+   "geo": "SWE",
+   "time": "2016-2020",
+   "value": 0.12
+  },
+  {
+   "geo": "SWE",
+   "time": "2021-2025",
+   "value": 0.73
+  }
+ ]
+}

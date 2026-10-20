@@ -1,0 +1,104 @@
+{
+ "id": "dfg2-exportaciones-armas",
+ "lens": "gigantes",
+ "theme": "defensa",
+ "title": {
+  "es": "Rusia exportó entre 2021 y 2025 un 64 % menos de armas que en los cinco años anteriores; los países de la UE, un 36 % más",
+  "en": "Russia exported 64% fewer arms in 2021-2025 than in the previous five years; EU countries, 36% more"
+ },
+ "subtitle": {
+  "es": "Exportaciones de armas, en miles de millones de valores indicadores de tendencia (TIV) del SIPRI, 2016-2020 y 2021-2025",
+  "en": "Arms exports, in billions of SIPRI trend-indicator values (TIV), 2016-2020 and 2021-2025"
+ },
+ "unit": {
+  "es": "miles de millones de TIV",
+  "en": "billion TIV"
+ },
+ "source": {
+  "name": "Banco Mundial, exportaciones de armas (TIV del SIPRI)",
+  "dataset": "MS.MIL.XPRT.KD",
+  "url": "https://data.worldbank.org/indicator/MS.MIL.XPRT.KD",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Datos del SIPRI publicados por el Banco Mundial, en valores indicadores de tendencia (TIV): miden el volumen de armas transferidas con un precio estándar por tipo de arma, no lo que se paga por ellas.",
+   "El SIPRI recomienda comparar periodos de cinco años, porque las entregas de un año dependen de pocos contratos grandes.",
+   "UE: suma de las exportaciones de los 27, incluidas las que van de un país de la UE a otro."
+  ],
+  "en": [
+   "SIPRI data published by the World Bank, in trend-indicator values (TIV): they measure the volume of arms transferred using a standard price per type of weapon, not what is paid for them.",
+   "SIPRI recommends comparing five-year periods, because a single year's deliveries depend on a few large contracts.",
+   "EU: sum of the 27 countries' exports, including those from one EU country to another."
+  ]
+ },
+ "retrieved": "2026-10-20",
+ "geos": {
+  "CHN": {
+   "es": "China",
+   "en": "China",
+   "eu": false,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "RUS": {
+   "es": "Rusia",
+   "en": "Russia",
+   "eu": false,
+   "aggregate": false
+  },
+  "USA": {
+   "es": "Estados Unidos",
+   "en": "United States",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "CHN",
+   "time": "2016-2020",
+   "value": 7.76
+  },
+  {
+   "geo": "CHN",
+   "time": "2021-2025",
+   "value": 8.58
+  },
+  {
+   "geo": "EU27",
+   "time": "2016-2020",
+   "value": 31.55
+  },
+  {
+   "geo": "EU27",
+   "time": "2021-2025",
+   "value": 42.77
+  },
+  {
+   "geo": "RUS",
+   "time": "2016-2020",
+   "value": 29.32
+  },
+  {
+   "geo": "RUS",
+   "time": "2021-2025",
+   "value": 10.41
+  },
+  {
+   "geo": "USA",
+   "time": "2016-2020",
+   "value": 50.76
+  },
+  {
+   "geo": "USA",
+   "time": "2021-2025",
+   "value": 64.66
+  }
+ ]
+}

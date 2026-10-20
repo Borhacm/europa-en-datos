@@ -1,0 +1,354 @@
+{
+ "id": "dfd1-gasto-habitante",
+ "lens": "dentro",
+ "theme": "defensa",
+ "title": {
+  "es": "Por habitante, Dinamarca gasta en defensa el 89 % de lo que gasta EE. UU.; Malta y Irlanda, menos de 300 dólares",
+  "en": "Per person, Denmark spends 89% as much on defence as the US; Malta and Ireland, less than 300 dollars"
+ },
+ "subtitle": {
+  "es": "Gasto militar por habitante, en dólares corrientes, 2025",
+  "en": "Military expenditure per person, in current dollars, 2025"
+ },
+ "unit": {
+  "es": "dólares por habitante",
+  "en": "dollars per person"
+ },
+ "source": {
+  "name": "Banco Mundial, gasto militar (dólares corrientes), con datos del SIPRI",
+  "dataset": "MS.MIL.XPND.CD",
+  "url": "https://data.worldbank.org/indicator/MS.MIL.XPND.CD",
+  "license": "CC BY 4.0",
+  "also": [
+   {
+    "name": "Banco Mundial, población total",
+    "dataset": "SP.POP.TOTL",
+    "url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+    "license": "CC BY 4.0"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Gasto militar del SIPRI publicado por el Banco Mundial, dividido entre la población de cada país.",
+   "En dólares corrientes, sin corregir las diferencias de precios entre países: un soldado o un cuartel cuestan menos en unos países que en otros."
+  ],
+  "en": [
+   "SIPRI military expenditure published by the World Bank, divided by each country's population.",
+   "In current dollars, without correcting for price differences between countries: a soldier or a barracks costs less in some countries than in others."
+  ]
+ },
+ "retrieved": "2026-10-20",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  },
+  "USA": {
+   "es": "Estados Unidos",
+   "en": "United States",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 690
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 1217
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 402
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 484
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 648
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 1360
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 2488
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 815
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 1153
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 1431
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 990
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 805
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 542
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 526
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 283
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 817
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 1022
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 1245
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 937
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 215
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 1600
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 1283
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 542
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 511
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 576
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 573
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 1555
+  },
+  {
+   "geo": "USA",
+   "time": "2025",
+   "value": 2792
+  }
+ ]
+}

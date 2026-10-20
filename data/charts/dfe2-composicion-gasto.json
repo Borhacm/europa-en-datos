@@ -1,0 +1,332 @@
+{
+ "id": "dfe2-composicion-gasto",
+ "lens": "elige",
+ "theme": "defensa",
+ "title": {
+  "es": "En 2014, más de la mitad del gasto europeo en defensa eran sueldos; en 2024, el 39 %, y la inversión ha pasado del 15,5 % al 21,6 %",
+  "en": "In 2014, more than half of European defence spending went on pay; in 2024, 39%, and investment has risen from 15.5% to 21.6%"
+ },
+ "subtitle": {
+  "es": "Gasto de las administraciones públicas de la UE en defensa por tipo, en % del total, 2014-2024",
+  "en": "EU general government defence expenditure by type, as % of the total, 2014-2024"
+ },
+ "unit": {
+  "es": "% del gasto en defensa",
+  "en": "% of defence spending"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "gov_10a_exp",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Función 02 (defensa) de la clasificación COFOG. En 2024, la UE gastó en defensa 266.360 millones de euros, frente a 136.412 millones en 2014.",
+   "Personal: sueldos y cotizaciones. Bienes y servicios: compras corrientes, como combustible o mantenimiento. Inversión: equipos e infraestructuras militares. Transferencias: pagos corrientes y de capital a otros sectores o a otros países.",
+   "Las cuatro partidas no suman el 100 %: falta una parte pequeña de otros gastos.",
+   "No es la misma medida que el gasto militar del SIPRI de G1, que tiene otra definición."
+  ],
+  "en": [
+   "Function 02 (defence) of the COFOG classification. In 2024, the EU spent 266,360 million euros on defence, against 136,412 million in 2014.",
+   "Personnel: pay and contributions. Goods and services: current purchases such as fuel or maintenance. Investment: military equipment and infrastructure. Transfers: current and capital payments to other sectors or to other countries.",
+   "The four items do not add up to 100%: a small share of other spending is missing.",
+   "This is not the same measure as SIPRI military spending in G1, which uses another definition."
+  ]
+ },
+ "retrieved": "2026-10-20",
+ "geos": {
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  }
+ },
+ "dimensions": {
+  "series": {
+   "D1": {
+    "es": "Personal",
+    "en": "Personnel"
+   },
+   "P2": {
+    "es": "Bienes y servicios",
+    "en": "Goods and services"
+   },
+   "P51G": {
+    "es": "Inversión",
+    "en": "Investment"
+   },
+   "TRANSF": {
+    "es": "Transferencias",
+    "en": "Transfers"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "EU27",
+   "time": "2014",
+   "series": "D1",
+   "value": 54.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2014",
+   "series": "P2",
+   "value": 27.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2014",
+   "series": "P51G",
+   "value": 15.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2014",
+   "series": "TRANSF",
+   "value": 2.3
+  },
+  {
+   "geo": "EU27",
+   "time": "2015",
+   "series": "D1",
+   "value": 51.3
+  },
+  {
+   "geo": "EU27",
+   "time": "2015",
+   "series": "P2",
+   "value": 27.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2015",
+   "series": "P51G",
+   "value": 17.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2015",
+   "series": "TRANSF",
+   "value": 2.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2016",
+   "series": "D1",
+   "value": 48.8
+  },
+  {
+   "geo": "EU27",
+   "time": "2016",
+   "series": "P2",
+   "value": 26.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2016",
+   "series": "P51G",
+   "value": 19.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2016",
+   "series": "TRANSF",
+   "value": 3.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2017",
+   "series": "D1",
+   "value": 49.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2017",
+   "series": "P2",
+   "value": 28.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2017",
+   "series": "P51G",
+   "value": 19.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2017",
+   "series": "TRANSF",
+   "value": 2.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2018",
+   "series": "D1",
+   "value": 49.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2018",
+   "series": "P2",
+   "value": 28.3
+  },
+  {
+   "geo": "EU27",
+   "time": "2018",
+   "series": "P51G",
+   "value": 18.4
+  },
+  {
+   "geo": "EU27",
+   "time": "2018",
+   "series": "TRANSF",
+   "value": 2.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2019",
+   "series": "D1",
+   "value": 49.4
+  },
+  {
+   "geo": "EU27",
+   "time": "2019",
+   "series": "P2",
+   "value": 28.8
+  },
+  {
+   "geo": "EU27",
+   "time": "2019",
+   "series": "P51G",
+   "value": 18.4
+  },
+  {
+   "geo": "EU27",
+   "time": "2019",
+   "series": "TRANSF",
+   "value": 2.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2020",
+   "series": "D1",
+   "value": 47.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2020",
+   "series": "P2",
+   "value": 28.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2020",
+   "series": "P51G",
+   "value": 19.8
+  },
+  {
+   "geo": "EU27",
+   "time": "2020",
+   "series": "TRANSF",
+   "value": 2.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "series": "D1",
+   "value": 47.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "series": "P2",
+   "value": 28.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "series": "P51G",
+   "value": 20.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "series": "TRANSF",
+   "value": 2.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2022",
+   "series": "D1",
+   "value": 43.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2022",
+   "series": "P2",
+   "value": 29.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2022",
+   "series": "P51G",
+   "value": 20.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2022",
+   "series": "TRANSF",
+   "value": 5.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2023",
+   "series": "D1",
+   "value": 41.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2023",
+   "series": "P2",
+   "value": 29.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2023",
+   "series": "P51G",
+   "value": 20.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2023",
+   "series": "TRANSF",
+   "value": 8.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "series": "D1",
+   "value": 39.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "series": "P2",
+   "value": 28.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "series": "P51G",
+   "value": 21.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "series": "TRANSF",
+   "value": 8.4
+  }
+ ]
+}

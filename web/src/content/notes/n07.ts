@@ -17,7 +17,7 @@ const note: Note = {
   published: "2026-10-20",
   updated: "2026-10-20",
   lens: "dentro",
-  theme: "comercio",
+  theme: "defensa",
   body: [
     p("En 2025, Polonia dedicó a defensa el 4,5 % de su PIB, según los datos del SIPRI que publica el Banco Mundial. Es la cifra más alta de la UE y unas 20 veces la de Irlanda (0,22 %). Le siguen Letonia (3,61 %), Estonia (3,37 %), Dinamarca (3,25 %) y Lituania (3,08 %). Grecia, con el 2,99 %, completa los seis primeros.",
       "In 2025, Poland spent 4.5% of its GDP on defence, according to SIPRI data published by the World Bank. That is the highest figure in the EU and about 20 times Ireland's (0.22%). Next come Latvia (3.61%), Estonia (3.37%), Denmark (3.25%) and Lithuania (3.08%). Greece, at 2.99%, completes the top six."),
@@ -27,6 +27,7 @@ const note: Note = {
     p("El salto ha sido rápido. En 2021, el último año antes de la invasión rusa de Ucrania, solo cuatro países llegaban al 2 %: Grecia, Polonia, Letonia y Estonia. En 2025 son 18. Polonia ha sumado 2,28 puntos de PIB y Dinamarca, 1,95. Solo Grecia, Chipre e Irlanda gastan hoy una parte menor de su PIB que en 2021; en Malta no ha cambiado.",
       "The jump has been fast. In 2021, the last year before Russia's invasion of Ukraine, only four countries reached 2%: Greece, Poland, Latvia and Estonia. In 2025 there are 18. Poland has added 2.28 points of GDP and Denmark 1.95. Only Greece, Cyprus and Ireland now spend a smaller share of GDP than in 2021; in Malta it is unchanged."),
     { fig: "n07-defensa-cambio", code: "2" },
+    { see: { es: "Defensa y seguridad: cuánto gastan la UE, EE. UU., China y Rusia, y en qué", en: "Defence and security: how much the EU, the US, China and Russia spend, and on what" }, href: { es: "/es/defensa/", en: "/en/defence/" } },
     p("El listón ya es otro. En la cumbre de La Haya, en junio de 2025, los aliados se comprometieron a dedicar al menos el 3,5 % del PIB a defensa en 2035, con la definición de la OTAN, que no coincide con la del SIPRI. Con estos datos, solo Polonia y Letonia lo superan hoy. La comparación de la UE con EE. UU. y China está en el análisis del informe Draghi.",
       "The bar has moved. At the Hague summit in June 2025, allies pledged to spend at least 3.5% of GDP on defence by 2035, on NATO's definition, which differs from SIPRI's. On these figures, only Poland and Latvia are above it today. The comparison of the EU with the US and China is in the analysis of the Draghi report."),
     { see: { es: "El informe Draghi, dos años después: qué pedía, qué se ha hecho y qué dicen hoy los datos", en: "The Draghi report, two years on: what it asked for, what has been done and what the data say today" },

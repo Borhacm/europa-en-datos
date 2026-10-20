@@ -31,7 +31,7 @@ def paises():
     out = _rows([LAST])
     return chart(
         id="n07-defensa-paises",
-        lens="dentro", theme="comercio",
+        lens="dentro", theme="defensa",
         title={"es": "Polonia dedica a defensa el 4,5 % de su PIB, unas 20 veces más que Irlanda",
                "en": "Poland spends 4.5% of its GDP on defence, about 20 times as much as Ireland"},
         subtitle={"es": "Gasto militar, en % del PIB, 2025", "en": "Military expenditure, as % of GDP, 2025"},
@@ -50,7 +50,7 @@ def cambio():
     out = _rows([BASE, LAST])
     return chart(
         id="n07-defensa-cambio",
-        lens="dentro", theme="comercio",
+        lens="dentro", theme="defensa",
         title={"es": "En 2021, 4 de los 27 países de la UE gastaban en defensa el 2 % de su PIB o más; en 2025, 18",
                "en": "In 2021, 4 of the 27 EU countries spent 2% of GDP or more on defence; in 2025, 18 did"},
         subtitle={"es": "Gasto militar, en % del PIB, 2021 y 2025", "en": "Military expenditure, as % of GDP, 2021 and 2025"},
