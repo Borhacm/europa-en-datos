@@ -8,6 +8,7 @@ import urllib.parse
 from .http import fetch
 
 EUROSTAT_API = "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data"
+COMEXT_API = "https://ec.europa.eu/eurostat/api/comext/dissemination/statistics/1.0/data"
 OECD_API = "https://sdmx.oecd.org/public/rest/data"
 WORLDBANK_API = "https://api.worldbank.org/v2"
 ILO_API = "https://sdmx.ilo.org/rest/data/ILO"
@@ -18,11 +19,24 @@ IMF_API = "https://www.imf.org/external/datamapper/api/v1"
 
 def eurostat(dataset: str, **filters) -> list[dict]:
     """Dataset de Eurostat en JSON-stat. Los filtros aceptan un valor o una lista de valores."""
+    return _jsonstat(EUROSTAT_API, dataset, filters)
+
+
+def comext(dataset: str, **filters) -> list[dict]:
+    """Dataset de comercio detallado de Eurostat (Comext), p. ej. 'DS-045409' (por producto HS/NC).
+
+    Mismo formato que eurostat(). Ojo: Comext usa códigos propios ('GR' para Grecia, 'EU' para la UE,
+    'EXT_EU' para fuera de la UE) y los valores van en euros, no en millones.
+    """
+    return _jsonstat(COMEXT_API, dataset, filters)
+
+
+def _jsonstat(base: str, dataset: str, filters: dict) -> list[dict]:
     params = [("lang", "en")]
     for dim, val in filters.items():
         for v in val if isinstance(val, (list, tuple)) else [val]:
             params.append((dim, v))
-    url = f"{EUROSTAT_API}/{dataset}?{urllib.parse.urlencode(params)}"
+    url = f"{base}/{dataset}?{urllib.parse.urlencode(params)}"
     d = json.loads(fetch(url, ".json").read_text())
     if "error" in d:
         raise RuntimeError(f"Eurostat {dataset}: {d['error']}")

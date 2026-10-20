@@ -1,0 +1,194 @@
+{
+ "id": "ce4-coches-china",
+ "lens": "elige",
+ "theme": "comercio",
+ "title": {
+  "es": "Tras los aranceles, la UE importa de China un 42 % menos en eléctricos, pero los híbridos casi compensan la caída",
+  "en": "After the duties, EU imports of Chinese electric cars are down 42%, but hybrids almost make up for the fall"
+ },
+ "subtitle": {
+  "es": "Importaciones de turismos de la UE desde China por tipo de motor, en miles de millones de euros",
+  "en": "EU imports of passenger cars from China by type of engine, in billions of euros"
+ },
+ "unit": {
+  "es": "miles de millones de euros",
+  "en": "billions of euros"
+ },
+ "source": {
+  "name": "Eurostat, Comext (comercio por producto)",
+  "dataset": "DS-045409",
+  "url": "https://ec.europa.eu/eurostat/comext/newxtweb/",
+  "license": "CC BY 4.0",
+  "also": [
+   {
+    "name": "Reglamento de Ejecución (UE) 2024/2754 (derechos compensatorios definitivos)",
+    "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32024R2754"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Eléctricos: partida 8703 80 del Sistema Armonizado (solo motor eléctrico). Enchufables: 8703 60 (híbridos de gasolina que se cargan en la red). Híbridos: 8703 40 (gasolina y eléctrico, no enchufables). Valor en euros corrientes, sin descontar la inflación.",
+   "El derecho compensatorio solo se aplica a los eléctricos de batería nuevos (partida 8703 80 10): provisional desde julio de 2024 y definitivo desde el 30 de octubre de 2024.",
+   "Mide valor, no número de coches: si bajan los precios, el valor baja aunque se vendan los mismos."
+  ],
+  "en": [
+   "Electric: Harmonised System heading 8703 80 (electric motor only). Plug-in: 8703 60 (petrol hybrids charged from the grid). Hybrids: 8703 40 (petrol and electric, not plug-in). Value in current euros, not adjusted for inflation.",
+   "The countervailing duty applies only to new battery electric vehicles (heading 8703 80 10): provisional from July 2024 and definitive from 30 October 2024.",
+   "It measures value, not the number of cars: if prices fall, value falls even if the same number are sold."
+  ]
+ },
+ "retrieved": "2026-10-20",
+ "geos": {
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  }
+ },
+ "dimensions": {
+  "series": {
+   "870380": {
+    "es": "Eléctricos",
+    "en": "Electric"
+   },
+   "870360": {
+    "es": "Enchufables",
+    "en": "Plug-in"
+   },
+   "870340": {
+    "es": "Híbridos",
+    "en": "Hybrids"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "EU27",
+   "series": "870340",
+   "time": "2019",
+   "value": 0.0
+  },
+  {
+   "geo": "EU27",
+   "series": "870340",
+   "time": "2020",
+   "value": 0.0
+  },
+  {
+   "geo": "EU27",
+   "series": "870340",
+   "time": "2021",
+   "value": 0.04
+  },
+  {
+   "geo": "EU27",
+   "series": "870340",
+   "time": "2022",
+   "value": 0.01
+  },
+  {
+   "geo": "EU27",
+   "series": "870340",
+   "time": "2023",
+   "value": 0.19
+  },
+  {
+   "geo": "EU27",
+   "series": "870340",
+   "time": "2024",
+   "value": 1.15
+  },
+  {
+   "geo": "EU27",
+   "series": "870340",
+   "time": "2025",
+   "value": 1.81
+  },
+  {
+   "geo": "EU27",
+   "series": "870360",
+   "time": "2019",
+   "value": 0.27
+  },
+  {
+   "geo": "EU27",
+   "series": "870360",
+   "time": "2020",
+   "value": 0.61
+  },
+  {
+   "geo": "EU27",
+   "series": "870360",
+   "time": "2021",
+   "value": 0.6
+  },
+  {
+   "geo": "EU27",
+   "series": "870360",
+   "time": "2022",
+   "value": 1.45
+  },
+  {
+   "geo": "EU27",
+   "series": "870360",
+   "time": "2023",
+   "value": 1.07
+  },
+  {
+   "geo": "EU27",
+   "series": "870360",
+   "time": "2024",
+   "value": 1.09
+  },
+  {
+   "geo": "EU27",
+   "series": "870360",
+   "time": "2025",
+   "value": 3.59
+  },
+  {
+   "geo": "EU27",
+   "series": "870380",
+   "time": "2019",
+   "value": 0.06
+  },
+  {
+   "geo": "EU27",
+   "series": "870380",
+   "time": "2020",
+   "value": 0.63
+  },
+  {
+   "geo": "EU27",
+   "series": "870380",
+   "time": "2021",
+   "value": 3.5
+  },
+  {
+   "geo": "EU27",
+   "series": "870380",
+   "time": "2022",
+   "value": 8.14
+  },
+  {
+   "geo": "EU27",
+   "series": "870380",
+   "time": "2023",
+   "value": 11.03
+  },
+  {
+   "geo": "EU27",
+   "series": "870380",
+   "time": "2024",
+   "value": 8.88
+  },
+  {
+   "geo": "EU27",
+   "series": "870380",
+   "time": "2025",
+   "value": 6.35
+  }
+ ]
+}

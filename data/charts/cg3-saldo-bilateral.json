@@ -1,0 +1,297 @@
+{
+ "id": "cg3-saldo-bilateral",
+ "lens": "gigantes",
+ "theme": "comercio",
+ "title": {
+  "es": "La UE compra a China 371.600 millones de euros más de lo que le vende, y vende a EE. UU. 198.000 millones más de lo que le compra",
+  "en": "The EU buys 371.6 billion euros more from China than it sells to it, and sells 198 billion more to the US than it buys"
+ },
+ "subtitle": {
+  "es": "Saldo comercial de bienes de la UE con China y con EE. UU. (exportaciones de la UE menos importaciones), en miles de millones de euros",
+  "en": "EU trade balance in goods with China and with the US (EU exports minus imports), in billions of euros"
+ },
+ "unit": {
+  "es": "miles de millones de euros",
+  "en": "billions of euros"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "ext_lt_maineu",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/ext_lt_maineu/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Un saldo positivo significa que la UE vende a ese país más de lo que le compra.",
+   "Euros corrientes, sin descontar la inflación. China no incluye Hong Kong. Comercio de bienes: no incluye servicios."
+  ],
+  "en": [
+   "A positive balance means the EU sells that country more than it buys from it.",
+   "Current euros, not adjusted for inflation. China excludes Hong Kong. Trade in goods: services are not included."
+  ]
+ },
+ "retrieved": "2026-10-20",
+ "geos": {
+  "CHN": {
+   "es": "China",
+   "en": "China",
+   "eu": false,
+   "aggregate": false
+  },
+  "USA": {
+   "es": "Estados Unidos",
+   "en": "United States",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "ref_line": {
+  "value": 0,
+  "label": {
+   "es": "Equilibrio",
+   "en": "Balance"
+  }
+ },
+ "rows": [
+  {
+   "geo": "CHN",
+   "time": "2002",
+   "value": -40.9
+  },
+  {
+   "geo": "CHN",
+   "time": "2003",
+   "value": -50.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2004",
+   "value": -63.8
+  },
+  {
+   "geo": "CHN",
+   "time": "2005",
+   "value": -88.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2006",
+   "value": -108.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2007",
+   "value": -134.2
+  },
+  {
+   "geo": "CHN",
+   "time": "2008",
+   "value": -144.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2009",
+   "value": -108.0
+  },
+  {
+   "geo": "CHN",
+   "time": "2010",
+   "value": -140.3
+  },
+  {
+   "geo": "CHN",
+   "time": "2011",
+   "value": -129.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2012",
+   "value": -117.9
+  },
+  {
+   "geo": "CHN",
+   "time": "2013",
+   "value": -104.2
+  },
+  {
+   "geo": "CHN",
+   "time": "2014",
+   "value": -111.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2015",
+   "value": -150.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2016",
+   "value": -145.5
+  },
+  {
+   "geo": "CHN",
+   "time": "2017",
+   "value": -144.0
+  },
+  {
+   "geo": "CHN",
+   "time": "2018",
+   "value": -154.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2019",
+   "value": -165.0
+  },
+  {
+   "geo": "CHN",
+   "time": "2020",
+   "value": -182.0
+  },
+  {
+   "geo": "CHN",
+   "time": "2021",
+   "value": -249.0
+  },
+  {
+   "geo": "CHN",
+   "time": "2022",
+   "value": -397.8
+  },
+  {
+   "geo": "CHN",
+   "time": "2023",
+   "value": -300.0
+  },
+  {
+   "geo": "CHN",
+   "time": "2024",
+   "value": -317.9
+  },
+  {
+   "geo": "CHN",
+   "time": "2025",
+   "value": -371.6
+  },
+  {
+   "geo": "USA",
+   "time": "2002",
+   "value": 64.9
+  },
+  {
+   "geo": "USA",
+   "time": "2003",
+   "value": 64.5
+  },
+  {
+   "geo": "USA",
+   "time": "2004",
+   "value": 71.1
+  },
+  {
+   "geo": "USA",
+   "time": "2005",
+   "value": 79.0
+  },
+  {
+   "geo": "USA",
+   "time": "2006",
+   "value": 86.1
+  },
+  {
+   "geo": "USA",
+   "time": "2007",
+   "value": 72.8
+  },
+  {
+   "geo": "USA",
+   "time": "2008",
+   "value": 57.4
+  },
+  {
+   "geo": "USA",
+   "time": "2009",
+   "value": 42.1
+  },
+  {
+   "geo": "USA",
+   "time": "2010",
+   "value": 60.9
+  },
+  {
+   "geo": "USA",
+   "time": "2011",
+   "value": 67.6
+  },
+  {
+   "geo": "USA",
+   "time": "2012",
+   "value": 81.1
+  },
+  {
+   "geo": "USA",
+   "time": "2013",
+   "value": 81.3
+  },
+  {
+   "geo": "USA",
+   "time": "2014",
+   "value": 97.1
+  },
+  {
+   "geo": "USA",
+   "time": "2015",
+   "value": 113.4
+  },
+  {
+   "geo": "USA",
+   "time": "2016",
+   "value": 113.6
+  },
+  {
+   "geo": "USA",
+   "time": "2017",
+   "value": 120.6
+  },
+  {
+   "geo": "USA",
+   "time": "2018",
+   "value": 136.2
+  },
+  {
+   "geo": "USA",
+   "time": "2019",
+   "value": 149.4
+  },
+  {
+   "geo": "USA",
+   "time": "2020",
+   "value": 152.0
+  },
+  {
+   "geo": "USA",
+   "time": "2021",
+   "value": 166.9
+  },
+  {
+   "geo": "USA",
+   "time": "2022",
+   "value": 150.7
+  },
+  {
+   "geo": "USA",
+   "time": "2023",
+   "value": 158.1
+  },
+  {
+   "geo": "USA",
+   "time": "2024",
+   "value": 198.2
+  },
+  {
+   "geo": "USA",
+   "time": "2025",
+   "value": 198.0
+  }
+ ]
+}

@@ -49,8 +49,8 @@ def saldo_comercial():
     return chart(
         id="cg2-saldo-comercial",
         lens="gigantes", theme="comercio",
-        title={"es": "China vende al mundo, EE. UU. le compra y la UE está en medio",
-               "en": "China sells to the world, the US buys, and the EU sits in between"},
+        title={"es": "En 2024, China vendió al mundo 916.000 millones de euros más de lo que compró; EE. UU. compró 1,19 billones más de lo que vendió",
+               "en": "In 2024, China sold the world 916 billion euros more than it bought; the US bought 1.19 trillion more than it sold"},
         subtitle={"es": "Saldo comercial de bienes (exportaciones menos importaciones), en miles de millones de euros",
                   "en": "Trade balance in goods (exports minus imports), in billions of euros"},
         unit={"es": "miles de millones de euros", "en": "billions of euros"},
@@ -61,4 +61,29 @@ def saldo_comercial():
     )
 
 
-BUILDERS = [cuota_mundial, saldo_comercial]
+PARTNERS = {"CN_X_HK": "CHN", "US": "USA"}
+
+
+def saldo_bilateral():
+    rows = sources.eurostat("ext_lt_maineu", indic_et="MIO_BAL_VAL", partner=list(PARTNERS), geo="EU27_2020")
+    out = [{"geo": PARTNERS[r["partner"]], "time": r["time"], "value": round(r["value"] / 1000, 1)} for r in rows]
+    return chart(
+        id="cg3-saldo-bilateral",
+        lens="gigantes", theme="comercio",
+        title={"es": "La UE compra a China 371.600 millones de euros más de lo que le vende, y vende a EE. UU. 198.000 millones más de lo que le compra",
+               "en": "The EU buys 371.6 billion euros more from China than it sells to it, and sells 198 billion more to the US than it buys"},
+        subtitle={"es": "Saldo comercial de bienes de la UE con China y con EE. UU. (exportaciones de la UE menos importaciones), en miles de millones de euros",
+                  "en": "EU trade balance in goods with China and with the US (EU exports minus imports), in billions of euros"},
+        unit={"es": "miles de millones de euros", "en": "billions of euros"},
+        source=eurostat_source("ext_lt_maineu"),
+        notes={"es": ["Un saldo positivo significa que la UE vende a ese país más de lo que le compra.",
+                      "Euros corrientes, sin descontar la inflación. China no incluye Hong Kong. Comercio de bienes: no incluye servicios."],
+               "en": ["A positive balance means the EU sells that country more than it buys from it.",
+                      "Current euros, not adjusted for inflation. China excludes Hong Kong. Trade in goods: services are not included."]},
+        rows=sorted(out, key=lambda r: (r["geo"], r["time"])),
+        geos=geo.geo_table(r["geo"] for r in out),
+        extra={"ref_line": {"value": 0, "label": {"es": "Equilibrio", "en": "Balance"}}},
+    )
+
+
+BUILDERS = [cuota_mundial, saldo_comercial, saldo_bilateral]
