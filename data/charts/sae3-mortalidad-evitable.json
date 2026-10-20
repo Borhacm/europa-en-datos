@@ -1,0 +1,501 @@
+{
+ "id": "sae3-mortalidad-evitable",
+ "lens": "elige",
+ "theme": "sanidad",
+ "title": {
+  "es": "EE. UU. gasta más del doble, pero tiene más muertes por causas tratables que 16 de los 24 países de la UE con datos",
+  "en": "The US spends more than twice as much, but has more deaths from treatable causes than 16 of the 24 EU countries with data"
+ },
+ "subtitle": {
+  "es": "Muertes antes de los 75 años que se podrían haber evitado, por cada 100.000 habitantes, tasa estandarizada por edad, 2022",
+  "en": "Deaths before age 75 that could have been avoided, per 100,000 people, age-standardised rate, 2022"
+ },
+ "unit": {
+  "es": "muertes por 100.000 habitantes",
+  "en": "deaths per 100,000 people"
+ },
+ "source": {
+  "name": "OCDE, Health Status: mortalidad evitable",
+  "dataset": "DSD_HEALTH_STAT@DF_AM",
+  "url": "https://data-explorer.oecd.org/vis?df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_HEALTH_STAT%40DF_AM&df[ag]=OECD.ELS.HD",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Tratable: muertes que una atención sanitaria a tiempo y eficaz podría haber evitado (por ejemplo, algunos cánceres, infartos o infecciones). Prevenible: muertes que se podrían haber evitado con prevención y salud pública (por ejemplo, por tabaco, alcohol, accidentes o sobredosis).",
+   "Tasas estandarizadas con la población de referencia de la OCDE de 2010, para que la edad de cada población no altere la comparación. No hay datos de Chipre, Croacia ni Malta para este año."
+  ],
+  "en": [
+   "Treatable: deaths that timely and effective healthcare could have avoided (for example, some cancers, heart attacks or infections). Preventable: deaths that could have been avoided with prevention and public health (for example, from tobacco, alcohol, accidents or overdoses).",
+   "Rates standardised to the OECD 2010 reference population, so that each population's age does not distort the comparison. No data for Cyprus, Croatia or Malta for this year."
+  ]
+ },
+ "retrieved": "2026-10-20",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  },
+  "USA": {
+   "es": "Estados Unidos",
+   "en": "United States",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "dimensions": {
+  "measure": {
+   "TRTM": {
+    "es": "Tratable (con atención a tiempo)",
+    "en": "Treatable (with timely care)"
+   },
+   "PREVM": {
+    "es": "Prevenible (con prevención y salud pública)",
+    "en": "Preventable (with prevention and public health)"
+   }
+  }
+ },
+ "ref_year": "2022",
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2022",
+   "measure": "PREVM",
+   "value": 132
+  },
+  {
+   "geo": "BEL",
+   "time": "2022",
+   "measure": "PREVM",
+   "value": 124
+  },
+  {
+   "geo": "BGR",
+   "time": "2022",
+   "measure": "PREVM",
+   "value": 228
+  },
+  {
+   "geo": "CZE",
+   "time": "2022",
+   "measure": "PREVM",
+   "value": 159
+  },
+  {
+   "geo": "DEU",
+   "time": "2022",
+   "measure": "PREVM",
+   "value": 129
+  },
+  {
+   "geo": "DNK",
+   "time": "2022",
+   "measure": "PREVM",
+   "value": 120
+  },
+  {
+   "geo": "ESP",
+   "time": "2022",
+   "measure": "PREVM",
+   "value": 103
+  },
+  {
+   "geo": "EST",
+   "time": "2022",
+   "measure": "PREVM",
+   "value": 222
+  },
+  {
+   "geo": "FIN",
+   "time": "2022",
+   "measure": "PREVM",
+   "value": 134
+  },
+  {
+   "geo": "FRA",
+   "time": "2022",
+   "measure": "PREVM",
+   "value": 114
+  },
+  {
+   "geo": "GRC",
+   "time": "2022",
+   "measure": "PREVM",
+   "value": 141
+  },
+  {
+   "geo": "HUN",
+   "time": "2022",
+   "measure": "PREVM",
+   "value": 276
+  },
+  {
+   "geo": "IRL",
+   "time": "2022",
+   "measure": "PREVM",
+   "value": 109
+  },
+  {
+   "geo": "ITA",
+   "time": "2022",
+   "measure": "PREVM",
+   "value": 93
+  },
+  {
+   "geo": "LTU",
+   "time": "2022",
+   "measure": "PREVM",
+   "value": 258
+  },
+  {
+   "geo": "LUX",
+   "time": "2022",
+   "measure": "PREVM",
+   "value": 95
+  },
+  {
+   "geo": "LVA",
+   "time": "2022",
+   "measure": "PREVM",
+   "value": 285
+  },
+  {
+   "geo": "NLD",
+   "time": "2022",
+   "measure": "PREVM",
+   "value": 108
+  },
+  {
+   "geo": "POL",
+   "time": "2022",
+   "measure": "PREVM",
+   "value": 202
+  },
+  {
+   "geo": "PRT",
+   "time": "2022",
+   "measure": "PREVM",
+   "value": 117
+  },
+  {
+   "geo": "ROU",
+   "time": "2022",
+   "measure": "PREVM",
+   "value": 251
+  },
+  {
+   "geo": "SVK",
+   "time": "2022",
+   "measure": "PREVM",
+   "value": 199
+  },
+  {
+   "geo": "SVN",
+   "time": "2022",
+   "measure": "PREVM",
+   "value": 157
+  },
+  {
+   "geo": "SWE",
+   "time": "2022",
+   "measure": "PREVM",
+   "value": 90
+  },
+  {
+   "geo": "USA",
+   "time": "2022",
+   "measure": "PREVM",
+   "value": 217
+  },
+  {
+   "geo": "AUT",
+   "time": "2022",
+   "measure": "TRTM",
+   "value": 55
+  },
+  {
+   "geo": "BEL",
+   "time": "2022",
+   "measure": "TRTM",
+   "value": 50
+  },
+  {
+   "geo": "BGR",
+   "time": "2022",
+   "measure": "TRTM",
+   "value": 161
+  },
+  {
+   "geo": "CZE",
+   "time": "2022",
+   "measure": "TRTM",
+   "value": 91
+  },
+  {
+   "geo": "DEU",
+   "time": "2022",
+   "measure": "TRTM",
+   "value": 63
+  },
+  {
+   "geo": "DNK",
+   "time": "2022",
+   "measure": "TRTM",
+   "value": 55
+  },
+  {
+   "geo": "ESP",
+   "time": "2022",
+   "measure": "TRTM",
+   "value": 51
+  },
+  {
+   "geo": "EST",
+   "time": "2022",
+   "measure": "TRTM",
+   "value": 101
+  },
+  {
+   "geo": "FIN",
+   "time": "2022",
+   "measure": "TRTM",
+   "value": 57
+  },
+  {
+   "geo": "FRA",
+   "time": "2022",
+   "measure": "TRTM",
+   "value": 48
+  },
+  {
+   "geo": "GRC",
+   "time": "2022",
+   "measure": "TRTM",
+   "value": 72
+  },
+  {
+   "geo": "HUN",
+   "time": "2022",
+   "measure": "TRTM",
+   "value": 146
+  },
+  {
+   "geo": "IRL",
+   "time": "2022",
+   "measure": "TRTM",
+   "value": 57
+  },
+  {
+   "geo": "ITA",
+   "time": "2022",
+   "measure": "TRTM",
+   "value": 52
+  },
+  {
+   "geo": "LTU",
+   "time": "2022",
+   "measure": "TRTM",
+   "value": 151
+  },
+  {
+   "geo": "LUX",
+   "time": "2022",
+   "measure": "TRTM",
+   "value": 45
+  },
+  {
+   "geo": "LVA",
+   "time": "2022",
+   "measure": "TRTM",
+   "value": 164
+  },
+  {
+   "geo": "NLD",
+   "time": "2022",
+   "measure": "TRTM",
+   "value": 48
+  },
+  {
+   "geo": "POL",
+   "time": "2022",
+   "measure": "TRTM",
+   "value": 114
+  },
+  {
+   "geo": "PRT",
+   "time": "2022",
+   "measure": "TRTM",
+   "value": 63
+  },
+  {
+   "geo": "ROU",
+   "time": "2022",
+   "measure": "TRTM",
+   "value": 179
+  },
+  {
+   "geo": "SVK",
+   "time": "2022",
+   "measure": "TRTM",
+   "value": 142
+  },
+  {
+   "geo": "SVN",
+   "time": "2022",
+   "measure": "TRTM",
+   "value": 53
+  },
+  {
+   "geo": "SWE",
+   "time": "2022",
+   "measure": "TRTM",
+   "value": 48
+  },
+  {
+   "geo": "USA",
+   "time": "2022",
+   "measure": "TRTM",
+   "value": 95
+  }
+ ]
+}

@@ -15,6 +15,14 @@ const charts: Record<string, ChartConfig> = {
     domainMin: 0,
     digits: 0,
   },
+  "sag3-gasto-funciones": {
+    renderer: "dumbbell",
+    pair: { dim: "bloc", from: "EU27", to: "USA" },
+    extraGeos: ["HC1HC2", "HC5", "HC7", "HC3", "HC6"],
+    seriesColors: { HC1HC2: "--usa", HC5: "--usa", HC7: "--usa", HC3: "--usa", HC6: "--usa" },
+    digits: 0,
+    table: { rows: "geo", cols: "bloc" },
+  },
   "sae1-gasto-publico": {
     renderer: "line",
     series: ["USA", "CHN", "EU27"],
@@ -28,6 +36,14 @@ const charts: Record<string, ChartConfig> = {
     extraGeos: ["USA", "CHN"],
     usesFocus: true,
     table: { rows: "geo", cols: "time", lastCols: 6 },
+  },
+  "sae3-mortalidad-evitable": {
+    renderer: "rank",
+    controls: [{ dim: "measure", default: "TRTM" }],
+    extraGeos: ["USA"],
+    usesFocus: true,
+    digits: 0,
+    table: { rows: "geo", cols: "measure" },
   },
   "sad1-medicos": {
     renderer: "rank",

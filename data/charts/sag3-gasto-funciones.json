@@ -1,0 +1,150 @@
+{
+ "id": "sag3-gasto-funciones",
+ "lens": "gigantes",
+ "theme": "sanidad",
+ "title": {
+  "es": "Tres cuartas partes de lo que EE. UU. gasta de más se van en atención curativa; la administración y los medicamentos, una décima parte cada uno",
+  "en": "Three quarters of what the US spends extra goes on curative care; administration and medicines, a tenth each"
+ },
+ "subtitle": {
+  "es": "Gasto sanitario corriente por habitante según su destino, en dólares en paridad de poder adquisitivo, 2023",
+  "en": "Current health expenditure per person by function, in dollars at purchasing power parity, 2023"
+ },
+ "unit": {
+  "es": "dólares por habitante (PPA)",
+  "en": "dollars per person (PPP)"
+ },
+ "source": {
+  "name": "OCDE, System of Health Accounts",
+  "dataset": "DSD_SHA@DF_SHA",
+  "url": "https://data-explorer.oecd.org/vis?df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_SHA%40DF_SHA&df[ag]=OECD.ELS.HD",
+  "license": "CC BY 4.0",
+  "also": [
+   {
+    "name": "Banco Mundial, población total",
+    "dataset": "SP.POP.TOTL",
+    "url": "https://data.worldbank.org/indicator/SP.POP.TOTL",
+    "license": "CC BY 4.0"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "UE: media de los 27 ponderada por población (gasto de cada país por habitante multiplicado por su población, entre la población total).",
+   "Atención curativa: consultas, hospitales y rehabilitación, con los servicios auxiliares (análisis, pruebas de imagen, transporte de pacientes), porque EE. UU. no los separa. Medicamentos: también otros productos médicos. Administración: del sistema público y de las aseguradoras. Larga duración: cuidados sanitarios de larga duración.",
+   "Las cifras de la OCDE difieren algo de las de la OMS de G2, que se calculan con otro método."
+  ],
+  "en": [
+   "EU: population-weighted average of the 27 (each country's spending per person times its population, over the total population).",
+   "Curative care: consultations, hospitals and rehabilitation, with ancillary services (tests, imaging, patient transport), because the US does not report them separately. Medicines: also other medical goods. Administration: of the public system and of insurers. Long-term care: health-related long-term care.",
+   "OECD figures differ somewhat from the WHO figures in G2, which are computed with another method."
+  ]
+ },
+ "retrieved": "2026-10-20",
+ "geos": {
+  "HC1HC2": {
+   "es": "Atención curativa",
+   "en": "Curative care",
+   "eu": false,
+   "aggregate": false
+  },
+  "HC5": {
+   "es": "Medicamentos",
+   "en": "Medicines",
+   "eu": false,
+   "aggregate": false
+  },
+  "HC7": {
+   "es": "Administración",
+   "en": "Administration",
+   "eu": false,
+   "aggregate": false
+  },
+  "HC3": {
+   "es": "Larga duración",
+   "en": "Long-term care",
+   "eu": false,
+   "aggregate": false
+  },
+  "HC6": {
+   "es": "Prevención",
+   "en": "Prevention",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "dimensions": {
+  "bloc": {
+   "EU27": {
+    "es": "UE",
+    "en": "EU"
+   },
+   "USA": {
+    "es": "EE. UU.",
+    "en": "US"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "HC1HC2",
+   "time": "2023",
+   "bloc": "EU27",
+   "value": 3611
+  },
+  {
+   "geo": "HC1HC2",
+   "time": "2023",
+   "bloc": "USA",
+   "value": 9376
+  },
+  {
+   "geo": "HC5",
+   "time": "2023",
+   "bloc": "EU27",
+   "value": 1102
+  },
+  {
+   "geo": "HC5",
+   "time": "2023",
+   "bloc": "USA",
+   "value": 1895
+  },
+  {
+   "geo": "HC7",
+   "time": "2023",
+   "bloc": "EU27",
+   "value": 216
+  },
+  {
+   "geo": "HC7",
+   "time": "2023",
+   "bloc": "USA",
+   "value": 1102
+  },
+  {
+   "geo": "HC3",
+   "time": "2023",
+   "bloc": "EU27",
+   "value": 989
+  },
+  {
+   "geo": "HC3",
+   "time": "2023",
+   "bloc": "USA",
+   "value": 1065
+  },
+  {
+   "geo": "HC6",
+   "time": "2023",
+   "bloc": "EU27",
+   "value": 220
+  },
+  {
+   "geo": "HC6",
+   "time": "2023",
+   "bloc": "USA",
+   "value": 495
+  }
+ ]
+}
