@@ -26,7 +26,7 @@ Tema nuevo del calendario (`a05`, código FP). Se lleva aquí la nota N06 (deuda
 | Eurostat `gov_10a_taxag` | 3 | Descartada: no tiene EE. UU. ni China; la OCDE da los tres bloques con la misma clasificación |
 | OCDE Revenue Statistics `DF_RSOECD` | 3 | Descartada: no incluye China ni a los países de la UE que no son de la OCDE |
 | FMI Public Finances in Modern History (`ie`, `rev`, `exp`) | 2 | Descartada: sin agregado de la UE y con datos hasta 2024 sin desglose del saldo primario |
-| FMI WEO `GGXWDG_NGDP` (deuda) | — | Descartada: es el hallazgo de N06, que se enlaza |
+| FMI WEO `GGXWDG_NGDP` (deuda) | ninguna | Descartada: es el hallazgo de N06, que se enlaza |
 | Eurostat `gov_10a_main` (ingresos y gastos totales) | 3, 4 | Descartada: los totales salen ya en las notas de E1 y E2 |
 | OCDE SOCX (gasto social) | 4 | Descartada: ya la usa Libertades (E3), que se enlaza |
 
