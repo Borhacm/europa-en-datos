@@ -1,7 +1,7 @@
 {
  "id": "n06-deuda-paises",
  "lens": "gigantes",
- "theme": "productividad",
+ "theme": "finanzas",
  "title": {
   "es": "12 de los 27 países de la UE deben más del 60 % de su PIB, el valor de referencia del Tratado",
   "en": "12 of the 27 EU countries owe more than 60% of their GDP, the Treaty reference value"
@@ -36,7 +36,7 @@
    "The line marks 60% of GDP, the reference value for public debt set in Protocol No 12 of the Treaty on the Functioning of the EU."
   ]
  },
- "retrieved": "2026-10-13",
+ "retrieved": "2026-10-20",
  "geos": {
   "AUT": {
    "es": "Austria",

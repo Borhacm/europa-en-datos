@@ -27,7 +27,7 @@ def bloques():
             out.append({"geo": IMF_CODES[r["iso3"]], "time": r["time"], "value": round(r["value"], 1)})
     return chart(
         id="n06-deuda-bloques",
-        lens="gigantes", theme="productividad",
+        lens="gigantes", theme="finanzas",
         title={"es": "Desde 2001, la deuda pública de EE. UU. ha pasado del 53,5 % al 122,3 % de su PIB; la de la UE, del 65,6 % al 81,6 %",
                "en": "Since 2001, US public debt has risen from 53.5% to 122.3% of GDP; the EU's, from 65.6% to 81.6%"},
         subtitle={"es": "Deuda bruta de las administraciones públicas, en % del PIB, 2001-2024",
@@ -50,7 +50,7 @@ def paises():
     out = [r for r in from_eurostat(rows, []) if r["geo"] in geo.EU27 or r["geo"] == "EU27"]
     return chart(
         id="n06-deuda-paises",
-        lens="gigantes", theme="productividad",
+        lens="gigantes", theme="finanzas",
         title={"es": "12 de los 27 países de la UE deben más del 60 % de su PIB, el valor de referencia del Tratado",
                "en": "12 of the 27 EU countries owe more than 60% of their GDP, the Treaty reference value"},
         subtitle={"es": "Deuda bruta de las administraciones públicas, en % del PIB, 2025",

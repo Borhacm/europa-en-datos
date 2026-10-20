@@ -1,0 +1,206 @@
+{
+ "id": "fpe2-gasto-funciones",
+ "lens": "elige",
+ "theme": "finanzas",
+ "title": {
+  "es": "La UE gasta 9,3 puntos de PIB más que EE. UU.: solo en protección social, 11,8 más; EE. UU. dedica más a sanidad y defensa",
+  "en": "The EU spends 9.3 points of GDP more than the US: in social protection alone, 11.8 more; the US spends more on health and defence"
+ },
+ "subtitle": {
+  "es": "Gasto de las administraciones públicas por funciones, en % del PIB, 2024",
+  "en": "General government expenditure by function, as % of GDP, 2024"
+ },
+ "unit": {
+  "es": "% del PIB",
+  "en": "% of GDP"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "gov_10a_exp",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table",
+  "license": "CC BY 4.0",
+  "also": [
+   {
+    "name": "OCDE, Government at a Glance: gasto público por funciones",
+    "dataset": "DSD_GOV_COFOG@DF_GOV_COFOG_YU",
+    "url": "https://data-explorer.oecd.org/vis?df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_GOV_COFOG%40DF_GOV_COFOG_YU&df[ag]=OECD.GOV.GIP",
+    "license": "CC BY 4.0"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "En total, las administraciones de la UE gastan el 48,9 % del PIB y las de EE. UU., el 39,6 %.",
+   "Clasificación de las funciones de las administraciones públicas de Naciones Unidas (COFOG). UE: Eurostat; EE. UU.: OCDE, con los mismos códigos.",
+   "Protección social incluye pensiones, desempleo, familia, invalidez y vivienda social. En la UE, solo la vejez supone el 10,7 % del PIB; la OCDE no publica ese desglose para EE. UU.",
+   "En EE. UU., la sanidad pública incluye Medicare y Medicaid. Otros: medio ambiente, vivienda y servicios comunitarios, y cultura y deporte."
+  ],
+  "en": [
+   "In total, EU governments spend 48.9% of GDP and US governments 39.6%.",
+   "United Nations Classification of the Functions of Government (COFOG). EU: Eurostat; US: OECD, with the same codes.",
+   "Social protection includes pensions, unemployment, family, disability and social housing. In the EU, old age alone accounts for 10.7% of GDP; the OECD does not publish that breakdown for the US.",
+   "In the US, public health spending includes Medicare and Medicaid. Other: environment, housing and community amenities, and recreation and culture."
+  ]
+ },
+ "retrieved": "2026-10-20",
+ "geos": {
+  "GF10": {
+   "es": "Protección social",
+   "en": "Social protection",
+   "eu": false,
+   "aggregate": false
+  },
+  "GF07": {
+   "es": "Sanidad",
+   "en": "Health",
+   "eu": false,
+   "aggregate": false
+  },
+  "GF01": {
+   "es": "Servicios generales",
+   "en": "General services",
+   "eu": false,
+   "aggregate": false
+  },
+  "GF09": {
+   "es": "Educación",
+   "en": "Education",
+   "eu": false,
+   "aggregate": false
+  },
+  "GF04": {
+   "es": "Asuntos económicos",
+   "en": "Economic affairs",
+   "eu": false,
+   "aggregate": false
+  },
+  "GF02": {
+   "es": "Defensa",
+   "en": "Defence",
+   "eu": false,
+   "aggregate": false
+  },
+  "GF03": {
+   "es": "Orden público",
+   "en": "Public order",
+   "eu": false,
+   "aggregate": false
+  },
+  "GF_OTH": {
+   "es": "Otros",
+   "en": "Other",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "dimensions": {
+  "bloc": {
+   "EU27": {
+    "es": "UE",
+    "en": "EU"
+   },
+   "USA": {
+    "es": "EE. UU.",
+    "en": "US"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "GF10",
+   "time": "2024",
+   "bloc": "EU27",
+   "value": 19.6
+  },
+  {
+   "geo": "GF10",
+   "time": "2024",
+   "bloc": "USA",
+   "value": 7.8
+  },
+  {
+   "geo": "GF07",
+   "time": "2024",
+   "bloc": "EU27",
+   "value": 7.3
+  },
+  {
+   "geo": "GF07",
+   "time": "2024",
+   "bloc": "USA",
+   "value": 10.3
+  },
+  {
+   "geo": "GF01",
+   "time": "2024",
+   "bloc": "EU27",
+   "value": 6.1
+  },
+  {
+   "geo": "GF01",
+   "time": "2024",
+   "bloc": "USA",
+   "value": 6.9
+  },
+  {
+   "geo": "GF09",
+   "time": "2024",
+   "bloc": "EU27",
+   "value": 4.7
+  },
+  {
+   "geo": "GF09",
+   "time": "2024",
+   "bloc": "USA",
+   "value": 5.6
+  },
+  {
+   "geo": "GF04",
+   "time": "2024",
+   "bloc": "EU27",
+   "value": 5.3
+  },
+  {
+   "geo": "GF04",
+   "time": "2024",
+   "bloc": "USA",
+   "value": 3.3
+  },
+  {
+   "geo": "GF02",
+   "time": "2024",
+   "bloc": "EU27",
+   "value": 1.5
+  },
+  {
+   "geo": "GF02",
+   "time": "2024",
+   "bloc": "USA",
+   "value": 3.1
+  },
+  {
+   "geo": "GF03",
+   "time": "2024",
+   "bloc": "EU27",
+   "value": 1.7
+  },
+  {
+   "geo": "GF03",
+   "time": "2024",
+   "bloc": "USA",
+   "value": 1.8
+  },
+  {
+   "geo": "GF_OTH",
+   "time": "2024",
+   "bloc": "EU27",
+   "value": 2.7
+  },
+  {
+   "geo": "GF_OTH",
+   "time": "2024",
+   "bloc": "USA",
+   "value": 0.8
+  }
+ ]
+}

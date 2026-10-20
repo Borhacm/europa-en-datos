@@ -1,0 +1,363 @@
+{
+ "id": "fpd1-deficit-paises",
+ "lens": "dentro",
+ "theme": "finanzas",
+ "title": {
+  "es": "10 de los 27 países de la UE superaron en 2025 un déficit del 3 % de su PIB; 5 tuvieron superávit",
+  "en": "10 of the 27 EU countries ran a deficit above 3% of GDP in 2025; 5 ran a surplus"
+ },
+ "subtitle": {
+  "es": "Saldo de las administraciones públicas, en % del PIB, 2025",
+  "en": "General government balance, as % of GDP, 2025"
+ },
+ "unit": {
+  "es": "% del PIB",
+  "en": "% of GDP"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "gov_10dd_edpt1",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1/default/table",
+  "license": "CC BY 4.0",
+  "also": [
+   {
+    "name": "Reglamento (UE) 2024/1263, sobre la coordinación eficaz de las políticas económicas y la supervisión presupuestaria multilateral",
+    "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32024R1263"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Datos de la notificación del procedimiento de déficit excesivo (abril de 2026), con la definición del Tratado.",
+   "Un valor negativo es déficit. La línea marca el -3 % del PIB, el valor de referencia del Tratado para el déficit."
+  ],
+  "en": [
+   "Excessive deficit procedure notification data (April 2026), using the Treaty definition.",
+   "A negative value is a deficit. The line marks -3% of GDP, the Treaty reference value for the deficit."
+  ]
+ },
+ "retrieved": "2026-10-20",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "targets": [
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": -3,
+   "label": {
+    "es": "Valor de referencia del Tratado",
+    "en": "Treaty reference value"
+   }
+  }
+ ],
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": -4.2
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": -5.2
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": -3.5
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 3.4
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": -2.1
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": -2.7
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 2.9
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": -2.4
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": -2.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": -3.1
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": -3.4
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": -5.1
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 1.7
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": -3.0
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": -4.7
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 1.8
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": -3.1
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": -1.8
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": -2.0
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": -2.5
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": -2.2
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": -1.6
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": -7.3
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 0.7
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": -7.9
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": -4.5
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": -2.5
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": -1.3
+  }
+ ]
+}
