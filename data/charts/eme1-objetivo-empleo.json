@@ -1,0 +1,363 @@
+{
+ "id": "eme1-objetivo-empleo",
+ "lens": "elige",
+ "theme": "empleo",
+ "title": {
+  "es": "16 de los 27 países ya emplean al menos al 78 % de su población de 20 a 64 años, el objetivo de la UE para 2030; Italia, al 67,6 %",
+  "en": "16 of the 27 countries already employ at least 78% of their population aged 20-64, the EU's 2030 target; Italy, 67.6%"
+ },
+ "subtitle": {
+  "es": "Tasa de empleo de 20 a 64 años, en % de la población de esa edad, 2025. UE: 76,1 %",
+  "en": "Employment rate aged 20-64, as % of the population of that age, 2025. EU: 76.1%"
+ },
+ "unit": {
+  "es": "% de la población de 20 a 64 años",
+  "en": "% of the population aged 20-64"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "lfsi_emp_a",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/lfsi_emp_a/default/table",
+  "license": "CC BY 4.0",
+  "also": [
+   {
+    "name": "Comisión Europea: Plan de Acción del Pilar Europeo de Derechos Sociales (objetivos para 2030)",
+    "url": "https://ec.europa.eu/social/main.jsp?catId=1607&langId=es"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "La línea marca el objetivo del 78 % para el conjunto de la UE. Cada país fijó además su propio objetivo nacional, más alto o más bajo según su punto de partida.",
+   "Encuesta de Población Activa. Ocupado es quien trabajó al menos una hora la semana de referencia, por cuenta propia o ajena."
+  ],
+  "en": [
+   "The line marks the 78% target for the EU as a whole. Each country also set its own national target, higher or lower depending on where it started.",
+   "Labour Force Survey. Employed means having worked at least one hour in the reference week, as an employee or self-employed."
+  ]
+ },
+ "retrieved": "2026-10-25",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "targets": [
+  {
+   "value": 78,
+   "label": {
+    "es": "Objetivo 2030: 78 %",
+    "en": "2030 target: 78%"
+   }
+  }
+ ],
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 77.6
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 72.8
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 77.0
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 81.3
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 82.9
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 81.1
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 79.8
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 72.4,
+   "flag": "d"
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 81.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 76.1
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 76.3
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 75.4,
+   "flag": "d"
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 71.0
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 74.4
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 81.1
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 80.2
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 67.6
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 80.0
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 73.9
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 78.2
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 83.6
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 83.4
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 78.8
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 79.6
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 69.0
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 78.1
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 78.3
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 81.8
+  }
+ ]
+}

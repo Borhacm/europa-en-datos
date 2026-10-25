@@ -1,0 +1,1092 @@
+{
+ "id": "eme2-motivos-temporales",
+ "lens": "elige",
+ "theme": "empleo",
+ "title": {
+  "es": "La mitad de los temporales de la UE lo son porque no encontraron un empleo fijo o porque el puesto solo se ofrecía así; en Alemania, el 40 % se está formando",
+  "en": "Half of the EU's temporary employees are temporary because they could not find a permanent job or the job was only offered that way; in Germany, 40% are in training"
+ },
+ "subtitle": {
+  "es": "Motivo principal de tener un contrato temporal, en % de los asalariados temporales de 15 a 64 años, 2025",
+  "en": "Main reason for having a temporary contract, as % of temporary employees aged 15-64, 2025"
+ },
+ "unit": {
+  "es": "% de los asalariados temporales",
+  "en": "% of temporary employees"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "lfsa_etgar",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/lfsa_etgar/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "En la UE, el 12,7 % de los asalariados de 15 a 64 años tiene un contrato temporal; en España, el 15,1 %, y en los Países Bajos, el 25,8 %.",
+   "Lo responde el propio trabajador en la Encuesta de Población Activa. Los porcentajes no suman 100 porque faltan quienes no contestan.",
+   "«Está estudiando o formándose» incluye los contratos de aprendizaje y de prácticas."
+  ],
+  "en": [
+   "In the EU, 12.7% of employees aged 15-64 are on a temporary contract; in Spain 15.1%, and in the Netherlands 25.8%.",
+   "The answer is given by the worker in the Labour Force Survey. The percentages do not add up to 100 because non-responses are left out.",
+   "«In education or training» includes apprenticeship and traineeship contracts."
+  ]
+ },
+ "retrieved": "2026-10-25",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "dimensions": {
+  "reason": {
+   "NF_PJOB": {
+    "es": "No encontró un empleo fijo",
+    "en": "Could not find a permanent job"
+   },
+   "JOB_TCTR": {
+    "es": "Solo había contrato temporal",
+    "en": "Only a temporary contract"
+   },
+   "EDUC_TNG": {
+    "es": "Está estudiando o formándose",
+    "en": "In education or training"
+   },
+   "PROB": {
+    "es": "Periodo de prueba",
+    "en": "Probation period"
+   },
+   "NW_PJOB": {
+    "es": "No quiere un empleo fijo",
+    "en": "Does not want a permanent job"
+   },
+   "OTH": {
+    "es": "Otro motivo",
+    "en": "Other reason"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 42.3,
+   "reason": "EDUC_TNG"
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 30.8,
+   "reason": "JOB_TCTR"
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 3.4,
+   "reason": "NF_PJOB",
+   "flag": "u"
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 12.0,
+   "reason": "OTH"
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 10.0,
+   "reason": "PROB"
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 2.0,
+   "reason": "EDUC_TNG"
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 21.7,
+   "reason": "JOB_TCTR"
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 18.5,
+   "reason": "NF_PJOB"
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 28.3,
+   "reason": "NW_PJOB"
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 7.5,
+   "reason": "OTH"
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 22.1,
+   "reason": "PROB"
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 22.8,
+   "reason": "JOB_TCTR",
+   "flag": "u"
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 37.5,
+   "reason": "NF_PJOB"
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 10.6,
+   "reason": "OTH",
+   "flag": "u"
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 18.7,
+   "reason": "PROB",
+   "flag": "u"
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 1.5,
+   "reason": "EDUC_TNG",
+   "flag": "u"
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 4.6,
+   "reason": "JOB_TCTR"
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 89.8,
+   "reason": "NF_PJOB"
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 3.0,
+   "reason": "NW_PJOB"
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 1.1,
+   "reason": "PROB",
+   "flag": "u"
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 1.8,
+   "reason": "EDUC_TNG",
+   "flag": "u"
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 34.0,
+   "reason": "JOB_TCTR"
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 20.8,
+   "reason": "NF_PJOB"
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 7.8,
+   "reason": "NW_PJOB"
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 11.9,
+   "reason": "OTH"
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 22.7,
+   "reason": "PROB"
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 39.9,
+   "reason": "EDUC_TNG"
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 21.6,
+   "reason": "JOB_TCTR"
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 5.5,
+   "reason": "NF_PJOB"
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 2.3,
+   "reason": "NW_PJOB"
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 21.1,
+   "reason": "OTH"
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 9.7,
+   "reason": "PROB"
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 32.4,
+   "reason": "EDUC_TNG"
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 11.0,
+   "reason": "JOB_TCTR"
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 13.6,
+   "reason": "NF_PJOB"
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 20.1,
+   "reason": "NW_PJOB"
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 20.1,
+   "reason": "OTH"
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 2.9,
+   "reason": "PROB"
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 7.2,
+   "reason": "EDUC_TNG",
+   "flag": "d"
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 18.8,
+   "reason": "JOB_TCTR",
+   "flag": "d"
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 57.6,
+   "reason": "NF_PJOB",
+   "flag": "d"
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 3.4,
+   "reason": "NW_PJOB",
+   "flag": "d"
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 10.7,
+   "reason": "OTH",
+   "flag": "d"
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 1.6,
+   "reason": "PROB",
+   "flag": "d"
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 14.7,
+   "reason": "JOB_TCTR",
+   "flag": "u"
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 14.1,
+   "reason": "OTH",
+   "flag": "u"
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 43.9,
+   "reason": "PROB"
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 16.7,
+   "reason": "EDUC_TNG"
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 23.3,
+   "reason": "JOB_TCTR"
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 26.6,
+   "reason": "NF_PJOB"
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 9.8,
+   "reason": "NW_PJOB"
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 8.7,
+   "reason": "OTH"
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 12.7,
+   "reason": "PROB"
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 7.0,
+   "reason": "EDUC_TNG"
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 52.3,
+   "reason": "JOB_TCTR"
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 16.8,
+   "reason": "NF_PJOB"
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 9.9,
+   "reason": "NW_PJOB"
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 12.9,
+   "reason": "OTH"
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 24.7,
+   "reason": "EDUC_TNG",
+   "flag": "d"
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 24.2,
+   "reason": "JOB_TCTR",
+   "flag": "d"
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 23.9,
+   "reason": "NF_PJOB",
+   "flag": "d"
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 16.8,
+   "reason": "NW_PJOB",
+   "flag": "d"
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 5.9,
+   "reason": "OTH",
+   "flag": "d"
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 3.4,
+   "reason": "EDUC_TNG"
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 40.4,
+   "reason": "JOB_TCTR"
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 40.4,
+   "reason": "NF_PJOB"
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 7.7,
+   "reason": "NW_PJOB"
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 5.4,
+   "reason": "OTH"
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 1.6,
+   "reason": "PROB",
+   "flag": "u"
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 5.7,
+   "reason": "EDUC_TNG",
+   "flag": "u"
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 13.0,
+   "reason": "JOB_TCTR"
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 46.6,
+   "reason": "NF_PJOB"
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 6.8,
+   "reason": "NW_PJOB",
+   "flag": "u"
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 14.0,
+   "reason": "OTH"
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 13.9,
+   "reason": "PROB"
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 2.2,
+   "reason": "EDUC_TNG",
+   "flag": "u"
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 14.6,
+   "reason": "JOB_TCTR"
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 24.3,
+   "reason": "NF_PJOB"
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 5.1,
+   "reason": "NW_PJOB"
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 40.5,
+   "reason": "OTH"
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 13.3,
+   "reason": "PROB"
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 11.9,
+   "reason": "EDUC_TNG"
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 28.2,
+   "reason": "JOB_TCTR"
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 24.5,
+   "reason": "NF_PJOB"
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 20.6,
+   "reason": "NW_PJOB"
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 13.6,
+   "reason": "PROB"
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 6.5,
+   "reason": "EDUC_TNG"
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 27.7,
+   "reason": "JOB_TCTR"
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 55.2,
+   "reason": "NF_PJOB"
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 3.0,
+   "reason": "NW_PJOB"
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 7.1,
+   "reason": "PROB"
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 28.5,
+   "reason": "JOB_TCTR"
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 16.6,
+   "reason": "NF_PJOB",
+   "flag": "u"
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 25.2,
+   "reason": "OTH"
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 27.0,
+   "reason": "PROB"
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 35.6,
+   "reason": "JOB_TCTR"
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 19.2,
+   "reason": "NF_PJOB",
+   "flag": "u"
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 20.5,
+   "reason": "OTH",
+   "flag": "u"
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 46.9,
+   "reason": "JOB_TCTR"
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 5.4,
+   "reason": "EDUC_TNG",
+   "flag": "u"
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 58.1,
+   "reason": "JOB_TCTR"
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 15.5,
+   "reason": "NF_PJOB"
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 6.7,
+   "reason": "NW_PJOB",
+   "flag": "u"
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 14.2,
+   "reason": "PROB"
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 7.2,
+   "reason": "EDUC_TNG"
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 2.1,
+   "reason": "JOB_TCTR"
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 11.8,
+   "reason": "NF_PJOB"
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 6.6,
+   "reason": "NW_PJOB"
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 58.1,
+   "reason": "PROB"
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 6.1,
+   "reason": "EDUC_TNG"
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 27.8,
+   "reason": "JOB_TCTR"
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 19.0,
+   "reason": "NF_PJOB"
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 22.4,
+   "reason": "NW_PJOB"
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 24.7,
+   "reason": "PROB"
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 4.2,
+   "reason": "EDUC_TNG"
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 43.9,
+   "reason": "JOB_TCTR"
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 29.8,
+   "reason": "NF_PJOB"
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 4.8,
+   "reason": "NW_PJOB"
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 9.3,
+   "reason": "OTH"
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 8.0,
+   "reason": "PROB"
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 10.9,
+   "reason": "JOB_TCTR"
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 58.4,
+   "reason": "NF_PJOB"
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 20.7,
+   "reason": "NW_PJOB"
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 5.7,
+   "reason": "OTH",
+   "flag": "u"
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 5.5,
+   "reason": "JOB_TCTR",
+   "flag": "u"
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 38.4,
+   "reason": "NF_PJOB"
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 28.6,
+   "reason": "NW_PJOB"
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 9.2,
+   "reason": "OTH"
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 14.9,
+   "reason": "PROB"
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 3.5,
+   "reason": "EDUC_TNG",
+   "flag": "u"
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 13.8,
+   "reason": "JOB_TCTR",
+   "flag": "u"
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 12.0,
+   "reason": "NF_PJOB",
+   "flag": "u"
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 46.3,
+   "reason": "OTH"
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 23.1,
+   "reason": "PROB"
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 49.5,
+   "reason": "JOB_TCTR"
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 17.4,
+   "reason": "NF_PJOB"
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 32.7,
+   "reason": "NW_PJOB"
+  }
+ ]
+}

@@ -1,0 +1,486 @@
+{
+ "id": "emd2-edad-emancipacion",
+ "lens": "dentro",
+ "theme": "empleo",
+ "title": {
+  "es": "Los jóvenes se van de casa de sus padres a los 31,5 años en Croacia y a los 21,3 en Finlandia; en la UE, a los 26,3, casi igual que en 2015",
+  "en": "Young people leave their parents' home at 31.5 in Croatia and at 21.3 in Finland; in the EU, at 26.3, almost the same as in 2015"
+ },
+ "subtitle": {
+  "es": "Edad media a la que los jóvenes dejan el hogar de sus padres, en años, 2015 y 2025",
+  "en": "Average age at which young people leave the parental home, in years, 2015 and 2025"
+ },
+ "unit": {
+  "es": "años",
+  "en": "years"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "yth_demo_030",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/yth_demo_030/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Entre 2015 y 2025, la edad ha subido en 11 de los 27 países. En la UE pasó de 26,4 a 26,3 años.",
+   "Estimación de Eurostat a partir de la Encuesta de Condiciones de Vida (EU-SILC): la edad a la que la mitad de los jóvenes ya no vive con sus padres. En 2021 hay una ruptura de serie."
+  ],
+  "en": [
+   "Between 2015 and 2025, the age rose in 11 of the 27 countries. In the EU it went from 26.4 to 26.3 years.",
+   "Eurostat estimate based on the Survey on Income and Living Conditions (EU-SILC): the age at which half of young people no longer live with their parents. There is a break in the series in 2021."
+  ]
+ },
+ "retrieved": "2026-10-25",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2015",
+   "value": 25.5
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 25.2
+  },
+  {
+   "geo": "BEL",
+   "time": "2015",
+   "value": 25.0
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 26.2
+  },
+  {
+   "geo": "BGR",
+   "time": "2015",
+   "value": 28.7
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 27.9
+  },
+  {
+   "geo": "CYP",
+   "time": "2015",
+   "value": 28.4
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 27.0
+  },
+  {
+   "geo": "CZE",
+   "time": "2015",
+   "value": 26.5
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 25.8
+  },
+  {
+   "geo": "DEU",
+   "time": "2015",
+   "value": 23.8
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 24.1
+  },
+  {
+   "geo": "DNK",
+   "time": "2015",
+   "value": 21.1
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 21.8
+  },
+  {
+   "geo": "ESP",
+   "time": "2015",
+   "value": 29.0
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 30.2
+  },
+  {
+   "geo": "EST",
+   "time": "2015",
+   "value": 23.9
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 22.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2015",
+   "value": 26.4
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 26.3
+  },
+  {
+   "geo": "FIN",
+   "time": "2015",
+   "value": 21.9
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 21.3
+  },
+  {
+   "geo": "FRA",
+   "time": "2015",
+   "value": 23.9
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 23.8
+  },
+  {
+   "geo": "GRC",
+   "time": "2015",
+   "value": 29.4
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 30.9
+  },
+  {
+   "geo": "HRV",
+   "time": "2015",
+   "value": 31.3
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 31.5
+  },
+  {
+   "geo": "HUN",
+   "time": "2015",
+   "value": 27.5
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 27.3
+  },
+  {
+   "geo": "IRL",
+   "time": "2015",
+   "value": 26.4
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 26.9
+  },
+  {
+   "geo": "ITA",
+   "time": "2015",
+   "value": 30.1
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 30.2
+  },
+  {
+   "geo": "LTU",
+   "time": "2015",
+   "value": 25.6
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 22.7
+  },
+  {
+   "geo": "LUX",
+   "time": "2015",
+   "value": 26.1
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 26.6
+  },
+  {
+   "geo": "LVA",
+   "time": "2015",
+   "value": 27.5
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 25.7
+  },
+  {
+   "geo": "MLT",
+   "time": "2015",
+   "value": 30.5
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 27.5
+  },
+  {
+   "geo": "NLD",
+   "time": "2015",
+   "value": 23.7
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 23.4
+  },
+  {
+   "geo": "POL",
+   "time": "2015",
+   "value": 28.3
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 26.8
+  },
+  {
+   "geo": "PRT",
+   "time": "2015",
+   "value": 28.9
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 28.8
+  },
+  {
+   "geo": "ROU",
+   "time": "2015",
+   "value": 27.9
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 27.4
+  },
+  {
+   "geo": "SVK",
+   "time": "2015",
+   "value": 30.9
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 30.9
+  },
+  {
+   "geo": "SVN",
+   "time": "2015",
+   "value": 28.2
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 28.8
+  },
+  {
+   "geo": "SWE",
+   "time": "2015",
+   "value": 19.7
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 23.1
+  }
+ ]
+}
