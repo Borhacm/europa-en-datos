@@ -1,0 +1,116 @@
+{
+ "id": "emg2-empleo-edades",
+ "lens": "gigantes",
+ "theme": "empleo",
+ "title": {
+  "es": "Entre los 25 y los 54 años trabaja en la UE más gente que en EE. UU.; entre los jóvenes, 16 puntos menos",
+  "en": "Between the ages of 25 and 54, more people work in the EU than in the US; among the young, 16 points fewer"
+ },
+ "subtitle": {
+  "es": "Tasa de empleo por edad, en % de la población de cada grupo, 2024",
+  "en": "Employment rate by age, as % of the population in each group, 2024"
+ },
+ "unit": {
+  "es": "% de la población de cada edad",
+  "en": "% of the population of each age"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "lfsi_emp_a",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/lfsi_emp_a/default/table",
+  "license": "CC BY 4.0",
+  "also": [
+   {
+    "name": "OIT, ILOSTAT (encuesta de población de EE. UU., CPS)",
+    "dataset": "DF_EMP_DWAP_SEX_AGE_RT",
+    "url": "https://ilostat.ilo.org/data/",
+    "license": "CC BY 4.0"
+   }
+  ]
+ },
+ "notes": {
+  "es": [
+   "Tasa de empleo: ocupados de cada edad entre toda la población de esa edad, trabajen o no.",
+   "UE: Encuesta de Población Activa de Eurostat. EE. UU.: encuesta de población (Current Population Survey) publicada por la OIT, que en el grupo más joven empieza a los 16 años.",
+   "China no publica la tasa de empleo por edades con la misma periodicidad, por eso no aparece.",
+   "En los dos bloques, un joven que estudia y trabaja a la vez cuenta como ocupado."
+  ],
+  "en": [
+   "Employment rate: people in work at each age as a share of the whole population of that age, whether they work or not.",
+   "EU: Eurostat Labour Force Survey. US: Current Population Survey published by the ILO, whose youngest group starts at 16.",
+   "China does not publish employment rates by age on the same basis, so it is not shown.",
+   "In both blocs, a young person who studies and works at the same time counts as employed."
+  ]
+ },
+ "retrieved": "2026-10-25",
+ "geos": {
+  "Y15-24": {
+   "es": "De 15 a 24 años",
+   "en": "Aged 15-24",
+   "eu": false,
+   "aggregate": false
+  },
+  "Y25-54": {
+   "es": "De 25 a 54 años",
+   "en": "Aged 25-54",
+   "eu": false,
+   "aggregate": false
+  },
+  "Y55-64": {
+   "es": "De 55 a 64 años",
+   "en": "Aged 55-64",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "dimensions": {
+  "bloc": {
+   "EU27": {
+    "es": "UE",
+    "en": "EU"
+   },
+   "USA": {
+    "es": "EE. UU.",
+    "en": "US"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "Y15-24",
+   "time": "2024",
+   "bloc": "EU27",
+   "value": 34.9
+  },
+  {
+   "geo": "Y15-24",
+   "time": "2024",
+   "bloc": "USA",
+   "value": 50.9
+  },
+  {
+   "geo": "Y25-54",
+   "time": "2024",
+   "bloc": "EU27",
+   "value": 82.4
+  },
+  {
+   "geo": "Y25-54",
+   "time": "2024",
+   "bloc": "USA",
+   "value": 80.7
+  },
+  {
+   "geo": "Y55-64",
+   "time": "2024",
+   "bloc": "EU27",
+   "value": 65.2
+  },
+  {
+   "geo": "Y55-64",
+   "time": "2024",
+   "bloc": "USA",
+   "value": 64.1
+  }
+ ]
+}

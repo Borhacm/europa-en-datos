@@ -1,0 +1,437 @@
+{
+ "id": "emg1-paro-juvenil",
+ "lens": "gigantes",
+ "theme": "empleo",
+ "title": {
+  "es": "El paro de los jóvenes es del 14,9 % en la UE y del 8,9 % en EE. UU.; en China, que partía del 6,8 %, ya es igual que en la UE",
+  "en": "Youth unemployment is 14.9% in the EU and 8.9% in the US; in China, which started from 6.8%, it is now level with the EU"
+ },
+ "subtitle": {
+  "es": "Tasa de paro de los jóvenes de 15 a 24 años, en % de los activos de esa edad, 2000-2024",
+  "en": "Unemployment rate of young people aged 15 to 24, as % of the labour force of that age, 2000-2024"
+ },
+ "unit": {
+  "es": "% de los activos de 15 a 24 años",
+  "en": "% of the labour force aged 15-24"
+ },
+ "source": {
+  "name": "OIT, ILOSTAT (estimaciones modelizadas)",
+  "dataset": "DF_UNE_2EAP_SEX_AGE_RT",
+  "url": "https://ilostat.ilo.org/data/",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Estimaciones modelizadas de la Organización Internacional del Trabajo, que armonizan las encuestas de empleo de cada país para poder compararlas.",
+   "En la UE, el máximo de la serie fue en 2013 (24,3 %).",
+   "Los parados son quienes buscan empleo y están disponibles para trabajar: los jóvenes que solo estudian no cuentan como activos.",
+   "Las cifras de la OIT para la UE no coinciden exactamente con las de Eurostat del gráfico D1, que son de otro año y de otra fuente.",
+   "La OIT publica proyecciones para años posteriores a 2024; aquí no se muestran."
+  ],
+  "en": [
+   "Modelled estimates by the International Labour Organization, which harmonise each country's labour surveys so they can be compared.",
+   "In the EU, the series peaked in 2013 (24.3%).",
+   "The unemployed are those looking for work and available to start: young people who only study do not count as part of the labour force.",
+   "The ILO figures for the EU do not exactly match Eurostat's in chart D1, which are for another year and from another source.",
+   "The ILO publishes projections beyond 2024; they are not shown here."
+  ]
+ },
+ "retrieved": "2026-10-25",
+ "geos": {
+  "CHN": {
+   "es": "China",
+   "en": "China",
+   "eu": false,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "USA": {
+   "es": "Estados Unidos",
+   "en": "United States",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "CHN",
+   "time": "2000",
+   "value": 6.8
+  },
+  {
+   "geo": "CHN",
+   "time": "2001",
+   "value": 8.0
+  },
+  {
+   "geo": "CHN",
+   "time": "2002",
+   "value": 8.9
+  },
+  {
+   "geo": "CHN",
+   "time": "2003",
+   "value": 9.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2004",
+   "value": 9.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2005",
+   "value": 9.5
+  },
+  {
+   "geo": "CHN",
+   "time": "2006",
+   "value": 9.3
+  },
+  {
+   "geo": "CHN",
+   "time": "2007",
+   "value": 9.2
+  },
+  {
+   "geo": "CHN",
+   "time": "2008",
+   "value": 9.8
+  },
+  {
+   "geo": "CHN",
+   "time": "2009",
+   "value": 10.2
+  },
+  {
+   "geo": "CHN",
+   "time": "2010",
+   "value": 9.8
+  },
+  {
+   "geo": "CHN",
+   "time": "2011",
+   "value": 10.0
+  },
+  {
+   "geo": "CHN",
+   "time": "2012",
+   "value": 10.2
+  },
+  {
+   "geo": "CHN",
+   "time": "2013",
+   "value": 10.3
+  },
+  {
+   "geo": "CHN",
+   "time": "2014",
+   "value": 10.5
+  },
+  {
+   "geo": "CHN",
+   "time": "2015",
+   "value": 10.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2016",
+   "value": 10.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2017",
+   "value": 10.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2018",
+   "value": 9.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2019",
+   "value": 10.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2020",
+   "value": 12.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2021",
+   "value": 12.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2022",
+   "value": 14.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2023",
+   "value": 15.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2024",
+   "value": 15.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2000",
+   "value": 19.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2001",
+   "value": 18.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2002",
+   "value": 19.3
+  },
+  {
+   "geo": "EU27",
+   "time": "2003",
+   "value": 19.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2004",
+   "value": 20.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2005",
+   "value": 20.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2006",
+   "value": 18.4
+  },
+  {
+   "geo": "EU27",
+   "time": "2007",
+   "value": 16.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2008",
+   "value": 16.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2009",
+   "value": 20.4
+  },
+  {
+   "geo": "EU27",
+   "time": "2010",
+   "value": 21.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2011",
+   "value": 21.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2012",
+   "value": 23.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2013",
+   "value": 24.3
+  },
+  {
+   "geo": "EU27",
+   "time": "2014",
+   "value": 23.3
+  },
+  {
+   "geo": "EU27",
+   "time": "2015",
+   "value": 21.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2016",
+   "value": 19.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2017",
+   "value": 17.8
+  },
+  {
+   "geo": "EU27",
+   "time": "2018",
+   "value": 16.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2019",
+   "value": 15.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2020",
+   "value": 16.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "value": 16.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2022",
+   "value": 14.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2023",
+   "value": 14.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "value": 14.9
+  },
+  {
+   "geo": "USA",
+   "time": "2000",
+   "value": 9.3
+  },
+  {
+   "geo": "USA",
+   "time": "2001",
+   "value": 10.5
+  },
+  {
+   "geo": "USA",
+   "time": "2002",
+   "value": 11.9
+  },
+  {
+   "geo": "USA",
+   "time": "2003",
+   "value": 12.4
+  },
+  {
+   "geo": "USA",
+   "time": "2004",
+   "value": 11.8
+  },
+  {
+   "geo": "USA",
+   "time": "2005",
+   "value": 11.2
+  },
+  {
+   "geo": "USA",
+   "time": "2006",
+   "value": 10.4
+  },
+  {
+   "geo": "USA",
+   "time": "2007",
+   "value": 10.5
+  },
+  {
+   "geo": "USA",
+   "time": "2008",
+   "value": 12.8
+  },
+  {
+   "geo": "USA",
+   "time": "2009",
+   "value": 17.5
+  },
+  {
+   "geo": "USA",
+   "time": "2010",
+   "value": 18.4
+  },
+  {
+   "geo": "USA",
+   "time": "2011",
+   "value": 17.3
+  },
+  {
+   "geo": "USA",
+   "time": "2012",
+   "value": 16.2
+  },
+  {
+   "geo": "USA",
+   "time": "2013",
+   "value": 15.6
+  },
+  {
+   "geo": "USA",
+   "time": "2014",
+   "value": 13.4
+  },
+  {
+   "geo": "USA",
+   "time": "2015",
+   "value": 11.6
+  },
+  {
+   "geo": "USA",
+   "time": "2016",
+   "value": 10.4
+  },
+  {
+   "geo": "USA",
+   "time": "2017",
+   "value": 9.2
+  },
+  {
+   "geo": "USA",
+   "time": "2018",
+   "value": 8.6
+  },
+  {
+   "geo": "USA",
+   "time": "2019",
+   "value": 8.4
+  },
+  {
+   "geo": "USA",
+   "time": "2020",
+   "value": 14.9
+  },
+  {
+   "geo": "USA",
+   "time": "2021",
+   "value": 9.7
+  },
+  {
+   "geo": "USA",
+   "time": "2022",
+   "value": 8.1
+  },
+  {
+   "geo": "USA",
+   "time": "2023",
+   "value": 8.0
+  },
+  {
+   "geo": "USA",
+   "time": "2024",
+   "value": 8.9
+  }
+ ]
+}
