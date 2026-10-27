@@ -1,0 +1,560 @@
+{
+ "id": "n08-paro-dos-medidas",
+ "lens": "dentro",
+ "theme": "empleo",
+ "title": {
+  "es": "Contados sobre todos los jóvenes, en Suecia hay más parados (13,9 %) que en España (8,4 %) o Rumanía (6,2 %)",
+  "en": "Counted over all young people, Sweden has more unemployed (13.9%) than Spain (8.4%) or Romania (6.2%)"
+ },
+ "subtitle": {
+  "es": "Parados de 15 a 24 años, en % de los activos de esa edad y en % de toda la población de esa edad, 2025",
+  "en": "Unemployed people aged 15-24, as % of the labour force of that age and as % of the whole population of that age, 2025"
+ },
+ "unit": {
+  "es": "%",
+  "en": "%"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "une_rt_a",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/une_rt_a/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Encuesta de Población Activa. Los dos indicadores tienen el mismo numerador, los jóvenes en paro. La tasa los divide entre los jóvenes activos (los que trabajan o buscan empleo); la proporción, entre todos los jóvenes de 15 a 24 años, estudien o no.",
+   "Un estudiante que busca un trabajo a tiempo parcial cuenta como parado si no lo encuentra. Un aprendiz con contrato cuenta como ocupado.",
+   "España y Francia tienen una definición que difiere en parte de la común (marca «d» de Eurostat)."
+  ],
+  "en": [
+   "Labour Force Survey. Both indicators have the same numerator, unemployed young people. The rate divides them by young people in the labour force (those who work or look for work); the ratio, by all young people aged 15 to 24, whether studying or not.",
+   "A student looking for a part-time job counts as unemployed if they do not find one. An apprentice with a contract counts as employed.",
+   "Spain and France use a definition that partly differs from the common one (Eurostat flag \"d\")."
+  ]
+ },
+ "retrieved": "2026-10-27",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "dimensions": {
+  "measure": {
+   "tasa": {
+    "es": "Sobre los jóvenes activos (tasa de paro)",
+    "en": "Over young people in the labour force (unemployment rate)"
+   },
+   "proporcion": {
+    "es": "Sobre todos los jóvenes (proporción de paro)",
+    "en": "Over all young people (unemployment ratio)"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 6.6,
+   "measure": "proporcion"
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 11.5,
+   "measure": "tasa"
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 6.0,
+   "measure": "proporcion"
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 17.4,
+   "measure": "tasa"
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 2.5,
+   "measure": "proporcion"
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 13.1,
+   "measure": "tasa"
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 5.2,
+   "measure": "proporcion"
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 13.5,
+   "measure": "tasa"
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 2.9,
+   "measure": "proporcion"
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 10.4,
+   "measure": "tasa"
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 3.9,
+   "measure": "proporcion"
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 7.1,
+   "measure": "tasa"
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 9.6,
+   "measure": "proporcion"
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 13.8,
+   "measure": "tasa"
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 8.4,
+   "flag": "d",
+   "measure": "proporcion"
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 24.9,
+   "flag": "d",
+   "measure": "tasa"
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 8.9,
+   "measure": "proporcion"
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 20.7,
+   "measure": "tasa"
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 6.2,
+   "measure": "proporcion"
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 15.2,
+   "measure": "tasa"
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 11.7,
+   "measure": "proporcion"
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 21.8,
+   "measure": "tasa"
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 8.5,
+   "flag": "d",
+   "measure": "proporcion"
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 19.8,
+   "flag": "d",
+   "measure": "tasa"
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 4.6,
+   "measure": "proporcion"
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 19.1,
+   "measure": "tasa"
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 5.4,
+   "measure": "proporcion"
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 18.3,
+   "measure": "tasa"
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 4.3,
+   "measure": "proporcion"
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 13.9,
+   "measure": "tasa"
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 6.2,
+   "measure": "proporcion"
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 11.8,
+   "measure": "tasa"
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 4.6,
+   "measure": "proporcion"
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 20.6,
+   "measure": "tasa"
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 5.0,
+   "measure": "proporcion"
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 14.1,
+   "measure": "tasa"
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 6.4,
+   "measure": "proporcion"
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 19.4,
+   "measure": "tasa"
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 5.3,
+   "measure": "proporcion"
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 14.8,
+   "measure": "tasa"
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 5.1,
+   "measure": "proporcion"
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 9.6,
+   "measure": "tasa"
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 7.4,
+   "measure": "proporcion"
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 8.8,
+   "measure": "tasa"
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 3.8,
+   "measure": "proporcion"
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 12.2,
+   "measure": "tasa"
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 6.7,
+   "measure": "proporcion"
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 19.5,
+   "measure": "tasa"
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 6.2,
+   "measure": "proporcion"
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 26.1,
+   "measure": "tasa"
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 3.9,
+   "measure": "proporcion"
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 15.3,
+   "measure": "tasa"
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 4.3,
+   "measure": "proporcion"
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 12.1,
+   "measure": "tasa"
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 13.9,
+   "measure": "proporcion"
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 24.3,
+   "measure": "tasa"
+  }
+ ]
+}
