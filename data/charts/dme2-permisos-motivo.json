@@ -1,0 +1,902 @@
+{
+ "id": "dme2-permisos-motivo",
+ "lens": "elige",
+ "theme": "demografia",
+ "title": {
+  "es": "Uno de cada tres primeros permisos de residencia de la UE se da por trabajo (33,6 %) y el 28,1 %, por motivos familiares; en 10 países, el trabajo supera la mitad",
+  "en": "One in three first residence permits in the EU is issued for work (33.6%) and 28.1% for family reasons; in 10 countries, work accounts for more than half"
+ },
+ "subtitle": {
+  "es": "Primeros permisos de residencia a ciudadanos de fuera de la UE por motivo, en % del total, 2025",
+  "en": "First residence permits issued to non-EU citizens by reason, as % of the total, 2025"
+ },
+ "unit": {
+  "es": "% de los primeros permisos",
+  "en": "% of first permits"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "migr_resfirst",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/migr_resfirst/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "En 2025, los países de la UE dieron 3,86 millones de primeros permisos de residencia, de al menos tres meses, a ciudadanos de fuera de la UE.",
+   "Cuenta permisos concedidos, no personas que se quedan: un permiso de estudios o de temporada puede no renovarse.",
+   "«Otros motivos» incluye la protección internacional (estatuto de refugiado y protección subsidiaria: 279.922 permisos en 2025, según migr_resoth), las razones humanitarias y otros casos.",
+   "Los refugiados de Ucrania con protección temporal tienen su propia estadística (migr_asytpsm)."
+  ],
+  "en": [
+   "In 2025, EU countries issued 3.86 million first residence permits, valid for at least three months, to non-EU citizens.",
+   "It counts permits granted, not people who stay: a study or seasonal permit may not be renewed.",
+   "«Other reasons» includes international protection (refugee status and subsidiary protection: 279,922 permits in 2025, according to migr_resoth), humanitarian reasons and other cases.",
+   "Refugees from Ukraine under temporary protection have their own statistics (migr_asytpsm)."
+  ]
+ },
+ "retrieved": "2026-10-30",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "dimensions": {
+  "reason": {
+   "EMP": {
+    "es": "Trabajo",
+    "en": "Work"
+   },
+   "FAM": {
+    "es": "Familia",
+    "en": "Family"
+   },
+   "EDUC": {
+    "es": "Estudios",
+    "en": "Education"
+   },
+   "OTH": {
+    "es": "Otros motivos",
+    "en": "Other reasons"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "reason": "EDUC",
+   "value": 13.0
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "reason": "EMP",
+   "value": 12.8
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "reason": "FAM",
+   "value": 35.8
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "reason": "OTH",
+   "value": 38.4
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "reason": "EDUC",
+   "value": 15.0
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "reason": "EMP",
+   "value": 10.0
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "reason": "FAM",
+   "value": 47.4
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "reason": "OTH",
+   "value": 27.6
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "reason": "EDUC",
+   "value": 10.5
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "reason": "EMP",
+   "value": 53.4
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "reason": "FAM",
+   "value": 21.8
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "reason": "OTH",
+   "value": 14.3
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "reason": "EDUC",
+   "value": 20.5
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "reason": "EMP",
+   "value": 54.8
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "reason": "FAM",
+   "value": 11.6
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "reason": "OTH",
+   "value": 13.1
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "reason": "EDUC",
+   "value": 21.0
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "reason": "EMP",
+   "value": 37.4
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "reason": "FAM",
+   "value": 25.0
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "reason": "OTH",
+   "value": 16.6
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "reason": "EDUC",
+   "value": 18.6
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "reason": "EMP",
+   "value": 17.9
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "reason": "FAM",
+   "value": 37.3
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "reason": "OTH",
+   "value": 26.3
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "reason": "EDUC",
+   "value": 36.7
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "reason": "EMP",
+   "value": 32.4
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "reason": "FAM",
+   "value": 25.6
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "reason": "OTH",
+   "value": 5.4
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "reason": "EDUC",
+   "value": 16.6
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "reason": "EMP",
+   "value": 18.1
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "reason": "FAM",
+   "value": 43.4
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "reason": "OTH",
+   "value": 21.9
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "reason": "EDUC",
+   "value": 7.8
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "reason": "EMP",
+   "value": 21.0
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "reason": "FAM",
+   "value": 25.4
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "reason": "OTH",
+   "value": 45.8
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "reason": "EDUC",
+   "value": 15.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "reason": "EMP",
+   "value": 33.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "reason": "FAM",
+   "value": 28.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "reason": "OTH",
+   "value": 22.8
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "reason": "EDUC",
+   "value": 23.6
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "reason": "EMP",
+   "value": 20.7
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "reason": "FAM",
+   "value": 48.3
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "reason": "OTH",
+   "value": 7.4
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "reason": "EDUC",
+   "value": 31.4
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "reason": "EMP",
+   "value": 13.5
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "reason": "FAM",
+   "value": 24.1
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "reason": "OTH",
+   "value": 31.1
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "reason": "EDUC",
+   "value": 1.2
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "reason": "EMP",
+   "value": 17.3
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "reason": "FAM",
+   "value": 26.8
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "reason": "OTH",
+   "value": 54.8
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "reason": "EDUC",
+   "value": 0.7
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "reason": "EMP",
+   "value": 93.0
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "reason": "FAM",
+   "value": 5.0
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "reason": "OTH",
+   "value": 1.3
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "reason": "EDUC",
+   "value": 26.2
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "reason": "EMP",
+   "value": 59.3
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "reason": "FAM",
+   "value": 6.4
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "reason": "OTH",
+   "value": 8.1
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "reason": "EDUC",
+   "value": 47.6
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "reason": "EMP",
+   "value": 23.0
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "reason": "FAM",
+   "value": 6.3
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "reason": "OTH",
+   "value": 23.2
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "reason": "EDUC",
+   "value": 8.4
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "reason": "EMP",
+   "value": 13.2
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "reason": "FAM",
+   "value": 40.8
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "reason": "OTH",
+   "value": 37.5
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "reason": "EDUC",
+   "value": 12.5
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "reason": "EMP",
+   "value": 78.5
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "reason": "FAM",
+   "value": 6.7
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "reason": "OTH",
+   "value": 2.3
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "reason": "EDUC",
+   "value": 9.4
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "reason": "EMP",
+   "value": 21.5
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "reason": "FAM",
+   "value": 56.7
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "reason": "OTH",
+   "value": 12.4
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "reason": "EDUC",
+   "value": 32.9
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "reason": "EMP",
+   "value": 45.8
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "reason": "FAM",
+   "value": 15.1
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "reason": "OTH",
+   "value": 6.3
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "reason": "EDUC",
+   "value": 24.8
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "reason": "EMP",
+   "value": 49.8
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "reason": "FAM",
+   "value": 8.7
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "reason": "OTH",
+   "value": 16.7
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "reason": "EDUC",
+   "value": 17.3
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "reason": "EMP",
+   "value": 17.2
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "reason": "FAM",
+   "value": 35.8
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "reason": "OTH",
+   "value": 29.7
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "reason": "EDUC",
+   "value": 4.7
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "reason": "EMP",
+   "value": 68.1
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "reason": "FAM",
+   "value": 8.8
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "reason": "OTH",
+   "value": 18.4
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "reason": "EDUC",
+   "value": 3.7
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "reason": "EMP",
+   "value": 77.4
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "reason": "FAM",
+   "value": 8.2
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "reason": "OTH",
+   "value": 10.7
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "reason": "EDUC",
+   "value": 7.3
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "reason": "EMP",
+   "value": 81.5
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "reason": "FAM",
+   "value": 8.8
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "reason": "OTH",
+   "value": 2.4
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "reason": "EDUC",
+   "value": 24.7
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "reason": "EMP",
+   "value": 56.0
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "reason": "FAM",
+   "value": 14.6
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "reason": "OTH",
+   "value": 4.7
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "reason": "EDUC",
+   "value": 12.1
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "reason": "EMP",
+   "value": 55.1
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "reason": "FAM",
+   "value": 31.6
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "reason": "OTH",
+   "value": 1.2
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "reason": "EDUC",
+   "value": 20.5
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "reason": "EMP",
+   "value": 18.4
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "reason": "FAM",
+   "value": 50.5
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "reason": "OTH",
+   "value": 10.6
+  }
+ ]
+}

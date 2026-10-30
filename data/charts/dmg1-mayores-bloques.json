@@ -1,0 +1,433 @@
+{
+ "id": "dmg1-mayores-bloques",
+ "lens": "gigantes",
+ "theme": "demografia",
+ "title": {
+  "es": "En la UE, el 22 % de la población tiene 65 años o más; en EE. UU., el 17,9 %, y en China, el 14,7 %, el doble que en 2000",
+  "en": "In the EU, 22% of the population is 65 or older; in the US, 17.9%, and in China, 14.7%, twice the 2000 share"
+ },
+ "subtitle": {
+  "es": "Población de 65 años o más, en % de la población total, 2000-2024",
+  "en": "Population aged 65 and over, as % of the total population, 2000-2024"
+ },
+ "unit": {
+  "es": "% de la población",
+  "en": "% of the population"
+ },
+ "source": {
+  "name": "Banco Mundial, Población de 65 años o más (% del total)",
+  "dataset": "SP.POP.65UP.TO.ZS",
+  "url": "https://data.worldbank.org/indicator/SP.POP.65UP.TO.ZS",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "El Banco Mundial elabora la serie con las estimaciones de población de Naciones Unidas (World Population Prospects), que usan el mismo método para los tres bloques.",
+   "En la UE, la cifra de 2000 es la de los 27 países actuales, aunque entonces no todos eran miembros.",
+   "Para años posteriores a 2024, Naciones Unidas publica proyecciones; aquí no se muestran."
+  ],
+  "en": [
+   "The World Bank builds the series from United Nations population estimates (World Population Prospects), which use the same method for all three blocs.",
+   "For the EU, the 2000 figure covers today's 27 countries, although not all of them were members then.",
+   "The United Nations publishes projections beyond 2024; they are not shown here."
+  ]
+ },
+ "retrieved": "2026-10-30",
+ "geos": {
+  "CHN": {
+   "es": "China",
+   "en": "China",
+   "eu": false,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "USA": {
+   "es": "Estados Unidos",
+   "en": "United States",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "CHN",
+   "time": "2000",
+   "value": 7.0
+  },
+  {
+   "geo": "CHN",
+   "time": "2001",
+   "value": 7.2
+  },
+  {
+   "geo": "CHN",
+   "time": "2002",
+   "value": 7.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2003",
+   "value": 7.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2004",
+   "value": 7.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2005",
+   "value": 7.9
+  },
+  {
+   "geo": "CHN",
+   "time": "2006",
+   "value": 8.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2007",
+   "value": 8.2
+  },
+  {
+   "geo": "CHN",
+   "time": "2008",
+   "value": 8.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2009",
+   "value": 8.5
+  },
+  {
+   "geo": "CHN",
+   "time": "2010",
+   "value": 8.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2011",
+   "value": 8.9
+  },
+  {
+   "geo": "CHN",
+   "time": "2012",
+   "value": 9.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2013",
+   "value": 9.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2014",
+   "value": 9.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2015",
+   "value": 10.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2016",
+   "value": 10.5
+  },
+  {
+   "geo": "CHN",
+   "time": "2017",
+   "value": 11.0
+  },
+  {
+   "geo": "CHN",
+   "time": "2018",
+   "value": 11.5
+  },
+  {
+   "geo": "CHN",
+   "time": "2019",
+   "value": 12.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2020",
+   "value": 12.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2021",
+   "value": 13.2
+  },
+  {
+   "geo": "CHN",
+   "time": "2022",
+   "value": 13.8
+  },
+  {
+   "geo": "CHN",
+   "time": "2023",
+   "value": 14.3
+  },
+  {
+   "geo": "CHN",
+   "time": "2024",
+   "value": 14.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2000",
+   "value": 15.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2001",
+   "value": 15.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2002",
+   "value": 16.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2003",
+   "value": 16.3
+  },
+  {
+   "geo": "EU27",
+   "time": "2004",
+   "value": 16.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2005",
+   "value": 16.8
+  },
+  {
+   "geo": "EU27",
+   "time": "2006",
+   "value": 17.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2007",
+   "value": 17.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2008",
+   "value": 17.3
+  },
+  {
+   "geo": "EU27",
+   "time": "2009",
+   "value": 17.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2010",
+   "value": 17.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2011",
+   "value": 17.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2012",
+   "value": 18.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2013",
+   "value": 18.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2014",
+   "value": 18.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2015",
+   "value": 19.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2016",
+   "value": 19.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2017",
+   "value": 19.8
+  },
+  {
+   "geo": "EU27",
+   "time": "2018",
+   "value": 20.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2019",
+   "value": 20.4
+  },
+  {
+   "geo": "EU27",
+   "time": "2020",
+   "value": 20.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "value": 21.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2022",
+   "value": 21.3
+  },
+  {
+   "geo": "EU27",
+   "time": "2023",
+   "value": 21.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "value": 22.0
+  },
+  {
+   "geo": "USA",
+   "time": "2000",
+   "value": 12.2
+  },
+  {
+   "geo": "USA",
+   "time": "2001",
+   "value": 12.1
+  },
+  {
+   "geo": "USA",
+   "time": "2002",
+   "value": 12.1
+  },
+  {
+   "geo": "USA",
+   "time": "2003",
+   "value": 12.1
+  },
+  {
+   "geo": "USA",
+   "time": "2004",
+   "value": 12.1
+  },
+  {
+   "geo": "USA",
+   "time": "2005",
+   "value": 12.1
+  },
+  {
+   "geo": "USA",
+   "time": "2006",
+   "value": 12.2
+  },
+  {
+   "geo": "USA",
+   "time": "2007",
+   "value": 12.3
+  },
+  {
+   "geo": "USA",
+   "time": "2008",
+   "value": 12.5
+  },
+  {
+   "geo": "USA",
+   "time": "2009",
+   "value": 12.7
+  },
+  {
+   "geo": "USA",
+   "time": "2010",
+   "value": 12.8
+  },
+  {
+   "geo": "USA",
+   "time": "2011",
+   "value": 13.1
+  },
+  {
+   "geo": "USA",
+   "time": "2012",
+   "value": 13.4
+  },
+  {
+   "geo": "USA",
+   "time": "2013",
+   "value": 13.7
+  },
+  {
+   "geo": "USA",
+   "time": "2014",
+   "value": 14.0
+  },
+  {
+   "geo": "USA",
+   "time": "2015",
+   "value": 14.3
+  },
+  {
+   "geo": "USA",
+   "time": "2016",
+   "value": 14.6
+  },
+  {
+   "geo": "USA",
+   "time": "2017",
+   "value": 14.9
+  },
+  {
+   "geo": "USA",
+   "time": "2018",
+   "value": 15.3
+  },
+  {
+   "geo": "USA",
+   "time": "2019",
+   "value": 15.7
+  },
+  {
+   "geo": "USA",
+   "time": "2020",
+   "value": 16.1
+  },
+  {
+   "geo": "USA",
+   "time": "2021",
+   "value": 16.5
+  },
+  {
+   "geo": "USA",
+   "time": "2022",
+   "value": 16.9
+  },
+  {
+   "geo": "USA",
+   "time": "2023",
+   "value": 17.4
+  },
+  {
+   "geo": "USA",
+   "time": "2024",
+   "value": 17.9
+  }
+ ]
+}

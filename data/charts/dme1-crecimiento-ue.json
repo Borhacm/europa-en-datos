@@ -1,0 +1,372 @@
+{
+ "id": "dme1-crecimiento-ue",
+ "lens": "elige",
+ "theme": "demografia",
+ "title": {
+  "es": "Desde 2012 mueren en la UE más personas de las que nacen; en 2025, 1,35 millones más, y la llegada neta de 2,06 millones hizo crecer la población",
+  "en": "Since 2012, more people have died in the EU than have been born; in 2025, 1.35 million more, and net arrivals of 2.06 million made the population grow"
+ },
+ "subtitle": {
+  "es": "Cambio de la población de la UE por sus dos componentes, en miles de personas, 2000-2025",
+  "en": "Change in the EU population by its two components, in thousands of people, 2000-2025"
+ },
+ "unit": {
+  "es": "miles de personas",
+  "en": "thousands of people"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "demo_gind",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/demo_gind/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Los 27 países actuales en todos los años. El saldo natural es la diferencia entre nacimientos y defunciones. El saldo migratorio es la diferencia entre quienes llegan a vivir a un país de la UE y quienes se van, incluidos los movimientos entre países de la UE, que se compensan en el total.",
+   "Eurostat calcula el saldo migratorio como el cambio de población que no explican los nacimientos y las defunciones, por lo que incluye ajustes estadísticos (por ejemplo, tras un censo).",
+   "Desde 2012, la población solo bajó en 2020, con la pandemia: más defunciones y menos llegadas.",
+   "El saldo migratorio más alto de la serie, en 2022, coincide con la llegada de refugiados de Ucrania tras la invasión rusa."
+  ],
+  "en": [
+   "Today's 27 countries in every year. Natural change is the difference between births and deaths. Net migration is the difference between people who come to live in an EU country and those who leave, including moves between EU countries, which cancel out in the total.",
+   "Eurostat calculates net migration as the change in population not explained by births and deaths, so it includes statistical adjustments (for example, after a census).",
+   "Since 2012, the population only fell in 2020, with the pandemic: more deaths and fewer arrivals.",
+   "The highest net migration in the series, in 2022, coincides with the arrival of refugees from Ukraine after the Russian invasion."
+  ]
+ },
+ "retrieved": "2026-10-30",
+ "geos": {
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  }
+ },
+ "dimensions": {
+  "series": {
+   "NATGROW": {
+    "es": "Saldo natural",
+    "en": "Natural change"
+   },
+   "CNMIGRAT": {
+    "es": "Saldo migratorio",
+    "en": "Net migration"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "EU27",
+   "time": "2000",
+   "series": "NATGROW",
+   "value": 221
+  },
+  {
+   "geo": "EU27",
+   "time": "2001",
+   "series": "NATGROW",
+   "value": 163
+  },
+  {
+   "geo": "EU27",
+   "time": "2002",
+   "series": "NATGROW",
+   "value": 80
+  },
+  {
+   "geo": "EU27",
+   "time": "2003",
+   "series": "NATGROW",
+   "value": 11
+  },
+  {
+   "geo": "EU27",
+   "time": "2004",
+   "series": "NATGROW",
+   "value": 250
+  },
+  {
+   "geo": "EU27",
+   "time": "2005",
+   "series": "NATGROW",
+   "value": 166
+  },
+  {
+   "geo": "EU27",
+   "time": "2006",
+   "series": "NATGROW",
+   "value": 291
+  },
+  {
+   "geo": "EU27",
+   "time": "2007",
+   "series": "NATGROW",
+   "value": 279
+  },
+  {
+   "geo": "EU27",
+   "time": "2008",
+   "series": "NATGROW",
+   "value": 363
+  },
+  {
+   "geo": "EU27",
+   "time": "2009",
+   "series": "NATGROW",
+   "value": 281
+  },
+  {
+   "geo": "EU27",
+   "time": "2010",
+   "series": "NATGROW",
+   "value": 259
+  },
+  {
+   "geo": "EU27",
+   "time": "2011",
+   "series": "NATGROW",
+   "value": 140
+  },
+  {
+   "geo": "EU27",
+   "time": "2012",
+   "series": "NATGROW",
+   "value": -24
+  },
+  {
+   "geo": "EU27",
+   "time": "2013",
+   "series": "NATGROW",
+   "value": -117
+  },
+  {
+   "geo": "EU27",
+   "time": "2014",
+   "series": "NATGROW",
+   "value": -12
+  },
+  {
+   "geo": "EU27",
+   "time": "2015",
+   "series": "NATGROW",
+   "value": -291
+  },
+  {
+   "geo": "EU27",
+   "time": "2016",
+   "series": "NATGROW",
+   "value": -156
+  },
+  {
+   "geo": "EU27",
+   "time": "2017",
+   "series": "NATGROW",
+   "value": -333
+  },
+  {
+   "geo": "EU27",
+   "time": "2018",
+   "series": "NATGROW",
+   "value": -449
+  },
+  {
+   "geo": "EU27",
+   "time": "2019",
+   "series": "NATGROW",
+   "value": -487
+  },
+  {
+   "geo": "EU27",
+   "time": "2020",
+   "series": "NATGROW",
+   "value": -1115
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "series": "NATGROW",
+   "value": -1209
+  },
+  {
+   "geo": "EU27",
+   "time": "2022",
+   "series": "NATGROW",
+   "value": -1275
+  },
+  {
+   "geo": "EU27",
+   "time": "2023",
+   "series": "NATGROW",
+   "value": -1187
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "series": "NATGROW",
+   "value": -1259
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "series": "NATGROW",
+   "value": -1353
+  },
+  {
+   "geo": "EU27",
+   "time": "2000",
+   "series": "CNMIGRAT",
+   "value": 690
+  },
+  {
+   "geo": "EU27",
+   "time": "2001",
+   "series": "CNMIGRAT",
+   "value": 326
+  },
+  {
+   "geo": "EU27",
+   "time": "2002",
+   "series": "CNMIGRAT",
+   "value": 1437
+  },
+  {
+   "geo": "EU27",
+   "time": "2003",
+   "series": "CNMIGRAT",
+   "value": 1621
+  },
+  {
+   "geo": "EU27",
+   "time": "2004",
+   "series": "CNMIGRAT",
+   "value": 1458
+  },
+  {
+   "geo": "EU27",
+   "time": "2005",
+   "series": "CNMIGRAT",
+   "value": 1289
+  },
+  {
+   "geo": "EU27",
+   "time": "2006",
+   "series": "CNMIGRAT",
+   "value": 1182
+  },
+  {
+   "geo": "EU27",
+   "time": "2007",
+   "series": "CNMIGRAT",
+   "value": 1280
+  },
+  {
+   "geo": "EU27",
+   "time": "2008",
+   "series": "CNMIGRAT",
+   "value": 1031
+  },
+  {
+   "geo": "EU27",
+   "time": "2009",
+   "series": "CNMIGRAT",
+   "value": 557
+  },
+  {
+   "geo": "EU27",
+   "time": "2010",
+   "series": "CNMIGRAT",
+   "value": 586
+  },
+  {
+   "geo": "EU27",
+   "time": "2011",
+   "series": "CNMIGRAT",
+   "value": 640
+  },
+  {
+   "geo": "EU27",
+   "time": "2012",
+   "series": "CNMIGRAT",
+   "value": 487
+  },
+  {
+   "geo": "EU27",
+   "time": "2013",
+   "series": "CNMIGRAT",
+   "value": 436
+  },
+  {
+   "geo": "EU27",
+   "time": "2014",
+   "series": "CNMIGRAT",
+   "value": 660
+  },
+  {
+   "geo": "EU27",
+   "time": "2015",
+   "series": "CNMIGRAT",
+   "value": 1363
+  },
+  {
+   "geo": "EU27",
+   "time": "2016",
+   "series": "CNMIGRAT",
+   "value": 808
+  },
+  {
+   "geo": "EU27",
+   "time": "2017",
+   "series": "CNMIGRAT",
+   "value": 951
+  },
+  {
+   "geo": "EU27",
+   "time": "2018",
+   "series": "CNMIGRAT",
+   "value": 1282
+  },
+  {
+   "geo": "EU27",
+   "time": "2019",
+   "series": "CNMIGRAT",
+   "value": 1350
+  },
+  {
+   "geo": "EU27",
+   "time": "2020",
+   "series": "CNMIGRAT",
+   "value": 143
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "series": "CNMIGRAT",
+   "value": 1441
+  },
+  {
+   "geo": "EU27",
+   "time": "2022",
+   "series": "CNMIGRAT",
+   "value": 3441
+  },
+  {
+   "geo": "EU27",
+   "time": "2023",
+   "series": "CNMIGRAT",
+   "value": 2973
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "series": "CNMIGRAT",
+   "value": 2489
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "series": "CNMIGRAT",
+   "value": 2058
+  }
+ ]
+}

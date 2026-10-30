@@ -1,0 +1,486 @@
+{
+ "id": "dmd1-fecundidad-paises",
+ "lens": "dentro",
+ "theme": "demografia",
+ "title": {
+  "es": "La fecundidad ha bajado desde 2014 en 23 de los 27 países; solo ha subido en Chipre, Portugal, Eslovaquia y Bulgaria",
+  "en": "Fertility has fallen since 2014 in 23 of the 27 countries; it has only risen in Cyprus, Portugal, Slovakia and Bulgaria"
+ },
+ "subtitle": {
+  "es": "Tasa de fecundidad: hijos por mujer, 2014 y 2024. UE: 1,34",
+  "en": "Fertility rate: births per woman, 2014 and 2024. EU: 1.34"
+ },
+ "unit": {
+  "es": "hijos por mujer",
+  "en": "births per woman"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "demo_find",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/demo_find/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "En 2024, la tasa va de 1,01 hijos por mujer en Malta a 1,72 en Bulgaria. Ningún país llega a los 2,1 que mantienen la población sin migración.",
+   "Datos de los registros civiles de cada país. La tasa de un año depende también de cuándo se tienen los hijos: si las mujeres los retrasan, baja aunque al final tengan los mismos."
+  ],
+  "en": [
+   "In 2024, the rate ranges from 1.01 births per woman in Malta to 1.72 in Bulgaria. No country reaches the 2.1 that keeps a population steady without migration.",
+   "Data from each country's civil registers. The rate in a given year also depends on when children are born: if women delay them, it falls even if in the end they have the same number."
+  ]
+ },
+ "retrieved": "2026-10-30",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2014",
+   "value": 1.46
+  },
+  {
+   "geo": "AUT",
+   "time": "2024",
+   "value": 1.31
+  },
+  {
+   "geo": "BEL",
+   "time": "2014",
+   "value": 1.74
+  },
+  {
+   "geo": "BEL",
+   "time": "2024",
+   "value": 1.44
+  },
+  {
+   "geo": "BGR",
+   "time": "2014",
+   "value": 1.62
+  },
+  {
+   "geo": "BGR",
+   "time": "2024",
+   "value": 1.72
+  },
+  {
+   "geo": "CYP",
+   "time": "2014",
+   "value": 1.31
+  },
+  {
+   "geo": "CYP",
+   "time": "2024",
+   "value": 1.38
+  },
+  {
+   "geo": "CZE",
+   "time": "2014",
+   "value": 1.53
+  },
+  {
+   "geo": "CZE",
+   "time": "2024",
+   "value": 1.36
+  },
+  {
+   "geo": "DEU",
+   "time": "2014",
+   "value": 1.47
+  },
+  {
+   "geo": "DEU",
+   "time": "2024",
+   "value": 1.36
+  },
+  {
+   "geo": "DNK",
+   "time": "2014",
+   "value": 1.69
+  },
+  {
+   "geo": "DNK",
+   "time": "2024",
+   "value": 1.47
+  },
+  {
+   "geo": "ESP",
+   "time": "2014",
+   "value": 1.32
+  },
+  {
+   "geo": "ESP",
+   "time": "2024",
+   "value": 1.1
+  },
+  {
+   "geo": "EST",
+   "time": "2014",
+   "value": 1.54
+  },
+  {
+   "geo": "EST",
+   "time": "2024",
+   "value": 1.18
+  },
+  {
+   "geo": "EU27",
+   "time": "2014",
+   "value": 1.54
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "value": 1.34
+  },
+  {
+   "geo": "FIN",
+   "time": "2014",
+   "value": 1.71
+  },
+  {
+   "geo": "FIN",
+   "time": "2024",
+   "value": 1.25
+  },
+  {
+   "geo": "FRA",
+   "time": "2014",
+   "value": 2.0
+  },
+  {
+   "geo": "FRA",
+   "time": "2024",
+   "value": 1.61
+  },
+  {
+   "geo": "GRC",
+   "time": "2014",
+   "value": 1.3
+  },
+  {
+   "geo": "GRC",
+   "time": "2024",
+   "value": 1.24
+  },
+  {
+   "geo": "HRV",
+   "time": "2014",
+   "value": 1.47
+  },
+  {
+   "geo": "HRV",
+   "time": "2024",
+   "value": 1.46
+  },
+  {
+   "geo": "HUN",
+   "time": "2014",
+   "value": 1.45
+  },
+  {
+   "geo": "HUN",
+   "time": "2024",
+   "value": 1.41
+  },
+  {
+   "geo": "IRL",
+   "time": "2014",
+   "value": 1.89
+  },
+  {
+   "geo": "IRL",
+   "time": "2024",
+   "value": 1.47
+  },
+  {
+   "geo": "ITA",
+   "time": "2014",
+   "value": 1.38
+  },
+  {
+   "geo": "ITA",
+   "time": "2024",
+   "value": 1.18
+  },
+  {
+   "geo": "LTU",
+   "time": "2014",
+   "value": 1.57
+  },
+  {
+   "geo": "LTU",
+   "time": "2024",
+   "value": 1.11
+  },
+  {
+   "geo": "LUX",
+   "time": "2014",
+   "value": 1.5
+  },
+  {
+   "geo": "LUX",
+   "time": "2024",
+   "value": 1.25
+  },
+  {
+   "geo": "LVA",
+   "time": "2014",
+   "value": 1.65
+  },
+  {
+   "geo": "LVA",
+   "time": "2024",
+   "value": 1.24
+  },
+  {
+   "geo": "MLT",
+   "time": "2014",
+   "value": 1.38
+  },
+  {
+   "geo": "MLT",
+   "time": "2024",
+   "value": 1.01
+  },
+  {
+   "geo": "NLD",
+   "time": "2014",
+   "value": 1.71
+  },
+  {
+   "geo": "NLD",
+   "time": "2024",
+   "value": 1.43
+  },
+  {
+   "geo": "POL",
+   "time": "2014",
+   "value": 1.32
+  },
+  {
+   "geo": "POL",
+   "time": "2024",
+   "value": 1.14
+  },
+  {
+   "geo": "PRT",
+   "time": "2014",
+   "value": 1.24
+  },
+  {
+   "geo": "PRT",
+   "time": "2024",
+   "value": 1.41
+  },
+  {
+   "geo": "ROU",
+   "time": "2014",
+   "value": 1.56
+  },
+  {
+   "geo": "ROU",
+   "time": "2024",
+   "value": 1.39
+  },
+  {
+   "geo": "SVK",
+   "time": "2014",
+   "value": 1.37
+  },
+  {
+   "geo": "SVK",
+   "time": "2024",
+   "value": 1.46
+  },
+  {
+   "geo": "SVN",
+   "time": "2014",
+   "value": 1.58
+  },
+  {
+   "geo": "SVN",
+   "time": "2024",
+   "value": 1.52
+  },
+  {
+   "geo": "SWE",
+   "time": "2014",
+   "value": 1.88
+  },
+  {
+   "geo": "SWE",
+   "time": "2024",
+   "value": 1.43
+  }
+ ]
+}
