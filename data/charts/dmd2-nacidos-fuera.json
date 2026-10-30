@@ -1,0 +1,483 @@
+{
+ "id": "dmd2-nacidos-fuera",
+ "lens": "dentro",
+ "theme": "demografia",
+ "title": {
+  "es": "En Malta, el 24,6 % de los habitantes nació fuera de la UE; en Eslovaquia, el 1,1 %",
+  "en": "In Malta, 24.6% of residents were born outside the EU; in Slovakia, 1.1%"
+ },
+ "subtitle": {
+  "es": "Población nacida fuera de la UE, en % de la población, 2021 y 2025. UE: 10,4 %",
+  "en": "Population born outside the EU, as % of the population, 2021 and 2025. EU: 10.4%"
+ },
+ "unit": {
+  "es": "% de la población",
+  "en": "% of the population"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "migr_pop3ctb",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/migr_pop3ctb/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Población a 1 de enero. En 2025, 46,7 millones de residentes en la UE habían nacido fuera de ella. La parte ha subido desde 2021 en 23 de los 26 países con dato.",
+   "Cuenta el país de nacimiento, no la nacionalidad: incluye a quienes ya tienen la nacionalidad del país en el que viven y no incluye a los nacidos en otro país de la UE.",
+   "Se empieza en 2021 porque es el primer año con dato para todos los países. Sin dato de 2025 para Portugal."
+  ],
+  "en": [
+   "Population on 1 January. In 2025, 46.7 million EU residents had been born outside it. The share has risen since 2021 in 23 of the 26 countries with data.",
+   "It counts country of birth, not nationality: it includes people who already hold the nationality of the country they live in and excludes those born in another EU country.",
+   "The chart starts in 2021 because it is the first year with data for every country. No 2025 figure for Portugal."
+  ]
+ },
+ "retrieved": "2026-10-30",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2021",
+   "value": 10.9
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 12.8
+  },
+  {
+   "geo": "BEL",
+   "time": "2021",
+   "value": 10.0
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 12.1
+  },
+  {
+   "geo": "BGR",
+   "time": "2021",
+   "value": 2.0
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 2.7
+  },
+  {
+   "geo": "CYP",
+   "time": "2021",
+   "value": 14.7
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 18.4
+  },
+  {
+   "geo": "CZE",
+   "time": "2021",
+   "value": 2.7
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 7.2
+  },
+  {
+   "geo": "DEU",
+   "time": "2021",
+   "value": 10.3
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 13.0
+  },
+  {
+   "geo": "DNK",
+   "time": "2021",
+   "value": 8.4
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 9.7
+  },
+  {
+   "geo": "ESP",
+   "time": "2021",
+   "value": 12.0
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 16.0
+  },
+  {
+   "geo": "EST",
+   "time": "2021",
+   "value": 13.1
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 15.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "value": 8.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 10.4
+  },
+  {
+   "geo": "FIN",
+   "time": "2021",
+   "value": 5.1
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 7.6
+  },
+  {
+   "geo": "FRA",
+   "time": "2021",
+   "value": 9.8
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 11.1
+  },
+  {
+   "geo": "GRC",
+   "time": "2021",
+   "value": 8.8
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 8.8
+  },
+  {
+   "geo": "HRV",
+   "time": "2021",
+   "value": 10.6
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 12.4
+  },
+  {
+   "geo": "HUN",
+   "time": "2021",
+   "value": 2.8
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 3.6
+  },
+  {
+   "geo": "IRL",
+   "time": "2021",
+   "value": 13.8
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 16.6
+  },
+  {
+   "geo": "ITA",
+   "time": "2021",
+   "value": 7.9
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 9.1
+  },
+  {
+   "geo": "LTU",
+   "time": "2021",
+   "value": 4.9
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 9.0
+  },
+  {
+   "geo": "LUX",
+   "time": "2021",
+   "value": 14.8
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 19.0
+  },
+  {
+   "geo": "LVA",
+   "time": "2021",
+   "value": 10.9
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 10.4
+  },
+  {
+   "geo": "MLT",
+   "time": "2021",
+   "value": 15.6
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 24.6
+  },
+  {
+   "geo": "NLD",
+   "time": "2021",
+   "value": 10.2
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 12.4
+  },
+  {
+   "geo": "POL",
+   "time": "2021",
+   "value": 1.9
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 1.9
+  },
+  {
+   "geo": "PRT",
+   "time": "2021",
+   "value": 10.8
+  },
+  {
+   "geo": "ROU",
+   "time": "2021",
+   "value": 2.3
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 4.5
+  },
+  {
+   "geo": "SVK",
+   "time": "2021",
+   "value": 0.9
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 1.1
+  },
+  {
+   "geo": "SVN",
+   "time": "2021",
+   "value": 10.8
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 12.6
+  },
+  {
+   "geo": "SWE",
+   "time": "2021",
+   "value": 14.6
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 15.5
+  }
+ ]
+}
