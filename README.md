@@ -29,7 +29,7 @@ Las páginas del tema o de la nota, las miradas, la portada, los índices y la m
 
 ## Publicación
 
-Cada push a `main` se publica automáticamente en https://europa.bocal.online (Vercel, directorio raíz `web`). Las demás ramas generan previsualizaciones privadas.
+Cada push a `main` se publica automáticamente en https://europa.bocal.online (GitHub Pages, con el workflow `.github/workflows/pages.yml`, que compila `web/`). Las demás ramas no se publican; los pull requests se comprueban con el mismo build.
 
 Vercel no ejecuta el pipeline de Python: para actualizar los datos, ejecuta `uv run run.py` en local y sube los cambios de `data/`.
 

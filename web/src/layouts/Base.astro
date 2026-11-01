@@ -1,7 +1,6 @@
 ---
 import "../styles/global.css";
 import Mark from "../components/Mark.astro";
-import Analytics from "@vercel/analytics/astro";
 import Consent from "../components/Consent.astro";
 import { ui, paths, type Lang, type Bi, type Section } from "../lib/i18n";
 
@@ -47,7 +46,6 @@ const canonical = new URL(path[lang], site);
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Sofia+Sans+Extra+Condensed:wght@700;800&family=Sofia+Sans+Semi+Condensed:wght@400;500;600;700&display=swap"
     />
-    <Analytics />
   </head>
   <body>
     <a class="skip" href="#main">{t.skip}</a>

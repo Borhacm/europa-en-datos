@@ -2,13 +2,13 @@
 
 Procedimiento para preparar y publicar una **nota** o un **artículo** del [calendario](calendario.yaml). Lo siguen las tareas automáticas y sirve igual para hacerlo a mano.
 
-**La publicación es automática.** Cada ejecución abre un pull request en GitHub (que deja registro de la entrada y de su tabla de verificación) y, cuando todas las comprobaciones pasan, lo fusiona ella misma: al llegar a `main`, Vercel publica la web. Por eso las comprobaciones de este manual no son opcionales: nadie revisa antes de publicar.
+**La publicación es automática.** Cada ejecución abre un pull request en GitHub (que deja registro de la entrada y de su tabla de verificación) y, cuando todas las comprobaciones pasan, lo fusiona ella misma: al llegar a `main`, GitHub Pages publica la web (workflow «Publicar en GitHub Pages»). Por eso las comprobaciones de este manual no son opcionales: nadie revisa antes de publicar.
 
 ## Reglas que no se rompen
 
-- Nunca hagas commit ni push directamente en `main`. Solo fusionas **tu propio** pull request, y solo cuando `npm run check` y la comprobación de Vercel han pasado. Nunca fusiones pull requests ajenos ni borres ramas ajenas.
+- Nunca hagas commit ni push directamente en `main`. Solo fusionas **tu propio** pull request, y solo cuando `npm run check` y la comprobación `build` del pull request han pasado. Nunca fusiones pull requests ajenos ni borres ramas ajenas.
 - Nunca regeneres los datos de otros temas: ejecuta el pipeline siempre con `--only`. Nunca uses `--refresh`.
-- No cambies la configuración de Vercel, de GitHub ni la licencia (el proyecto no tiene licencia de código a propósito).
+- No cambies la configuración de GitHub Pages, de GitHub ni la licencia (el proyecto no tiene licencia de código a propósito).
 - **Cada cifra y cada afirmación de un título o de un texto tiene que salir de los datos del JSON.** Si no puedes comprobarla, no la escribas. Esta es la regla más importante: en el pasado se colaron titulares como "casi todos los países", "más que nunca" o "uno de cada tres" que los datos no sostenían.
 - **Lo que dice el texto tiene que coincidir con lo que pide la consulta.** Si el subtítulo dice "sin IVA", el filtro es `tax="X_VAT"`; si dice "de 25 a 34 años", el filtro de edad es ese. En octubre de 2026 se publicó un gráfico con el precio con todos los impuestos rotulado como "sin IVA".
 - **Un hallazgo ya publicado no se repite: se enlaza.** Ni entre las miradas de una pieza ni entre piezas distintas (Libertades y Energía llegaron a publicar el mismo ranking de renovables).
@@ -178,13 +178,13 @@ El commit usa el email noreply configurado en el repositorio. El cuerpo del pull
 
 ## 9. Publicar
 
-Espera a que Vercel compile la vista previa del pull request y comprueba que pasa:
+Espera a que GitHub Actions compile la web del pull request y comprueba que pasa:
 
 ```bash
-gh pr checks <número> --watch      # "Vercel" debe terminar en pass
+gh pr checks <número> --watch      # "build" debe terminar en pass
 ```
 
-Si la comprobación de Vercel falla, no fusiones: revisa el error, corrígelo en la rama y vuelve a empezar este paso. Si pasa:
+Si la comprobación `build` falla, no fusiones: revisa el error, corrígelo en la rama y vuelve a empezar este paso. Si pasa:
 
 ```bash
 gh pr merge <número> --squash --delete-branch
