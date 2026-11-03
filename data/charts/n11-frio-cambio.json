@@ -1,0 +1,494 @@
+{
+ "id": "n11-frio-cambio",
+ "lens": "dentro",
+ "theme": "energia",
+ "title": {
+  "es": "No poder calentar la casa es más frecuente que en 2021 en 19 países de la UE y menos en 7",
+  "en": "Being unable to keep the home warm is more common than in 2021 in 19 EU countries and less common in 7"
+ },
+ "subtitle": {
+  "es": "Población que no puede permitirse mantener su vivienda a una temperatura adecuada, en % del total, 2021 y 2025",
+  "en": "Population unable to afford to keep their home adequately warm, % of the total, 2021 and 2025"
+ },
+ "unit": {
+  "es": "% de la población",
+  "en": "% of the population"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "ilc_mdes01",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/ilc_mdes01/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Encuesta de condiciones de vida (EU-SILC). Es lo que declara cada hogar al responder si puede permitirse mantener su vivienda a una temperatura adecuada: no se miden temperaturas ni gasto en energía.",
+   "Lo que cada hogar considera «adecuado» depende del clima, de la vivienda y de las costumbres, así que las diferencias entre países no solo reflejan dinero.",
+   "Francia tiene una ruptura de serie en 2022 (marca «b» de Eurostat): parte de su subida entre 2021 y 2025 puede deberse al cambio de la encuesta. Luxemburgo también tiene ruptura en 2021 y 2025, y Portugal en 2021. El dato de Lituania de 2025 es provisional.",
+   "El año es el de la encuesta. Todos los hogares, sin distinguir su composición."
+  ],
+  "en": [
+   "EU Statistics on Income and Living Conditions (EU-SILC). It is what each household reports when asked whether it can afford to keep its home adequately warm: no temperatures or energy spending are measured.",
+   "What each household considers \"adequate\" depends on climate, housing and habits, so differences between countries do not only reflect money.",
+   "France has a break in series in 2022 (Eurostat flag \"b\"): part of its increase between 2021 and 2025 may be due to the change in the survey. Luxembourg also has breaks in 2021 and 2025, and Portugal in 2021. Lithuania's 2025 figure is provisional.",
+   "The year is the survey year. All households, regardless of their composition."
+  ]
+ },
+ "retrieved": "2026-11-03",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2021",
+   "value": 1.7
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 4.0
+  },
+  {
+   "geo": "BEL",
+   "time": "2021",
+   "value": 3.5
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 4.2
+  },
+  {
+   "geo": "BGR",
+   "time": "2021",
+   "value": 23.7
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 16.1
+  },
+  {
+   "geo": "CYP",
+   "time": "2021",
+   "value": 19.2
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 11.3
+  },
+  {
+   "geo": "CZE",
+   "time": "2021",
+   "value": 2.2
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 4.1
+  },
+  {
+   "geo": "DEU",
+   "time": "2021",
+   "value": 3.3
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 5.7
+  },
+  {
+   "geo": "DNK",
+   "time": "2021",
+   "value": 2.8
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 4.5
+  },
+  {
+   "geo": "ESP",
+   "time": "2021",
+   "value": 14.2
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 15.9
+  },
+  {
+   "geo": "EST",
+   "time": "2021",
+   "value": 2.0
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 3.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "value": 6.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 8.8
+  },
+  {
+   "geo": "FIN",
+   "time": "2021",
+   "value": 1.3
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 2.6
+  },
+  {
+   "geo": "FRA",
+   "time": "2021",
+   "value": 6.0
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 11.5
+  },
+  {
+   "geo": "GRC",
+   "time": "2021",
+   "value": 17.5
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 18.1
+  },
+  {
+   "geo": "HRV",
+   "time": "2021",
+   "value": 5.7
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 4.2
+  },
+  {
+   "geo": "HUN",
+   "time": "2021",
+   "value": 5.4
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 5.8
+  },
+  {
+   "geo": "IRL",
+   "time": "2021",
+   "value": 3.4
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 4.5
+  },
+  {
+   "geo": "ITA",
+   "time": "2021",
+   "value": 8.1
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 8.6
+  },
+  {
+   "geo": "LTU",
+   "time": "2021",
+   "value": 22.5
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 16.7,
+   "flag": "p"
+  },
+  {
+   "geo": "LUX",
+   "time": "2021",
+   "value": 2.5,
+   "flag": "b"
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 3.5,
+   "flag": "b"
+  },
+  {
+   "geo": "LVA",
+   "time": "2021",
+   "value": 4.9
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 4.3
+  },
+  {
+   "geo": "MLT",
+   "time": "2021",
+   "value": 7.8
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 7.6
+  },
+  {
+   "geo": "NLD",
+   "time": "2021",
+   "value": 2.4
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 6.6
+  },
+  {
+   "geo": "POL",
+   "time": "2021",
+   "value": 3.2
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 3.2
+  },
+  {
+   "geo": "PRT",
+   "time": "2021",
+   "value": 16.4,
+   "flag": "b"
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 15.6
+  },
+  {
+   "geo": "ROU",
+   "time": "2021",
+   "value": 10.1
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 11.9
+  },
+  {
+   "geo": "SVK",
+   "time": "2021",
+   "value": 5.8
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 8.1
+  },
+  {
+   "geo": "SVN",
+   "time": "2021",
+   "value": 1.7
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 3.6
+  },
+  {
+   "geo": "SWE",
+   "time": "2021",
+   "value": 1.7
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 4.7
+  }
+ ]
+}

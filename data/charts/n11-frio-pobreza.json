@@ -1,0 +1,562 @@
+{
+ "id": "n11-frio-pobreza",
+ "lens": "dentro",
+ "theme": "energia",
+ "title": {
+  "es": "Entre las personas en riesgo de pobreza, el 19,6 % no puede calentar su casa; entre el resto, el 6,7 %",
+  "en": "Among people at risk of poverty, 19.6% cannot keep their home warm; among the rest, 6.7%"
+ },
+ "subtitle": {
+  "es": "Población que no puede permitirse mantener su vivienda a una temperatura adecuada, según esté o no en riesgo de pobreza, en %, 2025",
+  "en": "Population unable to afford to keep their home adequately warm, by whether they are at risk of poverty, %, 2025"
+ },
+ "unit": {
+  "es": "% de cada grupo",
+  "en": "% of each group"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "ilc_mdes01",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/ilc_mdes01/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Encuesta de condiciones de vida (EU-SILC). Es lo que declara cada hogar al responder si puede permitirse mantener su vivienda a una temperatura adecuada: no se miden temperaturas ni gasto en energía.",
+   "Lo que cada hogar considera «adecuado» depende del clima, de la vivienda y de las costumbres, así que las diferencias entre países no solo reflejan dinero.",
+   "En riesgo de pobreza: personas con una renta disponible equivalente inferior al 60 % de la mediana de su país. El umbral es nacional: un hogar en riesgo de pobreza en Luxemburgo tiene más renta que uno en Bulgaria.",
+   "La renta de la encuesta es la del año anterior. El dato de Lituania es provisional y el de Luxemburgo tiene ruptura de serie."
+  ],
+  "en": [
+   "EU Statistics on Income and Living Conditions (EU-SILC). It is what each household reports when asked whether it can afford to keep its home adequately warm: no temperatures or energy spending are measured.",
+   "What each household considers \"adequate\" depends on climate, housing and habits, so differences between countries do not only reflect money.",
+   "At risk of poverty: people with an equivalised disposable income below 60% of their country's median. The threshold is national: a household at risk of poverty in Luxembourg has more income than one in Bulgaria.",
+   "Survey income refers to the previous year. Lithuania's figure is provisional and Luxembourg's has a break in series."
+  ]
+ },
+ "retrieved": "2026-11-03",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "dimensions": {
+  "rskpovth": {
+   "A_60": {
+    "es": "Por encima del umbral de pobreza",
+    "en": "Above the poverty threshold"
+   },
+   "B_60": {
+    "es": "En riesgo de pobreza",
+    "en": "At risk of poverty"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 3.1,
+   "rskpovth": "A_60"
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 9.0,
+   "rskpovth": "B_60"
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 3.1,
+   "rskpovth": "A_60"
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 13.2,
+   "rskpovth": "B_60"
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 11.5,
+   "rskpovth": "A_60"
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 33.1,
+   "rskpovth": "B_60"
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 7.2,
+   "rskpovth": "A_60"
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 34.6,
+   "rskpovth": "B_60"
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 3.1,
+   "rskpovth": "A_60"
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 12.8,
+   "rskpovth": "B_60"
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 4.4,
+   "rskpovth": "A_60"
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 12.6,
+   "rskpovth": "B_60"
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 3.5,
+   "rskpovth": "A_60"
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 11.7,
+   "rskpovth": "B_60"
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 12.9,
+   "rskpovth": "A_60"
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 28.3,
+   "rskpovth": "B_60"
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 2.5,
+   "rskpovth": "A_60"
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 5.7,
+   "rskpovth": "B_60"
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 6.7,
+   "rskpovth": "A_60"
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 19.6,
+   "rskpovth": "B_60"
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 2.1,
+   "rskpovth": "A_60"
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 6.1,
+   "rskpovth": "B_60"
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 9.2,
+   "rskpovth": "A_60"
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 23.5,
+   "rskpovth": "B_60"
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 13.7,
+   "rskpovth": "A_60"
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 36.1,
+   "rskpovth": "B_60"
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 1.8,
+   "rskpovth": "A_60"
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 13.7,
+   "rskpovth": "B_60"
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 4.0,
+   "rskpovth": "A_60"
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 16.8,
+   "rskpovth": "B_60"
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 3.5,
+   "rskpovth": "A_60"
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 10.7,
+   "rskpovth": "B_60"
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 5.8,
+   "rskpovth": "A_60"
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 20.9,
+   "rskpovth": "B_60"
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 12.4,
+   "rskpovth": "A_60",
+   "flag": "p"
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 31.6,
+   "rskpovth": "B_60",
+   "flag": "p"
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 2.7,
+   "rskpovth": "A_60",
+   "flag": "b"
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 8.7,
+   "rskpovth": "B_60",
+   "flag": "b"
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 1.8,
+   "rskpovth": "A_60"
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 12.8,
+   "rskpovth": "B_60"
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 6.9,
+   "rskpovth": "A_60"
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 10.9,
+   "rskpovth": "B_60"
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 4.4,
+   "rskpovth": "A_60"
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 21.3,
+   "rskpovth": "B_60"
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 2.6,
+   "rskpovth": "A_60"
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 7.3,
+   "rskpovth": "B_60"
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 12.8,
+   "rskpovth": "A_60"
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 30.6,
+   "rskpovth": "B_60"
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 9.7,
+   "rskpovth": "A_60"
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 21.4,
+   "rskpovth": "B_60"
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 5.5,
+   "rskpovth": "A_60"
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 27.0,
+   "rskpovth": "B_60"
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 2.5,
+   "rskpovth": "A_60"
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 10.0,
+   "rskpovth": "B_60"
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 3.7,
+   "rskpovth": "A_60"
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 10.1,
+   "rskpovth": "B_60"
+  }
+ ]
+}
