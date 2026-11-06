@@ -1,0 +1,488 @@
+{
+ "id": "edd1-abandono-paises",
+ "lens": "dentro",
+ "theme": "educacion",
+ "title": {
+  "es": "El abandono temprano de los estudios ha bajado desde 2015 en 20 de los 27 países; en Malta, Portugal y España, más de 7 puntos",
+  "en": "Early school leaving has fallen since 2015 in 20 of the 27 countries; in Malta, Portugal and Spain, by more than 7 points"
+ },
+ "subtitle": {
+  "es": "Personas de 18 a 24 años que como mucho terminaron la secundaria obligatoria y no estudian ni se forman, en %, 2015 y 2025. UE: 9,1 %",
+  "en": "People aged 18 to 24 with at most lower secondary education who are not in education or training, in %, 2015 and 2025. EU: 9.1%"
+ },
+ "unit": {
+  "es": "% de las personas de 18 a 24 años",
+  "en": "% of people aged 18 to 24"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "edat_lfse_14",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/edat_lfse_14/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Es el indicador del objetivo europeo para 2030, que la UE ha rebajado al 8 %. En 2025, 14 países están por debajo. Ha subido en Alemania, Austria, Chipre, Dinamarca, Eslovenia, Finlandia y Lituania.",
+   "Encuesta de Población Activa de la UE. Cuenta a quien no tiene un título de bachillerato o de FP de grado medio y no ha seguido ninguna formación en las cuatro semanas anteriores a la encuesta, aunque trabaje.",
+   "Eurostat marca como poco fiables por el tamaño de la muestra los datos de 2025 de Croacia y Luxemburgo."
+  ],
+  "en": [
+   "This is the indicator for the EU's 2030 target, which has been lowered to 8%. In 2025, 14 countries are below it. It has risen in Austria, Cyprus, Denmark, Finland, Germany, Lithuania and Slovenia.",
+   "EU Labour Force Survey. It counts people without an upper secondary or vocational qualification who have not taken part in any education or training in the four weeks before the survey, even if they work.",
+   "Eurostat flags the 2025 figures for Croatia and Luxembourg as unreliable because of sample size."
+  ]
+ },
+ "retrieved": "2026-11-06",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2015",
+   "value": 7.3
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 10.0
+  },
+  {
+   "geo": "BEL",
+   "time": "2015",
+   "value": 10.1
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 7.3
+  },
+  {
+   "geo": "BGR",
+   "time": "2015",
+   "value": 13.4
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 8.6
+  },
+  {
+   "geo": "CYP",
+   "time": "2015",
+   "value": 5.2
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 9.8
+  },
+  {
+   "geo": "CZE",
+   "time": "2015",
+   "value": 6.2
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 6.1
+  },
+  {
+   "geo": "DEU",
+   "time": "2015",
+   "value": 10.1
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 13.1
+  },
+  {
+   "geo": "DNK",
+   "time": "2015",
+   "value": 8.1
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 10.0
+  },
+  {
+   "geo": "ESP",
+   "time": "2015",
+   "value": 20.0
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 12.8
+  },
+  {
+   "geo": "EST",
+   "time": "2015",
+   "value": 13.7
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 10.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2015",
+   "value": 11.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 9.1
+  },
+  {
+   "geo": "FIN",
+   "time": "2015",
+   "value": 9.2
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 9.9
+  },
+  {
+   "geo": "FRA",
+   "time": "2015",
+   "value": 9.2
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 7.2
+  },
+  {
+   "geo": "GRC",
+   "time": "2015",
+   "value": 7.9
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 3.0
+  },
+  {
+   "geo": "HRV",
+   "time": "2015",
+   "value": 2.7
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 2.1
+  },
+  {
+   "geo": "HUN",
+   "time": "2015",
+   "value": 11.6
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 9.3
+  },
+  {
+   "geo": "IRL",
+   "time": "2015",
+   "value": 6.8
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 3.6
+  },
+  {
+   "geo": "ITA",
+   "time": "2015",
+   "value": 14.7
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 8.2
+  },
+  {
+   "geo": "LTU",
+   "time": "2015",
+   "value": 5.5
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 5.9
+  },
+  {
+   "geo": "LUX",
+   "time": "2015",
+   "value": 9.3
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 5.2
+  },
+  {
+   "geo": "LVA",
+   "time": "2015",
+   "value": 9.9
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 8.8
+  },
+  {
+   "geo": "MLT",
+   "time": "2015",
+   "value": 16.3
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 8.6
+  },
+  {
+   "geo": "NLD",
+   "time": "2015",
+   "value": 8.2
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 7.4
+  },
+  {
+   "geo": "POL",
+   "time": "2015",
+   "value": 5.3
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 4.0
+  },
+  {
+   "geo": "PRT",
+   "time": "2015",
+   "value": 13.5
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 6.1
+  },
+  {
+   "geo": "ROU",
+   "time": "2015",
+   "value": 19.1
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 15.5
+  },
+  {
+   "geo": "SVK",
+   "time": "2015",
+   "value": 6.9
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 6.8
+  },
+  {
+   "geo": "SVN",
+   "time": "2015",
+   "value": 5.0
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 5.5
+  },
+  {
+   "geo": "SWE",
+   "time": "2015",
+   "value": 7.0
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 6.7
+  }
+ ]
+}

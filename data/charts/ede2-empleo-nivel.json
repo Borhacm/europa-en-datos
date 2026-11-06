@@ -1,0 +1,730 @@
+{
+ "id": "ede2-empleo-nivel",
+ "lens": "elige",
+ "theme": "educacion",
+ "title": {
+  "es": "En la UE trabaja el 88,4 % de los jóvenes con estudios superiores y el 56,5 % de los que no pasaron de la secundaria obligatoria; en Eslovaquia, la distancia es de 58 puntos",
+  "en": "In the EU, 88.4% of young people with tertiary education are in work, against 56.5% of those with lower secondary at most; in Slovakia, the gap is 58 points"
+ },
+ "subtitle": {
+  "es": "Tasa de empleo de las personas de 20 a 34 años que ya no estudian, por nivel de estudios, en %, 2025",
+  "en": "Employment rate of people aged 20 to 34 no longer in education, by educational attainment, in %, 2025"
+ },
+ "unit": {
+  "es": "% con empleo",
+  "en": "% in employment"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "edat_lfse_24",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/edat_lfse_24/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Encuesta de Población Activa de la UE. Cuenta a las personas de 20 a 34 años que no siguen estudiando ni formándose, sea cual sea el tiempo que haya pasado desde que terminaron.",
+   "Más empleo con más estudios no prueba que los estudios lo causen: también influyen otros factores, como el origen familiar, que estos datos no separan. El gráfico compara niveles, no mide el efecto de estudiar.",
+   "Chequia es el único país en el que los titulados superiores tienen menos empleo (78,2 %) que los de bachillerato o FP (84,3 %).",
+   "Eurostat marca como poco fiables por el tamaño de la muestra los datos del nivel más bajo en Croacia, Irlanda y Eslovenia, y señala cambios de definición en España y Francia y una ruptura de serie en Dinamarca."
+  ],
+  "en": [
+   "EU Labour Force Survey. It counts people aged 20 to 34 who are no longer in education or training, however long ago they finished.",
+   "More employment with more education does not prove that education causes it: other factors, such as family background, also play a part and these data do not separate them. The chart compares levels; it does not measure the effect of studying.",
+   "Czechia is the only country where tertiary graduates have a lower employment rate (78.2%) than those with upper secondary or vocational education (84.3%).",
+   "Eurostat flags the lowest-level figures for Croatia, Ireland and Slovenia as unreliable because of sample size, and notes definition changes in Spain and France and a break in the series for Denmark."
+  ]
+ },
+ "retrieved": "2026-11-06",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "dimensions": {
+  "isced11": {
+   "ED0-2": {
+    "es": "Hasta secundaria obligatoria",
+    "en": "Lower secondary at most"
+   },
+   "ED3_4": {
+    "es": "Bachillerato o FP media",
+    "en": "Upper secondary or vocational"
+   },
+   "ED5-8": {
+    "es": "Estudios superiores",
+    "en": "Tertiary education"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 59.2,
+   "isced11": "ED0-2"
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 85.4,
+   "isced11": "ED3_4"
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 89.2,
+   "isced11": "ED5-8"
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 51.1,
+   "isced11": "ED0-2"
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 79.7,
+   "isced11": "ED3_4"
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 90.2,
+   "isced11": "ED5-8"
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 38.9,
+   "isced11": "ED0-2"
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 78.6,
+   "isced11": "ED3_4"
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 91.6,
+   "isced11": "ED5-8"
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 75.7,
+   "isced11": "ED0-2"
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 83.9,
+   "isced11": "ED3_4"
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 87.6,
+   "isced11": "ED5-8"
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 62.5,
+   "isced11": "ED0-2"
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 84.3,
+   "isced11": "ED3_4"
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 78.2,
+   "isced11": "ED5-8"
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 58.7,
+   "isced11": "ED0-2"
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 87.5,
+   "isced11": "ED3_4"
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 90.3,
+   "isced11": "ED5-8"
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 59.5,
+   "isced11": "ED0-2"
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 82.7,
+   "isced11": "ED3_4"
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 87.6,
+   "isced11": "ED5-8"
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 67.1,
+   "isced11": "ED0-2"
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 76.9,
+   "isced11": "ED3_4"
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 86.8,
+   "isced11": "ED5-8"
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 60.5,
+   "isced11": "ED0-2"
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 81.8,
+   "isced11": "ED3_4"
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 89.6,
+   "isced11": "ED5-8"
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 56.5,
+   "isced11": "ED0-2"
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 80.6,
+   "isced11": "ED3_4"
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 88.4,
+   "isced11": "ED5-8"
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 32.8,
+   "isced11": "ED0-2"
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 76.2,
+   "isced11": "ED3_4"
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 89.2,
+   "isced11": "ED5-8"
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 48.5,
+   "isced11": "ED0-2"
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 75.1,
+   "isced11": "ED3_4"
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 86.4,
+   "isced11": "ED5-8"
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 54.0,
+   "isced11": "ED0-2"
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 70.1,
+   "isced11": "ED3_4"
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 80.3,
+   "isced11": "ED5-8"
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 50.1,
+   "isced11": "ED0-2"
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 82.2,
+   "isced11": "ED3_4"
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 89.8,
+   "isced11": "ED5-8"
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 56.2,
+   "isced11": "ED0-2"
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 86.0,
+   "isced11": "ED3_4"
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 92.7,
+   "isced11": "ED5-8"
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 42.7,
+   "isced11": "ED0-2"
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 74.6,
+   "isced11": "ED3_4"
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 91.6,
+   "isced11": "ED5-8"
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 55.3,
+   "isced11": "ED0-2"
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 73.8,
+   "isced11": "ED3_4"
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 83.4,
+   "isced11": "ED5-8"
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 37.5,
+   "isced11": "ED0-2"
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 79.7,
+   "isced11": "ED3_4"
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 91.6,
+   "isced11": "ED5-8"
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 65.5,
+   "isced11": "ED0-2"
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 81.0,
+   "isced11": "ED3_4"
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 90.5,
+   "isced11": "ED5-8"
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 53.9,
+   "isced11": "ED0-2"
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 77.7,
+   "isced11": "ED3_4"
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 88.9,
+   "isced11": "ED5-8"
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 77.1,
+   "isced11": "ED0-2"
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 89.9,
+   "isced11": "ED3_4"
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 92.3,
+   "isced11": "ED5-8"
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 65.3,
+   "isced11": "ED0-2"
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 87.6,
+   "isced11": "ED3_4"
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 92.7,
+   "isced11": "ED5-8"
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 52.0,
+   "isced11": "ED0-2"
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 82.2,
+   "isced11": "ED3_4"
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 92.1,
+   "isced11": "ED5-8"
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 73.4,
+   "isced11": "ED0-2"
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 86.2,
+   "isced11": "ED3_4"
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 90.3,
+   "isced11": "ED5-8"
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 37.6,
+   "isced11": "ED0-2"
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 75.6,
+   "isced11": "ED3_4"
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 90.1,
+   "isced11": "ED5-8"
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 32.2,
+   "isced11": "ED0-2"
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 83.6,
+   "isced11": "ED3_4"
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 90.2,
+   "isced11": "ED5-8"
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 50.7,
+   "isced11": "ED0-2"
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 85.9,
+   "isced11": "ED3_4"
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 90.0,
+   "isced11": "ED5-8"
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 64.6,
+   "isced11": "ED0-2"
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 86.5,
+   "isced11": "ED3_4"
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 92.1,
+   "isced11": "ED5-8"
+  }
+ ]
+}

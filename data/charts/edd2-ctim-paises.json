@@ -1,0 +1,387 @@
+{
+ "id": "edd2-ctim-paises",
+ "lens": "dentro",
+ "theme": "educacion",
+ "title": {
+  "es": "El 27,1 % de los universitarios de la UE estudia una carrera CTIM, frente al 32 % fijado para 2030; las mujeres son el 32,2 % y ningún país llega a dos de cada cinco",
+  "en": "27.1% of university students in the EU are enrolled in STEM, against the 32% set for 2030; women make up 32.2% and no country reaches two in five"
+ },
+ "subtitle": {
+  "es": "Estudiantes de educación terciaria en ciencias, matemáticas, informática e ingenierías, en % del total de estudiantes terciarios, 2024",
+  "en": "Tertiary students in science, mathematics, ICT and engineering, as % of all tertiary students, 2024"
+ },
+ "unit": {
+  "es": "% de los estudiantes terciarios",
+  "en": "% of tertiary students"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "educ_uoe_enrt03",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/educ_uoe_enrt03/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "CTIM: ciencias naturales, matemáticas y estadística; tecnologías de la información y las comunicaciones; ingeniería, industria y construcción (campos 05, 06 y 07 de la clasificación ISCED-F 2013), como en el objetivo europeo. Incluye ciclos cortos, grado, máster y doctorado.",
+   "El objetivo pide también que al menos dos de cada cinco estudiantes CTIM (40 %) sean mujeres. El país más cerca es Suecia, con el 38,5 %.",
+   "En Irlanda, los estudiantes de ingeniería, industria y construcción pasan de 28.585 en 2023 a 59.544 en 2024 sin que Eurostat marque una ruptura de serie: su posición en el ranking puede deberse a un cambio de cobertura."
+  ],
+  "en": [
+   "STEM: natural sciences, mathematics and statistics; information and communication technologies; engineering, manufacturing and construction (fields 05, 06 and 07 of the ISCED-F 2013 classification), as in the EU target. It includes short-cycle, bachelor's, master's and doctoral programmes.",
+   "The target also asks for at least two in five STEM students (40%) to be women. The closest country is Sweden, at 38.5%.",
+   "In Ireland, students in engineering, manufacturing and construction go from 28,585 in 2023 to 59,544 in 2024 without Eurostat flagging a break in the series: its position in the ranking may reflect a change in coverage."
+  ]
+ },
+ "retrieved": "2026-11-06",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "targets": [
+  {
+   "value": 32,
+   "label": {
+    "es": "Objetivo 2030: 32 %",
+    "en": "2030 target: 32%"
+   }
+  }
+ ],
+ "women_share": {
+  "EU27": 32.2,
+  "AUT": 33.0,
+  "BEL": 27.4,
+  "BGR": 31.6,
+  "HRV": 36.0,
+  "CYP": 34.1,
+  "CZE": 32.6,
+  "DNK": 35.4,
+  "EST": 37.0,
+  "FIN": 30.3,
+  "FRA": 35.0,
+  "DEU": 29.8,
+  "GRC": 32.7,
+  "HUN": 24.9,
+  "IRL": 25.6,
+  "ITA": 37.0,
+  "LVA": 27.5,
+  "LTU": 27.4,
+  "LUX": 31.6,
+  "MLT": 31.2,
+  "NLD": 30.8,
+  "POL": 33.5,
+  "PRT": 31.0,
+  "ROU": 37.0,
+  "SVK": 29.5,
+  "SVN": 32.6,
+  "ESP": 29.0,
+  "SWE": 38.5
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2024",
+   "value": 29.0
+  },
+  {
+   "geo": "BEL",
+   "time": "2024",
+   "value": 18.9
+  },
+  {
+   "geo": "BGR",
+   "time": "2024",
+   "value": 22.4
+  },
+  {
+   "geo": "CYP",
+   "time": "2024",
+   "value": 14.7
+  },
+  {
+   "geo": "CZE",
+   "time": "2024",
+   "value": 24.9
+  },
+  {
+   "geo": "DEU",
+   "time": "2024",
+   "value": 35.4
+  },
+  {
+   "geo": "DNK",
+   "time": "2024",
+   "value": 24.9
+  },
+  {
+   "geo": "ESP",
+   "time": "2024",
+   "value": 25.3
+  },
+  {
+   "geo": "EST",
+   "time": "2024",
+   "value": 31.1
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "value": 27.1
+  },
+  {
+   "geo": "FIN",
+   "time": "2024",
+   "value": 35.8
+  },
+  {
+   "geo": "FRA",
+   "time": "2024",
+   "value": 23.9
+  },
+  {
+   "geo": "GRC",
+   "time": "2024",
+   "value": 34.4
+  },
+  {
+   "geo": "HRV",
+   "time": "2024",
+   "value": 28.9
+  },
+  {
+   "geo": "HUN",
+   "time": "2024",
+   "value": 24.1
+  },
+  {
+   "geo": "IRL",
+   "time": "2024",
+   "value": 36.4
+  },
+  {
+   "geo": "ITA",
+   "time": "2024",
+   "value": 25.0
+  },
+  {
+   "geo": "LTU",
+   "time": "2024",
+   "value": 25.6
+  },
+  {
+   "geo": "LUX",
+   "time": "2024",
+   "value": 27.5
+  },
+  {
+   "geo": "LVA",
+   "time": "2024",
+   "value": 24.0
+  },
+  {
+   "geo": "MLT",
+   "time": "2024",
+   "value": 13.2
+  },
+  {
+   "geo": "NLD",
+   "time": "2024",
+   "value": 18.8
+  },
+  {
+   "geo": "POL",
+   "time": "2024",
+   "value": 20.5
+  },
+  {
+   "geo": "PRT",
+   "time": "2024",
+   "value": 29.2
+  },
+  {
+   "geo": "ROU",
+   "time": "2024",
+   "value": 31.2
+  },
+  {
+   "geo": "SVK",
+   "time": "2024",
+   "value": 22.5
+  },
+  {
+   "geo": "SVN",
+   "time": "2024",
+   "value": 29.9
+  },
+  {
+   "geo": "SWE",
+   "time": "2024",
+   "value": 29.2
+  }
+ ]
+}

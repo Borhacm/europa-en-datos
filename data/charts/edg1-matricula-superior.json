@@ -1,0 +1,363 @@
+{
+ "id": "edg1-matricula-superior",
+ "lens": "gigantes",
+ "theme": "educacion",
+ "title": {
+  "es": "En China, la matrícula en estudios superiores ha pasado del 7,6 % en 2000 al 76,9 % y se acerca a la de la UE (79,5 %) y EE. UU. (79,4 %)",
+  "en": "In China, enrolment in higher education has gone from 7.6% in 2000 to 76.9%, close to the EU (79.5%) and the US (79.4%)"
+ },
+ "subtitle": {
+  "es": "Tasa bruta de matrícula en educación terciaria, en % de la población en edad de cursarla, 2000-2024",
+  "en": "Gross enrolment ratio in tertiary education, as % of the population of tertiary age, 2000-2024"
+ },
+ "unit": {
+  "es": "% del grupo de edad",
+  "en": "% of the age group"
+ },
+ "source": {
+  "name": "Banco Mundial, Matrícula en educación terciaria (% bruto), datos del Instituto de Estadística de la UNESCO",
+  "dataset": "SE.TER.ENRR",
+  "url": "https://data.worldbank.org/indicator/SE.TER.ENRR",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Estudiantes matriculados en educación terciaria (ciclos cortos, grado, máster y doctorado), de cualquier edad, divididos por la población de los cinco años siguientes a la edad de terminar la secundaria. Por eso se llama tasa bruta: cuenta también a los mayores y no es la parte de los jóvenes que estudia.",
+   "Para EE. UU., la UNESCO solo publica algunos años; el último es 2022. En la UE, son los 27 países actuales en todos los años.",
+   "La tasa no dice nada de la calidad ni de cuántos terminan los estudios."
+  ],
+  "en": [
+   "Students enrolled in tertiary education (short cycle, bachelor's, master's and doctoral), of any age, divided by the population in the five years after the age of finishing secondary school. That is why it is called a gross ratio: it also counts older students and is not the share of young people who study.",
+   "For the US, UNESCO only publishes some years; the latest is 2022. For the EU, the figures cover today's 27 countries in every year.",
+   "The ratio says nothing about quality or about how many finish their studies."
+  ]
+ },
+ "retrieved": "2026-11-06",
+ "geos": {
+  "CHN": {
+   "es": "China",
+   "en": "China",
+   "eu": false,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "USA": {
+   "es": "Estados Unidos",
+   "en": "United States",
+   "eu": false,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "CHN",
+   "time": "2000",
+   "value": 7.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2001",
+   "value": 9.3
+  },
+  {
+   "geo": "CHN",
+   "time": "2002",
+   "value": 11.8
+  },
+  {
+   "geo": "CHN",
+   "time": "2003",
+   "value": 14.5
+  },
+  {
+   "geo": "CHN",
+   "time": "2004",
+   "value": 16.9
+  },
+  {
+   "geo": "CHN",
+   "time": "2005",
+   "value": 18.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2006",
+   "value": 20.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2007",
+   "value": 21.5
+  },
+  {
+   "geo": "CHN",
+   "time": "2008",
+   "value": 21.9
+  },
+  {
+   "geo": "CHN",
+   "time": "2009",
+   "value": 23.3
+  },
+  {
+   "geo": "CHN",
+   "time": "2010",
+   "value": 25.3
+  },
+  {
+   "geo": "CHN",
+   "time": "2011",
+   "value": 26.8
+  },
+  {
+   "geo": "CHN",
+   "time": "2012",
+   "value": 29.3
+  },
+  {
+   "geo": "CHN",
+   "time": "2013",
+   "value": 32.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2014",
+   "value": 43.7
+  },
+  {
+   "geo": "CHN",
+   "time": "2015",
+   "value": 47.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2016",
+   "value": 49.3
+  },
+  {
+   "geo": "CHN",
+   "time": "2017",
+   "value": 51.1
+  },
+  {
+   "geo": "CHN",
+   "time": "2018",
+   "value": 53.4
+  },
+  {
+   "geo": "CHN",
+   "time": "2019",
+   "value": 56.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2020",
+   "value": 61.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2021",
+   "value": 66.8
+  },
+  {
+   "geo": "CHN",
+   "time": "2022",
+   "value": 71.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2023",
+   "value": 74.6
+  },
+  {
+   "geo": "CHN",
+   "time": "2024",
+   "value": 76.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2000",
+   "value": 50.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2001",
+   "value": 53.3
+  },
+  {
+   "geo": "EU27",
+   "time": "2002",
+   "value": 55.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2003",
+   "value": 58.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2004",
+   "value": 60.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2005",
+   "value": 61.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2006",
+   "value": 62.8
+  },
+  {
+   "geo": "EU27",
+   "time": "2007",
+   "value": 63.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2008",
+   "value": 64.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2009",
+   "value": 65.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2010",
+   "value": 66.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2011",
+   "value": 67.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2012",
+   "value": 67.4
+  },
+  {
+   "geo": "EU27",
+   "time": "2013",
+   "value": 67.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2014",
+   "value": 68.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2015",
+   "value": 69.8
+  },
+  {
+   "geo": "EU27",
+   "time": "2016",
+   "value": 70.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2017",
+   "value": 71.8
+  },
+  {
+   "geo": "EU27",
+   "time": "2018",
+   "value": 72.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2019",
+   "value": 74.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2020",
+   "value": 75.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "value": 77.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2022",
+   "value": 79.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2023",
+   "value": 79.5
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "value": 79.5
+  },
+  {
+   "geo": "USA",
+   "time": "2005",
+   "value": 80.6
+  },
+  {
+   "geo": "USA",
+   "time": "2013",
+   "value": 88.7
+  },
+  {
+   "geo": "USA",
+   "time": "2014",
+   "value": 88.6
+  },
+  {
+   "geo": "USA",
+   "time": "2015",
+   "value": 88.9
+  },
+  {
+   "geo": "USA",
+   "time": "2016",
+   "value": 88.8
+  },
+  {
+   "geo": "USA",
+   "time": "2017",
+   "value": 88.2
+  },
+  {
+   "geo": "USA",
+   "time": "2018",
+   "value": 88.3
+  },
+  {
+   "geo": "USA",
+   "time": "2019",
+   "value": 87.9
+  },
+  {
+   "geo": "USA",
+   "time": "2020",
+   "value": 87.6
+  },
+  {
+   "geo": "USA",
+   "time": "2021",
+   "value": 84.9
+  },
+  {
+   "geo": "USA",
+   "time": "2022",
+   "value": 79.4
+  }
+ ]
+}

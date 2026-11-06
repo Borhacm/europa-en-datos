@@ -1,0 +1,728 @@
+{
+ "id": "ede1-gasto-niveles",
+ "lens": "elige",
+ "theme": "educacion",
+ "title": {
+  "es": "De cada 100 euros de gasto público en educación, la UE dedica 16 a la educación superior; Grecia, 32,9, y Francia, 8,3",
+  "en": "Of every 100 euros of public spending on education, the EU devotes 16 to tertiary education; Greece, 32.9, and France, 8.3"
+ },
+ "subtitle": {
+  "es": "Gasto de las administraciones públicas en educación por etapa, en % del gasto público en educación, 2024. UE: 4,7 % del PIB en total",
+  "en": "General government spending on education by level, as % of public spending on education, 2024. EU: 4.7% of GDP in total"
+ },
+ "unit": {
+  "es": "% del gasto público en educación",
+  "en": "% of public spending on education"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "gov_10a_exp",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Gasto de todas las administraciones públicas (estatal, regional y local) en la función educación de la clasificación COFOG, en millones de euros. No incluye lo que pagan las familias ni las empresas.",
+   "«Infantil, primaria y secundaria» suma también la postsecundaria no terciaria. «Servicios auxiliares, I+D y otros» incluye el transporte escolar, los comedores y el alojamiento, la investigación sobre educación y el gasto que no se puede asignar a un nivel.",
+   "Cada país asigna su gasto a los niveles a su manera, así que la comparación es aproximada. En Francia, por ejemplo, los servicios auxiliares y otros suman el 19,7 %, frente al 12,2 % de la UE."
+  ],
+  "en": [
+   "Spending by all levels of government (central, regional and local) on the education function of the COFOG classification, in millions of euros. It does not include what households or businesses pay.",
+   "«Pre-primary, primary and secondary» also includes post-secondary non-tertiary education. «Subsidiary services, R&D and other» includes school transport, meals and accommodation, research on education and spending that cannot be assigned to a level.",
+   "Each country assigns its spending to levels in its own way, so the comparison is approximate. In France, for example, subsidiary services and other spending add up to 19.7%, against 12.2% in the EU."
+  ]
+ },
+ "retrieved": "2026-11-06",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "dimensions": {
+  "reason": {
+   "SCHOOL": {
+    "es": "Infantil, primaria y secundaria",
+    "en": "Pre-primary, primary and secondary"
+   },
+   "TERTIARY": {
+    "es": "Educación superior",
+    "en": "Tertiary education"
+   },
+   "OTHER": {
+    "es": "Servicios auxiliares, I+D y otros",
+    "en": "Subsidiary services, R&D and other"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2024",
+   "reason": "OTHER",
+   "value": 11.7
+  },
+  {
+   "geo": "AUT",
+   "time": "2024",
+   "reason": "SCHOOL",
+   "value": 72.6
+  },
+  {
+   "geo": "AUT",
+   "time": "2024",
+   "reason": "TERTIARY",
+   "value": 15.7
+  },
+  {
+   "geo": "BEL",
+   "time": "2024",
+   "reason": "OTHER",
+   "value": 15.3
+  },
+  {
+   "geo": "BEL",
+   "time": "2024",
+   "reason": "SCHOOL",
+   "value": 69.5
+  },
+  {
+   "geo": "BEL",
+   "time": "2024",
+   "reason": "TERTIARY",
+   "value": 15.2
+  },
+  {
+   "geo": "BGR",
+   "time": "2024",
+   "reason": "OTHER",
+   "value": 8.2
+  },
+  {
+   "geo": "BGR",
+   "time": "2024",
+   "reason": "SCHOOL",
+   "value": 74.2
+  },
+  {
+   "geo": "BGR",
+   "time": "2024",
+   "reason": "TERTIARY",
+   "value": 17.6
+  },
+  {
+   "geo": "CYP",
+   "time": "2024",
+   "reason": "OTHER",
+   "value": 12.8
+  },
+  {
+   "geo": "CYP",
+   "time": "2024",
+   "reason": "SCHOOL",
+   "value": 68.8
+  },
+  {
+   "geo": "CYP",
+   "time": "2024",
+   "reason": "TERTIARY",
+   "value": 18.4
+  },
+  {
+   "geo": "CZE",
+   "time": "2024",
+   "reason": "OTHER",
+   "value": 9.9
+  },
+  {
+   "geo": "CZE",
+   "time": "2024",
+   "reason": "SCHOOL",
+   "value": 73.8
+  },
+  {
+   "geo": "CZE",
+   "time": "2024",
+   "reason": "TERTIARY",
+   "value": 16.3
+  },
+  {
+   "geo": "DEU",
+   "time": "2024",
+   "reason": "OTHER",
+   "value": 13.2
+  },
+  {
+   "geo": "DEU",
+   "time": "2024",
+   "reason": "SCHOOL",
+   "value": 69.4
+  },
+  {
+   "geo": "DEU",
+   "time": "2024",
+   "reason": "TERTIARY",
+   "value": 17.4
+  },
+  {
+   "geo": "DNK",
+   "time": "2024",
+   "reason": "OTHER",
+   "value": 5.4
+  },
+  {
+   "geo": "DNK",
+   "time": "2024",
+   "reason": "SCHOOL",
+   "value": 68.4
+  },
+  {
+   "geo": "DNK",
+   "time": "2024",
+   "reason": "TERTIARY",
+   "value": 26.2
+  },
+  {
+   "geo": "ESP",
+   "time": "2024",
+   "reason": "OTHER",
+   "value": 10.3
+  },
+  {
+   "geo": "ESP",
+   "time": "2024",
+   "reason": "SCHOOL",
+   "value": 76.3
+  },
+  {
+   "geo": "ESP",
+   "time": "2024",
+   "reason": "TERTIARY",
+   "value": 13.4
+  },
+  {
+   "geo": "EST",
+   "time": "2024",
+   "reason": "OTHER",
+   "value": 13.4
+  },
+  {
+   "geo": "EST",
+   "time": "2024",
+   "reason": "SCHOOL",
+   "value": 69.0
+  },
+  {
+   "geo": "EST",
+   "time": "2024",
+   "reason": "TERTIARY",
+   "value": 17.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "reason": "OTHER",
+   "value": 12.2
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "reason": "SCHOOL",
+   "value": 71.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "reason": "TERTIARY",
+   "value": 16.0
+  },
+  {
+   "geo": "FIN",
+   "time": "2024",
+   "reason": "OTHER",
+   "value": 5.7
+  },
+  {
+   "geo": "FIN",
+   "time": "2024",
+   "reason": "SCHOOL",
+   "value": 66.8
+  },
+  {
+   "geo": "FIN",
+   "time": "2024",
+   "reason": "TERTIARY",
+   "value": 27.5
+  },
+  {
+   "geo": "FRA",
+   "time": "2024",
+   "reason": "OTHER",
+   "value": 19.7
+  },
+  {
+   "geo": "FRA",
+   "time": "2024",
+   "reason": "SCHOOL",
+   "value": 72.1
+  },
+  {
+   "geo": "FRA",
+   "time": "2024",
+   "reason": "TERTIARY",
+   "value": 8.3
+  },
+  {
+   "geo": "GRC",
+   "time": "2024",
+   "reason": "OTHER",
+   "value": 5.9
+  },
+  {
+   "geo": "GRC",
+   "time": "2024",
+   "reason": "SCHOOL",
+   "value": 61.2
+  },
+  {
+   "geo": "GRC",
+   "time": "2024",
+   "reason": "TERTIARY",
+   "value": 32.9
+  },
+  {
+   "geo": "HRV",
+   "time": "2024",
+   "reason": "OTHER",
+   "value": 11.8
+  },
+  {
+   "geo": "HRV",
+   "time": "2024",
+   "reason": "SCHOOL",
+   "value": 64.5
+  },
+  {
+   "geo": "HRV",
+   "time": "2024",
+   "reason": "TERTIARY",
+   "value": 23.7
+  },
+  {
+   "geo": "HUN",
+   "time": "2024",
+   "reason": "OTHER",
+   "value": 18.8
+  },
+  {
+   "geo": "HUN",
+   "time": "2024",
+   "reason": "SCHOOL",
+   "value": 52.8
+  },
+  {
+   "geo": "HUN",
+   "time": "2024",
+   "reason": "TERTIARY",
+   "value": 28.4
+  },
+  {
+   "geo": "IRL",
+   "time": "2024",
+   "reason": "OTHER",
+   "value": 6.6
+  },
+  {
+   "geo": "IRL",
+   "time": "2024",
+   "reason": "SCHOOL",
+   "value": 77.1
+  },
+  {
+   "geo": "IRL",
+   "time": "2024",
+   "reason": "TERTIARY",
+   "value": 16.4
+  },
+  {
+   "geo": "ITA",
+   "time": "2024",
+   "reason": "OTHER",
+   "value": 8.9
+  },
+  {
+   "geo": "ITA",
+   "time": "2024",
+   "reason": "SCHOOL",
+   "value": 80.8
+  },
+  {
+   "geo": "ITA",
+   "time": "2024",
+   "reason": "TERTIARY",
+   "value": 10.3
+  },
+  {
+   "geo": "LTU",
+   "time": "2024",
+   "reason": "OTHER",
+   "value": 19.7
+  },
+  {
+   "geo": "LTU",
+   "time": "2024",
+   "reason": "SCHOOL",
+   "value": 65.2
+  },
+  {
+   "geo": "LTU",
+   "time": "2024",
+   "reason": "TERTIARY",
+   "value": 15.1
+  },
+  {
+   "geo": "LUX",
+   "time": "2024",
+   "reason": "OTHER",
+   "value": 20.3
+  },
+  {
+   "geo": "LUX",
+   "time": "2024",
+   "reason": "SCHOOL",
+   "value": 70.7
+  },
+  {
+   "geo": "LUX",
+   "time": "2024",
+   "reason": "TERTIARY",
+   "value": 9.1
+  },
+  {
+   "geo": "LVA",
+   "time": "2024",
+   "reason": "OTHER",
+   "value": 16.9
+  },
+  {
+   "geo": "LVA",
+   "time": "2024",
+   "reason": "SCHOOL",
+   "value": 65.6
+  },
+  {
+   "geo": "LVA",
+   "time": "2024",
+   "reason": "TERTIARY",
+   "value": 17.5
+  },
+  {
+   "geo": "MLT",
+   "time": "2024",
+   "reason": "OTHER",
+   "value": 20.0
+  },
+  {
+   "geo": "MLT",
+   "time": "2024",
+   "reason": "SCHOOL",
+   "value": 65.6
+  },
+  {
+   "geo": "MLT",
+   "time": "2024",
+   "reason": "TERTIARY",
+   "value": 14.4
+  },
+  {
+   "geo": "NLD",
+   "time": "2024",
+   "reason": "OTHER",
+   "value": 4.5
+  },
+  {
+   "geo": "NLD",
+   "time": "2024",
+   "reason": "SCHOOL",
+   "value": 69.4
+  },
+  {
+   "geo": "NLD",
+   "time": "2024",
+   "reason": "TERTIARY",
+   "value": 26.1
+  },
+  {
+   "geo": "POL",
+   "time": "2024",
+   "reason": "OTHER",
+   "value": 9.4
+  },
+  {
+   "geo": "POL",
+   "time": "2024",
+   "reason": "SCHOOL",
+   "value": 68.4
+  },
+  {
+   "geo": "POL",
+   "time": "2024",
+   "reason": "TERTIARY",
+   "value": 22.3
+  },
+  {
+   "geo": "PRT",
+   "time": "2024",
+   "reason": "OTHER",
+   "value": 9.4
+  },
+  {
+   "geo": "PRT",
+   "time": "2024",
+   "reason": "SCHOOL",
+   "value": 74.7
+  },
+  {
+   "geo": "PRT",
+   "time": "2024",
+   "reason": "TERTIARY",
+   "value": 15.8
+  },
+  {
+   "geo": "ROU",
+   "time": "2024",
+   "reason": "OTHER",
+   "value": 15.9
+  },
+  {
+   "geo": "ROU",
+   "time": "2024",
+   "reason": "SCHOOL",
+   "value": 66.5
+  },
+  {
+   "geo": "ROU",
+   "time": "2024",
+   "reason": "TERTIARY",
+   "value": 17.6
+  },
+  {
+   "geo": "SVK",
+   "time": "2024",
+   "reason": "OTHER",
+   "value": 31.8
+  },
+  {
+   "geo": "SVK",
+   "time": "2024",
+   "reason": "SCHOOL",
+   "value": 57.9
+  },
+  {
+   "geo": "SVK",
+   "time": "2024",
+   "reason": "TERTIARY",
+   "value": 10.3
+  },
+  {
+   "geo": "SVN",
+   "time": "2024",
+   "reason": "OTHER",
+   "value": 7.8
+  },
+  {
+   "geo": "SVN",
+   "time": "2024",
+   "reason": "SCHOOL",
+   "value": 72.2
+  },
+  {
+   "geo": "SVN",
+   "time": "2024",
+   "reason": "TERTIARY",
+   "value": 20.0
+  },
+  {
+   "geo": "SWE",
+   "time": "2024",
+   "reason": "OTHER",
+   "value": 5.0
+  },
+  {
+   "geo": "SWE",
+   "time": "2024",
+   "reason": "SCHOOL",
+   "value": 79.9
+  },
+  {
+   "geo": "SWE",
+   "time": "2024",
+   "reason": "TERTIARY",
+   "value": 15.1
+  }
+ ]
+}
