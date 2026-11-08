@@ -102,6 +102,20 @@ notas:
     tema: ia-digital
     fuentes: [Eurostat edat_lfse_03]
 
+  - id: n13
+    titulo: Quién trabaja desde casa, país por país
+    angulo: "Personas ocupadas de 20 a 64 años que trabajan desde casa habitualmente, a veces o nunca, por país, y cambio desde 2022. En la UE, en 2025, el 8,9 % lo hace habitualmente y el 14,4 % a veces (filtros: sex=T, age=Y20-64, wstatus=EMP, unit=PC). Descriptivo: sin atribuir las diferencias a una ley o a un gobierno; el peso de cada sector influye, y hay que decirlo. Enlazar el tema Empleo sin repetir su paro juvenil ni su tasa de empleo."
+    mirada: dentro
+    tema: empleo
+    fuentes: ["Eurostat lfsa_ehomp (hasta 2025, comprobado el 8/11/2026)"]
+
+  - id: n14
+    titulo: Menores de 3 años en educación infantil frente al objetivo de la UE
+    angulo: "Niños menores de 3 años en educación y cuidados formales por país, separando menos de 30 horas semanales y 30 o más, frente al objetivo del 45 % para 2030 de la Recomendación del Consejo de 2022 (objetivos de Barcelona). En la UE, en 2025, el 14,4 % va de 1 a 29 horas y el 26,1 % 30 horas o más (filtros: age=Y_LT3, unit=PC, duration=H1-29 y H_GE30). Descriptivo: la encuesta mide asistencia, no calidad ni plazas disponibles. Enlazar el tema Educación, que no publica este desglose."
+    mirada: dentro
+    tema: educacion
+    fuentes: ["Eurostat ilc_caindformal (hasta 2025, comprobado el 8/11/2026)", "Recomendación del Consejo de 8/12/2022, los objetivos de Barcelona para 2030 (DO C 484, 2022/C 484/01, CELEX 32022H1220(01)): comprobar el texto en la fuente oficial"]
+
 articulos:
   - id: a10
     tema_id: dinero
