@@ -1,0 +1,366 @@
+{
+ "id": "n12-universitarios-paises",
+ "lens": "dentro",
+ "theme": "educacion",
+ "title": {
+  "es": "11 de los 27 países superan ya el 47 % de personas de 25 a 34 años con estudios superiores que la UE se ha fijado para 2030; Rumanía, con el 23 %, no llega a la mitad",
+  "en": "11 of the 27 countries already exceed the 47% of 25 to 34-year-olds with tertiary education the EU has set for 2030; Romania, at 23%, is below half of it"
+ },
+ "subtitle": {
+  "es": "Personas de 25 a 34 años con estudios superiores, en % de la población de esa edad, 2025. UE: 44,8 %",
+  "en": "People aged 25 to 34 with tertiary education, % of the population of that age, 2025. EU: 44.8%"
+ },
+ "unit": {
+  "es": "% de la población de 25 a 34 años",
+  "en": "% of the population aged 25-34"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "edat_lfse_03",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/edat_lfse_03/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Encuesta de Población Activa de la UE. Estudios superiores: niveles 5 a 8 de la clasificación ISCED 2011 (ciclos cortos de educación superior, como la FP de grado superior en España, grado, máster y doctorado).",
+   "El objetivo es para la media de la UE, no para cada país: la resolución del Consejo de 2026 lo subió del 45 % al 47 % de las personas de 25 a 34 años para 2030. La educación es competencia de cada Estado.",
+   "Cuenta dónde viven las personas, no dónde estudiaron: un país que recibe titulados de otros sube y uno que los pierde baja.",
+   "Hay una ruptura de serie en 2021 en casi todos los países por el nuevo reglamento de la encuesta: por eso esta nota no compara con años anteriores."
+  ],
+  "en": [
+   "EU Labour Force Survey. Tertiary education: ISCED 2011 levels 5 to 8 (short-cycle tertiary, such as higher vocational training in Spain, bachelor's, master's and doctorate).",
+   "The target applies to the EU average, not to each country: the Council's 2026 resolution raised it from 45% to 47% of 25 to 34-year-olds by 2030. Education is a national competence.",
+   "It counts where people live, not where they studied: a country that attracts graduates from elsewhere rises and one that loses them falls.",
+   "There is a break in series in 2021 in almost every country because of the survey's new regulation: that is why this note does not compare with earlier years."
+  ]
+ },
+ "retrieved": "2026-11-10",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "targets": [
+  {
+   "value": 45,
+   "label": {
+    "es": "Objetivo de 2021: 45 %",
+    "en": "2021 target: 45%"
+   }
+  },
+  {
+   "value": 47,
+   "label": {
+    "es": "Objetivo 2030: 47 %",
+    "en": "2030 target: 47%"
+   }
+  }
+ ],
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 43.7
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 52.7
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 41.2
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 60.0
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 36.0
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 40.9
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 52.5
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 52.5
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 44.3
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 44.8
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 38.2
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 55.8
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 42.8
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 42.0
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 32.6
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 66.8
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 31.1
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 60.8
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 65.2
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 44.7
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 47.7
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 56.1
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 45.2
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 42.5
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 23.0
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 36.3
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 42.8
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 53.6
+  }
+ ]
+}
