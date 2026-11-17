@@ -1,0 +1,494 @@
+{
+ "id": "n09-mayores-cambio",
+ "lens": "dentro",
+ "theme": "demografia",
+ "title": {
+  "es": "Polonia, uno de los países más jóvenes de la UE en 2005, es el que más ha envejecido: el 21 % de su población tiene 65 años o más, 7,9 puntos más",
+  "en": "Poland, one of the youngest EU countries in 2005, has aged the most: 21% of its population is 65 or older, 7.9 points more"
+ },
+ "subtitle": {
+  "es": "Población de 65 años o más, en % de la población total, a 1 de enero de 2005 y de 2025",
+  "en": "Population aged 65 or older, as % of the total population, on 1 January 2005 and 2025"
+ },
+ "unit": {
+  "es": "% de la población",
+  "en": "% of the population"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "demo_pjanind",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/demo_pjanind/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Población residente a 1 de enero de cada año, según los registros y estimaciones de cada instituto nacional de estadística (indicadores de estructura de la población de Eurostat).",
+   "El porcentaje de mayores depende de cuánto se vive, de cuántos niños nacen y de quién llega o se va: un país con mucha inmigración joven envejece más despacio aunque su gente viva lo mismo.",
+   "Los datos de 2025 de Polonia y de la UE son estimados y provisionales; los de Francia, provisionales, y los de Rumanía, estimados (marcas «e» y «p» de Eurostat).",
+   "La UE es la de 27 países en los dos años. Las cifras de la UE, EE. UU. y China del tema Demografía vienen del Banco Mundial (estimaciones de Naciones Unidas) y no coinciden exactamente con las de Eurostat."
+  ],
+  "en": [
+   "Resident population on 1 January of each year, from the registers and estimates of each national statistical office (Eurostat population structure indicators).",
+   "The share of older people depends on how long people live, how many children are born and who arrives or leaves: a country with a lot of young immigration ages more slowly even if its people live just as long.",
+   "The 2025 figures for Poland and the EU are estimated and provisional; France's are provisional and Romania's estimated (Eurostat flags \"e\" and \"p\").",
+   "The EU is the 27-country EU in both years. The EU, US and China figures in the Population topic come from the World Bank (United Nations estimates) and do not exactly match Eurostat's."
+  ]
+ },
+ "retrieved": "2026-11-17",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2005",
+   "value": 15.9
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 20.2
+  },
+  {
+   "geo": "BEL",
+   "time": "2005",
+   "value": 17.2
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 20.2
+  },
+  {
+   "geo": "BGR",
+   "time": "2005",
+   "value": 17.4
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 24.0
+  },
+  {
+   "geo": "CYP",
+   "time": "2005",
+   "value": 12.1
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 18.3
+  },
+  {
+   "geo": "CZE",
+   "time": "2005",
+   "value": 14.1
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 20.7
+  },
+  {
+   "geo": "DEU",
+   "time": "2005",
+   "value": 18.6
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 22.7
+  },
+  {
+   "geo": "DNK",
+   "time": "2005",
+   "value": 15.0
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 20.9
+  },
+  {
+   "geo": "ESP",
+   "time": "2005",
+   "value": 16.6
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 20.7
+  },
+  {
+   "geo": "EST",
+   "time": "2005",
+   "value": 16.6
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 20.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2005",
+   "value": 16.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 21.9,
+   "flag": "ep"
+  },
+  {
+   "geo": "FIN",
+   "time": "2005",
+   "value": 15.9
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 23.6
+  },
+  {
+   "geo": "FRA",
+   "time": "2005",
+   "value": 16.3
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 21.9,
+   "flag": "p"
+  },
+  {
+   "geo": "GRC",
+   "time": "2005",
+   "value": 18.3
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 23.7
+  },
+  {
+   "geo": "HRV",
+   "time": "2005",
+   "value": 17.3
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 23.3
+  },
+  {
+   "geo": "HUN",
+   "time": "2005",
+   "value": 15.6
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 20.9
+  },
+  {
+   "geo": "IRL",
+   "time": "2005",
+   "value": 11.1
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 15.7
+  },
+  {
+   "geo": "ITA",
+   "time": "2005",
+   "value": 19.5
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 24.7
+  },
+  {
+   "geo": "LTU",
+   "time": "2005",
+   "value": 15.8
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 20.9
+  },
+  {
+   "geo": "LUX",
+   "time": "2005",
+   "value": 14.1
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 15.2
+  },
+  {
+   "geo": "LVA",
+   "time": "2005",
+   "value": 16.6
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 21.9
+  },
+  {
+   "geo": "MLT",
+   "time": "2005",
+   "value": 13.3
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 18.4
+  },
+  {
+   "geo": "NLD",
+   "time": "2005",
+   "value": 14.0
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 20.8
+  },
+  {
+   "geo": "POL",
+   "time": "2005",
+   "value": 13.1
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 21.0,
+   "flag": "ep"
+  },
+  {
+   "geo": "PRT",
+   "time": "2005",
+   "value": 17.2
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 23.0
+  },
+  {
+   "geo": "ROU",
+   "time": "2005",
+   "value": 14.2
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 20.3,
+   "flag": "e"
+  },
+  {
+   "geo": "SVK",
+   "time": "2005",
+   "value": 11.7
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 18.8
+  },
+  {
+   "geo": "SVN",
+   "time": "2005",
+   "value": 15.3
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 22.1
+  },
+  {
+   "geo": "SWE",
+   "time": "2005",
+   "value": 17.2
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 20.8
+  }
+ ]
+}
