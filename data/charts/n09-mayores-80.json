@@ -1,0 +1,354 @@
+{
+ "id": "n09-mayores-80",
+ "lens": "dentro",
+ "theme": "demografia",
+ "title": {
+  "es": "En Italia, el 7,8 % de los habitantes tiene 80 años o más; en Eslovaquia, el 3,7 %",
+  "en": "In Italy, 7.8% of residents are 80 or older; in Slovakia, 3.7%"
+ },
+ "subtitle": {
+  "es": "Población de 80 años o más, en % de la población total, a 1 de enero de 2025",
+  "en": "Population aged 80 or older, as % of the total population, on 1 January 2025"
+ },
+ "unit": {
+  "es": "% de la población",
+  "en": "% of the population"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "demo_pjanind",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/demo_pjanind/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Población residente a 1 de enero de cada año, según los registros y estimaciones de cada instituto nacional de estadística (indicadores de estructura de la población de Eurostat).",
+   "El porcentaje de mayores depende de cuánto se vive, de cuántos niños nacen y de quién llega o se va: un país con mucha inmigración joven envejece más despacio aunque su gente viva lo mismo.",
+   "Los mayores de 80 años son los que más usan la sanidad y los cuidados de larga duración, pero este dato no dice cuántos necesitan ayuda ni quién se la da.",
+   "Los datos de Polonia y de la UE son estimados y provisionales; los de Francia, provisionales, y los de Rumanía, estimados."
+  ],
+  "en": [
+   "Resident population on 1 January of each year, from the registers and estimates of each national statistical office (Eurostat population structure indicators).",
+   "The share of older people depends on how long people live, how many children are born and who arrives or leaves: a country with a lot of young immigration ages more slowly even if its people live just as long.",
+   "People aged 80 and over are the heaviest users of health and long-term care, but this figure does not say how many need help or who provides it.",
+   "The figures for Poland and the EU are estimated and provisional; France's are provisional and Romania's estimated."
+  ]
+ },
+ "retrieved": "2026-11-17",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 6.0
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 5.6
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 5.3
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 4.4
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 4.8
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 7.2
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 5.7
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 6.2
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 5.8
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 6.2,
+   "flag": "ep"
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 6.1
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 6.2,
+   "flag": "p"
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 7.1
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 5.4
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 4.8
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 3.8
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 7.8
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 5.6
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 4.0
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 6.1
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 4.3
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 5.2
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 4.4,
+   "flag": "ep"
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 6.9
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 4.5,
+   "flag": "e"
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 3.7
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 5.9
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 6.1
+  }
+ ]
+}
