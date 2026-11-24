@@ -188,3 +188,17 @@ articulos:
     angulo: "Gigantes: estudios superiores e investigadores frente a EE. UU. y China. Elige: gasto público en educación. Dentro: abandono escolar y universitarios por país."
     fuentes: [Eurostat edat_lfse_03, Eurostat edat_lfse_14, Banco Mundial SP.POP.SCIE.RD.P6, Banco Mundial SE.XPD.TOTL.GD.ZS]
     relacionada: n12
+
+  - id: a12
+    tema_id: agricultura
+    codigo: AG
+    titulo: Agricultura y alimentación
+    angulo: "Gigantes: peso de la agricultura en el empleo y en el PIB, y rendimiento de los cereales en la UE, EE. UU. y China (el peso en el PIB de EE. UU. solo llega a 2021 en el Banco Mundial: dilo o usa otro año común). Elige: renta agraria por unidad de trabajo e inflación de los alimentos desde 2021, y la PAC como ficha de política (Reglamento (UE) 2021/2115 de los planes estratégicos, con su enlace a EUR-Lex). Dentro: superficie ecológica por país frente al objetivo orientativo del 25 % de la estrategia De la Granja a la Mesa, y renta agraria por país. Descriptivo: sin atribuir a la PAC subidas o bajadas de la renta."
+    fuentes: ["Banco Mundial SL.AGR.EMPL.ZS (hasta 2025), NV.AGR.TOTL.ZS (UE y China hasta 2025, EE. UU. hasta 2021) y AG.YLD.CREL.KG (hasta 2023-2024)", "Eurostat aact_eaa06 (renta agraria, hasta 2025) y aact_eaa01 (cuentas económicas de la agricultura, hasta 2025)", "Eurostat sdg_02_40 (superficie ecológica, % de la SAU, hasta 2024) y org_cropar", "Eurostat prc_hicp_aind, coicop CP011 (alimentos, hasta 2025)", "EUR-Lex: Reglamento (UE) 2021/2115"]
+
+  - id: a13
+    tema_id: salarios
+    codigo: SL
+    titulo: Salarios y salario mínimo
+    angulo: "Gigantes: salario medio anual frente a EE. UU. con datos de la OCDE (en paridad de poder adquisitivo) y productividad por hora; China solo si la OIT tiene una serie reciente comparable, y si no, dilo. Elige: la Directiva (UE) 2022/2041 sobre salarios mínimos adecuados como ficha (qué pide, quién la aprobó, plazo de transposición y lo que dijo el Tribunal de Justicia en el asunto C-19/23; compruébalo en EUR-Lex y en Curia, nada sin fuente). Dentro: salario mínimo mensual por país en euros y en paridad de poder adquisitivo, salario neto anual y trabajadores en riesgo de pobreza por país. Descriptivo: sin juzgar si los salarios mínimos son altos o bajos. No repetir el paro juvenil ni la tasa de empleo del tema Empleo: enlazarlo."
+    fuentes: ["Eurostat earn_mw_cur (salario mínimo, hasta 2026-S2)", "Eurostat earn_nt_net (salario neto anual, hasta 2025)", "Eurostat ilc_iw01 (trabajadores en riesgo de pobreza, hasta 2025)", "Eurostat nama_10_lp_ulc (productividad y costes laborales unitarios, hasta 2025)", "OCDE DSD_EARNINGS@AV_AN_WAGE (salario medio anual, EE. UU. y países de la UE hasta 2025)", "OIT (ilostat) salarios medios de China: comprobar si hay serie reciente", "EUR-Lex: Directiva (UE) 2022/2041"]
