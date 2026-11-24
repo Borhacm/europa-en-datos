@@ -1,0 +1,122 @@
+{
+ "id": "n10-nacidos-ue-evolucion",
+ "lens": "dentro",
+ "theme": "demografia",
+ "title": {
+  "es": "Desde 2021, los residentes en la UE nacidos fuera de ella han aumentado en 9,9 millones; los nacidos en otro país de la Unión, en medio millón",
+  "en": "Since 2021, EU residents born outside the EU have increased by 9.9 million; those born in another EU country, by half a million"
+ },
+ "subtitle": {
+  "es": "Residentes en la UE según dónde nacieron, en millones de personas, 2021-2025",
+  "en": "EU residents by place of birth, in millions of people, 2021-2025"
+ },
+ "unit": {
+  "es": "millones de personas",
+  "en": "million people"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "migr_pop3ctb",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/migr_pop3ctb/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Población residente a 1 de enero, por país de nacimiento. Cuenta dónde nació cada persona, no su nacionalidad: incluye a quienes ya tienen la nacionalidad del país en el que viven.",
+   "«Otro país de la UE» es cualquiera de los 26 restantes, con la UE de 27 en todos los años; los nacidos en el Reino Unido cuentan como nacidos fuera de la UE.",
+   "Agregado de la UE calculado por Eurostat. Es provisional y en parte estimado; de 2021 a 2023 tiene ruptura de serie (marca «b» de Eurostat), porque algunos países, como Chequia, Croacia, Polonia y Portugal, cambiaron sus fuentes en 2021 o 2022.",
+   "Se empieza en 2021 porque es el primer año para el que Eurostat publica el agregado de la UE en esta serie.",
+   "Los aumentos del titular se calculan con las cifras sin redondear (9,88 y 0,47 millones), por eso no coinciden exactamente con la resta de los valores del gráfico."
+  ],
+  "en": [
+   "Resident population on 1 January, by country of birth. It counts where each person was born, not their nationality: it includes people who already hold the nationality of the country they live in.",
+   "\"Another EU country\" is any of the other 26, using the 27-member EU in every year; people born in the United Kingdom count as born outside the EU.",
+   "EU aggregate calculated by Eurostat. It is provisional and partly estimated; from 2021 to 2023 it has breaks in series (Eurostat flag \"b\"), because some countries, such as Czechia, Croatia, Poland and Portugal, changed their sources in 2021 or 2022.",
+   "The chart starts in 2021 because it is the first year for which Eurostat publishes the EU aggregate in this series.",
+   "The increases in the title are calculated from unrounded figures (9.88 and 0.47 million), so they do not exactly match the difference between the values in the chart."
+  ]
+ },
+ "retrieved": "2026-11-24",
+ "geos": {
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  }
+ },
+ "dimensions": {
+  "series": {
+   "EU27_2020_FOR": {
+    "es": "Nacidos en otro país de la UE",
+    "en": "Born in another EU country"
+   },
+   "NEU27_2020_FOR": {
+    "es": "Nacidos fuera de la UE",
+    "en": "Born outside the EU"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "series": "EU27_2020_FOR",
+   "value": 17.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2022",
+   "series": "EU27_2020_FOR",
+   "value": 17.4
+  },
+  {
+   "geo": "EU27",
+   "time": "2023",
+   "series": "EU27_2020_FOR",
+   "value": 17.7
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "series": "EU27_2020_FOR",
+   "value": 17.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "series": "EU27_2020_FOR",
+   "value": 18.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2021",
+   "series": "NEU27_2020_FOR",
+   "value": 37.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2022",
+   "series": "NEU27_2020_FOR",
+   "value": 39.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2023",
+   "series": "NEU27_2020_FOR",
+   "value": 42.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2024",
+   "series": "NEU27_2020_FOR",
+   "value": 45.6
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "series": "NEU27_2020_FOR",
+   "value": 47.7
+  }
+ ]
+}
