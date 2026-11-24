@@ -1,0 +1,554 @@
+{
+ "id": "n12-universitarios-sexo",
+ "lens": "dentro",
+ "theme": "educacion",
+ "title": {
+  "es": "En la UE, el 50,5 % de las mujeres de 25 a 34 años tiene estudios superiores, frente al 39,3 % de los hombres; ellas van por delante en los 27 países",
+  "en": "In the EU, 50.5% of women aged 25 to 34 have tertiary education, against 39.3% of men; women lead in all 27 countries"
+ },
+ "subtitle": {
+  "es": "Personas de 25 a 34 años con estudios superiores, por sexo, en % de la población de esa edad y sexo, 2025",
+  "en": "People aged 25 to 34 with tertiary education, by sex, % of the population of that age and sex, 2025"
+ },
+ "unit": {
+  "es": "% de cada sexo",
+  "en": "% of each sex"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "edat_lfse_03",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/edat_lfse_03/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Encuesta de Población Activa de la UE. Estudios superiores: niveles 5 a 8 de la clasificación ISCED 2011 (ciclos cortos de educación superior, como la FP de grado superior en España, grado, máster y doctorado).",
+   "El objetivo europeo del 47 % es para hombres y mujeres juntos; no hay objetivo por sexo."
+  ],
+  "en": [
+   "EU Labour Force Survey. Tertiary education: ISCED 2011 levels 5 to 8 (short-cycle tertiary, such as higher vocational training in Spain, bachelor's, master's and doctorate).",
+   "The EU's 47% target is for men and women together; there is no target by sex."
+  ]
+ },
+ "retrieved": "2026-11-10",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "dimensions": {
+  "sex": {
+   "M": {
+    "es": "Hombres",
+    "en": "Men"
+   },
+   "F": {
+    "es": "Mujeres",
+    "en": "Women"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 49.7,
+   "sex": "F"
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "value": 38.0,
+   "sex": "M"
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 60.3,
+   "sex": "F"
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "value": 45.2,
+   "sex": "M"
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 48.1,
+   "sex": "F"
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "value": 34.6,
+   "sex": "M"
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 69.1,
+   "sex": "F"
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "value": 51.8,
+   "sex": "M"
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 43.5,
+   "sex": "F"
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "value": 28.9,
+   "sex": "M"
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 44.1,
+   "sex": "F"
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "value": 38.0,
+   "sex": "M"
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 61.3,
+   "sex": "F"
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "value": 44.1,
+   "sex": "M"
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 58.7,
+   "sex": "F"
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "value": 46.6,
+   "sex": "M"
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 56.2,
+   "sex": "F"
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "value": 33.2,
+   "sex": "M"
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 50.5,
+   "sex": "F"
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "value": 39.3,
+   "sex": "M"
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 46.2,
+   "sex": "F"
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "value": 30.7,
+   "sex": "M"
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 59.2,
+   "sex": "F"
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "value": 52.3,
+   "sex": "M"
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 50.9,
+   "sex": "F"
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "value": 35.4,
+   "sex": "M"
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 50.5,
+   "sex": "F"
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "value": 34.3,
+   "sex": "M"
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 37.6,
+   "sex": "F"
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "value": 27.9,
+   "sex": "M"
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 70.2,
+   "sex": "F"
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "value": 63.3,
+   "sex": "M"
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 37.8,
+   "sex": "F"
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "value": 24.7,
+   "sex": "M"
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 69.9,
+   "sex": "F"
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "value": 52.8,
+   "sex": "M"
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 67.5,
+   "sex": "F"
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "value": 63.0,
+   "sex": "M"
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 54.7,
+   "sex": "F"
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "value": 35.2,
+   "sex": "M"
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 56.2,
+   "sex": "F"
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "value": 41.5,
+   "sex": "M"
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 60.8,
+   "sex": "F"
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "value": 51.6,
+   "sex": "M"
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 54.5,
+   "sex": "F"
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "value": 36.3,
+   "sex": "M"
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 50.7,
+   "sex": "F"
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "value": 34.6,
+   "sex": "M"
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 25.2,
+   "sex": "F"
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "value": 21.1,
+   "sex": "M"
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 45.3,
+   "sex": "F"
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "value": 27.7,
+   "sex": "M"
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 55.4,
+   "sex": "F"
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "value": 31.6,
+   "sex": "M"
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 61.3,
+   "sex": "F"
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "value": 46.4,
+   "sex": "M"
+  }
+ ]
+}
