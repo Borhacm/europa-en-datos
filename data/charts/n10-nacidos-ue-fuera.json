@@ -1,0 +1,558 @@
+{
+ "id": "n10-nacidos-ue-fuera",
+ "lens": "dentro",
+ "theme": "demografia",
+ "title": {
+  "es": "Solo en Luxemburgo, Hungría y Eslovaquia viven más personas nacidas en otro país de la UE que fuera de ella",
+  "en": "Only in Luxembourg, Hungary and Slovakia do more residents come from another EU country than from outside the EU"
+ },
+ "subtitle": {
+  "es": "Población nacida en otro país de la UE y nacida fuera de la UE, en % de la población, 2025. UE: 4 % y 10,6 %",
+  "en": "Population born in another EU country and born outside the EU, as % of the population, 2025. EU: 4% and 10.6%"
+ },
+ "unit": {
+  "es": "% de la población",
+  "en": "% of the population"
+ },
+ "source": {
+  "name": "Eurostat",
+  "dataset": "migr_pop3ctb",
+  "url": "https://ec.europa.eu/eurostat/databrowser/view/migr_pop3ctb/default/table",
+  "license": "CC BY 4.0"
+ },
+ "notes": {
+  "es": [
+   "Población residente a 1 de enero, por país de nacimiento. Cuenta dónde nació cada persona, no su nacionalidad: incluye a quienes ya tienen la nacionalidad del país en el que viven.",
+   "«Otro país de la UE» es cualquiera de los 26 restantes, con la UE de 27 en todos los años; los nacidos en el Reino Unido cuentan como nacidos fuera de la UE.",
+   "Para la UE, «otro país de la UE» suma a todos los que viven en un país de la Unión distinto del suyo de nacimiento. El dato de Alemania es una estimación de Eurostat; el de Francia y el agregado de la UE son provisionales.",
+   "Eurostat ha actualizado la serie después de publicarse el tema Demografía: ya incluye a Portugal en 2025 y la parte de la UE nacida fuera de ella en 2025 es ahora del 10,6 %, no del 10,4 %."
+  ],
+  "en": [
+   "Resident population on 1 January, by country of birth. It counts where each person was born, not their nationality: it includes people who already hold the nationality of the country they live in.",
+   "\"Another EU country\" is any of the other 26, using the 27-member EU in every year; people born in the United Kingdom count as born outside the EU.",
+   "For the EU, \"another EU country\" adds up everyone living in an EU country other than the one they were born in. Germany's figure is a Eurostat estimate; France's and the EU aggregate are provisional.",
+   "Eurostat has updated the series since the Demography theme was published: it now includes Portugal for 2025, and the EU share born outside the EU in 2025 is now 10.6%, not 10.4%."
+  ]
+ },
+ "retrieved": "2026-11-24",
+ "geos": {
+  "AUT": {
+   "es": "Austria",
+   "en": "Austria",
+   "eu": true,
+   "aggregate": false
+  },
+  "BEL": {
+   "es": "Bélgica",
+   "en": "Belgium",
+   "eu": true,
+   "aggregate": false
+  },
+  "BGR": {
+   "es": "Bulgaria",
+   "en": "Bulgaria",
+   "eu": true,
+   "aggregate": false
+  },
+  "CYP": {
+   "es": "Chipre",
+   "en": "Cyprus",
+   "eu": true,
+   "aggregate": false
+  },
+  "CZE": {
+   "es": "Chequia",
+   "en": "Czechia",
+   "eu": true,
+   "aggregate": false
+  },
+  "DEU": {
+   "es": "Alemania",
+   "en": "Germany",
+   "eu": true,
+   "aggregate": false
+  },
+  "DNK": {
+   "es": "Dinamarca",
+   "en": "Denmark",
+   "eu": true,
+   "aggregate": false
+  },
+  "ESP": {
+   "es": "España",
+   "en": "Spain",
+   "eu": true,
+   "aggregate": false
+  },
+  "EST": {
+   "es": "Estonia",
+   "en": "Estonia",
+   "eu": true,
+   "aggregate": false
+  },
+  "EU27": {
+   "es": "Unión Europea",
+   "en": "European Union",
+   "eu": true,
+   "aggregate": true
+  },
+  "FIN": {
+   "es": "Finlandia",
+   "en": "Finland",
+   "eu": true,
+   "aggregate": false
+  },
+  "FRA": {
+   "es": "Francia",
+   "en": "France",
+   "eu": true,
+   "aggregate": false
+  },
+  "GRC": {
+   "es": "Grecia",
+   "en": "Greece",
+   "eu": true,
+   "aggregate": false
+  },
+  "HRV": {
+   "es": "Croacia",
+   "en": "Croatia",
+   "eu": true,
+   "aggregate": false
+  },
+  "HUN": {
+   "es": "Hungría",
+   "en": "Hungary",
+   "eu": true,
+   "aggregate": false
+  },
+  "IRL": {
+   "es": "Irlanda",
+   "en": "Ireland",
+   "eu": true,
+   "aggregate": false
+  },
+  "ITA": {
+   "es": "Italia",
+   "en": "Italy",
+   "eu": true,
+   "aggregate": false
+  },
+  "LTU": {
+   "es": "Lituania",
+   "en": "Lithuania",
+   "eu": true,
+   "aggregate": false
+  },
+  "LUX": {
+   "es": "Luxemburgo",
+   "en": "Luxembourg",
+   "eu": true,
+   "aggregate": false
+  },
+  "LVA": {
+   "es": "Letonia",
+   "en": "Latvia",
+   "eu": true,
+   "aggregate": false
+  },
+  "MLT": {
+   "es": "Malta",
+   "en": "Malta",
+   "eu": true,
+   "aggregate": false
+  },
+  "NLD": {
+   "es": "Países Bajos",
+   "en": "Netherlands",
+   "eu": true,
+   "aggregate": false
+  },
+  "POL": {
+   "es": "Polonia",
+   "en": "Poland",
+   "eu": true,
+   "aggregate": false
+  },
+  "PRT": {
+   "es": "Portugal",
+   "en": "Portugal",
+   "eu": true,
+   "aggregate": false
+  },
+  "ROU": {
+   "es": "Rumanía",
+   "en": "Romania",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVK": {
+   "es": "Eslovaquia",
+   "en": "Slovakia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SVN": {
+   "es": "Eslovenia",
+   "en": "Slovenia",
+   "eu": true,
+   "aggregate": false
+  },
+  "SWE": {
+   "es": "Suecia",
+   "en": "Sweden",
+   "eu": true,
+   "aggregate": false
+  }
+ },
+ "dimensions": {
+  "c_birth": {
+   "EU27_2020_FOR": {
+    "es": "Nacidos en otro país de la UE",
+    "en": "Born in another EU country"
+   },
+   "NEU27_2020_FOR": {
+    "es": "Nacidos fuera de la UE",
+    "en": "Born outside the EU"
+   }
+  }
+ },
+ "rows": [
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "c_birth": "EU27_2020_FOR",
+   "value": 9.7
+  },
+  {
+   "geo": "AUT",
+   "time": "2025",
+   "c_birth": "NEU27_2020_FOR",
+   "value": 12.8
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "c_birth": "EU27_2020_FOR",
+   "value": 8.1
+  },
+  {
+   "geo": "BEL",
+   "time": "2025",
+   "c_birth": "NEU27_2020_FOR",
+   "value": 12.1
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "c_birth": "EU27_2020_FOR",
+   "value": 1.2
+  },
+  {
+   "geo": "BGR",
+   "time": "2025",
+   "c_birth": "NEU27_2020_FOR",
+   "value": 2.7
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "c_birth": "EU27_2020_FOR",
+   "value": 9.1
+  },
+  {
+   "geo": "CYP",
+   "time": "2025",
+   "c_birth": "NEU27_2020_FOR",
+   "value": 18.4
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "c_birth": "EU27_2020_FOR",
+   "value": 2.9
+  },
+  {
+   "geo": "CZE",
+   "time": "2025",
+   "c_birth": "NEU27_2020_FOR",
+   "value": 7.2
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "c_birth": "EU27_2020_FOR",
+   "value": 7.6
+  },
+  {
+   "geo": "DEU",
+   "time": "2025",
+   "c_birth": "NEU27_2020_FOR",
+   "value": 13.0
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "c_birth": "EU27_2020_FOR",
+   "value": 4.6
+  },
+  {
+   "geo": "DNK",
+   "time": "2025",
+   "c_birth": "NEU27_2020_FOR",
+   "value": 9.7
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "c_birth": "EU27_2020_FOR",
+   "value": 3.3
+  },
+  {
+   "geo": "ESP",
+   "time": "2025",
+   "c_birth": "NEU27_2020_FOR",
+   "value": 16.0
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "c_birth": "EU27_2020_FOR",
+   "value": 1.9
+  },
+  {
+   "geo": "EST",
+   "time": "2025",
+   "c_birth": "NEU27_2020_FOR",
+   "value": 15.9
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "c_birth": "EU27_2020_FOR",
+   "value": 4.0
+  },
+  {
+   "geo": "EU27",
+   "time": "2025",
+   "c_birth": "NEU27_2020_FOR",
+   "value": 10.6
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "c_birth": "EU27_2020_FOR",
+   "value": 2.4
+  },
+  {
+   "geo": "FIN",
+   "time": "2025",
+   "c_birth": "NEU27_2020_FOR",
+   "value": 7.6
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "c_birth": "EU27_2020_FOR",
+   "value": 2.9
+  },
+  {
+   "geo": "FRA",
+   "time": "2025",
+   "c_birth": "NEU27_2020_FOR",
+   "value": 11.1
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "c_birth": "EU27_2020_FOR",
+   "value": 2.3
+  },
+  {
+   "geo": "GRC",
+   "time": "2025",
+   "c_birth": "NEU27_2020_FOR",
+   "value": 8.8
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "c_birth": "EU27_2020_FOR",
+   "value": 1.7
+  },
+  {
+   "geo": "HRV",
+   "time": "2025",
+   "c_birth": "NEU27_2020_FOR",
+   "value": 12.4
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "c_birth": "EU27_2020_FOR",
+   "value": 3.7
+  },
+  {
+   "geo": "HUN",
+   "time": "2025",
+   "c_birth": "NEU27_2020_FOR",
+   "value": 3.6
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "c_birth": "EU27_2020_FOR",
+   "value": 6.7
+  },
+  {
+   "geo": "IRL",
+   "time": "2025",
+   "c_birth": "NEU27_2020_FOR",
+   "value": 16.6
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "c_birth": "EU27_2020_FOR",
+   "value": 2.7
+  },
+  {
+   "geo": "ITA",
+   "time": "2025",
+   "c_birth": "NEU27_2020_FOR",
+   "value": 9.1
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "c_birth": "EU27_2020_FOR",
+   "value": 0.7
+  },
+  {
+   "geo": "LTU",
+   "time": "2025",
+   "c_birth": "NEU27_2020_FOR",
+   "value": 9.0
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "c_birth": "EU27_2020_FOR",
+   "value": 32.5
+  },
+  {
+   "geo": "LUX",
+   "time": "2025",
+   "c_birth": "NEU27_2020_FOR",
+   "value": 19.0
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "c_birth": "EU27_2020_FOR",
+   "value": 1.1
+  },
+  {
+   "geo": "LVA",
+   "time": "2025",
+   "c_birth": "NEU27_2020_FOR",
+   "value": 10.4
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "c_birth": "EU27_2020_FOR",
+   "value": 7.4
+  },
+  {
+   "geo": "MLT",
+   "time": "2025",
+   "c_birth": "NEU27_2020_FOR",
+   "value": 24.6
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "c_birth": "EU27_2020_FOR",
+   "value": 4.4
+  },
+  {
+   "geo": "NLD",
+   "time": "2025",
+   "c_birth": "NEU27_2020_FOR",
+   "value": 12.4
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "c_birth": "EU27_2020_FOR",
+   "value": 0.7
+  },
+  {
+   "geo": "POL",
+   "time": "2025",
+   "c_birth": "NEU27_2020_FOR",
+   "value": 1.9
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "c_birth": "EU27_2020_FOR",
+   "value": 2.6
+  },
+  {
+   "geo": "PRT",
+   "time": "2025",
+   "c_birth": "NEU27_2020_FOR",
+   "value": 17.6
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "c_birth": "EU27_2020_FOR",
+   "value": 1.7
+  },
+  {
+   "geo": "ROU",
+   "time": "2025",
+   "c_birth": "NEU27_2020_FOR",
+   "value": 4.5
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "c_birth": "EU27_2020_FOR",
+   "value": 2.9
+  },
+  {
+   "geo": "SVK",
+   "time": "2025",
+   "c_birth": "NEU27_2020_FOR",
+   "value": 1.1
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "c_birth": "EU27_2020_FOR",
+   "value": 2.8
+  },
+  {
+   "geo": "SVN",
+   "time": "2025",
+   "c_birth": "NEU27_2020_FOR",
+   "value": 12.6
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "c_birth": "EU27_2020_FOR",
+   "value": 5.2
+  },
+  {
+   "geo": "SWE",
+   "time": "2025",
+   "c_birth": "NEU27_2020_FOR",
+   "value": 15.5
+  }
+ ]
+}
